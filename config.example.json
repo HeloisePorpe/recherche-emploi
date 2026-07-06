@@ -1,0 +1,22 @@
+{
+  "home_address": "VOTRE_ADRESSE_ICI",
+  "google_maps_api_key": "VOTRE_CLE_GOOGLE_MAPS_ICI",
+  "spreadsheet_id": "VOTRE_SPREADSHEET_ID_ICI",
+  "sheet_name": "Offres",
+  "google_credentials_file": "credentials.json",
+  "francetravail_client_id": "VOTRE_CLIENT_ID_FRANCE_TRAVAIL",
+  "francetravail_client_secret": "VOTRE_SECRET_FRANCE_TRAVAIL",
+  "adzuna_app_id": "VOTRE_APP_ID_ADZUNA",
+  "adzuna_app_key": "VOTRE_APP_KEY_ADZUNA",
+  "email_enabled": false,
+  "email_smtp_server": "smtp.gmail.com",
+  "email_smtp_port": 587,
+  "email_sender": "VOTRE_EMAIL_GMAIL@gmail.com",
+  "email_password": "VOTRE_MOT_DE_PASSE_APPLICATION",
+  "email_recipient": "VOTRE_EMAIL_DESTINATAIRE@gmail.com",
+  "max_commute_minutes": 90,
+  "min_telework_days": 2,
+  "salary_hard_min": 42055,
+  "salary_target_min": 45000,
+  "salary_target_max": 50000
+}

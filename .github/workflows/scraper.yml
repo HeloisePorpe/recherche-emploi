@@ -1,0 +1,86 @@
+name: Scraper offres d'emploi
+
+on:
+  # Tous les jours a 5h00 heure de Paris.
+  # Paris = UTC+2 en ete / UTC+1 en hiver. 3h UTC couvre l'ete (5h Paris).
+  schedule:
+    - cron: '0 3 * * *'
+  # Lancement manuel depuis l'onglet Actions.
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scraper:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Recuperer le code du depot
+        uses: actions/checkout@v4
+
+      - name: Installer Python 3.13
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Installer les dependances
+        run: pip install feedparser requests
+
+      - name: Creer le fichier config.json a partir des secrets
+        env:
+          FRANCETRAVAIL_CLIENT_ID: ${{ secrets.FRANCETRAVAIL_CLIENT_ID }}
+          FRANCETRAVAIL_CLIENT_SECRET: ${{ secrets.FRANCETRAVAIL_CLIENT_SECRET }}
+          ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
+          ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
+          # Optionnel : adresse pour le calcul des trajets. Si non defini,
+          # une valeur generique est utilisee (aucune adresse perso dans le code public).
+          HOME_ADDRESS: ${{ secrets.HOME_ADDRESS }}
+        run: |
+          python - <<'PY'
+          import json, os
+
+          config = {
+              # --- Secrets (injectes via les variables d'environnement) ---
+              "francetravail_client_id": os.environ.get("FRANCETRAVAIL_CLIENT_ID", ""),
+              "francetravail_client_secret": os.environ.get("FRANCETRAVAIL_CLIENT_SECRET", ""),
+              "adzuna_app_id": os.environ.get("ADZUNA_APP_ID", ""),
+              "adzuna_app_key": os.environ.get("ADZUNA_APP_KEY", ""),
+
+              # --- Valeurs par defaut (non secretes) ---
+              # Adresse : lue depuis le secret HOME_ADDRESS si present, sinon generique.
+              "home_address": os.environ.get("HOME_ADDRESS") or "Ile-de-France, France",
+              "salary_hard_min": 42055,
+              "salary_target_min": 45000,
+              "salary_target_max": 50000,
+              "max_commute_minutes": 90,
+              "min_telework_days": 2,
+
+              # Fonctionnalites desactivees sur GitHub Actions
+              "email_enabled": False,
+              "spreadsheet_id": "",
+              "google_maps_api_key": "",
+          }
+
+          with open("config.json", "w", encoding="utf-8") as f:
+              json.dump(config, f, ensure_ascii=False, indent=2)
+
+          print("config.json cree a la racine du depot")
+          PY
+
+      - name: Lancer le scraper
+        run: python job_scraper.py
+
+      - name: Copier le resultat dans le dossier du site
+        run: cp jobs_output.json docs/jobs_output.json
+
+      - name: Commit et push du fichier de resultats
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/jobs_output.json
+          if git diff --staged --quiet; then
+            echo "Aucun changement a committer."
+          else
+            git commit -m "MAJ offres [skip ci]"
+            git push
+          fi

@@ -1,0 +1,5 @@
+config.json
+credentials.json
+/jobs_output.json
+*.pyc
+__pycache__/

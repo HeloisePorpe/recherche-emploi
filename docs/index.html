@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard - Recherche d'emploi</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="header-inner">
+      <h1>Recherche d'emploi</h1>
+      <p class="subtitle">Tableau de bord des offres</p>
+    </div>
+  </header>
+
+  <div class="layout">
+    <!-- Bouton filtres (mobile) -->
+    <button id="toggle-filters" class="toggle-filters" aria-expanded="false">
+      Filtres &amp; tri
+    </button>
+
+    <!-- Panneau de filtres -->
+    <aside id="filters" class="filters" aria-label="Filtres">
+      <div class="filter-block">
+        <label for="search" class="filter-label">Recherche</label>
+        <input type="search" id="search" placeholder="Titre ou entreprise..." autocomplete="off" />
+      </div>
+
+      <div class="filter-block">
+        <label for="sort" class="filter-label">Trier par</label>
+        <select id="sort">
+          <option value="score">Note (décroissante)</option>
+          <option value="date">Date (plus récente)</option>
+        </select>
+      </div>
+
+      <div class="filter-block">
+        <label for="min-score" class="filter-label">
+          Note minimale : <span id="min-score-value">0</span>/10
+        </label>
+        <input type="range" id="min-score" min="0" max="10" step="1" value="0" />
+      </div>
+
+      <div class="filter-block">
+        <label class="checkbox-line">
+          <input type="checkbox" id="telework-only" />
+          <span>Télétravail uniquement</span>
+        </label>
+      </div>
+
+      <div class="filter-block">
+        <span class="filter-label">Sources</span>
+        <div id="source-filters" class="source-list"></div>
+      </div>
+
+      <button id="reset-filters" class="reset-btn" type="button">Réinitialiser</button>
+    </aside>
+
+    <!-- Contenu principal -->
+    <main class="content">
+      <div class="content-head">
+        <span id="counter" class="counter">Chargement...</span>
+      </div>
+      <div id="cards" class="cards" aria-live="polite"></div>
+      <p id="empty-state" class="empty-state" hidden>Aucune offre ne correspond aux filtres.</p>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
