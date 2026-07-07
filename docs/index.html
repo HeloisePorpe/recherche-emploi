@@ -24,7 +24,7 @@
     <aside id="filters" class="filters" aria-label="Filtres">
       <div class="filter-block">
         <label for="search" class="filter-label">Recherche</label>
-        <input type="search" id="search" placeholder="Titre ou entreprise..." autocomplete="off" />
+        <input type="search" id="search" placeholder="Titre, entreprise, lieu, mot-clé..." autocomplete="off" />
       </div>
 
       <div class="filter-block">
@@ -32,6 +32,18 @@
         <select id="sort">
           <option value="score">Note (décroissante)</option>
           <option value="date">Date (plus récente)</option>
+          <option value="salary">Salaire (décroissant)</option>
+        </select>
+      </div>
+
+      <div class="filter-block">
+        <label for="recency" class="filter-label">Ancienneté</label>
+        <select id="recency">
+          <option value="0">Toutes les dates</option>
+          <option value="7">7 derniers jours</option>
+          <option value="14">14 derniers jours</option>
+          <option value="30">30 derniers jours</option>
+          <option value="90">3 derniers mois</option>
         </select>
       </div>
 
@@ -40,6 +52,20 @@
           Note minimale : <span id="min-score-value">0</span>/10
         </label>
         <input type="range" id="min-score" min="0" max="10" step="1" value="0" />
+      </div>
+
+      <div class="filter-block">
+        <label for="min-salary" class="filter-label">
+          Salaire min. : <span id="min-salary-value">Indifférent</span>
+        </label>
+        <input type="range" id="min-salary" min="0" max="90000" step="5000" value="0" />
+      </div>
+
+      <div class="filter-block">
+        <label class="checkbox-line">
+          <input type="checkbox" id="salary-only" />
+          <span>Avec salaire affiché uniquement</span>
+        </label>
       </div>
 
       <div class="filter-block">
