@@ -35,8 +35,9 @@ jobs:
           # Optionnel : adresse pour le calcul des trajets. Si non defini,
           # une valeur generique est utilisee (aucune adresse perso dans le code public).
           HOME_ADDRESS: ${{ secrets.HOME_ADDRESS }}
-          # Optionnel : cle API pour calculer les temps de trajet en transport.
-          # Sans cette cle, commute_minutes reste vide (le filtre "trajet" ne peut pas s'appliquer).
+          # Trajets en transport : token Navitia (gratuit) ou cle Google Maps.
+          # Sans l'un des deux, commute_minutes reste vide (filtre "trajet" inactif).
+          NAVITIA_TOKEN: ${{ secrets.NAVITIA_TOKEN }}
           GOOGLE_MAPS_API_KEY: ${{ secrets.GOOGLE_MAPS_API_KEY }}
         run: |
           python - <<'PY'
@@ -58,8 +59,12 @@ jobs:
               "max_commute_minutes": 90,
               "min_telework_days": 2,
 
-              # Calcul des trajets : actif seulement si le secret GOOGLE_MAPS_API_KEY est defini
+              # Calcul des trajets : Navitia (gratuit) en priorite, sinon Google.
+              # Actif seulement si le secret correspondant est defini.
+              "commute_provider": "navitia",
+              "navitia_token": os.environ.get("NAVITIA_TOKEN", ""),
               "google_maps_api_key": os.environ.get("GOOGLE_MAPS_API_KEY", ""),
+              "fetch_full_descriptions": True,
 
               # Fonctionnalites desactivees sur GitHub Actions
               "email_enabled": False,

@@ -19,7 +19,7 @@ import re
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-from datetime import datetime
+from datetime import datetime, timedelta
 from typing import Optional
 
 _config_path = os.path.join(os.path.dirname(__file__), "config.json")
@@ -48,6 +48,8 @@ CONFIG.setdefault("email_smtp_server", "smtp.gmail.com")
 CONFIG.setdefault("email_smtp_port", 587)
 CONFIG.setdefault("max_commute_minutes", 90)
 CONFIG.setdefault("min_telework_days", 2)
+CONFIG.setdefault("commute_provider", "")       # "navitia" | "google" | "" (auto)
+CONFIG.setdefault("fetch_full_descriptions", True)  # récupère le texte complet des annonces tronquées
 
 CANDIDATE_PROFILE = {
     "tools_expert": [
@@ -219,7 +221,68 @@ def fetch_adzuna_jobs():
 
 # ── Enrichissement ─────────────────────────────────────────────────────────────
 
-def get_commute_time(destination):
+_geocode_cache = {}
+
+
+def geocode(address):
+    """Adresse -> (lon, lat) via la Base Adresse Nationale (gratuit, sans clé)."""
+    if not address:
+        return None
+    if address in _geocode_cache:
+        return _geocode_cache[address]
+    coords = None
+    try:
+        r = requests.get("https://api-adresse.data.gouv.fr/search/",
+                         params={"q": address, "limit": 1}, timeout=10)
+        r.raise_for_status()
+        feats = r.json().get("features", [])
+        if feats:
+            lon, lat = feats[0]["geometry"]["coordinates"]
+            coords = (lon, lat)
+    except Exception as ex:
+        print(f"     Geocode error ({address[:30]}) : {ex}")
+    _geocode_cache[address] = coords
+    return coords
+
+
+def _next_weekday_9am():
+    """Prochain jour ouvré à 9h, format Navitia (YYYYMMDDTHHMMSS)."""
+    d = datetime.now() + timedelta(days=1)
+    while d.weekday() >= 5:  # samedi / dimanche
+        d += timedelta(days=1)
+    return d.replace(hour=9, minute=0, second=0, microsecond=0).strftime("%Y%m%dT%H%M%S")
+
+
+def get_commute_time_navitia(destination):
+    """Trajet porte-à-porte en transports via Navitia (gratuit après inscription)."""
+    token = CONFIG.get("navitia_token", "")
+    if not token or "VOTRE" in token or not destination:
+        return None
+    origin = geocode(CONFIG.get("home_address", ""))
+    dest = geocode(destination + ", Île-de-France, France")
+    if not origin or not dest:
+        return None
+    try:
+        r = requests.get(
+            "https://api.navitia.io/v1/journeys",
+            params={"from": f"{origin[0]};{origin[1]}",
+                    "to": f"{dest[0]};{dest[1]}",
+                    "datetime": _next_weekday_9am(),
+                    "datetime_represents": "arrival",
+                    "count": 1},
+            headers={"Authorization": token},
+            timeout=20,
+        )
+        r.raise_for_status()
+        journeys = r.json().get("journeys", [])
+        if journeys:
+            return round(journeys[0]["duration"] / 60)
+    except Exception as ex:
+        print(f"     Navitia error ({destination[:30]}) : {ex}")
+    return None
+
+
+def get_commute_time_google(destination):
     key = CONFIG.get("google_maps_api_key", "")
     if not key or "VOTRE" in key or not destination:
         return None
@@ -240,6 +303,37 @@ def get_commute_time(destination):
     except Exception as ex:
         print(f"     Maps error : {ex}")
     return None
+
+
+def get_commute_time(destination):
+    """Dispatcher : Navitia (gratuit) par défaut, Google en secours."""
+    provider = CONFIG.get("commute_provider", "").lower()
+    navitia_ok = CONFIG.get("navitia_token") and "VOTRE" not in CONFIG.get("navitia_token", "")
+    google_ok = CONFIG.get("google_maps_api_key") and "VOTRE" not in CONFIG.get("google_maps_api_key", "")
+    if not provider:
+        provider = "navitia" if navitia_ok else ("google" if google_ok else "")
+    if provider == "navitia":
+        return get_commute_time_navitia(destination)
+    if provider == "google":
+        return get_commute_time_google(destination)
+    return None
+
+
+def fetch_full_text(url):
+    """Récupère le texte brut d'une page d'annonce (pour retrouver le télétravail
+    absent des descriptions tronquées d'Adzuna). Best-effort, tolérant aux erreurs."""
+    if not url:
+        return ""
+    try:
+        r = requests.get(url, timeout=10, allow_redirects=True,
+                         headers={"User-Agent": "Mozilla/5.0 (compatible; JobScraper/1.0)"})
+        if r.status_code != 200:
+            return ""
+        html = re.sub(r'(?is)<(script|style|noscript)[^>]*>.*?</\1>', ' ', r.text)
+        text = re.sub(r'(?s)<[^>]+>', ' ', html)
+        return re.sub(r'\s+', ' ', text)[:20000]
+    except Exception:
+        return ""
 
 
 def extract_salary(text):
@@ -557,6 +651,7 @@ def run():
     print(f"Après dédup : {len(all_jobs)}")
 
     print("\nEnrichissement...")
+    fetched = 0
     for i, job in enumerate(all_jobs):
         desc = job.get("description") or ""
         title = job.get("title", "")
@@ -564,12 +659,27 @@ def run():
             job["salary_extracted"] = extract_salary(desc + " " + title)
         job["telework_days"] = extract_telework_days(title + " " + desc)
         job["in_france"] = is_in_france(job.get("location", ""), desc)
+
+        # Télétravail introuvable + description probablement tronquée
+        # -> on va chercher le texte complet de l'annonce.
+        truncated = len(desc) >= 490 or desc.rstrip().endswith(("…", "..."))
+        if (CONFIG.get("fetch_full_descriptions") and job["telework_days"] is None
+                and truncated and job.get("link")):
+            full = fetch_full_text(job["link"])
+            if full:
+                job["telework_days"] = extract_telework_days(full)
+                if not job.get("salary_raw") and not job.get("salary_extracted"):
+                    job["salary_extracted"] = extract_salary(full)
+                fetched += 1
+                time.sleep(0.3)
+
         loc = job.get("location", "")
         if loc and loc != "Île-de-France":
             job["commute_minutes"] = get_commute_time(loc)
             time.sleep(0.2)
         if (i + 1) % 10 == 0:
             print(f"  {i+1}/{len(all_jobs)}...")
+    print(f"  Annonces complètes récupérées : {fetched}")
 
     filtered, excl = [], 0
     for job in all_jobs:

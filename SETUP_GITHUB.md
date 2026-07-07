@@ -38,10 +38,34 @@ Pour **chaque** ligne : tapez le **Name** exactement comme écrit, collez la
 | `ADZUNA_APP_ID`                | Votre « App ID » Adzuna                 |
 | `ADZUNA_APP_KEY`               | Votre « App Key » Adzuna                |
 
-> **Secret optionnel** : `HOME_ADDRESS` — votre adresse, uniquement si vous
-> activez plus tard le calcul des temps de trajet (nécessite une clé Google
-> Maps). Sans ce secret, une valeur générique « Île-de-France, France » est
-> utilisée, et **aucune adresse personnelle n'apparaît dans le code public**.
+---
+
+## Étape 1 bis — Activer le filtre « trajet + télétravail » (optionnel mais recommandé)
+
+Le dashboard propose un filtre **« 🎯 Mes critères trajet + télétravail »**.
+Pour qu'il calcule les temps de trajet en transport, ajoutez **2 secrets** :
+
+| Name (à copier tel quel) | Valeur                                                        |
+|--------------------------|--------------------------------------------------------------|
+| `HOME_ADDRESS`           | Votre adresse de départ, ex. `7 boulevard de la liberté, Bures-sur-Yvette` |
+| `NAVITIA_TOKEN`          | Votre token **Navitia** (gratuit — voir ci-dessous)          |
+
+### Obtenir un token Navitia (gratuit, sans carte bancaire)
+
+1. Allez sur **https://navitia.io/** → **Sign up** (inscription gratuite).
+2. Confirmez votre e-mail, connectez-vous.
+3. Dans votre espace, copiez le **token** (une longue suite de caractères).
+4. Collez-le dans le secret `NAVITIA_TOKEN`.
+
+Navitia couvre les transports SNCF/RATP/Île-de-France. Le calcul se fait
+porte-à-porte pour une arrivée à 9h un jour de semaine.
+
+> - **Aucune adresse personnelle n'apparaît dans le code public** : elle vit
+>   uniquement dans le secret `HOME_ADDRESS`.
+> - Sans ces secrets, le filtre fonctionne quand même (sur le télétravail et la
+>   localisation France), mais les trajets restent affichés « à vérifier ».
+> - Alternative à Navitia : un secret `GOOGLE_MAPS_API_KEY` (Google Maps,
+>   nécessite d'activer la facturation Google Cloud).
 
 ---
 
