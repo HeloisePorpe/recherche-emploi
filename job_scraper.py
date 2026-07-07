@@ -253,15 +253,50 @@ def extract_salary(text):
 
 
 def extract_telework_days(text):
-    for p in [r'(\d)\s*jours?\s*(?:de\s*)?t[eé]l[eé]travail',
-              r't[eé]l[eé]travail\s*[:\-]\s*(\d)',
-              r'(\d)\s*jours?\/semaine\s*(?:en\s*)?t[eé]l[eé]']:
-        m = re.search(p, text, re.IGNORECASE)
-        if m:
-            return int(m.group(1))
-    if re.search(r'full\s*remote|100%\s*t[eé]l[eé]travail', text, re.IGNORECASE):
+    """Nombre de jours de télétravail/semaine déduit du texte.
+    5 = 100 % télétravail, 0 = présentiel confirmé, None = inconnu."""
+    if not text:
+        return None
+    t = text.lower()
+    # 100 % / full remote
+    if re.search(r'full[\s-]*remote|t[eé]l[eé]travail\s*(?:total|complet|100\s*%|int[eé]gral)|'
+                 r'100\s*%\s*t[eé]l[eé]travail|full[\s-]*t[eé]l[eé]travail|'
+                 r'enti[eè]rement\s+[àa]\s+distance|remote\s*first', t):
         return 5
+    # "X jours de télétravail" / "X j / semaine de télétravail"
+    m = re.search(r'(\d)\s*(?:jours?|j)\s*(?:\/|par\s*)?(?:semaine)?\s*(?:de\s*)?t[eé]l[eé]travail', t)
+    if m:
+        return int(m.group(1))
+    m = re.search(r't[eé]l[eé]travail\s*[:\-]?\s*(\d)\s*(?:jours?|j)', t)
+    if m:
+        return int(m.group(1))
+    # fourchette "2 à 3 jours de télétravail" → borne haute
+    m = re.search(r'\d\s*[àa]\s*(\d)\s*jours?\s*(?:de\s*)?t[eé]l[eé]travail', t)
+    if m:
+        return int(m.group(1))
+    # "X jours sur site / présentiel" → 5 - X (semaine de 5 jours)
+    m = re.search(r'(\d)\s*jours?\s*(?:sur\s*site|de\s*pr[eé]sentiel|au\s*bureau|en\s*pr[eé]sentiel)', t)
+    if m:
+        return max(0, 5 - int(m.group(1)))
+    # présentiel explicite
+    if re.search(r'pas\s+de\s+t[eé]l[eé]travail|100\s*%\s*pr[eé]sentiel|'
+                 r'sans\s+t[eé]l[eé]travail|uniquement\s+en\s+pr[eé]sentiel', t):
+        return 0
     return None
+
+
+_FOREIGN_MARKERS = [
+    "belgi", "luxembourg", "suisse", "switzerland", "espagne", "spain",
+    "allemagne", "germany", "royaume-uni", "london", "londres", "portugal",
+    "maroc", "tunisie", "italie", "italy", "pays-bas", "netherlands",
+]
+
+
+def is_in_france(location, description=""):
+    """Heuristique : les sources étant françaises, on renvoie True par défaut
+    et False seulement si un marqueur étranger apparaît dans le lieu."""
+    t = (location or "").lower()
+    return not any(m in t for m in _FOREIGN_MARKERS)
 
 
 def parse_salary_value(s):
@@ -524,9 +559,11 @@ def run():
     print("\nEnrichissement...")
     for i, job in enumerate(all_jobs):
         desc = job.get("description") or ""
+        title = job.get("title", "")
         if not job.get("salary_raw"):
-            job["salary_extracted"] = extract_salary(desc + " " + job.get("title", ""))
-        job["telework_days"] = extract_telework_days(desc)
+            job["salary_extracted"] = extract_salary(desc + " " + title)
+        job["telework_days"] = extract_telework_days(title + " " + desc)
+        job["in_france"] = is_in_france(job.get("location", ""), desc)
         loc = job.get("location", "")
         if loc and loc != "Île-de-France":
             job["commute_minutes"] = get_commute_time(loc)

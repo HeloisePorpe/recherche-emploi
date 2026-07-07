@@ -75,6 +75,24 @@
         </label>
       </div>
 
+      <div class="filter-block criteria-block">
+        <label class="checkbox-line">
+          <input type="checkbox" id="my-criteria" />
+          <span><strong>🎯 Mes critères trajet + télétravail</strong></span>
+        </label>
+        <div id="criteria-sub" class="criteria-sub" hidden>
+          <label class="checkbox-line">
+            <input type="checkbox" id="criteria-strict" />
+            <span>Mode strict (masquer les offres à l'info manquante)</span>
+          </label>
+          <p class="criteria-note">
+            <strong>Hybride :</strong> ≤ 1 h de trajet avec ≥ 3 j de télétravail
+            (ou ≥ 2 j si &lt; 40 min).<br>
+            <strong>100 % télétravail :</strong> poste en France.
+          </p>
+        </div>
+      </div>
+
       <div class="filter-block">
         <span class="filter-label">Sources</span>
         <div id="source-filters" class="source-list"></div>

@@ -12,6 +12,8 @@ const defaultState = () => ({
   minSalary: 0,    // € annuels bruts ; 0 = indifférent
   salaryOnly: false,
   teleworkOnly: false,
+  myCriteria: false,     // filtre trajet + télétravail personnalisé
+  criteriaStrict: false, // masquer aussi les offres à l'info manquante
   sources: new Set(), // sources cochées ; vide = toutes
 });
 
@@ -31,6 +33,9 @@ const els = {
   minSalaryValue: document.getElementById('min-salary-value'),
   salaryOnly: document.getElementById('salary-only'),
   teleworkOnly: document.getElementById('telework-only'),
+  myCriteria: document.getElementById('my-criteria'),
+  criteriaSub: document.getElementById('criteria-sub'),
+  criteriaStrict: document.getElementById('criteria-strict'),
   sourceFilters: document.getElementById('source-filters'),
   reset: document.getElementById('reset-filters'),
   toggleFilters: document.getElementById('toggle-filters'),
@@ -144,9 +149,34 @@ function syncControls() {
   els.minSalaryValue.textContent = state.minSalary > 0 ? formatEuro(state.minSalary) : 'Indifférent';
   els.salaryOnly.checked = state.salaryOnly;
   els.teleworkOnly.checked = state.teleworkOnly;
+  els.myCriteria.checked = state.myCriteria;
+  els.criteriaStrict.checked = state.criteriaStrict;
+  els.criteriaSub.hidden = !state.myCriteria;
   els.sourceFilters.querySelectorAll('.source-cb').forEach((cb) => {
     cb.checked = state.sources.has(cb.value);
   });
+}
+
+// Évalue les critères perso trajet + télétravail.
+// Renvoie : 'ok' | 'no' | 'unknown-tw' | 'unknown-commute'
+//   - 100 % télétravail (5) : OK si le poste est en France.
+//   - Hybride : OK si (≥3 j télétravail ET trajet ≤ 60 min)
+//               ou (≥2 j télétravail ET trajet ≤ 40 min).
+//   - Info manquante : renvoyée à part pour un traitement lenient/strict.
+function criteriaStatus(job) {
+  const tw = job.telework_days;         // nombre ou null
+  const commute = job.commute_minutes;  // nombre ou null
+  const inFrance = job.in_france !== false;
+
+  if (tw === 5) return inFrance ? 'ok' : 'no';   // 100 % télétravail
+  if (tw == null) return 'unknown-tw';           // télétravail inconnu
+  if (tw < 2) return 'no';                        // télétravail insuffisant
+
+  // hybride : télétravail ≥ 2 connu, reste le trajet
+  if (commute == null) return 'unknown-commute';
+  if (tw >= 3 && commute <= 60) return 'ok';
+  if (commute <= 40) return 'ok';                 // tw ≥ 2 et trajet court
+  return 'no';
 }
 
 // --- Filtrage & tri ---
@@ -181,6 +211,12 @@ function getFilteredJobs() {
     }
     // Télétravail
     if (state.teleworkOnly && !(job.telework_days > 0)) return false;
+    // Critères perso trajet + télétravail
+    if (state.myCriteria) {
+      const st = criteriaStatus(job);
+      if (st === 'no') return false;
+      if (state.criteriaStrict && st !== 'ok') return false;
+    }
     // Sources
     if (state.sources.size > 0 && !state.sources.has(job.source)) return false;
     return true;
@@ -208,6 +244,7 @@ function activeFilterCount() {
   if (state.minSalary > 0) n++;
   if (state.salaryOnly) n++;
   if (state.teleworkOnly) n++;
+  if (state.myCriteria) n++;
   if (state.sources.size > 0) n++;
   if (state.search.trim()) n++;
   return n;
@@ -217,7 +254,9 @@ function activeFilterCount() {
 function renderCard(job) {
   const score = job.score != null ? job.score : 0;
   const salary = getSalary(job);
-  const telework = job.telework_days > 0 ? `Télétravail ${job.telework_days}j/sem` : '';
+  const tw = job.telework_days;
+  const telework = tw === 5 ? '100 % télétravail' : (tw > 0 ? `Télétravail ${tw}j/sem` : '');
+  const commute = job.commute_minutes != null ? `🚆 ${job.commute_minutes} min` : '';
   const date = formatDate(job.published);
 
   const tags = [];
@@ -225,7 +264,15 @@ function renderCard(job) {
   if (job.location) tags.push(`<span class="tag">${escapeHtml(job.location)}</span>`);
   if (salary) tags.push(`<span class="tag tag-salary">${escapeHtml(salary)}</span>`);
   if (telework) tags.push(`<span class="tag tag-telework">${escapeHtml(telework)}</span>`);
+  if (commute) tags.push(`<span class="tag tag-commute">${escapeHtml(commute)}</span>`);
   if (date) tags.push(`<span class="tag">${escapeHtml(date)}</span>`);
+
+  // Badges "à vérifier" quand le filtre perso est actif et l'info manque
+  if (state.myCriteria) {
+    const st = criteriaStatus(job);
+    if (st === 'unknown-tw') tags.push('<span class="tag tag-warn">Télétravail à vérifier</span>');
+    else if (st === 'unknown-commute') tags.push('<span class="tag tag-warn">Trajet à vérifier</span>');
+  }
 
   const reasons = Array.isArray(job.score_reasons) && job.score_reasons.length
     ? `<ul class="reasons">${job.score_reasons
@@ -326,6 +373,15 @@ function bindEvents() {
   });
   els.teleworkOnly.addEventListener('change', () => {
     state.teleworkOnly = els.teleworkOnly.checked;
+    render();
+  });
+  els.myCriteria.addEventListener('change', () => {
+    state.myCriteria = els.myCriteria.checked;
+    els.criteriaSub.hidden = !state.myCriteria;
+    render();
+  });
+  els.criteriaStrict.addEventListener('change', () => {
+    state.criteriaStrict = els.criteriaStrict.checked;
     render();
   });
   els.reset.addEventListener('click', () => {

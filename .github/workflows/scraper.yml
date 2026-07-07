@@ -35,6 +35,9 @@ jobs:
           # Optionnel : adresse pour le calcul des trajets. Si non defini,
           # une valeur generique est utilisee (aucune adresse perso dans le code public).
           HOME_ADDRESS: ${{ secrets.HOME_ADDRESS }}
+          # Optionnel : cle API pour calculer les temps de trajet en transport.
+          # Sans cette cle, commute_minutes reste vide (le filtre "trajet" ne peut pas s'appliquer).
+          GOOGLE_MAPS_API_KEY: ${{ secrets.GOOGLE_MAPS_API_KEY }}
         run: |
           python - <<'PY'
           import json, os
@@ -55,10 +58,12 @@ jobs:
               "max_commute_minutes": 90,
               "min_telework_days": 2,
 
+              # Calcul des trajets : actif seulement si le secret GOOGLE_MAPS_API_KEY est defini
+              "google_maps_api_key": os.environ.get("GOOGLE_MAPS_API_KEY", ""),
+
               # Fonctionnalites desactivees sur GitHub Actions
               "email_enabled": False,
               "spreadsheet_id": "",
-              "google_maps_api_key": "",
           }
 
           with open("config.json", "w", encoding="utf-8") as f:

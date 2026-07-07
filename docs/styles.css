@@ -135,6 +135,21 @@ html, body {
 
 .source-list { display: flex; flex-direction: column; gap: 8px; }
 
+/* Bloc critères personnalisés */
+.criteria-block {
+  background: #f4f8ff;
+  border: 1px solid #dbe6fb;
+  border-radius: 10px;
+  padding: 12px;
+}
+.criteria-sub { margin-top: 10px; padding-left: 4px; }
+.criteria-note {
+  margin: 8px 0 0;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: var(--text-muted);
+}
+
 .reset-btn {
   width: 100%;
   padding: 9px;
@@ -228,6 +243,8 @@ html, body {
 .tag-source { background: #eef2ff; color: var(--primary-dark); border-color: #dbe3ff; }
 .tag-telework { background: var(--green-bg); color: var(--green); border-color: #cfe9d8; }
 .tag-salary { background: #fef7e6; color: var(--orange); border-color: #f3e3c0; }
+.tag-commute { background: #eef6ff; color: var(--primary-dark); border-color: #d5e6fb; }
+.tag-warn { background: var(--orange-bg); color: var(--orange); border-color: #f3d9ad; }
 
 .reasons {
   margin: 6px 0 0;
