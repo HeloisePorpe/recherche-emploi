@@ -43,7 +43,14 @@ const els = {
   reset: document.getElementById('reset-filters'),
   toggleFilters: document.getElementById('toggle-filters'),
   filters: document.getElementById('filters'),
+  toggleArchived: document.getElementById('toggle-archived'),
+  archivedCount: document.getElementById('archived-count'),
+  exportArchived: document.getElementById('export-archived'),
+  archiveBlock: document.getElementById('archive-block'),
 };
+
+// Vue "archivées" (mode d'affichage, non persisté)
+let showArchived = false;
 
 // --- Utilitaires ---
 function escapeHtml(str) {
@@ -182,8 +189,18 @@ function getFilteredJobs() {
   const q = state.search.trim().toLowerCase();
   const now = Date.now();
   const recencyMs = state.recency > 0 ? state.recency * 86400000 : 0;
+  const archived = archivedIdSet();
+
+  // Vue "archivées" : on n'affiche que les offres masquées (tri par note)
+  if (showArchived) {
+    return allJobs
+      .filter((job) => archived.has(candidatureId(job)))
+      .sort((a, b) => (b.score || 0) - (a.score || 0));
+  }
 
   let jobs = allJobs.filter((job) => {
+    // Offres archivées : exclues de la liste normale
+    if (archived.has(candidatureId(job))) return false;
     // Recherche texte (titre + entreprise + lieu + description)
     if (q) {
       const hay = (
@@ -267,7 +284,6 @@ function renderCard(job) {
   if (salary) tags.push(`<span class="tag tag-salary">${escapeHtml(salary)}</span>`);
   if (telework) tags.push(`<span class="tag tag-telework">${escapeHtml(telework)}</span>`);
   if (commute) tags.push(`<span class="tag tag-commute">${escapeHtml(commute)}</span>`);
-  if (date) tags.push(`<span class="tag">${escapeHtml(date)}</span>`);
 
   // Badge "à vérifier" quand le filtre perso est actif et le trajet manque
   if (state.myCriteria && criteriaStatus(job) === 'unknown-commute') {
@@ -288,10 +304,22 @@ function renderCard(job) {
     ? `<div class="card-company">${escapeHtml(job.company)}</div>`
     : '';
 
-  const tracked = isTracked(job);
-  const followBtn = `<button class="follow-btn${tracked ? ' followed' : ''}" type="button"
-      data-follow="${escapeHtml(candidatureId(job))}"${tracked ? ' disabled' : ''}>
-      ${tracked ? '✓ Suivie' : '➕ Suivre'}</button>`;
+  const dateHtml = date
+    ? `<div class="card-date">📅 Publiée le ${escapeHtml(date)}</div>`
+    : '';
+
+  const id = escapeHtml(candidatureId(job));
+  let actions;
+  if (showArchived) {
+    actions = `<button class="restore-btn" type="button" data-unarchive="${id}">↩︎ Restaurer</button>`;
+  } else {
+    const tracked = isTracked(job);
+    const followBtn = `<button class="follow-btn${tracked ? ' followed' : ''}" type="button"
+        data-follow="${id}"${tracked ? ' disabled' : ''}>${tracked ? '✓ Suivie' : '➕ Suivre'}</button>`;
+    const archiveBtn = `<button class="archive-btn" type="button" data-archive="${id}"
+        title="Masquer cette offre (non pertinente)">✕ Pas pertinent</button>`;
+    actions = followBtn + archiveBtn;
+  }
 
   return `
     <article class="card">
@@ -302,23 +330,40 @@ function renderCard(job) {
         </div>
       </div>
       ${companyHtml}
+      ${dateHtml}
       <div class="card-meta">${tags.join('')}</div>
       ${reasons}
-      <div class="card-actions">${followBtn}</div>
+      <div class="card-actions">${actions}</div>
     </article>`;
 }
 
 // --- Rendu principal ---
 function render() {
   const jobs = getFilteredJobs();
-  const active = activeFilterCount();
-  els.counter.textContent =
-    `${jobs.length} offre${jobs.length > 1 ? 's' : ''} affichée${jobs.length > 1 ? 's' : ''}` +
-    (jobs.length !== allJobs.length ? ` sur ${allJobs.length}` : '') +
-    (active > 0 ? ` · ${active} filtre${active > 1 ? 's' : ''} actif${active > 1 ? 's' : ''}` : '');
+  const nbArchived = loadArchived().length;
+
+  // Bloc archivées : libellé du bouton + état
+  els.toggleArchived.textContent = showArchived
+    ? '← Retour aux offres'
+    : `🗄️ Voir les archivées (${nbArchived})`;
+  els.archiveBlock.classList.toggle('viewing', showArchived);
+
+  if (showArchived) {
+    els.counter.textContent =
+      `${jobs.length} offre${jobs.length > 1 ? 's' : ''} archivée${jobs.length > 1 ? 's' : ''}`;
+  } else {
+    const active = activeFilterCount();
+    els.counter.textContent =
+      `${jobs.length} offre${jobs.length > 1 ? 's' : ''} affichée${jobs.length > 1 ? 's' : ''}` +
+      (jobs.length !== allJobs.length ? ` sur ${allJobs.length}` : '') +
+      (active > 0 ? ` · ${active} filtre${active > 1 ? 's' : ''} actif${active > 1 ? 's' : ''}` : '');
+  }
 
   if (jobs.length === 0) {
     els.cards.innerHTML = '';
+    els.empty.textContent = showArchived
+      ? 'Aucune offre archivée.'
+      : 'Aucune offre ne correspond aux filtres.';
     els.empty.hidden = false;
   } else {
     els.empty.hidden = true;
@@ -396,6 +441,7 @@ function bindEvents() {
   });
   els.reset.addEventListener('click', () => {
     state = defaultState();
+    showArchived = false;
     syncControls();
     render();
   });
@@ -403,17 +449,48 @@ function bindEvents() {
     const open = els.filters.classList.toggle('open');
     els.toggleFilters.setAttribute('aria-expanded', String(open));
   });
-  // Bouton "Suivre" (délégation : les cartes sont re-rendues)
+  // Actions sur les cartes (délégation : les cartes sont re-rendues)
   els.cards.addEventListener('click', (e) => {
-    const btn = e.target.closest('[data-follow]');
-    if (!btn) return;
-    const id = btn.getAttribute('data-follow');
-    const job = allJobs.find((j) => candidatureId(j) === id);
-    if (job && addCandidature(job)) {
-      btn.textContent = '✓ Suivie';
-      btn.classList.add('followed');
-      btn.disabled = true;
+    const follow = e.target.closest('[data-follow]');
+    if (follow) {
+      const job = allJobs.find((j) => candidatureId(j) === follow.getAttribute('data-follow'));
+      if (job && addCandidature(job)) {
+        follow.textContent = '✓ Suivie';
+        follow.classList.add('followed');
+        follow.disabled = true;
+      }
+      return;
     }
+    const archive = e.target.closest('[data-archive]');
+    if (archive) {
+      const job = allJobs.find((j) => candidatureId(j) === archive.getAttribute('data-archive'));
+      if (job) { archiveJob(job); render(); }
+      return;
+    }
+    const unarchive = e.target.closest('[data-unarchive]');
+    if (unarchive) {
+      unarchiveJob(unarchive.getAttribute('data-unarchive'));
+      render();
+    }
+  });
+
+  // Vue archivées + export
+  els.toggleArchived.addEventListener('click', () => {
+    showArchived = !showArchived;
+    render();
+  });
+  els.exportArchived.addEventListener('click', () => {
+    const list = loadArchived();
+    if (!list.length) { alert('Aucune offre archivée à exporter.'); return; }
+    const blob = new Blob([JSON.stringify(list, null, 2)], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'offres-archivees.json';
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    URL.revokeObjectURL(url);
   });
 }
 
