@@ -265,6 +265,7 @@ html, body {
 .tag-telework { background: var(--green-bg); color: var(--green); border-color: #cfe9d8; }
 .tag-salary { background: #fef7e6; color: var(--orange); border-color: #f3e3c0; }
 .tag-commute { background: #eef6ff; color: var(--primary-dark); border-color: #d5e6fb; }
+.tag-cdi { background: #ecfdf3; color: #067647; border-color: #cfead9; font-weight: 600; }
 .tag-warn { background: var(--orange-bg); color: var(--orange); border-color: #f3d9ad; }
 
 .reasons {

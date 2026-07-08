@@ -13,6 +13,7 @@ const defaultState = () => ({
   minSalary: 0,    // € annuels bruts ; 0 = indifférent
   salaryOnly: false,
   teleworkOnly: false,
+  cdiOnly: false,
   myCriteria: true,      // filtre trajet + télétravail — activé par défaut
   criteriaStrict: false, // masquer aussi les offres à l'info manquante
   sources: new Set(), // sources cochées ; vide = toutes
@@ -34,6 +35,7 @@ const els = {
   minSalaryValue: document.getElementById('min-salary-value'),
   salaryOnly: document.getElementById('salary-only'),
   teleworkOnly: document.getElementById('telework-only'),
+  cdiOnly: document.getElementById('cdi-only'),
   myCriteria: document.getElementById('my-criteria'),
   criteriaSub: document.getElementById('criteria-sub'),
   criteriaStrict: document.getElementById('criteria-strict'),
@@ -150,6 +152,7 @@ function syncControls() {
   els.minSalaryValue.textContent = state.minSalary > 0 ? formatEuro(state.minSalary) : 'Indifférent';
   els.salaryOnly.checked = state.salaryOnly;
   els.teleworkOnly.checked = state.teleworkOnly;
+  els.cdiOnly.checked = state.cdiOnly;
   els.myCriteria.checked = state.myCriteria;
   els.criteriaStrict.checked = state.criteriaStrict;
   els.criteriaSub.hidden = !state.myCriteria;
@@ -206,6 +209,8 @@ function getFilteredJobs() {
     }
     // Télétravail
     if (state.teleworkOnly && !(job.telework_days > 0)) return false;
+    // CDI uniquement
+    if (state.cdiOnly && job.contract_type !== 'CDI') return false;
     // Critères perso trajet + télétravail
     if (state.myCriteria) {
       const st = criteriaStatus(job);
@@ -239,6 +244,7 @@ function activeFilterCount() {
   if (state.minSalary > 0) n++;
   if (state.salaryOnly) n++;
   if (state.teleworkOnly) n++;
+  if (state.cdiOnly) n++;
   if (state.myCriteria) n++;
   if (state.sources.size > 0) n++;
   if (state.search.trim()) n++;
@@ -256,6 +262,7 @@ function renderCard(job) {
 
   const tags = [];
   if (job.source) tags.push(`<span class="tag tag-source">${escapeHtml(job.source)}</span>`);
+  if (job.contract_type === 'CDI') tags.push('<span class="tag tag-cdi">CDI</span>');
   if (job.location) tags.push(`<span class="tag">${escapeHtml(job.location)}</span>`);
   if (salary) tags.push(`<span class="tag tag-salary">${escapeHtml(salary)}</span>`);
   if (telework) tags.push(`<span class="tag tag-telework">${escapeHtml(telework)}</span>`);
@@ -372,6 +379,10 @@ function bindEvents() {
   });
   els.teleworkOnly.addEventListener('change', () => {
     state.teleworkOnly = els.teleworkOnly.checked;
+    render();
+  });
+  els.cdiOnly.addEventListener('change', () => {
+    state.cdiOnly = els.cdiOnly.checked;
     render();
   });
   els.myCriteria.addEventListener('change', () => {

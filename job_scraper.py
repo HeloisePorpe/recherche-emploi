@@ -141,7 +141,8 @@ def fetch_francetravail_jobs():
     print("  → France Travail API...")
     headers = {"Authorization": f"Bearer {token}", "Accept": "application/json"}
     all_jobs = []
-    for kw in ["campaign manager CRM", "chargé CRM", "chef de projet CRM", "marketing automation"]:
+    for kw in ["campaign manager CRM", "chargé CRM", "chef de projet CRM",
+               "marketing automation", "CRM télétravail"]:
         try:
             r = requests.get(
                 "https://api.francetravail.io/partenaire/offresdemploi/v2/offres/search",
@@ -162,6 +163,7 @@ def fetch_francetravail_jobs():
                     "description": o.get("description", ""),
                     "salary_raw": o.get("salaire", {}).get("libelle", ""),
                     "published": o.get("dateCreation", ""),
+                    "contract_type": "CDI",  # requête typeContrat=CDI
                 })
             time.sleep(0.5)
         except Exception as ex:
@@ -183,7 +185,8 @@ def fetch_adzuna_jobs():
 
     print("  → Adzuna API...")
     all_jobs = []
-    for kw in ["CRM manager", "campaign manager CRM", "chef de projet CRM", "marketing automation"]:
+    for kw in ["CRM manager", "campaign manager CRM", "chef de projet CRM",
+               "marketing automation", "CRM télétravail", "campaign manager remote"]:
         try:
             r = requests.get(
                 "https://api.adzuna.com/v1/api/jobs/fr/search/1",
@@ -217,6 +220,182 @@ def fetch_adzuna_jobs():
     unique = _dedup(all_jobs)
     print(f"     {len(unique)} offres uniques")
     return unique
+
+
+# ── Sources 100 % télétravail ───────────────────────────────────────────────────
+
+_RELEVANCE_KEYWORDS = [
+    "crm", "campaign manager", "campaign", "campagne", "marketing automation",
+    "automation manager", "lifecycle", "email marketing", "chargé crm",
+    "chef de projet crm", "customer relationship", "relation client",
+]
+
+
+def is_relevant(job):
+    """Garde uniquement les offres CRM / Campaign Manager / marketing automation."""
+    t = ((job.get("title") or "") + " " + (job.get("description") or "")).lower()
+    return any(k in t for k in _RELEVANCE_KEYWORDS)
+
+
+_REMOTE_OUT_OF_REACH = [
+    "usa", "united states", "u.s.", "canada", "brazil", "brésil", "india", "inde",
+    "australia", "australie", "latam", "apac", "argentina", "mexico", "philippines",
+]
+
+
+def remote_scope_in_france(text):
+    """Une offre 100 % remote est-elle travaillable depuis la France ?
+    True si périmètre France/Europe/worldwide (ou inconnu), False si clairement
+    limité à une zone lointaine (US-only, etc.)."""
+    t = (text or "").lower()
+    if not t:
+        return True
+    if any(k in t for k in ["france", "europe", "emea", "worldwide", "anywhere",
+                            "global", "european", "remote"]):
+        return True
+    if any(k in t for k in _REMOTE_OUT_OF_REACH):
+        return False
+    return True
+
+
+def _range_salary(lo, hi, cur="€"):
+    if not lo:
+        return ""
+    try:
+        return f"{int(lo)}-{int(hi or lo)} {cur}"
+    except Exception:
+        return ""
+
+
+def fetch_remotive_jobs():
+    print("  → Remotive API...")
+    jobs = []
+    try:
+        r = requests.get("https://remotive.com/api/remote-jobs",
+                         params={"category": "marketing", "limit": 100},
+                         headers={"User-Agent": "JobScraper/1.0"}, timeout=15)
+        r.raise_for_status()
+        for o in r.json().get("jobs", []):
+            loc = o.get("candidate_required_location", "") or ""
+            jobs.append({
+                "source": "Remotive",
+                "title": o.get("title", ""),
+                "link": o.get("url", ""),
+                "company": o.get("company_name", ""),
+                "location": loc or "Remote",
+                "description": o.get("description", ""),
+                "salary_raw": o.get("salary", "") or "",
+                "published": o.get("publication_date", ""),
+                "telework_days": 5,
+                "in_france": remote_scope_in_france(loc),
+            })
+    except Exception as ex:
+        print(f"     ERREUR Remotive : {ex}")
+    jobs = [j for j in jobs if is_relevant(j)]
+    print(f"     {len(jobs)} offres pertinentes")
+    return jobs
+
+
+def fetch_weworkremotely_jobs():
+    print("  → We Work Remotely (RSS)...")
+    feeds = [
+        "https://weworkremotely.com/categories/remote-marketing-jobs.rss",
+        "https://weworkremotely.com/categories/remote-customer-support-jobs.rss",
+    ]
+    jobs = []
+    for url in feeds:
+        try:
+            feed = feedparser.parse(url)
+            for e in feed.entries:
+                title = e.get("title", "")
+                company = ""
+                if ":" in title:
+                    company, title = title.split(":", 1)
+                    company, title = company.strip(), title.strip()
+                region = e.get("region", "") or e.get("summary", "") or ""
+                jobs.append({
+                    "source": "We Work Remotely",
+                    "title": title,
+                    "link": e.get("link", ""),
+                    "company": company,
+                    "location": (e.get("region", "") or "Remote"),
+                    "description": e.get("summary", "") or e.get("description", ""),
+                    "published": e.get("published", ""),
+                    "telework_days": 5,
+                    "in_france": remote_scope_in_france(region),
+                })
+        except Exception as ex:
+            print(f"     ERREUR WWR : {ex}")
+    jobs = [j for j in jobs if is_relevant(j)]
+    unique = _dedup(jobs)
+    print(f"     {len(unique)} offres pertinentes")
+    return unique
+
+
+def fetch_jobicy_jobs():
+    print("  → Jobicy API...")
+    jobs = []
+    for params in [{"count": 50, "geo": "france", "tag": "crm"},
+                   {"count": 50, "geo": "europe", "tag": "marketing"},
+                   {"count": 50, "geo": "anywhere", "tag": "crm"}]:
+        try:
+            r = requests.get("https://jobicy.com/api/v2/remote-jobs", params=params,
+                             headers={"User-Agent": "JobScraper/1.0"}, timeout=15)
+            r.raise_for_status()
+            for o in r.json().get("jobs", []):
+                geo = o.get("jobGeo", "") or ""
+                jobs.append({
+                    "source": "Jobicy",
+                    "title": o.get("jobTitle", ""),
+                    "link": o.get("url", ""),
+                    "company": o.get("companyName", ""),
+                    "location": geo or "Remote",
+                    "description": o.get("jobExcerpt", "") or o.get("jobDescription", ""),
+                    "salary_raw": _range_salary(o.get("annualSalaryMin"),
+                                                o.get("annualSalaryMax"),
+                                                o.get("salaryCurrency", "€")),
+                    "published": o.get("pubDate", ""),
+                    "telework_days": 5,
+                    "in_france": remote_scope_in_france(geo),
+                })
+            time.sleep(0.3)
+        except Exception as ex:
+            print(f"     ERREUR Jobicy : {ex}")
+    jobs = [j for j in jobs if is_relevant(j)]
+    unique = _dedup(jobs)
+    print(f"     {len(unique)} offres pertinentes")
+    return unique
+
+
+def fetch_remoteok_jobs():
+    print("  → RemoteOK API...")
+    jobs = []
+    try:
+        r = requests.get("https://remoteok.com/api",
+                         headers={"User-Agent": "Mozilla/5.0 (compatible; JobScraper/1.0)"},
+                         timeout=15)
+        r.raise_for_status()
+        for o in r.json():
+            if not isinstance(o, dict) or not o.get("position"):
+                continue  # 1er élément = mention légale
+            loc = o.get("location", "") or ""
+            jobs.append({
+                "source": "RemoteOK",
+                "title": o.get("position", ""),
+                "link": o.get("url", ""),
+                "company": o.get("company", ""),
+                "location": loc or "Remote",
+                "description": o.get("description", ""),
+                "salary_raw": _range_salary(o.get("salary_min"), o.get("salary_max"), "$"),
+                "published": o.get("date", ""),
+                "telework_days": 5,
+                "in_france": remote_scope_in_france(loc),
+            })
+    except Exception as ex:
+        print(f"     ERREUR RemoteOK : {ex}")
+    jobs = [j for j in jobs if is_relevant(j)]
+    print(f"     {len(jobs)} offres pertinentes")
+    return jobs
 
 
 # ── Enrichissement ─────────────────────────────────────────────────────────────
@@ -514,8 +693,10 @@ def compute_score(job):
 def should_include(job):
     # Le filtrage trajet / télétravail est délégué au dashboard (filtre
     # "Mes critères", activé par défaut) pour ne perdre aucune offre à la source
-    # — notamment les postes 100 % télétravail éloignés. On ne filtre plus ici
-    # que sur le salaire plancher.
+    # — notamment les postes 100 % télétravail éloignés.
+    if not is_relevant(job):
+        return False, "Hors périmètre CRM / Campaign Manager"
+
     sal = parse_salary_value(job.get("salary_raw") or job.get("salary_extracted") or "")
     if sal and sal < CONFIG["salary_hard_min"]:
         return False, f"Salaire sous actuel ({sal:,}€)"
@@ -664,11 +845,17 @@ def run():
         all_jobs.extend(fetch_rss(s, u))
         time.sleep(1)
 
-    print("\n[3/4] France Travail (API)...")
+    print("\n[3] France Travail (API)...")
     all_jobs.extend(fetch_francetravail_jobs())
 
-    print("\n[4/4] Adzuna (API)...")
+    print("\n[4] Adzuna (API)...")
     all_jobs.extend(fetch_adzuna_jobs())
+
+    print("\n[5] Sources 100 % télétravail...")
+    all_jobs.extend(fetch_remotive_jobs())
+    all_jobs.extend(fetch_weworkremotely_jobs())
+    all_jobs.extend(fetch_jobicy_jobs())
+    all_jobs.extend(fetch_remoteok_jobs())
 
     print(f"\nTotal brut : {len(all_jobs)}")
     all_jobs = _dedup(all_jobs)
@@ -681,8 +868,13 @@ def run():
         title = job.get("title", "")
         if not job.get("salary_raw"):
             job["salary_extracted"] = extract_salary(desc + " " + title)
-        job["telework_days"] = extract_telework_days(title + " " + desc)
-        job["in_france"] = is_in_france(job.get("location", ""), desc)
+        # Ne pas écraser les champs déjà posés par les sources 100 % remote
+        if "telework_days" not in job:
+            job["telework_days"] = extract_telework_days(title + " " + desc)
+        if "in_france" not in job:
+            job["in_france"] = is_in_france(job.get("location", ""), desc)
+        if "contract_type" not in job:
+            job["contract_type"] = "CDI" if check_cdi(title + " " + desc) else None
 
         # Télétravail introuvable + description probablement tronquée
         # -> on va chercher le texte complet de l'annonce.
@@ -697,8 +889,9 @@ def run():
                 fetched += 1
                 time.sleep(0.3)
 
+        # Trajet : inutile pour le 100 % télétravail
         loc = job.get("location", "")
-        if loc and loc != "Île-de-France":
+        if job.get("telework_days") != 5 and loc and loc != "Île-de-France":
             job["commute_minutes"] = get_commute_time(loc)
             time.sleep(0.2)
         if (i + 1) % 10 == 0:

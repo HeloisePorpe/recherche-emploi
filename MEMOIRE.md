@@ -27,14 +27,20 @@ personnalisé.
 
 ## Sources d'offres
 
-| Source | Type | Volume typique | Notes |
-|---|---|---|---|
-| France Travail | API | ~46 | Descriptions complètes |
-| Adzuna | API | ~138 | Descriptions **tronquées à 500 car.** |
-| Indeed / WTTJ | RSS | 0 | Flux bloqués (désactivés de fait) |
-| Jooble | — | — | Écarté (mauvaise couverture FR) |
+| Source | Type | Notes |
+|---|---|---|
+| France Travail | API | CDI, IDF, descriptions complètes |
+| Adzuna | API | Descriptions **tronquées à 500 car.** |
+| **Remotive** | API | 100 % remote, catégorie marketing |
+| **We Work Remotely** | RSS | 100 % remote (marketing + support) |
+| **Jobicy** | API | 100 % remote, filtre géo (France/Europe/anywhere) |
+| **RemoteOK** | API | 100 % remote (tech-heavy) |
+| Indeed / WTTJ | RSS | Flux bloqués (désactivés de fait) |
 
-Total : ~184 brut → ~166 retenues après filtrage.
+Les sources remote posent `telework_days = 5` et `in_france` selon le périmètre
+(France/Europe/worldwide = True ; US-only, etc. = False). Toutes les offres
+passent un **filtre de pertinence** (CRM / Campaign Manager / marketing automation)
+et le **salaire plancher** (42 055 € si indiqué).
 
 ## Secrets GitHub Actions (Settings → Secrets → Actions)
 
@@ -53,7 +59,7 @@ Valeurs **non** stockées ici. Noms attendus :
 
 `source`, `title`, `link`, `company`, `location`, `description`,
 `salary_raw` / `salary_extracted`, `published`, `telework_days`,
-`commute_minutes`, `in_france`, `score`, `score_reasons`.
+`commute_minutes`, `in_france`, `contract_type`, `score`, `score_reasons`.
 
 ## Dashboard — filtres disponibles
 
@@ -61,7 +67,7 @@ Valeurs **non** stockées ici. Noms attendus :
 - Tri : note / date / salaire
 - Ancienneté (7 / 14 / 30 / 90 jours)
 - Note minimale, salaire minimum, « avec salaire affiché uniquement »
-- Télétravail uniquement
+- Télétravail uniquement, **CDI uniquement**
 - **🎯 Mes critères trajet + télétravail** (**activé par défaut**) :
   - Masque les offres à **plus de 75 min** de trajet…
   - …**sauf** les postes **100 % télétravail** (en France), toujours affichés
