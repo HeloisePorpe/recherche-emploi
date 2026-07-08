@@ -512,14 +512,10 @@ def compute_score(job):
 # ── Filtre ─────────────────────────────────────────────────────────────────────
 
 def should_include(job):
-    commute = job.get("commute_minutes")
-    if commute and commute > CONFIG["max_commute_minutes"]:
-        return False, f"Trajet trop long ({commute} min)"
-
-    tw = job.get("telework_days")
-    if tw is not None and tw < CONFIG["min_telework_days"]:
-        return False, f"Télétravail insuffisant ({tw}j)"
-
+    # Le filtrage trajet / télétravail est délégué au dashboard (filtre
+    # "Mes critères", activé par défaut) pour ne perdre aucune offre à la source
+    # — notamment les postes 100 % télétravail éloignés. On ne filtre plus ici
+    # que sur le salaire plancher.
     sal = parse_salary_value(job.get("salary_raw") or job.get("salary_extracted") or "")
     if sal and sal < CONFIG["salary_hard_min"]:
         return False, f"Salaire sous actuel ({sal:,}€)"

@@ -62,12 +62,19 @@ Valeurs **non** stockées ici. Noms attendus :
 - Ancienneté (7 / 14 / 30 / 90 jours)
 - Note minimale, salaire minimum, « avec salaire affiché uniquement »
 - Télétravail uniquement
-- **🎯 Mes critères trajet + télétravail** :
-  - Hybride visible si trajet ≤ 1 h **et** ≥ 3 j de télétravail (ou ≥ 2 j si < 40 min)
-  - 100 % télétravail visible si le poste est en France
-  - Modes *lenient* (défaut, badge « à vérifier ») ou *strict*
+- **🎯 Mes critères trajet + télétravail** (**activé par défaut**) :
+  - Masque les offres à **plus de 75 min** de trajet…
+  - …**sauf** les postes **100 % télétravail** (en France), toujours affichés
+  - Trajet non calculé → affiché et marqué « à vérifier » (masqué en mode *strict*)
+  - Seuil dans `docs/app.js` : `MAX_COMMUTE = 75`
 - Filtre par source
 - Filtres mémorisés (localStorage), compteur de filtres actifs
+
+## Filtrage à la source (`should_include`)
+
+Le scraper ne filtre plus que sur le **salaire plancher**. Le trajet et le
+télétravail sont volontairement **laissés au dashboard** (filtre « Mes critères »)
+pour ne perdre aucune offre — notamment les postes 100 % télétravail éloignés.
 
 ## Scoring (`compute_score` dans `job_scraper.py`)
 
