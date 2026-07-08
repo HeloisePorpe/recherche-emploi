@@ -2,7 +2,8 @@
 
 // --- État global ---
 let allJobs = [];
-const STORAGE_KEY = 'recherche-emploi-filtres';
+const STORAGE_KEY = 'recherche-emploi-filtres-v2';
+const MAX_COMMUTE = 75;  // minutes ; au-delà, on masque sauf 100 % télétravail
 
 const defaultState = () => ({
   search: '',
@@ -12,7 +13,7 @@ const defaultState = () => ({
   minSalary: 0,    // € annuels bruts ; 0 = indifférent
   salaryOnly: false,
   teleworkOnly: false,
-  myCriteria: false,     // filtre trajet + télétravail personnalisé
+  myCriteria: true,      // filtre trajet + télétravail — activé par défaut
   criteriaStrict: false, // masquer aussi les offres à l'info manquante
   sources: new Set(), // sources cochées ; vide = toutes
 });
@@ -158,25 +159,19 @@ function syncControls() {
 }
 
 // Évalue les critères perso trajet + télétravail.
-// Renvoie : 'ok' | 'no' | 'unknown-tw' | 'unknown-commute'
-//   - 100 % télétravail (5) : OK si le poste est en France.
-//   - Hybride : OK si (≥3 j télétravail ET trajet ≤ 60 min)
-//               ou (≥2 j télétravail ET trajet ≤ 40 min).
-//   - Info manquante : renvoyée à part pour un traitement lenient/strict.
+// Renvoie : 'ok' | 'no' | 'unknown-commute'
+//   - 100 % télétravail (5) en France : toujours OK (peu importe le trajet).
+//   - Sinon : OK si le trajet est ≤ 75 min ; masqué au-delà.
+//   - Trajet inconnu : renvoyé à part (affiché en lenient, masqué en strict).
 function criteriaStatus(job) {
   const tw = job.telework_days;         // nombre ou null
   const commute = job.commute_minutes;  // nombre ou null
   const inFrance = job.in_france !== false;
 
   if (tw === 5) return inFrance ? 'ok' : 'no';   // 100 % télétravail
-  if (tw == null) return 'unknown-tw';           // télétravail inconnu
-  if (tw < 2) return 'no';                        // télétravail insuffisant
-
-  // hybride : télétravail ≥ 2 connu, reste le trajet
-  if (commute == null) return 'unknown-commute';
-  if (tw >= 3 && commute <= 60) return 'ok';
-  if (commute <= 40) return 'ok';                 // tw ≥ 2 et trajet court
-  return 'no';
+  if (commute == null) return 'unknown-commute'; // trajet non calculé
+  if (commute <= MAX_COMMUTE) return 'ok';        // ≤ 75 min
+  return 'no';                                     // > 75 min et pas full-remote
 }
 
 // --- Filtrage & tri ---
@@ -267,11 +262,9 @@ function renderCard(job) {
   if (commute) tags.push(`<span class="tag tag-commute">${escapeHtml(commute)}</span>`);
   if (date) tags.push(`<span class="tag">${escapeHtml(date)}</span>`);
 
-  // Badges "à vérifier" quand le filtre perso est actif et l'info manque
-  if (state.myCriteria) {
-    const st = criteriaStatus(job);
-    if (st === 'unknown-tw') tags.push('<span class="tag tag-warn">Télétravail à vérifier</span>');
-    else if (st === 'unknown-commute') tags.push('<span class="tag tag-warn">Trajet à vérifier</span>');
+  // Badge "à vérifier" quand le filtre perso est actif et le trajet manque
+  if (state.myCriteria && criteriaStatus(job) === 'unknown-commute') {
+    tags.push('<span class="tag tag-warn">Trajet à vérifier</span>');
   }
 
   const reasons = Array.isArray(job.score_reasons) && job.score_reasons.length
