@@ -1,0 +1,118 @@
+# Mémoire du projet — Recherche emploi
+
+> Fichier de contexte pour reprendre le projet depuis n'importe quelle session
+> (PC, web, mobile). Ne contient **aucun secret** : les clés API vivent
+> uniquement dans les GitHub Secrets du dépôt.
+
+## Objectif
+
+Veille automatique d'offres d'emploi **CRM / Campaign Manager / Chef de projet CRM**
+en **Île-de-France**, avec un dashboard web consultable partout et un scoring
+personnalisé.
+
+- **Site en ligne :** https://heloiseporpe.github.io/recherche-emploi/
+- **Dépôt (public) :** https://github.com/HeloisePorpe/recherche-emploi
+- **Hébergement :** GitHub Pages (branche `master`, dossier `/docs`).
+
+## Comment ça marche
+
+1. **`job_scraper.py`** interroge les sources, score et filtre les offres, puis
+   écrit **`docs/jobs_output.json`**.
+2. **GitHub Actions** (`.github/workflows/scraper.yml`) relance le scraper
+   **chaque matin (~5h, heure de Paris)** et pousse le JSON mis à jour.
+3. Le **dashboard** (`docs/index.html` + `app.js` + `styles.css`) lit ce JSON et
+   l'affiche avec filtres, recherche et tri.
+4. Le **suivi de candidatures** (`docs/candidatures.html` + `candidatures.js`)
+   est un Kanban personnel (état stocké dans le navigateur).
+
+## Sources d'offres
+
+| Source | Type | Volume typique | Notes |
+|---|---|---|---|
+| France Travail | API | ~46 | Descriptions complètes |
+| Adzuna | API | ~138 | Descriptions **tronquées à 500 car.** |
+| Indeed / WTTJ | RSS | 0 | Flux bloqués (désactivés de fait) |
+| Jooble | — | — | Écarté (mauvaise couverture FR) |
+
+Total : ~184 brut → ~166 retenues après filtrage.
+
+## Secrets GitHub Actions (Settings → Secrets → Actions)
+
+Valeurs **non** stockées ici. Noms attendus :
+
+- `FRANCETRAVAIL_CLIENT_ID`, `FRANCETRAVAIL_CLIENT_SECRET`
+- `ADZUNA_APP_ID`, `ADZUNA_APP_KEY`
+- `HOME_ADDRESS` *(optionnel — adresse de départ pour les trajets ; jamais dans le code public)*
+- `NAVITIA_TOKEN` *(optionnel — trajets en transport, gratuit via navitia.io)*
+- `GOOGLE_MAPS_API_KEY` *(optionnel — alternative payante à Navitia)*
+
+`config.json` est **généré en CI** à partir de ces secrets et n'est jamais commité
+(il est dans `.gitignore`). Voir `SETUP_GITHUB.md` pour la mise en route.
+
+## Champs d'une offre (`jobs_output.json`)
+
+`source`, `title`, `link`, `company`, `location`, `description`,
+`salary_raw` / `salary_extracted`, `published`, `telework_days`,
+`commute_minutes`, `in_france`, `score`, `score_reasons`.
+
+## Dashboard — filtres disponibles
+
+- Recherche texte (titre + entreprise + lieu + description)
+- Tri : note / date / salaire
+- Ancienneté (7 / 14 / 30 / 90 jours)
+- Note minimale, salaire minimum, « avec salaire affiché uniquement »
+- Télétravail uniquement
+- **🎯 Mes critères trajet + télétravail** :
+  - Hybride visible si trajet ≤ 1 h **et** ≥ 3 j de télétravail (ou ≥ 2 j si < 40 min)
+  - 100 % télétravail visible si le poste est en France
+  - Modes *lenient* (défaut, badge « à vérifier ») ou *strict*
+- Filtre par source
+- Filtres mémorisés (localStorage), compteur de filtres actifs
+
+## Scoring (`compute_score` dans `job_scraper.py`)
+
+Base 5/10, ajusté par : outils/compétences du profil, secteurs préférés/pénalisés,
+« Salesforce obligatoire » (malus), salaire vs cible, trajet, jours de télétravail.
+
+Profil candidat cible : CRM/Campaign Manager ; outils clés (emarsys, HTML/CSS,
+segmentation, email/SMS…) ; salaire cible ~45–50 k€ (plancher dur 42 055 €).
+
+## Calcul des trajets
+
+- **Provider par défaut : Navitia** (gratuit) ; Google Maps en secours.
+- Géocodage via la **Base Adresse Nationale** (gratuit, sans clé).
+- Trajet porte-à-porte pour une arrivée à 9h un jour de semaine.
+- Sans `NAVITIA_TOKEN` + `HOME_ADDRESS`, `commute_minutes` reste vide et le filtre
+  trajet affiche « à vérifier ».
+
+## Suivi de candidatures (Kanban)
+
+- Page `docs/candidatures.html`, colonnes : **À postuler → Postulé → Entretien →
+  Réponse**.
+- Ajout depuis le dashboard (bouton « Suivre » sur chaque offre) ou manuellement.
+- Glisser-déposer entre colonnes ; notes libres par candidature.
+- **État stocké dans le navigateur (localStorage)** → propre à chaque appareil,
+  non synchronisé PC/mobile (voir « Pistes »).
+
+## Contraintes connues
+
+- Site **statique** (pas de backend) → pas de synchronisation multi-appareils du Kanban.
+- Adzuna tronque ses descriptions → le télétravail n'est pas toujours détectable
+  (mitigé par la récupération du texte complet des annonces).
+
+## Pistes / idées pour la suite
+
+- Synchroniser le Kanban entre appareils (backend léger : Firebase, Supabase, ou
+  un fichier commité via l'API GitHub).
+- Ajouter d'autres sources d'offres.
+- Ajuster le scoring / les mots-clés du profil.
+
+## Historique des sessions
+
+- **Session initiale (PC, Claude Code local)** : installation Python, test du
+  scraper, config API France Travail + Adzuna, construction du dashboard,
+  publication GitHub Pages, mise en place du scan quotidien, dépôt public créé,
+  adresse perso retirée du code, secrets replacés dans le bon dépôt.
+- **Session web/cloud (celle-ci)** : filtres enrichis, filtre trajet + télétravail
+  personnalisé, intégration Navitia + récupération des annonces complètes, ajout
+  du suivi de candidatures, ce fichier mémoire.
