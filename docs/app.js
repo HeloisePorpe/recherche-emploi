@@ -288,6 +288,11 @@ function renderCard(job) {
     ? `<div class="card-company">${escapeHtml(job.company)}</div>`
     : '';
 
+  const tracked = isTracked(job);
+  const followBtn = `<button class="follow-btn${tracked ? ' followed' : ''}" type="button"
+      data-follow="${escapeHtml(candidatureId(job))}"${tracked ? ' disabled' : ''}>
+      ${tracked ? '✓ Suivie' : '➕ Suivre'}</button>`;
+
   return `
     <article class="card">
       <div class="card-top">
@@ -299,6 +304,7 @@ function renderCard(job) {
       ${companyHtml}
       <div class="card-meta">${tags.join('')}</div>
       ${reasons}
+      <div class="card-actions">${followBtn}</div>
     </article>`;
 }
 
@@ -392,6 +398,18 @@ function bindEvents() {
   els.toggleFilters.addEventListener('click', () => {
     const open = els.filters.classList.toggle('open');
     els.toggleFilters.setAttribute('aria-expanded', String(open));
+  });
+  // Bouton "Suivre" (délégation : les cartes sont re-rendues)
+  els.cards.addEventListener('click', (e) => {
+    const btn = e.target.closest('[data-follow]');
+    if (!btn) return;
+    const id = btn.getAttribute('data-follow');
+    const job = allJobs.find((j) => candidatureId(j) === id);
+    if (job && addCandidature(job)) {
+      btn.textContent = '✓ Suivie';
+      btn.classList.add('followed');
+      btn.disabled = true;
+    }
   });
 }
 

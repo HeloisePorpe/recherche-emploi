@@ -43,6 +43,27 @@ html, body {
   max-width: 1240px;
   margin: 0 auto;
   padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.app-nav { display: flex; gap: 8px; }
+.nav-link {
+  padding: 7px 14px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--text-muted);
+  border: 1px solid transparent;
+}
+.nav-link:hover { background: var(--bg); color: var(--text); }
+.nav-link.active {
+  background: #eef2ff;
+  color: var(--primary-dark);
+  border-color: #dbe3ff;
 }
 .app-header h1 {
   margin: 0;
@@ -273,6 +294,168 @@ html, body {
   color: var(--text-muted);
   padding: 60px 20px;
   font-size: 1rem;
+}
+
+/* Bouton "Suivre" sur les cartes d'offres */
+.card-actions { margin-top: 12px; }
+.follow-btn {
+  width: 100%;
+  padding: 8px;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+}
+.follow-btn:hover { background: var(--primary-dark); }
+.follow-btn.followed {
+  background: var(--green-bg);
+  color: var(--green);
+  cursor: default;
+}
+
+/* ── Kanban candidatures ─────────────────────────────────────── */
+.board-wrap { max-width: 1240px; margin: 0 auto; padding: 20px; }
+
+.add-form {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+.add-form input {
+  flex: 1 1 180px;
+  padding: 9px 11px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  background: #fff;
+  color: var(--text);
+}
+.add-form input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+.add-btn {
+  padding: 9px 18px;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+}
+.add-btn:hover { background: var(--primary-dark); }
+.board-hint { color: var(--text-muted); font-size: 0.85rem; margin: 0 0 16px; }
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  align-items: start;
+}
+.column {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  min-height: 120px;
+}
+.col-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border);
+}
+.col-title { font-weight: 700; font-size: 0.95rem; }
+.col-count {
+  background: var(--bg);
+  color: var(--text-muted);
+  border-radius: 999px;
+  padding: 1px 9px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.col-body {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 60px;
+  flex: 1;
+  transition: background 0.15s ease;
+  border-radius: 0 0 var(--radius) var(--radius);
+}
+.col-body.drop-hover { background: #eef4ff; }
+.col-empty {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  text-align: center;
+  margin: 8px 0;
+  opacity: 0.7;
+}
+
+.kanban-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 11px 12px;
+  box-shadow: var(--shadow);
+  cursor: grab;
+}
+.kanban-card.dragging { opacity: 0.5; }
+.kc-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+.kc-title { margin: 0; font-size: 0.92rem; font-weight: 700; line-height: 1.3; }
+.kc-del {
+  flex-shrink: 0;
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 1.2rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 2px;
+}
+.kc-del:hover { color: var(--red); }
+.kc-company { font-size: 0.85rem; font-weight: 600; margin-top: 3px; }
+.kc-loc { font-size: 0.8rem; color: var(--text-muted); margin-top: 2px; }
+.kc-link {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 0.8rem;
+  color: var(--primary);
+  text-decoration: none;
+}
+.kc-link:hover { text-decoration: underline; }
+.kc-notes {
+  width: 100%;
+  margin-top: 8px;
+  padding: 6px 8px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 0.82rem;
+  resize: vertical;
+  color: var(--text);
+  background: #fbfcfe;
+}
+.kc-notes:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.10);
+}
+
+@media (max-width: 860px) {
+  .board { grid-template-columns: 1fr; }
 }
 
 /* Responsive / mobile */
