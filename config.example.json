@@ -1,6 +1,7 @@
 {
   "home_address": "VOTRE_ADRESSE_ICI",
-  "commute_provider": "navitia",
+  "commute_provider": "idfm",
+  "idfm_token": "VOTRE_TOKEN_IDFM_PRIM_ICI",
   "navitia_token": "VOTRE_TOKEN_NAVITIA_ICI",
   "google_maps_api_key": "VOTRE_CLE_GOOGLE_MAPS_ICI",
   "fetch_full_descriptions": true,

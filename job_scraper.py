@@ -48,7 +48,7 @@ CONFIG.setdefault("email_smtp_server", "smtp.gmail.com")
 CONFIG.setdefault("email_smtp_port", 587)
 CONFIG.setdefault("max_commute_minutes", 90)
 CONFIG.setdefault("min_telework_days", 2)
-CONFIG.setdefault("commute_provider", "")       # "navitia" | "google" | "" (auto)
+CONFIG.setdefault("commute_provider", "")       # "idfm" | "navitia" | "google" | "" (auto)
 CONFIG.setdefault("fetch_full_descriptions", True)  # récupère le texte complet des annonces tronquées
 
 CANDIDATE_PROFILE = {
@@ -253,24 +253,21 @@ def _next_weekday_9am():
     return d.replace(hour=9, minute=0, second=0, microsecond=0).strftime("%Y%m%dT%H%M%S")
 
 
-def get_commute_time_navitia(destination):
-    """Trajet porte-à-porte en transports via Navitia (gratuit après inscription)."""
-    token = CONFIG.get("navitia_token", "")
-    if not token or "VOTRE" in token or not destination:
-        return None
+def _navitia_journey(base_url, headers, destination, label):
+    """Appel commun aux API Navitia (Navitia.io ou IDFM PRIM, même format)."""
     origin = geocode(CONFIG.get("home_address", ""))
     dest = geocode(destination + ", Île-de-France, France")
     if not origin or not dest:
         return None
     try:
         r = requests.get(
-            "https://api.navitia.io/v1/journeys",
+            base_url,
             params={"from": f"{origin[0]};{origin[1]}",
                     "to": f"{dest[0]};{dest[1]}",
                     "datetime": _next_weekday_9am(),
                     "datetime_represents": "arrival",
                     "count": 1},
-            headers={"Authorization": token},
+            headers=headers,
             timeout=20,
         )
         r.raise_for_status()
@@ -278,8 +275,29 @@ def get_commute_time_navitia(destination):
         if journeys:
             return round(journeys[0]["duration"] / 60)
     except Exception as ex:
-        print(f"     Navitia error ({destination[:30]}) : {ex}")
+        print(f"     {label} error ({destination[:30]}) : {ex}")
     return None
+
+
+def get_commute_time_idfm(destination):
+    """Trajet en transports via l'API PRIM d'Île-de-France Mobilités (gratuit).
+    Basée sur Navitia — inscription sur prim.iledefrance-mobilites.fr."""
+    token = CONFIG.get("idfm_token", "")
+    if not token or "VOTRE" in token or not destination:
+        return None
+    return _navitia_journey(
+        "https://prim.iledefrance-mobilites.fr/marketplace/v2/navitia/journeys",
+        {"apikey": token}, destination, "IDFM")
+
+
+def get_commute_time_navitia(destination):
+    """Trajet via Navitia.io (payant depuis 2024 — conservé en option)."""
+    token = CONFIG.get("navitia_token", "")
+    if not token or "VOTRE" in token or not destination:
+        return None
+    return _navitia_journey(
+        "https://api.navitia.io/v1/journeys",
+        {"Authorization": token}, destination, "Navitia")
 
 
 def get_commute_time_google(destination):
@@ -305,13 +323,23 @@ def get_commute_time_google(destination):
     return None
 
 
+def _has(key):
+    v = CONFIG.get(key)
+    return bool(v) and "VOTRE" not in v
+
+
 def get_commute_time(destination):
-    """Dispatcher : Navitia (gratuit) par défaut, Google en secours."""
+    """Dispatcher : IDFM PRIM (gratuit, IDF) par défaut, puis Navitia, puis Google."""
     provider = CONFIG.get("commute_provider", "").lower()
-    navitia_ok = CONFIG.get("navitia_token") and "VOTRE" not in CONFIG.get("navitia_token", "")
-    google_ok = CONFIG.get("google_maps_api_key") and "VOTRE" not in CONFIG.get("google_maps_api_key", "")
     if not provider:
-        provider = "navitia" if navitia_ok else ("google" if google_ok else "")
+        if _has("idfm_token"):
+            provider = "idfm"
+        elif _has("navitia_token"):
+            provider = "navitia"
+        elif _has("google_maps_api_key"):
+            provider = "google"
+    if provider == "idfm":
+        return get_commute_time_idfm(destination)
     if provider == "navitia":
         return get_commute_time_navitia(destination)
     if provider == "google":
