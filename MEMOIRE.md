@@ -74,7 +74,13 @@ Valeurs **non** stockées ici. Noms attendus :
   - Trajet non calculé → affiché et marqué « à vérifier » (masqué en mode *strict*)
   - Seuil dans `docs/app.js` : `MAX_COMMUTE = 75`
 - Filtre par source
+- **Date de parution** affichée sur chaque carte
+- **Archivage** des offres non pertinentes (bouton « ✕ Pas pertinent ») :
+  masquées de la liste, consultables via « Voir les archivées », restaurables,
+  et **exportables en JSON** (`offres-archivees.json`) pour analyse/affinage
+  des filtres. Stockage : `localStorage` clé `recherche-emploi-archivees`.
 - Filtres mémorisés (localStorage), compteur de filtres actifs
+- Responsive : 1 col (mobile) / 2 col (tablette-portable) / auto (large)
 
 ## Filtrage à la source (`should_include`)
 
