@@ -287,7 +287,7 @@ def get_commute_time_idfm(destination):
         return None
     return _navitia_journey(
         "https://prim.iledefrance-mobilites.fr/marketplace/v2/navitia/journeys",
-        {"apikey": token}, destination, "IDFM")
+        {"apiKey": token}, destination, "IDFM")
 
 
 def get_commute_time_navitia(destination):
