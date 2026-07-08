@@ -9,8 +9,14 @@
 <body>
   <header class="app-header">
     <div class="header-inner">
-      <h1>Recherche d'emploi</h1>
-      <p class="subtitle">Tableau de bord des offres</p>
+      <div>
+        <h1>Recherche d'emploi</h1>
+        <p class="subtitle">Tableau de bord des offres</p>
+      </div>
+      <nav class="app-nav">
+        <a href="index.html" class="nav-link active">Offres</a>
+        <a href="candidatures.html" class="nav-link">Mes candidatures</a>
+      </nav>
     </div>
   </header>
 
@@ -24,7 +30,7 @@
     <aside id="filters" class="filters" aria-label="Filtres">
       <div class="filter-block">
         <label for="search" class="filter-label">Recherche</label>
-        <input type="search" id="search" placeholder="Titre ou entreprise..." autocomplete="off" />
+        <input type="search" id="search" placeholder="Titre, entreprise, lieu, mot-clé..." autocomplete="off" />
       </div>
 
       <div class="filter-block">
@@ -32,6 +38,18 @@
         <select id="sort">
           <option value="score">Note (décroissante)</option>
           <option value="date">Date (plus récente)</option>
+          <option value="salary">Salaire (décroissant)</option>
+        </select>
+      </div>
+
+      <div class="filter-block">
+        <label for="recency" class="filter-label">Ancienneté</label>
+        <select id="recency">
+          <option value="0">Toutes les dates</option>
+          <option value="7">7 derniers jours</option>
+          <option value="14">14 derniers jours</option>
+          <option value="30">30 derniers jours</option>
+          <option value="90">3 derniers mois</option>
         </select>
       </div>
 
@@ -43,10 +61,42 @@
       </div>
 
       <div class="filter-block">
+        <label for="min-salary" class="filter-label">
+          Salaire min. : <span id="min-salary-value">Indifférent</span>
+        </label>
+        <input type="range" id="min-salary" min="0" max="90000" step="5000" value="0" />
+      </div>
+
+      <div class="filter-block">
+        <label class="checkbox-line">
+          <input type="checkbox" id="salary-only" />
+          <span>Avec salaire affiché uniquement</span>
+        </label>
+      </div>
+
+      <div class="filter-block">
         <label class="checkbox-line">
           <input type="checkbox" id="telework-only" />
           <span>Télétravail uniquement</span>
         </label>
+      </div>
+
+      <div class="filter-block criteria-block">
+        <label class="checkbox-line">
+          <input type="checkbox" id="my-criteria" />
+          <span><strong>🎯 Mes critères trajet + télétravail</strong></span>
+        </label>
+        <div id="criteria-sub" class="criteria-sub" hidden>
+          <label class="checkbox-line">
+            <input type="checkbox" id="criteria-strict" />
+            <span>Mode strict (masquer les offres à l'info manquante)</span>
+          </label>
+          <p class="criteria-note">
+            <strong>Hybride :</strong> ≤ 1 h de trajet avec ≥ 3 j de télétravail
+            (ou ≥ 2 j si &lt; 40 min).<br>
+            <strong>100 % télétravail :</strong> poste en France.
+          </p>
+        </div>
       </div>
 
       <div class="filter-block">
@@ -67,6 +117,7 @@
     </main>
   </div>
 
+  <script src="store.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

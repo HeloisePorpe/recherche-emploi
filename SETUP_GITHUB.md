@@ -38,10 +38,37 @@ Pour **chaque** ligne : tapez le **Name** exactement comme écrit, collez la
 | `ADZUNA_APP_ID`                | Votre « App ID » Adzuna                 |
 | `ADZUNA_APP_KEY`               | Votre « App Key » Adzuna                |
 
-> **Secret optionnel** : `HOME_ADDRESS` — votre adresse, uniquement si vous
-> activez plus tard le calcul des temps de trajet (nécessite une clé Google
-> Maps). Sans ce secret, une valeur générique « Île-de-France, France » est
-> utilisée, et **aucune adresse personnelle n'apparaît dans le code public**.
+---
+
+## Étape 1 bis — Activer le filtre « trajet + télétravail » (optionnel mais recommandé)
+
+Le dashboard propose un filtre **« 🎯 Mes critères trajet + télétravail »**.
+Pour qu'il calcule les temps de trajet en transport, ajoutez **2 secrets** :
+
+| Name (à copier tel quel) | Valeur                                                        |
+|--------------------------|--------------------------------------------------------------|
+| `HOME_ADDRESS`           | Votre adresse de départ, ex. `7 boulevard de la liberté, Bures-sur-Yvette` |
+| `IDFM_TOKEN`             | Votre clé **Île-de-France Mobilités (PRIM)** — gratuite, voir ci-dessous |
+
+### Obtenir une clé IDFM PRIM (gratuit, sans carte bancaire)
+
+Île-de-France Mobilités expose une API de calcul d'itinéraire (basée sur Navitia)
+gratuite, idéale ici puisque le domicile et les offres sont en Île-de-France.
+
+1. Allez sur **https://prim.iledefrance-mobilites.fr/** → créez un compte (gratuit).
+2. Confirmez votre e-mail, connectez-vous.
+3. Dans **Mes jetons d'authentification** (ou « API keys »), copiez votre **clé**.
+4. Collez-la dans le secret `IDFM_TOKEN`.
+
+Le calcul se fait porte-à-porte pour une arrivée à 9h un jour de semaine.
+
+> - **Aucune adresse personnelle n'apparaît dans le code public** : elle vit
+>   uniquement dans le secret `HOME_ADDRESS`.
+> - Sans ces secrets, le filtre fonctionne quand même (sur le télétravail et la
+>   localisation France), mais les trajets restent affichés « à vérifier ».
+> - **Note :** l'ancienne offre gratuite de Navitia.io n'existe plus. On utilise
+>   donc IDFM PRIM. Alternatives possibles : `GOOGLE_MAPS_API_KEY` (Google Maps,
+>   nécessite d'activer la facturation) ou `NAVITIA_TOKEN` (Navitia.io, payant).
 
 ---
 

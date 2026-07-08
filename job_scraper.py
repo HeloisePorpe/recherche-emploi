@@ -19,7 +19,7 @@ import re
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-from datetime import datetime
+from datetime import datetime, timedelta
 from typing import Optional
 
 _config_path = os.path.join(os.path.dirname(__file__), "config.json")
@@ -48,6 +48,8 @@ CONFIG.setdefault("email_smtp_server", "smtp.gmail.com")
 CONFIG.setdefault("email_smtp_port", 587)
 CONFIG.setdefault("max_commute_minutes", 90)
 CONFIG.setdefault("min_telework_days", 2)
+CONFIG.setdefault("commute_provider", "")       # "idfm" | "navitia" | "google" | "" (auto)
+CONFIG.setdefault("fetch_full_descriptions", True)  # récupère le texte complet des annonces tronquées
 
 CANDIDATE_PROFILE = {
     "tools_expert": [
@@ -219,7 +221,86 @@ def fetch_adzuna_jobs():
 
 # ── Enrichissement ─────────────────────────────────────────────────────────────
 
-def get_commute_time(destination):
+_geocode_cache = {}
+
+
+def geocode(address):
+    """Adresse -> (lon, lat) via la Base Adresse Nationale (gratuit, sans clé)."""
+    if not address:
+        return None
+    if address in _geocode_cache:
+        return _geocode_cache[address]
+    coords = None
+    try:
+        r = requests.get("https://api-adresse.data.gouv.fr/search/",
+                         params={"q": address, "limit": 1}, timeout=10)
+        r.raise_for_status()
+        feats = r.json().get("features", [])
+        if feats:
+            lon, lat = feats[0]["geometry"]["coordinates"]
+            coords = (lon, lat)
+    except Exception as ex:
+        print(f"     Geocode error ({address[:30]}) : {ex}")
+    _geocode_cache[address] = coords
+    return coords
+
+
+def _next_weekday_9am():
+    """Prochain jour ouvré à 9h, format Navitia (YYYYMMDDTHHMMSS)."""
+    d = datetime.now() + timedelta(days=1)
+    while d.weekday() >= 5:  # samedi / dimanche
+        d += timedelta(days=1)
+    return d.replace(hour=9, minute=0, second=0, microsecond=0).strftime("%Y%m%dT%H%M%S")
+
+
+def _navitia_journey(base_url, headers, destination, label):
+    """Appel commun aux API Navitia (Navitia.io ou IDFM PRIM, même format)."""
+    origin = geocode(CONFIG.get("home_address", ""))
+    dest = geocode(destination + ", Île-de-France, France")
+    if not origin or not dest:
+        return None
+    try:
+        r = requests.get(
+            base_url,
+            params={"from": f"{origin[0]};{origin[1]}",
+                    "to": f"{dest[0]};{dest[1]}",
+                    "datetime": _next_weekday_9am(),
+                    "datetime_represents": "arrival",
+                    "count": 1},
+            headers=headers,
+            timeout=20,
+        )
+        r.raise_for_status()
+        journeys = r.json().get("journeys", [])
+        if journeys:
+            return round(journeys[0]["duration"] / 60)
+    except Exception as ex:
+        print(f"     {label} error ({destination[:30]}) : {ex}")
+    return None
+
+
+def get_commute_time_idfm(destination):
+    """Trajet en transports via l'API PRIM d'Île-de-France Mobilités (gratuit).
+    Basée sur Navitia — inscription sur prim.iledefrance-mobilites.fr."""
+    token = CONFIG.get("idfm_token", "")
+    if not token or "VOTRE" in token or not destination:
+        return None
+    return _navitia_journey(
+        "https://prim.iledefrance-mobilites.fr/marketplace/v2/navitia/journeys",
+        {"apikey": token}, destination, "IDFM")
+
+
+def get_commute_time_navitia(destination):
+    """Trajet via Navitia.io (payant depuis 2024 — conservé en option)."""
+    token = CONFIG.get("navitia_token", "")
+    if not token or "VOTRE" in token or not destination:
+        return None
+    return _navitia_journey(
+        "https://api.navitia.io/v1/journeys",
+        {"Authorization": token}, destination, "Navitia")
+
+
+def get_commute_time_google(destination):
     key = CONFIG.get("google_maps_api_key", "")
     if not key or "VOTRE" in key or not destination:
         return None
@@ -242,6 +323,47 @@ def get_commute_time(destination):
     return None
 
 
+def _has(key):
+    v = CONFIG.get(key)
+    return bool(v) and "VOTRE" not in v
+
+
+def get_commute_time(destination):
+    """Dispatcher : IDFM PRIM (gratuit, IDF) par défaut, puis Navitia, puis Google."""
+    provider = CONFIG.get("commute_provider", "").lower()
+    if not provider:
+        if _has("idfm_token"):
+            provider = "idfm"
+        elif _has("navitia_token"):
+            provider = "navitia"
+        elif _has("google_maps_api_key"):
+            provider = "google"
+    if provider == "idfm":
+        return get_commute_time_idfm(destination)
+    if provider == "navitia":
+        return get_commute_time_navitia(destination)
+    if provider == "google":
+        return get_commute_time_google(destination)
+    return None
+
+
+def fetch_full_text(url):
+    """Récupère le texte brut d'une page d'annonce (pour retrouver le télétravail
+    absent des descriptions tronquées d'Adzuna). Best-effort, tolérant aux erreurs."""
+    if not url:
+        return ""
+    try:
+        r = requests.get(url, timeout=10, allow_redirects=True,
+                         headers={"User-Agent": "Mozilla/5.0 (compatible; JobScraper/1.0)"})
+        if r.status_code != 200:
+            return ""
+        html = re.sub(r'(?is)<(script|style|noscript)[^>]*>.*?</\1>', ' ', r.text)
+        text = re.sub(r'(?s)<[^>]+>', ' ', html)
+        return re.sub(r'\s+', ' ', text)[:20000]
+    except Exception:
+        return ""
+
+
 def extract_salary(text):
     for p in [r'\d{2,3}[\s ]?\d{3}\s*[€k]\s*(?:brut|annuel|/an)?',
               r'\d{2,3}[Kk]\s*[€]?\s*[-–]\s*\d{2,3}[Kk]',
@@ -253,15 +375,50 @@ def extract_salary(text):
 
 
 def extract_telework_days(text):
-    for p in [r'(\d)\s*jours?\s*(?:de\s*)?t[eé]l[eé]travail',
-              r't[eé]l[eé]travail\s*[:\-]\s*(\d)',
-              r'(\d)\s*jours?\/semaine\s*(?:en\s*)?t[eé]l[eé]']:
-        m = re.search(p, text, re.IGNORECASE)
-        if m:
-            return int(m.group(1))
-    if re.search(r'full\s*remote|100%\s*t[eé]l[eé]travail', text, re.IGNORECASE):
+    """Nombre de jours de télétravail/semaine déduit du texte.
+    5 = 100 % télétravail, 0 = présentiel confirmé, None = inconnu."""
+    if not text:
+        return None
+    t = text.lower()
+    # 100 % / full remote
+    if re.search(r'full[\s-]*remote|t[eé]l[eé]travail\s*(?:total|complet|100\s*%|int[eé]gral)|'
+                 r'100\s*%\s*t[eé]l[eé]travail|full[\s-]*t[eé]l[eé]travail|'
+                 r'enti[eè]rement\s+[àa]\s+distance|remote\s*first', t):
         return 5
+    # "X jours de télétravail" / "X j / semaine de télétravail"
+    m = re.search(r'(\d)\s*(?:jours?|j)\s*(?:\/|par\s*)?(?:semaine)?\s*(?:de\s*)?t[eé]l[eé]travail', t)
+    if m:
+        return int(m.group(1))
+    m = re.search(r't[eé]l[eé]travail\s*[:\-]?\s*(\d)\s*(?:jours?|j)', t)
+    if m:
+        return int(m.group(1))
+    # fourchette "2 à 3 jours de télétravail" → borne haute
+    m = re.search(r'\d\s*[àa]\s*(\d)\s*jours?\s*(?:de\s*)?t[eé]l[eé]travail', t)
+    if m:
+        return int(m.group(1))
+    # "X jours sur site / présentiel" → 5 - X (semaine de 5 jours)
+    m = re.search(r'(\d)\s*jours?\s*(?:sur\s*site|de\s*pr[eé]sentiel|au\s*bureau|en\s*pr[eé]sentiel)', t)
+    if m:
+        return max(0, 5 - int(m.group(1)))
+    # présentiel explicite
+    if re.search(r'pas\s+de\s+t[eé]l[eé]travail|100\s*%\s*pr[eé]sentiel|'
+                 r'sans\s+t[eé]l[eé]travail|uniquement\s+en\s+pr[eé]sentiel', t):
+        return 0
     return None
+
+
+_FOREIGN_MARKERS = [
+    "belgi", "luxembourg", "suisse", "switzerland", "espagne", "spain",
+    "allemagne", "germany", "royaume-uni", "london", "londres", "portugal",
+    "maroc", "tunisie", "italie", "italy", "pays-bas", "netherlands",
+]
+
+
+def is_in_france(location, description=""):
+    """Heuristique : les sources étant françaises, on renvoie True par défaut
+    et False seulement si un marqueur étranger apparaît dans le lieu."""
+    t = (location or "").lower()
+    return not any(m in t for m in _FOREIGN_MARKERS)
 
 
 def parse_salary_value(s):
@@ -522,17 +679,35 @@ def run():
     print(f"Après dédup : {len(all_jobs)}")
 
     print("\nEnrichissement...")
+    fetched = 0
     for i, job in enumerate(all_jobs):
         desc = job.get("description") or ""
+        title = job.get("title", "")
         if not job.get("salary_raw"):
-            job["salary_extracted"] = extract_salary(desc + " " + job.get("title", ""))
-        job["telework_days"] = extract_telework_days(desc)
+            job["salary_extracted"] = extract_salary(desc + " " + title)
+        job["telework_days"] = extract_telework_days(title + " " + desc)
+        job["in_france"] = is_in_france(job.get("location", ""), desc)
+
+        # Télétravail introuvable + description probablement tronquée
+        # -> on va chercher le texte complet de l'annonce.
+        truncated = len(desc) >= 490 or desc.rstrip().endswith(("…", "..."))
+        if (CONFIG.get("fetch_full_descriptions") and job["telework_days"] is None
+                and truncated and job.get("link")):
+            full = fetch_full_text(job["link"])
+            if full:
+                job["telework_days"] = extract_telework_days(full)
+                if not job.get("salary_raw") and not job.get("salary_extracted"):
+                    job["salary_extracted"] = extract_salary(full)
+                fetched += 1
+                time.sleep(0.3)
+
         loc = job.get("location", "")
         if loc and loc != "Île-de-France":
             job["commute_minutes"] = get_commute_time(loc)
             time.sleep(0.2)
         if (i + 1) % 10 == 0:
             print(f"  {i+1}/{len(all_jobs)}...")
+    print(f"  Annonces complètes récupérées : {fetched}")
 
     filtered, excl = [], 0
     for job in all_jobs:
