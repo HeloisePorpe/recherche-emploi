@@ -585,30 +585,61 @@ def fetch_themuse_jobs():
     return unique
 
 
-def fetch_arbeitnow_jobs():
-    """Arbeitnow : API gratuite (Europe / remote), sans clé."""
-    print("  → Arbeitnow API...")
-    jobs = []
+def _wttj_algolia_config():
+    """Découvre au runtime l'App ID, la clé de recherche et l'index Algolia
+    de Welcome to the Jungle (valeurs publiques embarquées dans leur front)."""
     try:
-        r = requests.get("https://www.arbeitnow.com/api/job-board-api",
-                         headers={"User-Agent": "JobScraper/1.0"}, timeout=15)
-        r.raise_for_status()
-        for o in r.json().get("data", []):
-            loc = o.get("location", "") or ""
-            remote = bool(o.get("remote"))
-            jobs.append({
-                "source": "Arbeitnow",
-                "title": o.get("title", ""),
-                "link": o.get("url", ""),
-                "company": o.get("company_name", ""),
-                "location": ("Remote — " + loc) if remote else loc,
-                "description": o.get("description", ""),
-                "published": o.get("created_at", ""),
-                "telework_days": 5 if remote else None,
-                "in_france": remote_scope_in_france(loc + (" remote" if remote else "")),
-            })
+        r = requests.get("https://www.welcometothejungle.com/fr/jobs",
+                         headers={"User-Agent": "Mozilla/5.0"}, timeout=15)
+        html = r.text
+        app = re.search(r'algolia[^"\']{0,25}app(?:lication)?[_-]?id["\']?\s*[:=]\s*["\']([A-Z0-9]{8,12})', html, re.I)
+        key = re.search(r'algolia[^"\']{0,30}(?:api[_-]?)?key[^"\']{0,12}["\']?\s*[:=]\s*["\']([a-f0-9]{24,})', html, re.I)
+        idx = re.search(r'["\'](wk_[a-z0-9_]+|[a-z_]*jobs[a-z_]*prod[a-z_]*)["\']', html, re.I)
+        if app and key and idx:
+            return app.group(1), key.group(1), idx.group(1)
+        print("     WTTJ : identifiants Algolia non trouvés dans la page")
     except Exception as ex:
-        print(f"     ERREUR Arbeitnow : {ex}")
+        print(f"     WTTJ config error : {ex}")
+    return None
+
+
+def fetch_wttj_jobs():
+    """Welcome to the Jungle via son index Algolia public (best-effort, zone grise CGU)."""
+    print("  → Welcome to the Jungle (Algolia)...")
+    cfg = _wttj_algolia_config()
+    if not cfg:
+        return []
+    app, key, index = cfg
+    jobs = []
+    for q in ["CRM", "campaign manager", "marketing automation", "email marketing"]:
+        try:
+            r = requests.post(
+                f"https://{app}-dsn.algolia.net/1/indexes/{index}/query",
+                headers={"X-Algolia-Application-Id": app, "X-Algolia-API-Key": key,
+                         "Content-Type": "application/json"},
+                json={"params": f"query={q}&hitsPerPage=40"},
+                timeout=15)
+            r.raise_for_status()
+            for h in r.json().get("hits", []):
+                org = h.get("organization", {}) or {}
+                offices = h.get("offices", []) or []
+                o0 = offices[0] if offices else {}
+                loc = ", ".join(x for x in [o0.get("city", ""), o0.get("country", "")] if x) or "France"
+                slug, oslug = h.get("slug", ""), org.get("slug", "")
+                link = (f"https://www.welcometothejungle.com/fr/companies/{oslug}/jobs/{slug}"
+                        if oslug and slug else "")
+                jobs.append({
+                    "source": "Welcome to the Jungle",
+                    "title": h.get("name", ""),
+                    "link": link,
+                    "company": org.get("name", ""),
+                    "location": loc,
+                    "description": h.get("description", "") or "",
+                    "published": h.get("published_at", ""),
+                })
+            time.sleep(0.3)
+        except Exception as ex:
+            print(f"     ERREUR WTTJ '{q}' : {ex}")
     jobs = [j for j in jobs if is_relevant(j)]
     unique = _dedup(jobs)
     print(f"     {len(unique)} offres pertinentes")
@@ -1078,9 +1109,9 @@ def run():
     all_jobs.extend(fetch_jobicy_jobs())
     all_jobs.extend(fetch_remoteok_jobs())
 
-    print("\n[6] The Muse + Arbeitnow...")
+    print("\n[6] The Muse + Welcome to the Jungle...")
     all_jobs.extend(fetch_themuse_jobs())
-    all_jobs.extend(fetch_arbeitnow_jobs())
+    all_jobs.extend(fetch_wttj_jobs())
 
     print(f"\nTotal brut : {len(all_jobs)}")
     all_jobs = _dedup(all_jobs)

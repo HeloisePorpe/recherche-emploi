@@ -36,8 +36,8 @@ personnalisé.
 | **Jobicy** | API | 100 % remote, filtre géo (France/Europe/anywhere) |
 | **RemoteOK** | API | 100 % remote (tech-heavy) |
 | **The Muse** | API | Catégorie Marketing, France + Remote |
-| **Arbeitnow** | API | Europe / remote (sans clé) |
-| Indeed / WTTJ | RSS | Flux bloqués (désactivés de fait) |
+| **Welcome to the Jungle** | Algolia | Vivier CRM/marketing FR ; best-effort (auto-découverte des clés Algolia au runtime, zone grise CGU) |
+| Indeed | RSS | Flux bloqué (désactivé de fait) |
 
 France Travail et Adzuna interrogés avec une liste de mots-clés élargie
 (CRM manager, responsable CRM, campaign manager, email/lifecycle marketing…) ;
