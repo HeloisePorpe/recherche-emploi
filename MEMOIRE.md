@@ -35,7 +35,13 @@ personnalisé.
 | **We Work Remotely** | RSS | 100 % remote (marketing + support) |
 | **Jobicy** | API | 100 % remote, filtre géo (France/Europe/anywhere) |
 | **RemoteOK** | API | 100 % remote (tech-heavy) |
+| **The Muse** | API | Catégorie Marketing, France + Remote |
+| **Arbeitnow** | API | Europe / remote (sans clé) |
 | Indeed / WTTJ | RSS | Flux bloqués (désactivés de fait) |
+
+France Travail et Adzuna interrogés avec une liste de mots-clés élargie
+(CRM manager, responsable CRM, campaign manager, email/lifecycle marketing…) ;
+Adzuna récupère 2 pages par mot-clé.
 
 Les sources remote posent `telework_days = 5` et `in_france` selon le périmètre
 (France/Europe/worldwide = True ; US-only, etc. = False). Toutes les offres
