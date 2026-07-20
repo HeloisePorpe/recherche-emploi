@@ -14,6 +14,7 @@ const defaultState = () => ({
   salaryOnly: false,
   teleworkOnly: false,
   cdiOnly: false,
+  hideFlagged: false,    // masquer les offres avec alertes de filtrage
   myCriteria: true,      // filtre trajet + télétravail — activé par défaut
   criteriaStrict: false, // masquer aussi les offres à l'info manquante
   sources: new Set(), // sources cochées ; vide = toutes
@@ -36,6 +37,7 @@ const els = {
   salaryOnly: document.getElementById('salary-only'),
   teleworkOnly: document.getElementById('telework-only'),
   cdiOnly: document.getElementById('cdi-only'),
+  hideFlagged: document.getElementById('hide-flagged'),
   myCriteria: document.getElementById('my-criteria'),
   criteriaSub: document.getElementById('criteria-sub'),
   criteriaStrict: document.getElementById('criteria-strict'),
@@ -160,6 +162,7 @@ function syncControls() {
   els.salaryOnly.checked = state.salaryOnly;
   els.teleworkOnly.checked = state.teleworkOnly;
   els.cdiOnly.checked = state.cdiOnly;
+  els.hideFlagged.checked = state.hideFlagged;
   els.myCriteria.checked = state.myCriteria;
   els.criteriaStrict.checked = state.criteriaStrict;
   els.criteriaSub.hidden = !state.myCriteria;
@@ -228,6 +231,8 @@ function getFilteredJobs() {
     if (state.teleworkOnly && !(job.telework_days > 0)) return false;
     // CDI uniquement
     if (state.cdiOnly && job.contract_type !== 'CDI') return false;
+    // Masquer les offres signalées
+    if (state.hideFlagged && Array.isArray(job.flags) && job.flags.length) return false;
     // Critères perso trajet + télétravail
     if (state.myCriteria) {
       const st = criteriaStatus(job);
@@ -262,6 +267,7 @@ function activeFilterCount() {
   if (state.salaryOnly) n++;
   if (state.teleworkOnly) n++;
   if (state.cdiOnly) n++;
+  if (state.hideFlagged) n++;
   if (state.myCriteria) n++;
   if (state.sources.size > 0) n++;
   if (state.search.trim()) n++;
@@ -288,6 +294,11 @@ function renderCard(job) {
   // Badge "à vérifier" quand le filtre perso est actif et le trajet manque
   if (state.myCriteria && criteriaStatus(job) === 'unknown-commute') {
     tags.push('<span class="tag tag-warn">Trajet à vérifier</span>');
+  }
+
+  // Alertes de filtrage (issues du scraper)
+  if (Array.isArray(job.flags)) {
+    job.flags.forEach((f) => tags.push(`<span class="tag tag-flag">⚠ ${escapeHtml(f)}</span>`));
   }
 
   const reasons = Array.isArray(job.score_reasons) && job.score_reasons.length
@@ -428,6 +439,10 @@ function bindEvents() {
   });
   els.cdiOnly.addEventListener('change', () => {
     state.cdiOnly = els.cdiOnly.checked;
+    render();
+  });
+  els.hideFlagged.addEventListener('change', () => {
+    state.hideFlagged = els.hideFlagged.checked;
     render();
   });
   els.myCriteria.addEventListener('change', () => {

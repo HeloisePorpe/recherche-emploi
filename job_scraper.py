@@ -237,6 +237,145 @@ def is_relevant(job):
     return any(k in t for k in _RELEVANCE_KEYWORDS)
 
 
+# ── Filtrage fin : règles issues de l'analyse des refus ─────────────────────────
+# Deux niveaux : EXCLUSION (signaux non ambigus -> offre retirée) et
+# ALERTE (signaux ambigus -> offre gardée avec un badge à revoir).
+
+_TITLE_EXCLUDE = re.compile(
+    r'\b(engineer|ing[ée]nieur|alternance|alternant[e]?|apprenti[e]?|'
+    r'stage|stagiaire|internship|\bintern\b)\b', re.I)
+
+_MEDICAL_COMPANIES = ["abbott", "boston scientific", "medtronic", "biotronik",
+                      "livanova", "microport"]
+_MEDICAL_TERMS = re.compile(
+    r'pacemaker|d[ée]fibrillateur|defibrillator|cardiac rhythm|cardiac|cardiaque|'
+    r'electrophysiolog|[ée]lectrophysiolog|rythmologie', re.I)
+
+_RETAIL_TERMS = re.compile(
+    r'h[ôo]te?\s+de\s+caisse|encaissement|tenue de caisse|mise en rayon|'
+    r'employ[ée]\s+libre[- ]service', re.I)
+
+_HR_SOURCING = re.compile(
+    r'sourcing|talent acquisition|candidate relationship|applicant tracking', re.I)
+
+_CS_TERMS = re.compile(
+    r'customer success|client success|\bcsm\b|account manager|account management|'
+    r'gestion de portefeuille|portefeuille clients?|up[- ]?sell|cross[- ]?sell|'
+    r'r[ée]tention|renouvellement|onboarding client|\bchurn\b', re.I)
+
+_MARKETING_SIGNALS = re.compile(
+    r'e-?mail|emailing|\bsms\b|segmentation|campagne|campaign|a/?b\s*test|'
+    r'deliverab|d[ée]livrabilit|marketing automation|lifecycle|newsletter|'
+    r'crm marketing|marketing crm', re.I)
+
+_US_RESIDENCE = re.compile(
+    r'must be (?:based|located|residing) in the (?:us|u\.s\.|united states)|'
+    r'must reside in the (?:us|united states)|us citizenship|green card|'
+    r'authori[sz]ed to work in the u\.?s|\bu\.?s\.?[- ]based\b|us[- ]based only', re.I)
+
+_FOREIGN_RESIDENCE = re.compile(
+    r'(?:based in|reside in|residents? of|located in|work from)\s+(?:the\s+)?'
+    r'(united kingdom|\buk\b|canada|germany|deutschland|mexico|south africa|'
+    r'spain|espagne|portugal|belgium|belgique|switzerland|suisse|india|inde)', re.I)
+
+_CONTRACT_TERMS = re.compile(
+    r'independent contractor|contractor agreement|commission[- ]based|'
+    r'rev(?:enue)?[- ]share|uncapped earnings|per hour|/\s*hr\b|\$\s*\d+\s*/\s*h|'
+    r'south african employment|\b1099\b', re.I)
+
+_STAFFING_COMPANIES = ["kicklox", "synopsia"]
+_STAFFING_TERMS = re.compile(r'\besn\b|staffing|portage salarial|r[ée]gie', re.I)
+
+_AUTO_TERMS = re.compile(
+    r'automobile|automotive|concession(?:naire)?|dealership|\bdms\b|'
+    r'[ée]quipementier auto|editions techniques pour l.automobile', re.I)
+
+_SPECIFIC_ESP = re.compile(
+    r'marketo|salesforce marketing cloud|\bsfmc\b|braze|klaviyo|veeva|iterable|responsys', re.I)
+_NICHE_SECTOR = re.compile(
+    r'igaming|i-gaming|pharma|dispositif[s]?\s+m[ée]dica|medical device|betting|casino', re.I)
+_PROG_TERMS = re.compile(r'\bpython\b|\bsql\b|javascript|\bjs\b', re.I)
+
+_SENIOR_YEARS = re.compile(r'(\d{1,2})\s*\+?\s*(?:ans|years|an[s]?\b)', re.I)
+_TEAM_MGMT = re.compile(
+    r'management (?:d.une |d.)?[ée]quipe|manage a team|team management|'
+    r'encadrement (?:d.une |hi[ée]rarchique|d.[ée]quipe)|team lead|head of', re.I)
+_ENTRY_LEVEL = re.compile(
+    r'd[ée]butant accept|junior|entry[- ]level|premier emploi|sans exp[ée]rience', re.I)
+_REMOTE_MENTION = re.compile(r't[ée]l[ée]travail|remote|distanciel|home[- ]office', re.I)
+
+
+def screen_offer(job):
+    """Renvoie (exclure: bool, motif: str|None, alertes: list[str])."""
+    title = job.get("title") or ""
+    text = f"{title} {job.get('description') or ''} {job.get('company') or ''}"
+    tl, cl = title.lower(), (job.get("company") or "").lower()
+    has_mkt = bool(_MARKETING_SIGNALS.search(text))
+    flags = []
+
+    # ---- EXCLUSIONS (signaux non ambigus) ----
+    if _TITLE_EXCLUDE.search(title):
+        return True, "Titre exclu (engineer / alternance / stage)", flags
+    if any(c in cl for c in _MEDICAL_COMPANIES) or _MEDICAL_TERMS.search(text):
+        return True, "CRM médical (dispositifs cardiaques)", flags
+    if _RETAIL_TERMS.search(text):
+        return True, "CRM = caisse / magasin", flags
+    if _AUTO_TERMS.search(text):
+        return True, "Secteur automobile", flags
+    if _US_RESIDENCE.search(text):
+        return True, "Résidence / citoyenneté US requise", flags
+
+    # ---- ALERTES (signaux ambigus, on garde et on signale) ----
+    if _CS_TERMS.search(text) and not has_mkt:
+        flags.append("Customer Success / Account mgmt ?")
+    if _HR_SOURCING.search(text) and not has_mkt:
+        flags.append("CRM = sourcing RH ?")
+    if "crm" in text.lower() and not has_mkt:
+        flags.append("Pertinence CRM à confirmer")
+    if re.search(r'manager|director', tl) and re.search(r'\bteam\b|coach', tl) \
+            and re.search(r'\bcsm\b|client success', text.lower()):
+        flags.append("Poste managérial d'équipe")
+    if _FOREIGN_RESIDENCE.search(text):
+        flags.append("Résidence hors France ?")
+    if _CONTRACT_TERMS.search(text):
+        flags.append("Contrat à vérifier (freelance / horaire / $)")
+    sal_raw = (job.get("salary_raw") or "")
+    if ("$" in sal_raw or "usd" in sal_raw.lower()) and "€" not in sal_raw:
+        flags.append("Salaire en USD")
+    if any(s in cl for s in _STAFFING_COMPANIES) or _STAFFING_TERMS.search(text):
+        flags.append("Via ESN / staffing")
+    if _SPECIFIC_ESP.search(text) and _PROG_TERMS.search(text) and _NICHE_SECTOR.search(text):
+        flags.append("Écart technique large")
+    if any(int(y) > 7 for y in _SENIOR_YEARS.findall(text)):
+        flags.append("Séniorité élevée (>7 ans ?)")
+    if _TEAM_MGMT.search(text):
+        flags.append("Management d'équipe ?")
+    if _ENTRY_LEVEL.search(text):
+        flags.append("Poste junior / débutant ?")
+
+    tw = job.get("telework_days")
+    if tw is None and not _REMOTE_MENTION.search(text):
+        flags.append("Télétravail non mentionné")
+    elif isinstance(tw, int) and 0 <= tw <= 1:
+        flags.append(f"Télétravail faible ({tw} j)")
+
+    cm = job.get("commute_minutes")
+    if isinstance(cm, (int, float)) and cm > 90:
+        flags.append(f"Trajet long ({int(cm)} min)")
+
+    pub = job.get("published")
+    if pub:
+        try:
+            d = datetime.fromisoformat(str(pub).replace("Z", "+00:00"))
+            age = (datetime.now(d.tzinfo) - d).days
+            if age > 75:
+                flags.append(f"Annonce ancienne ({age} j)")
+        except Exception:
+            pass
+
+    return False, None, flags
+
+
 _REMOTE_OUT_OF_REACH = [
     "usa", "united states", "u.s.", "canada", "brazil", "brésil", "india", "inde",
     "australia", "australie", "latam", "apac", "argentina", "mexico", "philippines",
@@ -697,6 +836,10 @@ def should_include(job):
     if not is_relevant(job):
         return False, "Hors périmètre CRM / Campaign Manager"
 
+    exclude, reason, _ = screen_offer(job)
+    if exclude:
+        return False, reason
+
     sal = parse_salary_value(job.get("salary_raw") or job.get("salary_extracted") or "")
     if sal and sal < CONFIG["salary_hard_min"]:
         return False, f"Salaire sous actuel ({sal:,}€)"
@@ -894,6 +1037,10 @@ def run():
         if job.get("telework_days") != 5 and loc and loc != "Île-de-France":
             job["commute_minutes"] = get_commute_time(loc)
             time.sleep(0.2)
+
+        # Alertes de filtrage (Customer Success, contrat, séniorité, trajet...)
+        job["flags"] = screen_offer(job)[2]
+
         if (i + 1) % 10 == 0:
             print(f"  {i+1}/{len(all_jobs)}...")
     print(f"  Annonces complètes récupérées : {fetched}")
