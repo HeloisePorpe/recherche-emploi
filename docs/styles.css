@@ -271,6 +271,7 @@ html, body {
 .tag-commute { background: #eef6ff; color: var(--primary-dark); border-color: #d5e6fb; }
 .tag-cdi { background: #ecfdf3; color: #067647; border-color: #cfead9; font-weight: 600; }
 .tag-warn { background: var(--orange-bg); color: var(--orange); border-color: #f3d9ad; }
+.tag-flag { background: var(--red-bg); color: var(--red); border-color: #f3c9c9; }
 
 .reasons {
   margin: 6px 0 0;

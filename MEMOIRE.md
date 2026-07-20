@@ -82,11 +82,19 @@ Valeurs **non** stockées ici. Noms attendus :
 - Filtres mémorisés (localStorage), compteur de filtres actifs
 - Responsive : 1 col (mobile) / 2 col (tablette-portable) / auto (large)
 
-## Filtrage à la source (`should_include`)
+## Filtrage à la source (`should_include` + `screen_offer`)
 
-Le scraper ne filtre plus que sur le **salaire plancher**. Le trajet et le
-télétravail sont volontairement **laissés au dashboard** (filtre « Mes critères »)
-pour ne perdre aucune offre — notamment les postes 100 % télétravail éloignés.
+- **Salaire plancher** (42 055 € si indiqué) + pertinence CRM.
+- **`screen_offer`** (règles issues de l'analyse des refus) à deux niveaux :
+  - **Exclusion** (non ambigu) : titre engineer/alternance/stage, CRM médical
+    (dispositifs cardiaques), CRM = caisse/magasin, secteur automobile,
+    résidence/citoyenneté US requise.
+  - **Alerte** (`job["flags"]`, gardée + badge ⚠ au dashboard) : Customer Success /
+    Account mgmt, pertinence CRM à confirmer, contrat freelance/horaire/$, ESN,
+    écart technique, séniorité/management, résidence hors France, télétravail
+    non mentionné / faible, trajet long, annonce ancienne.
+- Le trajet/télétravail fin reste **délégué au dashboard** (filtre « Mes critères »).
+- Dashboard : badges ⚠ sur les cartes + filtre **« Masquer les offres signalées »**.
 
 ## Scoring (`compute_score` dans `job_scraper.py`)
 
