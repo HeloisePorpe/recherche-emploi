@@ -141,8 +141,9 @@ def fetch_francetravail_jobs():
     print("  → France Travail API...")
     headers = {"Authorization": f"Bearer {token}", "Accept": "application/json"}
     all_jobs = []
-    for kw in ["campaign manager CRM", "chargé CRM", "chef de projet CRM",
-               "marketing automation", "CRM télétravail"]:
+    for kw in ["CRM manager", "responsable CRM", "chef de projet CRM", "chargé CRM",
+               "campaign manager", "marketing automation", "email marketing",
+               "lifecycle marketing", "responsable marketing CRM", "CRM télétravail"]:
         try:
             r = requests.get(
                 "https://api.francetravail.io/partenaire/offresdemploi/v2/offres/search",
@@ -185,37 +186,44 @@ def fetch_adzuna_jobs():
 
     print("  → Adzuna API...")
     all_jobs = []
-    for kw in ["CRM manager", "campaign manager CRM", "chef de projet CRM",
-               "marketing automation", "CRM télétravail", "campaign manager remote"]:
-        try:
-            r = requests.get(
-                "https://api.adzuna.com/v1/api/jobs/fr/search/1",
-                params={
-                    "app_id": app_id,
-                    "app_key": app_key,
-                    "what": kw,
-                    "where": "paris",
-                    "distance": 50,
-                    "results_per_page": 50,
-                    "content-type": "application/json",
-                },
-                timeout=15,
-            )
-            r.raise_for_status()
-            for o in r.json().get("results", []):
-                all_jobs.append({
-                    "source": "Adzuna",
-                    "title": o.get("title", ""),
-                    "link": o.get("redirect_url", ""),
-                    "company": o.get("company", {}).get("display_name", ""),
-                    "location": o.get("location", {}).get("display_name", ""),
-                    "description": o.get("description", ""),
-                    "salary_raw": f"{int(o['salary_min'])}-{int(o['salary_max'])} €" if o.get("salary_min") else "",
-                    "published": o.get("created", ""),
-                })
-            time.sleep(0.5)
-        except Exception as ex:
-            print(f"     ERREUR '{kw}': {ex}")
+    keywords = ["CRM manager", "responsable CRM", "campaign manager", "chef de projet CRM",
+                "marketing automation", "email marketing", "lifecycle marketing",
+                "CRM télétravail", "campaign manager remote"]
+    for kw in keywords:
+        for page in (1, 2):  # 2 pages par mot-clé
+            try:
+                r = requests.get(
+                    f"https://api.adzuna.com/v1/api/jobs/fr/search/{page}",
+                    params={
+                        "app_id": app_id,
+                        "app_key": app_key,
+                        "what": kw,
+                        "where": "paris",
+                        "distance": 50,
+                        "results_per_page": 50,
+                        "content-type": "application/json",
+                    },
+                    timeout=15,
+                )
+                r.raise_for_status()
+                results = r.json().get("results", [])
+                for o in results:
+                    all_jobs.append({
+                        "source": "Adzuna",
+                        "title": o.get("title", ""),
+                        "link": o.get("redirect_url", ""),
+                        "company": o.get("company", {}).get("display_name", ""),
+                        "location": o.get("location", {}).get("display_name", ""),
+                        "description": o.get("description", ""),
+                        "salary_raw": f"{int(o['salary_min'])}-{int(o['salary_max'])} €" if o.get("salary_min") else "",
+                        "published": o.get("created", ""),
+                    })
+                time.sleep(0.4)
+                if len(results) < 50:
+                    break  # plus de pages
+            except Exception as ex:
+                print(f"     ERREUR '{kw}' p{page}: {ex}")
+                break
 
     unique = _dedup(all_jobs)
     print(f"     {len(unique)} offres uniques")
@@ -535,6 +543,76 @@ def fetch_remoteok_jobs():
     jobs = [j for j in jobs if is_relevant(j)]
     print(f"     {len(jobs)} offres pertinentes")
     return jobs
+
+
+def fetch_themuse_jobs():
+    """The Muse : API publique gratuite, catégorie Marketing, France + Remote."""
+    print("  → The Muse API...")
+    jobs = []
+    for loc in ["France", "Flexible / Remote"]:
+        for page in range(0, 3):
+            try:
+                r = requests.get(
+                    "https://www.themuse.com/api/public/jobs",
+                    params={"category": "Marketing", "location": loc, "page": page},
+                    headers={"User-Agent": "JobScraper/1.0"}, timeout=15)
+                if r.status_code != 200:
+                    break
+                results = r.json().get("results", [])
+                for o in results:
+                    locs = ", ".join(l.get("name", "") for l in o.get("locations", [])) or loc
+                    is_remote = bool(re.search(r'flexible|remote|t[ée]l[ée]travail', locs, re.I))
+                    jobs.append({
+                        "source": "The Muse",
+                        "title": o.get("name", ""),
+                        "link": (o.get("refs", {}) or {}).get("landing_page", ""),
+                        "company": (o.get("company", {}) or {}).get("name", ""),
+                        "location": locs,
+                        "description": o.get("contents", ""),
+                        "published": o.get("publication_date", ""),
+                        "telework_days": 5 if is_remote else None,
+                        "in_france": remote_scope_in_france(locs),
+                    })
+                if len(results) < 20:
+                    break
+                time.sleep(0.3)
+            except Exception as ex:
+                print(f"     ERREUR The Muse ({loc} p{page}) : {ex}")
+                break
+    jobs = [j for j in jobs if is_relevant(j)]
+    unique = _dedup(jobs)
+    print(f"     {len(unique)} offres pertinentes")
+    return unique
+
+
+def fetch_arbeitnow_jobs():
+    """Arbeitnow : API gratuite (Europe / remote), sans clé."""
+    print("  → Arbeitnow API...")
+    jobs = []
+    try:
+        r = requests.get("https://www.arbeitnow.com/api/job-board-api",
+                         headers={"User-Agent": "JobScraper/1.0"}, timeout=15)
+        r.raise_for_status()
+        for o in r.json().get("data", []):
+            loc = o.get("location", "") or ""
+            remote = bool(o.get("remote"))
+            jobs.append({
+                "source": "Arbeitnow",
+                "title": o.get("title", ""),
+                "link": o.get("url", ""),
+                "company": o.get("company_name", ""),
+                "location": ("Remote — " + loc) if remote else loc,
+                "description": o.get("description", ""),
+                "published": o.get("created_at", ""),
+                "telework_days": 5 if remote else None,
+                "in_france": remote_scope_in_france(loc + (" remote" if remote else "")),
+            })
+    except Exception as ex:
+        print(f"     ERREUR Arbeitnow : {ex}")
+    jobs = [j for j in jobs if is_relevant(j)]
+    unique = _dedup(jobs)
+    print(f"     {len(unique)} offres pertinentes")
+    return unique
 
 
 # ── Enrichissement ─────────────────────────────────────────────────────────────
@@ -999,6 +1077,10 @@ def run():
     all_jobs.extend(fetch_weworkremotely_jobs())
     all_jobs.extend(fetch_jobicy_jobs())
     all_jobs.extend(fetch_remoteok_jobs())
+
+    print("\n[6] The Muse + Arbeitnow...")
+    all_jobs.extend(fetch_themuse_jobs())
+    all_jobs.extend(fetch_arbeitnow_jobs())
 
     print(f"\nTotal brut : {len(all_jobs)}")
     all_jobs = _dedup(all_jobs)
