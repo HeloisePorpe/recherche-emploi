@@ -17,6 +17,9 @@ import json
 import time
 import re
 import smtplib
+import imaplib
+import email
+import email.utils
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from datetime import datetime, timedelta
@@ -647,6 +650,167 @@ def fetch_wttj_jobs():
     return unique
 
 
+# ── Alertes e-mail (Gmail IMAP) ────────────────────────────────────────────────
+#
+# Récupère les offres depuis les e-mails d'alerte des grandes plateformes
+# (Welcome to the Jungle, Indeed, HelloWork, LinkedIn…) reçus sur une boîte
+# Gmail dédiée. Ces plateformes n'ayant plus d'API candidat gratuite, on lit
+# les alertes que l'utilisatrice reçoit elle-même (usage personnel, conforme).
+#
+# Prérequis (secrets GitHub, jamais dans le code) :
+#   GMAIL_ADDRESS       adresse de la boîte dédiée
+#   GMAIL_APP_PASSWORD  mot de passe d'application Google (16 car., 2FA requise)
+# Optionnel : gmail_folder (défaut INBOX), gmail_lookback_days (défaut 7).
+
+# Détection de la plateforme par expéditeur + motif d'URL des offres.
+_EMAIL_ALERT_SOURCES = [
+    {"name": "Welcome to the Jungle (alerte)",
+     "senders": ["welcometothejungle.com", "wttj.co"],
+     "link_re": re.compile(r'https?://[^"\'\s>]*welcometothejungle\.com/[^"\'\s>]*/jobs/[^"\'\s>]+', re.I)},
+    {"name": "Indeed (alerte)",
+     "senders": ["indeed.com", "indeedemail.com", "match.indeed.com"],
+     "link_re": re.compile(r'https?://[^"\'\s>]*indeed\.com/(?:rc/clk|viewjob|pagead|job)[^"\'\s>]+', re.I)},
+    {"name": "HelloWork (alerte)",
+     "senders": ["hellowork.com", "hellowork-group.com", "regionsjob.com"],
+     "link_re": re.compile(r'https?://[^"\'\s>]*hellowork\.com/[^"\'\s>]*(?:emploi|offre)[^"\'\s>]+', re.I)},
+    {"name": "LinkedIn (alerte)",
+     "senders": ["linkedin.com", "e.linkedin.com", "jobs-listings@linkedin.com"],
+     "link_re": re.compile(r'https?://[^"\'\s>]*linkedin\.com/(?:comm/)?jobs/view/[^"\'\s>]+', re.I)},
+]
+
+_HTML_TAG_RE = re.compile(r'<[^>]+>')
+_ANCHOR_RE = re.compile(r'<a\b[^>]*href=["\'](?P<href>[^"\']+)["\'][^>]*>(?P<text>.*?)</a>',
+                        re.I | re.S)
+
+
+def _email_body_html(msg):
+    """Extrait le corps d'un e-mail (préfère le HTML, sinon le texte)."""
+    html, text = "", ""
+    if msg.is_multipart():
+        for part in msg.walk():
+            if part.get_content_maintype() == "multipart":
+                continue
+            ctype = part.get_content_type()
+            if part.get("Content-Disposition", "").startswith("attachment"):
+                continue
+            try:
+                payload = part.get_payload(decode=True)
+                if payload is None:
+                    continue
+                charset = part.get_content_charset() or "utf-8"
+                content = payload.decode(charset, errors="replace")
+            except Exception:
+                continue
+            if ctype == "text/html":
+                html += content
+            elif ctype == "text/plain":
+                text += content
+    else:
+        try:
+            payload = msg.get_payload(decode=True)
+            charset = msg.get_content_charset() or "utf-8"
+            content = payload.decode(charset, errors="replace") if payload else ""
+        except Exception:
+            content = ""
+        if msg.get_content_type() == "text/html":
+            html = content
+        else:
+            text = content
+    return html, text
+
+
+def _parse_alert_email(msg, cfg):
+    """Extrait les offres d'un e-mail d'alerte pour une plateforme donnée."""
+    html, _text = _email_body_html(msg)
+    if not html:
+        return []
+    try:
+        published = email.utils.parsedate_to_datetime(msg.get("Date", "")).isoformat()
+    except Exception:
+        published = ""
+    link_re = cfg["link_re"]
+    jobs, seen = [], set()
+    for m in _ANCHOR_RE.finditer(html):
+        href = m.group("href")
+        if not link_re.match(href) and not link_re.search(href):
+            continue
+        title = _HTML_TAG_RE.sub("", m.group("text"))
+        title = re.sub(r"\s+", " ", title).replace("&amp;", "&").strip()
+        if not title or len(title) < 3:
+            continue
+        # Ignore les liens génériques (voir toutes les offres, se désabonner…).
+        if re.search(r"voir (toutes|l'offre|plus)|see all|unsubscribe|d[ée]sabonn|"
+                     r"g[ée]rer|param[èe]tr|postul", title, re.I):
+            continue
+        key = href.split("?")[0]
+        if key in seen:
+            continue
+        seen.add(key)
+        jobs.append({
+            "source": cfg["name"],
+            "title": title,
+            "link": href,
+            "company": "",
+            "location": "",
+            "description": "",
+            "published": published,
+            "in_france": True,
+        })
+    return jobs
+
+
+def fetch_email_alerts():
+    """Offres issues des e-mails d'alerte (Gmail IMAP, boîte dédiée)."""
+    print("  → Alertes e-mail (Gmail IMAP)...")
+    address = CONFIG.get("gmail_address", "")
+    password = CONFIG.get("gmail_app_password", "")
+    if not address or not password:
+        print("     Gmail non configuré (GMAIL_ADDRESS / GMAIL_APP_PASSWORD) — ignoré")
+        return []
+    folder = CONFIG.get("gmail_folder", "INBOX")
+    lookback = int(CONFIG.get("gmail_lookback_days", 7))
+    since = (datetime.now() - timedelta(days=lookback)).strftime("%d-%b-%Y")
+    jobs = []
+    try:
+        imap = imaplib.IMAP4_SSL("imap.gmail.com", 993, timeout=30)
+        imap.login(address, password)
+        imap.select(f'"{folder}"', readonly=True)
+        for cfg in _EMAIL_ALERT_SOURCES:
+            uids = set()
+            for sender in cfg["senders"]:
+                try:
+                    typ, data = imap.search(None, "SINCE", since, "FROM", sender)
+                    if typ == "OK" and data and data[0]:
+                        uids.update(data[0].split())
+                except Exception:
+                    continue
+            for uid in uids:
+                try:
+                    typ, msg_data = imap.fetch(uid, "(RFC822)")
+                    if typ != "OK" or not msg_data or not msg_data[0]:
+                        continue
+                    msg = email.message_from_bytes(msg_data[0][1])
+                    jobs.extend(_parse_alert_email(msg, cfg))
+                except Exception as ex:
+                    print(f"     lecture mail {cfg['name']} : {ex}")
+        try:
+            imap.close()
+        except Exception:
+            pass
+        imap.logout()
+    except Exception as ex:
+        print(f"     ERREUR Gmail IMAP : {ex}")
+        return []
+    unique = _dedup(jobs)
+    by_src = {}
+    for j in unique:
+        by_src[j["source"]] = by_src.get(j["source"], 0) + 1
+    for src, n in sorted(by_src.items()):
+        print(f"     {src} : {n}")
+    print(f"     {len(unique)} offres (alertes e-mail)")
+    return unique
+
+
 # ── Enrichissement ─────────────────────────────────────────────────────────────
 
 _geocode_cache = {}
@@ -1113,6 +1277,9 @@ def run():
     print("\n[6] The Muse + Welcome to the Jungle...")
     all_jobs.extend(fetch_themuse_jobs())
     all_jobs.extend(fetch_wttj_jobs())
+
+    print("\n[7] Alertes e-mail (WTJ, Indeed, HelloWork, LinkedIn)...")
+    all_jobs.extend(fetch_email_alerts())
 
     print(f"\nTotal brut : {len(all_jobs)}")
     all_jobs = _dedup(all_jobs)

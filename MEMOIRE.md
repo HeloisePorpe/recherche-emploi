@@ -36,7 +36,8 @@ personnalisé.
 | **Jobicy** | API | 100 % remote, filtre géo (France/Europe/anywhere) |
 | **RemoteOK** | API | 100 % remote (tech-heavy) |
 | **The Muse** | API | Catégorie Marketing, France + Remote |
-| **Welcome to the Jungle** | Algolia | Vivier CRM/marketing FR ; best-effort (auto-découverte des clés Algolia au runtime, zone grise CGU) |
+| **Welcome to the Jungle** | Algolia | Vivier CRM/marketing FR ; best-effort (auto-découverte des clés Algolia au runtime, zone grise CGU) — **ne renvoie rien** (clés non trouvées, RSS bloqué) |
+| **Alertes e-mail** | Gmail IMAP | **WTJ, Indeed, HelloWork, LinkedIn** via les e-mails d'alerte reçus sur une boîte Gmail dédiée (seul moyen gratuit et légal pour ces plateformes fermées) |
 | Indeed | RSS | Flux bloqué (désactivé de fait) |
 
 France Travail et Adzuna interrogés avec une liste de mots-clés élargie
@@ -57,6 +58,24 @@ Valeurs **non** stockées ici. Noms attendus :
 - `HOME_ADDRESS` *(optionnel — adresse de départ pour les trajets ; jamais dans le code public)*
 - `IDFM_TOKEN` *(optionnel — trajets en transport, gratuit via prim.iledefrance-mobilites.fr)*
 - `NAVITIA_TOKEN` / `GOOGLE_MAPS_API_KEY` *(optionnels — alternatives payantes)*
+- `GMAIL_ADDRESS` / `GMAIL_APP_PASSWORD` *(optionnels — boîte Gmail dédiée pour lire
+  les alertes e-mail WTJ/Indeed/HelloWork/LinkedIn. Le mot de passe est un **mot de
+  passe d'application** Google, 16 car., validation en 2 étapes + IMAP activés)*
+
+### Alertes e-mail (WTJ, Indeed, HelloWork, LinkedIn)
+
+Ces plateformes n'ont **plus d'API candidat gratuite** (Indeed a fermé sa Publisher
+API en 2024 ; LinkedIn n'a aucune API Jobs tierce ; WTJ/HelloWork sont B2B). Le
+scraper lit donc les **e-mails d'alerte** qu'Héloïse reçoit elle-même sur une boîte
+Gmail dédiée (`heloise.emploi@gmail.com`), via IMAP (`fetch_email_alerts`) :
+
+- Recherche les mails des 7 derniers jours (`gmail_lookback_days`) par expéditeur
+  connu, dans le dossier `gmail_folder` (défaut `INBOX`).
+- Extrait titre + lien de chaque offre (détection plateforme par domaine + motif
+  d'URL), ignore les liens génériques (« voir toutes les offres », désabonnement).
+- Best-effort, tolérant aux pannes (timeout 30 s, `try/except` → liste vide).
+- Le **format exact des e-mails** de chaque plateforme peut demander un ajustement
+  du parseur : transférer un exemple de mail d'alerte de chaque source pour affiner.
 
 `config.json` est **généré en CI** à partir de ces secrets et n'est jamais commité
 (il est dans `.gitignore`). Voir `SETUP_GITHUB.md` pour la mise en route.
