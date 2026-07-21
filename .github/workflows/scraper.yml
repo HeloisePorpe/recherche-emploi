@@ -40,6 +40,10 @@ jobs:
           IDFM_TOKEN: ${{ secrets.IDFM_TOKEN }}
           NAVITIA_TOKEN: ${{ secrets.NAVITIA_TOKEN }}
           GOOGLE_MAPS_API_KEY: ${{ secrets.GOOGLE_MAPS_API_KEY }}
+          # Alertes e-mail (boite Gmail dediee) : lit les alertes WTJ / Indeed /
+          # HelloWork / LinkedIn recues par mail. Sans ces secrets, source ignoree.
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
         run: |
           python - <<'PY'
           import json, os
@@ -67,6 +71,12 @@ jobs:
               "navitia_token": os.environ.get("NAVITIA_TOKEN", ""),
               "google_maps_api_key": os.environ.get("GOOGLE_MAPS_API_KEY", ""),
               "fetch_full_descriptions": True,
+
+              # Alertes e-mail (boite Gmail dediee)
+              "gmail_address": os.environ.get("GMAIL_ADDRESS", ""),
+              "gmail_app_password": os.environ.get("GMAIL_APP_PASSWORD", ""),
+              "gmail_folder": "INBOX",
+              "gmail_lookback_days": 7,
 
               # Fonctionnalites desactivees sur GitHub Actions
               "email_enabled": False,
