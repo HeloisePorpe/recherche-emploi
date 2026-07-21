@@ -250,8 +250,9 @@ def is_relevant(job):
 # ALERTE (signaux ambigus -> offre gardée avec un badge à revoir).
 
 _TITLE_EXCLUDE = re.compile(
-    r'\b(engineer|ing[ée]nieur|alternance|alternant[e]?|apprenti[e]?|'
-    r'stage|stagiaire|internship|\bintern\b)\b', re.I)
+    r'\b(engineer|ing[ée]nieur|alternance|alternant[e]?|apprenti[e]?|apprentissage|'
+    r'stage|stagiaire|internship|intern|cdd|freelance|free-lance|'
+    r'int[ée]rim|vacataire|contractor)\b', re.I)
 
 _MEDICAL_COMPANIES = ["abbott", "boston scientific", "medtronic", "biotronik",
                       "livanova", "microport"]
