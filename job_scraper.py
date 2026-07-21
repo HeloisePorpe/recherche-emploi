@@ -669,7 +669,9 @@ _EMAIL_ALERT_SOURCES = [
      "link_re": re.compile(r'https?://[^"\'\s>]*welcometothejungle\.com/[^"\'\s>]*/jobs/[^"\'\s>]+', re.I)},
     {"name": "Indeed (alerte)",
      "senders": ["indeed.com", "indeedemail.com", "match.indeed.com"],
-     "link_re": re.compile(r'https?://[^"\'\s>]*indeed\.com/(?:rc/clk|viewjob|pagead|job)[^"\'\s>]+', re.I)},
+     # Les alertes Indeed enrobent les liens d'offres dans des URL de tracking
+     # cts.indeed.com/v3/... (en plus des formats rc/clk, viewjob, pagead).
+     "link_re": re.compile(r'https?://(?:[^"\'\s>]*\.)?indeed\.com/(?:v3/|rc/clk|viewjob|pagead|job|m/)[^"\'\s>]+', re.I)},
     {"name": "HelloWork (alerte)",
      "senders": ["hellowork.com", "hellowork-group.com", "regionsjob.com"],
      "link_re": re.compile(r'https?://[^"\'\s>]*hellowork\.com/[^"\'\s>]*(?:emploi|offre)[^"\'\s>]+', re.I)},
@@ -739,8 +741,10 @@ def _parse_alert_email(msg, cfg):
         if not title or len(title) < 3:
             continue
         # Ignore les liens génériques (voir toutes les offres, se désabonner…).
-        if re.search(r"voir (toutes|l'offre|plus)|see all|unsubscribe|d[ée]sabonn|"
-                     r"g[ée]rer|param[èe]tr|postul", title, re.I):
+        if re.search(r"voir (toutes|tous|l'offre|plus|cette|d'autres)|see all|unsubscribe|"
+                     r"d[ée]sabonn|g[ée]rer|param[èe]tr|postul|mettre à jour|pr[ée]f[ée]rence|"
+                     r"t[ée]l[ée]charger|centre d'aide|conditions|confidentialit|"
+                     r"^indeed$|^linkedin$|app\s?store|google\s?play|^\W*$", title, re.I):
             continue
         key = href.split("?")[0]
         if key in seen:
