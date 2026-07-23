@@ -287,6 +287,16 @@ _US_RESIDENCE = re.compile(
     r'must reside in the (?:us|united states)|us citizenship|green card|'
     r'authori[sz]ed to work in the u\.?s|\bu\.?s\.?[- ]based\b|us[- ]based only', re.I)
 
+# Localisation clairement hors zone France/Europe (le poste n'est pas
+# travaillable depuis la France). Europe / EMEA / UK / « anywhere » restent OK.
+_FOREIGN_LOCATION = re.compile(
+    r'\b(california|new york|texas|florida|massachusetts|washington|virginia|'
+    r'san francisco|los angeles|boston|chicago|seattle|austin|denver|atlanta|'
+    r'united states|\busa\b|u\.s\.a?\.|canada|toronto|vancouver|india|bangalore|'
+    r'mumbai|brazil|br[ée]sil|s[ãa]o paulo|mexico|argentina|\blatam\b|\bapac\b|'
+    r'australia|australie|sydney|philippines|singapore|dubai|\buae\b|abu dhabi|qatar)\b',
+    re.I)
+
 _FOREIGN_RESIDENCE = re.compile(
     r'(?:based in|reside in|residents? of|located in|work from)\s+(?:the\s+)?'
     r'(united kingdom|\buk\b|canada|germany|deutschland|mexico|south africa|'
@@ -414,6 +424,9 @@ def screen_offer(job):
         return True, "Résidence / citoyenneté US requise", flags
     if _FOREIGN_RESIDENCE_HARD.search(text):
         return True, "Résidence hors France obligatoire", flags
+    loc = job.get("location") or ""
+    if _FOREIGN_LOCATION.search(loc) and "france" not in loc.lower():
+        return True, "Localisation hors zone (US / hors Europe)", flags
 
     # ---- ALERTES (signaux ambigus, on garde et on signale) ----
     if _CS_TERMS.search(text) and not has_mkt:
