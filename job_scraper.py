@@ -252,10 +252,12 @@ def is_relevant(job):
 # Deux niveaux : EXCLUSION (signaux non ambigus -> offre retirée) et
 # ALERTE (signaux ambigus -> offre gardée avec un badge à revoir).
 
-_TITLE_EXCLUDE = re.compile(
-    r'\b(engineer|ing[ée]nieur|alternance|alternant[e]?|apprenti[e]?|apprentissage|'
-    r'stage|stagiaire|internship|intern|cdd|freelance|free-lance|'
-    r'int[ée]rim|vacataire|contractor)\b', re.I)
+# Titres toujours exclus (statut / niveau), quel que soit le reste.
+_TITLE_EXCLUDE_HARD = re.compile(
+    r'\b(alternance|alternant[e]?|apprenti[e]?|apprentissage|stage|stagiaire|'
+    r'internship|intern|cdd|freelance|free-lance|int[ée]rim|vacataire|contractor)\b', re.I)
+# Engineer / ingénieur : exclu sauf si le titre parle explicitement de marketing.
+_TITLE_EXCLUDE_ENG = re.compile(r'\b(engineer|ing[ée]nieur)\b', re.I)
 
 _MEDICAL_COMPANIES = ["abbott", "boston scientific", "medtronic", "biotronik",
                       "livanova", "microport"]
@@ -295,7 +297,7 @@ _CONTRACT_TERMS = re.compile(
     r'rev(?:enue)?[- ]share|uncapped earnings|per hour|/\s*hr\b|\$\s*\d+\s*/\s*h|'
     r'south african employment|\b1099\b', re.I)
 
-_STAFFING_COMPANIES = ["kicklox", "synopsia"]
+_STAFFING_COMPANIES = ["kicklox", "synopsia", "lineup7", "line up 7"]
 _STAFFING_TERMS = re.compile(r'\besn\b|staffing|portage salarial|r[ée]gie', re.I)
 
 _AUTO_TERMS = re.compile(
@@ -316,6 +318,62 @@ _ENTRY_LEVEL = re.compile(
     r'd[ée]butant accept|junior|entry[- ]level|premier emploi|sans exp[ée]rience', re.I)
 _REMOTE_MENTION = re.compile(r't[ée]l[ée]travail|remote|distanciel|home[- ]office', re.I)
 
+# Employeurs identifiés comme non pertinents (portfolios, ESN Dynamics, etc.).
+_EXCLUDE_COMPANIES = ["mr pape", "veripark", "max accelerate", "maxaccelerate", "kennflik"]
+
+# Titres logistique / entrepôt.
+_TITLE_LOGISTICS = re.compile(
+    r'\b(caces|cariste|r[ée]ceptionnaire|pr[ée]parateur\s+de\s+commandes|'
+    r'magasinier|manutentionnaire)\b', re.I)
+
+# Titres Customer Success / relation client (le CRM y est un outil, pas le métier).
+_TITLE_CS = re.compile(
+    r'\b(customer success|client success|account manager|responsable de comptes?|'
+    r'chargé[e]?\s+de\s+client[èe]le|customer care|service client)\b', re.I)
+
+# Titres commerciaux / vente (hors cible sauf combiné CRM marketing).
+_TITLE_SALES = re.compile(
+    r'\b(account executive|business developer|business development|sales representative|'
+    r'ing[ée]nieur\s+commercial|commercial(?:e)?\s+s[ée]dentaire|technico[- ]commercial|'
+    r'chargé[e]?\s+d.affaires)\b', re.I)
+
+# Titres CRM technique / admin (postes IT, jamais marketing).
+_TITLE_CRM_TECH = re.compile(
+    r'\b(administrateur|administrator|responsable\s+d.application|application manager)\b[^,]{0,20}\bcrm\b|'
+    r'\bcrm\b[^,]{0,20}\b(administrator|administrateur|d[ée]veloppeur|developer|technique)\b|'
+    r'\b(consultant|d[ée]veloppeur|developer|int[ée]grateur|architect[e]?)\b[^,]{0,25}\b(salesforce|dynamics|veeva)\b|'
+    r'\b(salesforce|dynamics|veeva)\b[^,]{0,25}\b(consultant|developer|technical|functional|technico)\b', re.I)
+
+# Signaux IT durs dans le corps : n'apparaissent jamais dans un poste marketing.
+_CRM_TECH_BODY = re.compile(
+    r'\bsoql\b|data loader|process builder|\bapex\b|\bssis\b|sdk crm|plugins?\s+c#|'
+    r'mont[ée]es?\s+de\s+version', re.I)
+
+# Marketing hors cœur de cible (terrain, marque, événementiel, communauté).
+_TITLE_OFFCORE = re.compile(
+    r'\b(field marketing|brand manager|community manager|program manager community|'
+    r'[ée]v[ée]nementiel|event manager)\b', re.I)
+
+# Profils freelance de marketplace (« I will [service] for you »).
+_TITLE_FREELANCE_MP = re.compile(r'^\s*i will\b', re.I)
+
+# Présentiel explicite / pas de télétravail.
+_NO_REMOTE = re.compile(
+    r'office[- ]based|no remote|100\s*%?\s*(?:sur site|pr[ée]sentiel)|'
+    r'pr[ée]sentiel\s+(?:uniquement|obligatoire|complet)|sur site uniquement|'
+    r'aucun t[ée]l[ée]travail|pas de t[ée]l[ée]travail', re.I)
+
+# Résidence obligatoire hors France (exclusion, pas seulement alerte).
+_FOREIGN_RESIDENCE_HARD = re.compile(
+    r'must\s+(?:be\s+(?:based|located|residing)|reside)\s+in\s+(?:the\s+)?'
+    r'(?!france)(united kingdom|\buk\b|canada|germany|deutschland|mexico|south africa|'
+    r'spain|espagne|portugal|belgium|switzerland|india|brazil|australia)', re.I)
+
+# Titres à séniorité / direction (alerte).
+_TITLE_SENIOR = re.compile(
+    r'\b(director|directeur|directrice|\bvp\b|vice[- ]president|head of|'
+    r'senior manager|principal|chief)\b', re.I)
+
 
 def screen_offer(job):
     """Renvoie (exclure: bool, motif: str|None, alertes: list[str])."""
@@ -326,16 +384,36 @@ def screen_offer(job):
     flags = []
 
     # ---- EXCLUSIONS (signaux non ambigus) ----
-    if _TITLE_EXCLUDE.search(title):
-        return True, "Titre exclu (engineer / alternance / stage)", flags
+    if _TITLE_EXCLUDE_HARD.search(title):
+        return True, "Titre exclu (alternance / stage / CDD / freelance)", flags
+    if _TITLE_EXCLUDE_ENG.search(title) and "marketing" not in tl:
+        return True, "Titre exclu (engineer)", flags
+    if _TITLE_FREELANCE_MP.search(title):
+        return True, "Profil freelance marketplace (« I will… »)", flags
+    if any(c in cl for c in _EXCLUDE_COMPANIES):
+        return True, "Employeur non pertinent (ESN / portfolio)", flags
     if any(c in cl for c in _MEDICAL_COMPANIES) or _MEDICAL_TERMS.search(text):
         return True, "CRM médical (dispositifs cardiaques)", flags
+    if _TITLE_LOGISTICS.search(title):
+        return True, "Titre logistique (cariste / CACES / entrepôt)", flags
+    if _TITLE_CRM_TECH.search(title) or _CRM_TECH_BODY.search(text):
+        return True, "CRM technique / admin (IT, pas marketing)", flags
+    if _TITLE_CS.search(title) and "marketing" not in tl and "campaign" not in tl:
+        return True, "Titre Customer Success / relation client", flags
+    if _TITLE_SALES.search(title) and "crm" not in tl:
+        return True, "Titre commercial / vente", flags
+    if _TITLE_OFFCORE.search(title) and "crm" not in tl:
+        return True, "Marketing hors cœur (terrain / marque / événementiel)", flags
     if _RETAIL_TERMS.search(text):
         return True, "CRM = caisse / magasin", flags
     if _AUTO_TERMS.search(text):
         return True, "Secteur automobile", flags
+    if _NO_REMOTE.search(text):
+        return True, "Présentiel / pas de télétravail", flags
     if _US_RESIDENCE.search(text):
         return True, "Résidence / citoyenneté US requise", flags
+    if _FOREIGN_RESIDENCE_HARD.search(text):
+        return True, "Résidence hors France obligatoire", flags
 
     # ---- ALERTES (signaux ambigus, on garde et on signale) ----
     if _CS_TERMS.search(text) and not has_mkt:
@@ -360,8 +438,8 @@ def screen_offer(job):
         flags.append("Écart technique large")
     if any(int(y) > 7 for y in _SENIOR_YEARS.findall(text)):
         flags.append("Séniorité élevée (>7 ans ?)")
-    if _TEAM_MGMT.search(text):
-        flags.append("Management d'équipe ?")
+    if _TEAM_MGMT.search(text) or _TITLE_SENIOR.search(title):
+        flags.append("Séniorité / management d'équipe ?")
     if _ENTRY_LEVEL.search(text):
         flags.append("Poste junior / débutant ?")
 
