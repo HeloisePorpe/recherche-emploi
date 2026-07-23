@@ -111,13 +111,24 @@ Gmail dédiée (`heloise.emploi@gmail.com`), via IMAP (`fetch_email_alerts`) :
 
 - **Salaire plancher** (42 055 € si indiqué) + pertinence CRM.
 - **`screen_offer`** (règles issues de l'analyse des refus) à deux niveaux :
-  - **Exclusion** (non ambigu) : titre engineer/alternance/stage, CRM médical
-    (dispositifs cardiaques), CRM = caisse/magasin, secteur automobile,
-    résidence/citoyenneté US requise.
+  - **Exclusion** (non ambigu, indépendant de la description) : titre
+    alternance/stage/CDD/freelance ; engineer (sauf « marketing ») ; CRM médical
+    (dispositifs cardiaques) ; CRM technique/admin (titres Administrateur/Consultant
+    Salesforce-Dynamics, ou signaux IT durs : SOQL, Apex, Data Loader, SSIS…) ;
+    titre Customer Success / relation client ; titre commercial/vente (hors combo
+    CRM) ; marketing hors cœur (field/brand/community/événementiel) ; logistique
+    (cariste/CACES/entrepôt) ; employeur non pertinent (Mr Pape, VeriPark,
+    MaxAccelerate, Kennflik) ; freelance marketplace (« I will… ») ; CRM = caisse ;
+    automobile ; présentiel explicite / pas de télétravail ; résidence US ou hors
+    France obligatoire.
   - **Alerte** (`job["flags"]`, gardée + badge ⚠ au dashboard) : Customer Success /
-    Account mgmt, pertinence CRM à confirmer, contrat freelance/horaire/$, ESN,
-    écart technique, séniorité/management, résidence hors France, télétravail
-    non mentionné / faible, trajet long, annonce ancienne.
+    Account mgmt détecté dans le corps, pertinence CRM à confirmer (pas de signaux
+    marketing — fréquent sur Adzuna tronqué), contrat freelance/horaire/$, ESN,
+    écart technique, séniorité/direction/management, résidence hors France (soft),
+    télétravail non mentionné / faible, trajet long, annonce ancienne.
+  - Principe : on **n'exclut** que sur des signaux non ambigus (titre, employeur,
+    IT dur) ; tout ce qui dépend d'une description potentiellement tronquée reste
+    en **alerte** pour ne perdre aucune offre pertinente.
 - Le trajet/télétravail fin reste **délégué au dashboard** (filtre « Mes critères »).
 - Dashboard : badges ⚠ sur les cartes + filtre **« Masquer les offres signalées »**.
 
