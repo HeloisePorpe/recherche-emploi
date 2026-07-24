@@ -765,7 +765,9 @@ _EMAIL_ALERT_SOURCES = [
      "link_re": re.compile(r'https?://(?:[^"\'\s>]*\.)?indeed\.com/(?:v3/|rc/clk|viewjob|pagead|job|m/)[^"\'\s>]+', re.I)},
     {"name": "HelloWork (alerte)",
      "senders": ["hellowork.com", "hellowork-group.com", "regionsjob.com"],
-     "link_re": re.compile(r'https?://[^"\'\s>]*hellowork\.com/[^"\'\s>]*(?:emploi|offre)[^"\'\s>]+', re.I)},
+     # Les alertes HelloWork enrobent les liens dans emails.hellowork.com/clic/...
+     "link_re": re.compile(
+         r'https?://(?:emails\.hellowork\.com/clic/|[^"\'\s>]*hellowork\.com/[^"\'\s>]*(?:emploi|offre))[^"\'\s>]+', re.I)},
     {"name": "LinkedIn (alerte)",
      "senders": ["linkedin.com", "e.linkedin.com", "jobs-listings@linkedin.com"],
      "link_re": re.compile(r'https?://[^"\'\s>]*linkedin\.com/(?:comm/)?jobs/view/[^"\'\s>]+', re.I)},
