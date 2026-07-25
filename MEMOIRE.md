@@ -162,8 +162,17 @@ segmentation, email/SMS…) ; salaire cible ~45–50 k€ (plancher dur 42 055 �
   Réponse**.
 - Ajout depuis le dashboard (bouton « Suivre » sur chaque offre) ou manuellement.
 - Glisser-déposer entre colonnes ; notes libres par candidature.
-- **État stocké dans le navigateur (localStorage)** → propre à chaque appareil,
-  non synchronisé PC/mobile (voir « Pistes »).
+- **État synchronisé** via un fichier commité **`docs/candidatures.json`** :
+  - **Lecture** par tous les appareils + le robot (`syncPull`, sans réglage).
+  - **Écriture depuis le navigateur** via l'API GitHub (`syncPush`), avec un
+    **jeton fine-grained** collé une fois par appareil (permission *Contents:
+    Read and write*), stocké en `localStorage` (`recherche-emploi-gh-token`),
+    **jamais commité**. Sans jeton : lecture synchro, écritures locales.
+  - **Fusion** par `id`, dernière écriture gagnante (`updatedAt`) ; suppressions
+    en *tombstone* (`deleted`) pour se synchroniser ; champ `auto` réservé au robot.
+  - Le **robot** (GitHub Actions) écrira les statuts détectés par email dans ce
+    même fichier (champ `auto` : `postule` / `en_attente` / `positif` / `negatif`).
+  - Logique dans `docs/store.js`. Les offres **archivées** restent locales.
 
 ## Contraintes connues
 

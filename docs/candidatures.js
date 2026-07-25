@@ -9,6 +9,14 @@ const COLUMNS = [
 ];
 const VALID_STATUS = new Set(COLUMNS.map((c) => c.key));
 
+// Statut détecté par le robot (email) -> libellé + classe.
+const AUTO_META = {
+  postule: { label: 'Candidature envoyée', cls: 'auto-sent' },
+  en_attente: { label: 'En attente de réponse', cls: 'auto-wait' },
+  positif: { label: 'Réponse positive', cls: 'auto-pos' },
+  negatif: { label: 'Réponse négative', cls: 'auto-neg' },
+};
+
 const board = document.getElementById('board');
 
 function escapeHtml(str) {
@@ -20,22 +28,11 @@ function escapeHtml(str) {
 
 function updateStatus(id, status) {
   if (!VALID_STATUS.has(status)) return;
-  const list = loadCandidatures();
-  const c = list.find((x) => x.id === id);
-  if (c && c.status !== status) {
-    c.status = status;
-    saveCandidatures(list);
-  }
+  updateCandidature(id, { status });
 }
 
 function updateNotes(id, notes) {
-  const list = loadCandidatures();
-  const c = list.find((x) => x.id === id);
-  if (c) { c.notes = notes; saveCandidatures(list); }
-}
-
-function removeCandidature(id) {
-  saveCandidatures(loadCandidatures().filter((c) => c.id !== id));
+  updateCandidature(id, { notes });
 }
 
 function cardHtml(c) {
@@ -45,6 +42,11 @@ function cardHtml(c) {
     : '';
   const company = c.company ? `<div class="kc-company">${escapeHtml(c.company)}</div>` : '';
   const loc = c.location ? `<div class="kc-loc">${escapeHtml(c.location)}</div>` : '';
+  const auto = c.auto && AUTO_META[c.auto.status]
+    ? `<div class="kc-auto ${AUTO_META[c.auto.status].cls}" title="Détecté par email">
+         🤖 ${AUTO_META[c.auto.status].label}${c.auto.reason ? ' — ' + escapeHtml(c.auto.reason) : ''}
+       </div>`
+    : '';
   return `
     <article class="kanban-card" draggable="true" data-id="${escapeHtml(c.id)}" data-status="${status}">
       <div class="kc-top">
@@ -53,6 +55,7 @@ function cardHtml(c) {
       </div>
       ${company}
       ${loc}
+      ${auto}
       ${link}
       <textarea class="kc-notes" data-notes="${escapeHtml(c.id)}" placeholder="Notes (contact, date, relance...)"
         rows="2">${escapeHtml(c.notes || '')}</textarea>
@@ -60,7 +63,7 @@ function cardHtml(c) {
 }
 
 function render() {
-  const list = loadCandidatures();
+  const list = activeCandidatures();
   board.innerHTML = COLUMNS.map((col) => {
     const cards = list.filter((c) => (VALID_STATUS.has(c.status) ? c.status : 'a_postuler') === col.key);
     return `
@@ -136,4 +139,52 @@ document.getElementById('add-form').addEventListener('submit', (e) => {
   render();
 });
 
+// --- Barre de synchronisation ---
+const SYNC_LABELS = {
+  idle: hasGhToken() ? '✓ Synchronisé' : '👁 Lecture synchronisée (jeton non configuré)',
+  pulling: '↻ Lecture…',
+  pushing: '↥ Enregistrement…',
+  error: '⚠ Erreur de synchro (voir jeton)',
+  offline: '⚠ Hors ligne (modifs locales)',
+};
+const syncStatusEl = document.getElementById('sync-status');
+function refreshSyncStatus(state) {
+  const s = state || syncState();
+  syncStatusEl.textContent = SYNC_LABELS[s] || '';
+  syncStatusEl.className = 'sync-status sync-' + s;
+}
+onSyncChange((state) => {
+  refreshSyncStatus(state);
+  if (state === 'idle') render(); // re-render après une lecture/écriture réussie
+});
+
+// --- Réglages du jeton ---
+const tokenPanel = document.getElementById('sync-panel');
+const tokenInput = document.getElementById('gh-token');
+const tokenState = document.getElementById('gh-token-state');
+function refreshTokenState() {
+  tokenState.textContent = hasGhToken()
+    ? 'Jeton enregistré sur cet appareil : tu peux modifier le suivi (il sera synchronisé).'
+    : 'Aucun jeton : lecture synchronisée seulement (tes modifications restent sur cet appareil).';
+}
+document.getElementById('sync-toggle').addEventListener('click', () => {
+  tokenPanel.hidden = !tokenPanel.hidden;
+  refreshTokenState();
+});
+document.getElementById('gh-token-save').addEventListener('click', () => {
+  setGhToken(tokenInput.value);
+  tokenInput.value = '';
+  refreshTokenState();
+  refreshSyncStatus();
+  syncPush();
+});
+document.getElementById('gh-token-clear').addEventListener('click', () => {
+  setGhToken('');
+  refreshTokenState();
+  refreshSyncStatus();
+});
+
+// --- Initialisation : afficher le cache immédiatement, puis synchroniser ---
 render();
+refreshSyncStatus();
+syncPull().then(render);
