@@ -3,23 +3,22 @@
 // ============================================================================
 // Stockage des candidatures + offres archivées.
 //
-// Les candidatures sont désormais **synchronisées** via un fichier commité
-// (docs/candidatures.json) :
-//   - Lecture : tous tes appareils + le robot lisent ce fichier -> synchro
-//     multi-appareils, sans configuration.
-//   - Écriture depuis le navigateur : via l'API GitHub, avec un jeton personnel
-//     (fine-grained PAT) que tu colles une fois par appareil. Sans jeton, tes
-//     modifications restent locales (localStorage) mais la lecture reste synchro.
-//   - Le robot (GitHub Actions) écrit dans ce même fichier via son propre jeton.
+// Le suivi de candidatures est **privé** : il vit dans un dépôt GitHub PRIVÉ
+// dédié (recherche-emploi-candidatures), jamais dans le dépôt public.
+//   - Un dépôt privé n'étant pas lisible publiquement, lecture ET écriture
+//     passent par l'API GitHub avec un jeton personnel (fine-grained PAT) collé
+//     une fois par appareil.
+//   - AVEC jeton : synchro complète multi-appareils + le robot.
+//   - SANS jeton : suivi local sur l'appareil (localStorage), rien n'est envoyé.
+//   - Le robot (GitHub Actions) écrira dans ce même fichier via un secret.
 //
-// Le localStorage sert de cache local rapide et de file d'attente hors-ligne.
-// Les offres archivées restent locales pour l'instant.
+// Le localStorage sert de cache local rapide. Les offres archivées sont locales.
 // ============================================================================
 
 const GH_OWNER = 'HeloisePorpe';
-const GH_REPO = 'recherche-emploi';
-const GH_BRANCH = 'master';
-const GH_PATH = 'docs/candidatures.json';
+const GH_REPO = 'recherche-emploi-candidatures'; // dépôt PRIVÉ dédié
+const GH_BRANCH = 'main';
+const GH_PATH = 'candidatures.json';
 const GH_TOKEN_KEY = 'recherche-emploi-gh-token';
 
 const CANDIDATURES_KEY = 'recherche-emploi-candidatures';
@@ -119,16 +118,24 @@ function syncState() { return _syncState; }
 function _b64encode(str) { return btoa(unescape(encodeURIComponent(str))); }
 function _b64decode(b64) { return decodeURIComponent(escape(atob(b64))); }
 
-// Récupère le fichier partagé et le fusionne dans le cache local.
+// Récupère le fichier privé (via l'API GitHub + jeton) et le fusionne au cache.
+// Sans jeton : pas de synchro (données locales uniquement).
 async function syncPull() {
+  const token = getGhToken();
+  if (!token) { _emitSync('idle'); return loadCandidatures(); }
   _emitSync('pulling');
   try {
-    // Lecture publique via GitHub Pages (pas de jeton nécessaire).
-    const res = await fetch('candidatures.json?_=' + nowTs(), { cache: 'no-store' });
+    const api = `https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${GH_PATH}`
+      + `?ref=${GH_BRANCH}&_=${nowTs()}`;
+    const res = await fetch(api, {
+      headers: { Authorization: 'Bearer ' + token, Accept: 'application/vnd.github+json' },
+      cache: 'no-store',
+    });
     let remote = [];
     if (res.ok) {
-      const data = await res.json();
-      if (Array.isArray(data)) remote = data;
+      const meta = await res.json();
+      try { remote = JSON.parse(_b64decode(meta.content || '')); } catch (_) { remote = []; }
+      if (!Array.isArray(remote)) remote = [];
     } else if (res.status !== 404) {
       throw new Error('HTTP ' + res.status);
     }

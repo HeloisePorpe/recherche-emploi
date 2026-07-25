@@ -162,16 +162,20 @@ segmentation, email/SMS…) ; salaire cible ~45–50 k€ (plancher dur 42 055 �
   Réponse**.
 - Ajout depuis le dashboard (bouton « Suivre » sur chaque offre) ou manuellement.
 - Glisser-déposer entre colonnes ; notes libres par candidature.
-- **État synchronisé** via un fichier commité **`docs/candidatures.json`** :
-  - **Lecture** par tous les appareils + le robot (`syncPull`, sans réglage).
-  - **Écriture depuis le navigateur** via l'API GitHub (`syncPush`), avec un
-    **jeton fine-grained** collé une fois par appareil (permission *Contents:
-    Read and write*), stocké en `localStorage` (`recherche-emploi-gh-token`),
-    **jamais commité**. Sans jeton : lecture synchro, écritures locales.
+- **État privé + synchronisé** via un **dépôt GitHub privé dédié**
+  **`HeloisePorpe/recherche-emploi-candidatures`** (branche `main`, fichier
+  `candidatures.json` à la racine). Jamais dans le dépôt public (données privées).
+  - **Lecture ET écriture** via l'API GitHub (`syncPull` / `syncPush`) avec un
+    **jeton fine-grained** (accès à ce dépôt privé, *Contents: Read and write*),
+    collé une fois par appareil, stocké en `localStorage`
+    (`recherche-emploi-gh-token`), **jamais commité**.
+  - **Avec jeton** : synchro complète multi-appareils + robot. **Sans jeton** :
+    suivi local à l'appareil (rien n'est envoyé).
   - **Fusion** par `id`, dernière écriture gagnante (`updatedAt`) ; suppressions
-    en *tombstone* (`deleted`) pour se synchroniser ; champ `auto` réservé au robot.
+    en *tombstone* (`deleted`) ; champ `auto` réservé au robot.
   - Le **robot** (GitHub Actions) écrira les statuts détectés par email dans ce
-    même fichier (champ `auto` : `postule` / `en_attente` / `positif` / `negatif`).
+    dépôt privé via un **secret** (PAT dédié), champ `auto` :
+    `postule` / `en_attente` / `positif` / `negatif`.
   - Logique dans `docs/store.js`. Les offres **archivées** restent locales.
 
 ## Contraintes connues
