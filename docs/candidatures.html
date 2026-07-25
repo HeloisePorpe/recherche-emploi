@@ -28,11 +28,12 @@
 
     <section id="sync-panel" class="sync-panel" hidden>
       <p class="sync-help">
-        Le suivi est <strong>synchronisé entre tes appareils</strong> et mis à jour par le robot
-        (lecture automatique, sans réglage). Pour <strong>modifier</strong> le suivi depuis cet
-        appareil (déplacer une carte, ajouter, noter), colle un <strong>jeton GitHub personnel</strong>
-        (fine-grained, dépôt <code>recherche-emploi</code>, permission <em>Contents : Read and write</em>).
-        Il reste sur cet appareil et n'est jamais publié.
+        Ton suivi est <strong>privé</strong> : il vit dans le dépôt privé
+        <code>recherche-emploi-candidatures</code>. Pour le <strong>synchroniser entre tes
+        appareils</strong> et le laisser mettre à jour par le robot, colle un
+        <strong>jeton GitHub personnel</strong> (fine-grained, accès à ce dépôt privé,
+        permission <em>Contents : Read and write</em>). Il reste sur cet appareil et n'est
+        jamais publié. <strong>Sans jeton</strong>, ton suivi reste local à cet appareil.
       </p>
       <div class="sync-row">
         <input type="password" id="gh-token" placeholder="ghp_… (jeton fine-grained)" autocomplete="off" />

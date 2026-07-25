@@ -141,7 +141,7 @@ document.getElementById('add-form').addEventListener('submit', (e) => {
 
 // --- Barre de synchronisation ---
 const SYNC_LABELS = {
-  idle: hasGhToken() ? '✓ Synchronisé' : '👁 Lecture synchronisée (jeton non configuré)',
+  idle: hasGhToken() ? '🔒 Synchronisé (privé)' : '📴 Local — ajoute un jeton pour synchroniser',
   pulling: '↻ Lecture…',
   pushing: '↥ Enregistrement…',
   error: '⚠ Erreur de synchro (voir jeton)',
