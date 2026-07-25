@@ -273,6 +273,27 @@ html, body {
 .tag-warn { background: var(--orange-bg); color: var(--orange); border-color: #f3d9ad; }
 .tag-flag { background: var(--red-bg); color: var(--red); border-color: #f3c9c9; }
 
+/* Recommandation du robot de tri */
+.reco {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 8px 0 2px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-size: 0.85rem;
+}
+.reco-tag { font-weight: 700; white-space: nowrap; }
+.reco-why { color: var(--text-muted); }
+.reco-go { background: var(--green-bg); border-color: #bfe6cd; }
+.reco-go .reco-tag { color: var(--green); }
+.reco-review { background: var(--orange-bg); border-color: #f3d9ad; }
+.reco-review .reco-tag { color: var(--orange); }
+.reco-skip { background: var(--bg); border-color: var(--border); }
+.reco-skip .reco-tag { color: var(--text-muted); }
+
 .reasons {
   margin: 6px 0 0;
   padding: 0;

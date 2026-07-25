@@ -15,6 +15,7 @@ const defaultState = () => ({
   teleworkOnly: false,
   cdiOnly: false,
   hideFlagged: false,    // masquer les offres avec alertes de filtrage
+  recommendation: '',    // '' = toutes ; sinon à_postuler / à_revoir / à_écarter
   myCriteria: true,      // filtre trajet + télétravail — activé par défaut
   criteriaStrict: false, // masquer aussi les offres à l'info manquante
   sources: new Set(), // sources cochées ; vide = toutes
@@ -38,6 +39,7 @@ const els = {
   teleworkOnly: document.getElementById('telework-only'),
   cdiOnly: document.getElementById('cdi-only'),
   hideFlagged: document.getElementById('hide-flagged'),
+  recommendation: document.getElementById('reco-filter'),
   myCriteria: document.getElementById('my-criteria'),
   criteriaSub: document.getElementById('criteria-sub'),
   criteriaStrict: document.getElementById('criteria-strict'),
@@ -69,6 +71,16 @@ function scoreClass(score) {
   if (score >= 7) return 'score-green';
   if (score >= 5) return 'score-orange';
   return 'score-red';
+}
+
+// Recommandation du robot de tri -> libellé + classe CSS
+const RECO_META = {
+  'à_postuler': { label: 'À postuler', cls: 'reco-go' },
+  'à_revoir': { label: 'À revoir', cls: 'reco-review' },
+  'à_écarter': { label: 'À écarter', cls: 'reco-skip' },
+};
+function recoInfo(job) {
+  return RECO_META[job.recommendation] || null;
 }
 
 function getSalary(job) {
@@ -163,6 +175,7 @@ function syncControls() {
   els.teleworkOnly.checked = state.teleworkOnly;
   els.cdiOnly.checked = state.cdiOnly;
   els.hideFlagged.checked = state.hideFlagged;
+  if (els.recommendation) els.recommendation.value = state.recommendation;
   els.myCriteria.checked = state.myCriteria;
   els.criteriaStrict.checked = state.criteriaStrict;
   els.criteriaSub.hidden = !state.myCriteria;
@@ -233,6 +246,8 @@ function getFilteredJobs() {
     if (state.cdiOnly && job.contract_type !== 'CDI') return false;
     // Masquer les offres signalées
     if (state.hideFlagged && Array.isArray(job.flags) && job.flags.length) return false;
+    // Recommandation du robot de tri
+    if (state.recommendation && (job.recommendation || '') !== state.recommendation) return false;
     // Critères perso trajet + télétravail
     if (state.myCriteria) {
       const st = criteriaStatus(job);
@@ -268,6 +283,7 @@ function activeFilterCount() {
   if (state.teleworkOnly) n++;
   if (state.cdiOnly) n++;
   if (state.hideFlagged) n++;
+  if (state.recommendation) n++;
   if (state.myCriteria) n++;
   if (state.sources.size > 0) n++;
   if (state.search.trim()) n++;
@@ -319,6 +335,14 @@ function renderCard(job) {
     ? `<div class="card-date">📅 Publiée le ${escapeHtml(date)}</div>`
     : '';
 
+  const reco = recoInfo(job);
+  const recoHtml = reco
+    ? `<div class="reco ${reco.cls}">
+         <span class="reco-tag">${reco.label}</span>
+         ${job.recommendation_reason ? `<span class="reco-why">${escapeHtml(job.recommendation_reason)}</span>` : ''}
+       </div>`
+    : '';
+
   const id = escapeHtml(candidatureId(job));
   let actions;
   if (showArchived) {
@@ -341,6 +365,7 @@ function renderCard(job) {
         </div>
       </div>
       ${companyHtml}
+      ${recoHtml}
       ${dateHtml}
       <div class="card-meta">${tags.join('')}</div>
       ${reasons}
@@ -445,6 +470,12 @@ function bindEvents() {
     state.hideFlagged = els.hideFlagged.checked;
     render();
   });
+  if (els.recommendation) {
+    els.recommendation.addEventListener('change', () => {
+      state.recommendation = els.recommendation.value;
+      render();
+    });
+  }
   els.myCriteria.addEventListener('change', () => {
     state.myCriteria = els.myCriteria.checked;
     els.criteriaSub.hidden = !state.myCriteria;

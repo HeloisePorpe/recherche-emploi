@@ -255,7 +255,8 @@ def is_relevant(job):
 # Titres toujours exclus (statut / niveau), quel que soit le reste.
 _TITLE_EXCLUDE_HARD = re.compile(
     r'\b(alternance|alternant[e]?|apprenti[e]?|apprentissage|stage|stagiaire|'
-    r'internship|intern|cdd|freelance|free-lance|int[ée]rim|vacataire|contractor)\b', re.I)
+    r'internship|intern|cdd|freelance|free-lance|int[ée]rim|vacataire|contractor|'
+    r'fixed[- ]term|temporaire)\b', re.I)
 # Engineer / ingénieur : exclu sauf si le titre parle explicitement de marketing.
 _TITLE_EXCLUDE_ENG = re.compile(r'\b(engineer|ing[ée]nieur)\b', re.I)
 
@@ -361,8 +362,8 @@ _CRM_TECH_BODY = re.compile(
 
 # Marketing hors cœur de cible (terrain, marque, événementiel, communauté).
 _TITLE_OFFCORE = re.compile(
-    r'\b(field marketing|brand manager|community manager|program manager community|'
-    r'[ée]v[ée]nementiel|event manager)\b', re.I)
+    r'\b(field marketing|brand manager|community manager|'
+    r'program manager[, ]+community|[ée]v[ée]nementiel|event manager)\b', re.I)
 
 # Profils freelance de marketplace (« I will [service] for you »).
 _TITLE_FREELANCE_MP = re.compile(r'^\s*i will\b', re.I)
@@ -1205,6 +1206,61 @@ def compute_score(job):
     return max(1, min(10, score)), reasons
 
 
+# Signal CRM/marketing fort dans le TITRE (pour la reco « à postuler »).
+_CORE_CRM_TITLE = re.compile(
+    r'\bcrm\b|campaign manager|marketing automation|lifecycle|email marketing|'
+    r'marketing relationnel|fid[ée]lisation|r[ée]tention|chef de projet crm|'
+    r'responsable crm|crm manager|marketing crm|chargé[e]?\s+de\s+campagnes?', re.I)
+# Intitulés hors profil qui, même avec « CRM » dans le titre, ne sont pas cible.
+_OFFPROFILE_TITLE = re.compile(
+    r'product manager|accounting|\boperations?\b|\bsupport\b|\bsales\b|recruit|'
+    r'data (?:engineer|analyst|scientist)|développeur|developer', re.I)
+
+
+def recommend_offer(job, score=None):
+    """Robot de tri (règles) : renvoie (recommandation, raison).
+    recommandation ∈ {à_postuler, à_revoir, à_écarter}. Basé sur le score,
+    les alertes (flags), le trajet / télétravail et le salaire. L'IA pourra
+    affiner ce jugement plus tard (mêmes champs de sortie)."""
+    if score is None:
+        score = compute_score(job)[0]
+    flags = job.get("flags") or []
+    tw = job.get("telework_days")
+    cm = job.get("commute_minutes")
+    remote_france = isinstance(tw, int) and tw >= 4 and job.get("in_france", True)
+    commute_ok = isinstance(cm, (int, float)) and cm <= 75
+    commute_unknown = cm in (None, "", 0)
+    criteria_ok = remote_france or commute_ok or commute_unknown
+
+    # À écarter (l'offre passe le filtre dur mais présente peu d'intérêt).
+    if isinstance(cm, (int, float)) and cm > 90 and not remote_france:
+        return "à_écarter", f"Trajet {int(cm)} min et pas 100 % télétravail"
+    if score <= 3:
+        return "à_écarter", f"Score faible ({score}/10)"
+
+    # À postuler : bon score, aucun signal à vérifier, critère trajet/TT respecté,
+    # ET un vrai signal CRM dans le titre sans intitulé hors profil.
+    title = job.get("title") or ""
+    strong_title = _CORE_CRM_TITLE.search(title) and not _OFFPROFILE_TITLE.search(title)
+    if not flags and score >= 6 and criteria_ok and strong_title:
+        bits = []
+        if remote_france:
+            bits.append("100 % télétravail France")
+        elif commute_ok:
+            bits.append(f"trajet {int(cm)} min")
+        bits.append(f"score {score}/10")
+        return "à_postuler", "Profil correspondant, aucun signal à vérifier (" + ", ".join(bits) + ")"
+
+    # À revoir (ambigu : on explique pourquoi).
+    if flags:
+        return "à_revoir", "À vérifier : " + " ; ".join(flags[:3])
+    if not criteria_ok and isinstance(cm, (int, float)):
+        return "à_revoir", f"Trajet {int(cm)} min, hors critère (≤75 min ou 100 % télétravail)"
+    if not strong_title:
+        return "à_revoir", "À confirmer : titre sans signal CRM explicite"
+    return "à_revoir", f"Correct, à confirmer (score {score}/10)"
+
+
 # ── Filtre ─────────────────────────────────────────────────────────────────────
 
 def should_include(job):
@@ -1340,10 +1396,19 @@ def _dedup(jobs):
 
 
 def export_json_local(jobs, path="jobs_output.json"):
-    out = [{**j, "score": compute_score(j)[0], "score_reasons": compute_score(j)[1]} for j in jobs]
+    out = []
+    for j in jobs:
+        score, reasons = compute_score(j)
+        reco, reco_reason = recommend_offer(j, score)
+        out.append({**j, "score": score, "score_reasons": reasons,
+                    "recommendation": reco, "recommendation_reason": reco_reason})
     with open(path, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=2)
     print(f"✓ JSON : {path} ({len(out)} offres)")
+    from collections import Counter
+    c = Counter(o["recommendation"] for o in out)
+    print(f"  Recommandations : à postuler {c.get('à_postuler',0)}, "
+          f"à revoir {c.get('à_revoir',0)}, à écarter {c.get('à_écarter',0)}")
 
 
 # ── Main ───────────────────────────────────────────────────────────────────────
