@@ -554,6 +554,9 @@ async function init() {
     syncControls();
     bindEvents();
     render();
+    // Synchronise les candidatures suivies (fichier partagé) puis re-rend
+    // pour refléter l'état « Suivie » à jour sur tous les appareils.
+    if (typeof syncPull === 'function') syncPull().then(render).catch(() => {});
   } catch (err) {
     els.counter.textContent = 'Erreur de chargement';
     els.cards.innerHTML = `<p class="empty-state">Impossible de charger les offres (${escapeHtml(err.message)}).<br>Lancez un serveur local (python -m http.server) pour tester.</p>`;

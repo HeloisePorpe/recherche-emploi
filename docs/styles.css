@@ -437,6 +437,51 @@ html, body {
 .add-btn:hover { background: var(--primary-dark); }
 .board-hint { color: var(--text-muted); font-size: 0.85rem; margin: 0 0 16px; }
 
+/* Barre & panneau de synchronisation */
+.sync-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.sync-status { font-size: 0.85rem; color: var(--text-muted); }
+.sync-status.sync-idle { color: var(--green); }
+.sync-status.sync-error, .sync-status.sync-offline { color: var(--orange); }
+.sync-panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  margin-bottom: 16px;
+  box-shadow: var(--shadow);
+}
+.sync-help { color: var(--text-muted); font-size: 0.82rem; margin: 0 0 10px; line-height: 1.5; }
+.sync-help code { background: var(--bg); padding: 1px 5px; border-radius: 4px; }
+.sync-row { display: flex; gap: 8px; flex-wrap: wrap; }
+.sync-row input {
+  flex: 1 1 240px;
+  padding: 9px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+.sync-row input:focus { outline: none; border-color: var(--primary); }
+
+/* Statut robot (détecté par email) sur une carte de candidature */
+.kc-auto {
+  font-size: 0.78rem;
+  font-weight: 600;
+  margin: 6px 0;
+  padding: 4px 8px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+}
+.auto-sent { background: #eef6ff; color: var(--primary-dark); border-color: #d5e6fb; }
+.auto-wait { background: var(--orange-bg); color: var(--orange); border-color: #f3d9ad; }
+.auto-pos { background: var(--green-bg); color: var(--green); border-color: #bfe6cd; }
+.auto-neg { background: var(--red-bg); color: var(--red); border-color: #f3c9c9; }
+
 .board {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

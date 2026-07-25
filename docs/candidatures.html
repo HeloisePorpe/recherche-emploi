@@ -21,6 +21,27 @@
   </header>
 
   <main class="board-wrap">
+    <div class="sync-bar">
+      <span id="sync-status" class="sync-status" title="État de la synchronisation">Synchronisation…</span>
+      <button id="sync-toggle" type="button" class="ghost-btn">⚙️ Synchronisation</button>
+    </div>
+
+    <section id="sync-panel" class="sync-panel" hidden>
+      <p class="sync-help">
+        Le suivi est <strong>synchronisé entre tes appareils</strong> et mis à jour par le robot
+        (lecture automatique, sans réglage). Pour <strong>modifier</strong> le suivi depuis cet
+        appareil (déplacer une carte, ajouter, noter), colle un <strong>jeton GitHub personnel</strong>
+        (fine-grained, dépôt <code>recherche-emploi</code>, permission <em>Contents : Read and write</em>).
+        Il reste sur cet appareil et n'est jamais publié.
+      </p>
+      <div class="sync-row">
+        <input type="password" id="gh-token" placeholder="ghp_… (jeton fine-grained)" autocomplete="off" />
+        <button id="gh-token-save" type="button" class="add-btn">Enregistrer</button>
+        <button id="gh-token-clear" type="button" class="ghost-btn">Effacer</button>
+      </div>
+      <p id="gh-token-state" class="sync-help"></p>
+    </section>
+
     <form id="add-form" class="add-form" autocomplete="off">
       <input type="text" id="add-title" placeholder="Intitulé du poste *" required />
       <input type="text" id="add-company" placeholder="Entreprise" />
