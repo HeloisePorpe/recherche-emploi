@@ -99,6 +99,10 @@ Gmail dédiée (`heloise.emploi@gmail.com`), via IMAP (`fetch_email_alerts`) :
   - Trajet non calculé → affiché et marqué « à vérifier » (masqué en mode *strict*)
   - Seuil dans `docs/app.js` : `MAX_COMMUTE = 75`
 - Filtre par source
+- **🤖 Recommandation** (robot de tri) : chaque offre reçoit `à postuler` /
+  `à revoir` / `à écarter` **avec la raison**, affichée sur la carte + filtre dédié.
+  Logique dans `recommend_offer` (`job_scraper.py`), en **règles** pour l'instant
+  (l'IA affinera plus tard, mêmes champs `recommendation` / `recommendation_reason`).
 - **Date de parution** affichée sur chaque carte
 - **Archivage** des offres non pertinentes (bouton « ✕ Pas pertinent ») :
   masquées de la liste, consultables via « Voir les archivées », restaurables,
