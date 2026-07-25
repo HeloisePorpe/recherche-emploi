@@ -771,6 +771,11 @@ _EMAIL_ALERT_SOURCES = [
     {"name": "LinkedIn (alerte)",
      "senders": ["linkedin.com", "e.linkedin.com", "jobs-listings@linkedin.com"],
      "link_re": re.compile(r'https?://[^"\'\s>]*linkedin\.com/(?:comm/)?jobs/view/[^"\'\s>]+', re.I)},
+    {"name": "Cadremploi (alerte)",
+     "senders": ["cadremploi.fr", "alertes.cadremploi.fr"],
+     # Alertes Cadremploi : liens enrobés dans r.emails*.alertes.cadremploi.fr/tr/cl/...
+     "link_re": re.compile(
+         r'https?://[^"\'\s>]*cadremploi\.fr/(?:tr/cl/|emploi|offre|annonce)[^"\'\s>]+', re.I)},
 ]
 
 _HTML_TAG_RE = re.compile(r'<[^>]+>')
@@ -837,7 +842,9 @@ def _parse_alert_email(msg, cfg):
         if re.search(r"voir (toutes|tous|l'offre|plus|cette|d'autres)|see all|unsubscribe|"
                      r"d[ée]sabonn|g[ée]rer|param[èe]tr|postul|mettre à jour|pr[ée]f[ée]rence|"
                      r"t[ée]l[ée]charger|centre d'aide|conditions|confidentialit|"
-                     r"^indeed$|^linkedin$|app\s?store|google\s?play|^\W*$", title, re.I):
+                     r"cr[ée]er (mon|une) alerte|d[ée]poser mon cv|diffuser|s'inscrire|"
+                     r"se connecter|acc[èe]s recruteur|lire dans l'app|me pr[ée]parer|"
+                     r"^indeed$|^linkedin$|^cadremploi$|app\s?store|google\s?play|^\W*$", title, re.I):
             continue
         key = href.split("?")[0]
         if key in seen:
@@ -1375,7 +1382,7 @@ def run():
     all_jobs.extend(fetch_themuse_jobs())
     all_jobs.extend(fetch_wttj_jobs())
 
-    print("\n[7] Alertes e-mail (WTJ, Indeed, HelloWork, LinkedIn)...")
+    print("\n[7] Alertes e-mail (WTJ, Indeed, HelloWork, LinkedIn, Cadremploi)...")
     all_jobs.extend(fetch_email_alerts())
 
     print(f"\nTotal brut : {len(all_jobs)}")
