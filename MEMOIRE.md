@@ -37,7 +37,7 @@ personnalisé.
 | **RemoteOK** | API | 100 % remote (tech-heavy) |
 | **The Muse** | API | Catégorie Marketing, France + Remote |
 | **Welcome to the Jungle** | Algolia | Vivier CRM/marketing FR ; best-effort (auto-découverte des clés Algolia au runtime, zone grise CGU) — **ne renvoie rien** (clés non trouvées, RSS bloqué) |
-| **Alertes e-mail** | Gmail IMAP | **WTJ, Indeed, HelloWork, LinkedIn** via les e-mails d'alerte reçus sur une boîte Gmail dédiée (seul moyen gratuit et légal pour ces plateformes fermées) |
+| **Alertes e-mail** | Gmail IMAP | **Indeed, HelloWork, Cadremploi, LinkedIn, WTJ** via les e-mails d'alerte reçus sur une boîte Gmail dédiée (seul moyen gratuit et légal pour ces plateformes fermées). Formats validés : Indeed (`cts.indeed.com`), HelloWork (`emails.hellowork.com/clic`), Cadremploi (`r.emails*.alertes.cadremploi.fr/tr/cl`). LinkedIn/WTJ à confirmer. |
 | Indeed | RSS | Flux bloqué (désactivé de fait) |
 
 France Travail et Adzuna interrogés avec une liste de mots-clés élargie
