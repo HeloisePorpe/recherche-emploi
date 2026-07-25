@@ -18,7 +18,9 @@
       "Compétences alignées (3)",
       "Secteur favorable : finance",
       "Télétravail 5j/sem"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À confirmer : titre sans signal CRM explicite"
   },
   {
     "source": "We Work Remotely",
@@ -38,7 +40,9 @@
       "Outils clés : segmentation, email, sms",
       "Compétences alignées (3)",
       "Télétravail 5j/sem"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À confirmer : titre sans signal CRM explicite"
   },
   {
     "source": "We Work Remotely",
@@ -59,7 +63,9 @@
       "Compétences alignées (5)",
       "Secteur favorable : insurance",
       "Télétravail 5j/sem"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À confirmer : titre sans signal CRM explicite"
   },
   {
     "source": "We Work Remotely",
@@ -81,52 +87,9 @@
       "Outils clés : html, segmentation, email, sms",
       "Secteur favorable : insurance",
       "Télétravail 5j/sem"
-    ]
-  },
-  {
-    "source": "France Travail",
-    "title": "Responsable Grands Comptes Monde - Pilotes SSP (H/F)",
-    "link": "https://candidat.francetravail.fr/offres/recherche/detail/210STVW",
-    "company": "SIMAERO OPERATIONS",
-    "location": "93 - Tremblay-en-France (93290)",
-    "description": "Simaero est un fournisseur international de formation sur simulateurs de vol destiné aux compagnies aériennes, aux organismes de formation et aux pilotes professionnels. Le groupe dispose d'un réseau de 30 simulateurs de vol répartis entre la France, l'Afrique du Sud et la Chine, et accompagne plus de 220 clients civils et militaires issus de plus de 80 pays.\n\nPrésentation du poste\nEn tant que Responsable Grands Comptes, vous serez chargé(e) de gérer et de développer des relations durables avec des partenaires clés du secteur aérien et de l'aviation, à des niveaux hiérarchiques senior et exécutif. Au-delà de la performance commerciale, ce poste consiste à instaurer une relation de confiance, à représenter Simaero avec crédibilité et à garantir un niveau de service constamment élevé.\nVous agirez en tant que partenaire de confiance auprès de vos comptes, en veillant à ce que les solutions de formation et d'ingénierie de Simaero répondent aux attentes des clients, tout en assurant une croissance durable du chiffre d'affaires.\n________________________________________\nPrincipales responsabilités\nGestion stratégique des comptes et des relations clients\n- Construire, développer et entretenir des relations à long terme avec les décideurs de haut niveau (Directeurs de la Formation, Responsables Flotte, Dirigeants) au sein des compagnies aériennes et des organisations du secteur de l'aviation\n- Agir en tant qu'interlocuteur(rice) privilégié(e) pour les comptes stratégiques, en garantissant un niveau élevé de satisfaction client et des partenariats pérennes\n- Anticiper proactivement les besoins des clients, leurs plans de formation et l'évolution de leur flotte afin de soutenir une coopération à long terme\n- Assurer un niveau de qualité de service élevé en coordination avec les équipes opérations, formation et ingénierie\nDéveloppement commercial et performance\n- Développer le chiffre d'affaires en gérant les comptes existants et en créant de nouveaux partenariats avec des compagnies aériennes à l'international\n- Participer à l'élaboration des budgets, aux prévisions et à l'atteinte des objectifs commerciaux\n- Définir et mettre en œuvre des stratégies commerciales pour les comptes et régions assignés, principalement dans un environnement B2C\n- Préparer, présenter et négocier des propositions commerciales, des appels d'offres et des accords à long terme\nReprésentation et présence sectorielle\n- Représenter Simaero lors d'événements sectoriels, de conférences et de réunions clients de haut niveau, en incarnant les valeurs et les standards de l'entreprise\n- Animer et participer à des réunions commerciales, des présentations et des échanges au niveau exécutif avec les clients et partenaires\n- Contribuer à la visibilité et à la réputation de Simaero au sein de la communauté aéronautique mondiale\nCoordination et collaboration interne\n- Travailler en étroite collaboration avec les parties prenantes internes (opérations, finance, formation, ingénierie) afin de garantir une expérience client fluide et cohérente\n- Gérer les contrats, traiter les demandes clients et résoudre les problèmes de manière professionnelle et orientée client\n- Maintenir à jour les données des comptes, le pipeline commercial et les reportings via les outils CRM",
-    "salary_raw": "Annuel de 50000.0 Euros sur 12 mois",
-    "published": "2026-07-03T17:42:22.207Z",
-    "contract_type": "CDI",
-    "telework_days": null,
-    "in_france": true,
-    "commute_minutes": null,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Télétravail non mentionné"
     ],
-    "score": 8,
-    "score_reasons": [
-      "Compétences alignées (4)",
-      "Secteur favorable : finance",
-      "Salaire dans la cible (50,000€)"
-    ]
-  },
-  {
-    "source": "France Travail",
-    "title": "Consultant Senior CRM - Marketing Automation Senior (H/F)",
-    "link": "https://candidat.francetravail.fr/offres/recherche/detail/5177084",
-    "company": "Fed Group",
-    "location": "92 - Issy-les-Moulineaux (92130)",
-    "description": "Fed IT, cabinet entièrement dédié aux recrutements spécialisés sur les métiers de l'informatique (Infra, Data, Développement, MOA, MOE, Management), recherche pour un de ses clients dans le secteur de l'édition de logiciel, un ou une : Consultant Senior CRM - Marketing Automation (H/F). Le poste est à pourvoir dans le cadre d'un CDI chez le client final.\n\nSous la responsabilité du Responsable Projet, vous ferez le lien entre les clients et les équipes en interne pour la mise en place et le maintien en condition opérationnelle des solutions SAAS retenues (Salesforce, CRM Microsoft Dynamics, Marketing Automation, .). A ce titre vos principales missions seront : \n- Piloter des projets CRM, Data, Marketing Automation pour accompagner les clients dans le déploiement de solutions d'acquisition, de conversion, de rétention et de fidélisation client ; \n- Préparer, animer, restituer des workshops et des ateliers de cadrages ; \n- Organiser la communication avec toutes les parties prenantes des missions ; \n- Poser des constats, analyser les besoins, définir les KPI's et formuler des recommandations permettant aux clients d'atteindre leurs objectifs stratégiques ; \n- Identifier les besoins fonctionnels et techniques requis pour la mise en œuvre opérationnelle ; \n- Assurer le reporting, de mesurer la performance des actions en place et les restituer au client ; \n- Mettre votre expertise à profit pour apporter : de nouvelles pratiques structurantes au sein de l'équipe ; \n- Explorer de nouveaux terrains de jeu ; \n- Développer de nouvelles offres et de nouveaux services ; \n- Challenger les pratiques et les méthodologies existantes pour les faire évoluer ; \n- Opérer les missions auprès des clients et les parties prenantes ; \n- Collaborer avec les chefs de projet et les CSM pour cadrer les missions ; \n- Apporter votre appui en avant-vente sur des dossiers à forte valeur ajoutée .\n\nDe formation Bac + 5 type école d'ingénieur ou école de commerce, avec une spécialisation en CRM & Marketing Automation, vous possédez une expérience de 5 ans minimum sur des fonctions similaires. \nVous disposez d'un niveau d'anglais courant. Idéalement, vous avez déjà travaillé sur des projets concernant des outils (CRM, ERP), en mode SAAS. \nVotre rigueur, votre curiosité, votre autonomie, votre capacité d'analyse et de synthèse ainsi que votre aisance relationnelle à travailler en équipe seront des atouts majeurs pour mener à bien votre mission. \nRémunération : 50-55 K€ + Package. \nLocalisation : 92 \nTélétravail : 2 jours/semaine",
-    "salary_raw": "Annuel de 50000.0 Euros à 55000.0 Euros",
-    "published": "2026-07-21T00:32:50.000Z",
-    "contract_type": "CDI",
-    "telework_days": 2,
-    "in_france": true,
-    "commute_minutes": null,
-    "flags": [],
-    "score": 8,
-    "score_reasons": [
-      "Compétences alignées (4)",
-      "Salaire dans la cible (50,000€)",
-      "Télétravail 2j/sem"
-    ]
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Séniorité / management d'équipe ?"
   },
   {
     "source": "Adzuna",
@@ -150,7 +113,9 @@
       "Compétences alignées (3)",
       "Salaire dans la cible (55,000€)",
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -170,27 +135,9 @@
       "Outils : email",
       "Compétences alignées (3)",
       "Télétravail 5j/sem"
-    ]
-  },
-  {
-    "source": "We Work Remotely",
-    "title": "Program Manager, Community (Contract)",
-    "link": "https://weworkremotely.com/remote-jobs/airtable-program-manager-community-contract",
-    "company": "Airtable",
-    "location": "Anywhere in the World",
-    "description": "<p>\n  <strong>Headquarters:</strong> Remote - US\n</p>\n\n<div class=\"content-intro\"><p>Airtable is the no-code app platform that empowers people closest to the work to accelerate their most critical business processes. More than 500,000 organizations, including 80% of the Fortune 100, rely on Airtable to transform how work gets done.</p></div><p>We're looking for a Community Program Manager to help scale and evolve Airtable's customer community programs. This role sits within the Digital Programs team, which brings together Community, Education, and AI Programs to help customers learn, adopt, and succeed with Airtable.</p>\n<p>You'll help grow Airtable Community into a strategic driver of customer engagement and meaningful AI adoption by building programs, systems, and experiences that connect customers with one another and accelerate learning. Key areas of focus include scaling our user group program (Airtable Builder Crews), expanding community engagement initiatives, and strengthening the operational foundation that supports a growing portfolio of community programs.</p>\n<p>Airtable Community is more than a place for customers to connect—it's a strategic lever for driving product adoption. Our north star is increasing AI feature adoption and AI weekly active users (AI WAUs), and this role will help design and scale the programs that move customers from AI curiosity to AI proficiency.</p>\n<p>We're looking for someone who is equal parts program manager, community builder, and operator—someone who thrives in ambiguity, embraces experimentation, and can turn ideas into scalable programs with measurable impact.</p>\n<p>This is a full-time contractor role.</p>\n<h1><strong>What you'll do</strong></h1>\n<p><strong>Scale Airtable Builder Crews (User Groups)</strong></p>\n<p>Help expand Airtable's Builder Crews program as we grow from primarily virtual engagement to community-led, in-person experiences.</p>\n<p>Responsibilities include:</p>\n<ul>\n<li>Recruiting, onboarding, and supporting Builder Crew leaders.</li>\n<li>Developing playbooks, templates, and operational processes for local events.</li>\n<li>Partnering with internal teams on event promotion, measurement, and follow-up.</li>\n<li>Creating scalable systems that enable community leaders to independently run successful programs.</li>\n<li>Identifying opportunities to launch new regional, industry, or persona-based Builder Crews.</li>\n</ul>\n<p><strong>Drive Community Engagement</strong></p>\n<p>Help create meaningful opportunities for customers to learn from one another and deepen their relationship with Airtable.</p>\n<p>Responsibilities include:</p>\n<ul>\n<li>Supporting engagement initiatives across Airtable Community and social channels.</li>\n<li>Expanding Airtable's presence and participation on Reddit and other community platforms.</li>\n<li>Identifying and amplifying customer success stories, best practices, and AI use cases.</li>\n<li>Developing campaigns and programs that encourage participation, knowledge sharing, and advocacy.</li>\n<li>Monitoring community health metrics and recommending improvements.</li>\n</ul>\n<p><strong>Improve Community Operations</strong></p>\n<p>Build the operational foundation needed to support a growing portfolio of programs.</p>\n<p>Responsibilities include:</p>\n<ul>\n<li>Managing program operations, documentation, reporting, and workflows.</li>\n<li>Maintaining community systems, tools, dashboards, and processes.</li>\n<li>Supporting program launches, communications, and cross-functional initiatives.</li>\n<li>Identifying opportunities to automate manual work and improve operational efficiency.</li>\n<li>Creating scalable frameworks that enable the Community team to grow without adding complexity.</li>\n</ul>\n<h1><strong>Who you are</strong></h1>\n<ul>\n<li>3–7+ years of experience in community management, customer programs, customer education, operations, or related fields.</li>\n<li>Demonstrated experience building and scaling community programs, such as user groups, ambassador programs, advocacy initiatives, or community-led events.</li>\n<li>An AI-native operator mindset and proven track record of using AI to plan, create, analyze, automate, and execute work. You should be able to articulate how AI has improved your productivity, quality, throughput, or business outcomes.</li>\n<li>Strong program management and operational skills, including the ability to manage multiple initiatives simultaneously, build scalable processes, and drive projects from concept through execution.</li>\n<li>Strong written communication and community engagement skills, with the ability to create experiences that foster participation, learning, and customer advocacy.</li>\n<li>Comfortable working cross-functionally with Product, Marketing, Customer Success, Education, and other stakeholders.</li>\n<li>Analytical and data-driven, with experience measuring program performance and using insights to guide decisions and investments.</li>\n</ul>\n<p><strong>Nice to Have</strong></p>\n<ul>\n<li>Experience supporting Reddit communities, social engagement programs, or community growth initiatives on third-party platforms.</li>\n<li>Familiarity with SaaS customer success, customer education, product adoption, or customer lifecycle programs.</li>\n<li>Experience using Airtable; experience designing and building apps in Airtable is a strong plus.</li>\n<li>Passion for AI, automation, and helping customers adopt new ways of working.</li>\n<li>Comfortability with a flexible schedule (we have international events that will sometimes need support).</li>\n</ul>\n<h2>What we offer</h2>\n<ul>\n<li><strong>Duration: </strong>12-month contract</li>\n<li><strong>Start Date: </strong>ASAP</li>\n<li><strong>Work Schedule:</strong> 40 hr / week</li>\n<li><strong>Location: </strong>Remote</li>\n</ul>\n<p><span>Airtable is an equal opportunity employer. We embrace diversity and strive to create a workplace where everyone has an equal opportunity to thrive. We welcome people of different backgrounds, experiences, abilities, and perspectives. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, protected veteran status or any characteristic protected by applicable federal and state laws, regulations and ordinances. Learn more about your </span><a href=\"https://drive.google.com/file/d/1jAj2by1bto5g8Xqn9hWNAwPOMGNd_fM6/view?usp=sharing\"><span>EEO rights as an applicant</span></a><strong>.&nbsp;</strong></p>\n<p><span>VEVRAA-Federal Contractor</span></p>\n<p><span>If you have a medical condition, disability, or religious belief/practice which inhibits your ability to participate in any part of the application or interview process, please complete our </span><a href=\"https://airtable.com/shrq13fCV8h1sx2t8\"><span>Accommodations Request Form</span></a><span> </span><span>and let us know how we may assist you. Airtable is committed to participating in the interactive process and providing reasonable accommodations to qualified applicants.</span></p>\n<p><span><span>#LI-Remote</span></span></p><div class=\"content-pay-transparency\"><div class=\"pay-input\"><div class=\"description\"><p>Compensation awarded to successful candidates will vary based on their work location, relevant skills and experience.</p></div><div class=\"title\">For all work locations including remote, the hourly rate for this role is:</div><div class=\"pay-range\"><span>$60</span><span class=\"divider\">—</span><span>$80 USD</span></div></div></div><div class=\"content-conclusion\"><p>Please see our Privacy Notice for details regarding Airtable’s collection and use of personal data relating to the application and recruitment process by clicking <a href=\"https://www.airtable.com/company/personnel-privacy-notice\">here</a>.<br /><br />For applicants that live in or have a link to Australia, please see this <a href=\"https://www.airtable.com/company/job-application-privacy-statement\">Privacy Collection Statement</a> for details regarding Airtable's collection and use of personal data relating to the application and recruitment process.</p>\n<p> <strong>Stay Safe from Job Scams</strong><br />All official Airtable communication will come from an <strong>@airtable.com</strong> email address. We will never ask you to share sensitive information or purchase equipment during the hiring process. If in doubt, contact us at <a href=\"mailto:hr@airtable.com\">hr@airtable.com</a>. Learn more about avoiding job scams <a href=\"https://consumer.ftc.gov/consumer-alerts/2022/05/want-work-home-spot-scams-first\">here</a>.</p></div>\n\n<p><strong>To apply:</strong> <a href=\"https://weworkremotely.com/remote-jobs/airtable-program-manager-community-contract\">https://weworkremotely.com/remote-jobs/airtable-program-manager-community-contract</a></p>",
-    "published": "Wed, 22 Jul 2026 07:01:32 +0000",
-    "telework_days": 5,
-    "in_france": true,
-    "salary_extracted": null,
-    "contract_type": null,
-    "flags": [],
-    "score": 8,
-    "score_reasons": [
-      "Outils : email",
-      "Compétences alignées (4)",
-      "Télétravail 5j/sem"
-    ]
+    ],
+    "recommendation": "à_postuler",
+    "recommendation_reason": "Profil correspondant, aucun signal à vérifier (100 % télétravail France, score 8/10)"
   },
   {
     "source": "We Work Remotely",
@@ -213,27 +160,9 @@
       "Outils : html, email",
       "Secteur favorable : insurance",
       "Télétravail 5j/sem"
-    ]
-  },
-  {
-    "source": "We Work Remotely",
-    "title": "Customer Journey and CRM Manager (UK Fixed Term Contract for a Maternity Cover) - Immediate Start",
-    "link": "https://weworkremotely.com/remote-jobs/aethos-customer-journey-and-crm-manager-uk-fixed-term-contract-for-a-maternity-cover",
-    "company": "Aethos",
-    "location": "Anywhere in the World",
-    "description": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/5854/logo.gif?ixlib=rails-4.0.0&amp;w=50&amp;h=50&amp;dpr=2&amp;fit=fill&amp;auto=compress\" />\n\n<p>\n  <strong>Headquarters:</strong> London\n    <br /><strong>URL:</strong> <a href=\"http://aethos.com\">http://aethos.com</a>\n</p>\n\n<div class=\"content\"><div class=\"section-wrapper page-full-width\"><div class=\"section page-centered\"><div><strong>Who We Are:</strong></div>\n<div>&nbsp;</div>\n<div><span>Extraordinary places, passionate people, and shared learning experiences: this is Aethos. We believe that traveling and hospitality should leave a lasting positive impact on the mind, body, and soul. That's the reason why we choose our locations very carefully and work together with people who want to be part of a community instead of just ” having a job”. Everyone who works at Aethos can make a personal impact on the community and company - great ideas can come from anywhere.</span></div>\n<div>&nbsp;</div>\n<div><span>We are a young and dynamic hospitality company that understands the value of time with friends and loved ones. We make a conscious choice towards sustainability and well-being, and the luxury of time and space. We stand for freedom from the stresses and anxieties of modern life. We want to be the first choice for anyone who seeks respite and refuge from the boring, the stressful, and the unsustainable. That‘s why we define hospitality differently: while all of our decisions should be made with the community and needs of our guests in mind, we always thrive to create a community that we want to be part of and that improves the world around us. We invite you to be part of our story.</span></div>\n<div><span>&nbsp;</span></div>\n<div><strong>Role Overview:</strong></div>\n<div>\n<p>We are looking for a UK based Customer Journey &amp; CRM Manager (Fixed Term Contract for a Maternity Cover) to lead the execution and optimisation of Aethos’ guest communication strategy across our portfolio of hotels and clubs.</p>\n<p>This role is responsible for managing the end-to-end guest communication journey, ensuring guests receive timely, relevant, and brand-aligned communications throughout their lifecycle, from pre-arrival through post-stay engagement.</p>\n<p>The ideal candidate combines strong CRM and lifecycle marketing expertise with excellent copywriting and creative skills. They will be responsible for creating and managing brand-level newsletters, overseeing automated guest communications, ensuring data quality and segmentation standards, and working closely with local hotel teams to maintain consistency across all guest-facing communications.</p>\n<p>Experience within hospitality is considered a strong advantage.</p>\n<p>This is a maternity cover position with an initial fixed-term contract. Given Aethos’ continued growth, there may be an opportunity for the role to be extended beyond the maternity cover period, subject to business needs and performance.</p>\n<p><strong>The position can be hybrid or fully remote.</strong></p>\n</div></div><div class=\"section page-centered\"><div><h3>Reporting Structure</h3><div class=\"posting-requirements plain-list\"><div><div>\n<p>Reports to: Group Director of Brand Marketing</p>\n<p>Direct Reports: NA</p>\n<p>Key collaborators: Brand Marketing Team, Corporate Operational Team, Revenue Management &amp; Commercial team, GMs &amp; Local Marketing teams, Local FO and Reservation Managers, CRM &amp; MarTech partners</p>\n</div></div></div></div></div><div class=\"section page-centered\"><div><h3>Key Responsibilities</h3><div class=\"posting-requirements plain-list\"><div><div>\n<h3>CRM &amp; Guest Journey Management</h3>\n<ul>\n<li>\n<p>Manage and optimise guest communication journeys across the portfolio.</p>\n</li>\n<li>\n<p>Oversee lifecycle automations and guest communication workflows.</p>\n</li>\n<li>\n<p>Ensure all automated communications are accurate, relevant, brand-aligned, and commercially effective.</p>\n</li>\n<li>\n<p>Monitor guest journey performance and continuously identify opportunities for improvement.</p>\n</li>\n<li>\n<p>Work closely with CRM, booking engine, PMS, and platform partners to ensure systems and integrations function correctly.</p>\n</li>\n</ul>\n<h3>Newsletter &amp; Content Ownership</h3>\n<ul>\n<li>\n<p>Own the creation and execution of all brand-level newsletters.</p>\n</li>\n<li>\n<p>Write compelling and engaging copy for CRM communications.</p>\n</li>\n<li>\n<p>Create newsletter layouts and supporting creative assets using approved brand templates and tools.</p>\n</li>\n<li>\n<p>Ensure all communications maintain a high standard of content quality, accuracy, and brand consistency.</p>\n</li>\n<li>\n<p>Manage editorial calendars and campaign scheduling.</p>\n</li>\n</ul>\n<h3>CRM Governance &amp; Local Team Support</h3>\n<ul>\n<li>\n<p>Oversee CRM activity across all properties.</p>\n</li>\n<li>\n<p>Review and approve local newsletters (hotels and membership) and ensure local teams follow segmentation best practices and audience selection guidelines.</p>\n</li>\n<li>\n<p>Support hotel teams with campaign planning, audience targeting, and CRM execution.</p>\n</li>\n<li>\n<p>Act as the main point of contact for CRM-related questions across the portfolio (hotels and membership).</p>\n</li>\n</ul>\n<h3>Reporting &amp; Performance Analysis</h3>\n<ul>\n<li>\n<p>Produce monthly CRM performance reports for the portfolio.</p>\n</li>\n<li>\n<p>Monitor KPIs including open rates, click-through rates, conversion, database growth, and revenue contribution.</p>\n</li>\n<li>\n<p>Analyse campaign performance and provide actionable recommendations.</p>\n</li>\n<li>\n<p>Ensure reporting standards are consistent across all properties.</p>\n</li>\n<li>\n<p>Maintain high standards of database health and data quality.</p>\n</li>\n</ul>\n</div></div></div></div></div><div class=\"section page-centered\"><div><h3>Requirements</h3><div class=\"posting-requirements plain-list\"><div><div>\n<ul>\n<li>\n<p><span>Must be available for an immediate start</span></p>\n</li>\n<li>\n<p><span>3–5+ years of experience in CRM, lifecycle marketing, email marketing, or customer journey management.</span></p>\n</li>\n<li>\n<p><span>Strong English copywriting and content creation skills.</span></p>\n</li>\n<li>\n<p><span>Any additional language from our core markets (Italian, Spanish, Portuguese, or German) is considered a plus.</span></p>\n</li>\n<li>\n<p><span>Comfortable creating newsletter layouts and basic creative assets.</span></p>\n</li>\n<li>\n<p><span>Hands-on experience with CRM, email marketing, and marketing automation platforms.</span></p>\n</li>\n<li>\n<p><span>Strong understanding of audience segmentation, automation workflows, customer journeys, and campaign management.</span></p>\n</li>\n<li>\n<p><span>Experience working with CRM integrations, data flows, and guest or customer databases.</span></p>\n</li>\n<li>\n<p><span>Analytical mindset with strong reporting and performance analysis capabilities.</span></p>\n</li>\n<li>\n<p><span>Excellent organisational, project management, and stakeholder management skills.</span></p>\n</li>\n<li>\n<p><span>Ability to balance strategic thinking with hands-on execution in a fast-paced environment.</span></p>\n</li>\n<li>\n<p><span>Hospitality experience is considered an advantage.</span></p>\n</li>\n</ul>\n</div></div></div></div></div><div class=\"section page-centered\"><div>£33,000 - £45,000 a year</div></div><div class=\"section page-centered\"><div class=\"text-small italic text-gray-700\">We may use artificial intelligence (AI) tools to support parts of the hiring process, such as reviewing applications, analyzing resumes, or assessing responses and identifying potential inconsistencies or verification signals in application materials based on available information. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your data is processed, please contact us.</div></div></div></div>\n\n<p><strong>To apply:</strong> <a href=\"https://weworkremotely.com/remote-jobs/aethos-customer-journey-and-crm-manager-uk-fixed-term-contract-for-a-maternity-cover\">https://weworkremotely.com/remote-jobs/aethos-customer-journey-and-crm-manager-uk-fixed-term-contract-for-a-maternity-cover</a></p>",
-    "published": "Thu, 16 Jul 2026 21:07:26 +0000",
-    "telework_days": 5,
-    "in_france": true,
-    "salary_extracted": null,
-    "contract_type": null,
-    "flags": [],
-    "score": 8,
-    "score_reasons": [
-      "Outils : segmentation, email",
-      "Compétences alignées (6)",
-      "Télétravail 5j/sem"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Séniorité élevée (>7 ans ?) ; Séniorité / management d'équipe ?"
   },
   {
     "source": "We Work Remotely",
@@ -255,7 +184,9 @@
       "Outils : email",
       "Compétences alignées (3)",
       "Télétravail 5j/sem"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Séniorité / management d'équipe ?"
   },
   {
     "source": "We Work Remotely",
@@ -275,7 +206,9 @@
       "Outils : email",
       "Secteur favorable : insurance",
       "Télétravail 5j/sem"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À confirmer : titre sans signal CRM explicite"
   },
   {
     "source": "RemoteOK",
@@ -283,7 +216,7 @@
     "link": "https://remoteOK.com/remote-jobs/remote-performance-analyst-ministry-of-housing-communities-and-local-government-1135348",
     "company": "Ministry of Housing, Communities and Local Government",
     "location": "London, ",
-    "description": "Bristol, Darlington, London, Manchester, Wolverhampton<br><br><strong>Job Summary<br><br></strong><strong>We are MHCLG<br><br></strong>Here at the Ministry of Housing, Communities &amp; Local Government (MHCLG), we work on things that make a real difference to peopleâs lives. Whether it's through the homes we live in, the work of our local councils, or the communities weâre all part of, our work is at the top of the political agenda. We have ambitious and far-reaching outcomes to achieve, so thereâs never been a more exciting time to join us.<br><br>This Performance Analyst role will be part of our Elections Digital team at MHCLG. Itâs an exciting time to improve and expand our services to meet usersâ needs.<br><br><strong>Our Services Include<br><br></strong><ul><li>Register to vote </li><li>Apply for a proxy vote </li><li>Apply for a postal vote </li><li>Apply for photo ID to vote (called a âVoter Authority Certificateâ) </li><li>And a product we have built for electoral teams in Local Authorities to support electoral administration. <br><br></li></ul>We have lots to do. We must continue to improve our existing services to meet the needs of our users, especially those of disabled and other marginalised users. We must also think strategically about the future, understanding what problems still exist and champion user-centred ways of working to approach these issues.<br><br>You will be embedded in the Operations team, providing statistics and analysis for an existing portfolio of high-profile online services. Moreover, a substantial part of your responsibilities will be working with the Product and Design teams in Elections Digital, who are busy developing entirely new and exciting online services to improve voter registration as part of the Electoral Resilience &amp; Democratic Engagement Programme.â¯â¯<br><br>This role will involve working closely with the development team on supporting user research and various analytics for services in various stages of development, and also performing analytics and continuous improvement to our existing services.â¯â¯<br><br>The role will also focus on supporting improvements to our digital compliance, making sure that we have proportionate data governance across the operational portfolio of live services that is aligned with MHCLG and data governance frameworks.<br><br>Find out more about our Digital teams and what they are working on through our MHCLG Digital blog. <strong>Please note that MHCLG do not offer visa sponsorship and applicants will need a valid visa for the duration of your employment.<br><br></strong>â¯<br><br><strong>Job Description<br><br></strong>As a Performance Analyst, you'll:â¯â¯â¯<br><br><ul><li>Be responsible for the performance analysis in your given area and help the product team measure and assess outcomes: for example, what good looks like and how it will be measured</li><li>Help to plan and ensure project delivery, finding opportunities to share information with the product team, community colleagues and others. Also to integrate the use of data analytics across the different phases of product of the product lifecycle</li><li>Be adaptable in applying analysis techniques to new contexts, especially when acting as the sole representative for performance analysts on a project</li><li>Be able to work on data governance artifacts with the wider team, including identifying documentary requirements, and then taking responsibility as a subject matter expert to deliver against these requirements</li><li>Be responsible for the accuracy and quality of data and analysis and how they are used, including putting robust quality assurance in place</li><li>Be engaged with, and actively contribute to, the performance analysis community<br><br></li></ul>As a Performance Analyst, you'll:â¯â¯â¯<br><br><ul><li>Be responsible for the performance analysis in your given area and help the product team measure and assess outcomes: for example, what good looks like and how it will be measured</li><li>Help to plan and ensure project delivery, finding opportunities to share information with the product team, community colleagues and others. Also to integrate the use of data analytics across the different phases of product of the product lifecycle</li><li>Be adaptable in applying analysis techniques to new contexts, especially when acting as the sole representative for performance analysts on a project</li><li>Be able to work on data governance artifacts with the wider team, including identifying documentary requirements, and then taking responsibility as a subject matter expert to deliver against these requirements</li><li>Be responsible for the accuracy and quality of data and analysis and how they are used, including putting robust quality assurance in place</li><li>Be engaged with, and actively contribute to, the performance analysis community<br><br></li></ul>Person specification<br><br><strong>As a Performance Analyst, You'll Have<br><br></strong><ul><li>Knowledge on how to use the most appropriate medium to visualise data to tell compelling and actionable stories relevant for business goals. You can present, communicate and disseminate analysis and recommendations effectively, appropriately and with high impact</li><li>Knowledge on how to enable the team to develop a performance framework including KPIs or a service or product. You can provide the intelligence to support the formulation of both short-term and long-term strategic plans. You understand the different phases of product delivery and can plan and run the analysis for these. You can contribute to decision-making throughout the product life cycle</li><li>Skills to develop subject matter expertise in an area, and then apply this to support the development of comprehensive and robust governance frameworks. You can challenge incumbent ways of thinking, and will take full ownership of driving forward solutions to ensure compliance and clear transparent oversight</li><li>Ability to understand and identify who users are and what their needs are, based on evidence. You put users first and can manage competing priorities. You understand the importance of analysis to user-centred design and know how to collaborate with professions that are focused on user-centred design (for example, user research, user experience, content, design, business analysis)</li><li>Knowledge about quality assurance techniques including those used by other analytical professions, and be comfortable deploying these as relevant. You can identify the right data sources and then validate and understand how to interpret the results. You know how to ensure that data is fit for purpose<br><br></li></ul>Alongside your salary of Â£44,004, Ministry of Housing, Communities and Local Government contributes Â£12,747 towards you being a member of the Civil Service Defined Benefit Pension scheme.  Find out what benefits a Civil Service Pension provides (opens in a new window).<br><br>At MHCLG we offer many benefits that range from tailored career pathways and flexible working to MyLifestyle Childcare Voucher and Cycle to Work Schemes. For more information, please click here.<br><br>Artificial intelligence<br><br>Artificial intelligence can be a useful tool to support your application, however, all examples and statements provided must be truthful, factually accurate and taken directly from your own experience. Where plagiarism has been identified (presenting the ideas and experiences of others, or generated by artificial intelligence, as your own) applications may be withdrawn and internal candidates may be subject to disciplinary action. Please see our candidate guidance (opens in a new window) for more information on appropriate and inappropriate use.<br><br>Selection process details<br><br><strong>Application and Selection<br><br></strong>The application process will be split into 2 stages, testing the following Success Profiles:<br><br><strong>Experience</strong><strong> , </strong><strong>Strengths</strong><strong> , </strong><strong>Technical<br><br></strong><strong>Please </strong>ensure your CV does not contain any personally identifiable information.<br><br><strong>Note: </strong>We do not consider direct CV applications. All applications must be submitted via the provided application link.<br><br><strong>Important: Y</strong><strong>our CV and Cover Letter <em>must </em>be merged into a single document before uploading.<br><br></strong><strong>Stage 1: Sift (CV &amp; Cover Letter)<br><br></strong><strong>Experience: </strong>This will be assessed via your CV.<br><br><strong>Technical:</strong> Your covering letter should be no more than 1 page referencing how you meet the criteria set out in the job description &amp; person specification.<br><br>Most of our campaigns utilise multiple assessors and so it is possible that each of your answers would be viewed by different assessors.<br><br><strong>Stage 2: Interview<br><br></strong><ul><li>Experience: Experience questions will be based around the essential skills and criteria as listed in the job description.</li><li>Technical: Technical questions will be based around the essential skills and criteria as listed in the job description.</li><li>Strengths: The strength-based questions will require natural responses from the candidates.<br><br></li></ul>The interview will be of a blended nature consisting of experience, technical and strength-based questions as listed in the advert. The strength-based questions will require natural responses from the candidates. â¯<br><br><strong>Sift and Interview Dates<br><br></strong>Sifting is envisaged to take place the week commencing 3rd August 2026.<br><br>Interviews are envisaged to take place the week commencing 17th August 2026 and are currently being held remotely via videocall. This could be subject to change.<br><br><strong>How We Recruit<br><br></strong>Find out everything you need to know before applying here..<br><br><ul><li>Applying</li><li>Sifting</li><li>Interview</li><li>Interview Results &amp; Feedback</li><li>Reserve List</li><li>Near Miss</li><li>Civil Service Grades</li><li>We are a DCS, RIS &amp; GPTWV employer</li><li>Reasonable Adjustments<br><br></li></ul><strong>How To Apply<br><br></strong>What you need to know before applying.<br><br><ul><li>Security Clearance Requirements</li><li>Civil Service Nationality Requirements</li><li>Right to Work</li><li>Artificial Intelligence</li><li>Civil Service Code and Recruitment Principles</li><li>CV Declaration</li><li>Sponsorships</li><li>Salary and Grade</li><li>Existing Civil Servants</li><li>Conflict of Interest</li><li>Location and Flexible Working</li><li>Fixed Term Contracts</li><li>Internal Fraud Database - Internal Fraud Register</li><li>Appeals and Complaints</li><li>Conflict of Interest<br><br></li></ul><strong>Security Clearance Requirements<br><br></strong><strong>National Office: </strong><strong>BPSS</strong><strong> + </strong><strong>SC <br><br></strong><strong>London Office: </strong><strong>BPSS</strong><strong> + </strong><strong>SC <br><br></strong>Feedback will only be provided if you attend an interview or assessment.<br><br>Security<br><br>Successful candidates must undergo a criminal record check.<br><br>Successful candidates must meet the security requirements before they can be appointed. The level of security needed is security check (opens in a new window).See our vetting charter (opens in a new window).<br><br>People working with government assets must complete baseline personnel security standard (opens in new window) checks.<br><br>Successful candidates must undergo a criminal record check.<br><br>Successful candidates must meet the security requirements before they can be appointed. The level of security needed is security check (opens in a new window).See our vetting charter (opens in a new window).<br><br>People working with government assets must complete baseline personnel security standard (opens in new window) checks.<br><br>Nationality requirements<br><br><strong>This Job Is Broadly Open To The Following Groups<br><br></strong><ul><li>UK nationals</li><li>nationals of the Republic of Ireland</li><li>nationals of Commonwealth countries who have the right to work in the UK</li><li>nationals of the EU, Switzerland, Norway, Iceland or Liechtenstein and family members of those nationalities with settled or pre-settled status under the European Union Settlement Scheme (EUSS) (opens in a new window)</li><li>nationals of the EU, Switzerland, Norway, Iceland or Liechtenstein and family members of those nationalities who have made a valid application for settled or pre-settled status under the European Union Settlement Scheme (EUSS)</li><li>individuals with limited leave to remain or indefinite leave to remain who were eligible to apply for EUSS on or before 31 December 2020</li><li>Turkish nationals, and certain family members of Turkish nationals, who have accrued the right to work in the Civil Service<br><br></li></ul>Further information on nationality requirements (opens in a new window)<br><br>Working for the Civil Service<br><br>The Civil Service Code (opens in a new window) sets out the standards of behaviour expected of civil servants.<br><br>We recruit by merit on the basis of fair and open competition, as outlined in the Civil Service Commission's recruitment principles (opens in a new window).<br><br>The Civil Service embraces diversity and promotes equal opportunities. As such, we run a Disability Confident Scheme (DCS) for candidates with disabilities who meet the minimum selection criteria.<br><br>The Civil Service also offers a Redeployment Interview Scheme to civil servants who are at risk of redundancy, and who meet the minimum requirements for the advertised vacancy.<br><br>The Civil Service Code (opens in a new window) sets out the standards of behaviour expected of civil servants.<br><br>We recruit by merit on the basis of fair and open competition, as outlined in the Civil Service Commission's recruitment principles (opens in a new window).<br><br>The Civil Service embraces diversity and promotes equal opportunities. As such, we run a Disability Confident Scheme (DCS) for candidates with disabilities who meet the minimum selection criteria.<br><br>The Civil Service also offers a Redeployment Interview Scheme to civil servants who are at risk of redundancy, and who meet the minimum requirements for the advertised vacancy.<br><br>Diversity and Inclusion<br><br>The Civil Service is committed to attract, retain and invest in talent wherever it is found. To learn more please see the  Civil Service People Plan (opens in a new window) and the  Civil Service Diversity and Inclusion Strategy (opens in a new window).<br><br>Once this job has closed, the job advert will no longer be available. You may want to save a copy for your records.<br><br>Contact point for applicants<br><br><strong>Job Contact<br><br></strong><ul><li>Name : Bas Diablos</li><li>Email : Basam.Diablos@communities.gov.uk<br><br></li></ul>Recruitment team<br><br><ul><li>Email : Digitaldatajobs@communities.gov.uk<br><br></li></ul>Further information<br><br><strong>About<br><br></strong>If you are unsure about any part of the process or require additional information about the post to enable you to progress your application, you should speak to the Resourcing team - Recruitment@communities.gov.uk. Candidates can appeal at any stage of the recruitment process if they believe there has been:<br><br><ul><li> a procedural irregularity</li><li> an infringement of the Civil Service equal opportunities policy</li><li> exceptional circumstances which were not notified to the interview panel which might have affected performance on the day.<br><br></li></ul>It is important to note that these are appeals about the process not the decision. In the first instance, an appeal should be directed to the MHCLG Resourcing Hub at Recruitment@communities.gov.uk.<br><br>If the MHCLG Resourcing Hub is unable to satisfactorily resolve your complaint, you may contact put your complaint in writing to the Civil Service Commission, Room G8,1 Horse Guards Road, London, SW1A 2HQ or by email to: info@csc.gov.uk<br/><br/>Please mention the word **FANCINATING** and tag RNTIuMTczLjEwOC4xNw== when applying to show you read the job post completely (#RNTIuMTczLjEwOC4xNw==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+    "description": "Bristol, Darlington, London, Manchester, Wolverhampton<br><br><strong>Job Summary<br><br></strong><strong>We are MHCLG<br><br></strong>Here at the Ministry of Housing, Communities &amp; Local Government (MHCLG), we work on things that make a real difference to peopleâs lives. Whether it's through the homes we live in, the work of our local councils, or the communities weâre all part of, our work is at the top of the political agenda. We have ambitious and far-reaching outcomes to achieve, so thereâs never been a more exciting time to join us.<br><br>This Performance Analyst role will be part of our Elections Digital team at MHCLG. Itâs an exciting time to improve and expand our services to meet usersâ needs.<br><br><strong>Our Services Include<br><br></strong><ul><li>Register to vote </li><li>Apply for a proxy vote </li><li>Apply for a postal vote </li><li>Apply for photo ID to vote (called a âVoter Authority Certificateâ) </li><li>And a product we have built for electoral teams in Local Authorities to support electoral administration. <br><br></li></ul>We have lots to do. We must continue to improve our existing services to meet the needs of our users, especially those of disabled and other marginalised users. We must also think strategically about the future, understanding what problems still exist and champion user-centred ways of working to approach these issues.<br><br>You will be embedded in the Operations team, providing statistics and analysis for an existing portfolio of high-profile online services. Moreover, a substantial part of your responsibilities will be working with the Product and Design teams in Elections Digital, who are busy developing entirely new and exciting online services to improve voter registration as part of the Electoral Resilience &amp; Democratic Engagement Programme.â¯â¯<br><br>This role will involve working closely with the development team on supporting user research and various analytics for services in various stages of development, and also performing analytics and continuous improvement to our existing services.â¯â¯<br><br>The role will also focus on supporting improvements to our digital compliance, making sure that we have proportionate data governance across the operational portfolio of live services that is aligned with MHCLG and data governance frameworks.<br><br>Find out more about our Digital teams and what they are working on through our MHCLG Digital blog. <strong>Please note that MHCLG do not offer visa sponsorship and applicants will need a valid visa for the duration of your employment.<br><br></strong>â¯<br><br><strong>Job Description<br><br></strong>As a Performance Analyst, you'll:â¯â¯â¯<br><br><ul><li>Be responsible for the performance analysis in your given area and help the product team measure and assess outcomes: for example, what good looks like and how it will be measured</li><li>Help to plan and ensure project delivery, finding opportunities to share information with the product team, community colleagues and others. Also to integrate the use of data analytics across the different phases of product of the product lifecycle</li><li>Be adaptable in applying analysis techniques to new contexts, especially when acting as the sole representative for performance analysts on a project</li><li>Be able to work on data governance artifacts with the wider team, including identifying documentary requirements, and then taking responsibility as a subject matter expert to deliver against these requirements</li><li>Be responsible for the accuracy and quality of data and analysis and how they are used, including putting robust quality assurance in place</li><li>Be engaged with, and actively contribute to, the performance analysis community<br><br></li></ul>As a Performance Analyst, you'll:â¯â¯â¯<br><br><ul><li>Be responsible for the performance analysis in your given area and help the product team measure and assess outcomes: for example, what good looks like and how it will be measured</li><li>Help to plan and ensure project delivery, finding opportunities to share information with the product team, community colleagues and others. Also to integrate the use of data analytics across the different phases of product of the product lifecycle</li><li>Be adaptable in applying analysis techniques to new contexts, especially when acting as the sole representative for performance analysts on a project</li><li>Be able to work on data governance artifacts with the wider team, including identifying documentary requirements, and then taking responsibility as a subject matter expert to deliver against these requirements</li><li>Be responsible for the accuracy and quality of data and analysis and how they are used, including putting robust quality assurance in place</li><li>Be engaged with, and actively contribute to, the performance analysis community<br><br></li></ul>Person specification<br><br><strong>As a Performance Analyst, You'll Have<br><br></strong><ul><li>Knowledge on how to use the most appropriate medium to visualise data to tell compelling and actionable stories relevant for business goals. You can present, communicate and disseminate analysis and recommendations effectively, appropriately and with high impact</li><li>Knowledge on how to enable the team to develop a performance framework including KPIs or a service or product. You can provide the intelligence to support the formulation of both short-term and long-term strategic plans. You understand the different phases of product delivery and can plan and run the analysis for these. You can contribute to decision-making throughout the product life cycle</li><li>Skills to develop subject matter expertise in an area, and then apply this to support the development of comprehensive and robust governance frameworks. You can challenge incumbent ways of thinking, and will take full ownership of driving forward solutions to ensure compliance and clear transparent oversight</li><li>Ability to understand and identify who users are and what their needs are, based on evidence. You put users first and can manage competing priorities. You understand the importance of analysis to user-centred design and know how to collaborate with professions that are focused on user-centred design (for example, user research, user experience, content, design, business analysis)</li><li>Knowledge about quality assurance techniques including those used by other analytical professions, and be comfortable deploying these as relevant. You can identify the right data sources and then validate and understand how to interpret the results. You know how to ensure that data is fit for purpose<br><br></li></ul>Alongside your salary of Â£44,004, Ministry of Housing, Communities and Local Government contributes Â£12,747 towards you being a member of the Civil Service Defined Benefit Pension scheme.  Find out what benefits a Civil Service Pension provides (opens in a new window).<br><br>At MHCLG we offer many benefits that range from tailored career pathways and flexible working to MyLifestyle Childcare Voucher and Cycle to Work Schemes. For more information, please click here.<br><br>Artificial intelligence<br><br>Artificial intelligence can be a useful tool to support your application, however, all examples and statements provided must be truthful, factually accurate and taken directly from your own experience. Where plagiarism has been identified (presenting the ideas and experiences of others, or generated by artificial intelligence, as your own) applications may be withdrawn and internal candidates may be subject to disciplinary action. Please see our candidate guidance (opens in a new window) for more information on appropriate and inappropriate use.<br><br>Selection process details<br><br><strong>Application and Selection<br><br></strong>The application process will be split into 2 stages, testing the following Success Profiles:<br><br><strong>Experience</strong><strong> , </strong><strong>Strengths</strong><strong> , </strong><strong>Technical<br><br></strong><strong>Please </strong>ensure your CV does not contain any personally identifiable information.<br><br><strong>Note: </strong>We do not consider direct CV applications. All applications must be submitted via the provided application link.<br><br><strong>Important: Y</strong><strong>our CV and Cover Letter <em>must </em>be merged into a single document before uploading.<br><br></strong><strong>Stage 1: Sift (CV &amp; Cover Letter)<br><br></strong><strong>Experience: </strong>This will be assessed via your CV.<br><br><strong>Technical:</strong> Your covering letter should be no more than 1 page referencing how you meet the criteria set out in the job description &amp; person specification.<br><br>Most of our campaigns utilise multiple assessors and so it is possible that each of your answers would be viewed by different assessors.<br><br><strong>Stage 2: Interview<br><br></strong><ul><li>Experience: Experience questions will be based around the essential skills and criteria as listed in the job description.</li><li>Technical: Technical questions will be based around the essential skills and criteria as listed in the job description.</li><li>Strengths: The strength-based questions will require natural responses from the candidates.<br><br></li></ul>The interview will be of a blended nature consisting of experience, technical and strength-based questions as listed in the advert. The strength-based questions will require natural responses from the candidates. â¯<br><br><strong>Sift and Interview Dates<br><br></strong>Sifting is envisaged to take place the week commencing 3rd August 2026.<br><br>Interviews are envisaged to take place the week commencing 17th August 2026 and are currently being held remotely via videocall. This could be subject to change.<br><br><strong>How We Recruit<br><br></strong>Find out everything you need to know before applying here..<br><br><ul><li>Applying</li><li>Sifting</li><li>Interview</li><li>Interview Results &amp; Feedback</li><li>Reserve List</li><li>Near Miss</li><li>Civil Service Grades</li><li>We are a DCS, RIS &amp; GPTWV employer</li><li>Reasonable Adjustments<br><br></li></ul><strong>How To Apply<br><br></strong>What you need to know before applying.<br><br><ul><li>Security Clearance Requirements</li><li>Civil Service Nationality Requirements</li><li>Right to Work</li><li>Artificial Intelligence</li><li>Civil Service Code and Recruitment Principles</li><li>CV Declaration</li><li>Sponsorships</li><li>Salary and Grade</li><li>Existing Civil Servants</li><li>Conflict of Interest</li><li>Location and Flexible Working</li><li>Fixed Term Contracts</li><li>Internal Fraud Database - Internal Fraud Register</li><li>Appeals and Complaints</li><li>Conflict of Interest<br><br></li></ul><strong>Security Clearance Requirements<br><br></strong><strong>National Office: </strong><strong>BPSS</strong><strong> + </strong><strong>SC <br><br></strong><strong>London Office: </strong><strong>BPSS</strong><strong> + </strong><strong>SC <br><br></strong>Feedback will only be provided if you attend an interview or assessment.<br><br>Security<br><br>Successful candidates must undergo a criminal record check.<br><br>Successful candidates must meet the security requirements before they can be appointed. The level of security needed is security check (opens in a new window).See our vetting charter (opens in a new window).<br><br>People working with government assets must complete baseline personnel security standard (opens in new window) checks.<br><br>Successful candidates must undergo a criminal record check.<br><br>Successful candidates must meet the security requirements before they can be appointed. The level of security needed is security check (opens in a new window).See our vetting charter (opens in a new window).<br><br>People working with government assets must complete baseline personnel security standard (opens in new window) checks.<br><br>Nationality requirements<br><br><strong>This Job Is Broadly Open To The Following Groups<br><br></strong><ul><li>UK nationals</li><li>nationals of the Republic of Ireland</li><li>nationals of Commonwealth countries who have the right to work in the UK</li><li>nationals of the EU, Switzerland, Norway, Iceland or Liechtenstein and family members of those nationalities with settled or pre-settled status under the European Union Settlement Scheme (EUSS) (opens in a new window)</li><li>nationals of the EU, Switzerland, Norway, Iceland or Liechtenstein and family members of those nationalities who have made a valid application for settled or pre-settled status under the European Union Settlement Scheme (EUSS)</li><li>individuals with limited leave to remain or indefinite leave to remain who were eligible to apply for EUSS on or before 31 December 2020</li><li>Turkish nationals, and certain family members of Turkish nationals, who have accrued the right to work in the Civil Service<br><br></li></ul>Further information on nationality requirements (opens in a new window)<br><br>Working for the Civil Service<br><br>The Civil Service Code (opens in a new window) sets out the standards of behaviour expected of civil servants.<br><br>We recruit by merit on the basis of fair and open competition, as outlined in the Civil Service Commission's recruitment principles (opens in a new window).<br><br>The Civil Service embraces diversity and promotes equal opportunities. As such, we run a Disability Confident Scheme (DCS) for candidates with disabilities who meet the minimum selection criteria.<br><br>The Civil Service also offers a Redeployment Interview Scheme to civil servants who are at risk of redundancy, and who meet the minimum requirements for the advertised vacancy.<br><br>The Civil Service Code (opens in a new window) sets out the standards of behaviour expected of civil servants.<br><br>We recruit by merit on the basis of fair and open competition, as outlined in the Civil Service Commission's recruitment principles (opens in a new window).<br><br>The Civil Service embraces diversity and promotes equal opportunities. As such, we run a Disability Confident Scheme (DCS) for candidates with disabilities who meet the minimum selection criteria.<br><br>The Civil Service also offers a Redeployment Interview Scheme to civil servants who are at risk of redundancy, and who meet the minimum requirements for the advertised vacancy.<br><br>Diversity and Inclusion<br><br>The Civil Service is committed to attract, retain and invest in talent wherever it is found. To learn more please see the  Civil Service People Plan (opens in a new window) and the  Civil Service Diversity and Inclusion Strategy (opens in a new window).<br><br>Once this job has closed, the job advert will no longer be available. You may want to save a copy for your records.<br><br>Contact point for applicants<br><br><strong>Job Contact<br><br></strong><ul><li>Name : Bas Diablos</li><li>Email : Basam.Diablos@communities.gov.uk<br><br></li></ul>Recruitment team<br><br><ul><li>Email : Digitaldatajobs@communities.gov.uk<br><br></li></ul>Further information<br><br><strong>About<br><br></strong>If you are unsure about any part of the process or require additional information about the post to enable you to progress your application, you should speak to the Resourcing team - Recruitment@communities.gov.uk. Candidates can appeal at any stage of the recruitment process if they believe there has been:<br><br><ul><li> a procedural irregularity</li><li> an infringement of the Civil Service equal opportunities policy</li><li> exceptional circumstances which were not notified to the interview panel which might have affected performance on the day.<br><br></li></ul>It is important to note that these are appeals about the process not the decision. In the first instance, an appeal should be directed to the MHCLG Resourcing Hub at Recruitment@communities.gov.uk.<br><br>If the MHCLG Resourcing Hub is unable to satisfactorily resolve your complaint, you may contact put your complaint in writing to the Civil Service Commission, Room G8,1 Horse Guards Road, London, SW1A 2HQ or by email to: info@csc.gov.uk<br/><br/>Please mention the word **FANCINATING** and tag RMjAuMTY4LjEwMy4w when applying to show you read the job post completely (#RMjAuMTY4LjEwMy4w). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
     "salary_raw": "",
     "published": "2026-07-22T15:00:22+00:00",
     "telework_days": 5,
@@ -296,7 +229,9 @@
       "Outils : email",
       "Secteur favorable : assurance",
       "Télétravail 5j/sem"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À confirmer : titre sans signal CRM explicite"
   },
   {
     "source": "France Travail",
@@ -320,7 +255,9 @@
       "Outils clés : segmentation, email, sms",
       "Compétences alignées (5)",
       "Trajet long (84 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
     "source": "France Travail",
@@ -346,7 +283,63 @@
       "Outils clés : html, css, segmentation, omnicanal",
       "Compétences alignées (4)",
       "Trajet long (94 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 94 min et pas 100 % télétravail"
+  },
+  {
+    "source": "France Travail",
+    "title": "Responsable Grands Comptes Monde - Pilotes SSP (H/F)",
+    "link": "https://candidat.francetravail.fr/offres/recherche/detail/210STVW",
+    "company": "SIMAERO OPERATIONS",
+    "location": "93 - Tremblay-en-France (93290)",
+    "description": "Simaero est un fournisseur international de formation sur simulateurs de vol destiné aux compagnies aériennes, aux organismes de formation et aux pilotes professionnels. Le groupe dispose d'un réseau de 30 simulateurs de vol répartis entre la France, l'Afrique du Sud et la Chine, et accompagne plus de 220 clients civils et militaires issus de plus de 80 pays.\n\nPrésentation du poste\nEn tant que Responsable Grands Comptes, vous serez chargé(e) de gérer et de développer des relations durables avec des partenaires clés du secteur aérien et de l'aviation, à des niveaux hiérarchiques senior et exécutif. Au-delà de la performance commerciale, ce poste consiste à instaurer une relation de confiance, à représenter Simaero avec crédibilité et à garantir un niveau de service constamment élevé.\nVous agirez en tant que partenaire de confiance auprès de vos comptes, en veillant à ce que les solutions de formation et d'ingénierie de Simaero répondent aux attentes des clients, tout en assurant une croissance durable du chiffre d'affaires.\n________________________________________\nPrincipales responsabilités\nGestion stratégique des comptes et des relations clients\n- Construire, développer et entretenir des relations à long terme avec les décideurs de haut niveau (Directeurs de la Formation, Responsables Flotte, Dirigeants) au sein des compagnies aériennes et des organisations du secteur de l'aviation\n- Agir en tant qu'interlocuteur(rice) privilégié(e) pour les comptes stratégiques, en garantissant un niveau élevé de satisfaction client et des partenariats pérennes\n- Anticiper proactivement les besoins des clients, leurs plans de formation et l'évolution de leur flotte afin de soutenir une coopération à long terme\n- Assurer un niveau de qualité de service élevé en coordination avec les équipes opérations, formation et ingénierie\nDéveloppement commercial et performance\n- Développer le chiffre d'affaires en gérant les comptes existants et en créant de nouveaux partenariats avec des compagnies aériennes à l'international\n- Participer à l'élaboration des budgets, aux prévisions et à l'atteinte des objectifs commerciaux\n- Définir et mettre en œuvre des stratégies commerciales pour les comptes et régions assignés, principalement dans un environnement B2C\n- Préparer, présenter et négocier des propositions commerciales, des appels d'offres et des accords à long terme\nReprésentation et présence sectorielle\n- Représenter Simaero lors d'événements sectoriels, de conférences et de réunions clients de haut niveau, en incarnant les valeurs et les standards de l'entreprise\n- Animer et participer à des réunions commerciales, des présentations et des échanges au niveau exécutif avec les clients et partenaires\n- Contribuer à la visibilité et à la réputation de Simaero au sein de la communauté aéronautique mondiale\nCoordination et collaboration interne\n- Travailler en étroite collaboration avec les parties prenantes internes (opérations, finance, formation, ingénierie) afin de garantir une expérience client fluide et cohérente\n- Gérer les contrats, traiter les demandes clients et résoudre les problèmes de manière professionnelle et orientée client\n- Maintenir à jour les données des comptes, le pipeline commercial et les reportings via les outils CRM",
+    "salary_raw": "Annuel de 50000.0 Euros sur 12 mois",
+    "published": "2026-07-03T17:42:22.207Z",
+    "contract_type": "CDI",
+    "telework_days": null,
+    "in_france": true,
+    "commute_minutes": 170,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné",
+      "Trajet long (170 min)"
+    ],
+    "score": 7,
+    "score_reasons": [
+      "Compétences alignées (4)",
+      "Secteur favorable : finance",
+      "Salaire dans la cible (50,000€)",
+      "Trajet long (170 min)"
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 170 min et pas 100 % télétravail"
+  },
+  {
+    "source": "France Travail",
+    "title": "Consultant Senior CRM - Marketing Automation Senior (H/F)",
+    "link": "https://candidat.francetravail.fr/offres/recherche/detail/5177084",
+    "company": "Fed Group",
+    "location": "92 - Issy-les-Moulineaux (92130)",
+    "description": "Fed IT, cabinet entièrement dédié aux recrutements spécialisés sur les métiers de l'informatique (Infra, Data, Développement, MOA, MOE, Management), recherche pour un de ses clients dans le secteur de l'édition de logiciel, un ou une : Consultant Senior CRM - Marketing Automation (H/F). Le poste est à pourvoir dans le cadre d'un CDI chez le client final.\n\nSous la responsabilité du Responsable Projet, vous ferez le lien entre les clients et les équipes en interne pour la mise en place et le maintien en condition opérationnelle des solutions SAAS retenues (Salesforce, CRM Microsoft Dynamics, Marketing Automation, .). A ce titre vos principales missions seront : \n- Piloter des projets CRM, Data, Marketing Automation pour accompagner les clients dans le déploiement de solutions d'acquisition, de conversion, de rétention et de fidélisation client ; \n- Préparer, animer, restituer des workshops et des ateliers de cadrages ; \n- Organiser la communication avec toutes les parties prenantes des missions ; \n- Poser des constats, analyser les besoins, définir les KPI's et formuler des recommandations permettant aux clients d'atteindre leurs objectifs stratégiques ; \n- Identifier les besoins fonctionnels et techniques requis pour la mise en œuvre opérationnelle ; \n- Assurer le reporting, de mesurer la performance des actions en place et les restituer au client ; \n- Mettre votre expertise à profit pour apporter : de nouvelles pratiques structurantes au sein de l'équipe ; \n- Explorer de nouveaux terrains de jeu ; \n- Développer de nouvelles offres et de nouveaux services ; \n- Challenger les pratiques et les méthodologies existantes pour les faire évoluer ; \n- Opérer les missions auprès des clients et les parties prenantes ; \n- Collaborer avec les chefs de projet et les CSM pour cadrer les missions ; \n- Apporter votre appui en avant-vente sur des dossiers à forte valeur ajoutée .\n\nDe formation Bac + 5 type école d'ingénieur ou école de commerce, avec une spécialisation en CRM & Marketing Automation, vous possédez une expérience de 5 ans minimum sur des fonctions similaires. \nVous disposez d'un niveau d'anglais courant. Idéalement, vous avez déjà travaillé sur des projets concernant des outils (CRM, ERP), en mode SAAS. \nVotre rigueur, votre curiosité, votre autonomie, votre capacité d'analyse et de synthèse ainsi que votre aisance relationnelle à travailler en équipe seront des atouts majeurs pour mener à bien votre mission. \nRémunération : 50-55 K€ + Package. \nLocalisation : 92 \nTélétravail : 2 jours/semaine",
+    "salary_raw": "Annuel de 50000.0 Euros à 55000.0 Euros",
+    "published": "2026-07-21T00:32:50.000Z",
+    "contract_type": "CDI",
+    "telework_days": 2,
+    "in_france": true,
+    "commute_minutes": 106,
+    "flags": [
+      "Trajet long (106 min)"
+    ],
+    "score": 7,
+    "score_reasons": [
+      "Compétences alignées (4)",
+      "Salaire dans la cible (50,000€)",
+      "Trajet long (106 min)",
+      "Télétravail 2j/sem"
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 106 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -366,7 +359,9 @@
     "score_reasons": [
       "Outils : email, whatsapp",
       "Télétravail 5j/sem"
-    ]
+    ],
+    "recommendation": "à_postuler",
+    "recommendation_reason": "Profil correspondant, aucun signal à vérifier (100 % télétravail France, score 7/10)"
   },
   {
     "source": "Adzuna",
@@ -391,7 +386,9 @@
       "Outils clés : segmentation, email, sms",
       "Compétences alignées (3)",
       "Trajet long (109 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 109 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -415,7 +412,9 @@
       "Compétences alignées (4)",
       "Salaire dans la cible (45,000€)",
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -440,7 +439,9 @@
       "Compétences alignées (3)",
       "Trajet long (111 min)",
       "Télétravail 2j/sem"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 111 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -462,7 +463,9 @@
     "score_reasons": [
       "Compétences alignées (3)",
       "Salaire dans la cible (46,000€)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -487,7 +490,9 @@
       "Compétences alignées (3)",
       "Salaire dans la cible (52,000€)",
       "Trajet long (105 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 105 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -510,7 +515,9 @@
     "score_reasons": [
       "Salaire dans la cible (55,000€)",
       "Trajet court (25 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Séniorité élevée (>7 ans ?) ; Télétravail non mentionné"
   },
   {
     "source": "Remotive",
@@ -534,7 +541,9 @@
     "score_reasons": [
       "Compétences alignées (4)",
       "Télétravail 5j/sem"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Contrat à vérifier (freelance / horaire / $) ; Salaire en USD ; Séniorité élevée (>7 ans ?)"
   },
   {
     "source": "We Work Remotely",
@@ -556,7 +565,9 @@
     "score_reasons": [
       "Secteur favorable : finance",
       "Télétravail 5j/sem"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Customer Success / Account mgmt ? ; CRM = sourcing RH ?"
   },
   {
     "source": "We Work Remotely",
@@ -578,7 +589,9 @@
     "score_reasons": [
       "Compétences alignées (3)",
       "Télétravail 5j/sem"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Séniorité élevée (>7 ans ?)"
   },
   {
     "source": "Jobicy",
@@ -598,7 +611,9 @@
     "score_reasons": [
       "Outils : email",
       "Télétravail 5j/sem"
-    ]
+    ],
+    "recommendation": "à_postuler",
+    "recommendation_reason": "Profil correspondant, aucun signal à vérifier (100 % télétravail France, score 7/10)"
   },
   {
     "source": "RemoteOK",
@@ -606,7 +621,7 @@
     "link": "https://remoteOK.com/remote-jobs/remote-chat-representative-barefoot-student-1135302",
     "company": "Barefoot Student",
     "location": "Apopka, ",
-    "description": "Source Funding<br><br>Apopka, FL, USA<br><br>17 hours ago<br><br>Full-time Remote<br><br>Save Flag Share<br><br>Apply Now<br><br>We are seeking a customer-focused and detail-oriented Chat Representative to join our team. In this role, you will assist customers through live chat by answering questions, providing information about loan products and services, guiding applicants through the loan process, and delivering exceptional customer support. The ideal candidate has strong written communication skills, can multitask effectively, and is committed to providing accurate and timely assistance.<br><br><strong>Key Responsibilities<br><br></strong>Respond promptly and professionally to customer inquiries via live chat.<br><br>Provide information about loan products, eligibility requirements, application procedures, and repayment options.<br><br>Assist customers with completing loan applications and resolving account-related questions.<br><br>Verify customer information while maintaining confidentiality and compliance with company policies.<br><br>Troubleshoot basic customer issues and escalate complex concerns to the appropriate department.<br><br>Maintain accurate records of customer interactions in the company's CRM system.<br><br>Meet established performance metrics, including response time, customer satisfaction, and quality standards.<br><br>Stay up to date on company policies, products, and regulatory requirements.<br><br><strong>Qualifications<br><br></strong>High school diploma or equivalent (associate's or bachelor's degree preferred).<br><br>Previous experience in customer service, live chat support, call center, or financial services is an advantage.<br><br>Excellent written communication, grammar, and typing skills.<br><br>Strong problem-solving abilities and attention to detail.<br><br>Ability to work in a fast-paced environment and manage multiple conversations simultaneously.<br><br>Basic computer proficiency and experience with CRM or chat software.<br><br>Professional, empathetic, and customer-focused attitude.<br><br><strong>Preferred Skills<br><br></strong>Experience in the lending, banking, or financial services industry.<br><br>Knowledge of loan terminology and application processes.<br><br>Ability to handle sensitive customer information with discretion.<br><br>Strong organizational and time management skills.<br><br><strong>What We Offer<br><br></strong>Competitive salary<br><br>Performance-based incentives<br><br>Paid training<br><br>Opportunities for career growth and advancement<br><br>Supportive and collaborative work environment<br><br>Apply Now<br/><br/>Please mention the word **IMPROVEMENTS** and tag RNTIuMTczLjEwOC4xNw== when applying to show you read the job post completely (#RNTIuMTczLjEwOC4xNw==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+    "description": "Source Funding<br><br>Apopka, FL, USA<br><br>17 hours ago<br><br>Full-time Remote<br><br>Save Flag Share<br><br>Apply Now<br><br>We are seeking a customer-focused and detail-oriented Chat Representative to join our team. In this role, you will assist customers through live chat by answering questions, providing information about loan products and services, guiding applicants through the loan process, and delivering exceptional customer support. The ideal candidate has strong written communication skills, can multitask effectively, and is committed to providing accurate and timely assistance.<br><br><strong>Key Responsibilities<br><br></strong>Respond promptly and professionally to customer inquiries via live chat.<br><br>Provide information about loan products, eligibility requirements, application procedures, and repayment options.<br><br>Assist customers with completing loan applications and resolving account-related questions.<br><br>Verify customer information while maintaining confidentiality and compliance with company policies.<br><br>Troubleshoot basic customer issues and escalate complex concerns to the appropriate department.<br><br>Maintain accurate records of customer interactions in the company's CRM system.<br><br>Meet established performance metrics, including response time, customer satisfaction, and quality standards.<br><br>Stay up to date on company policies, products, and regulatory requirements.<br><br><strong>Qualifications<br><br></strong>High school diploma or equivalent (associate's or bachelor's degree preferred).<br><br>Previous experience in customer service, live chat support, call center, or financial services is an advantage.<br><br>Excellent written communication, grammar, and typing skills.<br><br>Strong problem-solving abilities and attention to detail.<br><br>Ability to work in a fast-paced environment and manage multiple conversations simultaneously.<br><br>Basic computer proficiency and experience with CRM or chat software.<br><br>Professional, empathetic, and customer-focused attitude.<br><br><strong>Preferred Skills<br><br></strong>Experience in the lending, banking, or financial services industry.<br><br>Knowledge of loan terminology and application processes.<br><br>Ability to handle sensitive customer information with discretion.<br><br>Strong organizational and time management skills.<br><br><strong>What We Offer<br><br></strong>Competitive salary<br><br>Performance-based incentives<br><br>Paid training<br><br>Opportunities for career growth and advancement<br><br>Supportive and collaborative work environment<br><br>Apply Now<br/><br/>Please mention the word **IMPROVEMENTS** and tag RMjAuMTY4LjEwMy4w when applying to show you read the job post completely (#RMjAuMTY4LjEwMy4w). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
     "salary_raw": "",
     "published": "2026-07-22T20:27:06+00:00",
     "telework_days": 5,
@@ -620,7 +635,9 @@
     "score_reasons": [
       "Secteur favorable : bank",
       "Télétravail 5j/sem"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer"
   },
   {
     "source": "France Travail",
@@ -645,7 +662,9 @@
       "Outils : email, sms",
       "Compétences alignées (5)",
       "Trajet long (109 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 109 min et pas 100 % télétravail"
   },
   {
     "source": "France Travail",
@@ -667,7 +686,9 @@
     "score": 6,
     "score_reasons": [
       "Secteur favorable : finance"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
     "source": "France Travail",
@@ -687,7 +708,9 @@
     "score": 6,
     "score_reasons": [
       "Télétravail 5j/sem"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer"
   },
   {
     "source": "France Travail",
@@ -711,7 +734,9 @@
       "Outils : omnicanal",
       "Compétences alignées (3)",
       "Trajet long (87 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
     "source": "France Travail",
@@ -736,29 +761,9 @@
       "Outils : omnicanal",
       "Trajet long (118 min)",
       "Télétravail 2j/sem"
-    ]
-  },
-  {
-    "source": "France Travail",
-    "title": "Téléprospecteur / Télévendeur (H/F)",
-    "link": "https://candidat.francetravail.fr/offres/recherche/detail/211QFWR",
-    "company": "MARQUETIS & CO",
-    "location": "92 - Levallois-Perret (92300)",
-    "description": "Marquetis Call est une entreprise spécialisée dans la relation client. \nForte de plus de 25 ans d'expérience, nous accompagnons les marques dans la gestion et l'optimisation de leurs interactions avec leurs clients via des dispositifs multicanaux (téléphone, email, chat, réseaux sociaux, traitements back office etc.).\nNotre objectif : créer une relation humaine, efficace et durable entre nos clients et leurs publics.\n\nAvec nous, venez faire la différence !\n\nQue recherchons nous ?\n\nNous recherchons des Opérateurs en relation et gestion client multicanal H/F pour rejoindre nos équipes télévente/téléprospection.\n\nA ce titre, vos missions seront les suivantes :\n\n- Emission d'appels auprès de clients, anciens clients ou prospects en fonction de la campagne sur laquelle vous intervenez  \n- Selon vos objectifs, vous aurez à réaliser soit de la qualification de leads, de la détection de projets,  de la vente additionnelle et/ou de la prise de RDV sur des fichiers pré qualifiés\n- Suivi et performance : création et mise à jour des dossiers clients/prospects, reporting régulier et suivi des indicateurs de performance\n\nLieu de mission : Levallois-Perret\n\nLe profil recherché :\n\nVotre principal atout réside dans votre aisance relationnelle.\nVous avez une appétence pour le commerce et la relation clients, appréciez le contact direct et êtes proactif (ve) dans votre démarche.\nVous maîtrisez les outils informatiques et vous justifiez d'une première expérience réussie dans un environnement de service client en émission d'appels pour de la télévente et/ou téléprospection en entreprise ou centre d'appels. \nA l'écoute, vous savez questionner vos interlocuteurs en phase de découverte ; doté(e) d'une bonne fibre commerciale, vous aimez convaincre et apporter des solutions.\n\nCe que nous vous offrons :\n- Rémunération : Salaire mensuel fixe de 1868€ bruts+ variable pouvant atteindre 400€ bruts\n- Mutuelle familiale prise en charge à 60% par l'entreprise\n- Surcomplémentaire santé optionnelle\n- Epargne salariale\n- Restauration : RIE ou Carte Ticket Restaurant\n\nPlusieurs postes sont à pourvoir à partir de début septembre à temps plein du lundi au vendredi",
-    "salary_raw": "Mensuel de 1868.0 Euros sur 12 mois",
-    "published": "2026-07-24T09:49:53.444Z",
-    "contract_type": "CDI",
-    "telework_days": null,
-    "in_france": true,
-    "commute_minutes": null,
-    "flags": [
-      "Séniorité élevée (>7 ans ?)",
-      "Télétravail non mentionné"
     ],
-    "score": 6,
-    "score_reasons": [
-      "Outils : email"
-    ]
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 118 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -780,7 +785,9 @@
     "score": 6,
     "score_reasons": [
       "Télétravail 5j/sem"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Customer Success / Account mgmt ? ; Pertinence CRM à confirmer"
   },
   {
     "source": "Adzuna",
@@ -801,7 +808,9 @@
     "score": 6,
     "score_reasons": [
       "Télétravail 5j/sem"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer"
   },
   {
     "source": "Adzuna",
@@ -824,7 +833,9 @@
     "score": 6,
     "score_reasons": [
       "Trajet court (25 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -839,16 +850,18 @@
     "telework_days": null,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": 205,
+    "commute_minutes": 197,
     "flags": [
       "Télétravail non mentionné",
-      "Trajet long (205 min)"
+      "Trajet long (197 min)"
     ],
     "score": 6,
     "score_reasons": [
       "Outils clés : omnicanal, email, sms",
-      "Trajet long (205 min)"
-    ]
+      "Trajet long (197 min)"
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 197 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -870,7 +883,9 @@
     "score": 6,
     "score_reasons": [
       "Salaire dans la cible (51,000€)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -888,14 +903,16 @@
     "commute_minutes": 85,
     "flags": [
       "Télétravail non mentionné",
-      "Annonce ancienne (154 j)"
+      "Annonce ancienne (155 j)"
     ],
     "score": 6,
     "score_reasons": [
       "Outils : segmentation",
       "Compétences alignées (4)",
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné ; Annonce ancienne (155 j)"
   },
   {
     "source": "Adzuna",
@@ -919,7 +936,9 @@
       "Outils : segmentation",
       "Compétences alignées (3)",
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -944,7 +963,9 @@
       "Outils : segmentation",
       "Compétences alignées (4)",
       "Trajet long (121 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 121 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -967,7 +988,9 @@
       "Outils : segmentation",
       "Compétences alignées (3)",
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -990,7 +1013,9 @@
     "score_reasons": [
       "Outils clés : email, sms, whatsapp",
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -1012,7 +1037,9 @@
     "score": 6,
     "score_reasons": [
       "Compétences alignées (3)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Séniorité / management d'équipe ? ; Télétravail non mentionné"
   },
   {
     "source": "Remotive",
@@ -1033,7 +1060,9 @@
     "score": 6,
     "score_reasons": [
       "Télétravail 5j/sem"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Séniorité élevée (>7 ans ?)"
   },
   {
     "source": "We Work Remotely",
@@ -1051,7 +1080,9 @@
     "score": 6,
     "score_reasons": [
       "Télétravail 5j/sem"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À confirmer : titre sans signal CRM explicite"
   },
   {
     "source": "We Work Remotely",
@@ -1069,7 +1100,9 @@
     "score": 6,
     "score_reasons": [
       "Télétravail 5j/sem"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À confirmer : titre sans signal CRM explicite"
   },
   {
     "source": "We Work Remotely",
@@ -1089,7 +1122,9 @@
     "score": 6,
     "score_reasons": [
       "Télétravail 5j/sem"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer"
   },
   {
     "source": "We Work Remotely",
@@ -1109,7 +1144,9 @@
     "score": 6,
     "score_reasons": [
       "Télétravail 5j/sem"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer"
   },
   {
     "source": "We Work Remotely",
@@ -1129,7 +1166,9 @@
     "score": 6,
     "score_reasons": [
       "Télétravail 5j/sem"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer"
   },
   {
     "source": "Jobicy",
@@ -1148,7 +1187,9 @@
     "score": 6,
     "score_reasons": [
       "Télétravail 5j/sem"
-    ]
+    ],
+    "recommendation": "à_postuler",
+    "recommendation_reason": "Profil correspondant, aucun signal à vérifier (100 % télétravail France, score 6/10)"
   },
   {
     "source": "Jobicy",
@@ -1167,7 +1208,9 @@
     "score": 6,
     "score_reasons": [
       "Télétravail 5j/sem"
-    ]
+    ],
+    "recommendation": "à_postuler",
+    "recommendation_reason": "Profil correspondant, aucun signal à vérifier (100 % télétravail France, score 6/10)"
   },
   {
     "source": "Jobicy",
@@ -1186,7 +1229,9 @@
     "score": 6,
     "score_reasons": [
       "Télétravail 5j/sem"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À confirmer : titre sans signal CRM explicite"
   },
   {
     "source": "Jobicy",
@@ -1205,7 +1250,9 @@
     "score": 6,
     "score_reasons": [
       "Télétravail 5j/sem"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À confirmer : titre sans signal CRM explicite"
   },
   {
     "source": "Jobicy",
@@ -1224,7 +1271,9 @@
     "score": 6,
     "score_reasons": [
       "Télétravail 5j/sem"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À confirmer : titre sans signal CRM explicite"
   },
   {
     "source": "Jobicy",
@@ -1243,7 +1292,9 @@
     "score": 6,
     "score_reasons": [
       "Télétravail 5j/sem"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À confirmer : titre sans signal CRM explicite"
   },
   {
     "source": "The Muse",
@@ -1263,7 +1314,9 @@
     "score": 6,
     "score_reasons": [
       "Télétravail 5j/sem"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Annonce ancienne (1843 j)"
   },
   {
     "source": "France Travail",
@@ -1288,7 +1341,9 @@
     "score_reasons": [
       "Salaire dans la cible (50,000€)",
       "Trajet long (121 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 121 min et pas 100 % télétravail"
   },
   {
     "source": "France Travail",
@@ -1313,7 +1368,9 @@
     "score_reasons": [
       "Salaire dans la cible (45,000€)",
       "Trajet long (102 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 102 min et pas 100 % télétravail"
   },
   {
     "source": "France Travail",
@@ -1336,7 +1393,9 @@
     "score_reasons": [
       "Outils : segmentation",
       "Trajet long (87 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
     "source": "France Travail",
@@ -1356,7 +1415,9 @@
       "Télétravail non mentionné"
     ],
     "score": 5,
-    "score_reasons": []
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
     "source": "France Travail",
@@ -1379,7 +1440,9 @@
     "score_reasons": [
       "Compétences alignées (3)",
       "Trajet long (105 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 105 min et pas 100 % télétravail"
   },
   {
     "source": "France Travail",
@@ -1402,7 +1465,35 @@
     "score_reasons": [
       "Secteur favorable : axa",
       "Trajet long (122 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 122 min et pas 100 % télétravail"
+  },
+  {
+    "source": "France Travail",
+    "title": "Téléprospecteur / Télévendeur (H/F)",
+    "link": "https://candidat.francetravail.fr/offres/recherche/detail/211QFWR",
+    "company": "MARQUETIS & CO",
+    "location": "92 - Levallois-Perret (92300)",
+    "description": "Marquetis Call est une entreprise spécialisée dans la relation client. \nForte de plus de 25 ans d'expérience, nous accompagnons les marques dans la gestion et l'optimisation de leurs interactions avec leurs clients via des dispositifs multicanaux (téléphone, email, chat, réseaux sociaux, traitements back office etc.).\nNotre objectif : créer une relation humaine, efficace et durable entre nos clients et leurs publics.\n\nAvec nous, venez faire la différence !\n\nQue recherchons nous ?\n\nNous recherchons des Opérateurs en relation et gestion client multicanal H/F pour rejoindre nos équipes télévente/téléprospection.\n\nA ce titre, vos missions seront les suivantes :\n\n- Emission d'appels auprès de clients, anciens clients ou prospects en fonction de la campagne sur laquelle vous intervenez  \n- Selon vos objectifs, vous aurez à réaliser soit de la qualification de leads, de la détection de projets,  de la vente additionnelle et/ou de la prise de RDV sur des fichiers pré qualifiés\n- Suivi et performance : création et mise à jour des dossiers clients/prospects, reporting régulier et suivi des indicateurs de performance\n\nLieu de mission : Levallois-Perret\n\nLe profil recherché :\n\nVotre principal atout réside dans votre aisance relationnelle.\nVous avez une appétence pour le commerce et la relation clients, appréciez le contact direct et êtes proactif (ve) dans votre démarche.\nVous maîtrisez les outils informatiques et vous justifiez d'une première expérience réussie dans un environnement de service client en émission d'appels pour de la télévente et/ou téléprospection en entreprise ou centre d'appels. \nA l'écoute, vous savez questionner vos interlocuteurs en phase de découverte ; doté(e) d'une bonne fibre commerciale, vous aimez convaincre et apporter des solutions.\n\nCe que nous vous offrons :\n- Rémunération : Salaire mensuel fixe de 1868€ bruts+ variable pouvant atteindre 400€ bruts\n- Mutuelle familiale prise en charge à 60% par l'entreprise\n- Surcomplémentaire santé optionnelle\n- Epargne salariale\n- Restauration : RIE ou Carte Ticket Restaurant\n\nPlusieurs postes sont à pourvoir à partir de début septembre à temps plein du lundi au vendredi",
+    "salary_raw": "Mensuel de 1868.0 Euros sur 12 mois",
+    "published": "2026-07-24T09:49:53.444Z",
+    "contract_type": "CDI",
+    "telework_days": null,
+    "in_france": true,
+    "commute_minutes": 113,
+    "flags": [
+      "Séniorité élevée (>7 ans ?)",
+      "Télétravail non mentionné",
+      "Trajet long (113 min)"
+    ],
+    "score": 5,
+    "score_reasons": [
+      "Outils : email",
+      "Trajet long (113 min)"
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 113 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -1428,7 +1519,9 @@
     "score_reasons": [
       "Secteur favorable : assurance",
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Customer Success / Account mgmt ? ; Pertinence CRM à confirmer ; Télétravail faible (1 j)"
   },
   {
     "source": "Adzuna",
@@ -1452,7 +1545,9 @@
     "score_reasons": [
       "Compétences alignées (3)",
       "Trajet long (114 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 114 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -1477,7 +1572,9 @@
     "score_reasons": [
       "Secteur favorable : assurance",
       "Trajet long (116 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 116 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -1500,7 +1597,9 @@
     "score_reasons": [
       "Trajet long (109 min)",
       "Télétravail 2j/sem"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 109 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -1523,7 +1622,9 @@
     "score_reasons": [
       "Salaire dans la cible (46,000€)",
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -1546,7 +1647,9 @@
     "score_reasons": [
       "Compétences alignées (3)",
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Séniorité / management d'équipe ? ; Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -1564,13 +1667,15 @@
     "commute_minutes": 85,
     "flags": [
       "Télétravail non mentionné",
-      "Annonce ancienne (135 j)"
+      "Annonce ancienne (136 j)"
     ],
     "score": 5,
     "score_reasons": [
       "Outils : email, sms",
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné ; Annonce ancienne (136 j)"
   },
   {
     "source": "Adzuna",
@@ -1590,7 +1695,9 @@
       "Télétravail non mentionné"
     ],
     "score": 5,
-    "score_reasons": []
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -1614,7 +1721,9 @@
     "score_reasons": [
       "Outils : email",
       "Trajet long (111 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 111 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -1639,7 +1748,9 @@
     "score_reasons": [
       "Outils : omnicanal",
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Via ESN / staffing ; Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -1663,12 +1774,14 @@
     "score_reasons": [
       "Outils : segmentation",
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné ; Annonce ancienne (154 j)"
   },
   {
     "source": "Adzuna",
     "title": "Responsable CRM & Marketing Relationnel (H/F) (CDI)",
-    "link": "https://www.adzuna.fr/land/ad/5793879853?se=XsbjZOqH8RGrg5YQe_eAEA&utm_medium=api&utm_source=707eaaff&v=D989580695F5D7A1B4DE767C46F2ED9EDB3C598A",
+    "link": "https://www.adzuna.fr/land/ad/5793879853?se=-oOA0wyI8RGEopbyd0f8Hw&utm_medium=api&utm_source=707eaaff&v=D989580695F5D7A1B4DE767C46F2ED9EDB3C598A",
     "company": "ARAVATI FRANCE",
     "location": "Seine-et-Marne, Ile-de-France",
     "description": "Rejoignez un acteur majeur du retail en pleine accélération digitale Notre client est un acteur de référence du retail, reconnu pour la puissance de sa marque et son développement omnicanal. Dans un contexte de transformation ambitieuse de son écosystème CRM et Data, il recherche son futur Responsable CRM afin d'accélérer la personnalisation de la relation client et la création de valeur sur l'ensemble des parcours d'achat. Rattaché(e) à la Direction CRM & Data, vous jouez un rôle central dans …",
@@ -1678,17 +1791,19 @@
     "telework_days": null,
     "in_france": true,
     "contract_type": "CDI",
-    "commute_minutes": 205,
+    "commute_minutes": 197,
     "flags": [
       "Pertinence CRM à confirmer",
       "Télétravail non mentionné",
-      "Trajet long (205 min)"
+      "Trajet long (197 min)"
     ],
     "score": 5,
     "score_reasons": [
       "Outils : omnicanal",
-      "Trajet long (205 min)"
-    ]
+      "Trajet long (197 min)"
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 197 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -1712,7 +1827,9 @@
     "score_reasons": [
       "Outils : omnicanal",
       "Trajet long (110 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 110 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -1732,7 +1849,9 @@
       "Télétravail non mentionné"
     ],
     "score": 5,
-    "score_reasons": []
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -1756,7 +1875,9 @@
     "score_reasons": [
       "Compétences alignées (3)",
       "Trajet long (111 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 111 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -1776,7 +1897,9 @@
       "Télétravail non mentionné"
     ],
     "score": 5,
-    "score_reasons": []
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -1800,7 +1923,9 @@
     "score_reasons": [
       "Compétences alignées (4)",
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné ; Annonce ancienne (112 j)"
   },
   {
     "source": "Adzuna",
@@ -1824,7 +1949,9 @@
     "score_reasons": [
       "Compétences alignées (3)",
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Séniorité / management d'équipe ? ; Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -1847,7 +1974,9 @@
     "score_reasons": [
       "Salaire dans la cible (55,000€)",
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Séniorité élevée (>7 ans ?) ; Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -1871,7 +2000,9 @@
     "score_reasons": [
       "Compétences alignées (3)",
       "Trajet long (110 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 110 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -1895,7 +2026,34 @@
     "score_reasons": [
       "Compétences alignées (4)",
       "Trajet long (110 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 110 min et pas 100 % télétravail"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Campaign Operations Senior Manager H/F",
+    "link": "https://www.adzuna.fr/details/5815078707?utm_medium=api&utm_source=707eaaff",
+    "company": "Grafton",
+    "location": "Paris, Ile-de-France",
+    "description": "Nous recherchons pour l'un de nos client dans le domaine du Marketing Digital un(e) Campain Manager H/F dans le cadre d'un remplacement pour piloter l'exécution et l'orchestration des campagnes marketing à grande échelle. Vous assurez la gestion end-to-end des campagnes (intake/brief, build, QA, déploiement, reporting) et l'activation de parcours multi-étapes (one-off, nurture, triggered), en coordination avec les équipes internes et l'agence. * TYPE DE CONTRAT: INTERIM entre 7 et 9 mois * Four…",
+    "salary_raw": "80000-115000 €",
+    "published": "2026-07-25T10:00:01Z",
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": 85,
+    "flags": [
+      "Séniorité / management d'équipe ?",
+      "Télétravail non mentionné"
+    ],
+    "score": 5,
+    "score_reasons": [
+      "Compétences alignées (5)",
+      "Trajet long (85 min)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Séniorité / management d'équipe ? ; Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -1918,7 +2076,9 @@
     "score_reasons": [
       "Salaire dans la cible (50,000€)",
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Séniorité / management d'équipe ? ; Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -1942,7 +2102,9 @@
     "score_reasons": [
       "Outils : email",
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné ; Annonce ancienne (384 j)"
   },
   {
     "source": "Adzuna",
@@ -1965,7 +2127,9 @@
     "score_reasons": [
       "Compétences alignées (3)",
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -1990,7 +2154,9 @@
     "score_reasons": [
       "Outils : email",
       "Trajet long (109 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 109 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -2014,7 +2180,9 @@
     "score_reasons": [
       "Salaire dans la cible (55,000€)",
       "Trajet long (109 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 109 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -2037,7 +2205,9 @@
     "score_reasons": [
       "Compétences alignées (3)",
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -2062,7 +2232,34 @@
     "score_reasons": [
       "Compétences alignées (3)",
       "Trajet long (94 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 94 min et pas 100 % télétravail"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Chef de Projet Technico-Fonctionnel CRM D365 H/F",
+    "link": "https://www.adzuna.fr/details/5796863746?utm_medium=api&utm_source=707eaaff",
+    "company": "Michael Page",
+    "location": "La Défense, Courbevoie",
+    "description": "En tant que Chef de projet Technico-fonctionnel CRM D365, vous êtes le référent technique des solutions CRM et de leurs interfaces. Vos missions : * Piloter l'expertise CRM Microsoft Dynamics auprès des métiers; * Analyser et challenger les besoins fonctionnels et techniques; * Concevoir les User Stories, Epics et solutions techniques; * Superviser le développement, les tests et l'intégration SI; * Garantir la qualité, la performance et la documentation; * Assurer l'alignement avec l'architectu…",
+    "salary_raw": "63000-77000 €",
+    "published": "2026-07-11T12:04:48Z",
+    "telework_days": 2,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": 108,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Trajet long (108 min)"
+    ],
+    "score": 5,
+    "score_reasons": [
+      "Trajet long (108 min)",
+      "Télétravail 2j/sem"
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 108 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -2085,7 +2282,9 @@
     "score_reasons": [
       "Salaire dans la cible (45,000€)",
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -2109,7 +2308,9 @@
     "score_reasons": [
       "Outils : omnicanal",
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -2131,7 +2332,9 @@
     "score_reasons": [
       "Outils : email",
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -2156,7 +2359,9 @@
     "score_reasons": [
       "Salaire dans la cible (50,000€)",
       "Trajet long (109 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 109 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -2180,7 +2385,9 @@
     "score_reasons": [
       "Secteur favorable : banque",
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -2204,7 +2411,9 @@
     "score_reasons": [
       "Outils : email",
       "Trajet long (116 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 116 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -2229,7 +2438,154 @@
     "score_reasons": [
       "Secteur favorable : bank",
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Séniorité / management d'équipe ? ; Télétravail non mentionné"
+  },
+  {
+    "source": "HelloWork (alerte)",
+    "title": "CRM Marketing Manager H/F",
+    "link": "https://emails.hellowork.com/clic/5e884a6a-d015-48d5-b512-0203eec6b6b4/35/fbbe1328dc7226a0f135c135f3cc035d/aGVsby5wb3JwZUBnbWFpbC5jb23wn6qiaHR0cHM6Ly93d3cuaGVsbG93b3JrLmNvbS9mci1mci9lbXBsb2lzLzgxMTQ2MjA0Lmh0bWw_dXRtX3NvdXJjZT1wdXNoT2ZmcmVzJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPXB1c2hPZmZyZXNfY29ubmV4ZXMmdXRtX3Rlcm09ODExNDYyMDQmdXRtX2NvbnRlbnQ9bGlzdGUydGl0bGU",
+    "company": "",
+    "location": "",
+    "description": "",
+    "published": "2026-07-24T07:34:41+00:00",
+    "in_france": true,
+    "salary_extracted": null,
+    "telework_days": null,
+    "contract_type": null,
+    "flags": [
+      "Télétravail non mentionné"
+    ],
+    "score": 5,
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+  },
+  {
+    "source": "HelloWork (alerte)",
+    "title": "Chef de Projet CRM - Relation Utilisateurs H/F",
+    "link": "https://emails.hellowork.com/clic/d7a9950c-6b26-492e-a363-b3c6a82e1c0c/8/1713c99467489a1a5e871b5adc21ddbf/aGVsby5wb3JwZUBnbWFpbC5jb23wn6qiaHR0cHM6Ly93d3cuaGVsbG93b3JrLmNvbS9mci1mci9lbXBsb2lzLzgwODAzMDE2Lmh0bWw_dXRtX3NvdXJjZT1tYWlsc1hqb2ImdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249Y2FuZGlkYXR1cmVVcmwmdXRtX3Rlcm09ODA4MDMwMTYmdXRtX2NvbnRlbnQ9aW50aXR1bGVvZmZyZQ",
+    "company": "",
+    "location": "",
+    "description": "",
+    "published": "2026-07-22T06:11:37+00:00",
+    "in_france": true,
+    "salary_extracted": null,
+    "telework_days": null,
+    "contract_type": null,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné"
+    ],
+    "score": 5,
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
+  },
+  {
+    "source": "HelloWork (alerte)",
+    "title": "Chef de Projet Marketing CRM H/F",
+    "link": "https://emails.hellowork.com/clic/d7a9950c-6b26-492e-a363-b3c6a82e1c0c/11/54e39211ef91c16285c6f4aa52cf32f1/aGVsby5wb3JwZUBnbWFpbC5jb23wn6qiaHR0cHM6Ly93d3cuaGVsbG93b3JrLmNvbS9mci1mci9lbXBsb2lzLzc4OTI0ODYwLmh0bWw_dXRtX3NvdXJjZT1tYWlsc1hqb2ImdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249Y2FuZGlkYXR1cmVVcmwmdXRtX3Rlcm09Nzg5MjQ4NjAmdXRtX2NvbnRlbnQ9aW50aXR1bGVvZmZyZQ",
+    "company": "",
+    "location": "",
+    "description": "",
+    "published": "2026-07-22T06:11:37+00:00",
+    "in_france": true,
+    "salary_extracted": null,
+    "telework_days": null,
+    "contract_type": null,
+    "flags": [
+      "Télétravail non mentionné"
+    ],
+    "score": 5,
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+  },
+  {
+    "source": "HelloWork (alerte)",
+    "title": "Chef de Projet Prm - CRM H/F",
+    "link": "https://emails.hellowork.com/clic/d7a9950c-6b26-492e-a363-b3c6a82e1c0c/14/47a258db48a7c5d81b3e69417dd11727/aGVsby5wb3JwZUBnbWFpbC5jb23wn6qiaHR0cHM6Ly93d3cuaGVsbG93b3JrLmNvbS9mci1mci9lbXBsb2lzLzgwNzQ1MDE2Lmh0bWw_dXRtX3NvdXJjZT1tYWlsc1hqb2ImdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249Y2FuZGlkYXR1cmVVcmwmdXRtX3Rlcm09ODA3NDUwMTYmdXRtX2NvbnRlbnQ9aW50aXR1bGVvZmZyZQ",
+    "company": "",
+    "location": "",
+    "description": "",
+    "published": "2026-07-22T06:11:37+00:00",
+    "in_france": true,
+    "salary_extracted": null,
+    "telework_days": null,
+    "contract_type": null,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné"
+    ],
+    "score": 5,
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
+  },
+  {
+    "source": "HelloWork (alerte)",
+    "title": "CRM Manager - Maison de Luxe H/F",
+    "link": "https://emails.hellowork.com/clic/d7a9950c-6b26-492e-a363-b3c6a82e1c0c/17/01f348dbf099a80db5efa012f35ae195/aGVsby5wb3JwZUBnbWFpbC5jb23wn6qiaHR0cHM6Ly93d3cuaGVsbG93b3JrLmNvbS9mci1mci9lbXBsb2lzLzgwODg5NTgyLmh0bWw_dXRtX3NvdXJjZT1tYWlsc1hqb2ImdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249Y2FuZGlkYXR1cmVVcmwmdXRtX3Rlcm09ODA4ODk1ODImdXRtX2NvbnRlbnQ9aW50aXR1bGVvZmZyZQ",
+    "company": "",
+    "location": "",
+    "description": "",
+    "published": "2026-07-22T06:11:37+00:00",
+    "in_france": true,
+    "salary_extracted": null,
+    "telework_days": null,
+    "contract_type": null,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné"
+    ],
+    "score": 5,
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
+  },
+  {
+    "source": "HelloWork (alerte)",
+    "title": "Cheffe Chef de Projet CRM Marketing Automation Senior H/F",
+    "link": "https://emails.hellowork.com/clic/48c02f34-dc86-4e52-92d9-f506c9e3e83b/12/2e95756a68aa22dffdd74b18eb7f55fe/aGVsby5wb3JwZUBnbWFpbC5jb23wn6qiaHR0cHM6Ly93d3cuaGVsbG93b3JrLmNvbS9mci1mci9lbXBsb2lzLzgxNDg2MTI4Lmh0bWw_dXRtX3NvdXJjZT1wdXNoT2ZmcmVzJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPXB1c2hPZmZyZXMmdXRtX3Rlcm09ODE0ODYxMjgmdXRtX2NvbnRlbnQ9bGlzdGUxdGl0bGU",
+    "company": "",
+    "location": "",
+    "description": "",
+    "published": "2026-07-25T07:39:21+00:00",
+    "in_france": true,
+    "salary_extracted": null,
+    "telework_days": null,
+    "contract_type": null,
+    "flags": [
+      "Télétravail non mentionné"
+    ],
+    "score": 5,
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+  },
+  {
+    "source": "HelloWork (alerte)",
+    "title": "Head Of CRM H/F",
+    "link": "https://emails.hellowork.com/clic/48c02f34-dc86-4e52-92d9-f506c9e3e83b/30/71560a1118d83461c9b0c05000d272d8/aGVsby5wb3JwZUBnbWFpbC5jb23wn6qiaHR0cHM6Ly93d3cuaGVsbG93b3JrLmNvbS9mci1mci9lbXBsb2lzLzgxNDk5Mzg3Lmh0bWw_dXRtX3NvdXJjZT1wdXNoT2ZmcmVzJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPXB1c2hPZmZyZXMmdXRtX3Rlcm09ODE0OTkzODcmdXRtX2NvbnRlbnQ9bGlzdGUxdGl0bGU",
+    "company": "",
+    "location": "",
+    "description": "",
+    "published": "2026-07-25T07:39:21+00:00",
+    "in_france": true,
+    "salary_extracted": null,
+    "telework_days": null,
+    "contract_type": null,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Séniorité / management d'équipe ?",
+      "Télétravail non mentionné"
+    ],
+    "score": 5,
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Séniorité / management d'équipe ? ; Télétravail non mentionné"
   },
   {
     "source": "HelloWork (alerte)",
@@ -2248,7 +2604,9 @@
       "Télétravail non mentionné"
     ],
     "score": 5,
-    "score_reasons": []
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
     "source": "HelloWork (alerte)",
@@ -2267,16 +2625,18 @@
       "Télétravail non mentionné"
     ],
     "score": 5,
-    "score_reasons": []
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
     "source": "HelloWork (alerte)",
-    "title": "Chef de Projet Marketing CRM H/F",
-    "link": "https://emails.hellowork.com/clic/766f5ebb-1b3d-4d13-bb89-b550357c912a/26/76009a3dbeb40580e92747ebe9b0fc17/aGVsby5wb3JwZUBnbWFpbC5jb23wn6qiaHR0cHM6Ly93d3cuaGVsbG93b3JrLmNvbS9mci1mci9lbXBsb2lzLzgxMDEyMjA0Lmh0bWw_dXRtX3NvdXJjZT1wdXNoT2ZmcmVzJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPXB1c2hPZmZyZXNfY29ubmV4ZXMmdXRtX3Rlcm09ODEwMTIyMDQmdXRtX2NvbnRlbnQ9bGlzdGUydGl0bGU",
+    "title": "Chef Projet CRM et Data Marketing Automation H/F",
+    "link": "https://emails.hellowork.com/clic/408c95a5-a1c3-4133-bdea-57d70bb003be/9/ad76ba4203468cde9345b3f77a983cec/aGVsby5wb3JwZUBnbWFpbC5jb23wn6qiaHR0cHM6Ly93d3cuaGVsbG93b3JrLmNvbS9mci1mci9lbXBsb2lzLzgwNTgyMDI0Lmh0bWw_dXRtX3NvdXJjZT1qb2JhbGVydCZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1qb2JhbGVydCZ1dG1fdGVybT04MDU4MjAyNCZ1dG1fY29udGVudD1vZmZyZV90aXRsZQ",
     "company": "",
     "location": "",
     "description": "",
-    "published": "2026-07-24T13:49:31+00:00",
+    "published": "2026-07-25T06:42:41+00:00",
     "in_france": true,
     "salary_extracted": null,
     "telework_days": null,
@@ -2285,35 +2645,18 @@
       "Télétravail non mentionné"
     ],
     "score": 5,
-    "score_reasons": []
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
     "source": "HelloWork (alerte)",
-    "title": "Chef de Projet CRM - Relation Utilisateurs H/F",
-    "link": "https://emails.hellowork.com/clic/22216acc-1334-467b-94dc-ca1f92359175/6/0278a9e452dba3a7f3820b3cc2f2410b/aGVsby5wb3JwZUBnbWFpbC5jb23wn6qiaHR0cHM6Ly93d3cuaGVsbG93b3JrLmNvbS9mci1mci9lbXBsb2lzLzgwODAzMDE2Lmh0bWw_dXRtX3NvdXJjZT1tYWlsc1hqb2ImdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249Y2FuZGlkYXR1cmVVcmwmdXRtX3Rlcm09ODA4MDMwMTYmdXRtX2NvbnRlbnQ9aW50aXR1bGVvZmZyZQ",
+    "title": "Chef&#xB7;Fe de Projet CRM & Clienteling - Maison de Luxe H/F",
+    "link": "https://emails.hellowork.com/clic/408c95a5-a1c3-4133-bdea-57d70bb003be/18/5d64e5e8366e28b73440e2527bd11ca4/aGVsby5wb3JwZUBnbWFpbC5jb23wn6qiaHR0cHM6Ly93d3cuaGVsbG93b3JrLmNvbS9mci1mci9lbXBsb2lzLzgxNjk5NDM0Lmh0bWw_dXRtX3NvdXJjZT1qb2JhbGVydCZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1qb2JhbGVydCZ1dG1fdGVybT04MTY5OTQzNCZ1dG1fY29udGVudD1vZmZyZV90aXRsZQ",
     "company": "",
     "location": "",
     "description": "",
-    "published": "2026-07-22T08:56:24+00:00",
-    "in_france": true,
-    "salary_extracted": null,
-    "telework_days": null,
-    "contract_type": null,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Télétravail non mentionné"
-    ],
-    "score": 5,
-    "score_reasons": []
-  },
-  {
-    "source": "HelloWork (alerte)",
-    "title": "Chef de Projet Prm - CRM H/F",
-    "link": "https://emails.hellowork.com/clic/22216acc-1334-467b-94dc-ca1f92359175/12/a9410ddddbba5d56eff0075cd44d2c54/aGVsby5wb3JwZUBnbWFpbC5jb23wn6qiaHR0cHM6Ly93d3cuaGVsbG93b3JrLmNvbS9mci1mci9lbXBsb2lzLzgwNzQ1MDE2Lmh0bWw_dXRtX3NvdXJjZT1tYWlsc1hqb2ImdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249Y2FuZGlkYXR1cmVVcmwmdXRtX3Rlcm09ODA3NDUwMTYmdXRtX2NvbnRlbnQ9aW50aXR1bGVvZmZyZQ",
-    "company": "",
-    "location": "",
-    "description": "",
-    "published": "2026-07-22T08:56:24+00:00",
+    "published": "2026-07-25T06:42:41+00:00",
     "in_france": true,
     "salary_extracted": null,
     "telework_days": null,
@@ -2323,16 +2666,60 @@
       "Télétravail non mentionné"
     ],
     "score": 5,
-    "score_reasons": []
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
     "source": "HelloWork (alerte)",
-    "title": "CRM Manager - Maison de Luxe H/F",
-    "link": "https://emails.hellowork.com/clic/22216acc-1334-467b-94dc-ca1f92359175/15/8804b2d917ea1bec2f4e2cba945472b9/aGVsby5wb3JwZUBnbWFpbC5jb23wn6qiaHR0cHM6Ly93d3cuaGVsbG93b3JrLmNvbS9mci1mci9lbXBsb2lzLzgwODg5NTgyLmh0bWw_dXRtX3NvdXJjZT1tYWlsc1hqb2ImdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249Y2FuZGlkYXR1cmVVcmwmdXRtX3Rlcm09ODA4ODk1ODImdXRtX2NvbnRlbnQ9aW50aXR1bGVvZmZyZQ",
+    "title": "CRM Campaign Manager H/F",
+    "link": "https://emails.hellowork.com/clic/408c95a5-a1c3-4133-bdea-57d70bb003be/24/2845685292a417824f8dfe4762d69367/aGVsby5wb3JwZUBnbWFpbC5jb23wn6qiaHR0cHM6Ly93d3cuaGVsbG93b3JrLmNvbS9mci1mci9lbXBsb2lzLzgxNjk4OTgzLmh0bWw_dXRtX3NvdXJjZT1qb2JhbGVydCZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1qb2JhbGVydCZ1dG1fdGVybT04MTY5ODk4MyZ1dG1fY29udGVudD1vZmZyZV90aXRsZQ",
     "company": "",
     "location": "",
     "description": "",
-    "published": "2026-07-22T08:56:24+00:00",
+    "published": "2026-07-25T06:42:41+00:00",
+    "in_france": true,
+    "salary_extracted": null,
+    "telework_days": null,
+    "contract_type": null,
+    "flags": [
+      "Télétravail non mentionné"
+    ],
+    "score": 5,
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+  },
+  {
+    "source": "HelloWork (alerte)",
+    "title": "CRM Manager Junior B2c - CDI - Paris H/F",
+    "link": "https://emails.hellowork.com/clic/408c95a5-a1c3-4133-bdea-57d70bb003be/27/2c018526b24e322566a95046a7633aec/aGVsby5wb3JwZUBnbWFpbC5jb23wn6qiaHR0cHM6Ly93d3cuaGVsbG93b3JrLmNvbS9mci1mci9lbXBsb2lzLzgxNjYyODExLmh0bWw_dXRtX3NvdXJjZT1qb2JhbGVydCZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1qb2JhbGVydCZ1dG1fdGVybT04MTY2MjgxMSZ1dG1fY29udGVudD1vZmZyZV90aXRsZQ",
+    "company": "",
+    "location": "",
+    "description": "",
+    "published": "2026-07-25T06:42:41+00:00",
+    "in_france": true,
+    "salary_extracted": null,
+    "telework_days": null,
+    "contract_type": "CDI",
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Poste junior / débutant ?",
+      "Télétravail non mentionné"
+    ],
+    "score": 5,
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Poste junior / débutant ? ; Télétravail non mentionné"
+  },
+  {
+    "source": "HelloWork (alerte)",
+    "title": "Chef de Projet CRM Senior H/F",
+    "link": "https://emails.hellowork.com/clic/408c95a5-a1c3-4133-bdea-57d70bb003be/30/9b2180605594778491ecc17646c4cc11/aGVsby5wb3JwZUBnbWFpbC5jb23wn6qiaHR0cHM6Ly93d3cuaGVsbG93b3JrLmNvbS9mci1mci9lbXBsb2lzLzgxNjgzNTc2Lmh0bWw_dXRtX3NvdXJjZT1qb2JhbGVydCZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1qb2JhbGVydCZ1dG1fdGVybT04MTY4MzU3NiZ1dG1fY29udGVudD1vZmZyZV90aXRsZQ",
+    "company": "",
+    "location": "",
+    "description": "",
+    "published": "2026-07-25T06:42:41+00:00",
     "in_france": true,
     "salary_extracted": null,
     "telework_days": null,
@@ -2342,16 +2729,18 @@
       "Télétravail non mentionné"
     ],
     "score": 5,
-    "score_reasons": []
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
-    "source": "HelloWork (alerte)",
-    "title": "CRM Marketing Manager H/F",
-    "link": "https://emails.hellowork.com/clic/5e884a6a-d015-48d5-b512-0203eec6b6b4/35/fbbe1328dc7226a0f135c135f3cc035d/aGVsby5wb3JwZUBnbWFpbC5jb23wn6qiaHR0cHM6Ly93d3cuaGVsbG93b3JrLmNvbS9mci1mci9lbXBsb2lzLzgxMTQ2MjA0Lmh0bWw_dXRtX3NvdXJjZT1wdXNoT2ZmcmVzJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPXB1c2hPZmZyZXNfY29ubmV4ZXMmdXRtX3Rlcm09ODExNDYyMDQmdXRtX2NvbnRlbnQ9bGlzdGUydGl0bGU",
+    "source": "Cadremploi (alerte)",
+    "title": "CRM Marketing Manager (H/F)",
+    "link": "https://r.emails5.alertes.cadremploi.fr/tr/cl/e9hhiZ1tspXEI5UZCpNAIy-r8cbf3Fqvep6HLT1QybmYzvT_iihMLOY-UpL01EBYweeIaI74LLJXnXf4WC2dFxmRVcuDBJYytlNKcDdL8l0ImKlMZreMHAf74NX20cZx9aEAhaMnEhRPTJQjrW0k1QCv31are21TUCBzkpfj9RR-L6eBDkobx3xawktJC_OHkPWhlcdookCeDitb1nPnhOosQEU04T9-W28gFWNizEH1R7erI-mKYJ8JvyXylinjTyOJFtQmb17DWORDldw4oh5ljXMYWO65gnwrWU1fDtqqv42B-8ZjZ65wYuMqwfV3fSMc0O5dKG1wqk7ZbYNChshK4CPedxzy24MeC93NbgzOxZ6wqZmSstyd2QzhzD3S7hZAeVCZH245ZzRTsqe9UhcL31X4zTzvFqFKfy5lrXUQxPGXx2lanwgQdAa7Nb775VjzofmKgYkBPaTaHpXUuK0M3JLOHl_0AKW95cbn32r2gdxfXadjH6U7TZScFlUJwRPsXQZ3h0kjQRZWUbOOd6v9KtMq4bD3TdHP0XOxLUIXUOjlVZOCEk9kFLlembM5t6lNcBPKJGThxPEg9H_Lx1qYWoVua5TzZuUQJudcE9TaOdijWAfnHjpbd0HN9QzOK8orIlKAi_LqD5Qmg2D1B-jvS96ShPTR_eptr6rC4jUIgHtKMghc70MtZZIfr7pwDJDj4gTItsagFWp_uORr8e5XwDxuDiMsRi5lSBByQaTny6oYSsMjHbDG3x1zA6HA-TbyLun_RuZnCuuDQ_6L",
     "company": "",
     "location": "",
     "description": "",
-    "published": "2026-07-24T07:34:41+00:00",
+    "published": "2026-07-25T09:20:26+00:00",
     "in_france": true,
     "salary_extracted": null,
     "telework_days": null,
@@ -2360,7 +2749,9 @@
       "Télétravail non mentionné"
     ],
     "score": 5,
-    "score_reasons": []
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
     "source": "France Travail",
@@ -2384,7 +2775,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (102 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 102 min et pas 100 % télétravail"
   },
   {
     "source": "France Travail",
@@ -2409,7 +2802,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (101 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 101 min et pas 100 % télétravail"
   },
   {
     "source": "France Travail",
@@ -2433,7 +2828,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (119 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 119 min et pas 100 % télétravail"
   },
   {
     "source": "France Travail",
@@ -2457,7 +2854,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (123 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 123 min et pas 100 % télétravail"
   },
   {
     "source": "France Travail",
@@ -2482,7 +2881,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (119 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 119 min et pas 100 % télétravail"
   },
   {
     "source": "France Travail",
@@ -2505,7 +2906,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (143 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 143 min et pas 100 % télétravail"
   },
   {
     "source": "France Travail",
@@ -2530,7 +2933,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (178 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 178 min et pas 100 % télétravail"
   },
   {
     "source": "France Travail",
@@ -2552,7 +2957,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (84 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -2575,7 +2982,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -2596,7 +3005,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -2618,7 +3029,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -2641,12 +3054,14 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
     "title": "CRM Marketing Manager (H/F) (CDI)",
-    "link": "https://www.adzuna.fr/land/ad/5799659517?se=MjDzYuqH8RGq_btMgQwBZw&utm_medium=api&utm_source=707eaaff&v=2919516DBD3D6ADE9A1A3E026F04BF0697F1261A",
+    "link": "https://www.adzuna.fr/land/ad/5799659517?se=OHnR0QyI8RGEopbyd0f8Hw&utm_medium=api&utm_source=707eaaff&v=2919516DBD3D6ADE9A1A3E026F04BF0697F1261A",
     "company": "ARAVATI FRANCE",
     "location": "1er Arrondissement, Paris",
     "description": "Vous aimez construire plutôt que maintenir ? Vous recherchez un poste où le CRM n'est pas seulement un outil marketing mais un véritable levier de transformation de l'entreprise ? Notre client, acteur majeur du conseil, de l'audit et de l'expertise auprès des entreprises, poursuit une transformation ambitieuse de son organisation et de son approche commerciale. Dans ce contexte, il crée le poste de CRM Marketing Manager, véritable référent de la stratégie CRM et Marketing Automation. Vous prene…",
@@ -2664,7 +3079,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (109 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 109 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -2687,7 +3104,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail faible (1 j)"
   },
   {
     "source": "Adzuna",
@@ -2710,7 +3129,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -2734,7 +3155,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (114 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 114 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -2758,7 +3181,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (120 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 120 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -2782,7 +3207,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (108 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 108 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -2806,7 +3233,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (120 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 120 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -2830,7 +3259,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (121 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 121 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -2854,7 +3285,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (121 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 121 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -2877,7 +3310,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (89 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -2902,7 +3337,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (100 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 100 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -2926,7 +3363,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Séniorité / management d'équipe ? ; Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -2951,7 +3390,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (94 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 94 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -2975,7 +3416,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (117 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 117 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -2996,12 +3439,14 @@
       "Pertinence CRM à confirmer",
       "Télétravail non mentionné",
       "Trajet long (120 min)",
-      "Annonce ancienne (157 j)"
+      "Annonce ancienne (158 j)"
     ],
     "score": 4,
     "score_reasons": [
       "Trajet long (120 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 120 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -3025,7 +3470,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (108 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 108 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -3049,7 +3496,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (119 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 119 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -3073,7 +3522,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (119 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 119 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -3096,7 +3547,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (76 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -3119,7 +3572,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (109 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 109 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -3142,7 +3597,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -3160,12 +3617,14 @@
     "flags": [
       "Pertinence CRM à confirmer",
       "Télétravail non mentionné",
-      "Annonce ancienne (175 j)"
+      "Annonce ancienne (176 j)"
     ],
     "score": 4,
     "score_reasons": [
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné ; Annonce ancienne (176 j)"
   },
   {
     "source": "Adzuna",
@@ -3190,7 +3649,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (121 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 121 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -3212,7 +3673,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -3235,7 +3698,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -3258,7 +3723,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -3281,7 +3748,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (117 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 117 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -3307,7 +3776,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (119 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 119 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -3331,7 +3802,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (110 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 110 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -3354,7 +3827,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (87 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Séniorité / management d'équipe ? ; Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -3379,7 +3854,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (110 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 110 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -3402,7 +3879,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -3424,30 +3903,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (85 min)"
-    ]
-  },
-  {
-    "source": "Adzuna",
-    "title": "Enterprise Campaign Manager (fixed-term)",
-    "link": "https://www.adzuna.fr/details/5812838371?utm_medium=api&utm_source=707eaaff",
-    "company": "Trimble",
-    "location": "Joinville-le-Pont, Nogent-sur-Marne",
-    "description": "Elevate your marketing career and drive enterprise success across France with a global leader in construction technology. Bring your campaign expertise to Trimble, where your dynamic multi-channel campaigns will empower stakeholders across the entire building lifecycle. Apply now and join our team immediately! About Us: Trimble is empowering stakeholders through planning, design, construction and the entire asset lifecycle. The company’s innovative and connected ecosystem of solutions improves …",
-    "salary_raw": "",
-    "published": "2026-07-23T23:54:37Z",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": 106,
-    "flags": [
-      "Télétravail non mentionné",
-      "Trajet long (106 min)"
     ],
-    "score": 4,
-    "score_reasons": [
-      "Trajet long (106 min)"
-    ]
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Annonce ancienne (301 j)"
   },
   {
     "source": "Adzuna",
@@ -3470,7 +3928,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (110 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 110 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -3493,7 +3953,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (110 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 110 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -3516,7 +3978,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Séniorité / management d'équipe ? ; Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -3538,7 +4002,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -3560,7 +4026,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -3584,7 +4052,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (105 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 105 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -3607,7 +4077,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (117 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 117 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -3629,7 +4101,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -3650,7 +4124,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -3672,7 +4148,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (110 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 110 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -3694,7 +4172,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -3717,7 +4197,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Séniorité / management d'équipe ? ; Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -3739,7 +4221,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Séniorité / management d'équipe ? ; Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -3761,7 +4245,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -3784,7 +4270,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -3802,12 +4290,14 @@
     "commute_minutes": 85,
     "flags": [
       "Télétravail non mentionné",
-      "Annonce ancienne (167 j)"
+      "Annonce ancienne (168 j)"
     ],
     "score": 4,
     "score_reasons": [
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné ; Annonce ancienne (168 j)"
   },
   {
     "source": "Adzuna",
@@ -3830,7 +4320,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -3853,7 +4345,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -3872,12 +4366,14 @@
     "flags": [
       "Pertinence CRM à confirmer",
       "Télétravail non mentionné",
-      "Annonce ancienne (162 j)"
+      "Annonce ancienne (163 j)"
     ],
     "score": 4,
     "score_reasons": [
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné ; Annonce ancienne (163 j)"
   },
   {
     "source": "Adzuna",
@@ -3901,31 +4397,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (121 min)"
-    ]
-  },
-  {
-    "source": "Adzuna",
-    "title": "Chef de projet technico-fonctionnel CRM D365 (F/H)",
-    "link": "https://www.adzuna.fr/land/ad/5795941529?se=0CQZaeqH8RGEopbyd0f8Hw&utm_medium=api&utm_source=707eaaff&v=ADA19A810D3F99E33B6D129D72326F841E466DBA",
-    "company": "Michael Page",
-    "location": "La Défense, Courbevoie",
-    "description": "Le poste de Chef de projet technico-fonctionnel CRM D365 (F/H) En tant que Chef de projet Technico-fonctionnel CRM D365, vous êtes le référent technique des solutions CRM et de leurs interfaces. Vos missions : * Piloter l'expertise CRM Microsoft Dynamics auprès des métiers; * Analyser et challenger les besoins fonctionnels et techniques; * Concevoir les User Stories, Epics et solutions techniques; * Superviser le développement, les tests et l'intégration SI; * Garantir la qualité, la performanc…",
-    "salary_raw": "",
-    "published": "2026-07-10T22:11:07Z",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": 108,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Télétravail non mentionné",
-      "Trajet long (108 min)"
     ],
-    "score": 4,
-    "score_reasons": [
-      "Trajet long (108 min)"
-    ]
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 121 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -3948,7 +4422,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -3972,7 +4448,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné ; Annonce ancienne (79 j)"
   },
   {
     "source": "Adzuna",
@@ -3996,7 +4474,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (87 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Séniorité élevée (>7 ans ?) ; Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -4019,7 +4499,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (105 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 105 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -4041,7 +4523,35 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (87 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Responsable Paid Media et Marketing Automation H/F",
+    "link": "https://www.adzuna.fr/details/5815043295?utm_medium=api&utm_source=707eaaff",
+    "company": "GEODIS",
+    "location": "Hauts-de-Seine, Ile-de-France",
+    "description": "Description du poste Type de contrat CDI-Temps plein Fonction Fonctions Supports - Marketing & communication Intitulé du poste Responsable Paid Media et Marketing Automation H/F Description de la mission Profil du candidat Temps de travail en % 100 Lieu de prise de service Lieu de prise de service Europe, France, Île-de-France, Hauts-de-Seine Ville(s) Levallois Critères candidat Niveau d'études min. requis BAC5 / MASTER Niveau d'expérience dans la fonction Confirmé (5 à 10 ans d'expérience) Lan…",
+    "salary_raw": "",
+    "published": "2026-07-25T09:31:31Z",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": "CDI",
+    "commute_minutes": 114,
+    "flags": [
+      "Séniorité élevée (>7 ans ?)",
+      "Télétravail non mentionné",
+      "Trajet long (114 min)"
+    ],
+    "score": 4,
+    "score_reasons": [
+      "Trajet long (114 min)"
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 114 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -4066,7 +4576,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (94 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 94 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -4091,7 +4603,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (94 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 94 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -4116,7 +4630,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (94 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 94 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -4140,7 +4656,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (117 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 117 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -4165,7 +4683,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (94 min)"
-    ]
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 94 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -4186,7 +4706,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -4208,7 +4730,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -4232,7 +4756,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Via ESN / staffing ; Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -4255,7 +4781,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné ; Annonce ancienne (106 j)"
   },
   {
     "source": "Adzuna",
@@ -4277,7 +4805,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -4300,7 +4830,9 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Séniorité / management d'équipe ? ; Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -4322,6 +4854,8 @@
     "score": 4,
     "score_reasons": [
       "Trajet long (85 min)"
-    ]
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
   }
 ]
