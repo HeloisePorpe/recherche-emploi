@@ -1059,9 +1059,24 @@ def fetch_full_text(url):
             return ""
         html = re.sub(r'(?is)<(script|style|noscript)[^>]*>.*?</\1>', ' ', r.text)
         text = re.sub(r'(?s)<[^>]+>', ' ', html)
-        return re.sub(r'\s+', ' ', text)[:20000]
+        text = re.sub(r'\s+', ' ', text)[:20000]
+        # Coupe les sections « offres similaires / recommandées » : leur contenu
+        # (autres annonces) fausse la détection du télétravail et du salaire.
+        return _trim_related(text)
     except Exception:
         return ""
+
+
+# Frontières des blocs « autres offres » sur les pages d'annonces (Adzuna, etc.).
+_RELATED_BOUNDARY = re.compile(
+    r'postes?\s+similaires|emplois?\s+similaires|offres?\s+similaires|'
+    r'recevez des offres|ces offres pourraient|vous pourriez aussi|autres offres|'
+    r'similar jobs|related jobs|more jobs|recommended jobs', re.I)
+
+
+def _trim_related(text):
+    m = _RELATED_BOUNDARY.search(text or "")
+    return text[:m.start()] if m else text
 
 
 def extract_salary(text):
