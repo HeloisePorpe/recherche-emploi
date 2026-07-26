@@ -173,10 +173,15 @@ segmentation, email/SMS…) ; salaire cible ~45–50 k€ (plancher dur 42 055 �
     suivi local à l'appareil (rien n'est envoyé).
   - **Fusion** par `id`, dernière écriture gagnante (`updatedAt`) ; suppressions
     en *tombstone* (`deleted`) ; champ `auto` réservé au robot.
-  - Le **robot** (GitHub Actions) écrira les statuts détectés par email dans ce
-    dépôt privé via un **secret** (PAT dédié), champ `auto` :
-    `postule` / `en_attente` / `positif` / `negatif`.
-  - Logique dans `docs/store.js`. Les offres **archivées** restent locales.
+  - Le **robot** (GitHub Actions, `update_candidatures_tracking` dans
+    `job_scraper.py`) lit `heloise.emploi`, classe les emails de candidature
+    (accusé → `en_attente`, refus → `negatif`, entretien → `positif`) et écrit le
+    champ `auto` de chaque candidature dans le dépôt privé via l'API GitHub
+    (secret **`CANDIDATURES_TOKEN`**). Il crée une candidature si elle n'existe
+    pas, dédoublonne par clé normalisée (entreprise + titre), ne touche jamais
+    aux champs utilisateur. Détection **par règles** (à affiner avec de vrais
+    emails de réponse).
+  - Logique côté navigateur dans `docs/store.js`. Offres **archivées** : locales.
 
 ## Contraintes connues
 

@@ -44,6 +44,9 @@ jobs:
           # HelloWork / LinkedIn recues par mail. Sans ces secrets, source ignoree.
           GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          # Suivi des candidatures : ecrit les statuts email dans le depot PRIVE
+          # recherche-emploi-candidatures (jeton fine-grained dedie).
+          CANDIDATURES_TOKEN: ${{ secrets.CANDIDATURES_TOKEN }}
         run: |
           python - <<'PY'
           import json, os
@@ -77,6 +80,12 @@ jobs:
               "gmail_app_password": os.environ.get("GMAIL_APP_PASSWORD", ""),
               "gmail_folder": "INBOX",
               "gmail_lookback_days": 7,
+
+              # Suivi des candidatures (depot prive)
+              "candidatures_repo": "HeloisePorpe/recherche-emploi-candidatures",
+              "candidatures_branch": "main",
+              "candidatures_token": os.environ.get("CANDIDATURES_TOKEN", ""),
+              "tracking_lookback_days": 30,
 
               # Fonctionnalites desactivees sur GitHub Actions
               "email_enabled": False,
