@@ -1427,13 +1427,28 @@ def _strip_accents(s):
                    if unicodedata.category(c) != 'Mn')
 
 
-def _norm_key(company, title):
-    """Clé normalisée (entreprise + titre) pour matcher / dédoublonner."""
-    def clean(x):
-        x = _strip_accents((x or '').lower())
-        x = re.sub(r'\(.*?\)|\bh/?f\b|\bf/?h\b|\bm/?f\b|\bcdi\b|\bcdd\b', ' ', x)
-        return re.sub(r'[^a-z0-9]+', ' ', x).strip()
-    return clean(company) + '::' + clean(title)[:40]
+def _norm_txt(x):
+    x = _strip_accents((x or '').lower())
+    x = re.sub(r'\(.*?\)|\bh/?f\b|\bf/?h\b|\bm/?f\b|\bcdi\b|\bcdd\b', ' ', x)
+    return re.sub(r'[^a-z0-9]+', ' ', x).strip()
+
+
+def _title_key(title):
+    return _norm_txt(title)[:40]
+
+
+def _company_loose(a, b):
+    """Entreprises « proches » : l'une contient l'autre (Aravati ⊂ Aravati France)."""
+    a, b = _norm_txt(a), _norm_txt(b)
+    if not a or not b:
+        return True
+    return a in b or b in a
+
+
+def _same_offer(c1, t1, c2, t2):
+    """Même offre (même titre normalisé + entreprise proche) — dédoublonne les
+    annonces d'une même offre diffusée sur plusieurs plateformes."""
+    return _title_key(t1) == _title_key(t2) and _company_loose(c1, c2)
 
 
 _APP_CONFIRM = re.compile(
@@ -1503,14 +1518,15 @@ def _sender_company(frm):
 
 
 def _extract_offer_title(subject):
-    s = _decode_mime(subject)
+    # Le sujet peut être plié sur plusieurs lignes : on aplatit les espaces.
+    s = re.sub(r'\s+', ' ', _decode_mime(subject)).strip()
+    m = re.search(r'(?:pour le poste|au poste|for the (?:position|role) of)\s+(?:de\s+|du\s+|d\')?(.+)$', s, re.I)
+    if m:
+        return m.group(1).strip(' "\'').strip()[:80]
     m = re.search(r'(?:candidature|application)[^:\-–—]*[:\-–—]\s*(.+)$', s, re.I)
     if m:
-        return m.group(1).strip()[:80]
-    m = re.search(r'(?:pour le poste|au poste|for the (?:position|role) of)\s+(?:de\s+)?(.+)$', s, re.I)
-    if m:
-        return m.group(1).strip()[:80]
-    return s.strip()[:80]
+        return m.group(1).strip(' "\'').strip()[:80]
+    return s[:80]
 
 
 def fetch_application_emails():
@@ -1577,12 +1593,16 @@ def update_candidatures_tracking():
     if not events:
         print("  → Aucun email de candidature détecté")
         return
-    # Un seul événement par candidature : le plus récent (une réponse > un accusé).
-    best = {}
+    # Un seul événement par offre (matching souple) : le plus récent gagne
+    # (une réponse remplace un accusé), et la même offre sur 2 sites = 1 seul.
+    best = []
     for e in events:
-        k = _norm_key(e["company"], e["title"])
-        if k not in best or e["date"] > best[k]["date"]:
-            best[k] = e
+        m = next((x for x in best if _same_offer(x["company"], x["title"], e["company"], e["title"])), None)
+        if m:
+            if e["date"] > m["date"]:
+                m.update(e)
+        else:
+            best.append(e)
     branch = CONFIG.get("candidatures_branch", "main")
     api = f"https://api.github.com/repos/{repo}/contents/candidatures.json"
     headers = {"Authorization": "Bearer " + token, "Accept": "application/vnd.github+json"}
@@ -1601,12 +1621,14 @@ def update_candidatures_tracking():
         elif r.status_code != 404:
             print(f"  → Suivi candidatures : GET {r.status_code}")
             return
-        index = {_norm_key(c.get("company", ""), c.get("title", "")): c for c in cands}
         col = {"en_attente": "postule", "positif": "entretien", "negatif": "reponse"}
         changed = 0
-        for k, e in best.items():
+        for e in best:
             auto = {"status": e["status"], "reason": e["reason"], "date": e["date"]}
-            c = index.get(k)
+            # Match souple contre les candidatures existantes (même offre, quel
+            # que soit le site / la variante d'entreprise).
+            c = next((x for x in cands if _same_offer(
+                x.get("company", ""), x.get("title", ""), e["company"], e["title"])), None)
             if c:
                 old = c.get("auto") or {}
                 if old.get("status") != e["status"] or e["date"] > (old.get("date") or 0):

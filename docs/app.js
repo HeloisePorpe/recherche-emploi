@@ -15,6 +15,7 @@ const defaultState = () => ({
   teleworkOnly: false,
   cdiOnly: false,
   hideFlagged: false,    // masquer les offres avec alertes de filtrage
+  hideApplied: false,    // masquer les offres déjà dans le suivi / postulées
   recommendation: '',    // '' = toutes ; sinon à_postuler / à_revoir / à_écarter
   myCriteria: true,      // filtre trajet + télétravail — activé par défaut
   criteriaStrict: false, // masquer aussi les offres à l'info manquante
@@ -39,6 +40,7 @@ const els = {
   teleworkOnly: document.getElementById('telework-only'),
   cdiOnly: document.getElementById('cdi-only'),
   hideFlagged: document.getElementById('hide-flagged'),
+  hideApplied: document.getElementById('hide-applied'),
   recommendation: document.getElementById('reco-filter'),
   myCriteria: document.getElementById('my-criteria'),
   criteriaSub: document.getElementById('criteria-sub'),
@@ -81,6 +83,20 @@ const RECO_META = {
 };
 function recoInfo(job) {
   return RECO_META[job.recommendation] || null;
+}
+
+// Badge « déjà postulée / suivie » (anti double-candidature), même si l'offre
+// vient d'une autre plateforme.
+function appliedBadgeHtml(job) {
+  if (typeof candidatureForJob !== 'function') return '';
+  const c = candidatureForJob(job);
+  if (!c) return '';
+  const auto = c.auto && c.auto.status;
+  let t = '📌 Déjà dans ton suivi', cls = 'applied-track';
+  if (auto === 'negatif' || c.status === 'reponse') { t = '📪 Réponse reçue'; cls = 'applied-done'; }
+  else if (auto === 'positif' || c.status === 'entretien') { t = '📞 En entretien'; cls = 'applied-live'; }
+  else if (auto === 'en_attente' || c.status === 'postule') { t = '✅ Déjà postulée'; cls = 'applied-sent'; }
+  return `<div class="applied ${cls}" title="Tu as déjà cette offre dans ton suivi">${t}</div>`;
 }
 
 function getSalary(job) {
@@ -175,6 +191,7 @@ function syncControls() {
   els.teleworkOnly.checked = state.teleworkOnly;
   els.cdiOnly.checked = state.cdiOnly;
   els.hideFlagged.checked = state.hideFlagged;
+  if (els.hideApplied) els.hideApplied.checked = state.hideApplied;
   if (els.recommendation) els.recommendation.value = state.recommendation;
   els.myCriteria.checked = state.myCriteria;
   els.criteriaStrict.checked = state.criteriaStrict;
@@ -248,6 +265,8 @@ function getFilteredJobs() {
     if (state.hideFlagged && Array.isArray(job.flags) && job.flags.length) return false;
     // Recommandation du robot de tri
     if (state.recommendation && (job.recommendation || '') !== state.recommendation) return false;
+    // Masquer les offres déjà suivies / postulées (anti double-candidature)
+    if (state.hideApplied && typeof candidatureForJob === 'function' && candidatureForJob(job)) return false;
     // Critères perso trajet + télétravail
     if (state.myCriteria) {
       const st = criteriaStatus(job);
@@ -283,6 +302,7 @@ function activeFilterCount() {
   if (state.teleworkOnly) n++;
   if (state.cdiOnly) n++;
   if (state.hideFlagged) n++;
+  if (state.hideApplied) n++;
   if (state.recommendation) n++;
   if (state.myCriteria) n++;
   if (state.sources.size > 0) n++;
@@ -335,6 +355,8 @@ function renderCard(job) {
     ? `<div class="card-date">📅 Publiée le ${escapeHtml(date)}</div>`
     : '';
 
+  const appliedHtml = appliedBadgeHtml(job);
+
   const reco = recoInfo(job);
   const recoHtml = reco
     ? `<div class="reco ${reco.cls}">
@@ -365,6 +387,7 @@ function renderCard(job) {
         </div>
       </div>
       ${companyHtml}
+      ${appliedHtml}
       ${recoHtml}
       ${dateHtml}
       <div class="card-meta">${tags.join('')}</div>
@@ -375,6 +398,7 @@ function renderCard(job) {
 
 // --- Rendu principal ---
 function render() {
+  if (typeof refreshCandidatureCache === 'function') refreshCandidatureCache();
   const jobs = getFilteredJobs();
   const nbArchived = loadArchived().length;
 
@@ -470,6 +494,12 @@ function bindEvents() {
     state.hideFlagged = els.hideFlagged.checked;
     render();
   });
+  if (els.hideApplied) {
+    els.hideApplied.addEventListener('change', () => {
+      state.hideApplied = els.hideApplied.checked;
+      render();
+    });
+  }
   if (els.recommendation) {
     els.recommendation.addEventListener('change', () => {
       state.recommendation = els.recommendation.value;

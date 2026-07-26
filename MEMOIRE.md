@@ -99,6 +99,11 @@ Gmail dédiée (`heloise.emploi@gmail.com`), via IMAP (`fetch_email_alerts`) :
   - Trajet non calculé → affiché et marqué « à vérifier » (masqué en mode *strict*)
   - Seuil dans `docs/app.js` : `MAX_COMMUTE = 75`
 - Filtre par source
+- **✅ Anti double-candidature** : une offre déjà présente dans ton suivi (ou
+  détectée « postulée » par le robot email) est marquée d'un badge **« Déjà
+  postulée »** sur le dashboard, **même si elle vient d'une autre plateforme**
+  (rapprochement souple titre + entreprise, `candidatureForJob` dans `store.js`).
+  Filtre **« Masquer les offres déjà postulées »**.
 - **🤖 Recommandation** (robot de tri) : chaque offre reçoit `à postuler` /
   `à revoir` / `à écarter` **avec la raison**, affichée sur la carte + filtre dédié.
   Logique dans `recommend_offer` (`job_scraper.py`), en **règles** pour l'instant

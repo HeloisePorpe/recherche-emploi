@@ -73,6 +73,33 @@ function isTracked(job) {
   return activeCandidatures().some((c) => c.id === id);
 }
 
+// ── Rapprochement offre <-> candidature (anti double-candidature) ────────────
+// Reconnaît la même offre même diffusée sur plusieurs plateformes / avec des
+// variantes d'entreprise ("Aravati" vs "Aravati France").
+function _normTxt(x) {
+  return (x || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+    .replace(/\(.*?\)|\bh\/?f\b|\bf\/?h\b|\bm\/?f\b|\bcdi\b|\bcdd\b/g, ' ')
+    .replace(/[^a-z0-9]+/g, ' ').trim();
+}
+function _titleKey(t) { return _normTxt(t).slice(0, 40); }
+function _companyLoose(a, b) {
+  a = _normTxt(a); b = _normTxt(b);
+  if (!a || !b) return true;
+  return a.indexOf(b) >= 0 || b.indexOf(a) >= 0;
+}
+
+let _candCache = null;
+function refreshCandidatureCache() { _candCache = activeCandidatures(); return _candCache; }
+
+// Candidature correspondant à une offre (titre proche + entreprise proche), sinon null.
+function candidatureForJob(job) {
+  const list = _candCache || activeCandidatures();
+  const jt = _titleKey(job.title || '');
+  if (!jt) return null;
+  const jc = job.company || '';
+  return list.find((c) => _titleKey(c.title || '') === jt && _companyLoose(jc, c.company || '')) || null;
+}
+
 // ── Fusion de deux listes (par id, dernière écriture gagnante) ──────────────
 // Champs utilisateur (status, notes, deleted...) : version au updatedAt le plus
 // récent. Champ `auto` (écrit par le robot) : la version la plus récente.
