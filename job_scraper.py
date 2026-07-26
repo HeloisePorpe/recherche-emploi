@@ -11,6 +11,8 @@ sys.stdout.reconfigure(encoding="utf-8")
 sys.stderr.reconfigure(encoding="utf-8")
 
 import os
+import base64
+import unicodedata
 import feedparser
 import requests
 import json
@@ -20,6 +22,7 @@ import smtplib
 import imaplib
 import email
 import email.utils
+import email.header
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from datetime import datetime, timedelta
@@ -1411,6 +1414,229 @@ def export_json_local(jobs, path="jobs_output.json"):
           f"à revoir {c.get('à_revoir',0)}, à écarter {c.get('à_écarter',0)}")
 
 
+# ── Suivi des candidatures par email (robot) ───────────────────────────────────
+#
+# Lit heloise.emploi (IMAP), détecte les emails de candidature et leur statut
+# (accusé de réception -> en_attente ; refus -> negatif ; entretien -> positif),
+# puis met à jour le champ `auto` de chaque candidature dans le dépôt PRIVÉ
+# recherche-emploi-candidatures via l'API GitHub (secret CANDIDATURES_TOKEN).
+# Best-effort : à affiner avec de vrais emails de réponse.
+
+def _strip_accents(s):
+    return ''.join(c for c in unicodedata.normalize('NFD', s or '')
+                   if unicodedata.category(c) != 'Mn')
+
+
+def _norm_key(company, title):
+    """Clé normalisée (entreprise + titre) pour matcher / dédoublonner."""
+    def clean(x):
+        x = _strip_accents((x or '').lower())
+        x = re.sub(r'\(.*?\)|\bh/?f\b|\bf/?h\b|\bm/?f\b|\bcdi\b|\bcdd\b', ' ', x)
+        return re.sub(r'[^a-z0-9]+', ' ', x).strip()
+    return clean(company) + '::' + clean(title)[:40]
+
+
+_APP_CONFIRM = re.compile(
+    r'bien re[çc]u votre candidature|votre candidature a bien|accus[ée] de r[ée]ception|'
+    r'candidature (?:bien )?(?:re[çc]ue|enregistr)|nous avons (?:bien )?re[çc]u|'
+    r'we(?:\'ve| have) received your application|thank you for (?:your )?appl(?:ying|ication)|'
+    r'application (?:has been )?received|votre candidature (?:au poste|pour)', re.I)
+_APP_NEG = re.compile(
+    r'ne (?:donnons|donne|donnerons) pas suite|n\'a(?:vons)? pas (?:[ée]t[ée] )?retenue?|'
+    r'pas retenu votre|nous ne retenons pas|regret(?:tons)?|malheureusement|unfortunately|'
+    r'not (?:be )?(?:moving forward|to proceed|selected|retained)|another candidate|'
+    r'autre candidat|ne correspond(?:ait)? pas (?:au profil|à nos)|'
+    r'd[ée]cid[ée] de ne pas donner suite', re.I)
+_APP_POS = re.compile(
+    r'souhait\w* (?:vous )?rencontrer|(?:proposer|convier)\w* .{0,20}entretien|'
+    r'planifier .{0,20}(?:entretien|appel|[ée]change)|vos disponibilit[ée]s|'
+    r'invit\w* .{0,20}(?:entretien|interview)|schedule (?:a|an) (?:call|interview)|'
+    r'(?:premier|prochain) entretien|entretien (?:t[ée]l[ée]phonique|physique|visio|rh)|'
+    r'next step|prochaine [ée]tape|nous aimerions (?:vous )?[ée]changer', re.I)
+
+
+def classify_application_email(subject, body):
+    """Renvoie (statut, raison) ou None. Statuts : en_attente / positif / negatif."""
+    text = f"{subject}\n{body}"
+    if not re.search(r'candidature|application|poste|recrut|talent|offre d\'emploi', text, re.I):
+        return None
+    if _APP_NEG.search(text):
+        return ("negatif", "Réponse négative détectée")
+    if _APP_POS.search(text):
+        return ("positif", "Proposition d'entretien détectée")
+    if _APP_CONFIRM.search(text):
+        return ("en_attente", "Accusé de réception de candidature")
+    return None
+
+
+_GENERIC_SENDER = re.compile(
+    r'no[- ]?reply|nepasrepondre|ne[- ]?pas[- ]?repondre|recrut|talent|career|jobs?|'
+    r'hello|contact|team|\brh\b|notification|candidat|apply|\bhr\b', re.I)
+_ATS_DOMAINS = {"teamtailor", "workday", "myworkday", "lever", "greenhouse", "smartrecruiters",
+                "welcomekit", "welcometothejungle", "taleez", "flatchr", "softy", "icims",
+                "successfactors", "recruitee", "personio", "factorial",
+                "gmail", "google", "outlook", "hotmail", "yahoo"}
+
+
+def _decode_mime(raw):
+    try:
+        return str(email.header.make_header(email.header.decode_header(raw or "")))
+    except Exception:
+        return raw or ""
+
+
+def _sender_company(frm):
+    """Devine l'entreprise depuis l'expéditeur (nom affiché sinon domaine)."""
+    m = re.match(r'\s*"?([^"<]*?)"?\s*<([^>]+)>', frm or "")
+    name = (m.group(1).strip() if m else "")
+    addr = (m.group(2) if m else (frm or "")).strip()
+    if name and not _GENERIC_SENDER.search(name):
+        return name[:60]
+    dom = addr.split("@")[-1].lower()
+    dom = re.sub(r'^(mail|email|emails|e|smtp|send|go|jobs|careers|recruiting|apply|'
+                 r'noreply|nepasrepondre)\.', '', dom)
+    parts = dom.split(".")
+    core = parts[-2] if len(parts) >= 2 else dom
+    if core in _ATS_DOMAINS:
+        return name[:60] if name else ""
+    return core.capitalize()
+
+
+def _extract_offer_title(subject):
+    s = _decode_mime(subject)
+    m = re.search(r'(?:candidature|application)[^:\-–—]*[:\-–—]\s*(.+)$', s, re.I)
+    if m:
+        return m.group(1).strip()[:80]
+    m = re.search(r'(?:pour le poste|au poste|for the (?:position|role) of)\s+(?:de\s+)?(.+)$', s, re.I)
+    if m:
+        return m.group(1).strip()[:80]
+    return s.strip()[:80]
+
+
+def fetch_application_emails():
+    """Lit la boîte et renvoie les événements de candidature détectés."""
+    address = CONFIG.get("gmail_address", "")
+    password = CONFIG.get("gmail_app_password", "")
+    if not address or not password:
+        print("  → Gmail non configuré — suivi ignoré")
+        return []
+    alert_senders = {s for cfg in _EMAIL_ALERT_SOURCES for s in cfg["senders"]}
+    lookback = int(CONFIG.get("tracking_lookback_days", 30))
+    since = (datetime.now() - timedelta(days=lookback)).strftime("%d-%b-%Y")
+    events = []
+    try:
+        imap = imaplib.IMAP4_SSL("imap.gmail.com", 993, timeout=30)
+        imap.login(address, password)
+        imap.select("INBOX", readonly=True)
+        typ, data = imap.search(None, "SINCE", since)
+        uids = data[0].split() if (typ == "OK" and data and data[0]) else []
+        for uid in uids[-300:]:
+            try:
+                typ, md = imap.fetch(uid, "(RFC822)")
+                if typ != "OK" or not md or not md[0]:
+                    continue
+                msg = email.message_from_bytes(md[0][1])
+                frm_raw = str(msg.get("From", ""))
+                if any(s in frm_raw.lower() for s in alert_senders):
+                    continue  # ignore les emails d'alerte d'offres
+                subject = _decode_mime(msg.get("Subject", ""))
+                html, text = _email_body_html(msg)
+                body = re.sub(r'<[^>]+>', ' ', html) if html else text
+                cls = classify_application_email(subject, body)
+                if not cls:
+                    continue
+                status, reason = cls
+                try:
+                    date = int(email.utils.parsedate_to_datetime(msg.get("Date", "")).timestamp() * 1000)
+                except Exception:
+                    date = int(time.time() * 1000)
+                events.append({"company": _sender_company(frm_raw),
+                               "title": _extract_offer_title(msg.get("Subject", "")),
+                               "status": status, "reason": reason, "date": date})
+            except Exception as ex:
+                print(f"     lecture mail suivi : {ex}")
+        try:
+            imap.close()
+        except Exception:
+            pass
+        imap.logout()
+    except Exception as ex:
+        print(f"  → Suivi candidatures : ERREUR IMAP {ex}")
+        return []
+    return events
+
+
+def update_candidatures_tracking():
+    """Met à jour le champ `auto` des candidatures dans le dépôt privé (API GitHub)."""
+    repo = CONFIG.get("candidatures_repo", "")
+    token = CONFIG.get("candidatures_token", "")
+    if not repo or not token:
+        print("  → Dépôt privé de candidatures non configuré — suivi ignoré")
+        return
+    events = fetch_application_emails()
+    if not events:
+        print("  → Aucun email de candidature détecté")
+        return
+    # Un seul événement par candidature : le plus récent (une réponse > un accusé).
+    best = {}
+    for e in events:
+        k = _norm_key(e["company"], e["title"])
+        if k not in best or e["date"] > best[k]["date"]:
+            best[k] = e
+    branch = CONFIG.get("candidatures_branch", "main")
+    api = f"https://api.github.com/repos/{repo}/contents/candidatures.json"
+    headers = {"Authorization": "Bearer " + token, "Accept": "application/vnd.github+json"}
+    try:
+        r = requests.get(f"{api}?ref={branch}", headers=headers, timeout=20)
+        sha, cands = None, []
+        if r.status_code == 200:
+            meta = r.json()
+            sha = meta.get("sha")
+            try:
+                cands = json.loads(base64.b64decode(meta.get("content", "")).decode("utf-8"))
+            except Exception:
+                cands = []
+            if not isinstance(cands, list):
+                cands = []
+        elif r.status_code != 404:
+            print(f"  → Suivi candidatures : GET {r.status_code}")
+            return
+        index = {_norm_key(c.get("company", ""), c.get("title", "")): c for c in cands}
+        col = {"en_attente": "postule", "positif": "entretien", "negatif": "reponse"}
+        changed = 0
+        for k, e in best.items():
+            auto = {"status": e["status"], "reason": e["reason"], "date": e["date"]}
+            c = index.get(k)
+            if c:
+                old = c.get("auto") or {}
+                if old.get("status") != e["status"] or e["date"] > (old.get("date") or 0):
+                    c["auto"] = auto
+                    changed += 1
+            else:
+                cid = (e["title"] or "") + "|" + (e["company"] or "")
+                cands.append({"id": cid, "title": e["title"] or "Candidature",
+                              "company": e["company"] or "", "location": "", "link": "",
+                              "status": col.get(e["status"], "postule"), "notes": "",
+                              "addedAt": e["date"], "updatedAt": e["date"],
+                              "auto": auto, "source": "email"})
+                changed += 1
+        if not changed:
+            print("  → Suivi candidatures : rien de nouveau")
+            return
+        content = base64.b64encode(
+            json.dumps(cands, ensure_ascii=False, indent=2).encode("utf-8")).decode()
+        body = {"message": "MAJ suivi candidatures (robot email)", "content": content, "branch": branch}
+        if sha:
+            body["sha"] = sha
+        pr = requests.put(api, headers=headers, json=body, timeout=20)
+        if pr.status_code in (200, 201):
+            print(f"  → Suivi candidatures : {changed} mise(s) à jour")
+        else:
+            print(f"  → Suivi candidatures : PUT {pr.status_code}")
+    except Exception as ex:
+        print(f"  → Suivi candidatures : ERREUR {ex}")
+
+
 # ── Main ───────────────────────────────────────────────────────────────────────
 
 def run():
@@ -1509,6 +1735,12 @@ def run():
     export_json_local(filtered)
     write_to_sheets(filtered)
     send_email_recap(filtered)
+
+    print("\n[8] Suivi des candidatures par email...")
+    try:
+        update_candidatures_tracking()
+    except Exception as ex:
+        print(f"  → Suivi candidatures : ERREUR {ex}")
 
     print("\n" + "=" * 60)
     print(f"✓ Terminé — {len(filtered)} offres")
