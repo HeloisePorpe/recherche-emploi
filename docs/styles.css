@@ -273,6 +273,21 @@ html, body {
 .tag-warn { background: var(--orange-bg); color: var(--orange); border-color: #f3d9ad; }
 .tag-flag { background: var(--red-bg); color: var(--red); border-color: #f3c9c9; }
 
+/* Badge « déjà postulée / suivie » (anti double-candidature) */
+.applied {
+  display: inline-block;
+  font-size: 0.82rem;
+  font-weight: 700;
+  margin: 8px 0 2px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+}
+.applied-sent { background: var(--green-bg); color: var(--green); border-color: #bfe6cd; }
+.applied-live { background: #eef6ff; color: var(--primary-dark); border-color: #d5e6fb; }
+.applied-done { background: var(--red-bg); color: var(--red); border-color: #f3c9c9; }
+.applied-track { background: var(--orange-bg); color: var(--orange); border-color: #f3d9ad; }
+
 /* Recommandation du robot de tri */
 .reco {
   display: flex;
