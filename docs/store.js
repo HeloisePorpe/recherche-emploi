@@ -100,6 +100,16 @@ function candidatureForJob(job) {
   return list.find((c) => _titleKey(c.title || '') === jt && _companyLoose(jc, c.company || '')) || null;
 }
 
+// L'offre a-t-elle déjà fait l'objet d'une candidature (envoyée / entretien /
+// réponse) ? Le simple « suivi » (à postuler) ne compte pas comme postulée.
+function jobApplied(job) {
+  const c = candidatureForJob(job);
+  if (!c) return false;
+  const auto = c.auto && c.auto.status;
+  return auto === 'en_attente' || auto === 'positif' || auto === 'negatif'
+      || c.status === 'postule' || c.status === 'entretien' || c.status === 'reponse';
+}
+
 // ── Fusion de deux listes (par id, dernière écriture gagnante) ──────────────
 // Champs utilisateur (status, notes, deleted...) : version au updatedAt le plus
 // récent. Champ `auto` (écrit par le robot) : la version la plus récente.
