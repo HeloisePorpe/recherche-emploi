@@ -780,6 +780,10 @@ _EMAIL_ALERT_SOURCES = [
      # Alertes Cadremploi : liens enrobés dans r.emails*.alertes.cadremploi.fr/tr/cl/...
      "link_re": re.compile(
          r'https?://[^"\'\s>]*cadremploi\.fr/(?:tr/cl/|emploi|offre|annonce)[^"\'\s>]+', re.I)},
+    {"name": "Meteojob (alerte)",
+     "senders": ["meteojob.com", "cleverconnect"],
+     # Meteojob : liens d'offres directs www.meteojob.com/jobs/<id>
+     "link_re": re.compile(r'https?://[^"\'\s>]*meteojob\.com/jobs/\d+', re.I)},
 ]
 
 _HTML_TAG_RE = re.compile(r'<[^>]+>')
@@ -1695,7 +1699,7 @@ def run():
     all_jobs.extend(fetch_themuse_jobs())
     all_jobs.extend(fetch_wttj_jobs())
 
-    print("\n[7] Alertes e-mail (WTJ, Indeed, HelloWork, LinkedIn, Cadremploi)...")
+    print("\n[7] Alertes e-mail (WTJ, Indeed, HelloWork, LinkedIn, Cadremploi, Meteojob)...")
     all_jobs.extend(fetch_email_alerts())
 
     print(f"\nTotal brut : {len(all_jobs)}")
