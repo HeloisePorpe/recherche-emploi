@@ -1478,14 +1478,44 @@ def send_email_recap(jobs):
 
 # ── Utils ──────────────────────────────────────────────────────────────────────
 
+def _job_completeness(j):
+    """Score de « richesse » d'une offre, pour garder la meilleure d'un doublon."""
+    s = 0.0
+    if j.get("company"):
+        s += 2
+    if j.get("salary_raw") or j.get("salary_extracted"):
+        s += 1
+    if j.get("location"):
+        s += 0.5
+    s += min(len(j.get("description") or ""), 600) / 600.0
+    return s
+
+
 def _dedup(jobs):
-    seen, unique = set(), []
+    """Dédoublonne y compris entre plateformes : titre normalisé (ignore H/F,
+    (F/H), ponctuation, casse) + entreprise souple. Une même offre diffusée sur
+    Adzuna / France Travail / e-mail = une seule ligne (la plus complète)."""
+    kept = []  # chaque élément : {"job":..., "tk":..., "cn":...}
     for j in jobs:
-        k = (j["title"].lower()[:40], j.get("company", "").lower()[:20])
-        if k not in seen:
-            seen.add(k)
-            unique.append(j)
-    return unique
+        tk = _norm_txt(j.get("title", ""))[:60]
+        cn = _norm_txt(j.get("company", ""))
+        hit = None
+        for u in kept:
+            if not tk or tk != u["tk"]:
+                continue
+            same_company = cn and u["cn"] and (cn in u["cn"] or u["cn"] in cn)
+            # Entreprise absente d'un côté : on ne fusionne que si le titre est
+            # assez spécifique (≥ 20 car.), pour éviter d'écraser des postes
+            # homonymes distincts (« Chef de projet CRM », etc.).
+            empty_ok = (not cn or not u["cn"]) and len(tk) >= 20
+            if same_company or empty_ok:
+                hit = u
+                break
+        if hit is None:
+            kept.append({"job": j, "tk": tk, "cn": cn})
+        elif _job_completeness(j) > _job_completeness(hit["job"]):
+            hit["job"], hit["cn"] = j, cn  # garde la version la plus complète
+    return [u["job"] for u in kept]
 
 
 def export_json_local(jobs, path="jobs_output.json"):

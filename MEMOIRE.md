@@ -195,6 +195,15 @@ segmentation, email/SMS…) ; salaire cible ~45–50 k€ (plancher dur 42 055 �
     emails de réponse).
   - Logique côté navigateur dans `docs/store.js`. Offres **archivées** : locales.
 
+## Dédoublonnage inter-plateformes (`_dedup`)
+
+Une même offre diffusée sur plusieurs sources (Adzuna, France Travail, e-mails…)
+est fusionnée : **titre normalisé** (ignore `H/F`, `(F/H)`, ponctuation, casse) +
+entreprise souple (l'une contient l'autre, ou absente d'un côté si le titre est
+assez spécifique, ≥ 20 car.). On garde la ligne **la plus complète** (entreprise,
+salaire, description). Évite de fusionner des homonymes distincts (companies
+différentes → gardés séparés).
+
 ## Contraintes connues
 
 - Site **statique** (pas de backend) → pas de synchronisation multi-appareils du Kanban.
