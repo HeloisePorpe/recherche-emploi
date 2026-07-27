@@ -223,6 +223,8 @@ def fetch_adzuna_jobs():
                         "description": o.get("description", ""),
                         "salary_raw": f"{int(o['salary_min'])}-{int(o['salary_max'])} €" if o.get("salary_min") else "",
                         "published": o.get("created", ""),
+                        # Adzuna : "permanent" (CDI) ou "contract" (CDD / durée déterminée)
+                        "contract_raw": o.get("contract_type", ""),
                     })
                 time.sleep(0.4)
                 if len(results) < 50:
@@ -388,6 +390,13 @@ _TITLE_SENIOR = re.compile(
     r'\b(director|directeur|directrice|\bvp\b|vice[- ]president|head of|'
     r'senior manager|principal|chief)\b', re.I)
 
+# Contrats à exclure (CDD / freelance / intérim), au-delà du titre : détecte
+# les mentions explicites dans le corps de l'annonce.
+_CONTRACT_EXCLUDE = re.compile(
+    r'contrat\s*(?:à|a)\s*dur[ée]e\s*d[ée]termin[ée]e|\bcdd\b|'
+    r'contrat\s+de\s+\d+\s*mois|mission\s+(?:d.)?int[ée]rim|'
+    r'\bfreelance\b|free-lance|portage salarial|fixed[- ]term', re.I)
+
 
 def screen_offer(job):
     """Renvoie (exclure: bool, motif: str|None, alertes: list[str])."""
@@ -402,6 +411,8 @@ def screen_offer(job):
         return True, "Titre exclu (alternance / stage / CDD / freelance)", flags
     if _TITLE_EXCLUDE_ENG.search(title) and "marketing" not in tl:
         return True, "Titre exclu (engineer)", flags
+    if job.get("contract_type") == "CDD" or _CONTRACT_EXCLUDE.search(text):
+        return True, "Contrat CDD / temporaire / freelance", flags
     if _TITLE_FREELANCE_MP.search(title):
         return True, "Profil freelance marketplace (« I will… »)", flags
     if any(c in cl for c in _EXCLUDE_COMPANIES):
@@ -1734,7 +1745,13 @@ def run():
         if "in_france" not in job:
             job["in_france"] = is_in_france(job.get("location", ""), desc)
         if "contract_type" not in job:
-            job["contract_type"] = "CDI" if check_cdi(title + " " + desc) else None
+            craw = (job.get("contract_raw") or "").lower()
+            if craw == "contract":
+                job["contract_type"] = "CDD"       # Adzuna : durée déterminée
+            elif craw == "permanent" or check_cdi(title + " " + desc):
+                job["contract_type"] = "CDI"
+            else:
+                job["contract_type"] = None
 
         # Télétravail introuvable + description probablement tronquée
         # -> on va chercher le texte complet de l'annonce.

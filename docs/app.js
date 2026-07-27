@@ -15,7 +15,7 @@ const defaultState = () => ({
   teleworkOnly: false,
   cdiOnly: false,
   hideFlagged: false,    // masquer les offres avec alertes de filtrage
-  hideApplied: false,    // masquer les offres déjà dans le suivi / postulées
+  showApplied: false,    // afficher les offres déjà postulées (masquées par défaut)
   recommendation: '',    // '' = toutes ; sinon à_postuler / à_revoir / à_écarter
   myCriteria: true,      // filtre trajet + télétravail — activé par défaut
   criteriaStrict: false, // masquer aussi les offres à l'info manquante
@@ -40,7 +40,7 @@ const els = {
   teleworkOnly: document.getElementById('telework-only'),
   cdiOnly: document.getElementById('cdi-only'),
   hideFlagged: document.getElementById('hide-flagged'),
-  hideApplied: document.getElementById('hide-applied'),
+  showApplied: document.getElementById('show-applied'),
   recommendation: document.getElementById('reco-filter'),
   myCriteria: document.getElementById('my-criteria'),
   criteriaSub: document.getElementById('criteria-sub'),
@@ -191,7 +191,7 @@ function syncControls() {
   els.teleworkOnly.checked = state.teleworkOnly;
   els.cdiOnly.checked = state.cdiOnly;
   els.hideFlagged.checked = state.hideFlagged;
-  if (els.hideApplied) els.hideApplied.checked = state.hideApplied;
+  if (els.showApplied) els.showApplied.checked = state.showApplied;
   if (els.recommendation) els.recommendation.value = state.recommendation;
   els.myCriteria.checked = state.myCriteria;
   els.criteriaStrict.checked = state.criteriaStrict;
@@ -265,8 +265,8 @@ function getFilteredJobs() {
     if (state.hideFlagged && Array.isArray(job.flags) && job.flags.length) return false;
     // Recommandation du robot de tri
     if (state.recommendation && (job.recommendation || '') !== state.recommendation) return false;
-    // Masquer les offres déjà suivies / postulées (anti double-candidature)
-    if (state.hideApplied && typeof candidatureForJob === 'function' && candidatureForJob(job)) return false;
+    // Offres déjà postulées : masquées par défaut (visibles dans « Mes candidatures »).
+    if (!state.showApplied && typeof jobApplied === 'function' && jobApplied(job)) return false;
     // Critères perso trajet + télétravail
     if (state.myCriteria) {
       const st = criteriaStatus(job);
@@ -302,7 +302,7 @@ function activeFilterCount() {
   if (state.teleworkOnly) n++;
   if (state.cdiOnly) n++;
   if (state.hideFlagged) n++;
-  if (state.hideApplied) n++;
+  if (state.showApplied) n++;
   if (state.recommendation) n++;
   if (state.myCriteria) n++;
   if (state.sources.size > 0) n++;
@@ -494,9 +494,9 @@ function bindEvents() {
     state.hideFlagged = els.hideFlagged.checked;
     render();
   });
-  if (els.hideApplied) {
-    els.hideApplied.addEventListener('change', () => {
-      state.hideApplied = els.hideApplied.checked;
+  if (els.showApplied) {
+    els.showApplied.addEventListener('change', () => {
+      state.showApplied = els.showApplied.checked;
       render();
     });
   }

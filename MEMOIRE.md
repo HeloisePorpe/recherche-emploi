@@ -103,7 +103,9 @@ Gmail dédiée (`heloise.emploi@gmail.com`), via IMAP (`fetch_email_alerts`) :
   détectée « postulée » par le robot email) est marquée d'un badge **« Déjà
   postulée »** sur le dashboard, **même si elle vient d'une autre plateforme**
   (rapprochement souple titre + entreprise, `candidatureForJob` dans `store.js`).
-  Filtre **« Masquer les offres déjà postulées »**.
+  Les offres **déjà postulées** (statut envoyé/entretien/réponse) sont **masquées
+  par défaut** de l'onglet Offres (visibles dans « Mes candidatures ») ; case
+  **« Afficher les offres déjà postulées »** pour les réafficher (`jobApplied`).
 - **🤖 Recommandation** (robot de tri) : chaque offre reçoit `à postuler` /
   `à revoir` / `à écarter` **avec la raison**, affichée sur la carte + filtre dédié.
   Logique dans `recommend_offer` (`job_scraper.py`), en **règles** pour l'instant
@@ -121,7 +123,8 @@ Gmail dédiée (`heloise.emploi@gmail.com`), via IMAP (`fetch_email_alerts`) :
 - **Salaire plancher** (42 055 € si indiqué) + pertinence CRM.
 - **`screen_offer`** (règles issues de l'analyse des refus) à deux niveaux :
   - **Exclusion** (non ambigu, indépendant de la description) : titre
-    alternance/stage/CDD/freelance ; engineer (sauf « marketing ») ; CRM médical
+    alternance/stage/CDD/freelance (titre **ou** champ contrat Adzuna « contract »,
+    ou mention explicite dans le corps) ; engineer (sauf « marketing ») ; CRM médical
     (dispositifs cardiaques) ; CRM technique/admin (titres Administrateur/Consultant
     Salesforce-Dynamics, ou signaux IT durs : SOQL, Apex, Data Loader, SSIS…) ;
     titre Customer Success / relation client ; titre commercial/vente (hors combo
