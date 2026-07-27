@@ -113,5 +113,14 @@ jobs:
             echo "Aucun changement a committer."
           else
             git commit -m "MAJ offres [skip ci]"
-            git push
+            # Push robuste : si master a avance entre-temps (autre commit),
+            # on rebase et on reessaie, au lieu d'echouer.
+            for i in 1 2 3 4 5; do
+              if git push; then
+                echo "Push OK"; break
+              fi
+              echo "Push rejete, rebase sur origin/master et nouvel essai ($i)..."
+              git pull --rebase --autostash -X ours origin master || true
+              sleep 3
+            done
           fi

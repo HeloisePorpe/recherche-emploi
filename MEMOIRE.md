@@ -132,7 +132,11 @@ Gmail dédiée (`heloise.emploi@gmail.com`), via IMAP (`fetch_email_alerts`) :
     (cariste/CACES/entrepôt) ; employeur non pertinent (Mr Pape, VeriPark,
     MaxAccelerate, Kennflik) ; freelance marketplace (« I will… ») ; CRM = caisse ;
     automobile ; présentiel explicite / pas de télétravail ; résidence US ou hors
-    France obligatoire.
+    France obligatoire ; **télétravail / localisation dans un pays étranger précis**
+    (UK, Allemagne, Espagne… ; « remote from UK ») — les zones larges Europe/EMEA/
+    worldwide/anywhere restent acceptées ; **annonce rédigée dans une autre langue que FR/EN**
+    (détection par mots-outils distinctifs, `is_foreign_language`) ; **télétravail
+    connu < 2 j/sem** (0 ou 1 jour).
   - **Alerte** (`job["flags"]`, gardée + badge ⚠ au dashboard) : Customer Success /
     Account mgmt détecté dans le corps, pertinence CRM à confirmer (pas de signaux
     marketing — fréquent sur Adzuna tronqué), contrat freelance/horaire/$, ESN,

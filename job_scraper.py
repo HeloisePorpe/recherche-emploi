@@ -293,14 +293,25 @@ _US_RESIDENCE = re.compile(
     r'must reside in the (?:us|united states)|us citizenship|green card|'
     r'authori[sz]ed to work in the u\.?s|\bu\.?s\.?[- ]based\b|us[- ]based only', re.I)
 
-# Localisation clairement hors zone France/Europe (le poste n'est pas
-# travaillable depuis la France). Europe / EMEA / UK / « anywhere » restent OK.
+# Localisation / télétravail dans un PAYS étranger précis (le poste doit être
+# réalisé hors de France). Les zones larges — Europe / EMEA / worldwide /
+# anywhere / remote — restent acceptées (travaillables depuis la France).
 _FOREIGN_LOCATION = re.compile(
     r'\b(california|new york|texas|florida|massachusetts|washington|virginia|'
     r'san francisco|los angeles|boston|chicago|seattle|austin|denver|atlanta|'
     r'united states|\busa\b|u\.s\.a?\.|canada|toronto|vancouver|india|bangalore|'
     r'mumbai|brazil|br[ée]sil|s[ãa]o paulo|mexico|argentina|\blatam\b|\bapac\b|'
-    r'australia|australie|sydney|philippines|singapore|dubai|\buae\b|abu dhabi|qatar)\b',
+    r'australia|australie|sydney|philippines|singapore|dubai|\buae\b|abu dhabi|qatar|'
+    # Pays européens précis (≠ France) : « remote from UK », etc.
+    r'united kingdom|\buk\b|england|scotland|wales|ireland|\beire\b|london|manchester|'
+    r'germany|deutschland|allemagne|berlin|munich|m[üu]nchen|hamburg|'
+    r'spain|espagne|espa[ñn]a|madrid|barcelona|barcelone|'
+    r'italy|italie|italia|rome|roma|milan|milano|'
+    r'netherlands|pays-bas|amsterdam|belgium|belgique|belgi[eë]|brussels|bruxelles|'
+    r'switzerland|suisse|schweiz|zurich|z[üu]rich|portugal|lisbon|lisbonne|lisboa|'
+    r'poland|pologne|warsaw|varsovie|sweden|su[èe]de|stockholm|denmark|danemark|'
+    r'copenhagen|copenhague|austria|autriche|vienna|vienne|norway|norv[èe]ge|'
+    r'finland|finlande|greece|gr[èe]ce|romania|roumanie|luxembourg)\b',
     re.I)
 
 _FOREIGN_RESIDENCE = re.compile(
@@ -398,6 +409,52 @@ _CONTRACT_EXCLUDE = re.compile(
     r'\bfreelance\b|free-lance|portage salarial|fixed[- ]term', re.I)
 
 
+# Détection de langue par mots-outils fréquents et distinctifs. Objectif :
+# exclure les annonces ni FR ni EN (espagnol, allemand, italien, portugais…).
+_LANG_WORDS = {
+    "fr": {"le", "la", "les", "un", "une", "des", "du", "vous", "nous", "pour",
+           "avec", "dans", "sur", "votre", "notre", "vos", "nos", "être", "au",
+           "aux", "cette", "chez", "ainsi", "poste", "entreprise", "compétences",
+           "expérience", "missions", "profil", "recherche", "sein", "êtes", "afin"},
+    "en": {"the", "and", "you", "we", "our", "your", "for", "with", "will", "are",
+           "this", "that", "role", "team", "experience", "skills", "remote", "work",
+           "job", "as", "to", "of", "in", "you'll", "we're", "about", "who", "what"},
+    "es": {"el", "los", "las", "una", "para", "con", "del", "que", "su", "sus",
+           "nuestro", "nuestra", "será", "serás", "responsable", "empresa", "equipo",
+           "experiencia", "conocimientos", "trabajo", "puesto", "además", "dentro",
+           "cada", "pieza", "campañas", "diseño", "necesidades", "requisitos",
+           "buscamos", "ejecutar", "asegurando", "creativo"},
+    "de": {"und", "der", "die", "das", "den", "dem", "für", "mit", "wir", "ist",
+           "sind", "ihre", "kenntnisse", "erfahrung", "aufgaben", "unternehmen",
+           "du", "uns", "zum", "zur", "eine", "einen", "wird", "bei"},
+    "it": {"azienda", "esperienza", "cerchiamo", "gestione", "nostro", "nostra",
+           "competenze", "lavoro", "offriamo", "della", "che", "per", "sono",
+           "siamo", "ruolo", "candidato", "sviluppo", "conoscenza"},
+    "pt": {"você", "empresa", "experiência", "conhecimento", "trabalho", "nossa",
+           "nosso", "para", "além", "requisitos", "sobre", "será", "equipe", "vaga",
+           "dentro", "com", "responsável", "conhecimentos"},
+}
+_STRONG_FOREIGN_CHARS = re.compile(r'[¿¡ß]')
+
+
+def is_foreign_language(text):
+    """True si l'annonce est clairement rédigée dans une langue autre que FR/EN."""
+    t = (text or "").lower()
+    words = re.findall(r"[a-zàâäéèêëïîôöùûüçñáíóúãõ']+", t)
+    if len(words) < 25:
+        return False  # trop court pour juger de façon fiable
+    ws = set(words)  # présence (évite qu'un mot répété fausse le compte)
+
+    def score(lang):
+        return sum(1 for w in _LANG_WORDS[lang] if w in ws)
+    fren = score("fr") + score("en")
+    foreign = max(score("es"), score("de"), score("it"), score("pt"))
+    if _STRONG_FOREIGN_CHARS.search(t):
+        foreign += 2
+    # Exige un signal étranger net ET nettement supérieur au FR/EN.
+    return foreign >= 5 and foreign >= fren + 3
+
+
 def screen_offer(job):
     """Renvoie (exclure: bool, motif: str|None, alertes: list[str])."""
     title = job.get("title") or ""
@@ -413,6 +470,8 @@ def screen_offer(job):
         return True, "Titre exclu (engineer)", flags
     if job.get("contract_type") == "CDD" or _CONTRACT_EXCLUDE.search(text):
         return True, "Contrat CDD / temporaire / freelance", flags
+    if is_foreign_language(f"{title} {job.get('description') or ''}"):
+        return True, "Annonce dans une autre langue (ni FR ni EN)", flags
     if _TITLE_FREELANCE_MP.search(title):
         return True, "Profil freelance marketplace (« I will… »)", flags
     if any(c in cl for c in _EXCLUDE_COMPANIES):
@@ -435,13 +494,16 @@ def screen_offer(job):
         return True, "Secteur automobile", flags
     if _NO_REMOTE.search(text):
         return True, "Présentiel / pas de télétravail", flags
+    tw = job.get("telework_days")
+    if isinstance(tw, int) and tw < 2:
+        return True, f"Télétravail insuffisant ({tw} j/sem, min. 2)", flags
     if _US_RESIDENCE.search(text):
         return True, "Résidence / citoyenneté US requise", flags
     if _FOREIGN_RESIDENCE_HARD.search(text):
         return True, "Résidence hors France obligatoire", flags
     loc = job.get("location") or ""
     if _FOREIGN_LOCATION.search(loc) and "france" not in loc.lower():
-        return True, "Localisation hors zone (US / hors Europe)", flags
+        return True, "Télétravail / localisation hors France", flags
 
     # ---- ALERTES (signaux ambigus, on garde et on signale) ----
     if _CS_TERMS.search(text) and not has_mkt:
@@ -471,11 +533,9 @@ def screen_offer(job):
     if _ENTRY_LEVEL.search(text):
         flags.append("Poste junior / débutant ?")
 
-    tw = job.get("telework_days")
-    if tw is None and not _REMOTE_MENTION.search(text):
+    # tw < 2 est déjà exclu plus haut ; ici on ne signale que l'info manquante.
+    if job.get("telework_days") is None and not _REMOTE_MENTION.search(text):
         flags.append("Télétravail non mentionné")
-    elif isinstance(tw, int) and 0 <= tw <= 1:
-        flags.append(f"Télétravail faible ({tw} j)")
 
     cm = job.get("commute_minutes")
     if isinstance(cm, (int, float)) and cm > 90:
