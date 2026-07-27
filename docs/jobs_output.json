@@ -144,13 +144,13 @@
   },
   {
     "source": "France Travail",
-    "title": "CRM Manager Luxe / Retail (F/H)",
-    "link": "https://candidat.francetravail.fr/offres/recherche/detail/5158109",
-    "company": "",
-    "location": "75 - Paris ()",
-    "description": "Notre entreprise évolue dans le secteur du retail et du digital premium à Paris et conçoit des expériences commerciales événementielles uniques en showroom et en ligne. Spécialisée dans la mise en avant de collections issues d'univers variés (mode, accessoires, produits haut de gamme), elle s'appuie sur une communauté engagée et une forte culture de la performance.Rattaché à la Direction Marketing, le CRM Manager pilote la stratégie CRM globale et coordonne les actions de son équipe sur plusieurs marchés et canaux.\n\n\nDéfinir la stratégie CRM et les parcours clients : segmentation, ciblage, règles de communication\nPlanifier et orchestrer les campagnes multicanales (email, SMS, communications dédiées)\nGarantir la qualité des campagnes et leur exécution sans défaut\nSuivre la performance des ventes via des tableaux de bord (trafic, conversion, revenus, engagement)\nOptimiser la base de données et développer les workflows automatisés\nAccompagner le développement international des bases clients\nParticiper à l'optimisation des outils CRM et à l'automatisation des processus\nDévelopper des leviers d'acquisition et de fidélisation liés aux offres d'adhésion\nManager une équipe de 3 personnes et coordonner les équipes transverses (digital, retail, data, IT)\nParticiper aux rituels internes de pilotage et de coordination des activités\n\n\n\nLa rémunération et les avantages sur ce poste sont :\nCDI basé à Paris 8eme\nRémunération 50/70K€\nEnvironnement international et premium\nEquipe dynamique et culture de la performance",
+    "title": "CRM Lifecycle Manager F/H (H/F)",
+    "link": "https://candidat.francetravail.fr/offres/recherche/detail/211SLSR",
+    "company": "XANDRIE",
+    "location": "93 - PANTIN (93500)",
+    "description": "L'équipe CRM de Qobuz est rattachée au département Marketing et managée par la VP Customer Marketing. Elle couvre l'ensemble du cycle de vie client, acquisition, onboarding, rétention, win-back, sur des canaux variés : email, push, in-app, content card, et pages web. L'équipe est organisée par domaine de responsabilité avec un lead par sujet. Ce poste couvre trois axes à fort impact : Product Marketing, Personnalisation, Prévention du churn & Réactivation, avec l'autonomie pour tester, itérer, et voir ses décisions se traduire directement en résultats.\n\nObjectifs :\n\n-Prévenir le churn en détectant et traitant les comportements à risque en amont\n-Réactiver les abonnés perdus avec des campagnes personnalisées et différenciées\n-Maintenir un niveau d'engagement élevé chez les abonnés actifs\n-Augmenter la valeur perçue du produit via une communication ciblée autour des fonctionnalités\n-Développer les revenus issus de la base existante (downloads, gift cards)\n-Enrichir la connaissance client pour alimenter la personnalisation et la stratégie produit\n\nIndicateurs de performance :\n\n-Rétention : taux de churn mensuel et stabilité de la base abonnés dans le temps\n-Réactivation : volume d'abonnés réactivés et évolution mois sur mois\n-Engagement : taux d'ouverture, de clic et de conversion par canal et par segment ; profondeur d'usage mesurée via les utilisateurs actifs mensuels\n-Adoption produit : taux de reach et d'engagement des communications liées aux nouvelles fonctionnalités ; taux d'adoption des fonctionnalités mises en avant\n-Revenus : croissance des ventes de téléchargements et de cartes cadeaux ; performance des campagnes Qobuz Coins\n-Satisfaction client : NPS et signaux qualitatifs issus des enquêtes et des comportements post-campagne\n-Croissance de la base : évolution nette du volume d'abonnés, de téléchargeurs et de membres Qobuz Club\n\nMissions principales\n\nPrévention de churn\n-Identifier les segments à risque via l'analyse comportementale et mettre en place des scénarios de prévention adaptés (baisse d'usage, signaux d'intention de --résiliation, fin d'engagement)\n-Gérer le flux de rétention avant résiliation : implémentation des alertes rappels avant expiration de l'abonnement, suivi de performance, itérations\n-Piloter les campagnes de prévention sur l'ensemble des canaux (email, push, in-app, carte de contenu, bannières)\n-Mesurer l'efficacité des dispositifs et itérer en continu sur les différents leviers : timing, canal, message, offre\n\nRéactivation des désabonnés\n-Concevoir des parcours de réactivation différenciés selon le profil et le motif de départ, avec des variantes par type d'approche (offre commerciale, contenu, émotionnel)\n-Piloter les campagnes de réactivation sur l'ensemble des canaux disponibles\n-Mesurer la performance des campagnes de réactivation, analyser les variantes gagnantes et documenter les apprentissages pour alimenter les plans d'action semestriels\n\nPersonnalisation\n-Concevoir et déployer des communications automatisées personnalisées au niveau utilisateur : recommandations basées sur les favoris, l'historique d'écoute, le comportement d'usage\n-Travailler avec l'équipe Data pour intégrer des signaux comportementaux dans les scénarios CRM (segmentation dynamique, scoring, propension au churn)\n-Exploiter les capacités avancées de Braze et autres outils IA à disposition pour industrialiser la personnalisation\n-Tester et itérer via des A/B tests rigoureux ; documenter les apprentissages\n\nProduct Marketing\n-Coordonner avec l'équipe Produit en amont des sorties de fonctionnalités : brief, définition des audiences cibles, choix des canaux et séquences\n-Rédiger les messages de feature discovery à destination des clients existants, en cohérence avec le positionnement produit\n-Concevoir les parcours CRM associés aux lancements et mesurer le taux d'adoption\n-Identifier les opportunités de mise en valeur",
     "salary_raw": "",
-    "published": "2026-07-20T12:07:58.000Z",
+    "published": "2026-07-27T16:20:28.003Z",
     "contract_type": "CDI",
     "salary_extracted": null,
     "telework_days": null,
@@ -161,8 +161,8 @@
     ],
     "score": 8,
     "score_reasons": [
-      "Outils clés : segmentation, email, sms",
-      "Compétences alignées (5)"
+      "Outils clés : a/b test, segmentation, email",
+      "Compétences alignées (3)"
     ],
     "recommendation": "à_revoir",
     "recommendation_reason": "À vérifier : Télétravail non mentionné"
@@ -244,32 +244,6 @@
   },
   {
     "source": "Adzuna",
-    "title": "CRM Manager Luxe / Retail (F/H)",
-    "link": "https://www.adzuna.fr/details/5779908984?utm_medium=api&utm_source=707eaaff",
-    "company": "MICHAEL PAGE",
-    "location": "1er Arrondissement, Paris",
-    "description": "Le poste de CRM Manager Luxe / Retail (F/H) Rattaché à la Direction Marketing, le CRM Manager pilote la stratégie CRM globale et coordonne les actions de son équipe sur plusieurs marchés et canaux. * Définir la stratégie CRM et les parcours clients : segmentation, ciblage, règles de communication * Planifier et orchestrer les campagnes multicanales (email, SMS, communications dédiées) * Garantir la qualité des campagnes et leur exécution sans défaut * Suivre la performance des ventes via des ta…",
-    "salary_raw": "",
-    "published": "2026-06-28T08:41:23Z",
-    "contract_raw": "permanent",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": "CDI",
-    "commute_minutes": null,
-    "flags": [
-      "Télétravail non mentionné"
-    ],
-    "score": 8,
-    "score_reasons": [
-      "Outils clés : segmentation, email, sms",
-      "Compétences alignées (3)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné"
-  },
-  {
-    "source": "Adzuna",
     "title": "CRM Marketing Manager H/F",
     "link": "https://www.adzuna.fr/details/5795481688?utm_medium=api&utm_source=707eaaff",
     "company": "ARAVATI",
@@ -332,32 +306,6 @@
     "telework_days": null,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": null,
-    "flags": [
-      "Télétravail non mentionné"
-    ],
-    "score": 8,
-    "score_reasons": [
-      "Outils : segmentation",
-      "Compétences alignées (3)",
-      "Salaire dans la cible (52,000€)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Owned media lead (H/F)",
-    "link": "https://www.adzuna.fr/details/5814822714?utm_medium=api&utm_source=707eaaff",
-    "company": "Groupe OpenSourcing",
-    "location": "9ème Arrondissement, Paris",
-    "description": "Job description You will act as the key link between global strategy and local execution, ensuring owned media aligns with paid/earned campaigns to drive conversion and grow the loyalty/membership program. CRM & Automation: Plan and deploy automated, data-driven CRM campaigns via a Marketing Automation Platform (MAP) in line with the local marketing calendar. Data & Personalization: Leverage customer segmentation to deliver targeted content, boost member growth, and support SEO initiatives. Omn…",
-    "salary_raw": "52000-65000 €",
-    "published": "2026-07-25T03:56:36Z",
-    "contract_raw": "permanent",
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": "CDI",
     "commute_minutes": null,
     "flags": [
       "Télétravail non mentionné"
@@ -444,28 +392,50 @@
   },
   {
     "source": "France Travail",
-    "title": "Consultant CRM & Marketing Automation Confirmé F/H h/f",
-    "link": "https://candidat.francetravail.fr/offres/recherche/detail/5060278",
+    "title": "CHEF DE PROJET PILOTAGE DE LA PERFORMANCE COMMERCIALE (H/F)",
+    "link": "https://candidat.francetravail.fr/offres/recherche/detail/211RZVX",
     "company": "",
-    "location": "92 - Boulogne-Billancourt (92100)",
-    "description": "Passionné par le CRM, la Data et les écosystèmes Marketing ?\nVous aimez intervenir sur des projets complexes, internationaux et omnicanaux ?\nVous souhaitez mettre votre expertise au service de la transformation CRM et marketing de grandes marques ?Rejoignez notre équipe d’experts chez VISEO pour accompagner nos clients grands comptes internationaux dans la conception et l’évolution de leurs plateformes CRM et Marketing.Ce que nous allons faire ensemble ?Nous recherchons un Business Analyst CRM & Marketing IT Confirmé pour faire le lien entre les équipes métiers, les équipes IT et les partenaires techniques au sein d’un environnement international.Vos missions :Recueillir et analyser les besoins métiers afin de les traduire en solutions fonctionnelles et techniques.Participer à la conception des architectures CRM, des modèles de données et des flux d’intégration.Rédiger les spécifications fonctionnelles et la documentation projet.Coordonner les différents intervenants et assurer le suivi des projets dans un contexte Agile.Accompagner les équipes de développement tout au long des phases de réalisation.Préparer, exécuter et piloter les phases de tests (UAT, tests d’intégration, end-to-end).Piloter les mises en production et accompagner les déploiements auprès des utilisateurs.Assurer l’interface entre les équipes IT, marketing et les utilisateurs métiers à l’international.Qui êtes-vous ?Diplômé(e) d’une école d’ingénieur, de commerce ou équivalent Bac+5, vous justifiez d’au moins 5 ans d’expérience dans un environnement CRM et Marketing IT :Vous avez une solide expérience en Business Analysis, gestion de projet et rédaction de spécifications.Vous évoluez avec aisance dans des environnements Agile et savez coordonner plusieurs parties prenantes.Vous disposez d’une bonne compréhension des architectures CRM, des modèles de données et des flux d’intégration.Vous savez dialoguer aussi bien avec les équipes techniques qu’avec les utilisateurs métiers.Vous maîtrisez SQL et êtes à l’aise avec les API, les échanges de données et les outils de tests.Vous avez une expérience significative sur Adobe Campaign.Une connaissance de Salesforce Marketing Cloud est un véritable atout.Une expérience dans le secteur du retail omnicanal est fortement appréciée.Vous êtes organisé(e), rigoureux(se), autonome et reconnu(e) pour votre sens du service et votre posture de conseil.Anglais courant indispensable.Les attendus techniques :Solide compréhension des architectures CRMTrès bon niveau en SQLBonne connaissance des APIs et des flux d'intégrationUtilisation de Postman pour les testsCapacité à travailler avec des environnements Data (DWH, GCP, BigQuery)Notions de JavaScriptCe que nous avons à vous offrir ?Vous ferez partie de la communautéDigitalMarketing:la proximité et la taille humaine de notre organisation vous permettront de rendre visible vos initiatives et d’évoquer facilement vos projets. En parallèle, le dynamisme de l’entreprise et sa croissance perpétuelle multiplieront vos opportunités d’évolution. \n\nVous bénéficierez d’un management de proximité par votre mentor tout au long de votre parcours chez VISEO.\n\nVous disposerez de multiples moyens pour monter en compétences et découvrir de nouveaux domaines : formations, certifications, Brown Bag Lunchs, ateliers, meet-ups, rencontre d’experts, séminaires techniques… Ce qui nous différencie ?Unecommunauté active de passionnés : des talks toutes les semaines, la participation à des évènements techniques (ateliers, rencontres d’experts, Tech An Hour, BBL, Rex, Sponsoring…)  Desdispositifs collectifsd’épargne salariale (PEE et PERECO) et la possibilité dedevenir actionnaire VISEO Rejoindre nos équipes, c’est contribuer à une performance qui a du sens : créer de la valeur durable en conciliant performance économique, responsabilité environnementale et impact sociétal, en agissant concrètement pour l’intérêt général avec Komeet à travers le mécénat de compétences, en soutenant Café Joyeux et l’Institut Imagine, et en renforçant l’inclusion avec Yumaincap …Prêt(e) à relever le défi ? Intégrez le #VISEOspirit !Employeur inclusif et engagé, VISEO agit au quotidien pour promouvoir la diversité, prévenir toute forme de discrimination et garantir un environnement de travail respectueux. Attachés à la mixité des équipes et à la richesse des parcours, nous encourageons toutes les candidatures, valorisons tous les talents, et mettons en œuvre tous les dispositifs adaptés nécessaires pour accompagner chaque talent dans la durée.A propos de VISEOAvec 3 000 collaborateurs intervenant sur 5 continents, VISEO concilie agilité et complémentarité de ses savoir-faire pour faire du numérique un réel levier de compétitivité et de performance.#PositiveDigitalMakers",
-    "salary_raw": "",
-    "published": "2026-07-16T22:27:29.000Z",
+    "location": "92 - VANVES (92170)",
+    "description": "Audiens est le partenaire de confiance des professionnels de la création et de l'information (salariés, créateurs d'entreprises, intermittents du spectacle, journalistes, pigistes et travailleurs indépendants, familles et retraités du secteur) pour leur protection sociale. Acteur de référence depuis 2003, nous développons une expertise exclusive au service de la culture. Avec plus de 600 collaborateurs, tous engagés à porter nos valeurs fondatrices de solidarité, de qualité, de progrès et de respect, nous œuvrons tous les jours à la satisfaction de nos clients et concevons en ce sens des offres adaptées aux spécificités de chaque profession. \n\nDans le cadre d'un remplacement nous recrutons au sein de notre Direction Commerciale un(e)\n\nChef de projet pilotage de la performance commerciale H/F\n\nLe pôle « Pilotage et Projets » a la responsabilité du pilotage de l'activité commerciale, du processus d'objectivation et de la définition des périmètres clients et offres. Ce pôle est un maillon essentiel et stratégique dans la mise à disposition de données exhaustives dans les délais impartis pour l'ensemble des équipes commerciales, ainsi que pour la Direction Générale.\nPar un pilotage fiable, en tant que Chef de projet pilotage de la performance commerciale vous contribuez aux analyses des résultats et des performances des équipes commerciales. Vos actions ont pour objectif de permettre aux collaborateurs de la Direction Commerciale de gagner en efficacité et ainsi faciliter l'atteinte des objectifs de développement du chiffre d'affaires, de fidélisation et de pilotage des comptes. Vous participez à la construction du Plan d'Action Commercial annuel et êtes force de proposition dans les orientations stratégiques de la Direction Commerciale.\n\nAu quotidien vos missions sont les suivantes :\n\n- Production de reporting et tableaux de bord de chiffre d'affaires (affaires nouvelles et résiliations) déclinés par segments, offres et modèles de distribution ;\n\n- Pilotage des budgets commerciaux de souscription et de renouvellement, ainsi que de la campagne de redressement des comptes clients en lien avec la Direction Technique ;\n\n- Accompagnement des équipes commerciales pour adapter le pilotage des activités aux spécificités de chaque business unit ;\n\n- Participation à la fixation des objectifs commerciaux, en lien avec la stratégie du Groupe, et leurs déclinaisons dans les avenants des équipes commerciales. Recensement des impacts exceptionnels sur le niveau d'objectivation et suivi des indicateurs du système de rémunération variable ;\n\nDe formation supérieure Bac+5 avec une spécialisation en contrôle de gestion vous possédez une expérience de 5 ans environ en contrôle de gestion ou pilotage commercial acquise idéalement dans le secteur des assurances voire de la banque. \nDoté(e) d'une forte capacité d'analyse et de synthèse vous savez prendre de la hauteur afin de challenger les demandes formulées.\nA l'aise avec les données chiffrées et la manipulation informatique, vous possédez impérativement une très bonne maitrise d'Excel, la connaissance d'outils data type Power Bi et une ouverture sur l'IA.\nD'un tempérament pédagogue et doté(e) d'un bon relationnel vous appréciez le partage et les échanges, qualité indispensable pour s'intégrer rapidement au sein de notre structure à taille humaine. Véritable soutien auprès de votre manager, vous savez travailler en relative autonomie et êtes naturellement une personne de confiance sur qui l'on peut compter.\n\nVous vous reconnaissez dans ce profil alors rencontrons nous ! Nous vous offrons :\n- Un environnement de travail agréable et bienveillant \n- Un salaire et des avantages sociaux attractifs (statut cadre / Télétravail / 27 jours de CP / 23 jours de RTT/ retraite supplémentaire 100% employeur / intéressement / accord télétravail / Restaurant d'entreprise / CSE .)\n\nPoste basé à Vanves proche Paris",
+    "salary_raw": "Annuel de 60000.0 Euros à 65000.0 Euros sur 12 mois",
+    "published": "2026-07-27T13:26:04.371Z",
     "contract_type": "CDI",
-    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "commute_minutes": null,
+    "flags": [],
+    "score": 7,
+    "score_reasons": [
+      "Compétences alignées (3)",
+      "Secteur favorable : banque"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À confirmer : titre sans signal CRM explicite"
+  },
+  {
+    "source": "France Travail",
+    "title": "Chargé(e) de communication et marketing digital (H/F)",
+    "link": "https://candidat.francetravail.fr/offres/recherche/detail/211RXJT",
+    "company": "",
+    "location": "75 - PARIS (75006)",
+    "description": "Organisme de voyages pour les jeunes, nous sommes spécialisés dans les séjours linguistiques depuis 1947, colonies de vacances et programmes d'échanges internationaux pour les 6-25 ans. Nous sommes implantés à Paris, Saint-Malo, Lyon, Caen et Berlin.\n\nMissions :\nCommunication digitale et contenus : référent(e) SEO (≈ 40 %)\nPrépare et propose les plannings éditoriaux et calendriers de publication en coordination avec l'équipe marketing, de production-vente de Paris et St Malo, afin d'assurer la cohérence des actions de communication, dans le respect des roadmaps communication et SEO.\n- Planification et stratégie : préparation des calendriers éditoriaux (site, emailings, évènements, réseaux sociaux, jeux concours.) et pilotage statistique des retombées selon les objectifs définis.\n- Création de contenu : intégration et création de contenu en français et en anglais sur le site Wordpress ; participation à la mise à jour des séjours sur le site ; rédaction d'articles de blog ; création de pages d'atterrissage ; recherche iconographique et création ou brief de vidéos.\n- Travail d'optimisation constant : AB testing avec Zoho Pagesense\n- Marketing direct : création et pilotages de campagnes d'emailings en français et anglais.\n- SEO et GEO : suivi, pilotage et optimisation du site en collaboration avec l'agence web ; recherche de site externes/partenariats pour augmenter l'acquisition et les visites sur le site et mise à jour et suivi des plateforme partenaires (Kidsvacances, Resacolo.).\n- Mise en place et gestion de Zoho Social : veille concurrentielle, planification, pilotage des posts et publications des réseaux sociaux ; gestion opérationnelle des campagnes sponsorisées en lien avec l'agence. \n- Collecte et valorisation des contenus UGC.\n- Veille : veille concurrentielle sites et réseaux sociaux.\n\nMarketing digital et CRM (≈ 40 %)\n- Travail sur les personas et segmentation des cibles \n- Sous le pilotage de la Responsable marketing digital et expérience client, participation à la mise en place de scénarios automatisés de fidélisation (via la plateforme Gifty notamment)\n- Contribution à l'amélioration des parcours clients (Zoho CRM),..\n- Suivi des performances, préparation de reportings mensuels.\n\nQualité digitale et amélioration continue (≈ 20 %)\n- Vérification régulière du bon fonctionnement du site, contrôle de la fraîcheur des contenus, liens et documents, identification des contenus à mettre à jour ou à supprimer. \n- Participation à l'amélioration continue des outils et processus, et au développement de nouveaux outils (IA, chatbot...).",
+    "salary_raw": "Mensuel de 2200.0 Euros à 2400.0 Euros sur 12 mois",
+    "published": "2026-07-27T11:57:08.774Z",
+    "contract_type": "CDI",
     "telework_days": null,
     "in_france": true,
     "commute_minutes": null,
     "flags": [
+      "Séniorité élevée (>7 ans ?)",
       "Télétravail non mentionné"
     ],
     "score": 7,
     "score_reasons": [
-      "Outils : omnicanal",
-      "Compétences alignées (3)"
+      "Outils : segmentation, email",
+      "Compétences alignées (6)"
     ],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+    "recommendation_reason": "À vérifier : Séniorité élevée (>7 ans ?) ; Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -583,7 +553,7 @@
     "commute_minutes": null,
     "flags": [
       "Télétravail non mentionné",
-      "Annonce ancienne (156 j)"
+      "Annonce ancienne (157 j)"
     ],
     "score": 7,
     "score_reasons": [
@@ -591,7 +561,32 @@
       "Compétences alignées (4)"
     ],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné ; Annonce ancienne (156 j)"
+    "recommendation_reason": "À vérifier : Télétravail non mentionné ; Annonce ancienne (157 j)"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Senior Campaign Operations Manager EMEA H/F",
+    "link": "https://www.adzuna.fr/details/5810528901?utm_medium=api&utm_source=707eaaff",
+    "company": "Michael Page",
+    "location": "Paris, Ile-de-France",
+    "description": "Rattaché(e) au Responsable des Opérations Marketing EMEA,vous assurez la gestion complète des campagnes marketing pour un portefeuille dédié de parties prenantes internes. À ce titre, ses principales missions sont : * Piloter les campagnes marketing de bout en bout : prise de brief, construction, paramétrage, tests qualité, lancement et reporting. * Concevoir et orchestrer des parcours clients omnicanaux via les outils d'automatisation marketing. * Réaliser des segmentations avancées et garanti…",
+    "salary_raw": "75000-85000 €",
+    "published": "2026-07-22T10:22:04Z",
+    "contract_raw": "",
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": null,
+    "flags": [
+      "Télétravail non mentionné"
+    ],
+    "score": 7,
+    "score_reasons": [
+      "Outils : segmentation",
+      "Compétences alignées (4)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -771,7 +766,7 @@
     "link": "https://remoteOK.com/remote-jobs/remote-customer-support-talenticlix-1135446",
     "company": "Talenticlix",
     "location": "Ø§ÙÙØ¯ÙÙØ©, Ø§ÙÙØ¯ÙÙØ© Ø§ÙÙØ¯ÙÙØ© Ø§ÙØ³Ø¹ÙØ¯ÙØ©",
-    "description": "<p><strong>Customer Support Specialist (Arabic) | Remote</strong></p> <p>Â </p> <p>We are actively seeking a detail-oriented <strong>Remote Customer Support (Arabic) Specialist</strong> to join our team. In this role, you will be responsible for delivering professional and timely support to Arabic-speaking customers through various communication channels.</p> <p>You will handle customer inquiries, resolve issues efficiently, and ensure a positive customer experience at every interaction. Strong communication skills in Arabic, excellent problem-solving ability, and attention to detail are essential for success in this remote position. Your contribution will play a key role in maintaining customer satisfaction and supporting the overall growth of our organization.</p> <p>Â </p> <p><strong>Key Responsibilities</strong></p> <p>Â </p> <p><strong>1) Customer Communication</strong></p> <ul><li>Respond to customer inquiries via email, chat, or phone in Arabic (and English if required) </li><li>Provide accurate information about products, services, and processes </li><li>Maintain clear, professional, and empathetic communication </li><br></ul> <p><strong>2) Issue Resolution</strong></p> <ul><li>Assist customers with troubleshooting and resolving common issues </li><li>Identify root causes and guide customers through solutions </li><li>Escalate complex or sensitive cases to appropriate teams </li><br></ul> <p><strong>3) Case Management</strong></p> <ul><li>Document all customer interactions in CRM or support systems </li><li>Track open cases and follow up to ensure timely resolution </li><li>Maintain accurate and up-to-date customer records </li><br></ul> <p><strong>4) Quality and Service Standards</strong></p> <ul><li>Ensure all responses meet company quality and communication standards </li><li>Handle complaints with professionalism and empathy </li><li>Support continuous improvement by identifying recurring issues </li><br></ul> <p><strong>5) Team Collaboration</strong></p> <ul><li>Work closely with internal teams to resolve customer concerns </li><li>Participate in training sessions and team meetings </li><li>Stay updated on product changes, policies, and procedures </li><br></ul> <p>Â </p> <p><strong>Required Skills and Qualifications</strong></p> <ul><li>Fluency in Arabic (written and spoken) and good English skills </li><li>Strong communication and interpersonal abilities </li><li>Customer-focused mindset with empathy and patience </li><li>Ability to handle multiple tasks in a fast-paced environment </li><li>Basic computer skills and familiarity with digital tools </li><li>Problem-solving skills and attention to detail </li><li>Ability to work independently in a remote setting </li><li>Previous customer support experience is a plus </li><br></ul> <p>Â </p> <p><strong>Technical Requirements</strong></p> <ul><li>Reliable high-speed internet connection </li><li>Personal computer or laptop with updated operating system </li><li>Quiet and professional workspace </li><li>Familiarity with email, chat tools, and CRM systems (preferred) </li><br></ul> <p>Â </p> <p><strong>What We Offer</strong></p> <ul><li>Competitive compensation </li><li>Flexible remote working schedule </li><li>Training and onboarding support </li><li>Opportunities for career growth in customer support </li><li>Performance-based incentives </li><li>Supportive and collaborative remote team environment </li><br></ul> <p>Â </p> <p><strong>Keywords</strong></p> <p>Customer support â¢ Arabic speaker â¢ Remote work â¢ Customer service â¢ CRM systems â¢ Communication skills â¢ Problem-solving â¢ Multilingual support â¢ Work from home â¢ Customer experience â¢ Service representative</p> <p>Â </p><br> <p>Â </p><br/><br/>Please mention the word **STREAMLINED** and tag RMjAuNTUuMTE4LjExNg== when applying to show you read the job post completely (#RMjAuNTUuMTE4LjExNg==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+    "description": "<p><strong>Customer Support Specialist (Arabic) | Remote</strong></p> <p>Â </p> <p>We are actively seeking a detail-oriented <strong>Remote Customer Support (Arabic) Specialist</strong> to join our team. In this role, you will be responsible for delivering professional and timely support to Arabic-speaking customers through various communication channels.</p> <p>You will handle customer inquiries, resolve issues efficiently, and ensure a positive customer experience at every interaction. Strong communication skills in Arabic, excellent problem-solving ability, and attention to detail are essential for success in this remote position. Your contribution will play a key role in maintaining customer satisfaction and supporting the overall growth of our organization.</p> <p>Â </p> <p><strong>Key Responsibilities</strong></p> <p>Â </p> <p><strong>1) Customer Communication</strong></p> <ul><li>Respond to customer inquiries via email, chat, or phone in Arabic (and English if required) </li><li>Provide accurate information about products, services, and processes </li><li>Maintain clear, professional, and empathetic communication </li><br></ul> <p><strong>2) Issue Resolution</strong></p> <ul><li>Assist customers with troubleshooting and resolving common issues </li><li>Identify root causes and guide customers through solutions </li><li>Escalate complex or sensitive cases to appropriate teams </li><br></ul> <p><strong>3) Case Management</strong></p> <ul><li>Document all customer interactions in CRM or support systems </li><li>Track open cases and follow up to ensure timely resolution </li><li>Maintain accurate and up-to-date customer records </li><br></ul> <p><strong>4) Quality and Service Standards</strong></p> <ul><li>Ensure all responses meet company quality and communication standards </li><li>Handle complaints with professionalism and empathy </li><li>Support continuous improvement by identifying recurring issues </li><br></ul> <p><strong>5) Team Collaboration</strong></p> <ul><li>Work closely with internal teams to resolve customer concerns </li><li>Participate in training sessions and team meetings </li><li>Stay updated on product changes, policies, and procedures </li><br></ul> <p>Â </p> <p><strong>Required Skills and Qualifications</strong></p> <ul><li>Fluency in Arabic (written and spoken) and good English skills </li><li>Strong communication and interpersonal abilities </li><li>Customer-focused mindset with empathy and patience </li><li>Ability to handle multiple tasks in a fast-paced environment </li><li>Basic computer skills and familiarity with digital tools </li><li>Problem-solving skills and attention to detail </li><li>Ability to work independently in a remote setting </li><li>Previous customer support experience is a plus </li><br></ul> <p>Â </p> <p><strong>Technical Requirements</strong></p> <ul><li>Reliable high-speed internet connection </li><li>Personal computer or laptop with updated operating system </li><li>Quiet and professional workspace </li><li>Familiarity with email, chat tools, and CRM systems (preferred) </li><br></ul> <p>Â </p> <p><strong>What We Offer</strong></p> <ul><li>Competitive compensation </li><li>Flexible remote working schedule </li><li>Training and onboarding support </li><li>Opportunities for career growth in customer support </li><li>Performance-based incentives </li><li>Supportive and collaborative remote team environment </li><br></ul> <p>Â </p> <p><strong>Keywords</strong></p> <p>Customer support â¢ Arabic speaker â¢ Remote work â¢ Customer service â¢ CRM systems â¢ Communication skills â¢ Problem-solving â¢ Multilingual support â¢ Work from home â¢ Customer experience â¢ Service representative</p> <p>Â </p><br> <p>Â </p><br/><br/>Please mention the word **STREAMLINED** and tag RNTIuMTU3LjMzLjE2Ng== when applying to show you read the job post completely (#RNTIuMTU3LjMzLjE2Ng==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
     "salary_raw": "",
     "published": "2026-07-24T07:49:15+00:00",
     "telework_days": 5,
@@ -811,31 +806,6 @@
     ],
     "recommendation": "à_revoir",
     "recommendation_reason": "À vérifier : Customer Success / Account mgmt ? ; Pertinence CRM à confirmer ; Séniorité / management d'équipe ?"
-  },
-  {
-    "source": "France Travail",
-    "title": "Customer Relationship Manager (CRM) (H/F)",
-    "link": "https://candidat.francetravail.fr/offres/recherche/detail/4729696",
-    "company": "",
-    "location": "75 - Paris 9e Arrondissement (75009)",
-    "description": "Description du poste :\n\nVos responsabilités consisteront à Assurer le suivi et la satisfaction des clients après la mise en place des solutions Identifier les besoins supplémentaires des clients et proposer des solutions adaptées Collaborer avec les équipes techniques pour résoudre les problèmes rencontrés par les clients Former les clients à l'utilisation des produits et services de l'entreprise Maintenir une communication proactive avec les clients pour renforcer leur fidélité Analyser les retours clients pour améliorer les services proposés Contribuer à l'atteinte des objectifs de vente en identifiant des opportunités commerciales Participer aux réunions et aux échanges avec les équipes internes pour partager les retours clients.\n\nLa rémunération et les avantages sur ce poste sont Un salaire fixe à 40k brut 20% de variable Un contrat à durée indéterminée (CDI Un poste basé à Paris, dans un environnement stimulant et innovant.\n\n\nCe poste de CUSTOMER SUCCESS MANAGER FRANÇAIS & NÉERLANDAIS H/F dans le secteur TECHNOLOGY & TELECOMS offre une belle opportunité de développement professionnel. N'hésitez pas à postuler pour rejoindre notre client !\n\nDescription du profil :\n\nLe profil recherché Vous maîtrisez parfaitement le français et le néerlandais, à l'oral comme à l'écrit Vous avez un bon niveau d'anglais Vous avez une expérience confirmée dans un environnement international Vous êtes à l'aise avec les outils CRM et les logiciels de gestion client Vous avez une forte capacité d'écoute et un sens aigu du service client Vous savez travailler en équipe tout en étant autonome dans vos missions.",
-    "salary_raw": "Annuel de 45000.0 Euros à 48000.0 Euros",
-    "published": "2026-07-09T03:22:04.000Z",
-    "contract_type": "CDI",
-    "telework_days": null,
-    "in_france": true,
-    "commute_minutes": null,
-    "flags": [
-      "Customer Success / Account mgmt ?",
-      "Pertinence CRM à confirmer",
-      "Télétravail non mentionné"
-    ],
-    "score": 6,
-    "score_reasons": [
-      "Salaire dans la cible (45,000€)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Customer Success / Account mgmt ? ; Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
     "source": "France Travail",
@@ -884,6 +854,30 @@
     ],
     "recommendation": "à_revoir",
     "recommendation_reason": "À vérifier : Télétravail non mentionné"
+  },
+  {
+    "source": "France Travail",
+    "title": "Gestionnaire ADV Services Export (H/F)",
+    "link": "https://candidat.francetravail.fr/offres/recherche/detail/211RSLZ",
+    "company": "SODIMATE EQUIPMENT & SYSTEM",
+    "location": "95 - CORMEILLES EN PARISIS (95240)",
+    "description": "Mission générale :\nAssurer le traitement administratif et commercial des demandes clients Export liées aux activités de Services (Pièces de Rechange, Interventions, Garanties et Assistance Technique), depuis la réception de la demande jusqu'à la livraison ou la facturation.\nContribuer à la satisfaction client en garantissant la réactivité, la fiabilité des informations transmises et le respect des délais de traitement.\n\nActivités principales :\n- Gestion des demandes clients\n- Réception des demandes Clients (clients, filiales, agents et distributeurs). \n- Qualification des demandes. \n- Création et mise à jour des dossiers dans l'ERP et le CRM. \n- Transmission des demandes aux interlocuteurs concernés. \n- Suivi administratif des dossiers.\n- Élaboration des devis\n- Préparation des offres commerciales sur la base des éléments techniques transmis. \n- Chiffrage selon les règles tarifaires établies. \n- Vérification des conditions commerciales. \n- Vérification des disponibilités des pièces. \n- Suivi consultation fournisseurs si nécessaire au travers des achats. \n- Emission des devis. \n- Relances systématiques des devis en attente. \n- Mise à jour des délais. \n- Communication avec les Clients. \n        Objectif :\n- Réduire le délai de réponse aux demandes Clients. \n- Augmenter le taux de transformation devis/commandes. \n- Gestion des commandes\n- Revue de commande. \n- Enregistrement dans l'ERP. \n- Vérification des conditions de vente. \n- Suivi de l'avancement des commandes. \n- Coordination avec les achats, la production et la logistique. \n- Information régulière du Client. \n- Support administratif aux interventions\n- Préparation des dossiers d'intervention. \n- Collecte des documents administratifs. \n- Préparation des éléments de facturation. \n- Archivage des rapports d'intervention. \n- Relances et suivi clients\n- Relances devis. \n- Relances commandes en attente. \n- Relances paiements\n- Suivi des dossiers ouverts. \n- Information proactive des Clients sur l'avancement de leurs demandes. \n- Reporting\n- Mise à jour des tableaux de bord. \n- Suivi du portefeuille devis. \n- Suivi du carnet de commandes. \n- Mise à jour des indicateurs de performance.",
+    "salary_raw": "Mensuel de 2000.0 Euros à 2200.0 Euros sur 12 mois",
+    "published": "2026-07-27T10:45:46.307Z",
+    "contract_type": "CDI",
+    "telework_days": null,
+    "in_france": true,
+    "commute_minutes": null,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné"
+    ],
+    "score": 6,
+    "score_reasons": [
+      "Compétences alignées (3)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
     "source": "France Travail",
@@ -1069,14 +1063,14 @@
     "commute_minutes": null,
     "flags": [
       "Télétravail non mentionné",
-      "Annonce ancienne (137 j)"
+      "Annonce ancienne (138 j)"
     ],
     "score": 6,
     "score_reasons": [
       "Outils : email, sms"
     ],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné ; Annonce ancienne (137 j)"
+    "recommendation_reason": "À vérifier : Télétravail non mentionné ; Annonce ancienne (138 j)"
   },
   {
     "source": "Adzuna",
@@ -1155,32 +1149,6 @@
     ],
     "recommendation": "à_revoir",
     "recommendation_reason": "À vérifier : Télétravail non mentionné ; Annonce ancienne (156 j)"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Responsable CRM & Marketing Relationnel (H/F) (CDI)",
-    "link": "https://www.adzuna.fr/land/ad/5793879853?se=vgyC3IaJ8RGCxstMv4ixkw&utm_medium=api&utm_source=707eaaff&v=D989580695F5D7A1B4DE767C46F2ED9EDB3C598A",
-    "company": "ARAVATI FRANCE",
-    "location": "Seine-et-Marne, Ile-de-France",
-    "description": "Rejoignez un acteur majeur du retail en pleine accélération digitale Notre client est un acteur de référence du retail, reconnu pour la puissance de sa marque et son développement omnicanal. Dans un contexte de transformation ambitieuse de son écosystème CRM et Data, il recherche son futur Responsable CRM afin d'accélérer la personnalisation de la relation client et la création de valeur sur l'ensemble des parcours d'achat. Rattaché(e) à la Direction CRM & Data, vous jouez un rôle central dans …",
-    "salary_raw": "",
-    "published": "2026-07-09T10:15:59Z",
-    "contract_raw": "permanent",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": "CDI",
-    "commute_minutes": null,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Télétravail non mentionné"
-    ],
-    "score": 6,
-    "score_reasons": [
-      "Outils : omnicanal"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -1274,14 +1242,14 @@
     "commute_minutes": null,
     "flags": [
       "Télétravail non mentionné",
-      "Annonce ancienne (114 j)"
+      "Annonce ancienne (115 j)"
     ],
     "score": 6,
     "score_reasons": [
       "Compétences alignées (4)"
     ],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné ; Annonce ancienne (114 j)"
+    "recommendation_reason": "À vérifier : Télétravail non mentionné ; Annonce ancienne (115 j)"
   },
   {
     "source": "Adzuna",
@@ -1538,38 +1506,13 @@
   },
   {
     "source": "Adzuna",
-    "title": "Chef de projet technico-fonctionnel CRM D365 (F/H)",
-    "link": "https://www.adzuna.fr/details/5800922723?utm_medium=api&utm_source=707eaaff",
-    "company": "MICHAEL PAGE",
+    "title": "Chef de Projet Technico-Fonctionnel CRM D365 H/F",
+    "link": "https://www.adzuna.fr/details/5796863746?utm_medium=api&utm_source=707eaaff",
+    "company": "Michael Page",
     "location": "La Défense, Courbevoie",
-    "description": "Le poste de Chef de projet technico-fonctionnel CRM D365 (F/H) En tant que Chef de projet Technico-fonctionnel CRM D365, vous êtes le référent technique des solutions CRM et de leurs interfaces. Vos missions : * Piloter l'expertise CRM Microsoft Dynamics auprès des métiers; * Analyser et challenger les besoins fonctionnels et techniques; * Concevoir les User Stories, Epics et solutions techniques; * Superviser le développement, les tests et l'intégration SI; * Garantir la qualité, la performanc…",
-    "salary_raw": "",
-    "published": "2026-07-15T10:34:17Z",
-    "contract_raw": "permanent",
-    "salary_extracted": null,
-    "telework_days": 2,
-    "in_france": true,
-    "contract_type": "CDI",
-    "commute_minutes": null,
-    "flags": [
-      "Pertinence CRM à confirmer"
-    ],
-    "score": 6,
-    "score_reasons": [
-      "Télétravail 2j/sem"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Chef de projet technico-fonctionnel CRM D365 (F/H)",
-    "link": "https://www.adzuna.fr/details/5795107458?utm_medium=api&utm_source=707eaaff",
-    "company": "",
-    "location": "Courbevoie, Nanterre",
-    "description": "En tant que Chef de projet Technico-fonctionnel CRM D365, vous êtes le référent technique des solutions CRM et de leurs interfaces. Vos missions : Piloter l' expertise CRM Microsoft Dynamics auprès des métiers; Analyser et challenger les besoins fonctionnels et techniques; Concevoir les User Stories, Epics et solutions techniques; Superviser le développement, les tests et l'intégration SI; Garantir la qualité, la performance et la documentation; Assurer l' alignement avec l'architecture SI cibl…",
+    "description": "En tant que Chef de projet Technico-fonctionnel CRM D365, vous êtes le référent technique des solutions CRM et de leurs interfaces. Vos missions : * Piloter l'expertise CRM Microsoft Dynamics auprès des métiers; * Analyser et challenger les besoins fonctionnels et techniques; * Concevoir les User Stories, Epics et solutions techniques; * Superviser le développement, les tests et l'intégration SI; * Garantir la qualité, la performance et la documentation; * Assurer l'alignement avec l'architectu…",
     "salary_raw": "63000-77000 €",
-    "published": "2026-07-10T06:53:48Z",
+    "published": "2026-07-11T12:04:48Z",
     "contract_raw": "",
     "telework_days": 2,
     "in_france": true,
@@ -1854,6 +1797,27 @@
   },
   {
     "source": "Jobicy",
+    "title": "CRM & Retention Specialist",
+    "link": "https://jobicy.com/jobs/147702-crm-retention-specialist",
+    "company": "Sporty Group",
+    "location": "EMEA",
+    "description": "About the roleAs a Retention Specialist at Sporty, you’ll play a hands-on role in supporting the delivery of Africa Regional focused campaigns and promotions that drive customer engagement and loyalty locally. You’ll assist with setting up and running retention activities, track results, and help ensure our offers are competitive across different markets. Working closely with&hellip;",
+    "salary_raw": "",
+    "published": "2026-07-27T09:45:05+00:00",
+    "telework_days": 5,
+    "in_france": true,
+    "salary_extracted": null,
+    "contract_type": null,
+    "flags": [],
+    "score": 6,
+    "score_reasons": [
+      "Télétravail 5j/sem"
+    ],
+    "recommendation": "à_postuler",
+    "recommendation_reason": "Profil correspondant, aucun signal à vérifier (100 % télétravail France, score 6/10)"
+  },
+  {
+    "source": "Jobicy",
     "title": "Senior Marketing Automation Manager",
     "link": "https://jobicy.com/jobs/146167-senior-marketing-automation-manager",
     "company": "Canonical Ltd.",
@@ -1894,6 +1858,29 @@
     ],
     "recommendation": "à_revoir",
     "recommendation_reason": "À vérifier : Annonce ancienne (1845 j)"
+  },
+  {
+    "source": "Meteojob (alerte)",
+    "title": "Chef·fe de Projet CRM & Clienteling H/F - Maison de Luxe Page Personnel Paris (75) CDI 45 000 € - 53 000 € par an",
+    "link": "https://www.meteojob.com/jobs/55708588?my-meteo=true&auth=u3t5KCbo3jYekf9mnpO1lS2EsKJBv9ynzjg4uJAtOCg&utm_source=mailing&utm_medium=email&utm_campaign=newOfferAlert_HotOffer&campaign=HOT_OFFER_20260726&client=14951836&cc_mail_id=HOT_OFFER_20260726&cc_campaign=HOT_OFFER&cc_variant=DEFAULT&utm_content=linkTextOffer",
+    "company": "",
+    "location": "",
+    "description": "",
+    "published": "2026-07-26T04:48:23+02:00",
+    "in_france": true,
+    "salary_extracted": "45 000 €",
+    "telework_days": null,
+    "contract_type": "CDI",
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné"
+    ],
+    "score": 6,
+    "score_reasons": [
+      "Salaire dans la cible (45,000€)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
     "source": "Meteojob (alerte)",
@@ -2080,6 +2067,29 @@
   },
   {
     "source": "Adzuna",
+    "title": "Consultant CRM & Marketing Automation Confirmé F/H",
+    "link": "https://www.adzuna.fr/details/5801377942?utm_medium=api&utm_source=707eaaff",
+    "company": "VISEO",
+    "location": "Boulogne-Billancourt, Hauts-de-Seine",
+    "description": "Passionné par le CRM, la Data et les écosystèmes Marketing ? Vous aimez intervenir sur des projets complexes, internationaux et omnicanaux ? Vous souhaitez mettre votre expertise au service de la transformation CRM et marketing de grandes marques ? Rejoignez notre équipe d’experts chez VISEO pour accompagner nos clients grands comptes internationaux dans la conception et l’évolution de leurs plateformes CRM et Marketing. Ce que nous allons faire ensemble ? Nous recherchons un Business Analyst C…",
+    "salary_raw": "",
+    "published": "2026-07-15T18:50:11Z",
+    "contract_raw": "",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": null,
+    "flags": [
+      "Télétravail non mentionné"
+    ],
+    "score": 5,
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+  },
+  {
+    "source": "Adzuna",
     "title": "In-Store CRM Manager",
     "link": "https://www.adzuna.fr/details/5746737443?utm_medium=api&utm_source=707eaaff",
     "company": "Versace",
@@ -2102,29 +2112,6 @@
     "score_reasons": [],
     "recommendation": "à_revoir",
     "recommendation_reason": "À vérifier : Customer Success / Account mgmt ? ; Pertinence CRM à confirmer ; Télétravail non mentionné"
-  },
-  {
-    "source": "Adzuna",
-    "title": "CRM Marketing Manager (H/F) (CDI)",
-    "link": "https://www.adzuna.fr/land/ad/5799659517?se=GEa52oaJ8RG3tOkLR0Zx3w&utm_medium=api&utm_source=707eaaff&v=2919516DBD3D6ADE9A1A3E026F04BF0697F1261A",
-    "company": "ARAVATI FRANCE",
-    "location": "1er Arrondissement, Paris",
-    "description": "Vous aimez construire plutôt que maintenir ? Vous recherchez un poste où le CRM n'est pas seulement un outil marketing mais un véritable levier de transformation de l'entreprise ? Notre client, acteur majeur du conseil, de l'audit et de l'expertise auprès des entreprises, poursuit une transformation ambitieuse de son organisation et de son approche commerciale. Dans ce contexte, il crée le poste de CRM Marketing Manager, véritable référent de la stratégie CRM et Marketing Automation. Vous prene…",
-    "salary_raw": "",
-    "published": "2026-07-14T09:58:30Z",
-    "contract_raw": "permanent",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": "CDI",
-    "commute_minutes": null,
-    "flags": [
-      "Télétravail non mentionné"
-    ],
-    "score": 5,
-    "score_reasons": [],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -2184,29 +2171,6 @@
     "salary_raw": "43400-69300 €",
     "published": "2026-07-11T23:40:15Z",
     "contract_raw": "",
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": null,
-    "flags": [
-      "Télétravail non mentionné"
-    ],
-    "score": 5,
-    "score_reasons": [],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné"
-  },
-  {
-    "source": "Adzuna",
-    "title": "CRM & Lifecycle Manager H/F",
-    "link": "https://www.adzuna.fr/details/5795345775?utm_medium=api&utm_source=707eaaff",
-    "company": "Joko",
-    "location": "Paris, Ile-de-France",
-    "description": "At Joko, we help consumers shop smarter. Our mission is to revolutionize shopping, empowering people to find what they need, make informed decisions, and save money. Founded in Paris, Joko is a tech company and certified B Corp with over 105 talents across Paris, Barcelona, and New York (and beyond). More than 6 million users already save money every day at 10,000 merchants with Joko. From cashback and automatic coupons to price alerts and carbon tracking, we keep expanding our products to make…",
-    "salary_raw": "",
-    "published": "2026-07-10T10:57:36Z",
-    "contract_raw": "",
-    "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
     "contract_type": null,
@@ -2389,30 +2353,6 @@
   },
   {
     "source": "Adzuna",
-    "title": "Consultant(e) - Product Owner/Product Manager E-Commerce, Clienteling, CRM – Luxe & Retail (H/F)",
-    "link": "https://www.adzuna.fr/details/5733698489?utm_medium=api&utm_source=707eaaff",
-    "company": "Square Management",
-    "location": "Neuilly-sur-Seine, Nanterre",
-    "description": "Square Management est un cabinet de conseil spécialisé en stratégie et organisation qui accompagne ses clients dans l’anticipation, la conception et la réalisation de leurs projets de transformation, en France, en Belgique et au Luxembourg. Square Management est organisé autour de deux offres complémentaires : ● Une offre de conseil en stratégie sous la marque Circle Strategy ● Une offre de conseil en organisation et management articulée autour de 10 domaines d’excellence : AI & Data, Digital &…",
-    "salary_raw": "",
-    "published": "2026-05-19T06:02:48Z",
-    "contract_raw": "",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": null,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Télétravail non mentionné"
-    ],
-    "score": 5,
-    "score_reasons": [],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
-  },
-  {
-    "source": "Adzuna",
     "title": "Responsable Site et CRM H/F",
     "link": "https://www.adzuna.fr/details/5753989319?utm_medium=api&utm_source=707eaaff",
     "company": "Transavia",
@@ -2507,31 +2447,6 @@
     "score_reasons": [],
     "recommendation": "à_revoir",
     "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Séniorité / management d'équipe ? ; Télétravail non mentionné"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Responsable CRM Senior (H/F)",
-    "link": "https://www.adzuna.fr/details/5789398451?utm_medium=api&utm_source=707eaaff",
-    "company": "Lineup7",
-    "location": "14ème Arrondissement, Paris",
-    "description": "À propos de LINEUP7 À propos de LineUP7 LineUP7 est un cabinet de conseil spécialisé en Data, CRM, Martech et Intelligence Artificielle. Filiale d'Isoskèle (Groupe La Poste), nous accompagnons les grandes entreprises dans la conception, le déploiement et l'évolution de leurs écosystèmes Data afin de transformer la donnée en un véritable levier de connaissance client, d'innovation et de performance. Nos équipes interviennent sur l'ensemble de la chaîne de valeur : conseil, architecture, intégrat…",
-    "salary_raw": "",
-    "published": "2026-07-06T00:01:40Z",
-    "contract_raw": "",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": null,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Via ESN / staffing",
-      "Télétravail non mentionné"
-    ],
-    "score": 5,
-    "score_reasons": [],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Via ESN / staffing ; Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -2631,30 +2546,6 @@
   },
   {
     "source": "Adzuna",
-    "title": "Responsable Sales Ops & CRM - Groupe Média International H/F",
-    "link": "https://www.adzuna.fr/details/5797963775?utm_medium=api&utm_source=707eaaff",
-    "company": "Alenta",
-    "location": "Paris, Ile-de-France",
-    "description": "Rattaché(e) à la toute nouvelle Direction des Opérations Commerciales, créée pour rapprocher l'IT, les utilisateurs et les métiers autour d'une vision commune, vos missions sont les suivantes : le groupe a pris du retard sur la structuration de ses process commerciaux ces dernières années, dans un environnement business qui évolue très vite - votre mission est d'incarner ce sujet et de réaccélérer la transformation, avec une forte proximité terrain auprès des équipes commerciales B2B, à Paris c…",
-    "salary_raw": "",
-    "published": "2026-07-12T15:27:56Z",
-    "contract_raw": "",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": null,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Télétravail non mentionné"
-    ],
-    "score": 5,
-    "score_reasons": [],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
-  },
-  {
-    "source": "Adzuna",
     "title": "Responsable Transformation Si Clients & CRM H/F",
     "link": "https://www.adzuna.fr/details/5605978110?utm_medium=api&utm_source=707eaaff",
     "company": "Randstad professional",
@@ -2670,12 +2561,12 @@
     "flags": [
       "Pertinence CRM à confirmer",
       "Télétravail non mentionné",
-      "Annonce ancienne (177 j)"
+      "Annonce ancienne (178 j)"
     ],
     "score": 5,
     "score_reasons": [],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné ; Annonce ancienne (177 j)"
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné ; Annonce ancienne (178 j)"
   },
   {
     "source": "Adzuna",
@@ -2751,53 +2642,6 @@
   },
   {
     "source": "Adzuna",
-    "title": "RESPONSABLE GROWTH MARKETING F/H",
-    "link": "https://www.adzuna.fr/details/5778930744?utm_medium=api&utm_source=707eaaff",
-    "company": "NRJ GROUP",
-    "location": "16ème Arrondissement, Paris",
-    "description": "Dans le cadre du développement de son équipe Marketing Digital, e-NRJ recherche un(e) Responsable Growth Marketing pour piloter l'ensemble des leviers d'acquisition et de conversion de nos audiences digitales sur nos plateformes. Rattaché(e) à la Directrice Marketing Digital, vous serez en charge de la mise en oeuvre opérationnelle de la stratégie growth, de l'activation des campagnes marketing payantes et organiques, ainsi que de l'optimisation du parcours utilisateur et de la performance des …",
-    "salary_raw": "",
-    "published": "2026-06-27T11:35:33Z",
-    "contract_raw": "permanent",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": "CDI",
-    "commute_minutes": null,
-    "flags": [
-      "Télétravail non mentionné"
-    ],
-    "score": 5,
-    "score_reasons": [],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Chef de projet programme fidélité F/H",
-    "link": "https://www.adzuna.fr/details/5815267664?utm_medium=api&utm_source=707eaaff",
-    "company": "HISTOIRE D'OR",
-    "location": "Paris, Ile-de-France",
-    "description": "Description du poste Rattaché au Responsable CRM & Data Analyse, le Chef de projet Programme de Fidélité (H/F) participera à la définition de la proposition de valeur du programme de fidélité et en pilotera l’activation, la stratégie de contenu ainsi que le suivi de performance. Il/elle aura les missions suivantes : 1/Contribuer à la proposition de valeur du programme de fidélité : Participer à l’évolution du modèle du programme de fidélité Déployer le programme avec l’équipe projet transverse …",
-    "salary_raw": "",
-    "published": "2026-07-25T12:34:14Z",
-    "contract_raw": "permanent",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": "CDI",
-    "commute_minutes": null,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Télétravail non mentionné"
-    ],
-    "score": 5,
-    "score_reasons": [],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
-  },
-  {
-    "source": "Adzuna",
     "title": "CDI - Resp. Domaine IT Commerce & CRM h/f - Petit Bateau !",
     "link": "https://www.adzuna.fr/details/4643615123?utm_medium=api&utm_source=707eaaff",
     "company": "Groupe Rocher",
@@ -2848,30 +2692,6 @@
   },
   {
     "source": "Adzuna",
-    "title": "CRM Assistant - Apprenticeship - M - W - Manomano H/F",
-    "link": "https://www.adzuna.fr/details/5816411090?utm_medium=api&utm_source=707eaaff",
-    "company": "Manomano",
-    "location": "Paris, Ile-de-France",
-    "description": "Contexte Au sein de l'équipe CRM B2C et B2B, tu évolueras dans un poste clé pour la croissance de ManoMano et le développement du Free BV, avec un enjeu central autour de la rétention client. La mission de l'équipe CRM est de convertir les visiteurs qualifiés en clients rentables, avec comme objectif principal de maximiser la valeur client sur le long terme. En tant qu'Assistant(e) CRM, tu seras responsable de créer une relation forte entre ManoMano et ses clients, en pilotant la création et l'…",
-    "salary_raw": "492-1823 €",
-    "published": "2026-07-26T11:59:23Z",
-    "contract_raw": "",
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": null,
-    "flags": [
-      "Customer Success / Account mgmt ?",
-      "Pertinence CRM à confirmer",
-      "Télétravail non mentionné"
-    ],
-    "score": 5,
-    "score_reasons": [],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Customer Success / Account mgmt ? ; Pertinence CRM à confirmer ; Télétravail non mentionné"
-  },
-  {
-    "source": "Adzuna",
     "title": "Head of E-commerce (F/H)",
     "link": "https://www.adzuna.fr/details/5774380371?utm_medium=api&utm_source=707eaaff",
     "company": "",
@@ -2883,31 +2703,6 @@
     "telework_days": null,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": null,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Séniorité / management d'équipe ?",
-      "Télétravail non mentionné"
-    ],
-    "score": 5,
-    "score_reasons": [],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Séniorité / management d'équipe ? ; Télétravail non mentionné"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Head of E-commerce (F/H)",
-    "link": "https://www.adzuna.fr/details/5775829797?utm_medium=api&utm_source=707eaaff",
-    "company": "MICHAEL PAGE",
-    "location": "Saint-Cloud, Boulogne-Billancourt",
-    "description": "Le poste de Head of E-commerce (F/H) Rattaché·e au Directeur Digital, le/la Head of E-commerce / Responsable E-commerce contribue à la définition et à la mise en uvre de la stratégie e-commerce, en cohérence avec les objectifs globaux de l'entreprise. À ce titre, les principales missions sont : * Définir et piloter la stratégie e-commerce afin d'accroître le chiffre d'affaires et la rentabilité du canal digital * Manager et structurer une équipe dédiée (traffic, CRM, chefs de projet, responsabl…",
-    "salary_raw": "",
-    "published": "2026-06-25T08:20:59Z",
-    "contract_raw": "permanent",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": "CDI",
     "commute_minutes": null,
     "flags": [
       "Pertinence CRM à confirmer",
@@ -2999,29 +2794,6 @@
     "description": "We're Prime Video's International Social Creative Team, a group of pop-culture obsessives dedicated to bringing our Original productions to life on social. We plan, create and distribute platform-native campaigns that connect authentically with audiences, from the moment a title is greenlit to the day it drops and beyond. We obsess over every asset, every caption, every platform moment, because we believe a great social campaign can make a title unmissable. We roll up our sleeves, take bold cre…",
     "salary_raw": "",
     "published": "2026-07-08T04:00:14Z",
-    "contract_raw": "",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": null,
-    "flags": [
-      "Télétravail non mentionné"
-    ],
-    "score": 5,
-    "score_reasons": [],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Social Campaign Manager (France), Prime Video",
-    "link": "https://www.adzuna.fr/details/5793762979?utm_medium=api&utm_source=707eaaff",
-    "company": "Amazon",
-    "location": "Clichy, Nanterre",
-    "description": "Description We're Prime Video's International Social Creative Team, a group of pop-culture obsessives dedicated to bringing our Original productions to life on social. We plan, create and distribute platform-native campaigns that connect authentically with audiences, from the moment a title is greenlit to the day it drops and beyond. We obsess over every asset, every caption, every platform moment, because we believe a great social campaign can make a title unmissable. We roll up our sleeves, t…",
-    "salary_raw": "",
-    "published": "2026-07-09T06:55:05Z",
     "contract_raw": "",
     "salary_extracted": null,
     "telework_days": null,
@@ -3221,30 +2993,6 @@
   },
   {
     "source": "Adzuna",
-    "title": "Head Of Campaign & Merchandising H/F",
-    "link": "https://www.adzuna.fr/details/5790764852?utm_medium=api&utm_source=707eaaff",
-    "company": "Joko",
-    "location": "Paris, Ile-de-France",
-    "description": "At Joko, we help consumers shop smarter. Our mission is to revolutionize shopping, empowering people to find what they need, make informed decisions, and save money. Founded in Paris, Joko is a tech company and certified B Corp with over 105 talents across Paris, Barcelona, and New York (and beyond). More than 6 million users already save money every day at 10,000 merchants with Joko. From cashback and automatic coupons to price alerts and carbon tracking, we keep expanding our products to make…",
-    "salary_raw": "",
-    "published": "2026-07-07T10:00:36Z",
-    "contract_raw": "",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": null,
-    "flags": [
-      "Séniorité / management d'équipe ?",
-      "Télétravail non mentionné"
-    ],
-    "score": 5,
-    "score_reasons": [],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Séniorité / management d'équipe ? ; Télétravail non mentionné"
-  },
-  {
-    "source": "Adzuna",
     "title": "CDI - Mobile & Multi-device Trader",
     "link": "https://www.adzuna.fr/details/4801589362?utm_medium=api&utm_source=707eaaff",
     "company": "Havas Group",
@@ -3331,12 +3079,12 @@
     "commute_minutes": null,
     "flags": [
       "Télétravail non mentionné",
-      "Annonce ancienne (169 j)"
+      "Annonce ancienne (170 j)"
     ],
     "score": 5,
     "score_reasons": [],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné ; Annonce ancienne (169 j)"
+    "recommendation_reason": "À vérifier : Télétravail non mentionné ; Annonce ancienne (170 j)"
   },
   {
     "source": "Adzuna",
@@ -3404,36 +3152,12 @@
     "flags": [
       "Pertinence CRM à confirmer",
       "Télétravail non mentionné",
-      "Annonce ancienne (164 j)"
+      "Annonce ancienne (165 j)"
     ],
     "score": 5,
     "score_reasons": [],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné ; Annonce ancienne (164 j)"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Chef de Projet Digital — Transformation CRM",
-    "link": "https://www.adzuna.fr/details/5816275760?utm_medium=api&utm_source=707eaaff",
-    "company": "Aleysia",
-    "location": "Hauts-de-Seine, Ile-de-France",
-    "description": "Créer une alerte emploi pour cette recherche Ferme pc3a9dagogique • aubervilliers 93 Dernière mise à jour: il y a 3 heures Stage Quick Apply Flatlooker (2016) et Hello Syndic (2017) se rejoignent pour créer Manda, le 15e acteur de l'immobilier en France dès début 2024. Avec la ferme volonté de systématiser la qualité de service par la di Voir plus Temps plein Dans le cadre d'un programme de transformation CRM d'envergure nationale, une grande organisation de protection sociale recherche un expe…",
-    "salary_raw": "",
-    "published": "2026-07-26T09:19:11Z",
-    "contract_raw": "permanent",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": "CDI",
-    "commute_minutes": null,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Télétravail non mentionné"
-    ],
-    "score": 5,
-    "score_reasons": [],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné ; Annonce ancienne (165 j)"
   },
   {
     "source": "Adzuna",
@@ -3511,6 +3235,30 @@
   },
   {
     "source": "Adzuna",
+    "title": "Head of E-commerce (F/H)",
+    "link": "https://www.adzuna.fr/details/5774380371?utm_medium=api&utm_source=707eaaff",
+    "company": "",
+    "location": "Boulogne-Billancourt, Hauts-de-Seine",
+    "description": "Rattaché·e au Directeur Digital, le/la Head of E-commerce / Responsable E-commerce contribue à la définition et à la mise en œuvre de la stratégie e-commerce, en cohérence avec les objectifs globaux de l'entreprise. À ce titre, les principales missions sont : Définir et piloter la stratégie e-commerce afin d'accroître le chiffre d'affaires et la rentabilité du canal digital Manager et structurer une équipe dédiée (traffic, CRM, chefs de projet, responsables de site) en assurant performance et e…",
+    "salary_raw": "80000-90000 €",
+    "published": "2026-06-24T06:46:51Z",
+    "contract_raw": "",
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": null,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Séniorité / management d'équipe ?",
+      "Télétravail non mentionné"
+    ],
+    "score": 5,
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Séniorité / management d'équipe ? ; Télétravail non mentionné"
+  },
+  {
+    "source": "Adzuna",
     "title": "Product Owner Technique - Marketing Automation",
     "link": "https://www.adzuna.fr/details/5757579548?utm_medium=api&utm_source=707eaaff",
     "company": "Numberly",
@@ -3518,29 +3266,6 @@
     "description": "Numberly est reconnu comme l’un des meilleurs spécialistes mondiaux du Data Marketing avec près de 500 collaborateurs et 11 bureaux dans le monde au service de plus de 300 clients de premier plan (L'Oréal, Arte, Groupe Seb, Pernod Ricard, SNCF, Aigle, HSBC). En mettant la technologie au service des marques et des consommateurs, Numberly est au cœur de la croissance des entreprises et de l’aspiration de chacun à un marketing plus responsable et plus pertinent. Numberly s’appuie sur les avancées …",
     "salary_raw": "",
     "published": "2026-06-09T23:01:23Z",
-    "contract_raw": "",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": null,
-    "flags": [
-      "Télétravail non mentionné"
-    ],
-    "score": 5,
-    "score_reasons": [],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Consultant CRM & Marketing Automation Confirmé F/H",
-    "link": "https://www.adzuna.fr/details/5801377942?utm_medium=api&utm_source=707eaaff",
-    "company": "VISEO",
-    "location": "Boulogne-Billancourt, Hauts-de-Seine",
-    "description": "Passionné par le CRM, la Data et les écosystèmes Marketing ? Vous aimez intervenir sur des projets complexes, internationaux et omnicanaux ? Vous souhaitez mettre votre expertise au service de la transformation CRM et marketing de grandes marques ? Rejoignez notre équipe d’experts chez VISEO pour accompagner nos clients grands comptes internationaux dans la conception et l’évolution de leurs plateformes CRM et Marketing. Ce que nous allons faire ensemble ? Nous recherchons un Business Analyst C…",
-    "salary_raw": "",
-    "published": "2026-07-15T18:50:11Z",
     "contract_raw": "",
     "salary_extracted": null,
     "telework_days": null,
@@ -3724,6 +3449,30 @@
   },
   {
     "source": "Adzuna",
+    "title": "Head of E-commerce (F/H)",
+    "link": "https://www.adzuna.fr/details/5774380371?utm_medium=api&utm_source=707eaaff",
+    "company": "",
+    "location": "Boulogne-Billancourt, Hauts-de-Seine",
+    "description": "Rattaché·e au Directeur Digital, le/la Head of E-commerce / Responsable E-commerce contribue à la définition et à la mise en œuvre de la stratégie e-commerce, en cohérence avec les objectifs globaux de l'entreprise. À ce titre, les principales missions sont : Définir et piloter la stratégie e-commerce afin d'accroître le chiffre d'affaires et la rentabilité du canal digital Manager et structurer une équipe dédiée (traffic, CRM, chefs de projet, responsables de site) en assurant performance et e…",
+    "salary_raw": "80000-90000 €",
+    "published": "2026-06-24T06:46:51Z",
+    "contract_raw": "",
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": null,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Séniorité / management d'équipe ?",
+      "Télétravail non mentionné"
+    ],
+    "score": 5,
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Séniorité / management d'équipe ? ; Télétravail non mentionné"
+  },
+  {
+    "source": "Adzuna",
     "title": "Marketing Senior Associate",
     "link": "https://www.adzuna.fr/details/5788480030?utm_medium=api&utm_source=707eaaff",
     "company": "JPMorganChase",
@@ -3794,198 +3543,12 @@
   },
   {
     "source": "HelloWork (alerte)",
-    "title": "Chef de Projet CRM - Relation Utilisateurs H/F",
-    "link": "https://emails.hellowork.com/clic/22216acc-1334-467b-94dc-ca1f92359175/6/0278a9e452dba3a7f3820b3cc2f2410b/aGVsby5wb3JwZUBnbWFpbC5jb23wn6qiaHR0cHM6Ly93d3cuaGVsbG93b3JrLmNvbS9mci1mci9lbXBsb2lzLzgwODAzMDE2Lmh0bWw_dXRtX3NvdXJjZT1tYWlsc1hqb2ImdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249Y2FuZGlkYXR1cmVVcmwmdXRtX3Rlcm09ODA4MDMwMTYmdXRtX2NvbnRlbnQ9aW50aXR1bGVvZmZyZQ",
-    "company": "",
-    "location": "",
-    "description": "",
-    "published": "2026-07-22T08:56:24+00:00",
-    "in_france": true,
-    "salary_extracted": null,
-    "telework_days": null,
-    "contract_type": null,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Télétravail non mentionné"
-    ],
-    "score": 5,
-    "score_reasons": [],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
-  },
-  {
-    "source": "HelloWork (alerte)",
-    "title": "Chef de Projet Marketing CRM H/F",
-    "link": "https://emails.hellowork.com/clic/22216acc-1334-467b-94dc-ca1f92359175/9/22cf64000aa1cecbc5f8a3c42fe65c64/aGVsby5wb3JwZUBnbWFpbC5jb23wn6qiaHR0cHM6Ly93d3cuaGVsbG93b3JrLmNvbS9mci1mci9lbXBsb2lzLzc4OTI0ODYwLmh0bWw_dXRtX3NvdXJjZT1tYWlsc1hqb2ImdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249Y2FuZGlkYXR1cmVVcmwmdXRtX3Rlcm09Nzg5MjQ4NjAmdXRtX2NvbnRlbnQ9aW50aXR1bGVvZmZyZQ",
-    "company": "",
-    "location": "",
-    "description": "",
-    "published": "2026-07-22T08:56:24+00:00",
-    "in_france": true,
-    "salary_extracted": null,
-    "telework_days": null,
-    "contract_type": null,
-    "flags": [
-      "Télétravail non mentionné"
-    ],
-    "score": 5,
-    "score_reasons": [],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné"
-  },
-  {
-    "source": "HelloWork (alerte)",
-    "title": "Chef de Projet Prm - CRM H/F",
-    "link": "https://emails.hellowork.com/clic/22216acc-1334-467b-94dc-ca1f92359175/12/a9410ddddbba5d56eff0075cd44d2c54/aGVsby5wb3JwZUBnbWFpbC5jb23wn6qiaHR0cHM6Ly93d3cuaGVsbG93b3JrLmNvbS9mci1mci9lbXBsb2lzLzgwNzQ1MDE2Lmh0bWw_dXRtX3NvdXJjZT1tYWlsc1hqb2ImdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249Y2FuZGlkYXR1cmVVcmwmdXRtX3Rlcm09ODA3NDUwMTYmdXRtX2NvbnRlbnQ9aW50aXR1bGVvZmZyZQ",
-    "company": "",
-    "location": "",
-    "description": "",
-    "published": "2026-07-22T08:56:24+00:00",
-    "in_france": true,
-    "salary_extracted": null,
-    "telework_days": null,
-    "contract_type": null,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Télétravail non mentionné"
-    ],
-    "score": 5,
-    "score_reasons": [],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
-  },
-  {
-    "source": "HelloWork (alerte)",
-    "title": "CRM Manager - Maison de Luxe H/F",
-    "link": "https://emails.hellowork.com/clic/22216acc-1334-467b-94dc-ca1f92359175/15/8804b2d917ea1bec2f4e2cba945472b9/aGVsby5wb3JwZUBnbWFpbC5jb23wn6qiaHR0cHM6Ly93d3cuaGVsbG93b3JrLmNvbS9mci1mci9lbXBsb2lzLzgwODg5NTgyLmh0bWw_dXRtX3NvdXJjZT1tYWlsc1hqb2ImdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249Y2FuZGlkYXR1cmVVcmwmdXRtX3Rlcm09ODA4ODk1ODImdXRtX2NvbnRlbnQ9aW50aXR1bGVvZmZyZQ",
-    "company": "",
-    "location": "",
-    "description": "",
-    "published": "2026-07-22T08:56:24+00:00",
-    "in_france": true,
-    "salary_extracted": null,
-    "telework_days": null,
-    "contract_type": null,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Télétravail non mentionné"
-    ],
-    "score": 5,
-    "score_reasons": [],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
-  },
-  {
-    "source": "HelloWork (alerte)",
-    "title": "Charg&#xE9;&#xB7;e de Projets CRM H/F",
-    "link": "https://emails.hellowork.com/clic/766f5ebb-1b3d-4d13-bb89-b550357c912a/6/79da264449b08dd243fab240c9f50827/aGVsby5wb3JwZUBnbWFpbC5jb23wn6qiaHR0cHM6Ly93d3cuaGVsbG93b3JrLmNvbS9mci1mci9lbXBsb2lzLzgxNjQ4NzgyLmh0bWw_dXRtX3NvdXJjZT1wdXNoT2ZmcmVzJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPXB1c2hPZmZyZXMmdXRtX3Rlcm09ODE2NDg3ODImdXRtX2NvbnRlbnQ9bGlzdGUxdGl0bGU",
-    "company": "",
-    "location": "",
-    "description": "",
-    "published": "2026-07-24T13:49:31+00:00",
-    "in_france": true,
-    "salary_extracted": null,
-    "telework_days": null,
-    "contract_type": null,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Télétravail non mentionné"
-    ],
-    "score": 5,
-    "score_reasons": [],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
-  },
-  {
-    "source": "HelloWork (alerte)",
-    "title": "Responsable Marketing - Offre Marque et CRM H/F",
-    "link": "https://emails.hellowork.com/clic/766f5ebb-1b3d-4d13-bb89-b550357c912a/17/79be7794c96d68e5b9458a9e7865ad63/aGVsby5wb3JwZUBnbWFpbC5jb23wn6qiaHR0cHM6Ly93d3cuaGVsbG93b3JrLmNvbS9mci1mci9lbXBsb2lzLzc5ODQyMTYwLmh0bWw_dXRtX3NvdXJjZT1wdXNoT2ZmcmVzJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPXB1c2hPZmZyZXNfY29ubmV4ZXMmdXRtX3Rlcm09Nzk4NDIxNjAmdXRtX2NvbnRlbnQ9bGlzdGUydGl0bGU",
-    "company": "",
-    "location": "",
-    "description": "",
-    "published": "2026-07-24T13:49:31+00:00",
-    "in_france": true,
-    "salary_extracted": null,
-    "telework_days": null,
-    "contract_type": null,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Télétravail non mentionné"
-    ],
-    "score": 5,
-    "score_reasons": [],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
-  },
-  {
-    "source": "HelloWork (alerte)",
-    "title": "CRM Manager Luxe - Retail H/F",
-    "link": "https://emails.hellowork.com/clic/9fd83185-5dd8-4cd1-8a2c-176d0fd33cac/3/0e922ec8dbb376d572bdfd1b8e2be5b0/aGVsby5wb3JwZUBnbWFpbC5jb23wn6qiaHR0cHM6Ly93d3cuaGVsbG93b3JrLmNvbS9mci1mci9lbXBsb2lzLzgxNzIxNDU3Lmh0bWw_dXRtX3NvdXJjZT1qb2JhbGVydCZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1qb2JhbGVydCZ1dG1fdGVybT04MTcyMTQ1NyZ1dG1fY29udGVudD1vZmZyZV90aXRsZQ",
-    "company": "",
-    "location": "",
-    "description": "",
-    "published": "2026-07-27T06:39:42+00:00",
-    "in_france": true,
-    "salary_extracted": null,
-    "telework_days": null,
-    "contract_type": null,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Télétravail non mentionné"
-    ],
-    "score": 5,
-    "score_reasons": [],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
-  },
-  {
-    "source": "HelloWork (alerte)",
-    "title": "Chef Projet CRM et Data Marketing Automation H/F",
-    "link": "https://emails.hellowork.com/clic/9fd83185-5dd8-4cd1-8a2c-176d0fd33cac/17/bdf175f57e48aa733ab9e34860ac782b/aGVsby5wb3JwZUBnbWFpbC5jb23wn6qiaHR0cHM6Ly93d3cuaGVsbG93b3JrLmNvbS9mci1mci9lbXBsb2lzLzgwNTgyMDI0Lmh0bWw_dXRtX3NvdXJjZT1qb2JhbGVydCZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1qb2JhbGVydF9jb25uZXhlcyZ1dG1fdGVybT04MDU4MjAyNCZ1dG1fY29udGVudD1saXN0ZTJ0aXRsZQ",
-    "company": "",
-    "location": "",
-    "description": "",
-    "published": "2026-07-27T06:39:42+00:00",
-    "in_france": true,
-    "salary_extracted": null,
-    "telework_days": null,
-    "contract_type": null,
-    "flags": [
-      "Télétravail non mentionné"
-    ],
-    "score": 5,
-    "score_reasons": [],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné"
-  },
-  {
-    "source": "HelloWork (alerte)",
-    "title": "Cheffe Chef de Projet CRM Marketing Automation Senior H/F",
-    "link": "https://emails.hellowork.com/clic/9fd83185-5dd8-4cd1-8a2c-176d0fd33cac/20/83fdafe0d74ef96dace981dad03535c6/aGVsby5wb3JwZUBnbWFpbC5jb23wn6qiaHR0cHM6Ly93d3cuaGVsbG93b3JrLmNvbS9mci1mci9lbXBsb2lzLzgxNDg2MTI4Lmh0bWw_dXRtX3NvdXJjZT1qb2JhbGVydCZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1qb2JhbGVydF9jb25uZXhlcyZ1dG1fdGVybT04MTQ4NjEyOCZ1dG1fY29udGVudD1saXN0ZTJ0aXRsZQ",
-    "company": "",
-    "location": "",
-    "description": "",
-    "published": "2026-07-27T06:39:42+00:00",
-    "in_france": true,
-    "salary_extracted": null,
-    "telework_days": null,
-    "contract_type": null,
-    "flags": [
-      "Télétravail non mentionné"
-    ],
-    "score": 5,
-    "score_reasons": [],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné"
-  },
-  {
-    "source": "HelloWork (alerte)",
     "title": "Chef&#xB7;Fe de Projet CRM & Clienteling - Maison de Luxe H/F",
-    "link": "https://emails.hellowork.com/clic/9fd83185-5dd8-4cd1-8a2c-176d0fd33cac/29/6fe70820a97814f10c3278658704d713/aGVsby5wb3JwZUBnbWFpbC5jb23wn6qiaHR0cHM6Ly93d3cuaGVsbG93b3JrLmNvbS9mci1mci9lbXBsb2lzLzgxNjk5NDM0Lmh0bWw_dXRtX3NvdXJjZT1qb2JhbGVydCZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1qb2JhbGVydF9jb25uZXhlcyZ1dG1fdGVybT04MTY5OTQzNCZ1dG1fY29udGVudD1saXN0ZTJ0aXRsZQ",
+    "link": "https://emails.hellowork.com/clic/e0ec9189-a2b9-4729-a169-b1ffa683b742/26/92235805256ded2d5c7e2181945e6d6e/aGVsby5wb3JwZUBnbWFpbC5jb23wn6qiaHR0cHM6Ly93d3cuaGVsbG93b3JrLmNvbS9mci1mci9lbXBsb2lzLzgxNjk5NDM0Lmh0bWw_dXRtX3NvdXJjZT1qb2JhbGVydCZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1qb2JhbGVydF9jb25uZXhlcyZ1dG1fdGVybT04MTY5OTQzNCZ1dG1fY29udGVudD1saXN0ZTJ0aXRsZQ",
     "company": "",
     "location": "",
     "description": "",
-    "published": "2026-07-27T06:39:42+00:00",
+    "published": "2026-07-26T07:56:01+00:00",
     "in_france": true,
     "salary_extracted": null,
     "telework_days": null,
@@ -4023,74 +3586,12 @@
   },
   {
     "source": "HelloWork (alerte)",
-    "title": "CRM Marketing Manager H/F",
-    "link": "https://emails.hellowork.com/clic/5e884a6a-d015-48d5-b512-0203eec6b6b4/35/fbbe1328dc7226a0f135c135f3cc035d/aGVsby5wb3JwZUBnbWFpbC5jb23wn6qiaHR0cHM6Ly93d3cuaGVsbG93b3JrLmNvbS9mci1mci9lbXBsb2lzLzgxMTQ2MjA0Lmh0bWw_dXRtX3NvdXJjZT1wdXNoT2ZmcmVzJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPXB1c2hPZmZyZXNfY29ubmV4ZXMmdXRtX3Rlcm09ODExNDYyMDQmdXRtX2NvbnRlbnQ9bGlzdGUydGl0bGU",
+    "title": "Charg&#xE9;&#xB7;e de Projets CRM H/F",
+    "link": "https://emails.hellowork.com/clic/766f5ebb-1b3d-4d13-bb89-b550357c912a/6/79da264449b08dd243fab240c9f50827/aGVsby5wb3JwZUBnbWFpbC5jb23wn6qiaHR0cHM6Ly93d3cuaGVsbG93b3JrLmNvbS9mci1mci9lbXBsb2lzLzgxNjQ4NzgyLmh0bWw_dXRtX3NvdXJjZT1wdXNoT2ZmcmVzJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPXB1c2hPZmZyZXMmdXRtX3Rlcm09ODE2NDg3ODImdXRtX2NvbnRlbnQ9bGlzdGUxdGl0bGU",
     "company": "",
     "location": "",
     "description": "",
-    "published": "2026-07-24T07:34:41+00:00",
-    "in_france": true,
-    "salary_extracted": null,
-    "telework_days": null,
-    "contract_type": null,
-    "flags": [
-      "Télétravail non mentionné"
-    ],
-    "score": 5,
-    "score_reasons": [],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné"
-  },
-  {
-    "source": "HelloWork (alerte)",
-    "title": "CRM Campaign Manager H/F",
-    "link": "https://emails.hellowork.com/clic/408c95a5-a1c3-4133-bdea-57d70bb003be/24/2845685292a417824f8dfe4762d69367/aGVsby5wb3JwZUBnbWFpbC5jb23wn6qiaHR0cHM6Ly93d3cuaGVsbG93b3JrLmNvbS9mci1mci9lbXBsb2lzLzgxNjk4OTgzLmh0bWw_dXRtX3NvdXJjZT1qb2JhbGVydCZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1qb2JhbGVydCZ1dG1fdGVybT04MTY5ODk4MyZ1dG1fY29udGVudD1vZmZyZV90aXRsZQ",
-    "company": "",
-    "location": "",
-    "description": "",
-    "published": "2026-07-25T06:42:41+00:00",
-    "in_france": true,
-    "salary_extracted": null,
-    "telework_days": null,
-    "contract_type": null,
-    "flags": [
-      "Télétravail non mentionné"
-    ],
-    "score": 5,
-    "score_reasons": [],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné"
-  },
-  {
-    "source": "HelloWork (alerte)",
-    "title": "CRM Manager Junior B2c - CDI - Paris H/F",
-    "link": "https://emails.hellowork.com/clic/408c95a5-a1c3-4133-bdea-57d70bb003be/27/2c018526b24e322566a95046a7633aec/aGVsby5wb3JwZUBnbWFpbC5jb23wn6qiaHR0cHM6Ly93d3cuaGVsbG93b3JrLmNvbS9mci1mci9lbXBsb2lzLzgxNjYyODExLmh0bWw_dXRtX3NvdXJjZT1qb2JhbGVydCZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1qb2JhbGVydCZ1dG1fdGVybT04MTY2MjgxMSZ1dG1fY29udGVudD1vZmZyZV90aXRsZQ",
-    "company": "",
-    "location": "",
-    "description": "",
-    "published": "2026-07-25T06:42:41+00:00",
-    "in_france": true,
-    "salary_extracted": null,
-    "telework_days": null,
-    "contract_type": "CDI",
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Poste junior / débutant ?",
-      "Télétravail non mentionné"
-    ],
-    "score": 5,
-    "score_reasons": [],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Poste junior / débutant ? ; Télétravail non mentionné"
-  },
-  {
-    "source": "HelloWork (alerte)",
-    "title": "Chef de Projet CRM Senior H/F",
-    "link": "https://emails.hellowork.com/clic/408c95a5-a1c3-4133-bdea-57d70bb003be/30/9b2180605594778491ecc17646c4cc11/aGVsby5wb3JwZUBnbWFpbC5jb23wn6qiaHR0cHM6Ly93d3cuaGVsbG93b3JrLmNvbS9mci1mci9lbXBsb2lzLzgxNjgzNTc2Lmh0bWw_dXRtX3NvdXJjZT1qb2JhbGVydCZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1qb2JhbGVydCZ1dG1fdGVybT04MTY4MzU3NiZ1dG1fY29udGVudD1vZmZyZV90aXRsZQ",
-    "company": "",
-    "location": "",
-    "description": "",
-    "published": "2026-07-25T06:42:41+00:00",
+    "published": "2026-07-24T13:49:31+00:00",
     "in_france": true,
     "salary_extracted": null,
     "telework_days": null,
@@ -4103,26 +3604,6 @@
     "score_reasons": [],
     "recommendation": "à_revoir",
     "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
-  },
-  {
-    "source": "Cadremploi (alerte)",
-    "title": "CRM Marketing Manager (H/F)",
-    "link": "https://r.emails3.alertes.cadremploi.fr/tr/cl/1gmMP6rf6opOX6eN5a2YIIZRBsQc3VglI43d9rL1dEIODb4EulmWXLbJh423W5RHgoQFVT1sA8Qlvmd5vlqq1xoDNJZiMax6WspjVbc8HdvQ2-yjjctN3KPRnKQykZi-bl1QoALDYr4OI5pWyibsT2Tds9Cf5qi7VSVQVoGjJSRfC0jM1NNPyYpkVphExMPtw3jjkIttwsPyhcEFnBF_D5xrssPJnB5thXoLMq7HjALcDAxIVsOOKXhBIcwwVfzwKuWrG9tOhBMFYHUnpu2GkdMe1yQNrSn6zfkfBxz2GqkIjkh8ZHdhkx3thqJpXcyLSYLrBBFx63b_iWvso9KrrTC5OflJeKk5w1ouy1xiydhrqexgU5r3ImqI9BxJevxKivNAcNYgwFXHgHZTHdUEpyvj6OTzH9CNH6CZt1YhGOlMBgLhVZ8lZsGmsqyZc3IFr0U5l_qnQV8BhncZSluTDXVvSpGvLTA2GPHvk84kHCjT-x0gEphPRwdVE3N9-vhCmGwrtwzaao0gv6Epj2FglSP5kFBcVl5r8NIuIEdeEATezl5l5jwjfHPHfdmpPmisbNpPOXshbmCYIpB49pUhSW0jkWLj5nT6popAhd4Dhm0jd1Ie6ZuY-nAK2t_aY4B_LHaGohSsYjAxyl4whuNTTNX-btE-djRUbbvDEfYBvQYErjWqa2Izfz8uEMS8sBJRe703yDGtqfm70ij8-fqWCcVSxhU41TDNWc-p4yRtw4fiFBkLU5Ok5SsqtSbV2LyBlDG6JAHjMj31zwnWD3lY",
-    "company": "",
-    "location": "",
-    "description": "",
-    "published": "2026-07-26T09:00:27+00:00",
-    "in_france": true,
-    "salary_extracted": null,
-    "telework_days": null,
-    "contract_type": null,
-    "flags": [
-      "Télétravail non mentionné"
-    ],
-    "score": 5,
-    "score_reasons": [],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
     "source": "Meteojob (alerte)",
@@ -4143,5 +3624,26 @@
     "score_reasons": [],
     "recommendation": "à_revoir",
     "recommendation_reason": "À vérifier : Télétravail non mentionné"
+  },
+  {
+    "source": "Meteojob (alerte)",
+    "title": "Chef de projet technico-fonctionnel CRM D365 (F/H) Michael Page • CDI • Courbevoie (92) - Île-de-France",
+    "link": "https://www.meteojob.com/jobs/55373348?my-meteo=true&auth=u3t5KCbo3jYekf9mnpO1lS2EsKJBv9ynzjg4uJAtOCg&utm_source=mailing&utm_medium=email&utm_campaign=registration_HotOffer&campaign=HOT_OFFER_REGISTRATION_20260725&client=14951836&cc_mail_id=HOT_OFFER_REGISTRATION_20260725&cc_campaign=HOT_OFFER_REGISTRATION&cc_variant=DEFAULT",
+    "company": "",
+    "location": "",
+    "description": "",
+    "published": "2026-07-25T12:06:10+02:00",
+    "in_france": true,
+    "salary_extracted": null,
+    "telework_days": null,
+    "contract_type": "CDI",
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné"
+    ],
+    "score": 5,
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   }
 ]
