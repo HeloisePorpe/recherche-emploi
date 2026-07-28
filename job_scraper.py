@@ -994,6 +994,155 @@ def fetch_email_alerts():
     return unique
 
 
+# ── Sites carrière (ATS) ────────────────────────────────────────────────────────
+#
+# Beaucoup d'entreprises ne publient que sur leur propre site, via un ATS.
+# On interroge les API publiques des grands ATS (Greenhouse, Lever,
+# SmartRecruiters). Pour chaque entreprise on essaie chaque ATS avec son slug
+# jusqu'à trouver des offres. Best-effort ; ne teste que depuis un réseau ouvert
+# (GitHub Actions). Les offres passent ensuite les mêmes filtres (pertinence CRM,
+# trajet / télétravail, langue, etc.).
+
+# Entreprises à surveiller. `slug` = identifiant dans l'URL de l'ATS (souvent le
+# nom en minuscules sans espaces). `ats` optionnel force un ATS ; sinon on essaie
+# tout. Liste enrichie au fil des retours de scan.
+_CAREER_COMPANIES = [
+    {"name": "Qonto", "slug": "qonto"},
+    {"name": "Doctolib", "slug": "doctolib"},
+    {"name": "Back Market", "slug": "backmarket"},
+    {"name": "BlaBlaCar", "slug": "blablacar"},
+    {"name": "Alan", "slug": "alan"},
+    {"name": "Spendesk", "slug": "spendesk"},
+    {"name": "PayFit", "slug": "payfit"},
+    {"name": "Contentsquare", "slug": "contentsquare"},
+    {"name": "Dataiku", "slug": "dataiku"},
+    {"name": "Mirakl", "slug": "mirakl"},
+    {"name": "Aircall", "slug": "aircall"},
+    {"name": "360Learning", "slug": "360learning"},
+    {"name": "Deezer", "slug": "deezer"},
+    {"name": "Swile", "slug": "swile"},
+    {"name": "Ledger", "slug": "ledger"},
+    {"name": "Vestiaire Collective", "slug": "vestiairecollective"},
+    {"name": "ManoMano", "slug": "manomano"},
+    {"name": "Veepee", "slug": "veepee"},
+    {"name": "Sephora", "slug": "sephora"},
+    {"name": "Believe", "slug": "believe"},
+    {"name": "Thales", "slug": "thales"},
+    {"name": "Safran", "slug": "safran"},
+]
+
+_CAREER_LOC_OK = re.compile(
+    r'france|paris|[îi]le[- ]de[- ]france|\bidf\b|remote|t[ée]l[ée]travail|'
+    r'hybrid|anywhere|europe', re.I)
+
+
+def _career_location_ok(loc):
+    """Garde France / Paris / remote / Europe ; écarte les localisations
+    clairement étrangères. Inconnu -> gardé (le filtre trajet tranchera)."""
+    if not loc:
+        return True
+    if _FOREIGN_LOCATION.search(loc) and "france" not in loc.lower():
+        return False
+    return bool(_CAREER_LOC_OK.search(loc))
+
+
+def _career_job(name, title, link, location, description="", published=""):
+    return {"source": f"Site carrière — {name}", "title": title or "", "link": link or "",
+            "company": name, "location": location or "", "description": description or "",
+            "published": published or ""}
+
+
+def _fetch_greenhouse(company):
+    slug, name = company["slug"], company["name"]
+    url = f"https://boards-api.greenhouse.io/v1/boards/{slug}/jobs?content=true"
+    r = requests.get(url, timeout=15, headers={"User-Agent": "Mozilla/5.0"})
+    if r.status_code != 200:
+        return None
+    data = r.json()
+    jobs = []
+    for o in data.get("jobs", []):
+        loc = (o.get("location") or {}).get("name", "")
+        desc = re.sub(r"<[^>]+>", " ", o.get("content", "") or "")
+        jobs.append(_career_job(name, o.get("title", ""), o.get("absolute_url", ""),
+                                 loc, desc, o.get("updated_at", "")))
+    return jobs
+
+
+def _fetch_lever(company):
+    slug, name = company["slug"], company["name"]
+    url = f"https://api.lever.co/v0/postings/{slug}?mode=json"
+    r = requests.get(url, timeout=15, headers={"User-Agent": "Mozilla/5.0"})
+    if r.status_code != 200:
+        return None
+    data = r.json()
+    if not isinstance(data, list):
+        return None
+    jobs = []
+    for o in data:
+        cat = o.get("categories") or {}
+        loc = cat.get("location", "") or ""
+        pub = ""
+        try:
+            pub = datetime.fromtimestamp(o.get("createdAt", 0) / 1000).isoformat()
+        except Exception:
+            pass
+        jobs.append(_career_job(name, o.get("text", ""), o.get("hostedUrl", ""),
+                                 loc, o.get("descriptionPlain", ""), pub))
+    return jobs
+
+
+def _fetch_smartrecruiters(company):
+    slug, name = company["slug"], company["name"]
+    url = f"https://api.smartrecruiters.com/v1/companies/{slug}/postings?limit=100"
+    r = requests.get(url, timeout=15, headers={"User-Agent": "Mozilla/5.0"})
+    if r.status_code != 200:
+        return None
+    data = r.json()
+    jobs = []
+    for o in data.get("content", []):
+        loc = o.get("location") or {}
+        locs = ", ".join(x for x in [loc.get("city", ""), loc.get("country", "")] if x)
+        link = (f"https://jobs.smartrecruiters.com/{slug}/{o.get('id','')}"
+                if o.get("id") else "")
+        jobs.append(_career_job(name, o.get("name", ""), link, locs, "",
+                                 o.get("releasedDate", "")))
+    return jobs
+
+
+_ATS_FETCHERS = {"greenhouse": _fetch_greenhouse, "lever": _fetch_lever,
+                 "smartrecruiters": _fetch_smartrecruiters}
+
+
+def fetch_career_sites():
+    """Offres issues des sites carrière (ATS) des entreprises surveillées."""
+    print("  → Sites carrière (ATS)...")
+    all_jobs = []
+    for company in _CAREER_COMPANIES:
+        order = ([company["ats"]] if company.get("ats") else
+                 ["greenhouse", "lever", "smartrecruiters"])
+        found_ats, raw = None, []
+        for ats in order:
+            try:
+                res = _ATS_FETCHERS[ats](company)
+            except Exception:
+                res = None
+            if res:  # liste non vide -> ATS trouvé
+                found_ats, raw = ats, res
+                break
+            time.sleep(0.2)
+        if not found_ats:
+            continue
+        # Filtre pertinence CRM + localisation France/remote.
+        kept = [j for j in raw if is_relevant(j) and _career_location_ok(j.get("location", ""))]
+        if kept:
+            print(f"     {company['name']} [{found_ats}] : {len(kept)} offre(s) CRM/mkt "
+                  f"(sur {len(raw)})")
+            all_jobs.extend(kept)
+    unique = _dedup(all_jobs)
+    print(f"     {len(unique)} offres pertinentes (sites carrière)")
+    return unique
+
+
 # ── Enrichissement ─────────────────────────────────────────────────────────────
 
 _geocode_cache = {}
@@ -1817,6 +1966,12 @@ def run():
 
     print("\n[7] Alertes e-mail (WTJ, Indeed, HelloWork, LinkedIn, Cadremploi, Meteojob)...")
     all_jobs.extend(fetch_email_alerts())
+
+    print("\n[7b] Sites carrière (ATS des entreprises surveillées)...")
+    try:
+        all_jobs.extend(fetch_career_sites())
+    except Exception as ex:
+        print(f"  → Sites carrière : ERREUR {ex}")
 
     print(f"\nTotal brut : {len(all_jobs)}")
     all_jobs = _dedup(all_jobs)
