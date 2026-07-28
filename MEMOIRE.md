@@ -38,7 +38,7 @@ personnalisé.
 | **The Muse** | API | Catégorie Marketing, France + Remote |
 | **Welcome to the Jungle** | Algolia | Vivier CRM/marketing FR ; best-effort (auto-découverte des clés Algolia au runtime, zone grise CGU) — **ne renvoie rien** (clés non trouvées, RSS bloqué) |
 | **Alertes e-mail** | Gmail IMAP | **Indeed, HelloWork, Cadremploi, LinkedIn, WTJ** via les e-mails d'alerte reçus sur une boîte Gmail dédiée (seul moyen gratuit et légal pour ces plateformes fermées). Formats validés : Indeed (`cts.indeed.com`), HelloWork (`emails.hellowork.com/clic`), Cadremploi (`.../tr/cl`), Meteojob (`meteojob.com/jobs/<id>`). LinkedIn/WTJ à confirmer. |
-| **Sites carrière (ATS)** | API | Offres publiées **uniquement sur le site des entreprises**. Interroge les API publiques Greenhouse / Lever / SmartRecruiters pour une liste d'entreprises surveillées (`_CAREER_COMPANIES`), auto-détection de l'ATS. `fetch_career_sites`. |
+| **Sites carrière (ATS)** | API | Offres publiées **uniquement sur le site des entreprises**. Interroge les API publiques **Greenhouse / Lever / SmartRecruiters / Ashby / Recruitee / Workable** pour une liste d'entreprises surveillées (`_CAREER_COMPANIES`), auto-détection de l'ATS + essai de plusieurs variantes de slug (`_slug_candidates`). Les entreprises non résolues sont listées dans les logs. `fetch_career_sites`. 11 entreprises résolues (Qonto, Doctolib, BlaBlaCar, Contentsquare, Dataiku, Mirakl, Aircall, 360Learning, Swile, Vestiaire Collective, Veepee). Thalès/Safran n'exposent pas d'ATS public. |
 | Indeed | RSS | Flux bloqué (désactivé de fait) |
 
 France Travail et Adzuna interrogés avec une liste de mots-clés élargie
@@ -128,21 +128,29 @@ Gmail dédiée (`heloise.emploi@gmail.com`), via IMAP (`fetch_email_alerts`) :
     ou mention explicite dans le corps) ; engineer (sauf « marketing ») ; CRM médical
     (dispositifs cardiaques) ; CRM technique/admin (titres Administrateur/Consultant
     Salesforce-Dynamics, ou signaux IT durs : SOQL, Apex, Data Loader, SSIS…) ;
-    titre Customer Success / relation client ; titre commercial/vente (hors combo
-    CRM) ; marketing hors cœur (field/brand/community/événementiel) ; logistique
-    (cariste/CACES/entrepôt) ; employeur non pertinent (Mr Pape, VeriPark,
-    MaxAccelerate, Kennflik) ; freelance marketplace (« I will… ») ; CRM = caisse ;
-    automobile ; présentiel explicite / pas de télétravail ; résidence US ou hors
-    France obligatoire ; **télétravail / localisation dans un pays étranger précis**
-    (UK, Allemagne, Espagne… ; « remote from UK ») — les zones larges Europe/EMEA/
-    worldwide/anywhere restent acceptées ; **annonce rédigée dans une autre langue que FR/EN**
-    (détection par mots-outils distinctifs, `is_foreign_language`) ; **télétravail
-    connu < 2 j/sem** (0 ou 1 jour).
+    titre Customer Success / relation client ; titre commercial/vente (**+ SDR /
+    sales development**) hors combo CRM ; **marketing hors cœur — disciplines
+    adjacentes** (field/brand/community/événementiel **+ growth marketing / demand
+    generation / product marketing / acquisition**) ; **clienteling en boutique /
+    in-store** (présentiel luxe, ex. Versace) ; logistique (cariste/CACES/entrepôt) ;
+    employeur non pertinent (Mr Pape, VeriPark, MaxAccelerate, Kennflik) ; freelance
+    marketplace (« I will… ») ; CRM = caisse ; automobile ; présentiel explicite /
+    pas de télétravail ; résidence US ou hors France obligatoire ; **télétravail /
+    localisation dans un pays étranger précis** (UK, Allemagne, Espagne… ; « remote
+    from UK ») — les zones larges Europe/EMEA/worldwide/anywhere restent acceptées ;
+    **annonce rédigée dans une autre langue que FR/EN** (`is_foreign_language`) ;
+    **télétravail connu < 2 j/sem** (0 ou 1 jour) ; **offre expirée / plus disponible**
+    (« n'est plus disponible », « poste pourvu »… détecté sur le texte complet).
+    L'**alternance / apprentissage / stage** est détectée dans le corps à **haute
+    précision** (verbe de recrutement adjacent ou mention de contrat explicite), sans
+    écarter les CDI qui disent « encadrer l'alternant » ou « hors stage/alternance ».
   - **Alerte** (`job["flags"]`, gardée + badge ⚠ au dashboard) : Customer Success /
-    Account mgmt détecté dans le corps, pertinence CRM à confirmer (pas de signaux
-    marketing — fréquent sur Adzuna tronqué), contrat freelance/horaire/$, ESN,
-    écart technique, séniorité/direction/management, résidence hors France (soft),
-    télétravail non mentionné / faible, trajet long, annonce ancienne.
+    Account mgmt détecté dans le corps, **orientation acquisition / growth** (hors
+    lifecycle), **expérience luxe/retail exigée** (prérequis dur), pertinence CRM à
+    confirmer (pas de signaux marketing — fréquent sur Adzuna tronqué), contrat
+    freelance/horaire/$, ESN, écart technique, séniorité/direction/management,
+    résidence hors France (soft), télétravail non mentionné / faible, trajet long,
+    annonce ancienne.
   - Principe : on **n'exclut** que sur des signaux non ambigus (titre, employeur,
     IT dur) ; tout ce qui dépend d'une description potentiellement tronquée reste
     en **alerte** pour ne perdre aucune offre pertinente.
@@ -152,7 +160,9 @@ Gmail dédiée (`heloise.emploi@gmail.com`), via IMAP (`fetch_email_alerts`) :
 ## Scoring (`compute_score` dans `job_scraper.py`)
 
 Base 5/10, ajusté par : outils/compétences du profil, secteurs préférés/pénalisés,
-« Salesforce obligatoire » (malus), salaire vs cible, trajet, jours de télétravail.
+« Salesforce obligatoire » (malus), salaire vs cible, trajet, jours de télétravail,
+**+1 si signaux CRM lifecycle** (email/segmentation/campagne/automation), **−2 si
+orientation acquisition/growth sans lifecycle** (pondère la part réelle de CRM).
 
 Profil candidat cible : CRM/Campaign Manager ; outils clés (emarsys, HTML/CSS,
 segmentation, email/SMS…) ; salaire cible ~45–50 k€ (plancher dur 42 055 €).
@@ -201,9 +211,12 @@ segmentation, email/SMS…) ; salaire cible ~45–50 k€ (plancher dur 42 055 �
 Une même offre diffusée sur plusieurs sources (Adzuna, France Travail, e-mails…)
 est fusionnée : **titre normalisé** (ignore `H/F`, `(F/H)`, ponctuation, casse) +
 entreprise souple (l'une contient l'autre, ou absente d'un côté si le titre est
-assez spécifique, ≥ 20 car.). On garde la ligne **la plus complète** (entreprise,
-salaire, description). Évite de fusionner des homonymes distincts (companies
-différentes → gardés séparés).
+assez spécifique, ≥ 20 car.). Le titre correspond aussi **par préfixe** (seuil
+24 car.) : « … CRM & Clienteling » fusionne avec « … CRM & Clienteling Maison de
+Luxe ». Les titres d'alerte sont d'abord **nettoyés** (`_clean_alert_title` retire
+le bloc « Entreprise Ville (75) CDI 45 000 € … par an » de Meteojob et décode les
+entités HTML `&#xE9;`). On garde la ligne **la plus complète** (entreprise, salaire,
+description). Évite de fusionner des homonymes distincts (companies différentes).
 
 ## Contraintes connues
 
