@@ -12,6 +12,7 @@ sys.stderr.reconfigure(encoding="utf-8")
 
 import os
 import base64
+import html as _html
 import unicodedata
 import feedparser
 import requests
@@ -401,12 +402,32 @@ _TITLE_SENIOR = re.compile(
     r'\b(director|directeur|directrice|\bvp\b|vice[- ]president|head of|'
     r'senior manager|principal|chief)\b', re.I)
 
-# Contrats à exclure (CDD / freelance / intérim), au-delà du titre : détecte
-# les mentions explicites dans le corps de l'annonce.
+# Contrats à exclure (CDD / freelance / intérim / alternance / stage), au-delà
+# du titre : détecte les mentions explicites dans le corps de l'annonce. Utile
+# quand la plateforme retire le type de contrat du titre (ex. Adzuna transforme
+# « … en alternance H/F » en « … H/F » mais garde « alternant(e) » dans le texte).
 _CONTRACT_EXCLUDE = re.compile(
     r'contrat\s*(?:à|a)\s*dur[ée]e\s*d[ée]termin[ée]e|\bcdd\b|'
     r'contrat\s+de\s+\d+\s*mois|mission\s+(?:d.)?int[ée]rim|'
     r'\bfreelance\b|free-lance|portage salarial|fixed[- ]term', re.I)
+
+# Alternance / apprentissage / stage dans le CORPS — détection à HAUTE PRÉCISION.
+# On n'exclut que si l'annonce se décrit elle-même comme telle : un verbe de
+# recrutement juste avant le mot (« recherchons un alternant »), OU une mention
+# de contrat explicite (« contrat en alternance », « type de contrat : stage »).
+# Objectif : ne PAS exclure un CDI qui mentionne « encadrer l'alternant » ou
+# « 2 ans d'expérience hors stage/alternance ».
+_ALT_STAGE_BODY = re.compile(
+    r'contrat\s+(?:d.\s*apprentissage|de\s+professionnalisation|'
+    r'en\s+alternance|d.\s*alternance)|'
+    r'(?:recherch|recrut|propos|int[ée]gr|rejoign|deven)\w*\s+.{0,20}?'
+    r'(?:alternant|apprenti(?:e|es|s)?|stagiaire)s?\b|'
+    r'(?:poste|offre|mission|contrat|opportunit[ée])\s+.{0,15}?'
+    r'(?:en\s+alternance|en\s+apprentissage|de\s+stage)\b|'
+    r'\balternance\s+(?:de\s+)?\d+\s*(?:mois|semaines?|ans?)\b|'
+    r'\bstage\s+(?:de\s+)?\d+\s*(?:mois|semaines?)\b|'
+    r'type\s+de\s+contrat\s*:?\s*(?:alternance|apprentissage|stage|'
+    r'contrat\s+(?:pro|de\s+professionnalisation))', re.I)
 
 
 # Détection de langue par mots-outils fréquents et distinctifs. Objectif :
@@ -464,12 +485,16 @@ def screen_offer(job):
     flags = []
 
     # ---- EXCLUSIONS (signaux non ambigus) ----
+    if job.get("expired"):
+        return True, "Offre expirée / plus disponible", flags
     if _TITLE_EXCLUDE_HARD.search(title):
         return True, "Titre exclu (alternance / stage / CDD / freelance)", flags
     if _TITLE_EXCLUDE_ENG.search(title) and "marketing" not in tl:
         return True, "Titre exclu (engineer)", flags
     if job.get("contract_type") == "CDD" or _CONTRACT_EXCLUDE.search(text):
-        return True, "Contrat CDD / temporaire / freelance", flags
+        return True, "Contrat exclu (CDD / freelance / intérim)", flags
+    if _ALT_STAGE_BODY.search(text):
+        return True, "Contrat exclu (alternance / apprentissage / stage)", flags
     if is_foreign_language(f"{title} {job.get('description') or ''}"):
         return True, "Annonce dans une autre langue (ni FR ni EN)", flags
     if _TITLE_FREELANCE_MP.search(title):
@@ -898,6 +923,37 @@ def _email_body_html(msg):
     return html, text
 
 
+# Marqueurs de genre servant de fin de titre « propre » (avant le bloc parasite).
+_GENDER_MARKER_RE = re.compile(
+    r'\((?:H\s*/?\s*F|F\s*/?\s*H|F\s*/?\s*M\s*/?\s*X|M\s*/?\s*F\s*/?\s*X|'
+    r'H\s*/?\s*F\s*/?\s*X|W\s*/?\s*M)\)|\b(?:H/?F|F/?H)\b', re.I)
+# Bloc « parasite » ajouté par certaines alertes (Meteojob, Page Personnel…) :
+# « … Ville (75) CDI 45 000 € - 53 000 € par an ». Sert à détecter qu'il faut
+# nettoyer le titre (et non à couper : la coupe se fait au marqueur de genre).
+_ALERT_BOILER_RE = re.compile(
+    r'\(\d{2,3}\)\s+(?:CDI|CDD|Alternance|Stage|Freelance|Int[ée]rim|'
+    r'Ind[ée]pendant|Apprentissage)\b|\d[\d\s]{2,}€.*\bpar\s+(?:an|mois|jour)\b', re.I)
+_ALERT_CITY_TAIL_RE = re.compile(
+    r'\s+[A-ZÀ-Ÿ][\wÀ-ÿ\'’.\- ]*?\(\d{2,3}\)\s+(?:CDI|CDD|Alternance|Stage|'
+    r'Freelance|Int[ée]rim|Ind[ée]pendant|Apprentissage)\b.*$', re.I)
+
+
+def _clean_alert_title(title):
+    """Retire le bloc « Entreprise Ville (75) CDI 45 000 € … par an » que certaines
+    alertes (Meteojob…) collent après le vrai titre. Sans ce nettoyage, le titre
+    ne correspond plus à la même offre vue sur Adzuna / France Travail, et le
+    dédoublonnage échoue. On ne touche qu'aux titres qui portent ce bloc."""
+    t = re.sub(r"\s+", " ", title or "").strip()
+    if not _ALERT_BOILER_RE.search(t):
+        return t
+    m = _GENDER_MARKER_RE.search(t)
+    if m:
+        return t[:m.end()].strip()
+    t = _ALERT_CITY_TAIL_RE.sub("", t).strip()
+    t = re.sub(r"\s+\d[\d\s]{2,}€.*$", "", t).strip()
+    return t
+
+
 def _parse_alert_email(msg, cfg):
     """Extrait les offres d'un e-mail d'alerte pour une plateforme donnée."""
     html, _text = _email_body_html(msg)
@@ -914,7 +970,9 @@ def _parse_alert_email(msg, cfg):
         if not link_re.match(href) and not link_re.search(href):
             continue
         title = _HTML_TAG_RE.sub("", m.group("text"))
-        title = re.sub(r"\s+", " ", title).replace("&amp;", "&").strip()
+        title = _html.unescape(title)  # &#xE9; -> é, &#xB7; -> ·, &amp; -> &
+        title = re.sub(r"\s+", " ", title).strip()
+        title = _clean_alert_title(title)
         if not title or len(title) < 3:
             continue
         # Ignore les liens génériques (voir toutes les offres, se désabonner…).
@@ -1291,11 +1349,23 @@ def fetch_full_text(url):
         return ""
 
 
-# Frontières des blocs « autres offres » sur les pages d'annonces (Adzuna, etc.).
+# Frontières des blocs « autres offres » / pieds de page sur les pages d'annonces.
 _RELATED_BOUNDARY = re.compile(
     r'postes?\s+similaires|emplois?\s+similaires|offres?\s+similaires|'
     r'recevez des offres|ces offres pourraient|vous pourriez aussi|autres offres|'
-    r'similar jobs|related jobs|more jobs|recommended jobs', re.I)
+    r'similar jobs|related jobs|more jobs|recommended jobs|'
+    r'type de contrat\s+cdd\s+cdi|mini\s*job\s+allemand', re.I)
+
+# Marqueurs indiquant qu'une annonce n'est plus en ligne (offre expirée / pourvue).
+# Détectés sur le texte complet de la page ; l'offre est alors écartée.
+_EXPIRED_RE = re.compile(
+    r"n['’’]est plus disponible|n['’’]est plus en ligne|"
+    r"offre (?:expir|pourvue|clôtur|cloturee|close|termin)|cette offre a expir|"
+    r"annonce (?:expir|clôtur|cloturee|d[ée]sactiv|supprim|retir)|"
+    r"poste (?:d[ée]j[àa] )?pourvu|recrutement (?:est )?(?:clos|termin)|"
+    r"candidatures (?:sont )?(?:clôtur|cloturee|clos)|"
+    r"no longer (?:available|accepting|active)|position (?:has been )?filled|"
+    r"this (?:job|position|offer) (?:is )?(?:no longer|has expired|closed)", re.I)
 
 
 def _trim_related(text):
@@ -1640,6 +1710,19 @@ def _job_completeness(j):
     return s
 
 
+def _title_match(a, b):
+    """Deux titres normalisés désignent la même offre : soit identiques, soit
+    l'un est le début de l'autre (une plateforme ajoute un descriptif, ex.
+    « … CRM & Clienteling » vs « … CRM & Clienteling Maison de Luxe »). Le seuil
+    de 24 caractères évite de fusionner des titres génériques (« crm manager »)."""
+    if not a or not b:
+        return False
+    if a == b:
+        return True
+    shorter, longer = (a, b) if len(a) <= len(b) else (b, a)
+    return len(shorter) >= 24 and longer.startswith(shorter)
+
+
 def _dedup(jobs):
     """Dédoublonne y compris entre plateformes : titre normalisé (ignore H/F,
     (F/H), ponctuation, casse) + entreprise souple. Une même offre diffusée sur
@@ -1650,7 +1733,7 @@ def _dedup(jobs):
         cn = _norm_txt(j.get("company", ""))
         hit = None
         for u in kept:
-            if not tk or tk != u["tk"]:
+            if not _title_match(tk, u["tk"]):
                 continue
             same_company = cn and u["cn"] and (cn in u["cn"] or u["cn"] in cn)
             # Entreprise absente d'un côté : on ne fusionne que si le titre est
@@ -1998,14 +2081,21 @@ def run():
             else:
                 job["contract_type"] = None
 
-        # Télétravail introuvable + description probablement tronquée
-        # -> on va chercher le texte complet de l'annonce.
+        # On va chercher le texte complet de l'annonce quand :
+        #  - le télétravail est inconnu et la description est tronquée, OU
+        #  - l'offre vient d'une alerte e-mail (description vide : on récupère
+        #    ainsi télétravail/salaire ET on vérifie si l'annonce est toujours
+        #    en ligne — les alertes pointent souvent des offres déjà pourvues).
         truncated = len(desc) >= 490 or desc.rstrip().endswith(("…", "..."))
-        if (CONFIG.get("fetch_full_descriptions") and job["telework_days"] is None
-                and truncated and job.get("link")):
+        is_alert = "alerte" in (job.get("source") or "").lower()
+        if (CONFIG.get("fetch_full_descriptions") and job.get("link")
+                and ((job["telework_days"] is None and truncated) or is_alert)):
             full = fetch_full_text(job["link"])
             if full:
-                job["telework_days"] = extract_telework_days(full)
+                if _EXPIRED_RE.search(full):
+                    job["expired"] = True
+                if job.get("telework_days") is None:
+                    job["telework_days"] = extract_telework_days(full)
                 if not job.get("salary_raw") and not job.get("salary_extracted"):
                     job["salary_extracted"] = extract_salary(full)
                 fetched += 1
