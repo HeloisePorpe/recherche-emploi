@@ -362,8 +362,29 @@ _TITLE_CS = re.compile(
 # Titres commerciaux / vente (hors cible sauf combiné CRM marketing).
 _TITLE_SALES = re.compile(
     r'\b(account executive|business developer|business development|sales representative|'
-    r'ing[ée]nieur\s+commercial|commercial(?:e)?\s+s[ée]dentaire|technico[- ]commercial|'
-    r'chargé[e]?\s+d.affaires)\b', re.I)
+    r'\bsdr\b|sales development|ing[ée]nieur\s+commercial|commercial(?:e)?\s+s[ée]dentaire|'
+    r'technico[- ]commercial|chargé[e]?\s+d.affaires)\b', re.I)
+
+# Vente en boutique (luxe) : poste 100 % présentiel, pas du CRM lifecycle —
+# exclu même si « CRM » figure dans le titre (ex. Versace In-Store CRM Manager).
+# NB : « clienteling » seul est gardé — il désigne souvent un poste CRM au siège
+# d'une maison (« Chef de Projet CRM & Clienteling »), pas un job en boutique.
+_TITLE_CLIENTELING = re.compile(r'\bin[- ]?store\b', re.I)
+
+# Corps orienté acquisition / growth (génération de nouveaux prospects), à
+# distinguer du CRM lifecycle (gestion d'une base clients existante) — cf. §2.
+_ACQUISITION_BODY = re.compile(
+    r'lead (?:generation|gen)\b|\bmql\b|\bsql[- ]?lead|paid (?:media|social|search)|'
+    r'\babm\b|account[- ]based marketing|demand gen(?:eration)?|inbound funnel|'
+    r'top of funnel|g[ée]n[ée]ration de (?:leads|prospects)|'
+    r'acquisition de (?:trafic|nouveaux clients|leads|prospects)', re.I)
+
+# Expérience luxe / retail premium exigée explicitement (prérequis dur — §10).
+_LUXE_REQUIRED = re.compile(
+    r'(?:exp[ée]rience|background|exp\.)[^.]{0,45}(?:dans le luxe|du luxe|en\s+luxe|'
+    r'luxury|maison de luxe|retail premium)|'
+    r'(?:luxe|luxury|maison de luxe)[^.]{0,30}(?:exig[ée]e?|imp[ée]rati|obligatoire|'
+    r'required|indispensable|is a must|is required)', re.I)
 
 # Titres CRM technique / admin (postes IT, jamais marketing).
 _TITLE_CRM_TECH = re.compile(
@@ -377,10 +398,13 @@ _CRM_TECH_BODY = re.compile(
     r'\bsoql\b|data loader|process builder|\bapex\b|\bssis\b|sdk crm|plugins?\s+c#|'
     r'mont[ée]es?\s+de\s+version', re.I)
 
-# Marketing hors cœur de cible (terrain, marque, événementiel, communauté).
+# Marketing hors cœur de cible — disciplines adjacentes (§2) : terrain, marque,
+# événementiel, communauté, acquisition/growth/demand gen, product marketing.
 _TITLE_OFFCORE = re.compile(
-    r'\b(field marketing|brand manager|community manager|'
-    r'program manager[, ]+community|[ée]v[ée]nementiel|event manager)\b', re.I)
+    r'\b(field marketing|growth marketing|demand generation|demand gen|'
+    r'product marketing|acquisition (?:manager|marketing)|brand (?:manager|marketing)|'
+    r'community manager|program manager[, ]+community|[ée]v[ée]nementiel|event manager)\b',
+    re.I)
 
 # Profils freelance de marketplace (« I will [service] for you »).
 _TITLE_FREELANCE_MP = re.compile(r'^\s*i will\b', re.I)
@@ -512,7 +536,9 @@ def screen_offer(job):
     if _TITLE_SALES.search(title) and "crm" not in tl:
         return True, "Titre commercial / vente", flags
     if _TITLE_OFFCORE.search(title) and "crm" not in tl:
-        return True, "Marketing hors cœur (terrain / marque / événementiel)", flags
+        return True, "Marketing hors cœur (acquisition / growth / marque / terrain)", flags
+    if _TITLE_CLIENTELING.search(title):
+        return True, "CRM clienteling / boutique (présentiel)", flags
     if _RETAIL_TERMS.search(text):
         return True, "CRM = caisse / magasin", flags
     if _AUTO_TERMS.search(text):
@@ -531,6 +557,10 @@ def screen_offer(job):
         return True, "Télétravail / localisation hors France", flags
 
     # ---- ALERTES (signaux ambigus, on garde et on signale) ----
+    if _ACQUISITION_BODY.search(text) and not has_mkt:
+        flags.append("Orientation acquisition / growth ?")
+    if _LUXE_REQUIRED.search(text):
+        flags.append("Expérience luxe / retail exigée ?")
     if _CS_TERMS.search(text) and not has_mkt:
         flags.append("Customer Success / Account mgmt ?")
     if _HR_SOURCING.search(text) and not has_mkt:
@@ -1065,28 +1095,32 @@ def fetch_email_alerts():
 # nom en minuscules sans espaces). `ats` optionnel force un ATS ; sinon on essaie
 # tout. Liste enrichie au fil des retours de scan.
 _CAREER_COMPANIES = [
-    {"name": "Qonto", "slug": "qonto"},
-    {"name": "Doctolib", "slug": "doctolib"},
-    {"name": "Back Market", "slug": "backmarket"},
-    {"name": "BlaBlaCar", "slug": "blablacar"},
-    {"name": "Alan", "slug": "alan"},
+    # `ats` fige un ATS (évite d'essayer les autres) ; `slug` = identifiant confirmé ;
+    # `slugs` = variantes supplémentaires à tester. Sinon on essaie tous les ATS avec
+    # des variantes de nom générées automatiquement.
+    {"name": "Qonto", "slug": "qonto", "ats": "lever"},
+    {"name": "Doctolib", "slug": "doctolib", "ats": "greenhouse"},
+    {"name": "BlaBlaCar", "slug": "blablacar", "ats": "lever"},
+    {"name": "Contentsquare", "slug": "contentsquare", "ats": "lever"},
+    {"name": "Dataiku", "slug": "dataiku", "ats": "greenhouse"},
+    {"name": "Mirakl", "slug": "mirakl", "ats": "greenhouse"},
+    {"name": "Aircall", "slug": "aircall", "ats": "lever"},
+    {"name": "360Learning", "slug": "360learning", "ats": "lever"},
+    {"name": "Swile", "slug": "swile", "ats": "lever"},
+    {"name": "Vestiaire Collective", "slug": "vestiairecollective", "ats": "lever"},
+    {"name": "Veepee", "slug": "veepee", "ats": "lever"},
+    # Non encore résolues : on teste tous les ATS + variantes de slug.
+    {"name": "Back Market", "slug": "backmarket", "slugs": ["back-market", "backmarketjobs"]},
+    {"name": "Alan", "slug": "alan", "slugs": ["alanhq", "join-alan"]},
     {"name": "Spendesk", "slug": "spendesk"},
-    {"name": "PayFit", "slug": "payfit"},
-    {"name": "Contentsquare", "slug": "contentsquare"},
-    {"name": "Dataiku", "slug": "dataiku"},
-    {"name": "Mirakl", "slug": "mirakl"},
-    {"name": "Aircall", "slug": "aircall"},
-    {"name": "360Learning", "slug": "360learning"},
-    {"name": "Deezer", "slug": "deezer"},
-    {"name": "Swile", "slug": "swile"},
-    {"name": "Ledger", "slug": "ledger"},
-    {"name": "Vestiaire Collective", "slug": "vestiairecollective"},
-    {"name": "ManoMano", "slug": "manomano"},
-    {"name": "Veepee", "slug": "veepee"},
-    {"name": "Sephora", "slug": "sephora"},
-    {"name": "Believe", "slug": "believe"},
-    {"name": "Thales", "slug": "thales"},
-    {"name": "Safran", "slug": "safran"},
+    {"name": "PayFit", "slug": "payfit", "slugs": ["payfitjobs"]},
+    {"name": "Deezer", "slug": "deezer", "slugs": ["Deezer"]},
+    {"name": "Ledger", "slug": "ledger", "slugs": ["ledgerhq"]},
+    {"name": "ManoMano", "slug": "manomano", "slugs": ["colibri"]},
+    {"name": "Sephora", "slug": "sephora", "slugs": ["Sephora", "SephoraUSA"]},
+    {"name": "Believe", "slug": "believe", "slugs": ["believedigital", "Believe"]},
+    {"name": "Thales", "slug": "thales", "slugs": ["thalesgroup", "Thales", "ThalesGroup"]},
+    {"name": "Safran", "slug": "safran", "slugs": ["safrangroup", "safran-group", "Safran"]},
 ]
 
 _CAREER_LOC_OK = re.compile(
@@ -1110,15 +1144,16 @@ def _career_job(name, title, link, location, description="", published=""):
             "published": published or ""}
 
 
-def _fetch_greenhouse(company):
-    slug, name = company["slug"], company["name"]
+_ATS_UA = {"User-Agent": "Mozilla/5.0", "Accept": "application/json"}
+
+
+def _fetch_greenhouse(slug, name):
     url = f"https://boards-api.greenhouse.io/v1/boards/{slug}/jobs?content=true"
-    r = requests.get(url, timeout=15, headers={"User-Agent": "Mozilla/5.0"})
+    r = requests.get(url, timeout=10, headers=_ATS_UA)
     if r.status_code != 200:
         return None
-    data = r.json()
     jobs = []
-    for o in data.get("jobs", []):
+    for o in r.json().get("jobs", []):
         loc = (o.get("location") or {}).get("name", "")
         desc = re.sub(r"<[^>]+>", " ", o.get("content", "") or "")
         jobs.append(_career_job(name, o.get("title", ""), o.get("absolute_url", ""),
@@ -1126,10 +1161,9 @@ def _fetch_greenhouse(company):
     return jobs
 
 
-def _fetch_lever(company):
-    slug, name = company["slug"], company["name"]
+def _fetch_lever(slug, name):
     url = f"https://api.lever.co/v0/postings/{slug}?mode=json"
-    r = requests.get(url, timeout=15, headers={"User-Agent": "Mozilla/5.0"})
+    r = requests.get(url, timeout=10, headers=_ATS_UA)
     if r.status_code != 200:
         return None
     data = r.json()
@@ -1149,15 +1183,13 @@ def _fetch_lever(company):
     return jobs
 
 
-def _fetch_smartrecruiters(company):
-    slug, name = company["slug"], company["name"]
+def _fetch_smartrecruiters(slug, name):
     url = f"https://api.smartrecruiters.com/v1/companies/{slug}/postings?limit=100"
-    r = requests.get(url, timeout=15, headers={"User-Agent": "Mozilla/5.0"})
+    r = requests.get(url, timeout=10, headers=_ATS_UA)
     if r.status_code != 200:
         return None
-    data = r.json()
     jobs = []
-    for o in data.get("content", []):
+    for o in r.json().get("content", []):
         loc = o.get("location") or {}
         locs = ", ".join(x for x in [loc.get("city", ""), loc.get("country", "")] if x)
         link = (f"https://jobs.smartrecruiters.com/{slug}/{o.get('id','')}"
@@ -1167,35 +1199,113 @@ def _fetch_smartrecruiters(company):
     return jobs
 
 
+def _fetch_ashby(slug, name):
+    url = f"https://api.ashbyhq.com/posting-api/job-board/{slug}?includeCompensation=false"
+    r = requests.get(url, timeout=10, headers=_ATS_UA)
+    if r.status_code != 200:
+        return None
+    jobs = []
+    for o in r.json().get("jobs", []):
+        loc = o.get("location", "") or ""
+        desc = o.get("descriptionPlain") or re.sub(r"<[^>]+>", " ", o.get("descriptionHtml", "") or "")
+        jobs.append(_career_job(name, o.get("title", ""),
+                                 o.get("jobUrl", "") or o.get("applyUrl", ""),
+                                 loc, desc, o.get("publishedAt", "")))
+    return jobs
+
+
+def _fetch_recruitee(slug, name):
+    url = f"https://{slug}.recruitee.com/api/offers/"
+    r = requests.get(url, timeout=10, headers=_ATS_UA)
+    if r.status_code != 200:
+        return None
+    jobs = []
+    for o in r.json().get("offers", []):
+        loc = o.get("location") or ", ".join(
+            x for x in [o.get("city", ""), o.get("country", "")] if x)
+        jobs.append(_career_job(name, o.get("title", ""),
+                                 o.get("careers_url") or o.get("careers_apply_url", ""),
+                                 loc, re.sub(r"<[^>]+>", " ", o.get("description", "") or ""),
+                                 o.get("published_at", "")))
+    return jobs
+
+
+def _fetch_workable(slug, name):
+    url = f"https://apply.workable.com/api/v1/widget/accounts/{slug}?details=true"
+    r = requests.get(url, timeout=10, headers=_ATS_UA)
+    if r.status_code != 200:
+        return None
+    jobs = []
+    for o in r.json().get("jobs", []):
+        loc = ", ".join(x for x in [o.get("city", ""), o.get("country", "")] if x) \
+            or o.get("location", "")
+        link = o.get("url") or o.get("shortlink") or o.get("application_url", "")
+        jobs.append(_career_job(name, o.get("title", ""), link, loc,
+                                 o.get("description", ""), o.get("published_on", "")))
+    return jobs
+
+
+# Ordre d'essai : les ATS à API publique fiable d'abord.
 _ATS_FETCHERS = {"greenhouse": _fetch_greenhouse, "lever": _fetch_lever,
-                 "smartrecruiters": _fetch_smartrecruiters}
+                 "smartrecruiters": _fetch_smartrecruiters, "ashby": _fetch_ashby,
+                 "recruitee": _fetch_recruitee, "workable": _fetch_workable}
+_ATS_ORDER = ["greenhouse", "lever", "smartrecruiters", "ashby", "recruitee", "workable"]
+
+
+def _slug_candidates(company):
+    """Variantes de slug à essayer (le nom exact dans l'URL de l'ATS varie :
+    minuscules sans espaces, avec tirets, casse d'origine pour SmartRecruiters/Ashby)."""
+    cands, seen = [], set()
+
+    def add(s):
+        if s and s not in seen:
+            seen.add(s)
+            cands.append(s)
+
+    add(company.get("slug"))
+    for extra in company.get("slugs", []):
+        add(extra)
+    name = company["name"]
+    add(name.lower().replace(" ", ""))
+    add(name.lower().replace(" ", "-"))
+    add(name.replace(" ", ""))            # casse d'origine (SmartRecruiters, Ashby)
+    add(_strip_accents(name).lower().replace(" ", ""))
+    return cands
 
 
 def fetch_career_sites():
-    """Offres issues des sites carrière (ATS) des entreprises surveillées."""
+    """Offres issues des sites carrière (ATS) des entreprises surveillées. Pour
+    chaque entreprise, essaie chaque ATS (Greenhouse/Lever/SmartRecruiters/Ashby/
+    Recruitee/Workable) avec plusieurs variantes de slug, jusqu'à trouver des
+    offres. Best-effort ; réseau ouvert requis (GitHub Actions)."""
     print("  → Sites carrière (ATS)...")
-    all_jobs = []
+    all_jobs, unresolved = [], []
     for company in _CAREER_COMPANIES:
-        order = ([company["ats"]] if company.get("ats") else
-                 ["greenhouse", "lever", "smartrecruiters"])
-        found_ats, raw = None, []
+        order = [company["ats"]] if company.get("ats") else _ATS_ORDER
+        cands = _slug_candidates(company)
+        found = None  # (ats, slug, raw)
         for ats in order:
-            try:
-                res = _ATS_FETCHERS[ats](company)
-            except Exception:
-                res = None
-            if res:  # liste non vide -> ATS trouvé
-                found_ats, raw = ats, res
+            for slug in cands:
+                try:
+                    res = _ATS_FETCHERS[ats](slug, company["name"])
+                except Exception:
+                    res = None
+                if res:
+                    found = (ats, slug, res)
+                    break
+            if found:
                 break
-            time.sleep(0.2)
-        if not found_ats:
+            time.sleep(0.1)
+        if not found:
+            unresolved.append(company["name"])
             continue
-        # Filtre pertinence CRM + localisation France/remote.
+        ats, slug, raw = found
         kept = [j for j in raw if is_relevant(j) and _career_location_ok(j.get("location", ""))]
-        if kept:
-            print(f"     {company['name']} [{found_ats}] : {len(kept)} offre(s) CRM/mkt "
-                  f"(sur {len(raw)})")
-            all_jobs.extend(kept)
+        tag = ats if slug == company.get("slug") else f"{ats}:{slug}"
+        print(f"     {company['name']} [{tag}] : {len(kept)} offre(s) CRM/mkt (sur {len(raw)})")
+        all_jobs.extend(kept)
+    if unresolved:
+        print(f"     Non résolues (aucun ATS public) : {', '.join(unresolved)}")
     unique = _dedup(all_jobs)
     print(f"     {len(unique)} offres pertinentes (sites carrière)")
     return unique
@@ -1487,6 +1597,17 @@ def compute_score(job):
     if penal:
         score -= 2
         reasons.append(f"Secteur pénalisé : {penal[0]}")
+
+    # Pondérer selon la part réelle de CRM lifecycle (§2/§16) : bonus si signaux
+    # email/segmentation/campagne/automation ; malus si l'offre est surtout
+    # orientée acquisition/growth (nouveaux prospects) sans lifecycle.
+    has_lifecycle = bool(_MARKETING_SIGNALS.search(text))
+    if has_lifecycle:
+        score += 1
+        reasons.append("Signaux CRM lifecycle (email / segmentation / campagne)")
+    if _ACQUISITION_BODY.search(text) and not has_lifecycle:
+        score -= 2
+        reasons.append("Orientation acquisition / growth (hors lifecycle)")
 
     if check_salesforce_mandatory(text):
         score -= 2
