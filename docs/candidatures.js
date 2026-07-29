@@ -47,6 +47,15 @@ function cardHtml(c) {
          🤖 ${AUTO_META[c.auto.status].label}${c.auto.reason ? ' — ' + escapeHtml(c.auto.reason) : ''}
        </div>`
     : '';
+  // Contrôle de statut (tactile) : déplacer la carte sans glisser-déposer,
+  // indispensable sur mobile où le drag ne fonctionne pas.
+  const moveCtrl = `
+    <div class="kc-move">
+      <label class="kc-move-label" for="mv-${escapeHtml(c.id)}">Statut</label>
+      <select class="kc-move-sel" id="mv-${escapeHtml(c.id)}" data-move="${escapeHtml(c.id)}">
+        ${COLUMNS.map((col) => `<option value="${col.key}"${col.key === status ? ' selected' : ''}>${escapeHtml(col.label)}</option>`).join('')}
+      </select>
+    </div>`;
   return `
     <article class="kanban-card" draggable="true" data-id="${escapeHtml(c.id)}" data-status="${status}">
       <div class="kc-top">
@@ -57,6 +66,7 @@ function cardHtml(c) {
       ${loc}
       ${auto}
       ${link}
+      ${moveCtrl}
       <textarea class="kc-notes" data-notes="${escapeHtml(c.id)}" placeholder="Notes (contact, date, relance...)"
         rows="2">${escapeHtml(c.notes || '')}</textarea>
     </article>`;
@@ -110,6 +120,14 @@ board.addEventListener('drop', (e) => {
   e.preventDefault();
   body.classList.remove('drop-hover');
   updateStatus(dragId, body.getAttribute('data-drop'));
+  render();
+});
+
+// --- Déplacement par menu (tactile / mobile) ---
+board.addEventListener('change', (e) => {
+  const sel = e.target.closest('[data-move]');
+  if (!sel) return;
+  updateStatus(sel.getAttribute('data-move'), sel.value);
   render();
 });
 
