@@ -365,6 +365,17 @@ function renderCard(job) {
        </div>`
     : '';
 
+  // Description repliable : évite d'avoir à ouvrir le lien externe (utile pour
+  // les sites carrière type Doctolib/Greenhouse qui ouvrent le formulaire de
+  // candidature directement, sans montrer la description).
+  const descText = (job.description || '').trim();
+  const descHtml = descText
+    ? `<details class="card-desc">
+         <summary>📄 Voir la description</summary>
+         <div class="desc-body">${escapeHtml(descText)}</div>
+       </details>`
+    : '';
+
   const id = escapeHtml(candidatureId(job));
   let actions;
   if (showArchived) {
@@ -393,6 +404,7 @@ function renderCard(job) {
       ${dateHtml}
       <div class="card-meta">${tags.join('')}</div>
       ${reasons}
+      ${descHtml}
       <div class="card-actions">${actions}</div>
     </article>`;
 }
