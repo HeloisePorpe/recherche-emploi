@@ -1856,10 +1856,13 @@ def _dedup(jobs):
     """Dédoublonne y compris entre plateformes : titre normalisé (ignore H/F,
     (F/H), ponctuation, casse) + entreprise souple. Une même offre diffusée sur
     Adzuna / France Travail / e-mail = une seule ligne (la plus complète)."""
-    kept = []  # chaque élément : {"job":..., "tk":..., "cn":...}
+    kept = []  # chaque élément : {"job":..., "tk":..., "cn":..., "loc":..., "src":...}
     for j in jobs:
         tk = _norm_txt(j.get("title", ""))[:60]
         cn = _norm_txt(j.get("company", ""))
+        loc = _norm_txt(j.get("location", ""))
+        src = (j.get("source") or "").strip().lower()
+        day = (str(j.get("published") or "")[:10])  # AAAA-MM-JJ
         hit = None
         for u in kept:
             if not _title_match(tk, u["tk"]):
@@ -1869,13 +1872,21 @@ def _dedup(jobs):
             # assez spécifique (≥ 20 car.), pour éviter d'écraser des postes
             # homonymes distincts (« Chef de projet CRM », etc.).
             empty_ok = (not cn or not u["cn"]) and len(tk) >= 20
-            if same_company or empty_ok:
+            # Même recruteur sous deux libellés différents (fréquent sur Adzuna :
+            # « OpenSourcing » vs « osgroupeopensuccess ») : titre normalisé
+            # identique + même lieu + même source + MÊME JOUR de publication +
+            # titre assez spécifique. Le même jour évite de fusionner deux postes
+            # homonymes distincts publiés à des dates différentes.
+            same_recruiter = (tk == u["tk"] and len(tk) >= 14 and loc and loc == u["loc"]
+                              and src and src == u["src"] and day and day == u["day"])
+            if same_company or empty_ok or same_recruiter:
                 hit = u
                 break
         if hit is None:
-            kept.append({"job": j, "tk": tk, "cn": cn})
+            kept.append({"job": j, "tk": tk, "cn": cn, "loc": loc, "src": src, "day": day})
         elif _job_completeness(j) > _job_completeness(hit["job"]):
-            hit["job"], hit["cn"] = j, cn  # garde la version la plus complète
+            # garde la version la plus complète
+            hit["job"], hit["cn"], hit["loc"], hit["day"] = j, cn, loc, day
     return [u["job"] for u in kept]
 
 
