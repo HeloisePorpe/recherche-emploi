@@ -432,7 +432,14 @@ _TITLE_SENIOR = re.compile(
 # « … en alternance H/F » en « … H/F » mais garde « alternant(e) » dans le texte).
 _CONTRACT_EXCLUDE = re.compile(
     r'contrat\s*(?:à|a)\s*dur[ée]e\s*d[ée]termin[ée]e|\bcdd\b|'
-    r'contrat\s+de\s+\d+\s*mois|mission\s+(?:d.)?int[ée]rim|'
+    # Intérim : signal fort et non ambigu, même isolé (« TYPE DE CONTRAT : INTERIM »).
+    r'\bint[ée]rim\b|int[ée]rimaire|'
+    # Durées déterminées explicites.
+    r'contrat\s+de\s+\d+\s*mois|mission\s+de\s+\d+\s*mois|'
+    r'(?:contrat|mission|int[ée]rim|cdd|dur[ée]e)[^.]{0,25}\bentre\s+\d+\s+et\s+\d+\s*mois|'
+    # Remplacement (congé / maternité / maladie) = CDD.
+    r'dans le cadre d.un remplacement|remplacement\s+(?:d.un\s+)?'
+    r'(?:cong[ée]|maternit|maladie|temporaire|de\s+cong)|'
     r'\bfreelance\b|free-lance|portage salarial|fixed[- ]term', re.I)
 
 # Alternance / apprentissage / stage dans le CORPS — détection à HAUTE PRÉCISION.
@@ -515,7 +522,8 @@ def screen_offer(job):
         return True, "Titre exclu (alternance / stage / CDD / freelance)", flags
     if _TITLE_EXCLUDE_ENG.search(title) and "marketing" not in tl:
         return True, "Titre exclu (engineer)", flags
-    if job.get("contract_type") == "CDD" or _CONTRACT_EXCLUDE.search(text):
+    if (job.get("contract_type") == "CDD" or job.get("contract_excluded")
+            or _CONTRACT_EXCLUDE.search(text)):
         return True, "Contrat exclu (CDD / freelance / intérim)", flags
     if _ALT_STAGE_BODY.search(text):
         return True, "Contrat exclu (alternance / apprentissage / stage)", flags
@@ -2215,6 +2223,11 @@ def run():
             if full:
                 if _EXPIRED_RE.search(full):
                     job["expired"] = True
+                # Contrat (CDD / intérim / alternance) souvent au-delà des 500
+                # premiers caractères tronqués par Adzuna : on le détecte ici sur
+                # le texte complet (les blocs « offres similaires » sont déjà coupés).
+                if _CONTRACT_EXCLUDE.search(full) or _ALT_STAGE_BODY.search(full):
+                    job["contract_excluded"] = True
                 if job.get("telework_days") is None:
                     job["telework_days"] = extract_telework_days(full)
                 if not job.get("salary_raw") and not job.get("salary_extracted"):
