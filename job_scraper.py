@@ -1962,16 +1962,39 @@ def _same_offer(c1, t1, c2, t2):
 
 
 _APP_CONFIRM = re.compile(
-    r'bien re[çc]u votre candidature|votre candidature a bien|accus[ée] de r[ée]ception|'
-    r'candidature (?:bien )?(?:re[çc]ue|enregistr)|nous avons (?:bien )?re[çc]u|'
+    r'bien re[çc]u (?:ta|votre|ton) candidature|(?:ta|votre) candidature a bien|'
+    r'accus[ée] de r[ée]ception|candidature (?:bien )?(?:re[çc]ue|enregistr)|'
+    r'nous avons (?:bien )?re[çc]u|confirmons la bonne r[ée]ception|'
     r'we(?:\'ve| have) received your application|thank you for (?:your )?appl(?:ying|ication)|'
-    r'application (?:has been )?received|votre candidature (?:au poste|pour)', re.I)
-_APP_NEG = re.compile(
-    r'ne (?:donnons|donne|donnerons) pas suite|n\'a(?:vons)? pas (?:[ée]t[ée] )?retenue?|'
-    r'pas retenu votre|nous ne retenons pas|regret(?:tons)?|malheureusement|unfortunately|'
-    r'not (?:be )?(?:moving forward|to proceed|selected|retained)|another candidate|'
-    r'autre candidat|ne correspond(?:ait)? pas (?:au profil|à nos)|'
-    r'd[ée]cid[ée] de ne pas donner suite', re.I)
+    r'application (?:has been )?received|(?:ta|votre) candidature (?:au poste|pour)|'
+    r'(?:nous (?:vous |te )?)?remerci\w+ (?:pour|de)|'
+    r'merci (?:beaucoup |infiniment |sinc[èe]rement )?(?:pour|de)\s+(?:votre|ta|ton|l\'int[ée]r[êe]t|nous avoir)|'
+    r'reviendrons vers (?:vous|toi)|revenons vers (?:vous|toi)|'
+    r'(?:nous |l\'|nous l\')?[ée]tudions|[ée]tudier(?:ons)?\s+(?:avec attention |attentivement )?'
+    r'(?:votre|ta)|examin(?:ons|erons|er)\s+(?:attentivement\s+)?(?:votre|ta)', re.I)
+# Refus « durs » : formulations non ambiguës de non-retenue.
+_APP_NEG_HARD = re.compile(
+    r'ne (?:donnons|donne|donnerons) pas suite|nous ne retenons pas|'
+    r'not (?:be )?(?:moving forward|to proceed|selected)|another candidate|'
+    r'd[ée]cid[ée] de ne pas donner suite|ne pas retenir votre candidature|'
+    r'candidature n\'a pas [ée]t[ée] retenue', re.I)
+# Refus « souples » : ces tournures apparaissent AUSSI dans des accusés de
+# réception conditionnels (« si sans nouvelle d\'ici 3 semaines, considérez que
+# votre candidature n\'a pas été retenue »). On ne les compte comme refus que
+# hors contexte conditionnel.
+_APP_NEG_SOFT = re.compile(
+    r'n\'a(?:vons)? pas (?:[ée]t[ée] )?retenue?|pas retenu votre|regret(?:tons)?|'
+    r'malheureusement|unfortunately|autre candidat|not retained|'
+    r'ne correspond(?:ait)? pas (?:au profil|à nos)', re.I)
+# Contexte conditionnel (le refus n\'est pas acté, c\'est un accusé de réception).
+_APP_COND = re.compile(
+    r'si\s+(?:tu|vous)\s+n[e\']?\s*(?:re[çc]o(?:is|it|ivez)|avez|as|aviez)\s+(?:pas |plus )?'
+    r'(?:de |eu de |re[çc]u de )?(?:nouvelles?|retour|r[ée]ponse)|'
+    r'sans (?:nouvelle|retour|r[ée]ponse)\s+de\s+(?:notre|nos|ma)|'
+    r'd\'ici\s+(?:\d+|un|une|deux|trois|quelques)\s*(?:semaines?|jours?|mois)|'
+    r'pass[ée]\s+ce\s+d[ée]lai|au-del[àa]\s+de\s+ce\s+d[ée]lai|'
+    r'sous\s+(?:\d+|quelques)\s*(?:semaines?|jours?|mois)|'
+    r'(?:vous pouvez|tu peux)\s+consid[ée]rer|cela signifie que', re.I)
 _APP_POS = re.compile(
     r'souhait\w* (?:vous )?rencontrer|(?:proposer|convier)\w* .{0,20}entretien|'
     r'planifier .{0,20}(?:entretien|appel|[ée]change)|vos disponibilit[ée]s|'
@@ -1980,16 +2003,54 @@ _APP_POS = re.compile(
     r'next step|prochaine [ée]tape|nous aimerions (?:vous )?[ée]changer', re.I)
 
 
+def _label_status(raw):
+    """Classe d'après les libellés Gmail (X-GM-LABELS) posés par l'utilisatrice —
+    signal fiable, prioritaire sur les heuristiques de texte. `raw` = ligne
+    d'en-tête renvoyée par IMAP. Renvoie (statut|"_skip", raison) ou None.
+    Les accents peuvent être en UTF-7 modifié : on repère des sous-chaînes ASCII
+    sûres (refus / process / confirmation / alerte)."""
+    try:
+        s = _strip_accents((raw or b"").decode("utf-8", "replace")).lower()
+    except Exception:
+        return None
+    if "x-gm-labels" not in s:
+        return None
+    if "alerte" in s:
+        return ("_skip", None)  # e-mail d'alerte d'offres, pas une réponse
+    if "refus" in s:
+        return ("negatif", "Libellé Gmail « Candidature refusée »")
+    if "process" in s or "entretien" in s or "en cours" in s:
+        return ("positif", "Libellé Gmail « Candidature en process »")
+    if "confirmation" in s or "recue" in s or "recu" in s or "en attente" in s:
+        return ("en_attente", "Libellé Gmail « Confirmation candidature reçue »")
+    return None
+
+
 def classify_application_email(subject, body):
-    """Renvoie (statut, raison) ou None. Statuts : en_attente / positif / negatif."""
+    """Renvoie (statut, raison) ou None. Statuts : en_attente / positif / negatif.
+
+    Les accusés de réception contiennent très souvent une clause de refus
+    CONDITIONNELLE (« si sans nouvelle d'ici X semaines, considérez que votre
+    candidature n'a pas été retenue »). Ce n'est PAS un refus : tant qu'il y a un
+    remerciement / accusé de réception ET une clause conditionnelle, on classe
+    « en attente ». Un vrai refus est inconditionnel et sans remerciement de ce type."""
     text = f"{subject}\n{body}"
     if not re.search(r'candidature|application|poste|recrut|talent|offre d\'emploi', text, re.I):
         return None
-    if _APP_NEG.search(text):
-        return ("negatif", "Réponse négative détectée")
+    # Un entretien proposé prime (parfois formulé avec des regrets ailleurs).
     if _APP_POS.search(text):
         return ("positif", "Proposition d'entretien détectée")
-    if _APP_CONFIRM.search(text):
+    ack = bool(_APP_CONFIRM.search(text))
+    cond = bool(_APP_COND.search(text))
+    # Accusé de réception à clause conditionnelle = en attente, pas refus.
+    if ack and cond:
+        return ("en_attente", "Accusé de réception de candidature")
+    if _APP_NEG_HARD.search(text):
+        return ("negatif", "Réponse négative détectée")
+    # Refus souple : refus réel seulement HORS contexte conditionnel.
+    if _APP_NEG_SOFT.search(text) and not cond:
+        return ("negatif", "Réponse négative détectée")
+    if ack:
         return ("en_attente", "Accusé de réception de candidature")
     return None
 
@@ -2011,15 +2072,17 @@ def _decode_mime(raw):
 
 
 def _sender_company(frm):
-    """Devine l'entreprise depuis l'expéditeur (nom affiché sinon domaine)."""
-    m = re.match(r'\s*"?([^"<]*?)"?\s*<([^>]+)>', frm or "")
+    """Devine l'entreprise depuis l'expéditeur (nom affiché sinon domaine).
+    Le champ From peut être encodé (=?UTF-8?...?=) : on le décode d'abord."""
+    frm = _decode_mime(frm or "")
+    m = re.match(r'\s*"?([^"<]*?)"?\s*<([^>]+)>', frm)
     name = (m.group(1).strip() if m else "")
-    addr = (m.group(2) if m else (frm or "")).strip()
+    addr = (m.group(2) if m else frm).strip()
     if name and not _GENERIC_SENDER.search(name):
         return name[:60]
     dom = addr.split("@")[-1].lower()
     dom = re.sub(r'^(mail|email|emails|e|smtp|send|go|jobs|careers|recruiting|apply|'
-                 r'noreply|nepasrepondre)\.', '', dom)
+                 r'noreply|nepasrepondre|rh|notification)\.', '', dom)
     parts = dom.split(".")
     core = parts[-2] if len(parts) >= 2 else dom
     if core in _ATS_DOMAINS:
@@ -2027,7 +2090,38 @@ def _sender_company(frm):
     return core.capitalize()
 
 
-def _extract_offer_title(subject):
+# Titre de poste dans le corps (« pour le poste de … », « au poste de … »).
+_POSTE_BODY_RE = re.compile(
+    r'(?:pour le poste|au poste|sur le poste|poste\s+de|pour le r[ôo]le|'
+    r'for the (?:position|role) of)\s+(?:de\s+|du\s+|d\'|of\s+)?'
+    r'(.+?)(?=\s+[HF]/?[FH]\b|\s*[\(\.!\n]|\s*$)', re.I)
+# Sujets « génériques » (accusé sans intitulé de poste) : on cherchera le poste
+# dans le corps, et l'association se fera alors sur l'entreprise.
+_GENERIC_APP_TITLE = re.compile(
+    r'^\s*(?:re\s*:|fwd?\s*:|tr\s*:)?\s*(?:merci (?:pour|de)\s+)?(?:ta|ton|votre|your)?\s*'
+    r'(?:candidature|application)\b(?!\s+(?:pour|au|de|for))', re.I)
+
+
+def _company_from_subject(subject):
+    """Entreprise mentionnée dans le sujet (« … chez X », « … at X »)."""
+    m = re.search(r'\b(?:chez|at)\s+([^!.\n]+?)\s*[!.…]*\s*$', subject or "", re.I)
+    if m:
+        c = m.group(1).strip(' "\'')
+        if 2 <= len(c) <= 60:
+            return c
+    return ""
+
+
+def _app_same(ca, ta, cb, tb):
+    """Même candidature. Titre proche + entreprise proche ; si l'un des titres est
+    générique (« Votre candidature »), on associe sur la seule entreprise — pour
+    rattacher une réponse email à une candidature existante."""
+    if _GENERIC_APP_TITLE.search(ta or "") or _GENERIC_APP_TITLE.search(tb or ""):
+        return bool(_norm_txt(ca)) and bool(_norm_txt(cb)) and _company_loose(ca, cb)
+    return _same_offer(ca, ta, cb, tb)
+
+
+def _extract_offer_title(subject, body=""):
     # Le sujet peut être plié sur plusieurs lignes : on aplatit les espaces.
     s = re.sub(r'\s+', ' ', _decode_mime(subject)).strip()
     m = re.search(r'(?:pour le poste|au poste|for the (?:position|role) of)\s+(?:de\s+|du\s+|d\')?(.+)$', s, re.I)
@@ -2036,6 +2130,14 @@ def _extract_offer_title(subject):
     m = re.search(r'(?:candidature|application)[^:\-–—]*[:\-–—]\s*(.+)$', s, re.I)
     if m:
         return m.group(1).strip(' "\'').strip()[:80]
+    # Sujet générique (« Votre candidature ») : on tente d'extraire l'intitulé
+    # du poste depuis le corps, pour mieux associer à une candidature existante.
+    if body and _GENERIC_APP_TITLE.search(s):
+        mb = _POSTE_BODY_RE.search(re.sub(r'\s+', ' ', body))
+        if mb:
+            t = mb.group(1).strip(' "\'').strip()
+            if 3 <= len(t) <= 80:
+                return t
     return s[:80]
 
 
@@ -2058,17 +2160,23 @@ def fetch_application_emails():
         uids = data[0].split() if (typ == "OK" and data and data[0]) else []
         for uid in uids[-300:]:
             try:
-                typ, md = imap.fetch(uid, "(RFC822)")
+                # Récupère aussi les libellés Gmail (X-GM-LABELS) : posés par
+                # l'utilisatrice, ils priment sur l'analyse du texte.
+                typ, md = imap.fetch(uid, "(RFC822 X-GM-LABELS)")
                 if typ != "OK" or not md or not md[0]:
                     continue
                 msg = email.message_from_bytes(md[0][1])
+                label_hdr = md[0][0] if isinstance(md[0], (tuple, list)) else b""
                 frm_raw = str(msg.get("From", ""))
                 if any(s in frm_raw.lower() for s in alert_senders):
                     continue  # ignore les emails d'alerte d'offres
+                lab = _label_status(label_hdr)
+                if lab and lab[0] == "_skip":
+                    continue  # libellé « Alertes » : pas une réponse de candidature
                 subject = _decode_mime(msg.get("Subject", ""))
                 html, text = _email_body_html(msg)
                 body = re.sub(r'<[^>]+>', ' ', html) if html else text
-                cls = classify_application_email(subject, body)
+                cls = lab or classify_application_email(subject, body)
                 if not cls:
                     continue
                 status, reason = cls
@@ -2076,8 +2184,9 @@ def fetch_application_emails():
                     date = int(email.utils.parsedate_to_datetime(msg.get("Date", "")).timestamp() * 1000)
                 except Exception:
                     date = int(time.time() * 1000)
-                events.append({"company": _sender_company(frm_raw),
-                               "title": _extract_offer_title(msg.get("Subject", "")),
+                company = _company_from_subject(subject) or _sender_company(frm_raw)
+                events.append({"company": company,
+                               "title": _extract_offer_title(subject, body),
                                "status": status, "reason": reason, "date": date})
             except Exception as ex:
                 print(f"     lecture mail suivi : {ex}")
@@ -2107,7 +2216,7 @@ def update_candidatures_tracking():
     # (une réponse remplace un accusé), et la même offre sur 2 sites = 1 seul.
     best = []
     for e in events:
-        m = next((x for x in best if _same_offer(x["company"], x["title"], e["company"], e["title"])), None)
+        m = next((x for x in best if _app_same(x["company"], x["title"], e["company"], e["title"])), None)
         if m:
             if e["date"] > m["date"]:
                 m.update(e)
@@ -2131,18 +2240,37 @@ def update_candidatures_tracking():
         elif r.status_code != 404:
             print(f"  → Suivi candidatures : GET {r.status_code}")
             return
+        # Répare les entrées existantes au sujet encodé (=?UTF-8?...?= mal décodé
+        # par une ancienne version) : on ne veut plus voir « =?UTF-8?B?... ».
+        repaired = 0
+        for c in cands:
+            for k in ("title", "company"):
+                v = c.get(k) or ""
+                if "=?" in v and "?=" in v:
+                    dv = _decode_mime(v)
+                    if dv and dv != v:
+                        c[k] = dv
+                        repaired += 1
         col = {"en_attente": "postule", "positif": "entretien", "negatif": "reponse"}
         changed = 0
         for e in best:
             auto = {"status": e["status"], "reason": e["reason"], "date": e["date"]}
             # Match souple contre les candidatures existantes (même offre, quel
-            # que soit le site / la variante d'entreprise).
-            c = next((x for x in cands if _same_offer(
+            # que soit le site / la variante d'entreprise ; entreprise seule si le
+            # titre de l'email est générique).
+            c = next((x for x in cands if _app_same(
                 x.get("company", ""), x.get("title", ""), e["company"], e["title"])), None)
             if c:
                 old = c.get("auto") or {}
                 if old.get("status") != e["status"] or e["date"] > (old.get("date") or 0):
                     c["auto"] = auto
+                    # Candidature créée par le robot (source email) : on aligne
+                    # aussi la colonne sur le statut détecté (l'utilisatrice ne
+                    # l'a pas déplacée elle-même). Corrige un ancien mauvais
+                    # classement (ex. accusé de réception mis en « Réponse »).
+                    if c.get("source") == "email" and col.get(e["status"]):
+                        c["status"] = col[e["status"]]
+                        c["updatedAt"] = max(int(c.get("updatedAt") or 0), e["date"])
                     changed += 1
             else:
                 cid = (e["title"] or "") + "|" + (e["company"] or "")
@@ -2152,9 +2280,11 @@ def update_candidatures_tracking():
                               "addedAt": e["date"], "updatedAt": e["date"],
                               "auto": auto, "source": "email"})
                 changed += 1
-        if not changed:
+        if not changed and not repaired:
             print("  → Suivi candidatures : rien de nouveau")
             return
+        if repaired:
+            print(f"  → Suivi candidatures : {repaired} champ(s) encodé(s) réparé(s)")
         content = base64.b64encode(
             json.dumps(cands, ensure_ascii=False, indent=2).encode("utf-8")).decode()
         body = {"message": "MAJ suivi candidatures (robot email)", "content": content, "branch": branch}
