@@ -222,18 +222,18 @@ function getFilteredJobs() {
   const q = state.search.trim().toLowerCase();
   const now = Date.now();
   const recencyMs = state.recency > 0 ? state.recency * 86400000 : 0;
-  const archived = archivedIdSet();
+  const isJobArchived = makeArchivedMatcher();
 
   // Vue "archivées" : on n'affiche que les offres masquées (tri par note)
   if (showArchived) {
     return allJobs
-      .filter((job) => archived.has(candidatureId(job)))
+      .filter((job) => isJobArchived(job))
       .sort((a, b) => (b.score || 0) - (a.score || 0));
   }
 
   let jobs = allJobs.filter((job) => {
     // Offres archivées : exclues de la liste normale
-    if (archived.has(candidatureId(job))) return false;
+    if (isJobArchived(job)) return false;
     // Recherche texte (titre + entreprise + lieu + description)
     if (q) {
       const hay = (
@@ -368,7 +368,8 @@ function renderCard(job) {
   const id = escapeHtml(candidatureId(job));
   let actions;
   if (showArchived) {
-    actions = `<button class="restore-btn" type="button" data-unarchive="${id}">↩︎ Restaurer</button>`;
+    const unarchiveId = escapeHtml(archiveKey(job));
+    actions = `<button class="restore-btn" type="button" data-unarchive="${unarchiveId}">↩︎ Restaurer</button>`;
   } else {
     const tracked = isTracked(job);
     const followBtn = `<button class="follow-btn${tracked ? ' followed' : ''}" type="button"

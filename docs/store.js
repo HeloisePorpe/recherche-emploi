@@ -304,20 +304,47 @@ function saveArchived(list) {
   } catch (_) { /* localStorage indisponible */ }
 }
 
-function archivedIdSet() {
-  return new Set(loadArchived().map((a) => a.id));
+// Clé d'archivage STABLE (indépendante du lien) : titre normalisé + entreprise
+// normalisée. Le lien Adzuna change d'un scan à l'autre — s'en servir comme clé
+// faisait « revenir » les offres écartées. On matche donc par titre + entreprise,
+// avec la même logique souple que les candidatures (variantes H/F, "Aravati" vs
+// "Aravati France", même offre diffusée sur plusieurs plateformes).
+function archiveKey(job) {
+  return _titleKey(job.title || '') + '|' + _normTxt(job.company || '');
+}
+
+// Une offre correspond-elle à une entrée archivée ? Clé stable, sinon titre
+// proche + entreprise souple, sinon (compat) ancien id/lien exact.
+function _matchesArchived(job, list) {
+  const jk = archiveKey(job);
+  const jt = _titleKey(job.title || '');
+  const jc = job.company || '';
+  const jid = candidatureId(job);
+  return list.some((a) => {
+    if ((a.key || archiveKey(a)) === jk) return true;
+    if (jt && _titleKey(a.title || '') === jt && _companyLoose(jc, a.company || '')) return true;
+    if (a.id && (a.id === job.link || a.id === jid)) return true;  // entrées héritées
+    return false;
+  });
+}
+
+// Prédicat prêt à l'emploi : charge la liste une fois puis teste chaque offre.
+function makeArchivedMatcher() {
+  const list = loadArchived();
+  return (job) => _matchesArchived(job, list);
 }
 
 function isArchived(job) {
-  return archivedIdSet().has(candidatureId(job));
+  return _matchesArchived(job, loadArchived());
 }
 
 function archiveJob(job) {
-  const id = candidatureId(job);
+  const key = archiveKey(job);
   const list = loadArchived();
-  if (list.some((a) => a.id === id)) return false;
+  if (list.some((a) => (a.key || archiveKey(a)) === key)) return false;
   list.push({
-    id,
+    key,
+    id: candidatureId(job),  // conservé pour compat / restauration
     title: job.title || '',
     company: job.company || '',
     location: job.location || '',
@@ -334,6 +361,7 @@ function archiveJob(job) {
   return true;
 }
 
-function unarchiveJob(id) {
-  saveArchived(loadArchived().filter((a) => a.id !== id));
+// Restauration par clé stable (data-unarchive = archiveKey de l'offre).
+function unarchiveJob(key) {
+  saveArchived(loadArchived().filter((a) => (a.key || archiveKey(a)) !== key));
 }
