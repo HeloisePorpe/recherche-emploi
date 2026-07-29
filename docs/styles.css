@@ -580,10 +580,20 @@ html, body {
   padding: 11px 12px;
   box-shadow: var(--shadow);
   cursor: grab;
+  min-width: 0;              /* évite tout débordement horizontal en grille */
 }
 .kanban-card.dragging { opacity: 0.5; }
+.column { min-width: 0; }
+.col-body { min-width: 0; }
 .kc-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
-.kc-title { margin: 0; font-size: 0.92rem; font-weight: 700; line-height: 1.3; }
+.kc-title {
+  margin: 0;
+  font-size: 0.92rem;
+  font-weight: 700;
+  line-height: 1.3;
+  overflow-wrap: anywhere;  /* les titres longs ne débordent pas */
+  min-width: 0;
+}
 .kc-del {
   flex-shrink: 0;
   border: none;
@@ -605,6 +615,36 @@ html, body {
   text-decoration: none;
 }
 .kc-link:hover { text-decoration: underline; }
+/* Contrôle de statut tactile (déplacer la carte sans glisser-déposer) */
+.kc-move {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 9px;
+}
+.kc-move-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+.kc-move-sel {
+  flex: 1;
+  min-width: 0;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.85rem;
+  color: var(--text);
+  background: #fff;
+}
+.kc-move-sel:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.10);
+}
+
 .kc-notes {
   width: 100%;
   margin-top: 8px;
@@ -630,7 +670,16 @@ html, body {
 }
 
 @media (max-width: 860px) {
-  .board { grid-template-columns: 1fr; }
+  .board { grid-template-columns: 1fr; gap: 12px; }
+  .board-wrap { padding: 14px; }
+  /* Sur mobile le glisser-déposer ne marche pas : on s'appuie sur le menu
+     « Statut » de chaque carte. On enlève le curseur trompeur. */
+  .kanban-card { cursor: default; }
+  .column { min-height: 0; }
+  .col-body { padding: 10px; }
+  /* Cible tactile confortable pour le menu de statut et les notes. */
+  .kc-move-sel { padding: 10px; font-size: 0.9rem; }
+  .kc-notes { font-size: 0.9rem; }
 }
 
 /* Responsive / mobile */

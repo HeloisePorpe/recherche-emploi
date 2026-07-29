@@ -15,7 +15,7 @@ const defaultState = () => ({
   teleworkOnly: false,
   cdiOnly: false,
   hideFlagged: false,    // masquer les offres avec alertes de filtrage
-  showApplied: false,    // afficher les offres déjà postulées (masquées par défaut)
+  showApplied: false,    // afficher les offres déjà suivies (masquées par défaut)
   recommendation: '',    // '' = toutes ; sinon à_postuler / à_revoir / à_écarter
   myCriteria: true,      // filtre trajet + télétravail — activé par défaut
   criteriaStrict: false, // masquer aussi les offres à l'info manquante
@@ -265,8 +265,10 @@ function getFilteredJobs() {
     if (state.hideFlagged && Array.isArray(job.flags) && job.flags.length) return false;
     // Recommandation du robot de tri
     if (state.recommendation && (job.recommendation || '') !== state.recommendation) return false;
-    // Offres déjà postulées : masquées par défaut (visibles dans « Mes candidatures »).
-    if (!state.showApplied && typeof jobApplied === 'function' && jobApplied(job)) return false;
+    // Offres déjà suivies (présentes dans « Mes candidatures », quel que soit le
+    // statut) : masquées par défaut. Cliquer « Suivre » les fait disparaître d'ici
+    // pour ne garder que les annonces encore à consulter.
+    if (!state.showApplied && typeof candidatureForJob === 'function' && candidatureForJob(job)) return false;
     // Critères perso trajet + télétravail
     if (state.myCriteria) {
       const st = criteriaStatus(job);
@@ -544,9 +546,9 @@ function bindEvents() {
     if (follow) {
       const job = allJobs.find((j) => candidatureId(j) === follow.getAttribute('data-follow'));
       if (job && addCandidature(job)) {
-        follow.textContent = '✓ Suivie';
-        follow.classList.add('followed');
-        follow.disabled = true;
+        // L'offre suivie rejoint « Mes candidatures » et disparaît de la liste
+        // (sauf si « Afficher les offres déjà suivies » est coché).
+        render();
       }
       return;
     }
