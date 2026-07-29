@@ -320,6 +320,21 @@ _FOREIGN_RESIDENCE = re.compile(
     r'(united kingdom|\buk\b|canada|germany|deutschland|mexico|south africa|'
     r'spain|espagne|portugal|belgium|belgique|switzerland|suisse|india|inde)', re.I)
 
+# Seine-Saint-Denis (93) : exclue (trajet trop long / difficile depuis Bures 91),
+# sauf 100 % télétravail en France. Détection sur le LIEU uniquement : code postal
+# 93xxx, « (93) », « Seine-Saint-Denis », ou une commune du 93.
+_DEPT_93 = re.compile(
+    r'\b93\d{3}\b|\(\s*93\s*\)|,\s*93\b|seine[- ]saint[- ]denis|'
+    r'\b(saint[- ]denis|saint[- ]ouen|montreuil|bobigny|aubervilliers|'
+    r'aulnay[- ]sous[- ]bois|pantin|bondy|drancy|noisy[- ]le[- ]grand|'
+    r'noisy[- ]le[- ]sec|le blanc[- ]mesnil|rosny[- ]sous[- ]bois|'
+    r'[ée]pinay[- ]sur[- ]seine|sevran|villepinte|la courneuve|gagny|stains|'
+    r'bagnolet|les lilas|romainville|neuilly[- ]sur[- ]marne|neuilly[- ]plaisance|'
+    r'livry[- ]gargan|clichy[- ]sous[- ]bois|montfermeil|tremblay[- ]en[- ]france|'
+    r'villemomble|pierrefitte[- ]sur[- ]seine|le raincy|le pr[ée][- ]saint[- ]gervais|'
+    r'dugny|le bourget|la plaine[- ]saint[- ]denis|coubron|vaujours|'
+    r'gournay[- ]sur[- ]marne)\b', re.I)
+
 _CONTRACT_TERMS = re.compile(
     r'independent contractor|contractor agreement|commission[- ]based|'
     r'rev(?:enue)?[- ]share|uncapped earnings|per hour|/\s*hr\b|\$\s*\d+\s*/\s*h|'
@@ -563,6 +578,9 @@ def screen_offer(job):
     loc = job.get("location") or ""
     if _FOREIGN_LOCATION.search(loc) and "france" not in loc.lower():
         return True, "Télétravail / localisation hors France", flags
+    # Seine-Saint-Denis (93) exclu, sauf 100 % télétravail en France.
+    if _DEPT_93.search(loc) and not (job.get("telework_days") == 5 and job.get("in_france", True)):
+        return True, "Localisation en Seine-Saint-Denis (93)", flags
 
     # ---- ALERTES (signaux ambigus, on garde et on signale) ----
     if _ACQUISITION_BODY.search(text) and not has_mkt:
