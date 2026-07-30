@@ -1497,6 +1497,24 @@ def fetch_full_text(url):
         return ""
 
 
+def _link_dead(url):
+    """Vraie si le lien pointe une offre supprimée/close (404/410, ou message
+    « soft 404 » d'un ATS type Lever/Greenhouse). Conservateur : en cas de doute
+    (timeout, erreur réseau), renvoie False pour ne pas supprimer à tort."""
+    if not url:
+        return False
+    try:
+        r = requests.get(url, timeout=8, allow_redirects=True,
+                         headers={"User-Agent": "Mozilla/5.0 (compatible; JobScraper/1.0)"})
+        if r.status_code in (404, 410):
+            return True
+        if r.status_code == 200 and _EXPIRED_RE.search(r.text[:20000]):
+            return True
+    except Exception:
+        return False
+    return False
+
+
 # Frontières des blocs « autres offres » / pieds de page sur les pages d'annonces.
 _RELATED_BOUNDARY = re.compile(
     r'postes?\s+similaires|emplois?\s+similaires|offres?\s+similaires|'
@@ -1513,7 +1531,12 @@ _EXPIRED_RE = re.compile(
     r"poste (?:d[ée]j[àa] )?pourvu|recrutement (?:est )?(?:clos|termin)|"
     r"candidatures (?:sont )?(?:clôtur|cloturee|clos)|"
     r"no longer (?:available|accepting|active)|position (?:has been )?filled|"
-    r"this (?:job|position|offer) (?:is )?(?:no longer|has expired|closed)", re.I)
+    r"this (?:job|position|offer) (?:is )?(?:no longer|has expired|closed)|"
+    # Pages ATS supprimées (Lever/Greenhouse/…) : messages 404 « soft ».
+    r"couldn.t find anything here|couldn.t find anything|"
+    r"(?:job|position|posting|role)\b.{0,30}?\b(?:closed|removed|expired|"
+    r"has been filled|no longer (?:available|active|open))|"
+    r"this posting is no longer", re.I)
 
 
 def _trim_related(text):
@@ -2491,6 +2514,14 @@ def run():
                     job["salary_extracted"] = extract_salary(full)
                 fetched += 1
                 time.sleep(0.3)
+
+        # Sites carrière (ATS Lever/Greenhouse…) : l'offre peut avoir été retirée
+        # depuis la récupération via l'API. On vérifie que le lien est toujours
+        # vivant (404/410 = supprimée) pour ne pas afficher d'offre morte.
+        if ((job.get("source") or "").startswith("Site carrière") and job.get("link")
+                and not job.get("expired") and _link_dead(job["link"])):
+            job["expired"] = True
+            time.sleep(0.2)
 
         # Trajet : inutile pour le 100 % télétravail
         loc = job.get("location", "")
