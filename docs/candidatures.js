@@ -72,11 +72,19 @@ function saveCrit(el) {
 // Ligne récapitulative (vue repliée) des infos structurées renseignées.
 function summaryInner(c) {
   const bits = [];
+  if (c.appliedDate) bits.push(`📅 ${escapeHtml(_frDate(c.appliedDate))}`);
+  if (c.platform) bits.push(`🌐 ${escapeHtml(c.platform)}`);
   if (c.commuteMin != null && c.commuteMin !== '') bits.push(`🚇 ${c.commuteMin} min`);
   if (c.teleworkDays != null && c.teleworkDays !== '') bits.push(`🏠 ${c.teleworkDays} j/sem`);
   if (c.salary) bits.push(`💶 ${Number(c.salary).toLocaleString('fr-FR')} €`);
   if (c.contractType) bits.push(`📄 ${escapeHtml(c.contractType)}`);
   return bits.join(' · ');
+}
+
+// Date ISO (AAAA-MM-JJ) -> JJ/MM/AAAA pour l'affichage.
+function _frDate(iso) {
+  const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(iso || '');
+  return m ? `${m[3]}/${m[2]}/${m[1]}` : iso;
 }
 
 function detailsHtml(c) {
@@ -92,9 +100,17 @@ function detailsHtml(c) {
     <details class="kc-details"${openDetails.has(c.id) ? ' open' : ''}>
       <summary>✏️ Détails &amp; critères</summary>
       <div class="kc-form">
+        <label class="kc-f kc-f-full"><span>🏷️ Intitulé du poste</span>
+          <input type="text" data-f="title" data-id="${id}" value="${escapeHtml(c.title || '')}" placeholder="Intitulé du poste" /></label>
+        <label class="kc-f kc-f-full"><span>🏢 Entreprise</span>
+          <input type="text" data-f="company" data-id="${id}" value="${escapeHtml(c.company || '')}" placeholder="Entreprise" /></label>
         <label class="kc-f kc-f-full"><span>📍 Adresse</span>
           <input type="text" data-f="address" data-id="${id}" value="${escapeHtml(c.address || '')}" placeholder="Ville, arrondissement…" /></label>
         <div class="kc-grid">
+          <label class="kc-f"><span>📅 Date d'envoi</span>
+            <input type="date" data-f="appliedDate" data-id="${id}" value="${escapeHtml(c.appliedDate || '')}" /></label>
+          <label class="kc-f"><span>🌐 Plateforme</span>
+            <input type="text" list="platform-options" data-f="platform" data-id="${id}" value="${escapeHtml(c.platform || '')}" placeholder="LinkedIn, site…" /></label>
           <label class="kc-f"><span>🚇 Trajet (min)</span>
             <input type="number" inputmode="numeric" min="0" max="300" data-f="commuteMin" data-id="${id}" value="${c.commuteMin ?? ''}" placeholder="—" /></label>
           <label class="kc-f"><span>🏠 Télétravail (j/sem)</span>
@@ -157,8 +173,16 @@ function cardHtml(c) {
     </article>`;
 }
 
+let searchQuery = '';
+
+function matchesSearch(c) {
+  if (!searchQuery) return true;
+  const hay = `${c.title || ''} ${c.company || ''} ${c.platform || ''} ${c.address || ''}`.toLowerCase();
+  return hay.includes(searchQuery);
+}
+
 function render() {
-  const list = activeCandidatures();
+  const list = activeCandidatures().filter(matchesSearch);
   board.innerHTML = COLUMNS.map((col) => {
     const cards = list.filter((c) => (VALID_STATUS.has(c.status) ? c.status : 'a_postuler') === col.key);
     return `
@@ -239,6 +263,15 @@ board.addEventListener('click', (e) => {
   removeCandidature(del.getAttribute('data-del'));
   render();
 });
+
+// --- Recherche dans les candidatures (entreprise / poste) ---
+const candSearchEl = document.getElementById('cand-search');
+if (candSearchEl) {
+  candSearchEl.addEventListener('input', () => {
+    searchQuery = candSearchEl.value.trim().toLowerCase();
+    render();
+  });
+}
 
 // --- Ajout manuel ---
 document.getElementById('add-form').addEventListener('submit', (e) => {

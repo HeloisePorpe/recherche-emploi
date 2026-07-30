@@ -2172,6 +2172,27 @@ def _extract_offer_title(subject, body=""):
     return s[:80]
 
 
+def _gmail_all_mail(imap):
+    """Nom du dossier « Tous les messages » de Gmail (flag spécial \\All),
+    quelle que soit la langue du compte. None si introuvable -> INBOX en repli."""
+    try:
+        typ, boxes = imap.list()
+        if typ != "OK":
+            return None
+        for b in boxes or []:
+            s = b.decode("utf-8", "replace") if isinstance(b, (bytes, bytearray)) else str(b)
+            if "\\All" in s:
+                m = re.search(r'"([^"]+)"\s*$', s)
+                if m:
+                    return m.group(1)
+                parts = s.split()
+                if parts:
+                    return parts[-1].strip('"')
+    except Exception:
+        pass
+    return None
+
+
 def fetch_application_emails():
     """Lit la boîte et renvoie les événements de candidature détectés."""
     address = CONFIG.get("gmail_address", "")
@@ -2186,10 +2207,14 @@ def fetch_application_emails():
     try:
         imap = imaplib.IMAP4_SSL("imap.gmail.com", 993, timeout=30)
         imap.login(address, password)
-        imap.select("INBOX", readonly=True)
+        # Lit « Tous les messages » (All Mail) et non seulement INBOX : les emails
+        # de réponse sont souvent archivés dans un libellé (donc hors INBOX). On
+        # les retrouve ainsi, ce qui permet d'appliquer leur statut/libellé.
+        mailbox = _gmail_all_mail(imap) or "INBOX"
+        imap.select(mailbox if mailbox == "INBOX" else f'"{mailbox}"', readonly=True)
         typ, data = imap.search(None, "SINCE", since)
         uids = data[0].split() if (typ == "OK" and data and data[0]) else []
-        for uid in uids[-300:]:
+        for uid in uids[-400:]:
             try:
                 typ, md = imap.fetch(uid, "(RFC822)")
                 if typ != "OK" or not md or not md[0]:
