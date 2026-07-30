@@ -645,6 +645,24 @@ html, body {
   box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.10);
 }
 
+/* Barre de recherche dans Mes candidatures */
+.cand-search-bar { max-width: 1240px; margin: 0 auto 14px; padding: 0 20px; }
+#cand-search {
+  width: 100%;
+  padding: 11px 14px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: var(--text);
+  background: var(--surface);
+}
+#cand-search:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
 /* Récap des infos structurées (vue repliée) */
 .kc-summary {
   margin-top: 6px;
@@ -685,6 +703,7 @@ html, body {
   background: #fff;
 }
 .kc-f textarea { resize: vertical; }
+.kc-offer { max-height: 260px; font-size: 0.82rem; line-height: 1.4; }
 .kc-f input:focus, .kc-f select:focus, .kc-f textarea:focus {
   outline: none;
   border-color: var(--primary);

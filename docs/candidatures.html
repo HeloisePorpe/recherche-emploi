@@ -56,8 +56,26 @@
       (ou en la glissant sur ordinateur).
     </p>
 
+    <div class="cand-search-bar">
+      <input type="search" id="cand-search" placeholder="🔍 Rechercher (entreprise, poste…)" autocomplete="off" />
+    </div>
+
     <div id="board" class="board"></div>
   </main>
+
+  <datalist id="platform-options">
+    <option value="Site de l'entreprise"></option>
+    <option value="LinkedIn"></option>
+    <option value="HelloWork"></option>
+    <option value="Indeed"></option>
+    <option value="Welcome to the Jungle"></option>
+    <option value="Cadremploi"></option>
+    <option value="Meteojob"></option>
+    <option value="APEC"></option>
+    <option value="France Travail"></option>
+    <option value="Cooptation / réseau"></option>
+    <option value="Autre"></option>
+  </datalist>
 
   <script src="store.js"></script>
   <script src="candidatures.js"></script>
