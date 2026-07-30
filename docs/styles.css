@@ -645,6 +645,73 @@ html, body {
   box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.10);
 }
 
+/* Récap des infos structurées (vue repliée) */
+.kc-summary {
+  margin-top: 6px;
+  font-size: 0.82rem;
+  color: var(--text);
+  font-weight: 600;
+}
+.kc-notes-preview {
+  margin-top: 6px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* Fiche « Détails & critères » repliable */
+.kc-details { margin-top: 9px; }
+.kc-details > summary {
+  cursor: pointer;
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 0.85rem;
+  list-style: none;
+  user-select: none;
+  padding: 4px 0;
+}
+.kc-details > summary::-webkit-details-marker { display: none; }
+.kc-form { display: flex; flex-direction: column; gap: 10px; margin-top: 6px; }
+.kc-f { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.kc-f > span { font-size: 0.75rem; font-weight: 600; color: var(--text-muted); }
+.kc-f input, .kc-f select, .kc-f textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.88rem;
+  color: var(--text);
+  background: #fff;
+}
+.kc-f textarea { resize: vertical; }
+.kc-f input:focus, .kc-f select:focus, .kc-f textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.10);
+}
+.kc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.kc-criteria { display: flex; flex-direction: column; gap: 6px; }
+.kc-crit-title { font-size: 0.75rem; font-weight: 700; color: var(--text-muted); }
+.kc-checks { display: flex; flex-wrap: wrap; gap: 6px; }
+.kc-check {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.82rem;
+  padding: 5px 9px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  cursor: pointer;
+  background: #fff;
+}
+.kc-check input { margin: 0; }
+.kc-check:has(input:checked) {
+  border-color: var(--primary);
+  background: rgba(37, 99, 235, 0.08);
+  font-weight: 600;
+}
+
 .kc-notes {
   width: 100%;
   margin-top: 8px;
