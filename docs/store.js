@@ -123,7 +123,10 @@ function mergeCandidatures(a, b) {
     const cNewer = (c.updatedAt || 0) >= (prev.updatedAt || 0);
     const userSrc = cNewer ? c : prev;
     ['status', 'notes', 'deleted', 'updatedAt', 'title', 'company',
-     'location', 'link', 'addedAt'].forEach((k) => {
+     'location', 'link', 'addedAt',
+     // Champs de détail éditables sur la carte (fiche offre)
+     'address', 'commuteMin', 'teleworkDays', 'salary', 'contractType',
+     'criteria'].forEach((k) => {
       if (userSrc[k] !== undefined) merged[k] = userSrc[k];
     });
     const aAuto = prev.auto, bAuto = c.auto;
@@ -248,6 +251,12 @@ function addCandidature(job) {
     existing.status = 'a_postuler';
     existing.updatedAt = nowTs();
   } else {
+    // Pré-remplit la fiche à partir des données de l'offre (modifiables ensuite).
+    const num = (v) => (typeof v === 'number' && !Number.isNaN(v) ? v : undefined);
+    let salary;
+    const sraw = job.salary_raw || job.salary_extracted || '';
+    const sm = String(sraw).replace(/\s/g, '').match(/(\d{4,6})/);
+    if (sm) salary = Number(sm[1]);
     list.push({
       id,
       title: job.title || 'Sans titre',
@@ -256,6 +265,11 @@ function addCandidature(job) {
       link: job.link || '',
       status: 'a_postuler',
       notes: '',
+      address: job.location || '',
+      commuteMin: num(job.commute_minutes),
+      teleworkDays: num(job.telework_days),
+      salary,
+      contractType: job.contract_type || '',
       addedAt: nowTs(),
       updatedAt: nowTs(),
     });
