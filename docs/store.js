@@ -126,7 +126,7 @@ function mergeCandidatures(a, b) {
      'location', 'link', 'addedAt',
      // Champs de détail éditables sur la carte (fiche offre)
      'address', 'commuteMin', 'teleworkDays', 'salary', 'contractType',
-     'criteria', 'appliedDate', 'platform'].forEach((k) => {
+     'criteria', 'appliedDate', 'platform', 'offerText'].forEach((k) => {
       if (userSrc[k] !== undefined) merged[k] = userSrc[k];
     });
     const aAuto = prev.auto, bAuto = c.auto;
@@ -270,6 +270,7 @@ function addCandidature(job) {
       teleworkDays: num(job.telework_days),
       salary,
       contractType: job.contract_type || '',
+      offerText: job.description || '',
       addedAt: nowTs(),
       updatedAt: nowTs(),
     });

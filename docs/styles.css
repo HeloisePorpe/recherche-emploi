@@ -703,6 +703,7 @@ html, body {
   background: #fff;
 }
 .kc-f textarea { resize: vertical; }
+.kc-offer { max-height: 260px; font-size: 0.82rem; line-height: 1.4; }
 .kc-f input:focus, .kc-f select:focus, .kc-f textarea:focus {
   outline: none;
   border-color: var(--primary);

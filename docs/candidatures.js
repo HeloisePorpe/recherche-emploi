@@ -126,6 +126,8 @@ function detailsHtml(c) {
         </div>
         <label class="kc-f kc-f-full"><span>📝 Notes</span>
           <textarea class="kc-notes" data-notes="${id}" placeholder="Contact, date, relance, ressenti…" rows="3">${escapeHtml(c.notes || '')}</textarea></label>
+        <label class="kc-f kc-f-full"><span>📄 Contenu de l'offre (copier-coller — utile si le lien expire)</span>
+          <textarea class="kc-offer" data-f="offerText" data-id="${id}" placeholder="Colle ici le texte complet de l'annonce…" rows="4">${escapeHtml(c.offerText || '')}</textarea></label>
       </div>
     </details>`;
 }
@@ -242,10 +244,12 @@ board.addEventListener('change', (e) => {
   if (cr) { saveCrit(cr); return; }
 });
 
-// --- Notes & suppression ---
+// --- Notes & contenu de l'offre (sauvegarde en direct) & suppression ---
 board.addEventListener('input', (e) => {
   const ta = e.target.closest('[data-notes]');
-  if (ta) updateNotes(ta.getAttribute('data-notes'), ta.value);
+  if (ta) { updateNotes(ta.getAttribute('data-notes'), ta.value); return; }
+  const of = e.target.closest('textarea[data-f]');
+  if (of) saveField(of);
 });
 
 // Mémorise l'ouverture/fermeture des fiches « Détails » (toggle ne bulle pas).
