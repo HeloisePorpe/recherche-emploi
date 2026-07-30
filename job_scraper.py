@@ -2345,11 +2345,44 @@ def update_candidatures_tracking():
                               "addedAt": e["date"], "updatedAt": e["date"],
                               "auto": auto, "source": "email"})
                 changed += 1
+
+        # --- Fusion des cartes créées par email dans la candidature « suivie »
+        # correspondante (même entreprise) : évite le doublon « confirmation de
+        # réception » + « offre suivie ». L'entreprise de la carte email est
+        # d'abord relue depuis le sujet (« … chez X »). ---
+        merged = 0
+        for ec in list(cands):
+            if ec.get("deleted") or ec.get("source") != "email":
+                continue
+            ec_comp = _company_from_subject(ec.get("title", "")) or ec.get("company", "")
+            if not _norm_txt(ec_comp):
+                continue
+            target = next((c for c in cands
+                           if c is not ec and not c.get("deleted") and c.get("source") != "email"
+                           and _norm_txt(c.get("company", ""))
+                           and _company_loose(c.get("company", ""), ec_comp)), None)
+            if not target:
+                continue
+            a = ec.get("auto")
+            if a and (not target.get("auto")
+                      or a.get("date", 0) >= (target.get("auto") or {}).get("date", 0)):
+                target["auto"] = a
+                if col.get(a.get("status")):
+                    target["status"] = col[a["status"]]
+            if not target.get("link") and ec.get("link"):
+                target["link"] = ec["link"]
+            ec["deleted"] = True
+            ec["updatedAt"] = int(time.time() * 1000)
+            merged += 1
+            changed += 1
+
         if not changed and not repaired:
             print("  → Suivi candidatures : rien de nouveau")
             return
         if repaired:
             print(f"  → Suivi candidatures : {repaired} champ(s) encodé(s) réparé(s)")
+        if merged:
+            print(f"  → Suivi candidatures : {merged} carte(s) email fusionnée(s)")
         content = base64.b64encode(
             json.dumps(cands, ensure_ascii=False, indent=2).encode("utf-8")).decode()
         body = {"message": "MAJ suivi candidatures (robot email)", "content": content, "branch": branch}
