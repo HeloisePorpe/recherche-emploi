@@ -197,13 +197,19 @@ segmentation, email/SMS…) ; salaire cible ~45–50 k€ (plancher dur 42 055 �
   - **Fusion** par `id`, dernière écriture gagnante (`updatedAt`) ; suppressions
     en *tombstone* (`deleted`) ; champ `auto` réservé au robot.
   - Le **robot** (GitHub Actions, `update_candidatures_tracking` dans
-    `job_scraper.py`) lit `heloise.emploi`, classe les emails de candidature
-    (accusé → `en_attente`, refus → `negatif`, entretien → `positif`) et écrit le
-    champ `auto` de chaque candidature dans le dépôt privé via l'API GitHub
-    (secret **`CANDIDATURES_TOKEN`**). Il crée une candidature si elle n'existe
-    pas, dédoublonne par clé normalisée (entreprise + titre), ne touche jamais
-    aux champs utilisateur. Détection **par règles** (à affiner avec de vrais
-    emails de réponse).
+    `job_scraper.py`) lit la boîte Gmail (dossier « Tous les messages » pour voir
+    aussi les mails archivés/étiquetés), classe les emails de candidature en
+    priorité selon les **libellés Gmail** posés par l'utilisatrice (Confirmation
+    reçue → `en_attente`, Refusée → `negatif`, En process → `positif`, Alertes →
+    ignoré), sinon par règles de texte (accusés à clause conditionnelle = en
+    attente, pas refus). Il écrit le champ `auto` dans le dépôt privé via l'API
+    GitHub (secret **`CANDIDATURES_TOKEN`**). **Il ne CRÉE plus de carte** à
+    partir des emails (trop d'erreurs : doublons, mails de bienvenue) : un email
+    ne fait que **mettre à jour le statut d'une carte existante** (rapprochée par
+    entreprise si le sujet est générique). Les cartes se créent uniquement depuis
+    le dashboard (Suivre / ajout manuel). Le robot fusionne aussi les anciennes
+    cartes email dans l'offre suivie correspondante et ne touche jamais aux
+    champs utilisateur.
   - Logique côté navigateur dans `docs/store.js`. Offres **archivées** : locales.
 
 ## Dédoublonnage inter-plateformes (`_dedup`)
