@@ -2076,11 +2076,30 @@ _ATS_DOMAINS = {"teamtailor", "workday", "myworkday", "lever", "greenhouse", "sm
                 "gmail", "google", "outlook", "hotmail", "yahoo"}
 
 
-def _decode_mime(raw):
+_ENCODED_WORD_RE = re.compile(r'=\?[^?]+\?[BbQq]\?[^?]*\?=')
+
+
+def _decode_word(m):
     try:
-        return str(email.header.make_header(email.header.decode_header(raw or "")))
+        parts = email.header.decode_header(m.group(0))
+        return "".join(t.decode(e or "utf-8", "replace") if isinstance(t, (bytes, bytearray))
+                       else t for t, e in parts)
     except Exception:
+        return m.group(0)
+
+
+def _decode_mime(raw):
+    """Décode les mots-encodés MIME (=?UTF-8?B?…?=) d'un en-tête, en laissant le
+    reste du texte intact. Robuste au contenu mixte (texte déjà décodé + mot
+    encodé), là où make_header échoue. Colle d'abord les mots-encodés adjacents
+    (RFC 2047 : l'espace entre eux est ignoré)."""
+    if not raw:
         return raw or ""
+    s = raw if isinstance(raw, str) else str(raw)
+    if "=?" in s and "?=" in s:
+        s = re.sub(r'\?=\s+=\?', '?==?', s)  # mots-encodés pliés adjacents
+        s = _ENCODED_WORD_RE.sub(_decode_word, s)
+    return s
 
 
 def _sender_company(frm):
@@ -2172,17 +2191,24 @@ def fetch_application_emails():
         uids = data[0].split() if (typ == "OK" and data and data[0]) else []
         for uid in uids[-300:]:
             try:
-                # Récupère aussi les libellés Gmail (X-GM-LABELS) : posés par
-                # l'utilisatrice, ils priment sur l'analyse du texte.
-                typ, md = imap.fetch(uid, "(RFC822 X-GM-LABELS)")
+                typ, md = imap.fetch(uid, "(RFC822)")
                 if typ != "OK" or not md or not md[0]:
                     continue
                 msg = email.message_from_bytes(md[0][1])
-                label_hdr = md[0][0] if isinstance(md[0], (tuple, list)) else b""
                 frm_raw = str(msg.get("From", ""))
                 if any(s in frm_raw.lower() for s in alert_senders):
                     continue  # ignore les emails d'alerte d'offres
-                lab = _label_status(label_hdr)
+                # Libellés Gmail (X-GM-LABELS) posés par l'utilisatrice : lus dans
+                # un fetch séparé et défensif — s'ils priment sur l'analyse texte,
+                # ils ne doivent JAMAIS casser la détection si l'extension échoue.
+                lab = None
+                try:
+                    lt, ld = imap.fetch(uid, "(X-GM-LABELS)")
+                    if lt == "OK" and ld:
+                        raw = b" ".join(x for x in ld if isinstance(x, (bytes, bytearray)))
+                        lab = _label_status(raw)
+                except Exception:
+                    lab = None
                 if lab and lab[0] == "_skip":
                     continue  # libellé « Alertes » : pas une réponse de candidature
                 subject = _decode_mime(msg.get("Subject", ""))
@@ -2222,8 +2248,10 @@ def update_candidatures_tracking():
         return
     events = fetch_application_emails()
     if not events:
-        print("  → Aucun email de candidature détecté")
-        return
+        # Pas de nouvel email : on continue quand même pour RÉPARER les entrées
+        # existantes au sujet encodé (=?UTF-8?...?=) laissées par une ancienne
+        # version. Le nettoyage ne dépend pas d'un nouvel email.
+        print("  → Aucun nouvel email de candidature — vérification/réparation")
     # Un seul événement par offre (matching souple) : le plus récent gagne
     # (une réponse remplace un accusé), et la même offre sur 2 sites = 1 seul.
     best = []
