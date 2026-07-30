@@ -2152,8 +2152,16 @@ _POSTE_BODY_RE = re.compile(
 # Sujets « génériques » (accusé sans intitulé de poste) : on cherchera le poste
 # dans le corps, et l'association se fera alors sur l'entreprise.
 _GENERIC_APP_TITLE = re.compile(
+    # Sujet d'email générique / accusé de réception (pas un intitulé de poste) :
+    # sert à rapprocher un email de la carte existante par la SEULE entreprise.
     r'^\s*(?:re\s*:|fwd?\s*:|tr\s*:)?\s*(?:merci (?:pour|de)\s+)?(?:ta|ton|votre|your)?\s*'
-    r'(?:candidature|application)\b(?!\s+(?:pour|au|de|for))', re.I)
+    r'(?:candidature|application)\b(?!\s+(?:pour|au|de|for))|'
+    r'(?:votre|ta|ton|your)\s+(?:candidature|application)\b|'
+    r'nous avons (?:bien )?re[çc]u|bien re[çc]u (?:ta|votre|ton) candidature|'
+    r'candidature (?:bien )?(?:re[çc]ue|enregistr)|accus[ée] de r[ée]ception|'
+    r'confirmation (?:de )?(?:candidature|r[ée]ception)|merci (?:pour|de) (?:ta|votre|nous)|'
+    r'thank you for (?:your )?appl|we(?:\'ve| have) received your|application received|'
+    r'\bbienvenue\b|welcome to', re.I)
 
 
 def _company_from_subject(subject):
@@ -2348,25 +2356,20 @@ def update_candidatures_tracking():
             # titre de l'email est générique).
             c = next((x for x in cands if _app_same(
                 x.get("company", ""), x.get("title", ""), e["company"], e["title"])), None)
-            if c:
-                old = c.get("auto") or {}
-                if old.get("status") != e["status"] or e["date"] > (old.get("date") or 0):
-                    c["auto"] = auto
-                    # Candidature créée par le robot (source email) : on aligne
-                    # aussi la colonne sur le statut détecté (l'utilisatrice ne
-                    # l'a pas déplacée elle-même). Corrige un ancien mauvais
-                    # classement (ex. accusé de réception mis en « Réponse »).
-                    if c.get("source") == "email" and col.get(e["status"]):
-                        c["status"] = col[e["status"]]
-                        c["updatedAt"] = max(int(c.get("updatedAt") or 0), e["date"])
-                    changed += 1
-            else:
-                cid = (e["title"] or "") + "|" + (e["company"] or "")
-                cands.append({"id": cid, "title": e["title"] or "Candidature",
-                              "company": e["company"] or "", "location": "", "link": "",
-                              "status": col.get(e["status"], "postule"), "notes": "",
-                              "addedAt": e["date"], "updatedAt": e["date"],
-                              "auto": auto, "source": "email"})
+            # Le robot ne CRÉE plus de carte à partir des emails (trop d'erreurs :
+            # doublons, emails de bienvenue pris pour des candidatures…). Les cartes
+            # sont créées uniquement depuis le dashboard (Suivre / ajout manuel).
+            # Un email ne fait que METTRE À JOUR le statut d'une carte existante.
+            if not c:
+                continue
+            old = c.get("auto") or {}
+            if old.get("status") != e["status"] or e["date"] > (old.get("date") or 0):
+                c["auto"] = auto
+                # Candidature créée par le robot autrefois (source email) : on
+                # aligne aussi la colonne sur le statut détecté.
+                if c.get("source") == "email" and col.get(e["status"]):
+                    c["status"] = col[e["status"]]
+                    c["updatedAt"] = max(int(c.get("updatedAt") or 0), e["date"])
                 changed += 1
 
         # --- Fusion des cartes créées par email dans la candidature « suivie »
