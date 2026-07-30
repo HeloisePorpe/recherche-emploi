@@ -29,6 +29,9 @@ html, body {
   font-size: 15px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  /* Empêche tout défilement / décalage horizontal (page fixe pleine largeur). */
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 /* Header */
@@ -675,7 +678,10 @@ html, body {
   font-size: 0.8rem;
   color: var(--text-muted);
   font-style: italic;
+  overflow-wrap: anywhere;
 }
+.kc-summary { overflow-wrap: anywhere; }
+.kc-company, .kc-loc, .kc-title { overflow-wrap: anywhere; }
 
 /* Fiche « Détails & critères » repliable */
 .kc-details { margin-top: 9px; }
@@ -694,6 +700,8 @@ html, body {
 .kc-f > span { font-size: 0.75rem; font-weight: 600; color: var(--text-muted); }
 .kc-f input, .kc-f select, .kc-f textarea {
   width: 100%;
+  min-width: 0;   /* autorise le rétrécissement (date/number ont un min-width natif) */
+  max-width: 100%;
   padding: 8px 10px;
   border: 1px solid var(--border);
   border-radius: 8px;
