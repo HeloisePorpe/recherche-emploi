@@ -262,7 +262,12 @@ def is_relevant(job):
 _TITLE_EXCLUDE_HARD = re.compile(
     r'\b(alternance|alternant[e]?|apprenti[e]?|apprentissage|stage|stagiaire|'
     r'internship|intern|cdd|freelance|free-lance|int[ée]rim|vacataire|contractor|'
-    r'fixed[- ]term|temporaire)\b', re.I)
+    r'fixed[- ]term|temporaire|'
+    # Équivalents anglais de l'alternance / apprentissage / formation en entreprise.
+    r'apprentice(?:ship)?|work[- ]stud(?:y|ies)|trainee|working student|werkstudent|'
+    r'sandwich (?:course|year|placement)|placement year|industrial placement|'
+    r'year in industry|co[- ]op(?:erative)?|dual (?:study|studies|education|training)|'
+    r'graduate (?:scheme|programme|program|trainee)|vocational training)\b', re.I)
 # Engineer / ingénieur : exclu sauf si le titre parle explicitement de marketing.
 _TITLE_EXCLUDE_ENG = re.compile(r'\b(engineer|ing[ée]nieur)\b', re.I)
 
@@ -473,7 +478,14 @@ _ALT_STAGE_BODY = re.compile(
     r'\balternance\s+(?:de\s+)?\d+\s*(?:mois|semaines?|ans?)\b|'
     r'\bstage\s+(?:de\s+)?\d+\s*(?:mois|semaines?)\b|'
     r'type\s+de\s+contrat\s*:?\s*(?:alternance|apprentissage|stage|'
-    r'contrat\s+(?:pro|de\s+professionnalisation))', re.I)
+    r'contrat\s+(?:pro|de\s+professionnalisation))|'
+    # Équivalents anglais : contrat d'apprentissage / work-study explicite, ou
+    # recrutement d'un apprentice / trainee.
+    r'\b(?:apprenticeship|work[- ]study|dual study|vocational training)\s+'
+    r'(?:contract|programme?|position|scheme)|'
+    r'(?:as|for|hiring|recruit\w*|seeking|looking for)\s+(?:an?\s+)?'
+    r'(?:apprentice|work[- ]study|trainee)\b|'
+    r'\bapprentice(?:ship)?\s+in\b', re.I)
 
 
 # Détection de langue par mots-outils fréquents et distinctifs. Objectif :
