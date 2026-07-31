@@ -345,7 +345,14 @@ _CONTRACT_TERMS = re.compile(
     r'rev(?:enue)?[- ]share|uncapped earnings|per hour|/\s*hr\b|\$\s*\d+\s*/\s*h|'
     r'south african employment|\b1099\b', re.I)
 
-_STAFFING_COMPANIES = ["kicklox", "synopsia", "lineup7", "line up 7"]
+# Cabinets de conseil / ESN : télétravail dépendant du client, missions
+# successives → réserve structurelle à signaler (flag, pas exclusion).
+_STAFFING_COMPANIES = ["kicklox", "synopsia", "lineup7", "line up 7", "viseo",
+                       "cat-amania", "cat amania", "catamania", "masao",
+                       "bearingpoint", "square management", "capgemini",
+                       "alpha fmc", "brain logic", "niji", "keyrus", "micropole",
+                       "avanade", "sopra", "accenture", "wavestone", "colombus",
+                       "colombus consulting"]
 _STAFFING_TERMS = re.compile(r'\besn\b|staffing|portage salarial|r[ée]gie', re.I)
 
 _AUTO_TERMS = re.compile(
@@ -366,8 +373,17 @@ _ENTRY_LEVEL = re.compile(
     r'd[ée]butant accept|junior|entry[- ]level|premier emploi|sans exp[ée]rience', re.I)
 _REMOTE_MENTION = re.compile(r't[ée]l[ée]travail|remote|distanciel|home[- ]office', re.I)
 
-# Employeurs identifiés comme non pertinents (portfolios, ESN Dynamics, etc.).
-_EXCLUDE_COMPANIES = ["mr pape", "veripark", "max accelerate", "maxaccelerate", "kennflik"]
+# Employeurs identifiés comme non pertinents (portfolios, ESN Dynamics, tech pur…).
+# Volume de faux positifs confirmé (note de calibration v3) : ces employeurs ne
+# produisent que des postes hors cible (growth, produit, ops, RH, tech).
+_EXCLUDE_COMPANIES = ["mr pape", "veripark", "max accelerate", "maxaccelerate",
+                      "kennflik", "qonto", "dataiku", "havas", "powerplay",
+                      "360learning", "360 learning"]
+
+# Employeurs à exclure SAUF si le titre porte un vrai signal CRM/lifecycle
+# (secteur autrement favorable mais beaucoup de postes hors cible). Bornes de mot
+# pour éviter les collisions (« alan » dans « catalan », etc.).
+_CONDITIONAL_EXCLUDE_RE = re.compile(r'\b(?:alan|doctolib)\b', re.I)
 
 # Titres logistique / entrepôt.
 _TITLE_LOGISTICS = re.compile(
@@ -419,11 +435,17 @@ _CRM_TECH_BODY = re.compile(
     r'mont[ée]es?\s+de\s+version', re.I)
 
 # Marketing hors cœur de cible — disciplines adjacentes (§2) : terrain, marque,
-# événementiel, communauté, acquisition/growth/demand gen, product marketing.
+# événementiel, communauté, acquisition/growth/demand gen, product marketing,
+# social media, ad-ops / programmatique, PMO / programme stratégique, RH / ops.
 _TITLE_OFFCORE = re.compile(
     r'\b(field marketing|growth marketing|demand generation|demand gen|'
     r'product marketing|acquisition (?:manager|marketing)|brand (?:manager|marketing)|'
-    r'community manager|program manager[, ]+community|[ée]v[ée]nementiel|event manager)\b',
+    r'community manager|program manager[, ]+community|[ée]v[ée]nementiel|event manager|'
+    r'social media|social campaign|ad ?operations|ad ?ops|programmatic|'
+    r'media trader|media trading|trading manager|'
+    r'growth (?:project|program) manager|strategic operations|partnerships? growth|'
+    r'people ?(?:ops|operations)|\bhrbp\b|human resources|talent acquisition|'
+    r'executive assistant|office manager|comptable|accountant|bookkeeper)\b',
     re.I)
 
 # Profils freelance de marketplace (« I will [service] for you »).
@@ -560,6 +582,8 @@ def screen_offer(job):
         return True, "Profil freelance marketplace (« I will… »)", flags
     if any(c in cl for c in _EXCLUDE_COMPANIES):
         return True, "Employeur non pertinent (ESN / portfolio)", flags
+    if _CONDITIONAL_EXCLUDE_RE.search(cl) and not _CORE_CRM_TITLE.search(title):
+        return True, "Employeur hors cible (sauf poste CRM/lifecycle explicite)", flags
     if any(c in cl for c in _MEDICAL_COMPANIES) or _MEDICAL_TERMS.search(text):
         return True, "CRM médical (dispositifs cardiaques)", flags
     if _TITLE_LOGISTICS.search(title):
@@ -616,7 +640,10 @@ def screen_offer(job):
     if ("$" in sal_raw or "usd" in sal_raw.lower()) and "€" not in sal_raw:
         flags.append("Salaire en USD")
     if any(s in cl for s in _STAFFING_COMPANIES) or _STAFFING_TERMS.search(text):
-        flags.append("Via ESN / staffing")
+        # Réserve levée si le télétravail est garanti sans condition de mission.
+        if not re.search(r't[ée]l[ée]travail\s+(?:flexible|illimit|sans\s+(?:limit|condition))|'
+                         r'full\s*remote\s+(?:garanti|permanent)', text, re.I):
+            flags.append("Conseil / ESN — télétravail dépendant de la mission ?")
     if _SPECIFIC_ESP.search(text) and _PROG_TERMS.search(text) and _NICHE_SECTOR.search(text):
         flags.append("Écart technique large")
     if any(int(y) > 7 for y in _SENIOR_YEARS.findall(text)):
@@ -1136,14 +1163,13 @@ _CAREER_COMPANIES = [
     # `ats` fige un ATS (évite d'essayer les autres) ; `slug` = identifiant confirmé ;
     # `slugs` = variantes supplémentaires à tester. Sinon on essaie tous les ATS avec
     # des variantes de nom générées automatiquement.
-    {"name": "Qonto", "slug": "qonto", "ats": "lever"},
+    # Qonto, Dataiku, 360Learning retirés : 0 offre pertinente (note v3),
+    # désormais exclus par employeur (inutile de les interroger).
     {"name": "Doctolib", "slug": "doctolib", "ats": "greenhouse"},
     {"name": "BlaBlaCar", "slug": "blablacar", "ats": "lever"},
     {"name": "Contentsquare", "slug": "contentsquare", "ats": "lever"},
-    {"name": "Dataiku", "slug": "dataiku", "ats": "greenhouse"},
     {"name": "Mirakl", "slug": "mirakl", "ats": "greenhouse"},
     {"name": "Aircall", "slug": "aircall", "ats": "lever"},
-    {"name": "360Learning", "slug": "360learning", "ats": "lever"},
     {"name": "Swile", "slug": "swile", "ats": "lever"},
     {"name": "Vestiaire Collective", "slug": "vestiairecollective", "ats": "lever"},
     {"name": "Veepee", "slug": "veepee", "ats": "lever"},
