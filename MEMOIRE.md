@@ -133,7 +133,10 @@ Gmail dédiée (`heloise.emploi@gmail.com`), via IMAP (`fetch_email_alerts`) :
     adjacentes** (field/brand/community/événementiel **+ growth marketing / demand
     generation / product marketing / acquisition**) ; **clienteling en boutique /
     in-store** (présentiel luxe, ex. Versace) ; logistique (cariste/CACES/entrepôt) ;
-    employeur non pertinent (Mr Pape, VeriPark, MaxAccelerate, Kennflik) ; freelance
+    **employeur non pertinent** (Mr Pape, VeriPark, MaxAccelerate, Kennflik,
+    **Qonto, Dataiku, Havas, PowerPlay, 360Learning**) ; **Alan / Doctolib exclus
+    sauf titre CRM/lifecycle explicite** ; **disciplines adjacentes** (social media,
+    ad-ops/programmatique, PMO stratégique, RH-ops — §2) ; freelance
     marketplace (« I will… ») ; CRM = caisse ; automobile ; présentiel explicite /
     pas de télétravail ; résidence US ou hors France obligatoire ; **télétravail /
     localisation dans un pays étranger précis** (UK, Allemagne, Espagne… ; « remote
