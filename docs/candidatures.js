@@ -9,14 +9,6 @@ const COLUMNS = [
 ];
 const VALID_STATUS = new Set(COLUMNS.map((c) => c.key));
 
-// Statut détecté par le robot (email) -> libellé + classe.
-const AUTO_META = {
-  postule: { label: 'Candidature envoyée', cls: 'auto-sent' },
-  en_attente: { label: 'En attente de réponse', cls: 'auto-wait' },
-  positif: { label: 'Réponse positive', cls: 'auto-pos' },
-  negatif: { label: 'Réponse négative', cls: 'auto-neg' },
-};
-
 // Critères cochables (fiche offre). `key` stocké dans candidature.criteria.
 const CRITERIA = [
   { key: 'commute_ok', label: '🚇 Trajet OK' },
@@ -139,11 +131,8 @@ function cardHtml(c) {
     : '';
   const company = c.company ? `<div class="kc-company">${escapeHtml(c.company)}</div>` : '';
   const loc = c.location ? `<div class="kc-loc">${escapeHtml(c.location)}</div>` : '';
-  const auto = c.auto && AUTO_META[c.auto.status]
-    ? `<div class="kc-auto ${AUTO_META[c.auto.status].cls}" title="Détecté par email">
-         🤖 ${AUTO_META[c.auto.status].label}${c.auto.reason ? ' — ' + escapeHtml(c.auto.reason) : ''}
-       </div>`
-    : '';
+  // Bandeaux de détection email retirés à la demande (trop d'erreurs de
+  // classement) : le statut est géré manuellement via le menu « Statut ».
   // Contrôle de statut (tactile) : déplacer la carte sans glisser-déposer,
   // indispensable sur mobile où le drag ne fonctionne pas.
   const moveCtrl = `
@@ -167,7 +156,6 @@ function cardHtml(c) {
       ${company}
       ${loc}
       ${summaryHtml}
-      ${auto}
       ${link}
       ${moveCtrl}
       ${detailsHtml(c)}
