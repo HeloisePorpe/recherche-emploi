@@ -122,6 +122,12 @@ Gmail dédiée (`heloise.emploi@gmail.com`), via IMAP (`fetch_email_alerts`) :
 ## Filtrage à la source (`should_include` + `screen_offer`)
 
 - **Salaire plancher** (42 055 € si indiqué) + pertinence CRM.
+- **Pré-filtre structurel (étape 1)** dans `screen_offer` : une offre est écartée
+  sans évaluation si le **titre ou la description ne contient AUCUN mot-clé CRM /
+  marketing lifecycle** (`_CRM_KEYWORD_RE`) — élimine le bruit des agrégateurs
+  anglophones (agent scolaire, assistanat médical, VP Sales…). Idem si la
+  **rémunération est anormale** (millions → scam probable, testé sur le seul champ
+  salaire). Le scoring fin ne s'applique qu'aux offres ayant passé cette étape.
 - **`screen_offer`** (règles issues de l'analyse des refus) à deux niveaux :
   - **Exclusion** (non ambigu, indépendant de la description) : titre
     alternance/stage/CDD/freelance (titre **ou** champ contrat Adzuna « contract »,
