@@ -5,7 +5,7 @@ const COLUMNS = [
   { key: 'a_postuler', label: 'À postuler' },
   { key: 'postule', label: 'Postulé' },
   { key: 'entretien', label: 'Entretien' },
-  { key: 'reponse', label: 'Réponse' },
+  { key: 'reponse', label: 'Réponse négative' },
 ];
 const VALID_STATUS = new Set(COLUMNS.map((c) => c.key));
 
