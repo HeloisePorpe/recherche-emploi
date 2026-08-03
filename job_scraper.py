@@ -254,6 +254,27 @@ def is_relevant(job):
     return any(k in t for k in _RELEVANCE_KEYWORDS)
 
 
+# Pré-filtre structurel (étape 1) : un mot-clé CRM / marketing lifecycle DOIT
+# figurer dans le titre ou la description, sinon l'offre est hors sujet et
+# écartée sans évaluation (agent scolaire, assistanat médical, VP Sales…), quelle
+# que soit la catégorie affichée par la source anglophone (WWR/RemoteOK…).
+_CRM_KEYWORD_RE = re.compile(
+    r'\bcrm\b|campagne|campaign|life ?cycle|cycle de vie|marketing automation|'
+    r'\bsegmentation\b|email(?:ing)? marketing|e-?mail marketing|\bemailing\b|'
+    r'marketing relationnel|fid[ée]lisation|r[ée]tention|\bretention\b|'
+    r'parcours client|customer journey|r[ée]activation|marketing crm|crm marketing|'
+    r'customer relationship|relation client|owned media|chargé[e]?\s+de\s+campagnes?|'
+    r'braze|emarsys|adobe campaign|salesforce marketing|marketing cloud|'
+    r'\bhubspot\b|klaviyo|iterable|dartagnan|selligent|\bbrevo\b', re.I)
+
+# Rémunération anormale (millions pour un poste individuel) = signal de scam.
+# Appliqué UNIQUEMENT au champ salaire (jamais à la description, pour ne pas
+# confondre avec le CA / la levée de fonds de l'entreprise « €350M », « $10M »).
+_COMP_SCAM_RE = re.compile(
+    r'\b\d+(?:[.,]\d+)?\s*(?:m|mm|million|mio)s?\b|'
+    r'\d[\s.,]?\d{3}[\s.,]?\d{3}[\s.,]?\d{3}', re.I)
+
+
 # ── Filtrage fin : règles issues de l'analyse des refus ─────────────────────────
 # Deux niveaux : EXCLUSION (signaux non ambigus -> offre retirée) et
 # ALERTE (signaux ambigus -> offre gardée avec un badge à revoir).
@@ -567,6 +588,15 @@ def screen_offer(job):
     # ---- EXCLUSIONS (signaux non ambigus) ----
     if job.get("expired"):
         return True, "Offre expirée / plus disponible", flags
+    # Pré-filtre structurel (étape 1) : aucun mot-clé CRM / marketing lifecycle
+    # dans le titre ou la description -> hors sujet, écartée sans évaluation.
+    if not _CRM_KEYWORD_RE.search(f"{title} {job.get('description') or ''}"):
+        return True, "Hors sujet (aucun mot-clé CRM / marketing)", flags
+    # Rémunération anormale (millions) = scam probable — testé sur le champ salaire.
+    _sraw = f"{job.get('salary_raw') or ''} {job.get('salary_extracted') or ''}"
+    _sval = parse_salary_value(_sraw)
+    if _COMP_SCAM_RE.search(_sraw) or (_sval and _sval > 300000):
+        return True, "Rémunération anormale (scam probable)", flags
     if _TITLE_EXCLUDE_HARD.search(title):
         return True, "Titre exclu (alternance / stage / CDD / freelance)", flags
     if _TITLE_EXCLUDE_ENG.search(title) and "marketing" not in tl:
