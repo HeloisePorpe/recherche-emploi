@@ -120,6 +120,11 @@ Gmail dédiée (`heloise.emploi@gmail.com`), via IMAP (`fetch_email_alerts`) :
   configuré : fusion union par clé stable, désarchivage géré par tombstone
   (`deleted`). Les archives survivent donc à un vidage de cache et se partagent
   entre appareils (comme les candidatures). Sans jeton : local seulement.
+  **Exclusion côté robot** : à chaque scan, `drop_archived()` relit `archivees.json`
+  et retire toute offre correspondant à une archive — quelle que soit la plateforme
+  (rapprochement `_is_archived_offer` = même logique « même offre » que la dédup :
+  `_title_match` + entreprise souple). Une annonce déjà écartée ne réapparaît donc
+  jamais dans le dashboard, même diffusée par un autre site.
 - Filtres mémorisés (localStorage), compteur de filtres actifs
 - Responsive : 1 col (mobile) / 2 col (tablette-portable) / auto (large)
 

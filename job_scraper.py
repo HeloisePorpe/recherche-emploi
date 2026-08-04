@@ -2479,6 +2479,88 @@ def update_candidatures_tracking():
         print(f"  → Suivi candidatures : ERREUR {ex}")
 
 
+# ── Offres écartées (archives) : exclusion côté robot ───────────────────────────
+#
+# Les offres qu'Héloïse a écartées (« ✕ Pas pertinent ») sont synchronisées dans
+# le dépôt PRIVÉ (archivees.json) par le dashboard. Le robot les relit et retire
+# du scan toute offre correspondante — même diffusée par une autre plateforme —
+# pour qu'une annonce déjà analysée et rejetée ne réapparaisse jamais.
+# Le rapprochement est platform-agnostique : titre normalisé + entreprise proche
+# (même logique que le dédoublonnage et que le dashboard).
+
+def fetch_archived_offers():
+    """Liste des offres écartées (actives, hors tombstones) depuis le dépôt privé."""
+    repo = CONFIG.get("candidatures_repo", "")
+    token = CONFIG.get("candidatures_token", "")
+    if not repo or not token:
+        return []
+    branch = CONFIG.get("candidatures_branch", "main")
+    api = f"https://api.github.com/repos/{repo}/contents/archivees.json"
+    headers = {"Authorization": "Bearer " + token, "Accept": "application/vnd.github+json"}
+    try:
+        r = requests.get(f"{api}?ref={branch}", headers=headers, timeout=20)
+        if r.status_code == 404:
+            return []  # pas encore d'archives synchronisées
+        if r.status_code != 200:
+            print(f"  → Archives : GET {r.status_code}")
+            return []
+        data = json.loads(base64.b64decode(r.json().get("content", "")).decode("utf-8"))
+        if not isinstance(data, list):
+            return []
+        return [a for a in data if isinstance(a, dict) and not a.get("deleted")]
+    except Exception as ex:
+        print(f"  → Archives : ERREUR {ex}")
+        return []
+
+
+def _is_archived_offer(job, archived):
+    """L'offre correspond-elle à une entrée écartée ? On réutilise la même notion
+    de « même offre » que le dédoublonnage (`_title_match` + entreprise souple) :
+    si le scraper fusionnerait ces deux annonces, l'archive s'applique — quelle que
+    soit la plateforme (Adzuna, Meteojob, site carrière…). Les titres génériques
+    courts (« crm manager ») ne suffisent pas : il faut un titre spécifique
+    (≥ 24 car. en préfixe) ou une entreprise concordante, comme pour la dédup."""
+    jt = _norm_txt(job.get("title", ""))[:60]
+    jc = _norm_txt(job.get("company", ""))
+    if not jt:
+        return False
+
+    def _prefix(a, b, n):
+        """a et b identiques, ou l'un préfixe de l'autre avec ≥ n car. partagés."""
+        if not a or not b:
+            return False
+        if a == b:
+            return True
+        shorter, longer = (a, b) if len(a) <= len(b) else (b, a)
+        return len(shorter) >= n and longer.startswith(shorter)
+
+    for a in archived:
+        at = _norm_txt(a.get("title", ""))[:60]
+        ac = _norm_txt(a.get("company", ""))
+        same_company = jc and ac and (jc in ac or ac in jc)
+        if same_company:
+            # Entreprise concordante : titre identique ou préfixe ≥ 14 car. (seuil
+            # déjà utilisé par la dédup pour un même recruteur). Évite d'écarter
+            # d'autres postes à partir d'un titre générique (« crm manager »).
+            if _prefix(jt, at, 14):
+                return True
+        elif (not jc or not ac) and _title_match(jt, at) and len(jt) >= 20:
+            # Entreprise absente d'un côté : n'écarte que sur un titre spécifique.
+            return True
+        # Entreprises présentes des deux côtés mais différentes : employeur distinct
+        # → offre différente, on n'écarte pas.
+    return False
+
+
+def drop_archived(jobs):
+    """Retire du scan les offres déjà écartées par Héloïse (toutes plateformes)."""
+    archived = fetch_archived_offers()
+    if not archived:
+        return jobs, 0
+    kept = [j for j in jobs if not _is_archived_offer(j, archived)]
+    return kept, len(jobs) - len(kept)
+
+
 # ── Main ───────────────────────────────────────────────────────────────────────
 
 def run():
@@ -2604,6 +2686,13 @@ def run():
             excl += 1
 
     print(f"\nFiltrage : {len(filtered)} retenues, {excl} exclues")
+
+    # Retire les offres déjà écartées par Héloïse (dépôt privé), quelle que soit
+    # la plateforme : une annonce rejetée ne doit jamais réapparaître.
+    filtered, dropped = drop_archived(filtered)
+    if dropped:
+        print(f"Archives : {dropped} offre(s) déjà écartée(s) retirée(s)")
+
     filtered.sort(key=lambda j: compute_score(j)[0], reverse=True)
 
     export_json_local(filtered)
