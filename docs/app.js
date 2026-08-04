@@ -450,6 +450,13 @@ function render() {
 // --- Construction des filtres de source ---
 function buildSourceFilters() {
   const sources = [...new Set(allJobs.map((j) => j.source).filter(Boolean))].sort();
+  // Élague les sources « fantômes » retenues en mémoire mais qui n'existent plus
+  // (sources renommées/retirées). Sinon, le filtre garde des noms qui ne
+  // correspondent à aucune offre -> 0 résultat alors que « aucun filtre » visible.
+  const valid = new Set(sources);
+  let pruned = false;
+  state.sources.forEach((s) => { if (!valid.has(s)) { state.sources.delete(s); pruned = true; } });
+  if (pruned) saveState();
   els.sourceFilters.innerHTML = sources
     .map(
       (s) => `
@@ -533,6 +540,7 @@ function bindEvents() {
   els.reset.addEventListener('click', () => {
     state = defaultState();
     showArchived = false;
+    saveState();
     syncControls();
     render();
   });
