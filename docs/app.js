@@ -428,10 +428,23 @@ function render() {
       `${jobs.length} offre${jobs.length > 1 ? 's' : ''} archivée${jobs.length > 1 ? 's' : ''}`;
   } else {
     const active = activeFilterCount();
+    // Détail du masquage « invisible » (ni filtre, ni recherche) pour que l'écart
+    // entre affichées et total soit compréhensible : offres archivées + offres
+    // déjà présentes dans « Mes candidatures » (masquées sauf « Afficher les
+    // offres déjà suivies »).
+    const isJobArchived = makeArchivedMatcher();
+    const hiddenArchived = allJobs.filter(isJobArchived).length;
+    const hiddenApplied = (!state.showApplied && typeof candidatureForJob === 'function')
+      ? allJobs.filter((j) => !isJobArchived(j) && candidatureForJob(j)).length
+      : 0;
+    const bits = [];
+    if (hiddenArchived) bits.push(`${hiddenArchived} archivée${hiddenArchived > 1 ? 's' : ''}`);
+    if (hiddenApplied) bits.push(`${hiddenApplied} déjà suivie${hiddenApplied > 1 ? 's' : ''}`);
+    if (active > 0) bits.push(`${active} filtre${active > 1 ? 's' : ''} actif${active > 1 ? 's' : ''}`);
     els.counter.textContent =
       `${jobs.length} offre${jobs.length > 1 ? 's' : ''} affichée${jobs.length > 1 ? 's' : ''}` +
       (jobs.length !== allJobs.length ? ` sur ${allJobs.length}` : '') +
-      (active > 0 ? ` · ${active} filtre${active > 1 ? 's' : ''} actif${active > 1 ? 's' : ''}` : '');
+      (bits.length ? ` · ${bits.join(' · ')}` : '');
   }
 
   if (jobs.length === 0) {
