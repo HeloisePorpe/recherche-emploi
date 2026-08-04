@@ -15,7 +15,6 @@ const defaultState = () => ({
   teleworkOnly: false,
   cdiOnly: false,
   hideFlagged: false,    // masquer les offres avec alertes de filtrage
-  showApplied: false,    // afficher les offres déjà suivies (masquées par défaut)
   recommendation: '',    // '' = toutes ; sinon à_postuler / à_revoir / à_écarter
   myCriteria: false,     // filtre trajet + télétravail — désactivé par défaut (opt-in)
   criteriaStrict: false, // masquer aussi les offres à l'info manquante
@@ -40,7 +39,6 @@ const els = {
   teleworkOnly: document.getElementById('telework-only'),
   cdiOnly: document.getElementById('cdi-only'),
   hideFlagged: document.getElementById('hide-flagged'),
-  showApplied: document.getElementById('show-applied'),
   recommendation: document.getElementById('reco-filter'),
   myCriteria: document.getElementById('my-criteria'),
   criteriaSub: document.getElementById('criteria-sub'),
@@ -191,7 +189,6 @@ function syncControls() {
   els.teleworkOnly.checked = state.teleworkOnly;
   els.cdiOnly.checked = state.cdiOnly;
   els.hideFlagged.checked = state.hideFlagged;
-  if (els.showApplied) els.showApplied.checked = state.showApplied;
   if (els.recommendation) els.recommendation.value = state.recommendation;
   els.myCriteria.checked = state.myCriteria;
   els.criteriaStrict.checked = state.criteriaStrict;
@@ -266,9 +263,10 @@ function getFilteredJobs() {
     // Recommandation du robot de tri
     if (state.recommendation && (job.recommendation || '') !== state.recommendation) return false;
     // Offres déjà suivies (présentes dans « Mes candidatures », quel que soit le
-    // statut) : masquées par défaut. Cliquer « Suivre » les fait disparaître d'ici
-    // pour ne garder que les annonces encore à consulter.
-    if (!state.showApplied && typeof candidatureForJob === 'function' && candidatureForJob(job)) return false;
+    // statut) : TOUJOURS masquées de l'onglet Offres. Cliquer « Suivre » les fait
+    // basculer dans « Mes candidatures » ; ici on ne garde que les annonces encore
+    // à parcourir.
+    if (typeof candidatureForJob === 'function' && candidatureForJob(job)) return false;
     // Critères perso trajet + télétravail
     if (state.myCriteria) {
       const st = criteriaStatus(job);
@@ -304,7 +302,6 @@ function activeFilterCount() {
   if (state.teleworkOnly) n++;
   if (state.cdiOnly) n++;
   if (state.hideFlagged) n++;
-  if (state.showApplied) n++;
   if (state.recommendation) n++;
   if (state.myCriteria) n++;
   if (state.sources.size > 0) n++;
@@ -428,23 +425,17 @@ function render() {
       `${jobs.length} offre${jobs.length > 1 ? 's' : ''} archivée${jobs.length > 1 ? 's' : ''}`;
   } else {
     const active = activeFilterCount();
-    // Détail du masquage « invisible » (ni filtre, ni recherche) pour que l'écart
-    // entre affichées et total soit compréhensible : offres archivées + offres
-    // déjà présentes dans « Mes candidatures » (masquées sauf « Afficher les
-    // offres déjà suivies »).
+    // Le total « à parcourir » exclut les offres archivées ET les offres déjà
+    // suivies (présentes dans « Mes candidatures ») : ce ne sont pas des annonces
+    // à consulter. Le compteur reflète donc uniquement ce qu'il reste à parcourir.
     const isJobArchived = makeArchivedMatcher();
-    const hiddenArchived = allJobs.filter(isJobArchived).length;
-    const hiddenApplied = (!state.showApplied && typeof candidatureForJob === 'function')
-      ? allJobs.filter((j) => !isJobArchived(j) && candidatureForJob(j)).length
-      : 0;
-    const bits = [];
-    if (hiddenArchived) bits.push(`${hiddenArchived} archivée${hiddenArchived > 1 ? 's' : ''}`);
-    if (hiddenApplied) bits.push(`${hiddenApplied} déjà suivie${hiddenApplied > 1 ? 's' : ''}`);
-    if (active > 0) bits.push(`${active} filtre${active > 1 ? 's' : ''} actif${active > 1 ? 's' : ''}`);
+    const toReview = allJobs.filter((j) =>
+      !isJobArchived(j) && !(typeof candidatureForJob === 'function' && candidatureForJob(j))
+    ).length;
     els.counter.textContent =
-      `${jobs.length} offre${jobs.length > 1 ? 's' : ''} affichée${jobs.length > 1 ? 's' : ''}` +
-      (jobs.length !== allJobs.length ? ` sur ${allJobs.length}` : '') +
-      (bits.length ? ` · ${bits.join(' · ')}` : '');
+      `${jobs.length} offre${jobs.length > 1 ? 's' : ''} à parcourir` +
+      (jobs.length !== toReview ? ` sur ${toReview}` : '') +
+      (active > 0 ? ` · ${active} filtre${active > 1 ? 's' : ''} actif${active > 1 ? 's' : ''}` : '');
   }
 
   if (jobs.length === 0) {
@@ -529,12 +520,6 @@ function bindEvents() {
     state.hideFlagged = els.hideFlagged.checked;
     render();
   });
-  if (els.showApplied) {
-    els.showApplied.addEventListener('change', () => {
-      state.showApplied = els.showApplied.checked;
-      render();
-    });
-  }
   if (els.recommendation) {
     els.recommendation.addEventListener('change', () => {
       state.recommendation = els.recommendation.value;
@@ -567,8 +552,7 @@ function bindEvents() {
     if (follow) {
       const job = allJobs.find((j) => candidatureId(j) === follow.getAttribute('data-follow'));
       if (job && addCandidature(job)) {
-        // L'offre suivie rejoint « Mes candidatures » et disparaît de la liste
-        // (sauf si « Afficher les offres déjà suivies » est coché).
+        // L'offre suivie rejoint « Mes candidatures » et disparaît de la liste.
         render();
       }
       return;

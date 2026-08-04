@@ -104,9 +104,10 @@ Gmail dédiée (`heloise.emploi@gmail.com`), via IMAP (`fetch_email_alerts`) :
   détectée « postulée » par le robot email) est marquée d'un badge **« Déjà
   postulée »** sur le dashboard, **même si elle vient d'une autre plateforme**
   (rapprochement souple titre + entreprise, `candidatureForJob` dans `store.js`).
-  Les offres **déjà postulées** (statut envoyé/entretien/réponse) sont **masquées
-  par défaut** de l'onglet Offres (visibles dans « Mes candidatures ») ; case
-  **« Afficher les offres déjà postulées »** pour les réafficher (`jobApplied`).
+  Les offres **déjà suivies** (présentes dans « Mes candidatures », quel que soit
+  le statut) sont **toujours masquées** de l'onglet Offres — elles vivent dans
+  « Mes candidatures ». L'onglet Offres ne montre que les annonces **à parcourir**,
+  et le compteur (« N offres à parcourir ») exclut archivées **et** déjà suivies.
 - **🤖 Recommandation** (robot de tri) : chaque offre reçoit `à postuler` /
   `à revoir` / `à écarter` **avec la raison**, affichée sur la carte + filtre dédié.
   Logique dans `recommend_offer` (`job_scraper.py`), en **règles** pour l'instant
