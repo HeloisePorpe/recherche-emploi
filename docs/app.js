@@ -610,6 +610,9 @@ async function init() {
     // Synchronise les candidatures suivies (fichier partagé) puis re-rend
     // pour refléter l'état « Suivie » à jour sur tous les appareils.
     if (typeof syncPull === 'function') syncPull().then(render).catch(() => {});
+    // Synchronise aussi les offres écartées (archives) : récupère celles des
+    // autres appareils et pousse les locales absentes du cloud, puis re-rend.
+    if (typeof syncArchived === 'function') syncArchived().then(render).catch(() => {});
   } catch (err) {
     els.counter.textContent = 'Erreur de chargement';
     els.cards.innerHTML = `<p class="empty-state">Impossible de charger les offres (${escapeHtml(err.message)}).<br>Lancez un serveur local (python -m http.server) pour tester.</p>`;

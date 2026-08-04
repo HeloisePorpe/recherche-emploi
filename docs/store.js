@@ -19,6 +19,7 @@ const GH_OWNER = 'HeloisePorpe';
 const GH_REPO = 'recherche-emploi-candidatures'; // dépôt PRIVÉ dédié
 const GH_BRANCH = 'main';
 const GH_PATH = 'candidatures.json';
+const GH_ARCHIVE_PATH = 'archivees.json'; // offres écartées, synchronisées comme les candidatures
 const GH_TOKEN_KEY = 'recherche-emploi-gh-token';
 
 const CANDIDATURES_KEY = 'recherche-emploi-candidatures';
@@ -302,21 +303,107 @@ function removeCandidature(id) {
   }
 }
 
-// ── Offres archivées (jugées non pertinentes) — locales ─────────────────────
-function loadArchived() {
+// ── Offres archivées (jugées non pertinentes) — synchronisées ───────────────
+// Comme les candidatures, les archives vivent dans le dépôt privé (archivees.json)
+// dès qu'un jeton est configuré, et en cache localStorage. Elles survivent donc à
+// un vidage de cache et se partagent entre appareils. Sans jeton : local seulement.
+// La désarchivage passe par un tombstone (deleted) pour que le retrait se propage.
+function loadArchivedRaw() {
   try {
     const raw = localStorage.getItem(ARCHIVED_KEY);
     const arr = raw ? JSON.parse(raw) : [];
-    return Array.isArray(arr) ? arr : [];
+    if (!Array.isArray(arr)) return [];
+    // Compat : garantit une clé stable et un updatedAt pour la fusion.
+    arr.forEach((a) => {
+      if (!a.key) a.key = archiveKey(a);
+      if (!a.updatedAt) a.updatedAt = a.archivedAt || nowTs();
+    });
+    return arr;
   } catch (_) {
     return [];
   }
+}
+
+// Archives actives (hors tombstones) — pour l'affichage et le matching.
+function loadArchived() {
+  return loadArchivedRaw().filter((a) => !a.deleted);
 }
 
 function saveArchived(list) {
   try {
     localStorage.setItem(ARCHIVED_KEY, JSON.stringify(list));
   } catch (_) { /* localStorage indisponible */ }
+}
+
+// Fusion de deux listes d'archives : union par clé, l'entrée au updatedAt le plus
+// récent gagne (gère les tombstones de désarchivage). Les archives ne font que
+// grandir → une union est sûre et non destructrice.
+function mergeArchived(a, b) {
+  const byKey = new Map();
+  const consider = (x) => {
+    if (!x) return;
+    const k = x.key || archiveKey(x);
+    const prev = byKey.get(k);
+    if (!prev) { byKey.set(k, { ...x, key: k }); return; }
+    const xNewer = (x.updatedAt || x.archivedAt || 0) >= (prev.updatedAt || prev.archivedAt || 0);
+    byKey.set(k, xNewer ? { ...x, key: k } : prev);
+  };
+  (a || []).forEach(consider);
+  (b || []).forEach(consider);
+  return [...byKey.values()];
+}
+
+// Signature d'une liste d'archives (clés + état supprimé) pour éviter un PUT inutile.
+function _archiveSig(list) {
+  return (list || [])
+    .map((a) => (a.key || archiveKey(a)) + (a.deleted ? '#x' : ''))
+    .sort()
+    .join('|');
+}
+
+// Synchronise les archives : lit le fichier distant, fusionne, et ne pousse
+// que si le résultat diffère du distant. Un seul GET par appel, PUT si besoin.
+let _archiveTimer = null;
+async function syncArchived(retry = 1) {
+  const token = getGhToken();
+  if (!token) return loadArchived();
+  const api = `https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/contents/${GH_ARCHIVE_PATH}`;
+  const headers = { Authorization: 'Bearer ' + token, Accept: 'application/vnd.github+json' };
+  let remote = [], sha = null;
+  try {
+    const getRes = await fetch(`${api}?ref=${GH_BRANCH}&_=${nowTs()}`, { headers, cache: 'no-store' });
+    if (getRes.ok) {
+      const meta = await getRes.json();
+      sha = meta.sha;
+      try { remote = JSON.parse(_b64decode(meta.content || '')); } catch (_) { remote = []; }
+      if (!Array.isArray(remote)) remote = [];
+    } else if (getRes.status !== 404) {
+      return loadArchived(); // réseau/API indisponible : on garde le local
+    }
+  } catch (_) {
+    return loadArchived();
+  }
+  const merged = mergeArchived(loadArchivedRaw(), remote);
+  saveArchived(merged);
+  if (_archiveSig(remote) === _archiveSig(merged)) return merged; // rien à pousser
+  try {
+    const body = {
+      message: 'MAJ archives (dashboard)',
+      content: _b64encode(JSON.stringify(merged, null, 2)),
+      branch: GH_BRANCH,
+    };
+    if (sha) body.sha = sha;
+    const putRes = await fetch(api, { method: 'PUT', headers, body: JSON.stringify(body) });
+    if (putRes.status === 409 && retry > 0) return syncArchived(retry - 1); // conflit de SHA
+  } catch (_) { /* on garde le local, réessai au prochain chargement */ }
+  return merged;
+}
+
+// Pousse les archives avec un léger délai (regroupe les écarts rapprochés).
+function scheduleSyncArchived() {
+  if (!hasGhToken()) return;
+  if (_archiveTimer) clearTimeout(_archiveTimer);
+  _archiveTimer = setTimeout(() => { syncArchived(); }, 1200);
 }
 
 // Clé d'archivage STABLE (indépendante du lien) : titre normalisé + entreprise
@@ -355,28 +442,45 @@ function isArchived(job) {
 
 function archiveJob(job) {
   const key = archiveKey(job);
-  const list = loadArchived();
-  if (list.some((a) => (a.key || archiveKey(a)) === key)) return false;
-  list.push({
-    key,
-    id: candidatureId(job),  // conservé pour compat / restauration
-    title: job.title || '',
-    company: job.company || '',
-    location: job.location || '',
-    link: job.link || '',
-    source: job.source || '',
-    score: job.score,
-    telework_days: job.telework_days,
-    commute_minutes: job.commute_minutes,
-    contract_type: job.contract_type || null,
-    published: job.published || '',
-    archivedAt: nowTs(),
-  });
+  const list = loadArchivedRaw();
+  const existing = list.find((a) => (a.key || archiveKey(a)) === key);
+  if (existing) {
+    if (!existing.deleted) return false;   // déjà archivée et active
+    existing.deleted = false;              // ré-archivage : on lève le tombstone
+    existing.updatedAt = nowTs();
+  } else {
+    list.push({
+      key,
+      id: candidatureId(job),  // conservé pour compat / restauration
+      title: job.title || '',
+      company: job.company || '',
+      location: job.location || '',
+      link: job.link || '',
+      source: job.source || '',
+      score: job.score,
+      telework_days: job.telework_days,
+      commute_minutes: job.commute_minutes,
+      contract_type: job.contract_type || null,
+      published: job.published || '',
+      archivedAt: nowTs(),
+      updatedAt: nowTs(),
+    });
+  }
   saveArchived(list);
+  scheduleSyncArchived();
   return true;
 }
 
-// Restauration par clé stable (data-unarchive = archiveKey de l'offre).
+// Désarchivage par clé stable (data-unarchive = archiveKey de l'offre).
+// Tombstone (deleted) plutôt que suppression, pour que le retrait se synchronise
+// et ne « revienne » pas depuis un autre appareil au prochain pull.
 function unarchiveJob(key) {
-  saveArchived(loadArchived().filter((a) => (a.key || archiveKey(a)) !== key));
+  const list = loadArchivedRaw();
+  const a = list.find((x) => (x.key || archiveKey(x)) === key);
+  if (a) {
+    a.deleted = true;
+    a.updatedAt = nowTs();
+    saveArchived(list);
+    scheduleSyncArchived();
+  }
 }

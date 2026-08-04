@@ -115,7 +115,11 @@ Gmail dédiée (`heloise.emploi@gmail.com`), via IMAP (`fetch_email_alerts`) :
 - **Archivage** des offres non pertinentes (bouton « ✕ Pas pertinent ») :
   masquées de la liste, consultables via « Voir les archivées », restaurables,
   et **exportables en JSON** (`offres-archivees.json`) pour analyse/affinage
-  des filtres. Stockage : `localStorage` clé `recherche-emploi-archivees`.
+  des filtres. Cache `localStorage` clé `recherche-emploi-archivees` **+
+  synchronisation** dans le dépôt privé (`archivees.json`) dès qu'un jeton est
+  configuré : fusion union par clé stable, désarchivage géré par tombstone
+  (`deleted`). Les archives survivent donc à un vidage de cache et se partagent
+  entre appareils (comme les candidatures). Sans jeton : local seulement.
 - Filtres mémorisés (localStorage), compteur de filtres actifs
 - Responsive : 1 col (mobile) / 2 col (tablette-portable) / auto (large)
 
