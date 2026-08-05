@@ -114,7 +114,8 @@ Gmail dédiée (`heloise.emploi@gmail.com`), via IMAP (`fetch_email_alerts`) :
   (l'IA affinera plus tard, mêmes champs `recommendation` / `recommendation_reason`).
 - **Date de parution** affichée sur chaque carte
 - **Archivage** des offres non pertinentes (bouton « ✕ Pas pertinent ») :
-  masquées de la liste, consultables via « Voir les archivées », restaurables,
+  masquées de la liste, consultables via « Voir les archivées » (avec **barre de
+  recherche dédiée** : titre / entreprise / lieu), restaurables,
   et **exportables en JSON** (`offres-archivees.json`) pour analyse/affinage
   des filtres. Cache `localStorage` clé `recherche-emploi-archivees` **+
   synchronisation** dans le dépôt privé (`archivees.json`) dès qu'un jeton est

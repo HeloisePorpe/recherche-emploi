@@ -48,6 +48,7 @@ const els = {
   toggleFilters: document.getElementById('toggle-filters'),
   filters: document.getElementById('filters'),
   toggleArchived: document.getElementById('toggle-archived'),
+  archiveSearch: document.getElementById('archive-search'),
   archivedCount: document.getElementById('archived-count'),
   exportArchived: document.getElementById('export-archived'),
   archiveBlock: document.getElementById('archive-block'),
@@ -55,6 +56,7 @@ const els = {
 
 // Vue "archivées" (mode d'affichage, non persisté)
 let showArchived = false;
+let archiveQuery = '';   // recherche texte dans la vue archivées
 
 // --- Utilitaires ---
 function escapeHtml(str) {
@@ -221,10 +223,22 @@ function getFilteredJobs() {
   const recencyMs = state.recency > 0 ? state.recency * 86400000 : 0;
   const isJobArchived = makeArchivedMatcher();
 
-  // Vue "archivées" : on n'affiche que les offres masquées (tri par note)
+  // Vue "archivées" : on n'affiche que les offres masquées (tri par note),
+  // filtrées par la barre de recherche dédiée aux archivées.
   if (showArchived) {
+    const aq = archiveQuery.trim().toLowerCase();
     return allJobs
       .filter((job) => isJobArchived(job))
+      .filter((job) => {
+        if (!aq) return true;
+        const hay = (
+          (job.title || '') + ' ' +
+          (job.company || '') + ' ' +
+          (job.location || '') + ' ' +
+          (job.description || '')
+        ).toLowerCase();
+        return hay.includes(aq);
+      })
       .sort((a, b) => (b.score || 0) - (a.score || 0));
   }
 
@@ -420,9 +434,14 @@ function render() {
     : `🗄️ Voir les archivées (${nbArchived})`;
   els.archiveBlock.classList.toggle('viewing', showArchived);
 
+  // Barre de recherche des archivées : visible seulement dans la vue archivées.
+  if (els.archiveSearch) els.archiveSearch.hidden = !showArchived;
+
   if (showArchived) {
-    els.counter.textContent =
-      `${jobs.length} offre${jobs.length > 1 ? 's' : ''} archivée${jobs.length > 1 ? 's' : ''}`;
+    const searching = archiveQuery.trim().length > 0;
+    els.counter.textContent = searching
+      ? `${jobs.length} archivée${jobs.length > 1 ? 's' : ''} trouvée${jobs.length > 1 ? 's' : ''} sur ${nbArchived}`
+      : `${jobs.length} offre${jobs.length > 1 ? 's' : ''} archivée${jobs.length > 1 ? 's' : ''}`;
   } else {
     const active = activeFilterCount();
     // Le total « à parcourir » exclut les offres archivées ET les offres déjà
@@ -441,7 +460,7 @@ function render() {
   if (jobs.length === 0) {
     els.cards.innerHTML = '';
     els.empty.textContent = showArchived
-      ? 'Aucune offre archivée.'
+      ? (archiveQuery.trim() ? 'Aucune archivée ne correspond à cette recherche.' : 'Aucune offre archivée.')
       : 'Aucune offre ne correspond aux filtres.';
     els.empty.hidden = false;
   } else {
@@ -573,8 +592,21 @@ function bindEvents() {
   // Vue archivées + export
   els.toggleArchived.addEventListener('click', () => {
     showArchived = !showArchived;
+    // En sortant de la vue archivées, on réinitialise la recherche dédiée.
+    if (!showArchived) {
+      archiveQuery = '';
+      if (els.archiveSearch) els.archiveSearch.value = '';
+    }
     render();
+    // En entrant dans la vue, on place le curseur dans la barre de recherche.
+    if (showArchived && els.archiveSearch) els.archiveSearch.focus();
   });
+  if (els.archiveSearch) {
+    els.archiveSearch.addEventListener('input', () => {
+      archiveQuery = els.archiveSearch.value;
+      render();
+    });
+  }
   els.exportArchived.addEventListener('click', () => {
     const list = loadArchived();
     if (!list.length) { alert('Aucune offre archivée à exporter.'); return; }
