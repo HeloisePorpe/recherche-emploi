@@ -1235,6 +1235,19 @@ _CAREER_COMPANIES = [
     {"name": "Servier", "slug": "servier", "slugs": ["Servier", "serviergroup", "groupeservier"]},
     {"name": "EDF", "slug": "edf", "slugs": ["EDF", "edfgroup", "groupeedf", "edfrecrute"]},
     {"name": "Nokia", "slug": "nokia", "slugs": ["Nokia", "nokiacorporation"]},
+    # 3e vague (91/92/78 : Saclay, Châtenay, Massy, Guyancourt, Vélizy, Plessis).
+    # Grands groupes industrie/BTP/défense/retail : ATS majoritairement « maison ».
+    # On tente ; le reste passe par France Travail + Adzuna.
+    {"name": "Mondelez", "slug": "mondelez", "slugs": ["Mondelez", "mondelezinternational"]},
+    {"name": "Lidl", "slug": "lidl", "slugs": ["Lidl", "lidlfrance", "LidlFrance"]},
+    {"name": "Ericsson", "slug": "ericsson", "slugs": ["Ericsson", "ericssonfrance"]},
+    {"name": "Bouygues Construction", "slug": "bouyguesconstruction",
+     "slugs": ["bouygues-construction", "BouyguesConstruction", "bouygues"]},
+    {"name": "Dassault Systèmes", "slug": "dassaultsystemes",
+     "slugs": ["dassault-systemes", "DassaultSystemes", "3ds", "3DS"]},
+    {"name": "Eiffage", "slug": "eiffage", "slugs": ["Eiffage", "eiffageenergiesystemes", "eiffage-energie"]},
+    {"name": "MBDA", "slug": "mbda", "slugs": ["MBDA", "mbdafrance", "mbda-careers"]},
+    {"name": "Colas", "slug": "colas", "slugs": ["Colas", "colasgroup", "colasdigitalsolutions"]},
 ]
 
 _CAREER_LOC_OK = re.compile(
