@@ -1214,40 +1214,18 @@ _CAREER_COMPANIES = [
     {"name": "Sephora", "slug": "sephora", "slugs": ["Sephora", "SephoraUSA"]},
     {"name": "Believe", "slug": "believe", "slugs": ["believedigital", "Believe"]},
     {"name": "Thales", "slug": "thales", "slugs": ["thalesgroup", "Thales", "ThalesGroup"]},
-    {"name": "Safran", "slug": "safran", "slugs": ["safrangroup", "safran-group", "Safran"]},
-    # Grands employeurs proches d'Héloïse (78/91). ATS souvent « maison »
-    # (Avature/Talentsoft/Workday) non interrogeable en JSON public : on tente
-    # quand même tous les ATS + variantes de slug. `is_relevant` ne garde que les
-    # rôles CRM/marketing (pas de risque de noyer le dashboard). Ce qui ne résout
-    # pas reste couvert par France Travail + Adzuna (recherche CRM CDI en IDF).
-    {"name": "Sodexo", "slug": "sodexo", "slugs": ["Sodexo", "sodexogroup", "SodexoGroup"]},
-    {"name": "Carrefour", "slug": "carrefour",
-     "slugs": ["Carrefour", "carrefourgroup", "groupecarrefour", "CarrefourGroup"]},
-    {"name": "CEA", "slug": "cea", "slugs": ["CEA", "cea-tech", "ceatech"]},
-    {"name": "McDonald's", "slug": "mcdonalds",
-     "slugs": ["McDonalds", "mcdonaldsfrance", "McDonaldsFrance", "mcdonald"]},
-    # 2e vague d'employeurs proches (91 : Villebon, Palaiseau, Gif, Paris-Saclay).
-    # Industrie / pharma / énergie / télécom : ATS le plus souvent SuccessFactors /
-    # Workday / Avature (non public). On tente quand même ; le reste passe par
-    # France Travail + Adzuna.
-    {"name": "Bruneau", "slug": "bruneau", "slugs": ["jmbruneau", "groupebruneau"]},
-    {"name": "Horiba", "slug": "horiba", "slugs": ["horibafrance", "HORIBA", "horiba-france"]},
-    {"name": "Servier", "slug": "servier", "slugs": ["Servier", "serviergroup", "groupeservier"]},
-    {"name": "EDF", "slug": "edf", "slugs": ["EDF", "edfgroup", "groupeedf", "edfrecrute"]},
-    {"name": "Nokia", "slug": "nokia", "slugs": ["Nokia", "nokiacorporation"]},
-    # 3e vague (91/92/78 : Saclay, Châtenay, Massy, Guyancourt, Vélizy, Plessis).
-    # Grands groupes industrie/BTP/défense/retail : ATS majoritairement « maison ».
-    # On tente ; le reste passe par France Travail + Adzuna.
-    {"name": "Mondelez", "slug": "mondelez", "slugs": ["Mondelez", "mondelezinternational"]},
-    {"name": "Lidl", "slug": "lidl", "slugs": ["Lidl", "lidlfrance", "LidlFrance"]},
-    {"name": "Ericsson", "slug": "ericsson", "slugs": ["Ericsson", "ericssonfrance"]},
-    {"name": "Bouygues Construction", "slug": "bouyguesconstruction",
-     "slugs": ["bouygues-construction", "BouyguesConstruction", "bouygues"]},
-    {"name": "Dassault Systèmes", "slug": "dassaultsystemes",
-     "slugs": ["dassault-systemes", "DassaultSystemes", "3ds", "3DS"]},
-    {"name": "Eiffage", "slug": "eiffage", "slugs": ["Eiffage", "eiffageenergiesystemes", "eiffage-energie"]},
-    {"name": "MBDA", "slug": "mbda", "slugs": ["MBDA", "mbdafrance", "mbda-careers"]},
-    {"name": "Colas", "slug": "colas", "slugs": ["Colas", "colasgroup", "colasdigitalsolutions"]},
+    {"name": "Safran", "slug": "safrangroup", "ats": "workable"},  # résolu en CI (Workable)
+    # Employeur proche d'Héloïse résolu (vérifié en CI, run #69) : Sodexo expose
+    # un board SmartRecruiters public → surveillé directement. Toute future offre
+    # CRM chez Sodexo apparaîtra automatiquement.
+    {"name": "Sodexo", "slug": "sodexo", "ats": "smartrecruiters"},
+    # NB : 16 autres employeurs proches ont été testés (Carrefour, CEA, McDonald's,
+    # Bruneau, Horiba, Servier, EDF, Nokia, Mondelez, Lidl, Ericsson, Bouygues
+    # Construction, Dassault Systèmes, Eiffage, MBDA, Colas) — AUCUN n'expose d'ATS
+    # public interrogeable (ATS « maison » : SuccessFactors/Workday/Avature/
+    # Talentsoft). Retirés de cette liste pour ne pas alourdir le scan : leurs
+    # offres CRM restent captées par France Travail + Adzuna (CRM CDI en IDF, tous
+    # employeurs). À réévaluer s'ils migrent un jour vers un ATS public.
 ]
 
 _CAREER_LOC_OK = re.compile(
