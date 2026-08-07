@@ -1215,6 +1215,17 @@ _CAREER_COMPANIES = [
     {"name": "Believe", "slug": "believe", "slugs": ["believedigital", "Believe"]},
     {"name": "Thales", "slug": "thales", "slugs": ["thalesgroup", "Thales", "ThalesGroup"]},
     {"name": "Safran", "slug": "safran", "slugs": ["safrangroup", "safran-group", "Safran"]},
+    # Grands employeurs proches d'Héloïse (78/91). ATS souvent « maison »
+    # (Avature/Talentsoft/Workday) non interrogeable en JSON public : on tente
+    # quand même tous les ATS + variantes de slug. `is_relevant` ne garde que les
+    # rôles CRM/marketing (pas de risque de noyer le dashboard). Ce qui ne résout
+    # pas reste couvert par France Travail + Adzuna (recherche CRM CDI en IDF).
+    {"name": "Sodexo", "slug": "sodexo", "slugs": ["Sodexo", "sodexogroup", "SodexoGroup"]},
+    {"name": "Carrefour", "slug": "carrefour",
+     "slugs": ["Carrefour", "carrefourgroup", "groupecarrefour", "CarrefourGroup"]},
+    {"name": "CEA", "slug": "cea", "slugs": ["CEA", "cea-tech", "ceatech"]},
+    {"name": "McDonald's", "slug": "mcdonalds",
+     "slugs": ["McDonalds", "mcdonaldsfrance", "McDonaldsFrance", "mcdonald"]},
 ]
 
 _CAREER_LOC_OK = re.compile(
