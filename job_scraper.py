@@ -1226,6 +1226,15 @@ _CAREER_COMPANIES = [
     {"name": "CEA", "slug": "cea", "slugs": ["CEA", "cea-tech", "ceatech"]},
     {"name": "McDonald's", "slug": "mcdonalds",
      "slugs": ["McDonalds", "mcdonaldsfrance", "McDonaldsFrance", "mcdonald"]},
+    # 2e vague d'employeurs proches (91 : Villebon, Palaiseau, Gif, Paris-Saclay).
+    # Industrie / pharma / énergie / télécom : ATS le plus souvent SuccessFactors /
+    # Workday / Avature (non public). On tente quand même ; le reste passe par
+    # France Travail + Adzuna.
+    {"name": "Bruneau", "slug": "bruneau", "slugs": ["jmbruneau", "groupebruneau"]},
+    {"name": "Horiba", "slug": "horiba", "slugs": ["horibafrance", "HORIBA", "horiba-france"]},
+    {"name": "Servier", "slug": "servier", "slugs": ["Servier", "serviergroup", "groupeservier"]},
+    {"name": "EDF", "slug": "edf", "slugs": ["EDF", "edfgroup", "groupeedf", "edfrecrute"]},
+    {"name": "Nokia", "slug": "nokia", "slugs": ["Nokia", "nokiacorporation"]},
 ]
 
 _CAREER_LOC_OK = re.compile(
