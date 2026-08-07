@@ -171,30 +171,6 @@
     "recommendation_reason": "À confirmer : titre sans signal CRM explicite"
   },
   {
-    "source": "RemoteOK",
-    "title": "Administrative Assistant",
-    "link": "https://remoteOK.com/remote-jobs/remote-administrative-assistant-timbertek-1136108",
-    "company": "TIMBERTEK",
-    "location": "Ø¯Ø¨Ù, Ø¯Ø¨Ù Ø§ÙØ¥ÙØ§Ø±Ø§Øª Ø§ÙØ¹Ø±Ø¨ÙØ© Ø§ÙÙØªØ­Ø¯Ø©",
-    "description": "<p>Job description:</p><p><br></p><p>Admin Assistant:</p><p><br></p><p>About the Role:</p><p><br></p><p>TIMBERTEK is a Dubai-based wood flooring company specializing in solid wood flooring installation, restoration, maintenance, sanding, and polishing for premium residential and hospitality projects.</p><p><br></p><p>We are looking for a proactive and detail-oriented Admin assistant to support our day-to-day operations, coordinate projects, and ensure smooth communication between clients, suppliers, and the internal team.</p><p><br></p><p>Key Responsibilities:</p><p><br></p><ul><li>Oversee daily administrative tasks, including documentation, filing, and record management.</li><li>Coordinate schedules between the sales team, site team, and clients for installations, maintenance, and restoration projects.</li><li>Prepare quotations, invoices, and maintain payment records.</li><li>Maintain project documentation, service records, and job files.</li><li>Monitor inventory of flooring materials, finishing products, and tools, and coordinate replenishment with suppliers.</li><li>Assist the site team with scheduling, site access arrangements, and client follow-ups.</li><li>Respond to client enquiries via phone, email, and WhatsApp, and arrange site visits and quotation requests.</li><li>Maintain supplier and client databases, contracts, and related documentation.</li><li>Support general office administration, including attendance records and procurement of office and site supplies.</li><li>Prepare basic reports on project progress, service requests, and ongoing jobs.</li></ul><p><br></p><p><br></p><p><br></p><p>Requirements:</p><p><br></p><ul><li>Prior experience in the renovation or maintenance industry is essential.</li><li>Bachelor's degree or diploma in Business Administration or a related field, or equivalent practical experience.</li><li>Minimum 2 years of experience in administration or office coordination, preferably within fit-out, interiors, flooring, maintenance, construction, or contracting.</li><li>Strong organizational skills with the ability to manage multiple tasks and coordinate with clients, suppliers, and site teams.</li><li>Proficient in Microsoft Office and comfortable learning CRM, scheduling software, and AI tools to improve workflow.</li><li>Process-oriented with strong organizational and problem-solving skills.</li><li>Detail-oriented with a high level of accuracy.</li><li>Strong written English and communication skills.</li></ul><p><br></p><p><br></p><p><br></p><p>Salary: AED 3000 per month</p><p><br></p><p>Work Arrangement:</p><p><br></p><p>This role is currently work-from-home. Depending on business requirements and performance, it may transition to a remote, hybrid, or onsite position in the future.</p><p><br></p><p>Why Join Us?</p><p><br></p><p>Join a collaborative and fast-paced team where your attention to detail, organizational skills, and ideas for improving processes will be valued and encouraged.</p><p><br></p><p>Job Type: Full-time</p><p><br></p><p>Work Location: Remote</p><br/><br/>Please mention the word **SMILE** and tag RNjguMjIwLjU4LjE1NA== when applying to show you read the job post completely (#RNjguMjIwLjU4LjE1NA==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
-    "salary_raw": "",
-    "published": "2026-08-04T11:00:10+00:00",
-    "telework_days": 5,
-    "in_france": true,
-    "salary_extracted": null,
-    "contract_type": null,
-    "flags": [],
-    "score": 9,
-    "score_reasons": [
-      "Outils : email, whatsapp",
-      "Compétences alignées (3)",
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Télétravail 5j/sem"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À confirmer : titre sans signal CRM explicite"
-  },
-  {
     "source": "France Travail",
     "title": "LAFORET FRANCE - Customer Relationship Manager (CRM) (H/F)",
     "link": "https://candidat.francetravail.fr/offres/recherche/detail/3755296",
@@ -207,21 +183,21 @@
     "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
-    "commute_minutes": 93,
+    "commute_minutes": 92,
     "flags": [
       "Séniorité élevée (>7 ans ?)",
       "Télétravail non mentionné",
-      "Trajet long (93 min)"
+      "Trajet long (92 min)"
     ],
     "score": 8,
     "score_reasons": [
       "Outils clés : html, css, segmentation, omnicanal",
       "Compétences alignées (4)",
       "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (93 min)"
+      "Trajet long (92 min)"
     ],
     "recommendation": "à_écarter",
-    "recommendation_reason": "Trajet 93 min et pas 100 % télétravail"
+    "recommendation_reason": "Trajet 92 min et pas 100 % télétravail"
   },
   {
     "source": "France Travail",
@@ -288,21 +264,21 @@
     "telework_days": 2,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": 106,
+    "commute_minutes": 105,
     "flags": [
-      "Trajet long (106 min)",
-      "Annonce ancienne (85 j)"
+      "Trajet long (105 min)",
+      "Annonce ancienne (86 j)"
     ],
     "score": 8,
     "score_reasons": [
       "Outils : email, sms",
       "Compétences alignées (3)",
       "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (106 min)",
+      "Trajet long (105 min)",
       "Télétravail 2j/sem"
     ],
     "recommendation": "à_écarter",
-    "recommendation_reason": "Trajet 106 min et pas 100 % télétravail"
+    "recommendation_reason": "Trajet 105 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -317,10 +293,10 @@
     "telework_days": null,
     "in_france": true,
     "contract_type": "CDI",
-    "commute_minutes": 104,
+    "commute_minutes": 105,
     "flags": [
       "Télétravail non mentionné",
-      "Trajet long (104 min)"
+      "Trajet long (105 min)"
     ],
     "score": 8,
     "score_reasons": [
@@ -328,10 +304,10 @@
       "Compétences alignées (3)",
       "Signaux CRM lifecycle (email / segmentation / campagne)",
       "Salaire dans la cible (52,000€)",
-      "Trajet long (104 min)"
+      "Trajet long (105 min)"
     ],
     "recommendation": "à_écarter",
-    "recommendation_reason": "Trajet 104 min et pas 100 % télétravail"
+    "recommendation_reason": "Trajet 105 min et pas 100 % télétravail"
   },
   {
     "source": "We Work Remotely",
@@ -377,6 +353,54 @@
     ],
     "recommendation": "à_postuler",
     "recommendation_reason": "Profil correspondant, aucun signal à vérifier (100 % télétravail France, score 8/10)"
+  },
+  {
+    "source": "RemoteOK",
+    "title": "With the Ranks",
+    "link": "https://remoteOK.com/remote-jobs/remote-with-the-ranks-apply-coop-1136246",
+    "company": "apply.coop",
+    "location": "Cooperative Nagar, ",
+    "description": "Cooperative| Everywhere | United States - https://withtheranks.com<br><br>We love to build and host high-performing websites and apps, develop cohesive tech strategies to organize at scale, run A/B tests to optimize websites, improve accessibility and page speed on existing websites, run peer-to-peer texting campaigns through our self hosted fork of Spoke, build and maintain open source tech tools, and a whole lot more.<br/><br/>Please mention the word **KINDLINESS** and tag RMjAuMTY5LjkzLjE3OA== when applying to show you read the job post completely (#RMjAuMTY5LjkzLjE3OA==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+    "salary_raw": "",
+    "published": "2026-08-05T15:14:08+00:00",
+    "telework_days": 5,
+    "in_france": true,
+    "salary_extracted": null,
+    "contract_type": null,
+    "flags": [],
+    "score": 8,
+    "score_reasons": [
+      "Outils : a/b test",
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Télétravail 5j/sem"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À confirmer : titre sans signal CRM explicite"
+  },
+  {
+    "source": "RemoteOK",
+    "title": "Cabin Crew Virtual Interviews PAN India",
+    "link": "https://remoteOK.com/remote-jobs/remote-cabin-crew-virtual-interviews-pan-india-akasa-air-1136223",
+    "company": "Akasa Air",
+    "location": "Bengaluru, ",
+    "description": "<strong>Job Position Summary<br><br></strong>To provide excellent service to customers while ensuring their safety, security and comfort throughout the flight.<br><br><strong>Key Responsibilities<br><br></strong><ul><li> Strictly adhere to and remain conversant &amp; compliant to set standard operating procedures as per the Government, DGCA and in Company Manuals. </li><li> Maintain current knowledge of rules and regulations and procedures for the operations of the aircraft. Keep abreast with the latest safety &amp; service circulars / notices / procedures / campaigns &amp; promotions. </li><li> Strict adherence to company grooming &amp; turn out standards. Be responsible and present a professional image whilst on duty and on layovers. </li><li> Responsible for validity of mandatory and regulatory trainings &amp; documents, their timely issue, renewal and extension. </li><li> Responsible to conduct inflight sales and continuously increase ancillary revenue. As a salesperson, you must always promote the airline as a brand and share various options available to the customer, thereby ensuring the Akasa Air Experience is demonstrated, Customerâs overall experience is enhanced. </li><li> Ensure service delivery is efficiently organized and consistently delivered by crew to meet and exceed customer expectations. Finesse and presentation are of paramount importance. Pay special attention to customers requiring special assistance with reduced mobility, elderly, un-accompanied minors, mothers with infants / children. </li><li> Make every effort to see that the customer is comfortable and always show that you care for them. Always maintain a high level of enthusiasm and your passion for customer care must be visible to all. </li><li> Take a detailed galley handover and ensure all sales stock, pre-booked meals and other catering uplifts are as per catering documents. </li><li> Maintain good public relations in the cabin by engaging positively &amp; proactively with the customers (Be the Brand Ambassador). </li><li> Ensure On-Time Performance is maintained. </li><li> Maintain a high level of self-discipline at all times when on duty and strictly adhere to the cabin crew code of conduct. Ensure the focus is on customer safety, security and comfort. </li><li> Responsible for checking, safeguarding and return of all company equipment and unused catering supplies. Responsible for the cleanliness &amp; tidiness of aircraft cabin, lavatories and galleys. Monitor the cabin throughout the flight. </li><li> Responsible to report all issues / discrepancies / non-compliances / cabin &amp; galley defects to the Inflight Manager. </li><li> Make all relevant announcements as defined in the Announcement book (if approved as per announcement ratings) </li><li> Complete all pre-flight and post flight duties. </li><li> Recommend changes with regards to service delivery / design / enhancement of service / product, reducing wastage based on customer / crew feedback. Take pride in improving processes and bringing in cost reduction / efficiency. </li><li> Practice effective CRM to ensure coordination with the cockpit crew and other related departments (Airport Services, catering, security). Go beyond the call of duty in assisting colleagues.<br><br></li></ul><strong>Requirements<br><br></strong><ul><li> Indian Nationals with Valid Passport, PAN Card and Aadhar Card. </li><li> Age Limit: For freshers with no past flying experience is 18 to 28 years. </li><li> Age Limit: For Experienced crew, up to 35 years </li><li> Minimum Height - 155 cms for female and 167.5 cms for male (and weight in proportion). </li><li> Minimum Education â 10+2 (Class 12th), must be fluent in English and Hindi. </li><li> Must be medically fit as per DGCA. </li><li> BMI range for female 18 â 23 and for male 18 - 25. </li><li> No visible tattoo/marks. </li><li> The nature of your job will require travel, working for long hours and in shifts. <br><br></li></ul><strong>Location:<br><br></strong><ul><li> Transferable to any of the operational crew bases. <br><br></li></ul><strong> Akasa Air does not solicit or accept any form of payment from candidates or institutions during its recruitment process. Any such claims are fraudulent and should be disregarded. <br><br></strong><strong>Individuals engaging with unauthorized entities do so at their own risk. We encourage you to report any such incidents to </strong> jobverification@akasaair.com <strong> for appropriate action.</strong><br/><br/>Please mention the word **ALLURINGLY** and tag RMjAuMTY5LjkzLjE3OA== when applying to show you read the job post completely (#RMjAuMTY5LjkzLjE3OA==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+    "salary_raw": "",
+    "published": "2026-08-05T11:45:49+00:00",
+    "telework_days": 5,
+    "in_france": true,
+    "salary_extracted": null,
+    "contract_type": null,
+    "flags": [
+      "Séniorité élevée (>7 ans ?)"
+    ],
+    "score": 8,
+    "score_reasons": [
+      "Compétences alignées (3)",
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Télétravail 5j/sem"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Séniorité élevée (>7 ans ?)"
   },
   {
     "source": "France Travail",
@@ -443,21 +467,21 @@
     "contract_type": "CDI",
     "telework_days": null,
     "in_france": true,
-    "commute_minutes": 98,
+    "commute_minutes": 99,
     "flags": [
       "Séniorité élevée (>7 ans ?)",
       "Télétravail non mentionné",
-      "Trajet long (98 min)"
+      "Trajet long (99 min)"
     ],
     "score": 7,
     "score_reasons": [
       "Outils : segmentation, email",
       "Compétences alignées (6)",
       "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (98 min)"
+      "Trajet long (99 min)"
     ],
     "recommendation": "à_écarter",
-    "recommendation_reason": "Trajet 98 min et pas 100 % télétravail"
+    "recommendation_reason": "Trajet 99 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -489,30 +513,31 @@
   },
   {
     "source": "Adzuna",
-    "title": "Senior Product Manager",
-    "link": "https://www.adzuna.fr/details/5824160124?utm_medium=api&utm_source=707eaaff",
-    "company": "Brevo",
-    "location": "Paris, Ile-de-France",
-    "description": "Brevo is the leading and fast-growing Customer Relationship Management (CRM) suite designed to enable millions of organizations to connect with people using technology for their success. Our platform gives businesses a unified view of the entire customer journey, empowering them to grow with intuitive marketing and sales tools, including Marketing Automation, Email, SMS, WhatsApp, Chat, and much more. As a proud B Corp certified company, we are committed not only to performance but also to purp…",
+    "title": "Responsable CRM & Marketing Relationnel H/F",
+    "link": "https://www.adzuna.fr/details/5797851499?utm_medium=api&utm_source=707eaaff",
+    "company": "ARAVATI",
+    "location": "Seine-et-Marne, Ile-de-France",
+    "description": "Définir et piloter la stratégie CRM - Concevoir et mettre en oeuvre la stratégie CRM en cohérence avec les enjeux business et le calendrier commercial. - Développer des parcours relationnels personnalisés tout au long du cycle de vie client. - Construire des scénarios automatisés permettant d'améliorer l'acquisition, la fidélisation, la réactivation et le développement de la valeur client. Orchestrer les activations marketing - Déployer des campagnes omnicanales (email, SMS, wallet, RCS, print)…",
     "salary_raw": "",
-    "published": "2026-08-01T17:30:23Z",
+    "published": "2026-07-12T11:46:16Z",
     "contract_raw": "",
     "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": 80,
+    "commute_minutes": 211,
     "flags": [
-      "Télétravail non mentionné"
+      "Télétravail non mentionné",
+      "Trajet long (211 min)"
     ],
     "score": 7,
     "score_reasons": [
-      "Outils clés : email, sms, whatsapp",
+      "Outils clés : omnicanal, email, sms",
       "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (80 min)"
+      "Trajet long (211 min)"
     ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 211 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -544,60 +569,6 @@
   },
   {
     "source": "Adzuna",
-    "title": "Copywriter & Content Coordinator (H/F)",
-    "link": "https://www.adzuna.fr/details/5793487646?utm_medium=api&utm_source=707eaaff",
-    "company": "osgroupeopensuccess",
-    "location": "Paris, Ile-de-France",
-    "description": "OpenSuccess is looking for a Copywriter & Content Coordinator (H/F) to coordinate, write, and deploy impactful CRM and marketing content across email, push, SMS, and WhatsApp. Position: Permanent contract (CDI) Location: Paris (75009) Position Summary Are you a wordsmith with a sharp eye for detail and a knack for flawless execution? Do you know how to make content resonate across multiple digital channels? If you thrive at the intersection of creative writing and marketing automation, this is …",
-    "salary_raw": "",
-    "published": "2026-07-09T02:51:59Z",
-    "contract_raw": "",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": "CDI",
-    "commute_minutes": 80,
-    "flags": [
-      "Télétravail non mentionné"
-    ],
-    "score": 7,
-    "score_reasons": [
-      "Outils clés : email, sms, whatsapp",
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (80 min)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Owned media lead (H/F)",
-    "link": "https://www.adzuna.fr/details/5793487649?utm_medium=api&utm_source=707eaaff",
-    "company": "osgroupeopensuccess",
-    "location": "Paris, Ile-de-France",
-    "description": "Opensuccess is looking for an Owned Media Lead (H/F) to design, automate, and optimize data-driven customer journeys across email, push, SMS, and WhatsApp. Position: Permanent contract (CDI) Location: Paris (75009) Position Summary You will act as the key link between global strategy and local execution, ensuring owned media aligns with paid/earned campaigns to drive conversion and grow the loyalty/membership program. CRM & Automation: Plan and deploy automated, data-driven CRM campaigns via a …",
-    "salary_raw": "",
-    "published": "2026-07-09T02:51:59Z",
-    "contract_raw": "",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": "CDI",
-    "commute_minutes": 80,
-    "flags": [
-      "Télétravail non mentionné"
-    ],
-    "score": 7,
-    "score_reasons": [
-      "Outils clés : email, sms, whatsapp",
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (80 min)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné"
-  },
-  {
-    "source": "Adzuna",
     "title": "Spontaneous Application (Hybrid Remote Policy)",
     "link": "https://www.adzuna.fr/details/5298580312?utm_medium=api&utm_source=707eaaff",
     "company": "Brevo",
@@ -612,7 +583,7 @@
     "contract_type": null,
     "commute_minutes": 80,
     "flags": [
-      "Annonce ancienne (390 j)"
+      "Annonce ancienne (391 j)"
     ],
     "score": 7,
     "score_reasons": [
@@ -621,7 +592,7 @@
       "Trajet long (80 min)"
     ],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Annonce ancienne (390 j)"
+    "recommendation_reason": "À vérifier : Annonce ancienne (391 j)"
   },
   {
     "source": "Adzuna",
@@ -715,30 +686,6 @@
   },
   {
     "source": "We Work Remotely",
-    "title": "Renewals Manager",
-    "link": "https://weworkremotely.com/remote-jobs/asana-renewals-manager",
-    "company": "Asana",
-    "location": "Anywhere in the World",
-    "description": "<p>\n  <strong>Headquarters:</strong> US - Remote West\n</p>\n\n<p>The Renewals team plays a crucial role in Asana's success by collaborating with both customers and multiple cross functional teams. As a Renewals team member, your main responsibility is to oversee client renewals, renew existing licenses, discover growth opportunities, identify/mitigate risk and ensure high customer satisfaction to minimize churn. This role involves understanding customer needs, building strong relationships, having strong negotiation skills and staying current on Asana’s pricing and packaging.</p>\n<p>This role can either be fully remote depending on which US state you live in, or based in our San Francisco ofice with an office-centric hybrid schedule. If based in-office: The standard in-office days are Monday, Tuesday, and Thursday. Most Asanas have the option to work from home on Wednesdays. Working from home on Fridays depends on the type of work you do and the teams with which you partner. If you're interviewing for this role, your recruiter will share more about the in-office requirements.</p>\n<p><strong>What you’ll achieve:</strong></p>\n<ul>\n<li>Negotiate all facets of contract renewals using commercial judgment.&nbsp;&nbsp;&nbsp;</li>\n<li>Identify customer needs and demonstrate strong account management capabilities to drive on-time renewal closure.</li>\n<li>Engage decision makers to identify customer requirements, budget, key stakeholders, approval processes, and uncover roadblocks.</li>\n<li>Develop and deliver win/win negotiation strategies that maximise contract value while protecting and enhancing the customer relationship and the value they are realising from Asana</li>\n<li>Maintain and report an accurate rolling 150-day forecast. Analyze renewal data to identify trends.&nbsp;</li>\n<li>Document all renewal steps, in accordance with Renewal Guidelines, clearly in SFDC/Clari systems&nbsp;</li>\n<li>Manage the quote-to-close processes for all renewals within an assigned territory. Create and negotiate strategic pricing and packaging proposals.&nbsp;</li>\n<li>Effectively defend against competitive pressures and articulate Asana’s differentiating factors</li>\n<li>Identify risk early and navigate complex customer requests by effectively partnering with cross-functional groups such as Deal Desk, Sales Operations, Legal, Finance, Customer Success, and Sales Management to ensure customers realize value out of their investment in Asana.</li>\n<li>Contribute to the design and implementation of efficient renewal processes, identifying and resolving inefficiencies.&nbsp;</li>\n</ul>\n<p><strong>About you:</strong></p>\n<ul>\n<li>At least 3-5 years Renewals Experience: A proven track record of success and quota achievement in a renewal sales or related role. SaaS experience is a plus.&nbsp;</li>\n<li>Able to work West Cost- Pacific Time Working Hours</li>\n<li>Customer Relationship Management: Exceptional ability to build and maintain strong customer relationships.&nbsp;</li>\n<li>Communication Skills: Excellent verbal and written communication skills. Experienced in contract negotiations, value selling, discovery, and closing. Strong presentation skills and executive presence.&nbsp;&nbsp;</li>\n<li>Analytical Skills: Maintain a forecast and have an analytical mindset to analyze data and identify trends.&nbsp;</li>\n<li>Problem-solving Skills: Ability to identify and resolve issues related to renewals.&nbsp;</li>\n<li>Knowledge of Asana Products: Familiarity with work management and the Asana platform.&nbsp;</li>\n<li>Proficiency in relevant tools: Experience with quoting systems, contracting tools, and subscription management systems.&nbsp;</li>\n<li>Understanding of ARR and Renewals: A deep understanding of these concepts.</li>\n<li>Approaches work with empathy and a creative, problem-solving mindset&nbsp;</li>\n<li>Thrive in a continually evolving environment while balancing a book of business and customer satisfaction.</li>\n<li>Demonstrates curiosity about AI tools and emerging technologies, with a willingness to learn and leverage them to enhance productivity, collaboration, or decision-making</li>\n</ul>\n<p>At Asana, we're committed to building teams that include a variety of backgrounds, perspectives, and skills, as this is critical to helping us achieve our mission. If you're interested in this role and don't meet every listed requirement, we still encourage you to apply.</p>\n<p><strong>What we’ll offer</strong></p>\n<p>Our comprehensive compensation package plays a big part in how we recognize you for the impact you have on our path to achieving our mission. We believe that compensation should be reflective of the value you create relative to the market value of your role. To ensure pay is fair and not impacted by biases, we're committed to looking at market value which is why we check ourselves and conduct a yearly pay equity audit.</p>\n<p>For this role, the estimated base salary range is between $98,700 - $126,000. The actual base salary will vary based on various factors, including market and individual qualifications objectively assessed during the interview process. The listed range above is a guideline, and the base salary range for this role may be modified.</p>\n<p>In addition to base salary, your compensation package may include additional components such as equity, sales incentive pay (for most sales roles), and benefits. If you're interviewing for this role, speak with your Talent Acquisition Partner to learn more about the total compensation and benefits for this role.</p>\n<p>We strive to provide equitable and competitive benefits packages that support our employees worldwide and include:</p>\n<ul>\n<li>Mental health, wellness &amp; fitness benefits</li>\n<li>Career coaching &amp; support</li>\n<li>Inclusive family building benefits</li>\n<li>Long-term savings or retirement plans</li>\n<li>In-office culinary options to cater to your dietary preferences&nbsp;</li>\n</ul>\n<p>These are just some of the benefits we offer, and benefits may vary based on role, country, and local regulations. If you're interviewing for this role, speak with your Talent Acquisition Partner to learn more about the total compensation and benefits for this role.</p><div class=\"content-conclusion\"><p><strong>About us</strong></p>\n<p>Asana is a leading platform for human + AI collaboration. Millions of teams around the world rely on Asana to achieve their most important goals, faster. Asana has been named to Fortune's Best Workplaces for 7+ years and recognized by Fast Company, Forbes, and Gartner for excellence in workplace culture and innovation. We offer an exceptional office-centric culture while adopting the best elements of hybrid models to ensure that every one of our global team members can work together effortlessly. With 13+ offices all over the world, we are always looking for individuals who care about building technology that drives positive change in the world and a culture where everyone feels that they belong.</p>\n<p><strong><a class=\"LinkThemeablePresentation LinkPrimaryPresentation LinkPrimaryPresentation--sentimentSelected PrimaryLink HighlightSol HighlightSol--core HighlightSol--buildingBlock\" href=\"https://www.gem.com/form?formID=fbcdec8c-3442-43b9-9b45-d2b5f4ea25db\">Join Asana’s Talent Network</a></strong>&nbsp;to stay up to date on job opportunities and life at Asana.</p></div>\n\n<p><strong>To apply:</strong> <a href=\"https://weworkremotely.com/remote-jobs/asana-renewals-manager\">https://weworkremotely.com/remote-jobs/asana-renewals-manager</a></p>",
-    "published": "Wed, 22 Jul 2026 07:01:03 +0000",
-    "telework_days": 5,
-    "in_france": true,
-    "salary_extracted": null,
-    "contract_type": null,
-    "flags": [
-      "Customer Success / Account mgmt ?",
-      "CRM = sourcing RH ?"
-    ],
-    "score": 7,
-    "score_reasons": [
-      "Secteur favorable : finance",
-      "Télétravail 5j/sem"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Customer Success / Account mgmt ? ; CRM = sourcing RH ?"
-  },
-  {
-    "source": "We Work Remotely",
     "title": "Engineering Manager - Custom Objects Team",
     "link": "https://weworkremotely.com/remote-jobs/highlevel-engineering-manager-custom-objects-team",
     "company": "HighLevel",
@@ -811,7 +758,7 @@
     "link": "https://remoteOK.com/remote-jobs/remote-online-marketing-traineeship-tyroola-com-au-1136162",
     "company": "Tyroola.com.au",
     "location": "Millers Point, ",
-    "description": "<strong>About The Role<br><br></strong>Join our 3-6 month paid Online Marketing Traineeship focused on content and onsite optimization.<br><br>Youâll work closely with experienced professionals, gaining hands-on experience in digital marketing while contributing to Tyroolaâs rapid growth in the online tyre retail market.<br><br><strong>Your Main Responsibilities Include<br><br></strong><ul><li>Learning to manage marketing campaigns to address problem areas through dynamic content, feature testing, and user incentives.</li><li>Creating, developing, and managing creative content for our e-commerce site, including partnerships and business collaborations.</li><li>Defining and implementing search optimization strategies, reporting, and tools.</li><li>Collaborating with experienced online marketers and IT developers.</li><li>Supporting the founders on key strategic projects focused on online marketing.</li><li>Helping improve our product to support rapid growth in the market.<br><br></li></ul>Role Requirements<br><br><strong>Weâre Looking For Someone Who Is<br><br></strong><ul><li>Available at least 20 hours per week.</li><li>Eager to learn and gain hands-on experience in online marketing and content creation.</li><li>Interested in working in a fast-paced, entrepreneurial environment.</li><li>Open to potentially transitioning to a permanent role based on mutual agreement.<br><br></li></ul>What We Offer<br><br><strong>Hereâs What You Can Expect<br><br></strong><ul><li>Work in a team of experienced entrepreneurs who have successfully built businesses before.</li><li>Training and support to help you develop skills and take your career to the next level.</li><li>Gain an understanding of what it takes to build a business from scratch.</li><li>Flexible working options at our Ultimo, Sydney office or Maroochydore, Sunshine Coast.</li><li> Opportunities for other compensation based on your qualifications, experience, and performance.<br><br></li></ul>Explore Other Roles<br><br>Looking for a different opportunity? Check out our other open positions.<br><br><strong>Send your application to: careers@tyroola.com.au</strong><br/><br/>Please mention the word **HEAVEN** and tag RNjguMjIwLjU4LjE1NA== when applying to show you read the job post completely (#RNjguMjIwLjU4LjE1NA==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+    "description": "<strong>About The Role<br><br></strong>Join our 3-6 month paid Online Marketing Traineeship focused on content and onsite optimization.<br><br>Youâll work closely with experienced professionals, gaining hands-on experience in digital marketing while contributing to Tyroolaâs rapid growth in the online tyre retail market.<br><br><strong>Your Main Responsibilities Include<br><br></strong><ul><li>Learning to manage marketing campaigns to address problem areas through dynamic content, feature testing, and user incentives.</li><li>Creating, developing, and managing creative content for our e-commerce site, including partnerships and business collaborations.</li><li>Defining and implementing search optimization strategies, reporting, and tools.</li><li>Collaborating with experienced online marketers and IT developers.</li><li>Supporting the founders on key strategic projects focused on online marketing.</li><li>Helping improve our product to support rapid growth in the market.<br><br></li></ul>Role Requirements<br><br><strong>Weâre Looking For Someone Who Is<br><br></strong><ul><li>Available at least 20 hours per week.</li><li>Eager to learn and gain hands-on experience in online marketing and content creation.</li><li>Interested in working in a fast-paced, entrepreneurial environment.</li><li>Open to potentially transitioning to a permanent role based on mutual agreement.<br><br></li></ul>What We Offer<br><br><strong>Hereâs What You Can Expect<br><br></strong><ul><li>Work in a team of experienced entrepreneurs who have successfully built businesses before.</li><li>Training and support to help you develop skills and take your career to the next level.</li><li>Gain an understanding of what it takes to build a business from scratch.</li><li>Flexible working options at our Ultimo, Sydney office or Maroochydore, Sunshine Coast.</li><li> Opportunities for other compensation based on your qualifications, experience, and performance.<br><br></li></ul>Explore Other Roles<br><br>Looking for a different opportunity? Check out our other open positions.<br><br><strong>Send your application to: careers@tyroola.com.au</strong><br/><br/>Please mention the word **HEAVEN** and tag RMjAuMTY5LjkzLjE3OA== when applying to show you read the job post completely (#RMjAuMTY5LjkzLjE3OA==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
     "salary_raw": "",
     "published": "2026-08-05T01:56:14+00:00",
     "telework_days": 5,
@@ -828,30 +775,6 @@
     "recommendation_reason": "À confirmer : titre sans signal CRM explicite"
   },
   {
-    "source": "RemoteOK",
-    "title": "Regional Sales Manager",
-    "link": "https://remoteOK.com/remote-jobs/remote-regional-sales-manager-balco-inc-1136097",
-    "company": "Balco, Inc.",
-    "location": "Wichita, ",
-    "description": "<strong>Company Information<br><br></strong>CSWâs Engineered Building Solutions segment manufactures custom architectural building components and innovative firestopping and smoke-rated products that help protect people. Safety and code compliance are top of mind for architects, engineers and contractors. Our purposeful brands combine functionality with aesthetically pleasing designs for the construction, refurbishment, and modernization of buildings.â¯Our brands include Balco, Greco Architectural Metal Products, and Smoke Guard.<br><br><strong>Position Summary<br><br></strong>Balco is seeking a dynamic, motivated, and results-driven Regional Sales Manager to lead and grow sales of our architectural product lines across the Western Half of the United States. This is a high-impact leadership role for a sales professional who thrives in the architectural building products space and is energized by building teams, driving growth, and influencing complex construction projects from design through installation.<br><br>The RSM will lead a network of direct sales professionals and independent manufacturer representatives while serving as a key market ambassador for Balcoâs portfolio of architectural engineered products for the construction industry. Categories include expansion joint systems, stair nosings, entrance mats &amp; grids, photoluminescent egress systems, etc. The ideal candidate combines strong sales leadership with technical acumen to guide product selection based on project-specific conditions, ensuring Balco solutions are specified and installed successfully in competitive bid environments. This role combines strategic leadership, hands-on selling and technical support, and rigorous performance management to deliver profitable growth and exceptional customer experiences.<br><br><strong>Responsibilities<br><br></strong><ul><li>Drive year-over-year revenue growth to meet or exceed sales budgets across assigned territories and product lines. </li><li>Build, coach, and lead a high-performing sales organization consisting of direct sales employees and independent manufacturer representatives, setting clear goals and driving accountability across both groups. </li><li>Provide technical guidance and support to sales team members and customers, including analyzing project conditions, recommending appropriate Balco products (e.g., expansion joint systems, stair nosings, photoluminescent egress markings), and assisting with submittals and specifications. </li><li>Develop and implement competitive strategies to increase Balco specification rates and market share, including targeted initiatives with architects, contractors, and distributors. </li><li>Maintain deep knowledge of the competitive landscape, including products, pricing, and market dynamics, to win specification and project opportunities. </li><li>Track and report on sales performance, market trends, and competitive activities using CRM tools; prepare weekly, monthly, and quarterly reports.â¯ </li><li>Deliver sales and product knowledge presentations to architects, contractors, trade groups, and other stakeholders. </li><li>Lead and support complex negotiations to secure profitable, strategic opportunities. </li><li>Partner closely with Customer Service, Technical Services, and internal leadership to ensure outstanding execution and customer satisfaction. </li><li>Establish clear expectations, regularly track, and review performance metrics, proactively address gaps through coaching and development plans, and recognize/reward wins and best practices. </li><li>Expand and strengthen relationships with existing customers, contractors, distributors, architects, design engineers, and other key influencers across the full sales territory. </li><li>Ensure compliance with all safety requirements, including OSHA 10 standards for jobsite visits. </li><li>Travel to meet customers, prospects, sales team members, attend trade shows, and other industry events. Travel expectations ~30%.â¯ </li><li>This role may require other job duties to be performed. The above statements are intended to describe the general nature and level of work performed by employees assigned to this role. They are not to be construed as an exhaustive list of all job duties performed by the personnel in this role. <br><br></li></ul><strong>Qualifications (Knowledge &amp; Skills)<br><br></strong><ul><li>Hands-on experience with expansion joint systems, stair nosings, photoluminescent egress, or similar specialty products strongly preferred. </li><li>Demonstrated track record of building and leading sales teams to consistently meet or exceed aggressive growth targets in competitive markets. </li><li>Strong executive presence with excellent verbal and written communication skills. </li><li>Highly relationship-driven with the ability to influence across multiple stakeholders and decision-makers. </li><li>Strategic thinker with an entrepreneurial mindset and a strong customer-first approach. </li><li>Skilled negotiator comfortable managing complex, multi-party sales scenarios. </li><li>Confident presenter capable of delivering impactful sales and technical presentations. </li><li>Proficiency in Microsoft Office (Word, Excel, PowerPoint) and CRM/order management systems, including Salesforce. </li><li>Able to communicate effectively and professionally with team members and customers verbally and in writing. </li><li>Able to complete work accurately and on time. </li><li>Able to work collaboratively with direct team members, or across departments, and work independently as needed. </li><li>Able to effectively lead a team by providing direction, measuring quality of work, giving feedback, and managing performance. </li><li>Candidates who apply for positions that require driving must have a valid U.S. driverâs license and clean driving record. An MVR and proof of insurance will be required as part of the pre-employment background check process. <br><br></li></ul><strong>Education<br><br></strong><ul><li>High school diploma required. </li><li>Bachelorâs degree in Business, Marketing, or related field preferred. <br><br></li></ul><strong>Experience<br><br></strong><ul><li>5+ years of progressive experience in sales, with at least 2 years in a leadership role. <br><br></li></ul><strong>Work Environment <br><br></strong><ul><li>Physical Conditions: </li><li>Field: This position requires the ability to visit construction sites from time to time and utilize the required Personal Protective Equipment (PPE), i.e.: hard hat, eye/face protection, hearing protection, steel toes, etc. </li><li>Remote: This is remote role. Remote employees are required to have a dedicated work space where they can conduct business and have private conversations. <br><br></li></ul><strong>Other Requirements<br><br></strong><ul><li>Candidates who receive an offer of employment must successfully pass a background check and drug screen. </li><li>This role requires driving for the Company, so candidates who receive an offer of employment for this role must have a current driverâs license and have a clean MVR. </li><li>Must be able to use hands and have finger dexterity </li><li>Must be able to reach, bend, kneel, and crouch occasionally </li><li>Must be able to safely lift 40 pounds <br><br></li></ul><strong>CSW Industrials Offers a Competitive Total Rewards Package Including<br><br></strong><ul><li>Annual Performance Bonus Program</li><li>401(k) $1-$1 match, up to 6% </li><li>Employee Stock Ownership Plan (ESOP) </li><li>Health insurance</li><li>Dental insurance</li><li>Disability insurance</li><li>Life insurance</li><li>Flexible spending account</li><li>Health savings account</li><li>Vision insurance</li><li>Paid time off</li><li>Parental leave</li><li>Employee assistance program</li><li>Tuition reimbursement<br><br></li></ul><strong>Compensation: </strong><em>CSW Industrials has an effective process for assessing market data and establishing salary ranges to ensure we remain competitive. </em><em>Within the range, individual pay is determined by work location and additional job-related factors. The pay scale is subject to change depending on business needs. In addition to base pay, e</em><em>mployees may be eligible for pay incentives based on overall corporate and individual performance or at the discretion of the CSW Board of Directors. Sales roles are eligible for a sales bonus.<br><br></em>Balco, a CSW Industrials Company, is an Equal Opportunity Employer (EOE). All qualified applicants will receive consideration for employment without regard to race, color, religion, sex (including pregnancy), sexual orientation, gender identity, national origin, political affiliation, disability, age, genetic information, or status as a protected veteran.<br/><br/>Please mention the word **PHENOMENALLY** and tag RNjguMjIwLjU4LjE1NA== when applying to show you read the job post completely (#RNjguMjIwLjU4LjE1NA==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
-    "salary_raw": "",
-    "published": "2026-08-04T00:00:00+00:00",
-    "telework_days": 5,
-    "in_france": true,
-    "salary_extracted": null,
-    "contract_type": null,
-    "flags": [
-      "Pertinence CRM à confirmer"
-    ],
-    "score": 7,
-    "score_reasons": [
-      "Secteur favorable : insurance",
-      "Télétravail 5j/sem"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer"
-  },
-  {
     "source": "The Muse",
     "title": "Sr. Marketing Manager",
     "link": "https://www.themuse.com/jobs/blackgirlventuresfoundation/sr-marketing-manager",
@@ -864,7 +787,7 @@
     "salary_extracted": null,
     "contract_type": null,
     "flags": [
-      "Annonce ancienne (1855 j)"
+      "Annonce ancienne (1856 j)"
     ],
     "score": 7,
     "score_reasons": [
@@ -872,7 +795,30 @@
       "Télétravail 5j/sem"
     ],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Annonce ancienne (1855 j)"
+    "recommendation_reason": "À vérifier : Annonce ancienne (1856 j)"
+  },
+  {
+    "source": "LinkedIn (alerte)",
+    "title": "CRM & Emailing Manager Senior - F/H",
+    "link": "https://www.linkedin.com/comm/jobs/view/4444461696?trackingId=&amp;refId=&amp;lipi=urn%3Ali%3Apage%3Aemail_email_jobs_saved_job_reminder_01%3BFKDNfHpOQ2eeyuVq2Z5Iog%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=0vCG7ZMe23dIo1&amp;trk=eml-email_jobs_saved_job_reminder_01-saved~jobs-0-job_posting&amp;trkEmail=eml-email_jobs_saved_job_reminder_01-saved~jobs-0-job_posting-null-8ulvbk~mshswgcq~v8-null-null&amp;eid=8ulvbk-mshswgcq-v8&amp;otpToken=ZmQ5OGMzYmFhMzBmNzMwOTljODFjZTYwYWIxOGFlNDQzMDFjYTZkNjRmMTk3NGRhMTZiZmZiNDA5ZGE1ZDBhNTBlMGIwNDlmYzViYTY4NDcyMjNiZmMwYjdjYTUxMjA2MjcxNDlkNDI2YWUxNGNkOGVmMTdlNzlhYTYzNDVmMTczMGQxOThiNWExOWRjYiwyLDE%3D",
+    "company": "",
+    "location": "",
+    "description": "",
+    "published": "2026-08-06T17:39:44+00:00",
+    "in_france": true,
+    "salary_extracted": null,
+    "telework_days": null,
+    "contract_type": null,
+    "flags": [
+      "Télétravail non mentionné"
+    ],
+    "score": 7,
+    "score_reasons": [
+      "Outils : email",
+      "Signaux CRM lifecycle (email / segmentation / campagne)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
     "source": "Site carrière — Contentsquare",
@@ -1016,14 +962,14 @@
     "commute_minutes": 57,
     "flags": [
       "Télétravail non mentionné",
-      "Annonce ancienne (84 j)"
+      "Annonce ancienne (85 j)"
     ],
     "score": 6,
     "score_reasons": [
       "Secteur favorable : finance"
     ],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné ; Annonce ancienne (84 j)"
+    "recommendation_reason": "À vérifier : Télétravail non mentionné ; Annonce ancienne (85 j)"
   },
   {
     "source": "France Travail",
@@ -1059,19 +1005,19 @@
     "contract_type": "CDI",
     "telework_days": null,
     "in_france": true,
-    "commute_minutes": 99,
+    "commute_minutes": 107,
     "flags": [
       "Télétravail non mentionné",
-      "Trajet long (99 min)"
+      "Trajet long (107 min)"
     ],
     "score": 6,
     "score_reasons": [
       "Signaux CRM lifecycle (email / segmentation / campagne)",
       "Salaire dans la cible (45,000€)",
-      "Trajet long (99 min)"
+      "Trajet long (107 min)"
     ],
     "recommendation": "à_écarter",
-    "recommendation_reason": "Trajet 99 min et pas 100 % télétravail"
+    "recommendation_reason": "Trajet 107 min et pas 100 % télétravail"
   },
   {
     "source": "France Travail",
@@ -1085,20 +1031,20 @@
     "contract_type": "CDI",
     "telework_days": null,
     "in_france": true,
-    "commute_minutes": 108,
+    "commute_minutes": 107,
     "flags": [
       "Séniorité élevée (>7 ans ?)",
       "Télétravail non mentionné",
-      "Trajet long (108 min)"
+      "Trajet long (107 min)"
     ],
     "score": 6,
     "score_reasons": [
       "Outils : email",
       "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (108 min)"
+      "Trajet long (107 min)"
     ],
     "recommendation": "à_écarter",
-    "recommendation_reason": "Trajet 108 min et pas 100 % télétravail"
+    "recommendation_reason": "Trajet 107 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -1157,6 +1103,35 @@
   },
   {
     "source": "Adzuna",
+    "title": "Senior Manager",
+    "link": "https://www.adzuna.fr/details/5775370874?utm_medium=api&utm_source=707eaaff",
+    "company": "Alpha Financial Markets",
+    "location": "Paris, Ile-de-France",
+    "description": "About Alpha FMC Alpha Financial Markets Consulting (Alpha) is a leading global consultancy to the financial services industry. Founded in 2003, we have worked for over 20 years to bring together specialist, sector-focused strategy, management consulting and technology expertise to support the entire client transformation lifecycle. Having partnered with more than 1,200 clients worldwide across the asset and wealth management, alternatives and insurance industries, Alpha is truly a trusted advis…",
+    "salary_raw": "",
+    "published": "2026-06-24T23:05:34Z",
+    "contract_raw": "",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": 80,
+    "flags": [
+      "Séniorité élevée (>7 ans ?)",
+      "Séniorité / management d'équipe ?",
+      "Télétravail non mentionné"
+    ],
+    "score": 6,
+    "score_reasons": [
+      "Secteur favorable : insurance",
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (80 min)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Séniorité élevée (>7 ans ?) ; Séniorité / management d'équipe ? ; Télétravail non mentionné"
+  },
+  {
+    "source": "Adzuna",
     "title": "Responsable CRM/Emailing - H/F",
     "link": "https://www.adzuna.fr/details/5727190716?utm_medium=api&utm_source=707eaaff",
     "company": "Store & Supply",
@@ -1169,43 +1144,15 @@
     "telework_days": null,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": 106,
+    "commute_minutes": 105,
     "flags": [
       "Télétravail non mentionné",
-      "Trajet long (106 min)",
-      "Annonce ancienne (85 j)"
+      "Trajet long (105 min)",
+      "Annonce ancienne (86 j)"
     ],
     "score": 6,
     "score_reasons": [
       "Outils : email",
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (106 min)"
-    ],
-    "recommendation": "à_écarter",
-    "recommendation_reason": "Trajet 106 min et pas 100 % télétravail"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Cheffe Chef de Projet CRM Marketing Automation Senior H/F",
-    "link": "https://www.adzuna.fr/details/5809595891?utm_medium=api&utm_source=707eaaff",
-    "company": "Monoprix - Siège",
-    "location": "Clichy, Nanterre",
-    "description": "Rattaché(e) à la responsable CRM et au sein du département Engagement clients, vous pilotez la conception, la mise en oeuvre et l'optimisation des cycles CRM automatisés afin d'améliorer l'engagement client, la conversion, la fidélisation et la valeur client (CLV), via des dispositifs de marketing automation performants et data-driven. Vos principales missions seront les suivantes : Stratégie CRM et cycles de vie Client - Définir la stratégie omnicanale de gestion automatisée du cycle de vie cl…",
-    "salary_raw": "",
-    "published": "2026-07-21T19:51:38Z",
-    "contract_raw": "",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": 105,
-    "flags": [
-      "Télétravail non mentionné",
-      "Trajet long (105 min)"
-    ],
-    "score": 6,
-    "score_reasons": [
-      "Outils : omnicanal",
       "Signaux CRM lifecycle (email / segmentation / campagne)",
       "Trajet long (105 min)"
     ],
@@ -1251,19 +1198,19 @@
     "telework_days": null,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": 108,
+    "commute_minutes": 101,
     "flags": [
       "Télétravail non mentionné",
-      "Trajet long (108 min)"
+      "Trajet long (101 min)"
     ],
     "score": 6,
     "score_reasons": [
       "Compétences alignées (3)",
       "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (108 min)"
+      "Trajet long (101 min)"
     ],
     "recommendation": "à_écarter",
-    "recommendation_reason": "Trajet 108 min et pas 100 % télétravail"
+    "recommendation_reason": "Trajet 101 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -1282,7 +1229,7 @@
     "commute_minutes": 80,
     "flags": [
       "Télétravail non mentionné",
-      "Annonce ancienne (396 j)"
+      "Annonce ancienne (397 j)"
     ],
     "score": 6,
     "score_reasons": [
@@ -1291,7 +1238,7 @@
       "Trajet long (80 min)"
     ],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné ; Annonce ancienne (396 j)"
+    "recommendation_reason": "À vérifier : Télétravail non mentionné ; Annonce ancienne (397 j)"
   },
   {
     "source": "Adzuna",
@@ -1320,57 +1267,59 @@
   },
   {
     "source": "Adzuna",
-    "title": "Chef de Projet CRM & Digital H/F",
-    "link": "https://www.adzuna.fr/details/5795528030?utm_medium=api&utm_source=707eaaff",
-    "company": "Clariane",
+    "title": "CHEF(FE) DE PROJET E-COMMERCE & CRM (H/F)",
+    "link": "https://www.adzuna.fr/details/5831418583?utm_medium=api&utm_source=707eaaff",
+    "company": "Magnet Open Sourcing",
     "location": "Paris, Ile-de-France",
-    "description": "Le Chef de Projet CRM & Digital contribue au déploiement opérationnel des dispositifs CRM et marketing digital sur le périmètre France afin de développer la visibilité des établissements, la connaissance client et la performance des actions marketing. Il intervient en coordination avec les équipes internes et les prestataires pour assurer la bonne exécution, la qualité et le suivi des dispositifs. Missions principales et activités 1. CRM, outils et campagnes (run & exécution) - Participer à la …",
+    "description": "Description du poste et Missions En collaboration directe avec les équipes projet, créa, tech et marketing, vous prenez à bras-le-corps le pilotage des projets digitaux de nos clients premium, de la conception au suivi des performances. Votre rôle s'articule autour de deux piliers majeurs : 1. Project Management E-commerce (Shopify) Pilotage & Relation Client : Analyse des besoins, cadrage des briefs fonctionnels/techniques et suivi quotidien des clients. Coordination : Gestion des plannings et…",
     "salary_raw": "",
-    "published": "2026-07-10T12:12:18Z",
+    "published": "2026-08-07T04:16:13Z",
+    "contract_raw": "",
+    "salary_extracted": null,
+    "telework_days": 2,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": 80,
+    "flags": [
+      "CRM = sourcing RH ?",
+      "Pertinence CRM à confirmer"
+    ],
+    "score": 6,
+    "score_reasons": [
+      "Compétences alignées (4)",
+      "Trajet long (80 min)",
+      "Télétravail 2j/sem"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : CRM = sourcing RH ? ; Pertinence CRM à confirmer"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Consultant(e) Transformation CRM et Marketing Automation",
+    "link": "https://www.adzuna.fr/details/5830622892?utm_medium=api&utm_source=707eaaff",
+    "company": "Okuden.",
+    "location": "17ème Arrondissement, Paris",
+    "description": "Notre offre de Consultant(e) Transformation CRM & Marketing Automation, concrètement au travers d’exemples de missions : Accompagner la mise en place d’un ambitieux programme de Lead Management : Identifier, formaliser et prioriser les besoins métier, piloter une équipe agile pour leur mise en place, assurer le reporting projet & business Cadrer et mettre en place une nouvelle solution de CRM pour un service clients : Identifier les besoins et la solution adéquate, Assurer une communication flu…",
+    "salary_raw": "",
+    "published": "2026-08-06T17:19:32Z",
     "contract_raw": "",
     "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": 80,
+    "commute_minutes": 100,
     "flags": [
-      "Télétravail non mentionné"
+      "Télétravail non mentionné",
+      "Trajet long (100 min)"
     ],
     "score": 6,
     "score_reasons": [
       "Compétences alignées (3)",
       "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (80 min)"
+      "Trajet long (100 min)"
     ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Growth Manager H/F",
-    "link": "https://www.adzuna.fr/details/5726391172?utm_medium=api&utm_source=707eaaff",
-    "company": "Impactup Cabinet Conseil.",
-    "location": "Paris, Ile-de-France",
-    "description": "- Définir et piloter la stratégie de croissance (acquisition, conversion, rétention) sur les segments B2B, Grande Distribution et BtoC - Piloter les campagnes d'acquisition digitale (SEA, Social Ads, emailing) et les actions de marketing automation - Gérer le site prestashop et réaliser les campagnes digitales - identifier et organiser notre présence sur les salons professionnels - Construire et suivre les KPIs de croissance (CAC, LTV, MRR, taux de transformation par canal) et proposer des ajus…",
-    "salary_raw": "60000-70000 €",
-    "published": "2026-05-12T04:15:28Z",
-    "contract_raw": "",
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": 80,
-    "flags": [
-      "Télétravail non mentionné",
-      "Annonce ancienne (86 j)"
-    ],
-    "score": 6,
-    "score_reasons": [
-      "Outils : email",
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (80 min)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné ; Annonce ancienne (86 j)"
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 100 min et pas 100 % télétravail"
   },
   {
     "source": "We Work Remotely",
@@ -1675,34 +1624,6 @@
   },
   {
     "source": "Adzuna",
-    "title": "Responsable CRM & Marketing Relationnel (H/F) (CDI)",
-    "link": "https://www.adzuna.fr/details/5793879853?utm_medium=api&utm_source=707eaaff",
-    "company": "ARAVATI FRANCE",
-    "location": "Seine-et-Marne, Ile-de-France",
-    "description": "Rejoignez un acteur majeur du retail en pleine accélération digitale Notre client est un acteur de référence du retail, reconnu pour la puissance de sa marque et son développement omnicanal. Dans un contexte de transformation ambitieuse de son écosystème CRM et Data, il recherche son futur Responsable CRM afin d'accélérer la personnalisation de la relation client et la création de valeur sur l'ensemble des parcours d'achat. Rattaché(e) à la Direction CRM & Data, vous jouez un rôle central dans …",
-    "salary_raw": "",
-    "published": "2026-07-09T10:15:59Z",
-    "contract_raw": "permanent",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": "CDI",
-    "commute_minutes": 193,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Télétravail non mentionné",
-      "Trajet long (193 min)"
-    ],
-    "score": 5,
-    "score_reasons": [
-      "Outils : omnicanal",
-      "Trajet long (193 min)"
-    ],
-    "recommendation": "à_écarter",
-    "recommendation_reason": "Trajet 193 min et pas 100 % télétravail"
-  },
-  {
-    "source": "Adzuna",
     "title": "Adobe Campaign Expert",
     "link": "https://www.adzuna.fr/details/5617752404?utm_medium=api&utm_source=707eaaff",
     "company": "Numberly",
@@ -1715,19 +1636,19 @@
     "telework_days": null,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": 104,
+    "commute_minutes": 105,
     "flags": [
       "Télétravail non mentionné",
-      "Trajet long (104 min)",
-      "Annonce ancienne (180 j)"
+      "Trajet long (105 min)",
+      "Annonce ancienne (181 j)"
     ],
     "score": 5,
     "score_reasons": [
       "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (104 min)"
+      "Trajet long (105 min)"
     ],
     "recommendation": "à_écarter",
-    "recommendation_reason": "Trajet 104 min et pas 100 % télétravail"
+    "recommendation_reason": "Trajet 105 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -1772,7 +1693,7 @@
     "contract_type": null,
     "commute_minutes": 80,
     "flags": [
-      "Annonce ancienne (313 j)"
+      "Annonce ancienne (314 j)"
     ],
     "score": 5,
     "score_reasons": [
@@ -1780,7 +1701,7 @@
       "Trajet long (80 min)"
     ],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Annonce ancienne (313 j)"
+    "recommendation_reason": "À vérifier : Annonce ancienne (314 j)"
   },
   {
     "source": "Adzuna",
@@ -1804,32 +1725,6 @@
     "score_reasons": [
       "Signaux CRM lifecycle (email / segmentation / campagne)",
       "Trajet long (84 min)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Advertising Sales Manager - Paris",
-    "link": "https://www.adzuna.fr/details/5794668920?utm_medium=api&utm_source=707eaaff",
-    "company": "Deliveroo",
-    "location": "Paris, Ile-de-France",
-    "description": "Join us in our mission to transform the way people shop and eat, where impact, innovation, and growth drive everything we do. Our Advertising team sits at the intersection of commerce, data and marketing helping restaurant and grocery partners accelerate growth through smart, insight-led media solutions. From shaping high-impact campaign strategies to optimising performance at scale, we combine commercial acumen with deep marketplace insight to unlock value for our partners while driving sustai…",
-    "salary_raw": "",
-    "published": "2026-07-09T23:50:34Z",
-    "contract_raw": "",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": 80,
-    "flags": [
-      "Télétravail non mentionné"
-    ],
-    "score": 5,
-    "score_reasons": [
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (80 min)"
     ],
     "recommendation": "à_revoir",
     "recommendation_reason": "À vérifier : Télétravail non mentionné"
@@ -1927,18 +1822,18 @@
     "telework_days": null,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": 104,
+    "commute_minutes": 105,
     "flags": [
       "Télétravail non mentionné",
-      "Trajet long (104 min)"
+      "Trajet long (105 min)"
     ],
     "score": 5,
     "score_reasons": [
       "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (104 min)"
+      "Trajet long (105 min)"
     ],
     "recommendation": "à_écarter",
-    "recommendation_reason": "Trajet 104 min et pas 100 % télétravail"
+    "recommendation_reason": "Trajet 105 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -1954,18 +1849,18 @@
     "telework_days": null,
     "in_france": true,
     "contract_type": "CDI",
-    "commute_minutes": 104,
+    "commute_minutes": 102,
     "flags": [
       "Télétravail non mentionné",
-      "Trajet long (104 min)"
+      "Trajet long (102 min)"
     ],
     "score": 5,
     "score_reasons": [
       "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (104 min)"
+      "Trajet long (102 min)"
     ],
     "recommendation": "à_écarter",
-    "recommendation_reason": "Trajet 104 min et pas 100 % télétravail"
+    "recommendation_reason": "Trajet 102 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -1993,6 +1888,34 @@
     ],
     "recommendation": "à_écarter",
     "recommendation_reason": "Trajet 104 min et pas 100 % télétravail"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Growth Marketer - focus Build & CRM",
+    "link": "https://www.adzuna.fr/details/5830632081?utm_medium=api&utm_source=707eaaff",
+    "company": "AssoConnect",
+    "location": "2ème Arrondissement, Paris",
+    "description": " Who we are About the company Visit our Welcome To The Jungle homepage to learn more about AssoConnect and why you should join us! AssoConnect : pictures, videos, company information A ScaleUp that Transforms Nonprofit Management Market Leaders: AssoConnect is the leading software for nonprofit management in France, one of the largest markets in the world with over 1.5M nonprofits! We are also expanding in the U.S. with our Springly brand. Impact-driven: AssoConnect helps over 40,000 nonprofits…",
+    "salary_raw": "",
+    "published": "2026-08-06T17:23:25Z",
+    "contract_raw": "",
+    "salary_extracted": "45K–70K",
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": 102,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné",
+      "Trajet long (102 min)"
+    ],
+    "score": 5,
+    "score_reasons": [
+      "Salaire dans la cible (45,000€)",
+      "Trajet long (102 min)"
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 102 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -2047,6 +1970,27 @@
     "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
+    "source": "LinkedIn (alerte)",
+    "title": "📋Manager Conseil Data & CRM",
+    "link": "https://www.linkedin.com/comm/jobs/view/4443554855?trackingId=&amp;refId=&amp;lipi=urn%3Ali%3Apage%3Aemail_email_jobs_saved_job_reminder_01%3BFKDNfHpOQ2eeyuVq2Z5Iog%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=0vCG7ZMe23dIo1&amp;trk=eml-email_jobs_saved_job_reminder_01-saved~jobs-0-job_posting&amp;trkEmail=eml-email_jobs_saved_job_reminder_01-saved~jobs-0-job_posting-null-8ulvbk~mshswgcq~v8-null-null&amp;eid=8ulvbk-mshswgcq-v8&amp;otpToken=ZmQ5OGMzYmFhMzBmNzMwOTljODFjZTYwYWIxOGFlNDQzMDFjYTZkNjRmMTk3NGRhMTZiZmZiNDA5ZGE1ZDBhNTBlMGIwNDlmYzViYTY4NDcyMjNiZmMwYjdjYTUxMjA2MjcxNDlkNDI2YWUxNGNkOGVmMTdlNzlhYTYzNDVmMTczMGQxOThiNWExOWRjYiwyLDE%3D",
+    "company": "",
+    "location": "",
+    "description": "",
+    "published": "2026-08-06T17:39:44+00:00",
+    "in_france": true,
+    "salary_extracted": null,
+    "telework_days": null,
+    "contract_type": null,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné"
+    ],
+    "score": 5,
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
+  },
+  {
     "source": "Site carrière — Swile",
     "title": "Sales Acquisition Affiliates",
     "link": "https://jobs.lever.co/swile/af1ba9e9-b02c-4e7d-b0c6-4395aa746a4c",
@@ -2062,12 +2006,12 @@
     "flags": [
       "Pertinence CRM à confirmer",
       "Télétravail non mentionné",
-      "Annonce ancienne (534 j)"
+      "Annonce ancienne (535 j)"
     ],
     "score": 5,
     "score_reasons": [],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné ; Annonce ancienne (534 j)"
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné ; Annonce ancienne (535 j)"
   },
   {
     "source": "Site carrière — Back Market",
@@ -2119,30 +2063,31 @@
     "recommendation_reason": "Trajet 96 min et pas 100 % télétravail"
   },
   {
-    "source": "France Travail",
-    "title": "Data manager transformation digitale et crm f/h",
-    "link": "https://candidat.francetravail.fr/offres/recherche/detail/4856377",
-    "company": "",
-    "location": "92 - Malakoff (92240)",
-    "description": "Safran est un groupe international de haute technologie opérant dans les domaines de l'aéronautique (propulsion, équipements et intérieurs), de l'espace et de la défense. Sa mission : contribuer durablement à un monde plus sûr, où le transport aérien devient toujours plus respectueux de l'environnement, plus confortable et plus accessible. Implanté sur tous les continents, le Groupe emploie 110 000 collaborateurs pour un chiffre d'affaires de 31,3 milliards d'euros en 2025, et occupe, seul ou en partenariat, des positions de premier plan mondial ou européen sur ses marchés. \n\nSafran est la 2ème entreprise du secteur aéronautique et défense du classement « World's Best Companies 2025 » du magazine TIME.\n\n\n\nSafran Electronics & Defense est une entreprise internationale de plus de 19 000 collaboratrices et collaborateurs, qui mobilisent expertises et esprit de corps pour concevoir des solutions de haute technologie dans les domaines de l'aéronautique, de la défense et du spatial. En combinant intelligence humaine et technologique, l'entreprise développe des produits et services pour les acteurs du monde civil et militaires, sur terre, en mer, dans le ciel et dans l'espace.\n\n\n\nParce que nous sommes persuadés que chaque talent compte, nous valorisons et encourageons les candidatures de personnes en situation de handicap pour nos opportunités d'emploi.\n\n\nDescriptif missionLa Gbu Défense renforce sa stratégie Data au service de la performance commerciale, avec le développement d'outils et d'un nouveau CRM.\n\nLa Direction Transformation de la GBU Défense recrute un Data Manager Transformation Digitale GBU et CRM, chargé de garantir la qualité, la cohérence et la valeur des données dans l'ensemble du cycle de vie commercial et après-vente.\n\nVous jouerez un rôle essentiel dans la spécification, la structuration, la collecte, la transformation et la fiabilité de la donnée afin d'assurer une migration réussie vers le nouveau CRM, tout en soutenant les équipes commerciales dans l'adoption et l'exploitation de cet outil stratégique.\n\n\n\nVotre mission s'articule autour des enjeux suivants :\n\n- Assurer la collecte et l'identification de données fiables et exploitables pour initialiser le CRM.\n\n- Piloter la migration de l'ensemble du patrimoine data vers le nouveau CRM.\n\n- Améliorer la qualité de la donnée et garantir sa gouvernance.\n\n- Développer des outils d'analyse (Power BI) permettant d'améliorer la prise de décision.\n\n- Former et accompagner les utilisateurs pour une adoption maximale du CRM.\n\n\n\nVous intégrerez une équipe pluridisciplinaire, engagée dans la digitalisation et l'amélioration continue des processus.\n\n\n\nLa mission comprend les objectifs et activités suivantes\n\n1/ Gestion de la donnée & Qualité\n\n- Définir les besoins en données en lien avec les équipes commerciales, support et services.\n\n- Organiser et piloter les activités de recherche, collecte et consolidation des données.\n\n- Mettre en forme, structurer et normaliser les données en conformité avec les standards du CRM.\n\n- Définir et appliquer les règles de qualité de la donnée (cohérence, complétude, unicité, fraîcheur).\n\n- Mettre en place des contrôles réguliers et des tableaux de bord de qualité.\n\n2/ Migration & Intégration\n\n- Définir les spécifications nécessaires à la mise en place du nouveau CRM.\n\n- Préparer et exécuter la migration des données depuis les sources existantes vers la nouvelle plateforme.\n\n- Garantir la fiabilité et l'exhaustivité des données migrées.\n\n- Vérifier l'intégration dans le CRM et résoudre les éventuels écarts ou anomalies.\n\n3/ Pilotage & Support aux équipes\n\n- Accompagner les équipes commerciales dans la prise en main du CRM.\n\n- Concevoir et dispenser des sessions de formation adaptées aux différents profils utilisateurs.\n\n- Élaborer des supports pédagogiques (guides, FAQ, tutoriels).\n\n- Assurer le support fonctionnel post-déploiement en lien avec la DSI et les équipes métier.\n\n4/ Analyse & Valorisation\n\n- Réaliser des extractions de données selon les besoins des directions métiers.\n\n- Concevoir des tableaux de bord et rapports Power BI à forte valeur",
+    "source": "Adzuna",
+    "title": "Data Manager Transformation Digitale et CRM F/H",
+    "link": "https://www.adzuna.fr/details/5830345004?utm_medium=api&utm_source=707eaaff",
+    "company": "Safran Electronics & Defense",
+    "location": "Malakoff, Antony",
+    "description": "La Gbu Défense renforce sa stratégie Data au service de la performance commerciale, avec le développement d'outils et d'un nouveau CRM. La Direction Transformation de la GBU Défense recrute un Data Manager Transformation Digitale GBU et CRM, chargé de garantir la qualité, la cohérence et la valeur des données dans l'ensemble du cycle de vie commercial et après-vente. Vous jouerez un rôle essentiel dans la spécification, la structuration, la collecte, la transformation et la fiabilité de la donn…",
     "salary_raw": "",
-    "published": "2026-07-11T08:15:39.000Z",
-    "contract_type": "CDI",
+    "published": "2026-08-06T12:42:42Z",
+    "contract_raw": "permanent",
     "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
-    "commute_minutes": 97,
+    "contract_type": "CDI",
+    "commute_minutes": 107,
     "flags": [
       "Pertinence CRM à confirmer",
       "Télétravail non mentionné",
-      "Trajet long (97 min)"
+      "Trajet long (107 min)"
     ],
     "score": 4,
     "score_reasons": [
-      "Trajet long (97 min)"
+      "Trajet long (107 min)"
     ],
     "recommendation": "à_écarter",
-    "recommendation_reason": "Trajet 97 min et pas 100 % télétravail"
+    "recommendation_reason": "Trajet 107 min et pas 100 % télétravail"
   },
   {
     "source": "France Travail",
@@ -2235,18 +2180,18 @@
     "contract_type": "CDI",
     "telework_days": null,
     "in_france": true,
-    "commute_minutes": 153,
+    "commute_minutes": 176,
     "flags": [
       "Pertinence CRM à confirmer",
       "Télétravail non mentionné",
-      "Trajet long (153 min)"
+      "Trajet long (176 min)"
     ],
     "score": 4,
     "score_reasons": [
-      "Trajet long (153 min)"
+      "Trajet long (176 min)"
     ],
     "recommendation": "à_écarter",
-    "recommendation_reason": "Trajet 153 min et pas 100 % télétravail"
+    "recommendation_reason": "Trajet 176 min et pas 100 % télétravail"
   },
   {
     "source": "France Travail",
@@ -2426,19 +2371,19 @@
     "telework_days": null,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": 104,
+    "commute_minutes": 102,
     "flags": [
       "Pertinence CRM à confirmer",
       "Télétravail non mentionné",
-      "Trajet long (104 min)",
-      "Annonce ancienne (89 j)"
+      "Trajet long (102 min)",
+      "Annonce ancienne (90 j)"
     ],
     "score": 4,
     "score_reasons": [
-      "Trajet long (104 min)"
+      "Trajet long (102 min)"
     ],
     "recommendation": "à_écarter",
-    "recommendation_reason": "Trajet 104 min et pas 100 % télétravail"
+    "recommendation_reason": "Trajet 102 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -2481,19 +2426,19 @@
     "telework_days": null,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": 93,
+    "commute_minutes": 92,
     "flags": [
       "Pertinence CRM à confirmer",
       "Conseil / ESN — télétravail dépendant de la mission ?",
       "Télétravail non mentionné",
-      "Trajet long (93 min)"
+      "Trajet long (92 min)"
     ],
     "score": 4,
     "score_reasons": [
-      "Trajet long (93 min)"
+      "Trajet long (92 min)"
     ],
     "recommendation": "à_écarter",
-    "recommendation_reason": "Trajet 93 min et pas 100 % télétravail"
+    "recommendation_reason": "Trajet 92 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -2551,58 +2496,6 @@
   },
   {
     "source": "Adzuna",
-    "title": "Responsable Transformation Si Clients & CRM H/F",
-    "link": "https://www.adzuna.fr/details/5605978110?utm_medium=api&utm_source=707eaaff",
-    "company": "Randstad professional",
-    "location": "Paris, Ile-de-France",
-    "description": "Nous recrutons pour le compte de notre client , opérateur public, un Responsable Transformation SI Clients & CRM (H/F) Membre du Comité Stratégique DSI, vous pilotez la transformation du SI Client (Salesforce, Digital) . Vos mission principales : Stratégie : Piloter la feuille de route 2 et définir la vision 2 (IA, innovations). Management : Diriger une équipe hybride de 40 personnes Projets : Superviser les programmes d'intégration, garantir l'interopérabilité (API) et la sécurité des données.…",
-    "salary_raw": "80000-100000 €",
-    "published": "2026-01-30T07:57:46Z",
-    "contract_raw": "",
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": 80,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Télétravail non mentionné",
-      "Annonce ancienne (187 j)"
-    ],
-    "score": 4,
-    "score_reasons": [
-      "Trajet long (80 min)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné ; Annonce ancienne (187 j)"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Chef de Projet CRM Retail H/F",
-    "link": "https://www.adzuna.fr/details/5795528021?utm_medium=api&utm_source=707eaaff",
-    "company": "Histoire d'Or",
-    "location": "Paris, Ile-de-France",
-    "description": "Sous la responsabilité de la Responsable CRM, le Chef de projet CRM (H/F) propose et met en place l'animation de la base de données clients multicanal (magasins  web) : stratégie, exécution et analyse des performances. Il travaille en étroite collaboration avec les équipes E-commerce, marketing, techniques, Offre et commerce, et soutient les projets de fidélisation. Il/elle aura les missions suivantes : 1/Stratégie et exécution - Élaborer un plan d'action CRM pertinent en collaboration avec les…",
-    "salary_raw": "",
-    "published": "2026-07-10T12:12:18Z",
-    "contract_raw": "",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": 80,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Télétravail non mentionné"
-    ],
-    "score": 4,
-    "score_reasons": [
-      "Trajet long (80 min)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
-  },
-  {
-    "source": "Adzuna",
     "title": "Chef de projet programme fidélité F/H",
     "link": "https://www.adzuna.fr/details/5815267664?utm_medium=api&utm_source=707eaaff",
     "company": "HISTOIRE D'OR",
@@ -2647,7 +2540,7 @@
       "Séniorité élevée (>7 ans ?)",
       "Télétravail non mentionné",
       "Trajet long (114 min)",
-      "Annonce ancienne (847 j)"
+      "Annonce ancienne (848 j)"
     ],
     "score": 4,
     "score_reasons": [
@@ -2682,34 +2575,6 @@
     ],
     "recommendation": "à_écarter",
     "recommendation_reason": "Trajet 97 min et pas 100 % télétravail"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Head of E-commerce (F/H)",
-    "link": "https://www.adzuna.fr/details/5775829797?utm_medium=api&utm_source=707eaaff",
-    "company": "Michael Page",
-    "location": "Saint-Cloud, Boulogne-Billancourt",
-    "description": "Le poste de Head of E-commerce (F/H) Rattaché·e au Directeur Digital, le/la Head of E-commerce / Responsable E-commerce contribue à la définition et à la mise en uvre de la stratégie e-commerce, en cohérence avec les objectifs globaux de l'entreprise. À ce titre, les principales missions sont : * Définir et piloter la stratégie e-commerce afin d'accroître le chiffre d'affaires et la rentabilité du canal digital * Manager et structurer une équipe dédiée (traffic, CRM, chefs de projet, responsabl…",
-    "salary_raw": "",
-    "published": "2026-06-25T08:20:59Z",
-    "contract_raw": "permanent",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": "CDI",
-    "commute_minutes": 113,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Séniorité / management d'équipe ?",
-      "Télétravail non mentionné",
-      "Trajet long (113 min)"
-    ],
-    "score": 4,
-    "score_reasons": [
-      "Trajet long (113 min)"
-    ],
-    "recommendation": "à_écarter",
-    "recommendation_reason": "Trajet 113 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -2858,19 +2723,19 @@
     "telework_days": null,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": 93,
+    "commute_minutes": 92,
     "flags": [
       "Pertinence CRM à confirmer",
       "Conseil / ESN — télétravail dépendant de la mission ?",
       "Télétravail non mentionné",
-      "Trajet long (93 min)"
+      "Trajet long (92 min)"
     ],
     "score": 4,
     "score_reasons": [
-      "Trajet long (93 min)"
+      "Trajet long (92 min)"
     ],
     "recommendation": "à_écarter",
-    "recommendation_reason": "Trajet 93 min et pas 100 % télétravail"
+    "recommendation_reason": "Trajet 92 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -2899,58 +2764,6 @@
     ],
     "recommendation": "à_écarter",
     "recommendation_reason": "Trajet 114 min et pas 100 % télétravail"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Chef de Projet Digital Senior H/F",
-    "link": "https://www.adzuna.fr/details/5825436441?utm_medium=api&utm_source=707eaaff",
-    "company": "Groupe APB",
-    "location": "Ivry-sur-Seine, Créteil",
-    "description": "Le contexte : Le pôle Digital du Groupe APB entre dans une nouvelle phase. Après avoir posé les fondations (CRM, sites, acquisition, communication), nous structurons l'organisation pour franchir un cap sur 2. Dans cette optique, nous créons un poste de Chef de Projet Digital, qui prendra la responsabilité opérationnelle de l'ensemble du pôle digital et encadrera les profils qui le composent (interne et prestataires). Vous serez rattaché(e) au Head of Digital qui pilote la stratégie et la perfor…",
-    "salary_raw": "",
-    "published": "2026-08-02T10:10:32Z",
-    "contract_raw": "",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": 89,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Séniorité / management d'équipe ?",
-      "Télétravail non mentionné"
-    ],
-    "score": 4,
-    "score_reasons": [
-      "Trajet long (89 min)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Séniorité / management d'équipe ? ; Télétravail non mentionné"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Responsable Système Applicatif - Périmètre Offres Marketing Distribution H/F",
-    "link": "https://www.adzuna.fr/details/5813766940?utm_medium=api&utm_source=707eaaff",
-    "company": "MNT Mutuelle Nationale Territoriale",
-    "location": "Paris, Ile-de-France",
-    "description": "Au sein de la Direction des Systèmes d'Informations et plus spécifiquement du Service Développement, Souscriptions et Canaux Digitaux (DSCD), nous recherchons un(e) Responsable de Système Applicatif (RSA) pour piloter un ensemble d'applications stratégiques au coeur de la relation adhérent, du développement commercial et du marketing. Votre mission : Vous serez le référent fonctionnel et applicatif d'un périmètre stratégique couvrant : CRM & Relation Client - Gestion des adhérents, prospects et…",
-    "salary_raw": "64000-68000 €",
-    "published": "2026-07-24T12:42:46Z",
-    "contract_raw": "",
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": 80,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Télétravail non mentionné"
-    ],
-    "score": 4,
-    "score_reasons": [
-      "Trajet long (80 min)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
