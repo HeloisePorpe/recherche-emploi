@@ -98,6 +98,61 @@
     "recommendation_reason": "À vérifier : Séniorité / management d'équipe ?"
   },
   {
+    "source": "Adzuna",
+    "title": "Chef·fe de Projet CRM & Marketing Automation (F/H/NB) – E-commerce & IA",
+    "link": "https://www.adzuna.fr/details/5727289947?utm_medium=api&utm_source=707eaaff",
+    "company": "Store & Supply",
+    "location": "Levallois-Perret, Nanterre",
+    "description": "À propos de Store & Supply Depuis 2014, nous propulsons 50 marques mode/lifestyle (Redskins, Lee Cooper, FRNCH…) grâce à un accompagnement e-commerce 360°. Notre croissance (x2 en 3 ans) ouvre la voie à des talents qui veulent tester, apprendre et automatiser . Le poste Ta mission Construire et optimiser des workflows multicanaux (email, SMS, push) sur Klaviyo, CartsGuru, Brevo & Shopify. Driver la stratégie data & IA : scoring, segments prédictifs, contenu généré (GPT-like). Piloter l’envoi de…",
+    "salary_raw": "",
+    "published": "2026-05-12T22:51:31Z",
+    "contract_raw": "",
+    "salary_extracted": null,
+    "telework_days": 2,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": null,
+    "flags": [
+      "Annonce ancienne (89 j)"
+    ],
+    "score": 9,
+    "score_reasons": [
+      "Outils : email, sms",
+      "Compétences alignées (3)",
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Télétravail 2j/sem"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Annonce ancienne (89 j)"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Owned media lead (H/F)",
+    "link": "https://www.adzuna.fr/details/5814822714?utm_medium=api&utm_source=707eaaff",
+    "company": "Groupe OpenSourcing",
+    "location": "9ème Arrondissement, Paris",
+    "description": "Job description You will act as the key link between global strategy and local execution, ensuring owned media aligns with paid/earned campaigns to drive conversion and grow the loyalty/membership program. CRM & Automation: Plan and deploy automated, data-driven CRM campaigns via a Marketing Automation Platform (MAP) in line with the local marketing calendar. Data & Personalization: Leverage customer segmentation to deliver targeted content, boost member growth, and support SEO initiatives. Omn…",
+    "salary_raw": "52000-65000 €",
+    "published": "2026-07-25T03:56:36Z",
+    "contract_raw": "permanent",
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": "CDI",
+    "commute_minutes": null,
+    "flags": [
+      "Télétravail non mentionné"
+    ],
+    "score": 9,
+    "score_reasons": [
+      "Outils : segmentation",
+      "Compétences alignées (3)",
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Salaire dans la cible (52,000€)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+  },
+  {
     "source": "We Work Remotely",
     "title": "Area Vice President - Financial Services",
     "link": "https://weworkremotely.com/remote-jobs/gitlab-area-vice-president-financial-services",
@@ -281,62 +336,56 @@
   },
   {
     "source": "Adzuna",
-    "title": "Chef·fe de Projet CRM & Marketing Automation (F/H/NB) – E-commerce & IA",
-    "link": "https://www.adzuna.fr/details/5727289947?utm_medium=api&utm_source=707eaaff",
-    "company": "Store & Supply",
-    "location": "Levallois-Perret, Nanterre",
-    "description": "À propos de Store & Supply Depuis 2014, nous propulsons 50 marques mode/lifestyle (Redskins, Lee Cooper, FRNCH…) grâce à un accompagnement e-commerce 360°. Notre croissance (x2 en 3 ans) ouvre la voie à des talents qui veulent tester, apprendre et automatiser . Le poste Ta mission Construire et optimiser des workflows multicanaux (email, SMS, push) sur Klaviyo, CartsGuru, Brevo & Shopify. Driver la stratégie data & IA : scoring, segments prédictifs, contenu généré (GPT-like). Piloter l’envoi de…",
+    "title": "Consultant CRM F/H",
+    "link": "https://www.adzuna.fr/details/5806035270?utm_medium=api&utm_source=707eaaff",
+    "company": "CONVERTEO",
+    "location": "Paris, Ile-de-France",
+    "description": "Après formation interne sur nos méthodologies et obtention éventuelle des certifications nécessaires, vous : participerez, en autonomie, à la définition et au déploiement de stratégies de CRM, de gestion de campagnes, de Marketing Automation et de Marketing Relationnel chez nos clients êtes impliqué(e) sur toutes les problématiques liées à la relation client Quelques exemples de missions : Définition de parcours clients 360° Définition de plans relationnels Analyse et segmentation de base de do…",
     "salary_raw": "",
-    "published": "2026-05-12T22:51:31Z",
-    "contract_raw": "",
-    "salary_extracted": null,
-    "telework_days": 2,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": 106,
-    "flags": [
-      "Trajet long (106 min)",
-      "Annonce ancienne (89 j)"
-    ],
-    "score": 8,
-    "score_reasons": [
-      "Outils : email, sms",
-      "Compétences alignées (3)",
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (106 min)",
-      "Télétravail 2j/sem"
-    ],
-    "recommendation": "à_écarter",
-    "recommendation_reason": "Trajet 106 min et pas 100 % télétravail"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Owned media lead (H/F)",
-    "link": "https://www.adzuna.fr/details/5814822714?utm_medium=api&utm_source=707eaaff",
-    "company": "Groupe OpenSourcing",
-    "location": "9ème Arrondissement, Paris",
-    "description": "Job description You will act as the key link between global strategy and local execution, ensuring owned media aligns with paid/earned campaigns to drive conversion and grow the loyalty/membership program. CRM & Automation: Plan and deploy automated, data-driven CRM campaigns via a Marketing Automation Platform (MAP) in line with the local marketing calendar. Data & Personalization: Leverage customer segmentation to deliver targeted content, boost member growth, and support SEO initiatives. Omn…",
-    "salary_raw": "52000-65000 €",
-    "published": "2026-07-25T03:56:36Z",
+    "published": "2026-07-18T11:50:21Z",
     "contract_raw": "permanent",
+    "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
     "contract_type": "CDI",
-    "commute_minutes": 105,
+    "commute_minutes": null,
     "flags": [
-      "Télétravail non mentionné",
-      "Trajet long (105 min)"
+      "Télétravail non mentionné"
     ],
     "score": 8,
     "score_reasons": [
       "Outils : segmentation",
       "Compétences alignées (3)",
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Salaire dans la cible (52,000€)",
-      "Trajet long (105 min)"
+      "Signaux CRM lifecycle (email / segmentation / campagne)"
     ],
-    "recommendation": "à_écarter",
-    "recommendation_reason": "Trajet 105 min et pas 100 % télétravail"
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Spontaneous Application (Hybrid Remote Policy)",
+    "link": "https://www.adzuna.fr/details/5298580312?utm_medium=api&utm_source=707eaaff",
+    "company": "Brevo",
+    "location": "Paris, Ile-de-France",
+    "description": "At Brevo, we’re not just building a CRM. With our technology, we’re helping millions of organizations build lasting relationships with their customers. From emails and SMS to WhatsApp, Chat, and Marketing Automation, our tools are intuitive, powerful, and built to scale with every ambition. We give businesses a clear view of the customer journey, so they can focus on what matters: connection. As a certified B Corp , we’re proud to grow with purpose, committed to high standards of social and env…",
+    "salary_raw": "",
+    "published": "2025-07-11T22:59:42Z",
+    "contract_raw": "",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": null,
+    "flags": [
+      "Annonce ancienne (394 j)"
+    ],
+    "score": 8,
+    "score_reasons": [
+      "Outils clés : email, sms, whatsapp",
+      "Signaux CRM lifecycle (email / segmentation / campagne)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Annonce ancienne (394 j)"
   },
   {
     "source": "We Work Remotely",
@@ -384,51 +433,55 @@
     "recommendation_reason": "Profil correspondant, aucun signal à vérifier (100 % télétravail France, score 8/10)"
   },
   {
-    "source": "RemoteOK",
-    "title": "Senior React Full stack Developer",
-    "link": "https://remoteOK.com/remote-jobs/remote-senior-react-full-stack-developer-lemon-io-1136299",
-    "company": "Lemon.io",
-    "location": "Remote",
-    "description": "<p>Are you a talented Senior Developer looking for a remote job that lets you show your skills and get decent compensation? Look no further than <a href=\"https://lemon.io/for-developers/?utm_source=remoteok&amp;utm_medium=job_ad&amp;utm_campaign=supply_en_fullstack_react/node/python/ruby_aug_2026_job_ad\">Lemon.io</a> â the marketplace that connects you with hand-picked startups in the US and Europe.</p><p><strong>What we offer:</strong></p><ul><li>The rate depends on your seniority level, skills and experience. We've already paid out over $11M to our engineers.</li><li>No more hunting for clients or negotiating rates â let us handle the business side of things so you can focus on what you do best.</li><li>We'll manually find the best project for you according to your skills and preferences.</li><li>Choose a schedule that works best for you. Itâs possible to communicate async or minimally overlap within team working hours.</li><li>We respect your seniority so you can expect no micromanagement or screen trackers.</li><li>Communicate directly with the clients. Most of them have technical backgrounds. Sounds good, yeah?</li><li>We will support you from the time you submit the application throughout all cooperation stages.</li><li>Most of our projects involve working in a fast-paced startup environment. We hope you like it as much as we do.</li><li>Through our community, we will connect you with the best developers from more than 75 countries.</li></ul><p>We have several open positions for Full-Stack React.js Developers - please see the details below. We also have some backend positions; the full list is included below as well.</p><h3><strong>Requirements for the Senior React &amp; Python Position:</strong></h3><ul><li>4+ years of software development experience.</li></ul><p>Commercial experience:</p><ul><li>React.js 3+ years &amp; Python 3+ years<br />OR<br />React.js 2+ years &amp; Python 5+ years<br />OR<br />React.js 5+ years &amp; Python 2+ years</li><li><p>Experience with AWS, GCP, or Azure is required.</p></li></ul><h3><strong>Requirements for the Senior Ruby &amp; React Position:</strong></h3><ul><li>5+ years of software development experience</li><li>React.js 2+ years and Ruby/Ruby on Rails 5+ years<br /><strong>OR</strong><br />React.js 5+ years and Ruby/Ruby on Rails 2+ years</li><li>Experience with AWS, GCP, or Azure is required.</li></ul><h3><strong>Requirements for the Senior Node &amp; React Position:</strong></h3><ul><li>5+ years of software development experience</li></ul><p><strong>Commercial experience:</strong></p><ul><li>React.js: 3+ years, Node.js: 5+ years, and Next.js: 2+ years<br /><strong>OR</strong><br />React.js: 5+ years, Node.js: 3+ years, and Next.js: 2+ years</li><li>Expertise in AWS, TypeScript and AI-assisted coding is a must.</li></ul><p><strong>Other requirements:</strong></p><ul><li>Strong technical skills: as a Senior Developer, you are expected to be able to create projects from scratch and have a deep understanding of application architecture.</li><li>Clear and effective communication in English â advanced ability to discuss business tasks, justify decisions, and communicate issues. Good self-presentation is also essential for upcoming client calls.</li><li>Strong self-organizational skills â ability to work full-time remotely with no supervision.</li><li>Reliability â we want to trust you and expect that you wonât let us and the client down.</li><li>Adaptability and Flexibility â the ability to onboard the project promptly after accepting it and start delivering results quickly.</li></ul><p>Sounds good for you? Apply now and join the <a href=\"https://lemon.io/for-developers/?utm_source=remoteok&amp;utm_medium=job_ad&amp;utm_campaign=supply_en_fullstack_react/node/python/ruby_aug_2026_job_ad\">Lemon.io</a> community!</p><p><strong>NOT YOUR TECH STACK?</strong></p><p>We have a variety of projects, so if you have 4+ years of commercial software development experience and are proficient in AI Agent Architecture, AI Automation Architecture, AI Engineering, Site Reliability Engineering, Platform Engineering, React &amp; Golang, Golang, React &amp; Java, Ruby, PHP &amp; Vue, Vue &amp; Node.js, React &amp; .NET, Android &amp; iOS, iOS &amp; Swift, Flutter &amp; Dart, Blockchain (Ethereum/Ethers.js/Wagmi/Viem/Solana), Angular &amp; Node.js, Vue &amp; .NET, Python &amp; Vue, DevOps, MLOps, Data Science, Angular &amp; PHP, Angular &amp; .NET, Symfony &amp; React, Symfony &amp; Vue, Symfony &amp; Angular, Python, Symfony &amp; JavaScript &amp; Next.js &amp; TypeScript, Data Analysis, React &amp; PHP, Data Engineering, Project Management, Product Management, QA Automation, QA Manual, Embedded Software Engineering, React Native &amp; Node, React Native &amp; React, React Native &amp; Ruby, React Native &amp; Python, WordPress, Android, Data Annotation, Angular, Python &amp; Node, Java &amp; Spring, Svelte &amp; Python, Svelte &amp; Node.js, Svelte &amp; TypeScript, Rust, Shopify &amp; JavaScript, Vue &amp; Nuxt, PHP &amp; Laravel, UI/UX Design, Animation, Graphic Design, React &amp; Node &amp; React Native, .NET &amp; C#, Electron, Scala, C++, Unreal Engine &amp; C++, Python &amp; LLM, Unity, or Machine Learning Engineering, we would be happy to connect with you and match you with a project that fits your experience.</p><p>We do not provide visa assistance, and our cooperation model does not include the benefits typically offered with direct hire.</p><p>We work with developers from 75+ countries across Europe, Latin America, North America (the U.S. and Canada), selected countries in Asia (Japan, Singapore, South Korea, the Philippines, Indonesia, Malaysia, Vietnam, Thailand, and Israel), Oceania (Australia, New Zealand, and Papua New Guinea), and Africa (including Morocco and South Africa).</p><p></p><br/><br/>Please mention the word **PLEASURE** and tag RMTM1LjExOS4zOC40OA== when applying to show you read the job post completely (#RMTM1LjExOS4zOC40OA==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
-    "salary_raw": "50000-210000 $",
-    "published": "2026-08-07T13:08:19+00:00",
-    "telework_days": 5,
+    "source": "Site carrière — Vestiaire Collective",
+    "title": "Security Analyst",
+    "link": "https://jobs.lever.co/vestiairecollective/a294eb1c-07b7-490c-bc12-4be817d0bbef",
+    "company": "Vestiaire Collective",
+    "location": "Paris",
+    "description": "Vestiaire Collective is the leading global platform for desirable pre-loved fashion and a pioneer in transforming how people consume fashion.\n \nOur mission is simple: make circular fashion the norm, not the exception.\nThrough technology, expertise, and a highly engaged global community, we enable millions of people to buy and sell fashion in a more sustainable way.\n \nFounded in Paris in 2009, Vestiaire Collective is now a globally scaled marketplace with offices in Paris, London, Berlin, New York, Singapore, and Ho Chi Minh City, and logistics hubs across Europe, Asia, and the US.\nToday, we are a team of around 600 people from over 50 nationalities, united by a shared ambition: to drive meaningful change in the fashion industry.\n \nOur values, Activism, Transparency, Dedication, Greatness, and Collective, shape how we build, collaborate, and grow every day.\n\n\nPlease upload your CVs in English \n \nAbout the role : \nAs a Senior Security Analyst at Vestiaire Collective, you will be part of our Security team. Your objective will be to provide a safe, secure, and trustworthy experience for our users, while safeguarding their privacy and personal data, as well as protecting our company assets and internal employees. Additionally, you will ensure compliance with regulatory requirements.\nThis role is focused on security operations, risk, and assurance: you will be the person who keeps continuous watch over our security posture — monitoring and investigating alerts, driving vulnerabilities through to remediation, supporting incident response, and producing the evidence and metrics that demonstrate our security and compliance to auditors, regulators, and leadership. Reporting to the Head of Security, you will work alongside a talented team of security engineers and collaborate closely with engineering teams and other stakeholders such as legal, finance, and corporate IT.\nYou will work daily with our security stack: Datadog (SIEM), SentinelOne (EDR), Upwind (CSPM), Cloudflare (WAF and Cloudflare One), and Grafana/Prometheus, on top of our AWS and GCP cloud environments.\nWhat you will do : \nOperate and continuously improve our security monitoring: triage and investigate alerts across our detection stack (Datadog SIEM, SentinelOne EDR, Cloudflare), tune detections to reduce noise, and escalate confirmed threats.\nReview and prioritize cloud security posture findings (Upwind CSPM) across our AWS and GCP environments, and drive misconfigurations through to resolution with the relevant teams.\nOwn the vulnerability management lifecycle: consolidate findings from penetration tests, application security reviews, and our bug bounty program; validate and prioritize them; and drive remediation with engineering teams against defined SLAs.\nTriage incoming bug bounty submissions: reproduce and assess reported issues, determine severity, and coordinate fixes with the relevant code owners.\nSupport incident response from detection to closure: first-line investigation, coordination during incidents, documentation, and post-incident follow-up actions.\nSupport audit and assurance activities: prepare and maintain evidence for external audits, run periodic access reviews (joiners/movers/leavers, privileged access), and keep compliance documentation up to date.\nContribute to security metrics and reporting: maintain and enrich the KPIs and dashboards (Grafana) we use to report our security posture to leadership.\nAssess third-party vendors and tools from a security and data-protection standpoint.\nHandle day-to-day security requests from across the company (reported phishing, the security inbox, employee questions) and deliver security awareness initiatives to promote a security-conscious culture.\nWho you are :\nProven experience (3+ years) in a security analyst, SOC, or security operations role, preferably in a fast-paced startup/scaleup environment.\nStrong analytical and problem-solving abilities, rigorous documentation habits, and the ability to communicate clearly with both technical and non-technical stakeholders.\nHands-on experience with SIEM and log analysis platforms (e.g., Datadog, Splunk, Elastic) for alert triage, threat detection, and investigation; familiarity with EDR tooling (e.g., SentinelOne, CrowdStrike) is a strong plus.\nWorking familiarity with cloud environments (AWS and/or GCP) and cloud security fundamentals - enough to understand, prioritize, and follow up on CSPM and WAF findings.\nSolid understanding of vulnerability management and common application threats (e.g., OWASP Top 10) - enough to validate findings, assess real-world impact, and discuss remediation credibly with engineers.\nUnderstanding of compliance frameworks and regulations (e.g., ISO 27001, PCI DSS, SOC 2, GDPR, DSA), with the ability to translate requirements into practical controls, procedures, and audit evidence.\nScripting or query skills (e.g., Python, SQL), for automating routine analysis and digging into data during investigations.\nAbility to adapt to a rapidly changing environment and manage multiple priorities.\nNICE TO HAVE: Bachelor's or Master's degree in Computer Science, Information Security, or a related field. Relevant certifications (e.g., CompTIA Security+/CySA+, GIAC GCIH/GCIA, CISA, ISO 27001 Lead Auditor/Implementer) are a plus.\nOur Tech Stacks includes \nDatadog SIEM\nUpwind CSPM\nCloudflare (WAF, One)\nSentinelOne\nAWS, GCP\nGrafana, Prometheus\nSnowflake\nTableau\n",
+    "published": "2026-06-02T12:09:24.787000",
+    "salary_extracted": null,
+    "telework_days": null,
     "in_france": true,
     "contract_type": null,
+    "commute_minutes": null,
     "flags": [
-      "Salaire en USD"
+      "Séniorité / management d'équipe ?",
+      "Télétravail non mentionné"
     ],
     "score": 8,
     "score_reasons": [
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Salaire dans la cible (50,000€)",
-      "Télétravail 5j/sem"
+      "Compétences alignées (3)",
+      "Secteur favorable : assurance",
+      "Signaux CRM lifecycle (email / segmentation / campagne)"
     ],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Salaire en USD"
+    "recommendation_reason": "À vérifier : Séniorité / management d'équipe ? ; Télétravail non mentionné"
   },
   {
-    "source": "RemoteOK",
-    "title": "With the Ranks",
-    "link": "https://remoteOK.com/remote-jobs/remote-with-the-ranks-apply-coop-1136246",
-    "company": "apply.coop",
-    "location": "Cooperative Nagar, ",
-    "description": "Cooperative| Everywhere | United States - https://withtheranks.com<br><br>We love to build and host high-performing websites and apps, develop cohesive tech strategies to organize at scale, run A/B tests to optimize websites, improve accessibility and page speed on existing websites, run peer-to-peer texting campaigns through our self hosted fork of Spoke, build and maintain open source tech tools, and a whole lot more.<br/><br/>Please mention the word **KINDLINESS** and tag RMTM1LjExOS4zOC40OA== when applying to show you read the job post completely (#RMTM1LjExOS4zOC40OA==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
-    "salary_raw": "",
-    "published": "2026-08-05T15:14:08+00:00",
-    "telework_days": 5,
-    "in_france": true,
+    "source": "Site carrière — Veepee",
+    "title": "Supply BPO x AI Specialist",
+    "link": "https://jobs.lever.co/veepee/e4daf7d8-8b1c-42dd-a166-8a3ec8d185dd",
+    "company": "Veepee",
+    "location": "Paris",
+    "description": "Pioneer of online flash sales since 2001 and key player in European e-commerce, Veepee collaborates with over 7,000 brands to offer highly discounted products available for a limited time. Operating across various sectors, including fashion, home, wine, travel or beauty... Veepee achieved a turnover of 3.3 billion euros incl. VAT in 2024 and employs 5,000 staff members across 10 countries.\n\n\nThe Role in One Sentence\nYou design and deploy the next generation of Veepee’s procurement processes, combining artificial intelligence to explore business problems with classical technical solutions (rules, deterministic automation) to industrialise them in an economically sustainable way.\nYour Responsibilities\nThe role is structured around 3 areas of responsibility. You are free to choose how you approach them.\nMission 1: Performance and Evolution of Procurement Processes\nYou are the business owner for the group’s procurement processes. You are accountable for their operational performance, their coherence with other group processes, and their evolution in line with the AI-first ambition.\nEnsure the consistency and operational performance of procurement processes, you decide what deserves attention, you prioritise according to your own criteria, and you own the trade-off decisions\nIdentify redesign opportunities and own the target vision, distinguishing what calls for incremental optimisation from what requires genuine transformation\nEnsure alignment with other group functions (commercial, warehouses, finance, scheduling) — you define the right moments and formats for coordination\nAddress upstream data quality issues that degrade procurement processes, understand root causes and drive corrections, either directly or through the right stakeholders\nBuild the performance view you consider appropriate (KPIs, dashboards, friction points) and communicate it to teams and leadership\nMission 2: Designing AI and Technical Solutions Supporting These Processes\nYou are responsible for outcomes: solutions that genuinely work, are adopted by teams, and hold up over time — economically and technically. The path to get there is yours.\nIdentify the right solutions by exploiting the full range of available tools — from generative AI to explore, to classical technical components to industrialise — based on what the problem requires\nBuild yourself when it is most efficient: prototypes, demonstrators, proof-of-value. Engage Tech teams when industrialisation justifies it\nOwn architecture decisions, what stays as a generic LLM, what becomes a business rule, what moves to stable ML, what is bought rather than built, and argue them to Tech\nEnsure economic control of solutions: usage cost, latency, human escalation rate, total operational cost. These indicators are at the same level as business quality\nCo-pilot with VeepeeTech teams the solution lifecycle, spec, development, deployment, evolution. You are the reference business counterpart\nEnsure sustainability of what is deployed, documentation, transferability, capacity for future evolution\nMission 3: Team Enablement and Contribution to Group Strategy\nA solution that works technically but is not adopted has no value. A transformation vision that does not translate into concrete trajectories for teams remains a slide deck. You own both.\nSupport procurement teams in adopting new processes and tools, beyond the operating instructions, build understanding of the underlying logic and create genuine buy-in\nContribute to the evolution of roles within the procurement team, which positions will change, which skills need developing, how to support people over time\nBuild and carry the operational and technical feasibility voice in strategic trade-offs within the Supply & Planning Group\nActively participate in defining the group’s strategic plan for the procurement function and translating it into concrete initiatives\nRepresent the function in cross-functional governance bodies where it matters, you decide your level of engagement based on the stakes\nWays of Working\nVeepee is building its operating model AI-first. This role is at the heart of that transformation for the procurement perimeter. Three principles structure day-to-day work:\n1. POC with generative AI, industrialise with the right tool\nFor every operational problem, start with a generative AI prototype, to explore the problem quickly, validate value, and understand real-world patterns. Once the solution is validated, replace the stable and predictable parts with business rules, trained classical ML, lighter LLMs, or deterministic automation. Generative AI remains where linguistic variability or reasoning complexity justifies it.\n2. Measure before industrialising\nEvery deployed solution has its eval dataset, a set of real cases that allows continuous quality measurement. No deployment without a measured baseline. No industrialisation without a quality threshold met.\n3. Economic cost is part of the design\nA solution that works but costs 10× the business benefit is not a solution. You participate in the trade-off between quality, cost, and latency. You know when a premium LLM is justified, when a light LLM suffices, when a deterministic rule beats any LLM or other AI technology, and when make-or-buy is more relevant.\nThe Profile We Are Looking For\nThis role requires a rare combination of operational maturity, technical curiosity, and economic pragmatism. Several career paths can lead here — we are not looking for a specific background, but a combination of capabilities.\nCandidate pools we consider\nConsultants or managers in supply chain who have developed a genuine AI practice (not just exposure to the topic)\nProduct Managers / Owners who have led products with an AI component and have a strong drive to solve concrete business problems\nProfiles with business experience in supply chain who have led AI transformation projects (in a tech-oriented company with a physical goods supply chain)\nProduct Managers / Owners who have led products with an AI component and have a strong drive to solve concrete business problems\nSolutions Engineers or AI Engineers with a strong appetite for supply chain business and customer/business experience\nSupply chain business expertise:\nAt least 5 years of experience in a supply chain / operations environment, ideally with exposure to procurement challenges\nEnd-to-end understanding: demand planning, supply planning, logistics, transport, link with commercial functions\nPractice of continuous improvement, process mapping, operational analysis methods\nProject and transformation expertise:\nProven project management skills\nConfirmed aptitude in process optimisation\nComfortable with Information Systems and agile methods\nAbility to engage with Product Owners and developers — understanding technical constraints\nExperience with product management and quality functional specification (where relevant)\nAI in practice:\nConcrete experience prototyping with LLMs, beyond conversational prompts\nUnderstanding of agentic architectures (function calling, RAG, structured memory), knowing when to use what\nPractice of vibe coding and rapid prototyping tools\nKnowledge of LLM economic constraints: orders of magnitude for per-token costs, latencies, production constraints\nPractice of eval datasets and quality measurement, knowing how to prove an AI solution actually works\nMindset and behaviours:\nPragmatism: prefers an imperfect POC today over a perfect specification in 6 months\nEconomic pragmatism: naturally integrates cost into all technical decisions\nAbility to push without breaking: can carry a transformation vision while respecting teams in place and their trajectories\nClear written and oral communication, ability to make technical topics accessible to business audiences and vice versa\nContinuous curiosity: actively follows the evolution of AI tools and associated engineering practices\nEducation and Languages\nMaster’s level degree (engineering school, quantitative business school, or university equivalent)\nFluent French and English, written and spoken (frequent exchanges with Tech teams and other divisions, group internationalisation)\nAnother language (Spanish, German, Italian) is a plus but not required\nRecruitment Process\nAfter a first screen with the recruiter\nStep 1: Initial conversation (45 min) with the hiring manager to understand your motivations and present the context\nStep 2: Practical case study (1 week to prepare, 1h presentation)  a real operational problem, how you would approach it with a mix of AI and technology\nStep 3: Cross-functional interviews (2h)  with Supply & Planning leadership, a VeepeeTech PO, and a tech peer\nStep 4: Final conversation (1h)  with the N+2 on long-term vision and offer terms\n \n",
+    "published": "2026-06-05T14:53:34.054000",
     "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
     "contract_type": null,
-    "flags": [],
+    "commute_minutes": null,
+    "flags": [
+      "Télétravail non mentionné"
+    ],
     "score": 8,
     "score_reasons": [
-      "Outils : a/b test",
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Télétravail 5j/sem"
+      "Compétences alignées (3)",
+      "Secteur favorable : finance",
+      "Signaux CRM lifecycle (email / segmentation / campagne)"
     ],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À confirmer : titre sans signal CRM explicite"
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
     "source": "France Travail",
@@ -495,21 +548,21 @@
     "contract_type": "CDI",
     "telework_days": null,
     "in_france": true,
-    "commute_minutes": 99,
+    "commute_minutes": 98,
     "flags": [
       "Séniorité élevée (>7 ans ?)",
       "Télétravail non mentionné",
-      "Trajet long (99 min)"
+      "Trajet long (98 min)"
     ],
     "score": 7,
     "score_reasons": [
       "Outils : segmentation, email",
       "Compétences alignées (6)",
       "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (99 min)"
+      "Trajet long (98 min)"
     ],
     "recommendation": "à_écarter",
-    "recommendation_reason": "Trajet 99 min et pas 100 % télétravail"
+    "recommendation_reason": "Trajet 98 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -541,84 +594,188 @@
   },
   {
     "source": "Adzuna",
-    "title": "Consultant CRM F/H",
-    "link": "https://www.adzuna.fr/details/5806035270?utm_medium=api&utm_source=707eaaff",
-    "company": "CONVERTEO",
+    "title": "Director Campaign Management H/F",
+    "link": "https://www.adzuna.fr/details/5792342527?utm_medium=api&utm_source=707eaaff",
+    "company": "Ubisoft2",
     "location": "Paris, Ile-de-France",
-    "description": "Après formation interne sur nos méthodologies et obtention éventuelle des certifications nécessaires, vous : participerez, en autonomie, à la définition et au déploiement de stratégies de CRM, de gestion de campagnes, de Marketing Automation et de Marketing Relationnel chez nos clients êtes impliqué(e) sur toutes les problématiques liées à la relation client Quelques exemples de missions : Définition de parcours clients 360° Définition de plans relationnels Analyse et segmentation de base de do…",
+    "description": "As a Director, Campaign Program Management at Ubisoft Paris, you'll build, structure, and lead our Campaign Program Management team. This team acts as the operational hub between our Creative Houses, who define brand and campaign strategy, and our cross-functional experts, such as media, shopper marketing, and social media. You'll ensure rigorous global planning and the seamless delivery of campaigns and related content on time, on budget, and at scale. Reporting to the Head of Campaign Content…",
     "salary_raw": "",
-    "published": "2026-07-18T11:50:21Z",
-    "contract_raw": "permanent",
+    "published": "2026-07-08T12:22:16Z",
+    "contract_raw": "",
     "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
-    "contract_type": "CDI",
-    "commute_minutes": 80,
+    "contract_type": null,
+    "commute_minutes": null,
+    "flags": [
+      "Séniorité / management d'équipe ?",
+      "Télétravail non mentionné"
+    ],
+    "score": 7,
+    "score_reasons": [
+      "Compétences alignées (3)",
+      "Signaux CRM lifecycle (email / segmentation / campagne)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Séniorité / management d'équipe ? ; Télétravail non mentionné"
+  },
+  {
+    "source": "Adzuna",
+    "title": "SMB (Small-Mid Market) Campaign Manager",
+    "link": "https://www.adzuna.fr/details/5824135816?utm_medium=api&utm_source=707eaaff",
+    "company": "Trimble",
+    "location": "Joinville-le-Pont, Nogent-sur-Marne",
+    "description": "Elevate your marketing career by shaping dynamic marketing campaigns that drive business growth in the architecture, engineering, and construction sector. Joining Trimble in Joinville-le-Pont, you will collaborate with cross-functional global teams, plan and craft impactful campaign briefs, and optimize regional go-to-market strategies to boost revenue pipeline and elevate customer engagement across the region. About Us: Trimble is empowering stakeholders through planning, design, construction …",
+    "salary_raw": "",
+    "published": "2026-08-01T17:27:47Z",
+    "contract_raw": "",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": null,
     "flags": [
       "Télétravail non mentionné"
     ],
     "score": 7,
     "score_reasons": [
-      "Outils : segmentation",
       "Compétences alignées (3)",
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (80 min)"
+      "Signaux CRM lifecycle (email / segmentation / campagne)"
     ],
     "recommendation": "à_revoir",
     "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
-    "title": "Spontaneous Application (Hybrid Remote Policy)",
-    "link": "https://www.adzuna.fr/details/5298580312?utm_medium=api&utm_source=707eaaff",
-    "company": "Brevo",
+    "title": "Marketing Manager",
+    "link": "https://www.adzuna.fr/details/5287877192?utm_medium=api&utm_source=707eaaff",
+    "company": "cord",
     "location": "Paris, Ile-de-France",
-    "description": "At Brevo, we’re not just building a CRM. With our technology, we’re helping millions of organizations build lasting relationships with their customers. From emails and SMS to WhatsApp, Chat, and Marketing Automation, our tools are intuitive, powerful, and built to scale with every ambition. We give businesses a clear view of the customer journey, so they can focus on what matters: connection. As a certified B Corp , we’re proud to grow with purpose, committed to high standards of social and env…",
+    "description": "We’re looking for a Marketing Manager to drive our brand’s growth through creative campaigns. You’ll manage content creation, optimize digital strategies, and analyze data to boost customer engagement. Experience with SEO, SEM, and email marketing is essential. A collaborative mindset, strong project management skills, and a passion for innovation are key to success in this role. \"}' data-trix-content-type=\"undefined\" data-trix-id=\"1959\"> Key Responsibilities As a Marketing Manager, you’ll over…",
     "salary_raw": "",
-    "published": "2025-07-11T22:59:42Z",
+    "published": "2025-07-05T17:24:16Z",
     "contract_raw": "",
     "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": 80,
+    "commute_minutes": null,
     "flags": [
-      "Annonce ancienne (394 j)"
+      "Télétravail non mentionné",
+      "Annonce ancienne (400 j)"
     ],
     "score": 7,
     "score_reasons": [
-      "Outils clés : email, sms, whatsapp",
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (80 min)"
+      "Outils : email",
+      "Signaux CRM lifecycle (email / segmentation / campagne)"
     ],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Annonce ancienne (394 j)"
+    "recommendation_reason": "À vérifier : Télétravail non mentionné ; Annonce ancienne (400 j)"
   },
   {
     "source": "Adzuna",
-    "title": "Customer Relationship Manager (F/H) - CDI",
-    "link": "https://www.adzuna.fr/details/5813204028?utm_medium=api&utm_source=707eaaff",
-    "company": "Collective.work",
-    "location": "Gif-sur-Yvette, Palaiseau",
-    "description": "Description du poste Salaire: 55000 Fondé en 1981, Cambridge Isotope Laboratories (CIL) est le leader mondial de la production et de la commercialisation de composés marqués aux isotopes stables. Nos produits sont utilisés dans la recherche pharmaceutique, les sciences de la vie, la chimie analytique, le diagnostic médical, les sciences environnementales et les technologies avancées. Filiale européenne de CIL, Elle accompagne ses clients en Europe et à l’international depuis plus de 35 ans, grâ…",
-    "salary_raw": "55000-55000 €",
-    "published": "2026-07-24T03:57:32Z",
-    "contract_raw": "permanent",
+    "title": "Group Manager Creative Project Management H/F",
+    "link": "https://www.adzuna.fr/details/5787707140?utm_medium=api&utm_source=707eaaff",
+    "company": "Ubisoft2",
+    "location": "Paris, Ile-de-France",
+    "description": "As a Senior Manager, Creative Project Management at Ubisoft, you will lead and support a team of Creative Project Managers within the Campaign Content Hub. You will oversee the day-to-day execution of creative asset production, ensuring briefs are translated into high-quality deliverables through effective coordination with internal creative teams and external agencies. In this role, you will focus on production execution rather than campaign strategy or governance. You will help ensure project…",
+    "salary_raw": "",
+    "published": "2026-07-04T09:55:01Z",
+    "contract_raw": "",
+    "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
-    "contract_type": "CDI",
-    "commute_minutes": 25,
+    "contract_type": null,
+    "commute_minutes": null,
     "flags": [
-      "Séniorité élevée (>7 ans ?)",
       "Télétravail non mentionné"
     ],
     "score": 7,
     "score_reasons": [
-      "Salaire dans la cible (55,000€)",
-      "Trajet court (25 min)"
+      "Compétences alignées (3)",
+      "Signaux CRM lifecycle (email / segmentation / campagne)"
     ],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Séniorité élevée (>7 ans ?) ; Télétravail non mentionné"
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+  },
+  {
+    "source": "Adzuna",
+    "title": "CHEF(FE) DE PROJET E-COMMERCE & CRM (H/F)",
+    "link": "https://www.adzuna.fr/details/5831418583?utm_medium=api&utm_source=707eaaff",
+    "company": "Magnet Open Sourcing",
+    "location": "Paris, Ile-de-France",
+    "description": "Description du poste et Missions En collaboration directe avec les équipes projet, créa, tech et marketing, vous prenez à bras-le-corps le pilotage des projets digitaux de nos clients premium, de la conception au suivi des performances. Votre rôle s'articule autour de deux piliers majeurs : 1. Project Management E-commerce (Shopify) Pilotage & Relation Client : Analyse des besoins, cadrage des briefs fonctionnels/techniques et suivi quotidien des clients. Coordination : Gestion des plannings et…",
+    "salary_raw": "",
+    "published": "2026-08-07T04:16:13Z",
+    "contract_raw": "",
+    "salary_extracted": null,
+    "telework_days": 2,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": null,
+    "flags": [
+      "CRM = sourcing RH ?",
+      "Pertinence CRM à confirmer"
+    ],
+    "score": 7,
+    "score_reasons": [
+      "Compétences alignées (4)",
+      "Télétravail 2j/sem"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : CRM = sourcing RH ? ; Pertinence CRM à confirmer"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Consultant(e) Transformation CRM et Marketing Automation",
+    "link": "https://www.adzuna.fr/details/5830622892?utm_medium=api&utm_source=707eaaff",
+    "company": "Okuden.",
+    "location": "17ème Arrondissement, Paris",
+    "description": "Notre offre de Consultant(e) Transformation CRM & Marketing Automation, concrètement au travers d’exemples de missions : Accompagner la mise en place d’un ambitieux programme de Lead Management : Identifier, formaliser et prioriser les besoins métier, piloter une équipe agile pour leur mise en place, assurer le reporting projet & business Cadrer et mettre en place une nouvelle solution de CRM pour un service clients : Identifier les besoins et la solution adéquate, Assurer une communication flu…",
+    "salary_raw": "",
+    "published": "2026-08-06T17:19:32Z",
+    "contract_raw": "",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": null,
+    "flags": [
+      "Télétravail non mentionné"
+    ],
+    "score": 7,
+    "score_reasons": [
+      "Compétences alignées (3)",
+      "Signaux CRM lifecycle (email / segmentation / campagne)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Marketing Operations - Not Applicable Paris J Fr H/F",
+    "link": "https://www.adzuna.fr/details/5835126998?utm_medium=api&utm_source=707eaaff",
+    "company": "Worldline",
+    "location": "Paris, Ile-de-France",
+    "description": "Objective - Ensure the quality of the data, automate workflows and enable processes and governance. - Improve our inbound and outbound marketing strategy using digital marketing tools. Activity - Develop and maintain the marketing automation platform and processes. - Participate to develop automated marketing campaigns. - Drive nurturing campaigns including grading and scoring. - Expand and improve database. - Report statistics, reports and create dashboards. - Monitor data quality across marke…",
+    "salary_raw": "",
+    "published": "2026-08-10T02:06:36Z",
+    "contract_raw": "",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": null,
+    "flags": [
+      "Télétravail non mentionné"
+    ],
+    "score": 7,
+    "score_reasons": [
+      "Compétences alignées (4)",
+      "Signaux CRM lifecycle (email / segmentation / campagne)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
     "source": "Remotive",
@@ -819,59 +976,6 @@
     "recommendation_reason": "À confirmer : titre sans signal CRM explicite"
   },
   {
-    "source": "Site carrière — Vestiaire Collective",
-    "title": "Security Analyst",
-    "link": "https://jobs.lever.co/vestiairecollective/a294eb1c-07b7-490c-bc12-4be817d0bbef",
-    "company": "Vestiaire Collective",
-    "location": "Paris",
-    "description": "Vestiaire Collective is the leading global platform for desirable pre-loved fashion and a pioneer in transforming how people consume fashion.\n \nOur mission is simple: make circular fashion the norm, not the exception.\nThrough technology, expertise, and a highly engaged global community, we enable millions of people to buy and sell fashion in a more sustainable way.\n \nFounded in Paris in 2009, Vestiaire Collective is now a globally scaled marketplace with offices in Paris, London, Berlin, New York, Singapore, and Ho Chi Minh City, and logistics hubs across Europe, Asia, and the US.\nToday, we are a team of around 600 people from over 50 nationalities, united by a shared ambition: to drive meaningful change in the fashion industry.\n \nOur values, Activism, Transparency, Dedication, Greatness, and Collective, shape how we build, collaborate, and grow every day.\n\n\nPlease upload your CVs in English \n \nAbout the role : \nAs a Senior Security Analyst at Vestiaire Collective, you will be part of our Security team. Your objective will be to provide a safe, secure, and trustworthy experience for our users, while safeguarding their privacy and personal data, as well as protecting our company assets and internal employees. Additionally, you will ensure compliance with regulatory requirements.\nThis role is focused on security operations, risk, and assurance: you will be the person who keeps continuous watch over our security posture — monitoring and investigating alerts, driving vulnerabilities through to remediation, supporting incident response, and producing the evidence and metrics that demonstrate our security and compliance to auditors, regulators, and leadership. Reporting to the Head of Security, you will work alongside a talented team of security engineers and collaborate closely with engineering teams and other stakeholders such as legal, finance, and corporate IT.\nYou will work daily with our security stack: Datadog (SIEM), SentinelOne (EDR), Upwind (CSPM), Cloudflare (WAF and Cloudflare One), and Grafana/Prometheus, on top of our AWS and GCP cloud environments.\nWhat you will do : \nOperate and continuously improve our security monitoring: triage and investigate alerts across our detection stack (Datadog SIEM, SentinelOne EDR, Cloudflare), tune detections to reduce noise, and escalate confirmed threats.\nReview and prioritize cloud security posture findings (Upwind CSPM) across our AWS and GCP environments, and drive misconfigurations through to resolution with the relevant teams.\nOwn the vulnerability management lifecycle: consolidate findings from penetration tests, application security reviews, and our bug bounty program; validate and prioritize them; and drive remediation with engineering teams against defined SLAs.\nTriage incoming bug bounty submissions: reproduce and assess reported issues, determine severity, and coordinate fixes with the relevant code owners.\nSupport incident response from detection to closure: first-line investigation, coordination during incidents, documentation, and post-incident follow-up actions.\nSupport audit and assurance activities: prepare and maintain evidence for external audits, run periodic access reviews (joiners/movers/leavers, privileged access), and keep compliance documentation up to date.\nContribute to security metrics and reporting: maintain and enrich the KPIs and dashboards (Grafana) we use to report our security posture to leadership.\nAssess third-party vendors and tools from a security and data-protection standpoint.\nHandle day-to-day security requests from across the company (reported phishing, the security inbox, employee questions) and deliver security awareness initiatives to promote a security-conscious culture.\nWho you are :\nProven experience (3+ years) in a security analyst, SOC, or security operations role, preferably in a fast-paced startup/scaleup environment.\nStrong analytical and problem-solving abilities, rigorous documentation habits, and the ability to communicate clearly with both technical and non-technical stakeholders.\nHands-on experience with SIEM and log analysis platforms (e.g., Datadog, Splunk, Elastic) for alert triage, threat detection, and investigation; familiarity with EDR tooling (e.g., SentinelOne, CrowdStrike) is a strong plus.\nWorking familiarity with cloud environments (AWS and/or GCP) and cloud security fundamentals - enough to understand, prioritize, and follow up on CSPM and WAF findings.\nSolid understanding of vulnerability management and common application threats (e.g., OWASP Top 10) - enough to validate findings, assess real-world impact, and discuss remediation credibly with engineers.\nUnderstanding of compliance frameworks and regulations (e.g., ISO 27001, PCI DSS, SOC 2, GDPR, DSA), with the ability to translate requirements into practical controls, procedures, and audit evidence.\nScripting or query skills (e.g., Python, SQL), for automating routine analysis and digging into data during investigations.\nAbility to adapt to a rapidly changing environment and manage multiple priorities.\nNICE TO HAVE: Bachelor's or Master's degree in Computer Science, Information Security, or a related field. Relevant certifications (e.g., CompTIA Security+/CySA+, GIAC GCIH/GCIA, CISA, ISO 27001 Lead Auditor/Implementer) are a plus.\nOur Tech Stacks includes \nDatadog SIEM\nUpwind CSPM\nCloudflare (WAF, One)\nSentinelOne\nAWS, GCP\nGrafana, Prometheus\nSnowflake\nTableau\n",
-    "published": "2026-06-02T12:09:24.787000",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": 80,
-    "flags": [
-      "Séniorité / management d'équipe ?",
-      "Télétravail non mentionné"
-    ],
-    "score": 7,
-    "score_reasons": [
-      "Compétences alignées (3)",
-      "Secteur favorable : assurance",
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (80 min)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Séniorité / management d'équipe ? ; Télétravail non mentionné"
-  },
-  {
-    "source": "Site carrière — Veepee",
-    "title": "Supply BPO x AI Specialist",
-    "link": "https://jobs.lever.co/veepee/e4daf7d8-8b1c-42dd-a166-8a3ec8d185dd",
-    "company": "Veepee",
-    "location": "Paris",
-    "description": "Pioneer of online flash sales since 2001 and key player in European e-commerce, Veepee collaborates with over 7,000 brands to offer highly discounted products available for a limited time. Operating across various sectors, including fashion, home, wine, travel or beauty... Veepee achieved a turnover of 3.3 billion euros incl. VAT in 2024 and employs 5,000 staff members across 10 countries.\n\n\nThe Role in One Sentence\nYou design and deploy the next generation of Veepee’s procurement processes, combining artificial intelligence to explore business problems with classical technical solutions (rules, deterministic automation) to industrialise them in an economically sustainable way.\nYour Responsibilities\nThe role is structured around 3 areas of responsibility. You are free to choose how you approach them.\nMission 1: Performance and Evolution of Procurement Processes\nYou are the business owner for the group’s procurement processes. You are accountable for their operational performance, their coherence with other group processes, and their evolution in line with the AI-first ambition.\nEnsure the consistency and operational performance of procurement processes, you decide what deserves attention, you prioritise according to your own criteria, and you own the trade-off decisions\nIdentify redesign opportunities and own the target vision, distinguishing what calls for incremental optimisation from what requires genuine transformation\nEnsure alignment with other group functions (commercial, warehouses, finance, scheduling) — you define the right moments and formats for coordination\nAddress upstream data quality issues that degrade procurement processes, understand root causes and drive corrections, either directly or through the right stakeholders\nBuild the performance view you consider appropriate (KPIs, dashboards, friction points) and communicate it to teams and leadership\nMission 2: Designing AI and Technical Solutions Supporting These Processes\nYou are responsible for outcomes: solutions that genuinely work, are adopted by teams, and hold up over time — economically and technically. The path to get there is yours.\nIdentify the right solutions by exploiting the full range of available tools — from generative AI to explore, to classical technical components to industrialise — based on what the problem requires\nBuild yourself when it is most efficient: prototypes, demonstrators, proof-of-value. Engage Tech teams when industrialisation justifies it\nOwn architecture decisions, what stays as a generic LLM, what becomes a business rule, what moves to stable ML, what is bought rather than built, and argue them to Tech\nEnsure economic control of solutions: usage cost, latency, human escalation rate, total operational cost. These indicators are at the same level as business quality\nCo-pilot with VeepeeTech teams the solution lifecycle, spec, development, deployment, evolution. You are the reference business counterpart\nEnsure sustainability of what is deployed, documentation, transferability, capacity for future evolution\nMission 3: Team Enablement and Contribution to Group Strategy\nA solution that works technically but is not adopted has no value. A transformation vision that does not translate into concrete trajectories for teams remains a slide deck. You own both.\nSupport procurement teams in adopting new processes and tools, beyond the operating instructions, build understanding of the underlying logic and create genuine buy-in\nContribute to the evolution of roles within the procurement team, which positions will change, which skills need developing, how to support people over time\nBuild and carry the operational and technical feasibility voice in strategic trade-offs within the Supply & Planning Group\nActively participate in defining the group’s strategic plan for the procurement function and translating it into concrete initiatives\nRepresent the function in cross-functional governance bodies where it matters, you decide your level of engagement based on the stakes\nWays of Working\nVeepee is building its operating model AI-first. This role is at the heart of that transformation for the procurement perimeter. Three principles structure day-to-day work:\n1. POC with generative AI, industrialise with the right tool\nFor every operational problem, start with a generative AI prototype, to explore the problem quickly, validate value, and understand real-world patterns. Once the solution is validated, replace the stable and predictable parts with business rules, trained classical ML, lighter LLMs, or deterministic automation. Generative AI remains where linguistic variability or reasoning complexity justifies it.\n2. Measure before industrialising\nEvery deployed solution has its eval dataset, a set of real cases that allows continuous quality measurement. No deployment without a measured baseline. No industrialisation without a quality threshold met.\n3. Economic cost is part of the design\nA solution that works but costs 10× the business benefit is not a solution. You participate in the trade-off between quality, cost, and latency. You know when a premium LLM is justified, when a light LLM suffices, when a deterministic rule beats any LLM or other AI technology, and when make-or-buy is more relevant.\nThe Profile We Are Looking For\nThis role requires a rare combination of operational maturity, technical curiosity, and economic pragmatism. Several career paths can lead here — we are not looking for a specific background, but a combination of capabilities.\nCandidate pools we consider\nConsultants or managers in supply chain who have developed a genuine AI practice (not just exposure to the topic)\nProduct Managers / Owners who have led products with an AI component and have a strong drive to solve concrete business problems\nProfiles with business experience in supply chain who have led AI transformation projects (in a tech-oriented company with a physical goods supply chain)\nProduct Managers / Owners who have led products with an AI component and have a strong drive to solve concrete business problems\nSolutions Engineers or AI Engineers with a strong appetite for supply chain business and customer/business experience\nSupply chain business expertise:\nAt least 5 years of experience in a supply chain / operations environment, ideally with exposure to procurement challenges\nEnd-to-end understanding: demand planning, supply planning, logistics, transport, link with commercial functions\nPractice of continuous improvement, process mapping, operational analysis methods\nProject and transformation expertise:\nProven project management skills\nConfirmed aptitude in process optimisation\nComfortable with Information Systems and agile methods\nAbility to engage with Product Owners and developers — understanding technical constraints\nExperience with product management and quality functional specification (where relevant)\nAI in practice:\nConcrete experience prototyping with LLMs, beyond conversational prompts\nUnderstanding of agentic architectures (function calling, RAG, structured memory), knowing when to use what\nPractice of vibe coding and rapid prototyping tools\nKnowledge of LLM economic constraints: orders of magnitude for per-token costs, latencies, production constraints\nPractice of eval datasets and quality measurement, knowing how to prove an AI solution actually works\nMindset and behaviours:\nPragmatism: prefers an imperfect POC today over a perfect specification in 6 months\nEconomic pragmatism: naturally integrates cost into all technical decisions\nAbility to push without breaking: can carry a transformation vision while respecting teams in place and their trajectories\nClear written and oral communication, ability to make technical topics accessible to business audiences and vice versa\nContinuous curiosity: actively follows the evolution of AI tools and associated engineering practices\nEducation and Languages\nMaster’s level degree (engineering school, quantitative business school, or university equivalent)\nFluent French and English, written and spoken (frequent exchanges with Tech teams and other divisions, group internationalisation)\nAnother language (Spanish, German, Italian) is a plus but not required\nRecruitment Process\nAfter a first screen with the recruiter\nStep 1: Initial conversation (45 min) with the hiring manager to understand your motivations and present the context\nStep 2: Practical case study (1 week to prepare, 1h presentation)  a real operational problem, how you would approach it with a mix of AI and technology\nStep 3: Cross-functional interviews (2h)  with Supply & Planning leadership, a VeepeeTech PO, and a tech peer\nStep 4: Final conversation (1h)  with the N+2 on long-term vision and offer terms\n \n",
-    "published": "2026-06-05T14:53:34.054000",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": 80,
-    "flags": [
-      "Télétravail non mentionné"
-    ],
-    "score": 7,
-    "score_reasons": [
-      "Compétences alignées (3)",
-      "Secteur favorable : finance",
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (80 min)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné"
-  },
-  {
     "source": "France Travail",
     "title": "Customer Service Sales Manager (H/F)",
     "link": "https://candidat.francetravail.fr/offres/recherche/detail/5657007",
@@ -981,19 +1085,19 @@
     "contract_type": "CDI",
     "telework_days": null,
     "in_france": true,
-    "commute_minutes": 107,
+    "commute_minutes": 99,
     "flags": [
       "Télétravail non mentionné",
-      "Trajet long (107 min)"
+      "Trajet long (99 min)"
     ],
     "score": 6,
     "score_reasons": [
       "Signaux CRM lifecycle (email / segmentation / campagne)",
       "Salaire dans la cible (45,000€)",
-      "Trajet long (107 min)"
+      "Trajet long (99 min)"
     ],
     "recommendation": "à_écarter",
-    "recommendation_reason": "Trajet 107 min et pas 100 % télétravail"
+    "recommendation_reason": "Trajet 99 min et pas 100 % télétravail"
   },
   {
     "source": "France Travail",
@@ -1189,194 +1293,353 @@
   },
   {
     "source": "Adzuna",
-    "title": "Director Campaign Management H/F",
-    "link": "https://www.adzuna.fr/details/5792342527?utm_medium=api&utm_source=707eaaff",
-    "company": "Ubisoft2",
+    "title": "Campaign manager",
+    "link": "https://www.adzuna.fr/details/5816451148?utm_medium=api&utm_source=707eaaff",
+    "company": "Ad4Screen",
     "location": "Paris, Ile-de-France",
-    "description": "As a Director, Campaign Program Management at Ubisoft Paris, you'll build, structure, and lead our Campaign Program Management team. This team acts as the operational hub between our Creative Houses, who define brand and campaign strategy, and our cross-functional experts, such as media, shopper marketing, and social media. You'll ensure rigorous global planning and the seamless delivery of campaigns and related content on time, on budget, and at scale. Reporting to the Head of Campaign Content…",
+    "description": "L’AGENCE : Agence Média & Marketing, Ad4Screen, est le leader du marché du marketing mobile depuis plus de 15 ans. Nos équipes aident les annonceurs à concilier Trafic & Conversion Mobile sur trois verticales : Site, Application et Mobile to Store. Pour cela nous intervenons afin de répondre à leurs problématiques de génération de trafic Mobile et de téléchargements qualifiés, mais également, d’optimisation de la rétention et des conversions. Des grands groupes du CAC 40, en passant par les Sca…",
     "salary_raw": "",
-    "published": "2026-07-08T12:22:16Z",
+    "published": "2026-07-26T12:31:43Z",
     "contract_raw": "",
     "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": 80,
+    "commute_minutes": null,
     "flags": [
-      "Séniorité / management d'équipe ?",
+      "Séniorité élevée (>7 ans ?)",
       "Télétravail non mentionné"
     ],
     "score": 6,
     "score_reasons": [
-      "Compétences alignées (3)",
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (80 min)"
+      "Signaux CRM lifecycle (email / segmentation / campagne)"
     ],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Séniorité / management d'équipe ? ; Télétravail non mentionné"
+    "recommendation_reason": "À vérifier : Séniorité élevée (>7 ans ?) ; Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
-    "title": "SMB (Small-Mid Market) Campaign Manager",
-    "link": "https://www.adzuna.fr/details/5824135816?utm_medium=api&utm_source=707eaaff",
-    "company": "Trimble",
-    "location": "Joinville-le-Pont, Nogent-sur-Marne",
-    "description": "Elevate your marketing career by shaping dynamic marketing campaigns that drive business growth in the architecture, engineering, and construction sector. Joining Trimble in Joinville-le-Pont, you will collaborate with cross-functional global teams, plan and craft impactful campaign briefs, and optimize regional go-to-market strategies to boost revenue pipeline and elevate customer engagement across the region. About Us: Trimble is empowering stakeholders through planning, design, construction …",
+    "title": "Senior Campaign Manager",
+    "link": "https://www.adzuna.fr/details/5415782897?utm_medium=api&utm_source=707eaaff",
+    "company": "SalesCaptain",
+    "location": "Paris, Ile-de-France",
+    "description": "Join the GTM Revolution at SalesCaptain — Where B2B Growth Happens Since our beginnings in 2021, SalesCaptain has grown into a global force, working with fast-growing B2B brands, YC & Techstars startups, and Series B&C companies, helping them go to market using a predictable process. We are currently looking for a results-driven Senior Campaign Manager to manage the outbound strategy, and communications with our international clients. This is a full-time, remote position (working EU hours). Req…",
     "salary_raw": "",
-    "published": "2026-08-01T17:27:47Z",
+    "published": "2025-09-26T17:46:25Z",
     "contract_raw": "",
     "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": 101,
+    "commute_minutes": null,
     "flags": [
-      "Télétravail non mentionné",
-      "Trajet long (101 min)"
+      "Annonce ancienne (317 j)"
     ],
     "score": 6,
     "score_reasons": [
-      "Compétences alignées (3)",
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (101 min)"
-    ],
-    "recommendation": "à_écarter",
-    "recommendation_reason": "Trajet 101 min et pas 100 % télétravail"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Marketing Manager",
-    "link": "https://www.adzuna.fr/details/5287877192?utm_medium=api&utm_source=707eaaff",
-    "company": "cord",
-    "location": "Paris, Ile-de-France",
-    "description": "We’re looking for a Marketing Manager to drive our brand’s growth through creative campaigns. You’ll manage content creation, optimize digital strategies, and analyze data to boost customer engagement. Experience with SEO, SEM, and email marketing is essential. A collaborative mindset, strong project management skills, and a passion for innovation are key to success in this role. \"}' data-trix-content-type=\"undefined\" data-trix-id=\"1959\"> Key Responsibilities As a Marketing Manager, you’ll over…",
-    "salary_raw": "",
-    "published": "2025-07-05T17:24:16Z",
-    "contract_raw": "",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": 80,
-    "flags": [
-      "Télétravail non mentionné",
-      "Annonce ancienne (400 j)"
-    ],
-    "score": 6,
-    "score_reasons": [
-      "Outils : email",
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (80 min)"
+      "Signaux CRM lifecycle (email / segmentation / campagne)"
     ],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné ; Annonce ancienne (400 j)"
+    "recommendation_reason": "À vérifier : Annonce ancienne (317 j)"
   },
   {
     "source": "Adzuna",
-    "title": "Group Manager Creative Project Management H/F",
-    "link": "https://www.adzuna.fr/details/5787707140?utm_medium=api&utm_source=707eaaff",
-    "company": "Ubisoft2",
+    "title": "Senior Campaign Marketing Manager - Paris H/F",
+    "link": "https://www.adzuna.fr/details/5835126298?utm_medium=api&utm_source=707eaaff",
+    "company": "Shippeo",
     "location": "Paris, Ile-de-France",
-    "description": "As a Senior Manager, Creative Project Management at Ubisoft, you will lead and support a team of Creative Project Managers within the Campaign Content Hub. You will oversee the day-to-day execution of creative asset production, ensuring briefs are translated into high-quality deliverables through effective coordination with internal creative teams and external agencies. In this role, you will focus on production execution rather than campaign strategy or governance. You will help ensure project…",
+    "description": "Campaign Management at Shippeo is responsible for designing, executing, and optimizing full-funnel marketing campaigns that support brand awareness, demand generation, pipeline creation, customer growth, and revenue impact.As a Senior Campaign Manager, you will plan and deliver integrated campaigns across a broad range of initiatives, including brand-building campaigns, performance marketing, events, product releases and customer expansion campaigns.This role will focus on three core areas: bui…",
     "salary_raw": "",
-    "published": "2026-07-04T09:55:01Z",
+    "published": "2026-08-10T02:06:29Z",
     "contract_raw": "",
     "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": 80,
+    "commute_minutes": null,
     "flags": [
       "Télétravail non mentionné"
     ],
     "score": 6,
     "score_reasons": [
-      "Compétences alignées (3)",
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (80 min)"
+      "Signaux CRM lifecycle (email / segmentation / campagne)"
     ],
     "recommendation": "à_revoir",
     "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
-    "title": "CHEF(FE) DE PROJET E-COMMERCE & CRM (H/F)",
-    "link": "https://www.adzuna.fr/details/5831418583?utm_medium=api&utm_source=707eaaff",
-    "company": "Magnet Open Sourcing",
-    "location": "Paris, Ile-de-France",
-    "description": "Description du poste et Missions En collaboration directe avec les équipes projet, créa, tech et marketing, vous prenez à bras-le-corps le pilotage des projets digitaux de nos clients premium, de la conception au suivi des performances. Votre rôle s'articule autour de deux piliers majeurs : 1. Project Management E-commerce (Shopify) Pilotage & Relation Client : Analyse des besoins, cadrage des briefs fonctionnels/techniques et suivi quotidien des clients. Coordination : Gestion des plannings et…",
+    "title": "\"Title\" (W/M) - copy",
+    "link": "https://www.adzuna.fr/details/5825770406?utm_medium=api&utm_source=707eaaff",
+    "company": "Infopro Digital",
+    "location": "Gentilly, L'Haÿ-les-Roses",
+    "description": "Marketing Campaign Manager – Événements B2B (H/F/X) Infopro Digital, groupe B2B spécialisé dans l’information et la technologie, recherche actuellement un(e) Marketing Campaign Manager – Événements B2B en CDI pour renforcer l’équipe de son pôle Événements. Le pôle Événements d’Infopro Digital conçoit et déploie des conférences, congrès et trophées B2B en France et à l’international, portés par des marques fortes du groupe, dont L’Usine Nouvelle. Rejoignez Infopro Digital et devenez un acteur cl…",
     "salary_raw": "",
-    "published": "2026-08-07T04:16:13Z",
-    "contract_raw": "",
-    "salary_extracted": null,
-    "telework_days": 2,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": 80,
-    "flags": [
-      "CRM = sourcing RH ?",
-      "Pertinence CRM à confirmer"
-    ],
-    "score": 6,
-    "score_reasons": [
-      "Compétences alignées (4)",
-      "Trajet long (80 min)",
-      "Télétravail 2j/sem"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : CRM = sourcing RH ? ; Pertinence CRM à confirmer"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Consultant(e) Transformation CRM et Marketing Automation",
-    "link": "https://www.adzuna.fr/details/5830622892?utm_medium=api&utm_source=707eaaff",
-    "company": "Okuden.",
-    "location": "17ème Arrondissement, Paris",
-    "description": "Notre offre de Consultant(e) Transformation CRM & Marketing Automation, concrètement au travers d’exemples de missions : Accompagner la mise en place d’un ambitieux programme de Lead Management : Identifier, formaliser et prioriser les besoins métier, piloter une équipe agile pour leur mise en place, assurer le reporting projet & business Cadrer et mettre en place une nouvelle solution de CRM pour un service clients : Identifier les besoins et la solution adéquate, Assurer une communication flu…",
-    "salary_raw": "",
-    "published": "2026-08-06T17:19:32Z",
+    "published": "2026-08-02T17:25:04Z",
     "contract_raw": "",
     "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
-    "contract_type": null,
-    "commute_minutes": 100,
-    "flags": [
-      "Télétravail non mentionné",
-      "Trajet long (100 min)"
-    ],
-    "score": 6,
-    "score_reasons": [
-      "Compétences alignées (3)",
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (100 min)"
-    ],
-    "recommendation": "à_écarter",
-    "recommendation_reason": "Trajet 100 min et pas 100 % télétravail"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Marketing Operations - Not Applicable Paris J Fr H/F",
-    "link": "https://www.adzuna.fr/details/5835126998?utm_medium=api&utm_source=707eaaff",
-    "company": "Worldline",
-    "location": "Paris, Ile-de-France",
-    "description": "Objective - Ensure the quality of the data, automate workflows and enable processes and governance. - Improve our inbound and outbound marketing strategy using digital marketing tools. Activity - Develop and maintain the marketing automation platform and processes. - Participate to develop automated marketing campaigns. - Drive nurturing campaigns including grading and scoring. - Expand and improve database. - Report statistics, reports and create dashboards. - Monitor data quality across marke…",
-    "salary_raw": "",
-    "published": "2026-08-10T02:06:36Z",
-    "contract_raw": "",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": 80,
+    "contract_type": "CDI",
+    "commute_minutes": null,
     "flags": [
       "Télétravail non mentionné"
     ],
     "score": 6,
     "score_reasons": [
-      "Compétences alignées (4)",
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (80 min)"
+      "Signaux CRM lifecycle (email / segmentation / campagne)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Head of Marketing, Europe",
+    "link": "https://www.adzuna.fr/details/5825766753?utm_medium=api&utm_source=707eaaff",
+    "company": "Linklaters",
+    "location": "Paris, Ile-de-France",
+    "description": "We’re looking for a bold and commercially minded marketing leader who can help supercharge our European growth. Your role will be to lead the development and execution of the regional marketing plan, ensuring alignment with global priorities and driving measurable impact across campaigns, brand activity, and client engagement. As a senior member of the Marketing team, you will advise senior leaders on marketing performance and investment, helping to shape strategic decisions and maximise return…",
+    "salary_raw": "",
+    "published": "2026-08-02T17:21:33Z",
+    "contract_raw": "",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": null,
+    "flags": [
+      "Séniorité / management d'équipe ?",
+      "Télétravail non mentionné"
+    ],
+    "score": 6,
+    "score_reasons": [
+      "Signaux CRM lifecycle (email / segmentation / campagne)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Séniorité / management d'équipe ? ; Télétravail non mentionné"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Influencer & Content Creator Partnerships Manager",
+    "link": "https://www.adzuna.fr/details/5811415951?utm_medium=api&utm_source=707eaaff",
+    "company": "Tenengroup",
+    "location": "Paris, Ile-de-France",
+    "description": "We are looking for an Influencer & Content Creator Partnerships Manager to lead and grow our influencer and creator activity across Western European markets. In this role, you will be responsible for identifying, reaching out to, and building relationships with influencers, content creators, and brand ambassadors. You will support ongoing marketing campaigns, drive brand awareness, and help generate authentic user-generated content that can be used across organic channels and paid advertising. …",
+    "salary_raw": "",
+    "published": "2026-07-23T00:02:43Z",
+    "contract_raw": "",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": null,
+    "flags": [
+      "Télétravail non mentionné"
+    ],
+    "score": 6,
+    "score_reasons": [
+      "Signaux CRM lifecycle (email / segmentation / campagne)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Senior Integrated Marketing Strategy & Planning Manager",
+    "link": "https://www.adzuna.fr/details/5816832170?utm_medium=api&utm_source=707eaaff",
+    "company": "Deliveroo",
+    "location": "Paris, Ile-de-France",
+    "description": "Join us in our mission to transform the way people shop and eat, where impact, innovation, and growth drives everything we do. Our Brand & Experience team builds the emotional connection between Deliveroo and our customers, riders, and partners. With a deep understanding of our audience and a passion for creativity, we bring our brand to life across every touchpoint. Whether it’s a push notification, social campaign, or packaging design—we craft compelling experiences that shape perceptions, sp…",
+    "salary_raw": "",
+    "published": "2026-07-26T23:56:33Z",
+    "contract_raw": "",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": null,
+    "flags": [
+      "Télétravail non mentionné"
+    ],
+    "score": 6,
+    "score_reasons": [
+      "Signaux CRM lifecycle (email / segmentation / campagne)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Chef de projet technico-fonctionnel CRM D365 (F/H)",
+    "link": "https://www.adzuna.fr/details/5832212845?utm_medium=api&utm_source=707eaaff",
+    "company": "Michael Page",
+    "location": "La Défense, Courbevoie",
+    "description": "Le poste de Chef de projet technico-fonctionnel CRM D365 (F/H) En tant que Chef de projet Technico-fonctionnel CRM D365, vous êtes le référent technique des solutions CRM et de leurs interfaces. Vos missions : * Piloter l'expertise CRM Microsoft Dynamics auprès des métiers; * Analyser et challenger les besoins fonctionnels et techniques; * Concevoir les User Stories, Epics et solutions techniques; * Superviser le développement, les tests et l'intégration SI; * Garantir la qualité, la performanc…",
+    "salary_raw": "",
+    "published": "2026-08-07T19:08:43Z",
+    "contract_raw": "permanent",
+    "salary_extracted": null,
+    "telework_days": 2,
+    "in_france": true,
+    "contract_type": "CDI",
+    "commute_minutes": null,
+    "flags": [
+      "Pertinence CRM à confirmer"
+    ],
+    "score": 6,
+    "score_reasons": [
+      "Télétravail 2j/sem"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Product Owner Technique - Marketing Automation",
+    "link": "https://www.adzuna.fr/details/5757579548?utm_medium=api&utm_source=707eaaff",
+    "company": "Numberly",
+    "location": "9ème Arrondissement, Paris",
+    "description": "Numberly est reconnu comme l’un des meilleurs spécialistes mondiaux du Data Marketing avec près de 500 collaborateurs et 11 bureaux dans le monde au service de plus de 300 clients de premier plan (L'Oréal, Arte, Groupe Seb, Pernod Ricard, SNCF, Aigle, HSBC). En mettant la technologie au service des marques et des consommateurs, Numberly est au cœur de la croissance des entreprises et de l’aspiration de chacun à un marketing plus responsable et plus pertinent. Numberly s’appuie sur les avancées …",
+    "salary_raw": "",
+    "published": "2026-06-09T23:01:23Z",
+    "contract_raw": "",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": null,
+    "flags": [
+      "Télétravail non mentionné"
+    ],
+    "score": 6,
+    "score_reasons": [
+      "Signaux CRM lifecycle (email / segmentation / campagne)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+  },
+  {
+    "source": "Adzuna",
+    "title": "CDI - CRM Support Specialist H/F",
+    "link": "https://www.adzuna.fr/details/5816846884?utm_medium=api&utm_source=707eaaff",
+    "company": "AS Watson Group",
+    "location": "2ème Arrondissement, Paris",
+    "description": "CDI - CRM Support Specialist H/F Objectif du poste : Le/La CRM Support Specialist a pour objectif d’assurer le bon fonctionnement quotidien des outils CRM du Groupe (Siebel, Adobe Campaign, Insider), tout en garantissant un haut niveau de qualité de service auprès des équipes métiers. Il/Elle intervient comme point de contact privilégié entre les équipes opérationnelles, les équipes IT Groupe et les prestataires, afin de résoudre les incidents, formuler les demandes d'évolutions mineures et con…",
+    "salary_raw": "",
+    "published": "2026-07-27T00:14:22Z",
+    "contract_raw": "",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": "CDI",
+    "commute_minutes": null,
+    "flags": [
+      "Télétravail non mentionné"
+    ],
+    "score": 6,
+    "score_reasons": [
+      "Signaux CRM lifecycle (email / segmentation / campagne)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Growth Marketer - focus Build & CRM",
+    "link": "https://www.adzuna.fr/details/5830632081?utm_medium=api&utm_source=707eaaff",
+    "company": "AssoConnect",
+    "location": "2ème Arrondissement, Paris",
+    "description": " Who we are About the company Visit our Welcome To The Jungle homepage to learn more about AssoConnect and why you should join us! AssoConnect : pictures, videos, company information A ScaleUp that Transforms Nonprofit Management Market Leaders: AssoConnect is the leading software for nonprofit management in France, one of the largest markets in the world with over 1.5M nonprofits! We are also expanding in the U.S. with our Springly brand. Impact-driven: AssoConnect helps over 40,000 nonprofits…",
+    "salary_raw": "",
+    "published": "2026-08-06T17:23:25Z",
+    "contract_raw": "",
+    "salary_extracted": "45K–70K",
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": null,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné"
+    ],
+    "score": 6,
+    "score_reasons": [
+      "Salaire dans la cible (45,000€)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Customer Relationship Manager (F/H) - CDI",
+    "link": "https://www.adzuna.fr/details/5813204028?utm_medium=api&utm_source=707eaaff",
+    "company": "Collective.work",
+    "location": "Gif-sur-Yvette, Palaiseau",
+    "description": "Description du poste Salaire: 55000 Fondé en 1981, Cambridge Isotope Laboratories (CIL) est le leader mondial de la production et de la commercialisation de composés marqués aux isotopes stables. Nos produits sont utilisés dans la recherche pharmaceutique, les sciences de la vie, la chimie analytique, le diagnostic médical, les sciences environnementales et les technologies avancées. Filiale européenne de CIL, Elle accompagne ses clients en Europe et à l’international depuis plus de 35 ans, grâ…",
+    "salary_raw": "55000-55000 €",
+    "published": "2026-07-24T03:57:32Z",
+    "contract_raw": "permanent",
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": "CDI",
+    "commute_minutes": null,
+    "flags": [
+      "Séniorité élevée (>7 ans ?)",
+      "Télétravail non mentionné"
+    ],
+    "score": 6,
+    "score_reasons": [
+      "Salaire dans la cible (55,000€)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Séniorité élevée (>7 ans ?) ; Télétravail non mentionné"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Marketing Senior Associate",
+    "link": "https://www.adzuna.fr/details/5788480030?utm_medium=api&utm_source=707eaaff",
+    "company": "JPMorganChase",
+    "location": "Paris, Ile-de-France",
+    "description": "Description Join our dynamic marketing team in Paris, where creativity meets strategy to drive impactful marketing initiatives in the financial industry. Be part of a team that shapes the future of asset management through innovative content and strategic campaigns. As a Marketing Senior Associate within our Asset Management team, you will play a pivotal role in delivering tailored marketing content to support our sales strategy, including brochures, newsletters, and product positioning documen…",
+    "salary_raw": "",
+    "published": "2026-07-05T00:10:42Z",
+    "contract_raw": "",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": null,
+    "flags": [
+      "Télétravail non mentionné"
+    ],
+    "score": 6,
+    "score_reasons": [
+      "Signaux CRM lifecycle (email / segmentation / campagne)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Lifecycle Marketing Manager",
+    "link": "https://www.adzuna.fr/details/5822436988?utm_medium=api&utm_source=707eaaff",
+    "company": "Nabla",
+    "location": "Paris, Ile-de-France",
+    "description": "About Nabla We are a team of entrepreneurs, clinicians and engineers committed to bringing back joy to the practice of medicine. Together with a community of clinician innovators, we’ve harnessed the best of machine learning science to develop Nabla: the leading AI assistant that’s restoring the human connection at the heart of healthcare. By streamlining clinical documentation, Nabla is helping clinicians focus on what matters most - patient care. Today, over 100,000 clinicians across 130 heal…",
+    "salary_raw": "",
+    "published": "2026-07-31T17:25:49Z",
+    "contract_raw": "",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": null,
+    "flags": [
+      "Télétravail non mentionné"
+    ],
+    "score": 6,
+    "score_reasons": [
+      "Signaux CRM lifecycle (email / segmentation / campagne)"
     ],
     "recommendation": "à_revoir",
     "recommendation_reason": "À vérifier : Télétravail non mentionné"
@@ -1402,6 +1665,27 @@
     ],
     "recommendation": "à_revoir",
     "recommendation_reason": "À vérifier : Pertinence CRM à confirmer"
+  },
+  {
+    "source": "Site carrière — Back Market",
+    "title": "Global Senior HR Business Partner",
+    "link": "https://jobs.ashbyhq.com/backmarket/a7bb0319-eee1-47c9-9f9b-2acbdba5a0ba",
+    "company": "Back Market",
+    "location": "Paris",
+    "description": "HI, WE’RE BACK MARKET.\n\nWe’re here to help make tech reliable, affordable, and better than new. We're a global marketplace for refurbished devices, helping lower our collective environmental impact by providing trustworthy, affordable tech with 92% less carbon emissions than new.\n\nYep, you read that right. Turns out refurbished tech is way better for the planet than new. In fact, With every device purchased on Back Market, our positive impact on the planet grows. From our Customer Care representatives to our software engineer, every individual at Back Market cuts the planet — and consumers — a break. Our mission is simple: to do more with what we already have.\n\nAre you ready to join us?\n\nAbout the role:\n\nAs a Senior People Partner (HRBP), you will play a key role in providing both strategic and hands-on people support across the business. You’ll contribute to key projects fostering our talent strategy and be the trusted advisor for teams, guiding them through the entire employee journey—from onboarding to career development and offboarding.\n\nYOUR MISSION (IF YOU ACCEPT IT):🥇\n\n● Oversee critical business areas\n\n● Support employees with daily inquiries from their onboarding to the offboarding, provide guidance on learning and development opportunities, and support their career progression within the company.\n\n● Advice & coach leaders at all levels, including Chiefs, on day-to-day management issues, organizational design, individual performance reviews, promotions, learning needs and compensation strategies.\n\n● Contribute to developing our Talent strategy and lead key initiatives such as performance management, mentoring, and career path development.\n\n● Contribute to the global enhancement of our People processes and projects to create the optimal strategy for Back Market and support team growth\n\nYOU ARE IN THE RIGHT PLACE: ⭐\n\n● You are perfectly fluent in english\n\n● You’ve a strong experience in French Employment Law and/ or a good understanding of International Employment law\n\n● You have a 7-10 year experience as an HRBP or HR manager and have managed a full People Cycle for a dedicated scope (performance reviews, Career interviews, compensation campaigns, career development, employee pulse…)\n\n● You have worked  in an international environment for at least 2 years\n\n● You like challenges and adapt quickly to any situation\n\n● You are very organized and able to manage multiple subjects at the same time in total autonomy\n\n● You are a great communicator (verbally & in writing) and an active listener: you've always delivered a strong support to your clients/managers\n\n● You are outgoing and enthusiastic, excited about being a core member of a rockstar team!\n\n\nWHY SHOULD YOU JOIN US ? ✌🏼\n\nAt Back Market, we’re committed to hiring and supporting diverse teams of people from all backgrounds, experiences, and perspectives — it’s one of the reasons we’re such a high-scoring certified B Corp company (93.2).\n\nNo matter your role and seniority level, you’ll enjoy impact-driven work with hands-on career development in an innovative, driven, and fast-paced environment — with benefits to match, like:\n\n- A mission driven work environment where your day to day makes an impact on the planet. Seriously.\n\n- Hybrid work environment, with 2 remote days a week and 1 remote work week per quarter, plus 3 flex days.\n\n- Employee Resource Groups, including mentorship programs, comprehensive accessibility policies, and cultural competency training.\n\nAt Back Market, we strive to create a workplace that embodies the world we’re trying to change. We’ve embedded our diversity, equity, and inclusion principles into our DNA — from dedicated staff to employee resource groups to our company values.\n\nWe know that the perfect background for a role doesn’t mean the perfect fit — we encourage you to apply for a role even if you think you may not have all the qualifications.\n\nIf reasonable accommodations are needed for the interview process, please do not hesitate to discuss this with the Talent Acquisition Team.",
+    "published": "2026-07-30T14:16:28.314+00:00",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": null,
+    "flags": [],
+    "score": 6,
+    "score_reasons": [
+      "Signaux CRM lifecycle (email / segmentation / campagne)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À confirmer : titre sans signal CRM explicite"
   },
   {
     "source": "France Travail",
@@ -1662,348 +1946,248 @@
   },
   {
     "source": "Adzuna",
-    "title": "Campaign manager",
-    "link": "https://www.adzuna.fr/details/5816451148?utm_medium=api&utm_source=707eaaff",
-    "company": "Ad4Screen",
-    "location": "Paris, Ile-de-France",
-    "description": "L’AGENCE : Agence Média & Marketing, Ad4Screen, est le leader du marché du marketing mobile depuis plus de 15 ans. Nos équipes aident les annonceurs à concilier Trafic & Conversion Mobile sur trois verticales : Site, Application et Mobile to Store. Pour cela nous intervenons afin de répondre à leurs problématiques de génération de trafic Mobile et de téléchargements qualifiés, mais également, d’optimisation de la rétention et des conversions. Des grands groupes du CAC 40, en passant par les Sca…",
+    "title": "Responsable Marketing - Offre Marque et CRM H/F",
+    "link": "https://www.adzuna.fr/details/5753940085?utm_medium=api&utm_source=707eaaff",
+    "company": "SANEF",
+    "location": "Issy-les-Moulineaux, Boulogne-Billancourt",
+    "description": "Nous recherchons notre futur(e) Responsable Marketing - Offre, Marque et CRM en CDI, poste basé à Issy-les-Moulineaux (92). Au sein de la Direction Marketing & Commerciale, vous définissez et pilotez la stratégie marketing de Bip&Go afin d'accélérer la croissance des activités B2B et B2C. Vous êtes responsable du développement des offres, du positionnement de la marque et de la création de valeur client des aspects stratégiques jusqu'à sa mise en oeuvre. Concrètement, vos missions principales s…",
     "salary_raw": "",
-    "published": "2026-07-26T12:31:43Z",
-    "contract_raw": "",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": 80,
-    "flags": [
-      "Séniorité élevée (>7 ans ?)",
-      "Télétravail non mentionné"
-    ],
-    "score": 5,
-    "score_reasons": [
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (80 min)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Séniorité élevée (>7 ans ?) ; Télétravail non mentionné"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Senior Campaign Manager",
-    "link": "https://www.adzuna.fr/details/5415782897?utm_medium=api&utm_source=707eaaff",
-    "company": "SalesCaptain",
-    "location": "Paris, Ile-de-France",
-    "description": "Join the GTM Revolution at SalesCaptain — Where B2B Growth Happens Since our beginnings in 2021, SalesCaptain has grown into a global force, working with fast-growing B2B brands, YC & Techstars startups, and Series B&C companies, helping them go to market using a predictable process. We are currently looking for a results-driven Senior Campaign Manager to manage the outbound strategy, and communications with our international clients. This is a full-time, remote position (working EU hours). Req…",
-    "salary_raw": "",
-    "published": "2025-09-26T17:46:25Z",
-    "contract_raw": "",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": 80,
-    "flags": [
-      "Annonce ancienne (317 j)"
-    ],
-    "score": 5,
-    "score_reasons": [
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (80 min)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Annonce ancienne (317 j)"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Senior Campaign Marketing Manager - Paris H/F",
-    "link": "https://www.adzuna.fr/details/5835126298?utm_medium=api&utm_source=707eaaff",
-    "company": "Shippeo",
-    "location": "Paris, Ile-de-France",
-    "description": "Campaign Management at Shippeo is responsible for designing, executing, and optimizing full-funnel marketing campaigns that support brand awareness, demand generation, pipeline creation, customer growth, and revenue impact.As a Senior Campaign Manager, you will plan and deliver integrated campaigns across a broad range of initiatives, including brand-building campaigns, performance marketing, events, product releases and customer expansion campaigns.This role will focus on three core areas: bui…",
-    "salary_raw": "",
-    "published": "2026-08-10T02:06:29Z",
-    "contract_raw": "",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": 80,
-    "flags": [
-      "Télétravail non mentionné"
-    ],
-    "score": 5,
-    "score_reasons": [
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (80 min)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné"
-  },
-  {
-    "source": "Adzuna",
-    "title": "\"Title\" (W/M) - copy",
-    "link": "https://www.adzuna.fr/details/5825770406?utm_medium=api&utm_source=707eaaff",
-    "company": "Infopro Digital",
-    "location": "Gentilly, L'Haÿ-les-Roses",
-    "description": "Marketing Campaign Manager – Événements B2B (H/F/X) Infopro Digital, groupe B2B spécialisé dans l’information et la technologie, recherche actuellement un(e) Marketing Campaign Manager – Événements B2B en CDI pour renforcer l’équipe de son pôle Événements. Le pôle Événements d’Infopro Digital conçoit et déploie des conférences, congrès et trophées B2B en France et à l’international, portés par des marques fortes du groupe, dont L’Usine Nouvelle. Rejoignez Infopro Digital et devenez un acteur cl…",
-    "salary_raw": "",
-    "published": "2026-08-02T17:25:04Z",
+    "published": "2026-06-06T05:39:54Z",
     "contract_raw": "",
     "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
     "contract_type": "CDI",
-    "commute_minutes": 84,
+    "commute_minutes": null,
     "flags": [
+      "Pertinence CRM à confirmer",
       "Télétravail non mentionné"
     ],
     "score": 5,
-    "score_reasons": [
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (84 min)"
-    ],
+    "score_reasons": [],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
-    "title": "Head of Marketing, Europe",
-    "link": "https://www.adzuna.fr/details/5825766753?utm_medium=api&utm_source=707eaaff",
-    "company": "Linklaters",
-    "location": "Paris, Ile-de-France",
-    "description": "We’re looking for a bold and commercially minded marketing leader who can help supercharge our European growth. Your role will be to lead the development and execution of the regional marketing plan, ensuring alignment with global priorities and driving measurable impact across campaigns, brand activity, and client engagement. As a senior member of the Marketing team, you will advise senior leaders on marketing performance and investment, helping to shape strategic decisions and maximise return…",
+    "title": "CDI - Resp. Domaine IT Commerce & CRM h/f - Petit Bateau !",
+    "link": "https://www.adzuna.fr/details/4643615123?utm_medium=api&utm_source=707eaaff",
+    "company": "Groupe Rocher",
+    "location": "Issy-les-Moulineaux, Boulogne-Billancourt",
+    "description": "Petit Bateau est la marque qui accompagne toutes les générations depuis plus de 125 ans. « Liberté, Qualité, Durabilité » est le mot d’ordre porté par les 2800 collaborateurs qui œuvrent pour son rayonnement dans le monde. Née à Troyes en 1893, la marque Petit Bateau est fière de son héritage français et de son savoir-faire qui permet de créer des vêtements qui traversent le temps. Au sein du Groupe Rocher, Petit Bateau incarne un esprit espiègle et joyeux, à travers des vêtements dans lesquels…",
     "salary_raw": "",
-    "published": "2026-08-02T17:21:33Z",
-    "contract_raw": "",
+    "published": "2024-04-10T18:19:09Z",
+    "contract_raw": "permanent",
     "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
-    "contract_type": null,
-    "commute_minutes": 80,
+    "contract_type": "CDI",
+    "commute_minutes": null,
     "flags": [
+      "Pertinence CRM à confirmer",
+      "Séniorité élevée (>7 ans ?)",
+      "Télétravail non mentionné",
+      "Annonce ancienne (851 j)"
+    ],
+    "score": 5,
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Séniorité élevée (>7 ans ?) ; Télétravail non mentionné"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Head of E-commerce (F/H)",
+    "link": "https://www.adzuna.fr/details/5774380371?utm_medium=api&utm_source=707eaaff",
+    "company": "",
+    "location": "Boulogne-Billancourt, Hauts-de-Seine",
+    "description": "Rattaché·e au Directeur Digital, le/la Head of E-commerce / Responsable E-commerce contribue à la définition et à la mise en œuvre de la stratégie e-commerce, en cohérence avec les objectifs globaux de l'entreprise. À ce titre, les principales missions sont : Définir et piloter la stratégie e-commerce afin d'accroître le chiffre d'affaires et la rentabilité du canal digital Manager et structurer une équipe dédiée (traffic, CRM, chefs de projet, responsables de site) en assurant performance et e…",
+    "salary_raw": "80000-90000 €",
+    "published": "2026-06-24T06:46:51Z",
+    "contract_raw": "",
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": null,
+    "flags": [
+      "Pertinence CRM à confirmer",
       "Séniorité / management d'équipe ?",
       "Télétravail non mentionné"
     ],
     "score": 5,
-    "score_reasons": [
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (80 min)"
-    ],
+    "score_reasons": [],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Séniorité / management d'équipe ? ; Télétravail non mentionné"
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Séniorité / management d'équipe ? ; Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
-    "title": "Influencer & Content Creator Partnerships Manager",
-    "link": "https://www.adzuna.fr/details/5811415951?utm_medium=api&utm_source=707eaaff",
-    "company": "Tenengroup",
+    "title": "Chef de projet CRM",
+    "link": "https://www.adzuna.fr/details/5823271450?utm_medium=api&utm_source=707eaaff",
+    "company": "ENOVA Consulting",
     "location": "Paris, Ile-de-France",
-    "description": "We are looking for an Influencer & Content Creator Partnerships Manager to lead and grow our influencer and creator activity across Western European markets. In this role, you will be responsible for identifying, reaching out to, and building relationships with influencers, content creators, and brand ambassadors. You will support ongoing marketing campaigns, drive brand awareness, and help generate authentic user-generated content that can be used across organic channels and paid advertising. …",
-    "salary_raw": "",
-    "published": "2026-07-23T00:02:43Z",
+    "description": "ENOVA poursuit son développement et renforce ses équipes en intégrant un(e) Chef de Projet Technico-Fonctionnel CRM / Fidélisation en CDI. Vous rejoindrez notre communauté de consultants et interviendrez en mission longue durée au sein d'un grand compte, dans un environnement stimulant, transverse et orienté transformation digitale. Contexte de la mission Dans le cadre d'un projet stratégique de transformation de l'expérience client et de fidélisation, vous interviendrez auprès d'un acteur maje…",
+    "salary_raw": "600-700 €",
+    "published": "2026-08-01T05:49:12Z",
     "contract_raw": "",
-    "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
-    "contract_type": null,
-    "commute_minutes": 80,
+    "contract_type": "CDI",
+    "commute_minutes": null,
     "flags": [
+      "Pertinence CRM à confirmer",
       "Télétravail non mentionné"
     ],
     "score": 5,
-    "score_reasons": [
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (80 min)"
-    ],
+    "score_reasons": [],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
-    "title": "Senior Integrated Marketing Strategy & Planning Manager",
-    "link": "https://www.adzuna.fr/details/5816832170?utm_medium=api&utm_source=707eaaff",
-    "company": "Deliveroo",
+    "title": "Chef de projet CRM Dynamics 365 F/H",
+    "link": "https://www.adzuna.fr/details/5804718930?utm_medium=api&utm_source=707eaaff",
+    "company": "MASAO",
     "location": "Paris, Ile-de-France",
-    "description": "Join us in our mission to transform the way people shop and eat, where impact, innovation, and growth drives everything we do. Our Brand & Experience team builds the emotional connection between Deliveroo and our customers, riders, and partners. With a deep understanding of our audience and a passion for creativity, we bring our brand to life across every touchpoint. Whether it’s a push notification, social campaign, or packaging design—we craft compelling experiences that shape perceptions, sp…",
+    "description": "Descriptif du poste Etre chef de projet CRM Dynamics 365, c’est : conseiller, analyser et mettre en œuvre la solution retenue par le client dans le cadre de projets. C’est aussi, être en charge d’installer, de paramétrer le progiciel et l’adapter aux exigences du client. Acteur central de nos projets d’intégration Microsoft Dynamics 365, votre rôle est d’être le représentant des besoins utilisateurs sur le métier de la relation client. MISSIONS Analyse Analyser et appréhender les besoins foncti…",
     "salary_raw": "",
-    "published": "2026-07-26T23:56:33Z",
-    "contract_raw": "",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": 80,
-    "flags": [
-      "Télétravail non mentionné"
-    ],
-    "score": 5,
-    "score_reasons": [
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (80 min)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Chef de projet technico-fonctionnel CRM D365 (F/H)",
-    "link": "https://www.adzuna.fr/details/5832212845?utm_medium=api&utm_source=707eaaff",
-    "company": "Michael Page",
-    "location": "La Défense, Courbevoie",
-    "description": "Le poste de Chef de projet technico-fonctionnel CRM D365 (F/H) En tant que Chef de projet Technico-fonctionnel CRM D365, vous êtes le référent technique des solutions CRM et de leurs interfaces. Vos missions : * Piloter l'expertise CRM Microsoft Dynamics auprès des métiers; * Analyser et challenger les besoins fonctionnels et techniques; * Concevoir les User Stories, Epics et solutions techniques; * Superviser le développement, les tests et l'intégration SI; * Garantir la qualité, la performanc…",
-    "salary_raw": "",
-    "published": "2026-08-07T19:08:43Z",
+    "published": "2026-07-17T11:52:12Z",
     "contract_raw": "permanent",
     "salary_extracted": null,
-    "telework_days": 2,
-    "in_france": true,
-    "contract_type": "CDI",
-    "commute_minutes": 104,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Trajet long (104 min)"
-    ],
-    "score": 5,
-    "score_reasons": [
-      "Trajet long (104 min)",
-      "Télétravail 2j/sem"
-    ],
-    "recommendation": "à_écarter",
-    "recommendation_reason": "Trajet 104 min et pas 100 % télétravail"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Product Owner Technique - Marketing Automation",
-    "link": "https://www.adzuna.fr/details/5757579548?utm_medium=api&utm_source=707eaaff",
-    "company": "Numberly",
-    "location": "9ème Arrondissement, Paris",
-    "description": "Numberly est reconnu comme l’un des meilleurs spécialistes mondiaux du Data Marketing avec près de 500 collaborateurs et 11 bureaux dans le monde au service de plus de 300 clients de premier plan (L'Oréal, Arte, Groupe Seb, Pernod Ricard, SNCF, Aigle, HSBC). En mettant la technologie au service des marques et des consommateurs, Numberly est au cœur de la croissance des entreprises et de l’aspiration de chacun à un marketing plus responsable et plus pertinent. Numberly s’appuie sur les avancées …",
-    "salary_raw": "",
-    "published": "2026-06-09T23:01:23Z",
-    "contract_raw": "",
-    "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
-    "contract_type": null,
-    "commute_minutes": 105,
+    "contract_type": "CDI",
+    "commute_minutes": null,
     "flags": [
-      "Télétravail non mentionné",
-      "Trajet long (105 min)"
+      "Pertinence CRM à confirmer",
+      "Conseil / ESN — télétravail dépendant de la mission ?",
+      "Télétravail non mentionné"
     ],
     "score": 5,
-    "score_reasons": [
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (105 min)"
-    ],
-    "recommendation": "à_écarter",
-    "recommendation_reason": "Trajet 105 min et pas 100 % télétravail"
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Conseil / ESN — télétravail dépendant de la mission ? ; Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
-    "title": "CDI - CRM Support Specialist H/F",
-    "link": "https://www.adzuna.fr/details/5816846884?utm_medium=api&utm_source=707eaaff",
-    "company": "AS Watson Group",
-    "location": "2ème Arrondissement, Paris",
-    "description": "CDI - CRM Support Specialist H/F Objectif du poste : Le/La CRM Support Specialist a pour objectif d’assurer le bon fonctionnement quotidien des outils CRM du Groupe (Siebel, Adobe Campaign, Insider), tout en garantissant un haut niveau de qualité de service auprès des équipes métiers. Il/Elle intervient comme point de contact privilégié entre les équipes opérationnelles, les équipes IT Groupe et les prestataires, afin de résoudre les incidents, formuler les demandes d'évolutions mineures et con…",
+    "title": "Consultant(e) Base de Données Clients",
+    "link": "https://www.adzuna.fr/details/5819217665?utm_medium=api&utm_source=707eaaff",
+    "company": "LB Recrutement Sàrl",
+    "location": "Paris, Ile-de-France",
+    "description": "Responsabilités Recueillir, analyser et prioriser les besoins métiers liés à la gestion de la base de données clients. Piloter les évolutions fonctionnelles de la plateforme CRM en collaboration avec les équipes métiers et techniques. Animer les ateliers fonctionnels et assurer la coordination des différentes parties prenantes. Participer au paramétrage et à l'optimisation de Salesforce Service Cloud afin de répondre aux besoins des utilisateurs. Réaliser les recettes fonctionnelles (UAT), vali…",
     "salary_raw": "",
-    "published": "2026-07-27T00:14:22Z",
-    "contract_raw": "",
+    "published": "2026-07-29T04:46:10Z",
+    "contract_raw": "permanent",
     "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
     "contract_type": "CDI",
-    "commute_minutes": 102,
-    "flags": [
-      "Télétravail non mentionné",
-      "Trajet long (102 min)"
-    ],
-    "score": 5,
-    "score_reasons": [
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (102 min)"
-    ],
-    "recommendation": "à_écarter",
-    "recommendation_reason": "Trajet 102 min et pas 100 % télétravail"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Growth Marketer - focus Build & CRM",
-    "link": "https://www.adzuna.fr/details/5830632081?utm_medium=api&utm_source=707eaaff",
-    "company": "AssoConnect",
-    "location": "2ème Arrondissement, Paris",
-    "description": " Who we are About the company Visit our Welcome To The Jungle homepage to learn more about AssoConnect and why you should join us! AssoConnect : pictures, videos, company information A ScaleUp that Transforms Nonprofit Management Market Leaders: AssoConnect is the leading software for nonprofit management in France, one of the largest markets in the world with over 1.5M nonprofits! We are also expanding in the U.S. with our Springly brand. Impact-driven: AssoConnect helps over 40,000 nonprofits…",
-    "salary_raw": "",
-    "published": "2026-08-06T17:23:25Z",
-    "contract_raw": "",
-    "salary_extracted": "45K–70K",
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": 102,
+    "commute_minutes": null,
     "flags": [
       "Pertinence CRM à confirmer",
-      "Télétravail non mentionné",
-      "Trajet long (102 min)"
+      "Télétravail non mentionné"
     ],
     "score": 5,
-    "score_reasons": [
-      "Salaire dans la cible (45,000€)",
-      "Trajet long (102 min)"
-    ],
-    "recommendation": "à_écarter",
-    "recommendation_reason": "Trajet 102 min et pas 100 % télétravail"
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
-    "title": "Marketing Senior Associate",
-    "link": "https://www.adzuna.fr/details/5788480030?utm_medium=api&utm_source=707eaaff",
-    "company": "JPMorganChase",
-    "location": "Paris, Ile-de-France",
-    "description": "Description Join our dynamic marketing team in Paris, where creativity meets strategy to drive impactful marketing initiatives in the financial industry. Be part of a team that shapes the future of asset management through innovative content and strategic campaigns. As a Marketing Senior Associate within our Asset Management team, you will play a pivotal role in delivering tailored marketing content to support our sales strategy, including brochures, newsletters, and product positioning documen…",
+    "title": "Lead Production CRM et Digital",
+    "link": "https://www.adzuna.fr/details/5808011202?utm_medium=api&utm_source=707eaaff",
+    "company": "GUTENBERG",
+    "location": "Boulogne-Billancourt, Hauts-de-Seine",
+    "description": " We’re hiring ! Envie de rejoindre une agence où créativité, innovation et esprit d’équipe font la différence ? Bienvenue chez Gutenberg, agence de communication et de production de contenus cross-média, engagée RSE et membre du groupe Omnicom. Depuis plus de 50 ans, nous accompagnons les plus grandes marques dans les univers food, mode, luxe, retail et services. Chaque jour, nos équipes imaginent et produisent des contenus inspirants, engageants et porteurs de valeur. Nos valeurs :  esprit pio…",
     "salary_raw": "",
-    "published": "2026-07-05T00:10:42Z",
+    "published": "2026-07-20T12:33:41Z",
     "contract_raw": "",
     "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": 80,
+    "commute_minutes": null,
     "flags": [
+      "Pertinence CRM à confirmer",
+      "Séniorité élevée (>7 ans ?)",
       "Télétravail non mentionné"
     ],
     "score": 5,
-    "score_reasons": [
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (80 min)"
-    ],
+    "score_reasons": [],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Séniorité élevée (>7 ans ?) ; Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
-    "title": "Lifecycle Marketing Manager",
-    "link": "https://www.adzuna.fr/details/5822436988?utm_medium=api&utm_source=707eaaff",
-    "company": "Nabla",
-    "location": "Paris, Ile-de-France",
-    "description": "About Nabla We are a team of entrepreneurs, clinicians and engineers committed to bringing back joy to the practice of medicine. Together with a community of clinician innovators, we’ve harnessed the best of machine learning science to develop Nabla: the leading AI assistant that’s restoring the human connection at the heart of healthcare. By streamlining clinical documentation, Nabla is helping clinicians focus on what matters most - patient care. Today, over 100,000 clinicians across 130 heal…",
+    "title": "Consultant Technique Selligent (H/F)",
+    "link": "https://www.adzuna.fr/details/5814482438?utm_medium=api&utm_source=707eaaff",
+    "company": "Lineup7",
+    "location": "14ème Arrondissement, Paris",
+    "description": "À propos de LINEUP7 À propos de LineUP7 LineUP7 est un cabinet de conseil spécialisé en Data, CRM, Martech et Intelligence Artificielle. Filiale d'Isoskèle (Groupe La Poste), nous accompagnons les grandes entreprises dans la conception, le déploiement et l'évolution de leurs écosystèmes Data afin de transformer la donnée en un véritable levier de connaissance client, d'innovation et de performance. Nos équipes interviennent sur l'ensemble de la chaîne de valeur : conseil, architecture, intégrat…",
     "salary_raw": "",
-    "published": "2026-07-31T17:25:49Z",
+    "published": "2026-07-24T23:56:41Z",
     "contract_raw": "",
     "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": 80,
+    "commute_minutes": null,
     "flags": [
+      "Pertinence CRM à confirmer",
+      "Conseil / ESN — télétravail dépendant de la mission ?",
       "Télétravail non mentionné"
     ],
     "score": 5,
-    "score_reasons": [
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (80 min)"
-    ],
+    "score_reasons": [],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Conseil / ESN — télétravail dépendant de la mission ? ; Télétravail non mentionné"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Consultant Marketing et CRM F/H",
+    "link": "https://www.adzuna.fr/details/5815283515?utm_medium=api&utm_source=707eaaff",
+    "company": "Niji",
+    "location": "Issy-les-Moulineaux, Boulogne-Billancourt",
+    "description": "Vous interviendrez plus spécifiquement au sein de la practice \"Customer Value\", qui accompagne les entreprises sur l'optimisation de toutes les étapes du cycle de vie client, en tant que Consultant Marketing & CRM , et vos principales missions seront les suivantes : Challenger et optimiser les plans d'actions marketing et commerciaux de nos clients Co-construire avec nos clients leur stratégie relationnelle (parcours d'engagement, programme de fidélité, etc) pour maximiser la valeur client et e…",
+    "salary_raw": "",
+    "published": "2026-07-25T12:37:23Z",
+    "contract_raw": "permanent",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": "CDI",
+    "commute_minutes": null,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Conseil / ESN — télétravail dépendant de la mission ?",
+      "Télétravail non mentionné"
+    ],
+    "score": 5,
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Conseil / ESN — télétravail dépendant de la mission ? ; Télétravail non mentionné"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Product Owner Data H/F",
+    "link": "https://www.adzuna.fr/details/5827638326?utm_medium=api&utm_source=707eaaff",
+    "company": "Soors",
+    "location": "1er Arrondissement, Paris",
+    "description": "Vous rejoignez une équipe en pleine transition vers un modèle Run pérenne, au sein d'un environnement stimulant et orienté data marketing. Vous serez responsable du pilotage et de la gestion des produits Data sur le périmètre CRM et MDM Client, dans le cadre de la refonte d'un Data Lake Marketing et d'un Référentiel Client Unique. Poste et missions : - Reprendre et porter les responsabilités du Product Owner du périmètre Data. - Accompagner les équipes métiers dans la définition des besoins et …",
+    "salary_raw": "",
+    "published": "2026-08-04T12:28:46Z",
+    "contract_raw": "permanent",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": "CDI",
+    "commute_minutes": null,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné"
+    ],
+    "score": 5,
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
     "source": "Site carrière — Swile",
@@ -2027,28 +2211,6 @@
     "score_reasons": [],
     "recommendation": "à_revoir",
     "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné ; Annonce ancienne (538 j)"
-  },
-  {
-    "source": "Site carrière — Back Market",
-    "title": "Global Senior HR Business Partner",
-    "link": "https://jobs.ashbyhq.com/backmarket/a7bb0319-eee1-47c9-9f9b-2acbdba5a0ba",
-    "company": "Back Market",
-    "location": "Paris",
-    "description": "HI, WE’RE BACK MARKET.\n\nWe’re here to help make tech reliable, affordable, and better than new. We're a global marketplace for refurbished devices, helping lower our collective environmental impact by providing trustworthy, affordable tech with 92% less carbon emissions than new.\n\nYep, you read that right. Turns out refurbished tech is way better for the planet than new. In fact, With every device purchased on Back Market, our positive impact on the planet grows. From our Customer Care representatives to our software engineer, every individual at Back Market cuts the planet — and consumers — a break. Our mission is simple: to do more with what we already have.\n\nAre you ready to join us?\n\nAbout the role:\n\nAs a Senior People Partner (HRBP), you will play a key role in providing both strategic and hands-on people support across the business. You’ll contribute to key projects fostering our talent strategy and be the trusted advisor for teams, guiding them through the entire employee journey—from onboarding to career development and offboarding.\n\nYOUR MISSION (IF YOU ACCEPT IT):🥇\n\n● Oversee critical business areas\n\n● Support employees with daily inquiries from their onboarding to the offboarding, provide guidance on learning and development opportunities, and support their career progression within the company.\n\n● Advice & coach leaders at all levels, including Chiefs, on day-to-day management issues, organizational design, individual performance reviews, promotions, learning needs and compensation strategies.\n\n● Contribute to developing our Talent strategy and lead key initiatives such as performance management, mentoring, and career path development.\n\n● Contribute to the global enhancement of our People processes and projects to create the optimal strategy for Back Market and support team growth\n\nYOU ARE IN THE RIGHT PLACE: ⭐\n\n● You are perfectly fluent in english\n\n● You’ve a strong experience in French Employment Law and/ or a good understanding of International Employment law\n\n● You have a 7-10 year experience as an HRBP or HR manager and have managed a full People Cycle for a dedicated scope (performance reviews, Career interviews, compensation campaigns, career development, employee pulse…)\n\n● You have worked  in an international environment for at least 2 years\n\n● You like challenges and adapt quickly to any situation\n\n● You are very organized and able to manage multiple subjects at the same time in total autonomy\n\n● You are a great communicator (verbally & in writing) and an active listener: you've always delivered a strong support to your clients/managers\n\n● You are outgoing and enthusiastic, excited about being a core member of a rockstar team!\n\n\nWHY SHOULD YOU JOIN US ? ✌🏼\n\nAt Back Market, we’re committed to hiring and supporting diverse teams of people from all backgrounds, experiences, and perspectives — it’s one of the reasons we’re such a high-scoring certified B Corp company (93.2).\n\nNo matter your role and seniority level, you’ll enjoy impact-driven work with hands-on career development in an innovative, driven, and fast-paced environment — with benefits to match, like:\n\n- A mission driven work environment where your day to day makes an impact on the planet. Seriously.\n\n- Hybrid work environment, with 2 remote days a week and 1 remote work week per quarter, plus 3 flex days.\n\n- Employee Resource Groups, including mentorship programs, comprehensive accessibility policies, and cultural competency training.\n\nAt Back Market, we strive to create a workplace that embodies the world we’re trying to change. We’ve embedded our diversity, equity, and inclusion principles into our DNA — from dedicated staff to employee resource groups to our company values.\n\nWe know that the perfect background for a role doesn’t mean the perfect fit — we encourage you to apply for a role even if you think you may not have all the qualifications.\n\nIf reasonable accommodations are needed for the interview process, please do not hesitate to discuss this with the Talent Acquisition Team.",
-    "published": "2026-07-30T14:16:28.314+00:00",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": 80,
-    "flags": [],
-    "score": 5,
-    "score_reasons": [
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (80 min)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "Trajet 80 min, hors critère (≤75 min ou 100 % télétravail)"
   },
   {
     "source": "France Travail",
@@ -2091,18 +2253,18 @@
     "telework_days": null,
     "in_france": true,
     "contract_type": "CDI",
-    "commute_minutes": 107,
+    "commute_minutes": 98,
     "flags": [
       "Pertinence CRM à confirmer",
       "Télétravail non mentionné",
-      "Trajet long (107 min)"
+      "Trajet long (98 min)"
     ],
     "score": 4,
     "score_reasons": [
-      "Trajet long (107 min)"
+      "Trajet long (98 min)"
     ],
     "recommendation": "à_écarter",
-    "recommendation_reason": "Trajet 107 min et pas 100 % télétravail"
+    "recommendation_reason": "Trajet 98 min et pas 100 % télétravail"
   },
   {
     "source": "France Travail",
@@ -2337,7 +2499,7 @@
       "Conseil / ESN — télétravail dépendant de la mission ?",
       "Télétravail non mentionné",
       "Trajet long (124 min)",
-      "Annonce ancienne (82 j)"
+      "Annonce ancienne (83 j)"
     ],
     "score": 4,
     "score_reasons": [
@@ -2455,303 +2617,5 @@
     ],
     "recommendation": "à_écarter",
     "recommendation_reason": "Trajet 112 min et pas 100 % télétravail"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Responsable Marketing - Offre Marque et CRM H/F",
-    "link": "https://www.adzuna.fr/details/5753940085?utm_medium=api&utm_source=707eaaff",
-    "company": "SANEF",
-    "location": "Issy-les-Moulineaux, Boulogne-Billancourt",
-    "description": "Nous recherchons notre futur(e) Responsable Marketing - Offre, Marque et CRM en CDI, poste basé à Issy-les-Moulineaux (92). Au sein de la Direction Marketing & Commerciale, vous définissez et pilotez la stratégie marketing de Bip&Go afin d'accélérer la croissance des activités B2B et B2C. Vous êtes responsable du développement des offres, du positionnement de la marque et de la création de valeur client des aspects stratégiques jusqu'à sa mise en oeuvre. Concrètement, vos missions principales s…",
-    "salary_raw": "",
-    "published": "2026-06-06T05:39:54Z",
-    "contract_raw": "",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": "CDI",
-    "commute_minutes": 114,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Télétravail non mentionné",
-      "Trajet long (114 min)"
-    ],
-    "score": 4,
-    "score_reasons": [
-      "Trajet long (114 min)"
-    ],
-    "recommendation": "à_écarter",
-    "recommendation_reason": "Trajet 114 min et pas 100 % télétravail"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Chef de projet programme fidélité F/H",
-    "link": "https://www.adzuna.fr/details/5815267664?utm_medium=api&utm_source=707eaaff",
-    "company": "HISTOIRE D'OR",
-    "location": "Paris, Ile-de-France",
-    "description": "Description du poste Rattaché au Responsable CRM & Data Analyse, le Chef de projet Programme de Fidélité (H/F) participera à la définition de la proposition de valeur du programme de fidélité et en pilotera l’activation, la stratégie de contenu ainsi que le suivi de performance. Il/elle aura les missions suivantes : 1/Contribuer à la proposition de valeur du programme de fidélité : Participer à l’évolution du modèle du programme de fidélité Déployer le programme avec l’équipe projet transverse …",
-    "salary_raw": "",
-    "published": "2026-07-25T12:34:14Z",
-    "contract_raw": "permanent",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": "CDI",
-    "commute_minutes": 80,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Télétravail non mentionné"
-    ],
-    "score": 4,
-    "score_reasons": [
-      "Trajet long (80 min)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
-  },
-  {
-    "source": "Adzuna",
-    "title": "CDI - Resp. Domaine IT Commerce & CRM h/f - Petit Bateau !",
-    "link": "https://www.adzuna.fr/details/4643615123?utm_medium=api&utm_source=707eaaff",
-    "company": "Groupe Rocher",
-    "location": "Issy-les-Moulineaux, Boulogne-Billancourt",
-    "description": "Petit Bateau est la marque qui accompagne toutes les générations depuis plus de 125 ans. « Liberté, Qualité, Durabilité » est le mot d’ordre porté par les 2800 collaborateurs qui œuvrent pour son rayonnement dans le monde. Née à Troyes en 1893, la marque Petit Bateau est fière de son héritage français et de son savoir-faire qui permet de créer des vêtements qui traversent le temps. Au sein du Groupe Rocher, Petit Bateau incarne un esprit espiègle et joyeux, à travers des vêtements dans lesquels…",
-    "salary_raw": "",
-    "published": "2024-04-10T18:19:09Z",
-    "contract_raw": "permanent",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": "CDI",
-    "commute_minutes": 114,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Séniorité élevée (>7 ans ?)",
-      "Télétravail non mentionné",
-      "Trajet long (114 min)",
-      "Annonce ancienne (851 j)"
-    ],
-    "score": 4,
-    "score_reasons": [
-      "Trajet long (114 min)"
-    ],
-    "recommendation": "à_écarter",
-    "recommendation_reason": "Trajet 114 min et pas 100 % télétravail"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Head of E-commerce (F/H)",
-    "link": "https://www.adzuna.fr/details/5774380371?utm_medium=api&utm_source=707eaaff",
-    "company": "",
-    "location": "Boulogne-Billancourt, Hauts-de-Seine",
-    "description": "Rattaché·e au Directeur Digital, le/la Head of E-commerce / Responsable E-commerce contribue à la définition et à la mise en œuvre de la stratégie e-commerce, en cohérence avec les objectifs globaux de l'entreprise. À ce titre, les principales missions sont : Définir et piloter la stratégie e-commerce afin d'accroître le chiffre d'affaires et la rentabilité du canal digital Manager et structurer une équipe dédiée (traffic, CRM, chefs de projet, responsables de site) en assurant performance et e…",
-    "salary_raw": "80000-90000 €",
-    "published": "2026-06-24T06:46:51Z",
-    "contract_raw": "",
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": 97,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Séniorité / management d'équipe ?",
-      "Télétravail non mentionné",
-      "Trajet long (97 min)"
-    ],
-    "score": 4,
-    "score_reasons": [
-      "Trajet long (97 min)"
-    ],
-    "recommendation": "à_écarter",
-    "recommendation_reason": "Trajet 97 min et pas 100 % télétravail"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Chef de projet CRM",
-    "link": "https://www.adzuna.fr/details/5823271450?utm_medium=api&utm_source=707eaaff",
-    "company": "ENOVA Consulting",
-    "location": "Paris, Ile-de-France",
-    "description": "ENOVA poursuit son développement et renforce ses équipes en intégrant un(e) Chef de Projet Technico-Fonctionnel CRM / Fidélisation en CDI. Vous rejoindrez notre communauté de consultants et interviendrez en mission longue durée au sein d'un grand compte, dans un environnement stimulant, transverse et orienté transformation digitale. Contexte de la mission Dans le cadre d'un projet stratégique de transformation de l'expérience client et de fidélisation, vous interviendrez auprès d'un acteur maje…",
-    "salary_raw": "600-700 €",
-    "published": "2026-08-01T05:49:12Z",
-    "contract_raw": "",
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": "CDI",
-    "commute_minutes": 80,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Télétravail non mentionné"
-    ],
-    "score": 4,
-    "score_reasons": [
-      "Trajet long (80 min)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Chef de projet CRM Dynamics 365 F/H",
-    "link": "https://www.adzuna.fr/details/5804718930?utm_medium=api&utm_source=707eaaff",
-    "company": "MASAO",
-    "location": "Paris, Ile-de-France",
-    "description": "Descriptif du poste Etre chef de projet CRM Dynamics 365, c’est : conseiller, analyser et mettre en œuvre la solution retenue par le client dans le cadre de projets. C’est aussi, être en charge d’installer, de paramétrer le progiciel et l’adapter aux exigences du client. Acteur central de nos projets d’intégration Microsoft Dynamics 365, votre rôle est d’être le représentant des besoins utilisateurs sur le métier de la relation client. MISSIONS Analyse Analyser et appréhender les besoins foncti…",
-    "salary_raw": "",
-    "published": "2026-07-17T11:52:12Z",
-    "contract_raw": "permanent",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": "CDI",
-    "commute_minutes": 80,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Conseil / ESN — télétravail dépendant de la mission ?",
-      "Télétravail non mentionné"
-    ],
-    "score": 4,
-    "score_reasons": [
-      "Trajet long (80 min)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Conseil / ESN — télétravail dépendant de la mission ? ; Télétravail non mentionné"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Consultant(e) Base de Données Clients",
-    "link": "https://www.adzuna.fr/details/5819217665?utm_medium=api&utm_source=707eaaff",
-    "company": "LB Recrutement Sàrl",
-    "location": "Paris, Ile-de-France",
-    "description": "Responsabilités Recueillir, analyser et prioriser les besoins métiers liés à la gestion de la base de données clients. Piloter les évolutions fonctionnelles de la plateforme CRM en collaboration avec les équipes métiers et techniques. Animer les ateliers fonctionnels et assurer la coordination des différentes parties prenantes. Participer au paramétrage et à l'optimisation de Salesforce Service Cloud afin de répondre aux besoins des utilisateurs. Réaliser les recettes fonctionnelles (UAT), vali…",
-    "salary_raw": "",
-    "published": "2026-07-29T04:46:10Z",
-    "contract_raw": "permanent",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": "CDI",
-    "commute_minutes": 80,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Télétravail non mentionné"
-    ],
-    "score": 4,
-    "score_reasons": [
-      "Trajet long (80 min)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Lead Production CRM et Digital",
-    "link": "https://www.adzuna.fr/details/5808011202?utm_medium=api&utm_source=707eaaff",
-    "company": "GUTENBERG",
-    "location": "Boulogne-Billancourt, Hauts-de-Seine",
-    "description": " We’re hiring ! Envie de rejoindre une agence où créativité, innovation et esprit d’équipe font la différence ? Bienvenue chez Gutenberg, agence de communication et de production de contenus cross-média, engagée RSE et membre du groupe Omnicom. Depuis plus de 50 ans, nous accompagnons les plus grandes marques dans les univers food, mode, luxe, retail et services. Chaque jour, nos équipes imaginent et produisent des contenus inspirants, engageants et porteurs de valeur. Nos valeurs :  esprit pio…",
-    "salary_raw": "",
-    "published": "2026-07-20T12:33:41Z",
-    "contract_raw": "",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": 97,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Séniorité élevée (>7 ans ?)",
-      "Télétravail non mentionné",
-      "Trajet long (97 min)"
-    ],
-    "score": 4,
-    "score_reasons": [
-      "Trajet long (97 min)"
-    ],
-    "recommendation": "à_écarter",
-    "recommendation_reason": "Trajet 97 min et pas 100 % télétravail"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Consultant Technique Selligent (H/F)",
-    "link": "https://www.adzuna.fr/details/5814482438?utm_medium=api&utm_source=707eaaff",
-    "company": "Lineup7",
-    "location": "14ème Arrondissement, Paris",
-    "description": "À propos de LINEUP7 À propos de LineUP7 LineUP7 est un cabinet de conseil spécialisé en Data, CRM, Martech et Intelligence Artificielle. Filiale d'Isoskèle (Groupe La Poste), nous accompagnons les grandes entreprises dans la conception, le déploiement et l'évolution de leurs écosystèmes Data afin de transformer la donnée en un véritable levier de connaissance client, d'innovation et de performance. Nos équipes interviennent sur l'ensemble de la chaîne de valeur : conseil, architecture, intégrat…",
-    "salary_raw": "",
-    "published": "2026-07-24T23:56:41Z",
-    "contract_raw": "",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": 92,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Conseil / ESN — télétravail dépendant de la mission ?",
-      "Télétravail non mentionné",
-      "Trajet long (92 min)"
-    ],
-    "score": 4,
-    "score_reasons": [
-      "Trajet long (92 min)"
-    ],
-    "recommendation": "à_écarter",
-    "recommendation_reason": "Trajet 92 min et pas 100 % télétravail"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Consultant Marketing et CRM F/H",
-    "link": "https://www.adzuna.fr/details/5815283515?utm_medium=api&utm_source=707eaaff",
-    "company": "Niji",
-    "location": "Issy-les-Moulineaux, Boulogne-Billancourt",
-    "description": "Vous interviendrez plus spécifiquement au sein de la practice \"Customer Value\", qui accompagne les entreprises sur l'optimisation de toutes les étapes du cycle de vie client, en tant que Consultant Marketing & CRM , et vos principales missions seront les suivantes : Challenger et optimiser les plans d'actions marketing et commerciaux de nos clients Co-construire avec nos clients leur stratégie relationnelle (parcours d'engagement, programme de fidélité, etc) pour maximiser la valeur client et e…",
-    "salary_raw": "",
-    "published": "2026-07-25T12:37:23Z",
-    "contract_raw": "permanent",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": "CDI",
-    "commute_minutes": 114,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Conseil / ESN — télétravail dépendant de la mission ?",
-      "Télétravail non mentionné",
-      "Trajet long (114 min)"
-    ],
-    "score": 4,
-    "score_reasons": [
-      "Trajet long (114 min)"
-    ],
-    "recommendation": "à_écarter",
-    "recommendation_reason": "Trajet 114 min et pas 100 % télétravail"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Product Owner Data H/F",
-    "link": "https://www.adzuna.fr/details/5827638326?utm_medium=api&utm_source=707eaaff",
-    "company": "Soors",
-    "location": "1er Arrondissement, Paris",
-    "description": "Vous rejoignez une équipe en pleine transition vers un modèle Run pérenne, au sein d'un environnement stimulant et orienté data marketing. Vous serez responsable du pilotage et de la gestion des produits Data sur le périmètre CRM et MDM Client, dans le cadre de la refonte d'un Data Lake Marketing et d'un Référentiel Client Unique. Poste et missions : - Reprendre et porter les responsabilités du Product Owner du périmètre Data. - Accompagner les équipes métiers dans la définition des besoins et …",
-    "salary_raw": "",
-    "published": "2026-08-04T12:28:46Z",
-    "contract_raw": "permanent",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": "CDI",
-    "commute_minutes": 104,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Télétravail non mentionné",
-      "Trajet long (104 min)"
-    ],
-    "score": 4,
-    "score_reasons": [
-      "Trajet long (104 min)"
-    ],
-    "recommendation": "à_écarter",
-    "recommendation_reason": "Trajet 104 min et pas 100 % télétravail"
   }
 ]
