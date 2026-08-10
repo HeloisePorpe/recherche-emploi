@@ -54,7 +54,7 @@ def ft_presence(token, name):
     """(total_IDF, crm_dans_l'échantillon) pour une entreprise sur France Travail."""
     headers = {"Authorization": f"Bearer {token}", "Accept": "application/json"}
     r = requests.get(
-        "https://api.francetravail.io/partenaire/offresdemploiv2/offres/search",
+        "https://api.francetravail.io/partenaire/offresdemploi/v2/offres/search",
         headers=headers,
         params={"motsCles": name, "region": "11", "range": "0-149"},
         timeout=20,
