@@ -3,7 +3,7 @@
 // --- État global ---
 let allJobs = [];
 const STORAGE_KEY = 'recherche-emploi-filtres-v2';
-const MAX_COMMUTE = 75;  // minutes ; au-delà, on masque sauf 100 % télétravail
+const MAX_COMMUTE = 90;  // minutes (1 h 30, la limite d'Héloïse) ; au-delà, on masque sauf 100 % télétravail
 
 const defaultState = () => ({
   search: '',
@@ -15,9 +15,8 @@ const defaultState = () => ({
   teleworkOnly: false,
   cdiOnly: false,
   hideFlagged: false,    // masquer les offres avec alertes de filtrage
-  showApplied: false,    // afficher les offres déjà suivies (masquées par défaut)
   recommendation: '',    // '' = toutes ; sinon à_postuler / à_revoir / à_écarter
-  myCriteria: true,      // filtre trajet + télétravail — activé par défaut
+  myCriteria: false,     // filtre trajet + télétravail — désactivé par défaut (opt-in)
   criteriaStrict: false, // masquer aussi les offres à l'info manquante
   sources: new Set(), // sources cochées ; vide = toutes
 });
@@ -40,7 +39,6 @@ const els = {
   teleworkOnly: document.getElementById('telework-only'),
   cdiOnly: document.getElementById('cdi-only'),
   hideFlagged: document.getElementById('hide-flagged'),
-  showApplied: document.getElementById('show-applied'),
   recommendation: document.getElementById('reco-filter'),
   myCriteria: document.getElementById('my-criteria'),
   criteriaSub: document.getElementById('criteria-sub'),
@@ -50,6 +48,7 @@ const els = {
   toggleFilters: document.getElementById('toggle-filters'),
   filters: document.getElementById('filters'),
   toggleArchived: document.getElementById('toggle-archived'),
+  archiveSearch: document.getElementById('archive-search'),
   archivedCount: document.getElementById('archived-count'),
   exportArchived: document.getElementById('export-archived'),
   archiveBlock: document.getElementById('archive-block'),
@@ -57,6 +56,7 @@ const els = {
 
 // Vue "archivées" (mode d'affichage, non persisté)
 let showArchived = false;
+let archiveQuery = '';   // recherche texte dans la vue archivées
 
 // --- Utilitaires ---
 function escapeHtml(str) {
@@ -191,7 +191,6 @@ function syncControls() {
   els.teleworkOnly.checked = state.teleworkOnly;
   els.cdiOnly.checked = state.cdiOnly;
   els.hideFlagged.checked = state.hideFlagged;
-  if (els.showApplied) els.showApplied.checked = state.showApplied;
   if (els.recommendation) els.recommendation.value = state.recommendation;
   els.myCriteria.checked = state.myCriteria;
   els.criteriaStrict.checked = state.criteriaStrict;
@@ -204,7 +203,7 @@ function syncControls() {
 // Évalue les critères perso trajet + télétravail.
 // Renvoie : 'ok' | 'no' | 'unknown-commute'
 //   - 100 % télétravail (5) en France : toujours OK (peu importe le trajet).
-//   - Sinon : OK si le trajet est ≤ 75 min ; masqué au-delà.
+//   - Sinon : OK si le trajet est ≤ 90 min (1 h 30) ; masqué au-delà.
 //   - Trajet inconnu : renvoyé à part (affiché en lenient, masqué en strict).
 function criteriaStatus(job) {
   const tw = job.telework_days;         // nombre ou null
@@ -213,7 +212,7 @@ function criteriaStatus(job) {
 
   if (tw === 5) return inFrance ? 'ok' : 'no';   // 100 % télétravail
   if (commute == null) return 'unknown-commute'; // trajet non calculé
-  if (commute <= MAX_COMMUTE) return 'ok';        // ≤ 75 min
+  if (commute <= MAX_COMMUTE) return 'ok';        // ≤ 90 min
   return 'no';                                     // > 75 min et pas full-remote
 }
 
@@ -224,10 +223,22 @@ function getFilteredJobs() {
   const recencyMs = state.recency > 0 ? state.recency * 86400000 : 0;
   const isJobArchived = makeArchivedMatcher();
 
-  // Vue "archivées" : on n'affiche que les offres masquées (tri par note)
+  // Vue "archivées" : on n'affiche que les offres masquées (tri par note),
+  // filtrées par la barre de recherche dédiée aux archivées.
   if (showArchived) {
+    const aq = archiveQuery.trim().toLowerCase();
     return allJobs
       .filter((job) => isJobArchived(job))
+      .filter((job) => {
+        if (!aq) return true;
+        const hay = (
+          (job.title || '') + ' ' +
+          (job.company || '') + ' ' +
+          (job.location || '') + ' ' +
+          (job.description || '')
+        ).toLowerCase();
+        return hay.includes(aq);
+      })
       .sort((a, b) => (b.score || 0) - (a.score || 0));
   }
 
@@ -266,9 +277,10 @@ function getFilteredJobs() {
     // Recommandation du robot de tri
     if (state.recommendation && (job.recommendation || '') !== state.recommendation) return false;
     // Offres déjà suivies (présentes dans « Mes candidatures », quel que soit le
-    // statut) : masquées par défaut. Cliquer « Suivre » les fait disparaître d'ici
-    // pour ne garder que les annonces encore à consulter.
-    if (!state.showApplied && typeof candidatureForJob === 'function' && candidatureForJob(job)) return false;
+    // statut) : TOUJOURS masquées de l'onglet Offres. Cliquer « Suivre » les fait
+    // basculer dans « Mes candidatures » ; ici on ne garde que les annonces encore
+    // à parcourir.
+    if (typeof candidatureForJob === 'function' && candidatureForJob(job)) return false;
     // Critères perso trajet + télétravail
     if (state.myCriteria) {
       const st = criteriaStatus(job);
@@ -304,7 +316,6 @@ function activeFilterCount() {
   if (state.teleworkOnly) n++;
   if (state.cdiOnly) n++;
   if (state.hideFlagged) n++;
-  if (state.showApplied) n++;
   if (state.recommendation) n++;
   if (state.myCriteria) n++;
   if (state.sources.size > 0) n++;
@@ -423,21 +434,33 @@ function render() {
     : `🗄️ Voir les archivées (${nbArchived})`;
   els.archiveBlock.classList.toggle('viewing', showArchived);
 
+  // Barre de recherche des archivées : visible seulement dans la vue archivées.
+  if (els.archiveSearch) els.archiveSearch.hidden = !showArchived;
+
   if (showArchived) {
-    els.counter.textContent =
-      `${jobs.length} offre${jobs.length > 1 ? 's' : ''} archivée${jobs.length > 1 ? 's' : ''}`;
+    const searching = archiveQuery.trim().length > 0;
+    els.counter.textContent = searching
+      ? `${jobs.length} archivée${jobs.length > 1 ? 's' : ''} trouvée${jobs.length > 1 ? 's' : ''} sur ${nbArchived}`
+      : `${jobs.length} offre${jobs.length > 1 ? 's' : ''} archivée${jobs.length > 1 ? 's' : ''}`;
   } else {
     const active = activeFilterCount();
+    // Le total « à parcourir » exclut les offres archivées ET les offres déjà
+    // suivies (présentes dans « Mes candidatures ») : ce ne sont pas des annonces
+    // à consulter. Le compteur reflète donc uniquement ce qu'il reste à parcourir.
+    const isJobArchived = makeArchivedMatcher();
+    const toReview = allJobs.filter((j) =>
+      !isJobArchived(j) && !(typeof candidatureForJob === 'function' && candidatureForJob(j))
+    ).length;
     els.counter.textContent =
-      `${jobs.length} offre${jobs.length > 1 ? 's' : ''} affichée${jobs.length > 1 ? 's' : ''}` +
-      (jobs.length !== allJobs.length ? ` sur ${allJobs.length}` : '') +
+      `${jobs.length} offre${jobs.length > 1 ? 's' : ''} à parcourir` +
+      (jobs.length !== toReview ? ` sur ${toReview}` : '') +
       (active > 0 ? ` · ${active} filtre${active > 1 ? 's' : ''} actif${active > 1 ? 's' : ''}` : '');
   }
 
   if (jobs.length === 0) {
     els.cards.innerHTML = '';
     els.empty.textContent = showArchived
-      ? 'Aucune offre archivée.'
+      ? (archiveQuery.trim() ? 'Aucune archivée ne correspond à cette recherche.' : 'Aucune offre archivée.')
       : 'Aucune offre ne correspond aux filtres.';
     els.empty.hidden = false;
   } else {
@@ -516,12 +539,6 @@ function bindEvents() {
     state.hideFlagged = els.hideFlagged.checked;
     render();
   });
-  if (els.showApplied) {
-    els.showApplied.addEventListener('change', () => {
-      state.showApplied = els.showApplied.checked;
-      render();
-    });
-  }
   if (els.recommendation) {
     els.recommendation.addEventListener('change', () => {
       state.recommendation = els.recommendation.value;
@@ -554,8 +571,7 @@ function bindEvents() {
     if (follow) {
       const job = allJobs.find((j) => candidatureId(j) === follow.getAttribute('data-follow'));
       if (job && addCandidature(job)) {
-        // L'offre suivie rejoint « Mes candidatures » et disparaît de la liste
-        // (sauf si « Afficher les offres déjà suivies » est coché).
+        // L'offre suivie rejoint « Mes candidatures » et disparaît de la liste.
         render();
       }
       return;
@@ -576,8 +592,21 @@ function bindEvents() {
   // Vue archivées + export
   els.toggleArchived.addEventListener('click', () => {
     showArchived = !showArchived;
+    // En sortant de la vue archivées, on réinitialise la recherche dédiée.
+    if (!showArchived) {
+      archiveQuery = '';
+      if (els.archiveSearch) els.archiveSearch.value = '';
+    }
     render();
+    // En entrant dans la vue, on place le curseur dans la barre de recherche.
+    if (showArchived && els.archiveSearch) els.archiveSearch.focus();
   });
+  if (els.archiveSearch) {
+    els.archiveSearch.addEventListener('input', () => {
+      archiveQuery = els.archiveSearch.value;
+      render();
+    });
+  }
   els.exportArchived.addEventListener('click', () => {
     const list = loadArchived();
     if (!list.length) { alert('Aucune offre archivée à exporter.'); return; }
@@ -610,6 +639,9 @@ async function init() {
     // Synchronise les candidatures suivies (fichier partagé) puis re-rend
     // pour refléter l'état « Suivie » à jour sur tous les appareils.
     if (typeof syncPull === 'function') syncPull().then(render).catch(() => {});
+    // Synchronise aussi les offres écartées (archives) : récupère celles des
+    // autres appareils et pousse les locales absentes du cloud, puis re-rend.
+    if (typeof syncArchived === 'function') syncArchived().then(render).catch(() => {});
   } catch (err) {
     els.counter.textContent = 'Erreur de chargement';
     els.cards.innerHTML = `<p class="empty-state">Impossible de charger les offres (${escapeHtml(err.message)}).<br>Lancez un serveur local (python -m http.server) pour tester.</p>`;

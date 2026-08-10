@@ -105,13 +105,6 @@
         </label>
       </div>
 
-      <div class="filter-block">
-        <label class="checkbox-line">
-          <input type="checkbox" id="show-applied" />
-          <span>Afficher les offres déjà suivies ✅</span>
-        </label>
-      </div>
-
       <div class="filter-block criteria-block">
         <label class="checkbox-line">
           <input type="checkbox" id="my-criteria" />
@@ -123,7 +116,7 @@
             <span>Mode strict (masquer les offres à l'info manquante)</span>
           </label>
           <p class="criteria-note">
-            Masque les offres à <strong>plus de 75 min</strong> de trajet,
+            Masque les offres à <strong>plus de 1 h 30</strong> de trajet,
             <strong>sauf</strong> les postes <strong>100 % télétravail</strong>
             (en France). Les offres au trajet non calculé sont affichées et
             marquées « à vérifier ».
@@ -151,6 +144,9 @@
       <div class="content-head">
         <span id="counter" class="counter">Chargement...</span>
       </div>
+      <input type="search" id="archive-search" class="archive-search"
+             placeholder="🔎 Rechercher une offre archivée (titre, entreprise, lieu...)"
+             autocomplete="off" hidden />
       <div id="cards" class="cards" aria-live="polite"></div>
       <p id="empty-state" class="empty-state" hidden>Aucune offre ne correspond aux filtres.</p>
     </main>

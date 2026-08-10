@@ -194,6 +194,25 @@ html, body {
 .content-head { margin-bottom: 14px; }
 .counter { font-weight: 600; color: var(--text-muted); font-size: 0.95rem; }
 
+/* Barre de recherche des archivées (visible seulement dans la vue archivées) */
+.archive-search {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px 13px;
+  margin-bottom: 16px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  background: var(--surface);
+  color: var(--text);
+}
+.archive-search:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));

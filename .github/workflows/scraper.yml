@@ -1,10 +1,14 @@
 name: Scraper offres d'emploi
 
 on:
-  # Tous les jours a 5h00 heure de Paris.
-  # Paris = UTC+2 en ete / UTC+1 en hiver. 3h UTC couvre l'ete (5h Paris).
+  # 4 passages par jour pour voir les annonces vite apres publication.
+  # Cron = UTC (fixe toute l'annee). Paris = UTC+2 en ete / UTC+1 en hiver.
+  # 5h,10h,15h,19h UTC => ~7h,12h,17h,21h Paris en ete (1h plus tot en hiver).
+  # Le scan ne consomme AUCUN token (script Python, pas d'IA) ; sur depot public
+  # les minutes GitHub Actions sont gratuites. Seul plafond : quotas API Adzuna.
+  # Pour changer la frequence, ajouter/retirer des heures dans la liste ci-dessous.
   schedule:
-    - cron: '0 3 * * *'
+    - cron: '0 5,10,15,19 * * *'
   # Lancement manuel depuis l'onglet Actions.
   workflow_dispatch:
 

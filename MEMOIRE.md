@@ -104,18 +104,29 @@ Gmail dédiée (`heloise.emploi@gmail.com`), via IMAP (`fetch_email_alerts`) :
   détectée « postulée » par le robot email) est marquée d'un badge **« Déjà
   postulée »** sur le dashboard, **même si elle vient d'une autre plateforme**
   (rapprochement souple titre + entreprise, `candidatureForJob` dans `store.js`).
-  Les offres **déjà postulées** (statut envoyé/entretien/réponse) sont **masquées
-  par défaut** de l'onglet Offres (visibles dans « Mes candidatures ») ; case
-  **« Afficher les offres déjà postulées »** pour les réafficher (`jobApplied`).
+  Les offres **déjà suivies** (présentes dans « Mes candidatures », quel que soit
+  le statut) sont **toujours masquées** de l'onglet Offres — elles vivent dans
+  « Mes candidatures ». L'onglet Offres ne montre que les annonces **à parcourir**,
+  et le compteur (« N offres à parcourir ») exclut archivées **et** déjà suivies.
 - **🤖 Recommandation** (robot de tri) : chaque offre reçoit `à postuler` /
   `à revoir` / `à écarter` **avec la raison**, affichée sur la carte + filtre dédié.
   Logique dans `recommend_offer` (`job_scraper.py`), en **règles** pour l'instant
   (l'IA affinera plus tard, mêmes champs `recommendation` / `recommendation_reason`).
 - **Date de parution** affichée sur chaque carte
 - **Archivage** des offres non pertinentes (bouton « ✕ Pas pertinent ») :
-  masquées de la liste, consultables via « Voir les archivées », restaurables,
+  masquées de la liste, consultables via « Voir les archivées » (avec **barre de
+  recherche dédiée** : titre / entreprise / lieu), restaurables,
   et **exportables en JSON** (`offres-archivees.json`) pour analyse/affinage
-  des filtres. Stockage : `localStorage` clé `recherche-emploi-archivees`.
+  des filtres. Cache `localStorage` clé `recherche-emploi-archivees` **+
+  synchronisation** dans le dépôt privé (`archivees.json`) dès qu'un jeton est
+  configuré : fusion union par clé stable, désarchivage géré par tombstone
+  (`deleted`). Les archives survivent donc à un vidage de cache et se partagent
+  entre appareils (comme les candidatures). Sans jeton : local seulement.
+  **Exclusion côté robot** : à chaque scan, `drop_archived()` relit `archivees.json`
+  et retire toute offre correspondant à une archive — quelle que soit la plateforme
+  (rapprochement `_is_archived_offer` = même logique « même offre » que la dédup :
+  `_title_match` + entreprise souple). Une annonce déjà écartée ne réapparaît donc
+  jamais dans le dashboard, même diffusée par un autre site.
 - Filtres mémorisés (localStorage), compteur de filtres actifs
 - Responsive : 1 col (mobile) / 2 col (tablette-portable) / auto (large)
 
