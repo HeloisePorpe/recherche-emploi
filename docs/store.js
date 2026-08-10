@@ -79,7 +79,9 @@ function isTracked(job) {
 // variantes d'entreprise ("Aravati" vs "Aravati France").
 function _normTxt(x) {
   return (x || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
-    .replace(/\(.*?\)|\bh\/?f\b|\bf\/?h\b|\bm\/?f\b|\bcdi\b|\bcdd\b/g, ' ')
+    // Retire les mentions de genre (H/F, F/H, M/F et variantes H/F/D, F/H/X…) et
+    // les mentions de contrat, pour rapprocher les mêmes offres écrites différemment.
+    .replace(/\(.*?\)|\bh[/\-]?f(?:[/\-][dwx])?\b|\bf[/\-]?h(?:[/\-][dwx])?\b|\bm[/\-]?f(?:[/\-][dwx])?\b|\bcdi\b|\bcdd\b/g, ' ')
     .replace(/[^a-z0-9]+/g, ' ').trim();
 }
 function _titleKey(t) { return _normTxt(t).slice(0, 40); }
@@ -92,13 +94,32 @@ function _companyLoose(a, b) {
 let _candCache = null;
 function refreshCandidatureCache() { _candCache = activeCandidatures(); return _candCache; }
 
-// Candidature correspondant à une offre (titre proche + entreprise proche), sinon null.
+// Deux titres désignent le même poste : identiques, l'un préfixe de l'autre, ou
+// l'un est un sous-ensemble de mots de l'autre (≥ 3 mots communs). Tolère les
+// variantes réelles entre plateformes : « (Senior) Campaign Marketing Manager »
+// vs « Senior Campaign Marketing Manager - Paris H/F ». Utilisé quand l'entreprise
+// concorde déjà (rapprochement souple), donc on peut être généreux sur le titre.
+function _titleSimilar(a, b) {
+  const na = _normTxt(a), nb = _normTxt(b);
+  if (!na || !nb) return false;
+  if (na === nb) return true;
+  const short = na.length <= nb.length ? na : nb;
+  const long = na.length <= nb.length ? nb : na;
+  if (short.length >= 12 && long.startsWith(short)) return true;
+  const wa = na.split(' ').filter(Boolean);
+  const wb = nb.split(' ').filter(Boolean);
+  const small = wa.length <= wb.length ? wa : wb;
+  const bigSet = new Set(wa.length <= wb.length ? wb : wa);
+  return small.length >= 3 && small.every((w) => bigSet.has(w));
+}
+
+// Candidature correspondant à une offre (entreprise proche + titre proche), sinon null.
 function candidatureForJob(job) {
   const list = _candCache || activeCandidatures();
-  const jt = _titleKey(job.title || '');
-  if (!jt) return null;
+  const jt = job.title || '';
+  if (!_normTxt(jt)) return null;
   const jc = job.company || '';
-  return list.find((c) => _titleKey(c.title || '') === jt && _companyLoose(jc, c.company || '')) || null;
+  return list.find((c) => _companyLoose(jc, c.company || '') && _titleSimilar(jt, c.title || '')) || null;
 }
 
 // L'offre a-t-elle déjà fait l'objet d'une candidature (envoyée / entretien /

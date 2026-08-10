@@ -2041,7 +2041,8 @@ def _strip_accents(s):
 
 def _norm_txt(x):
     x = _strip_accents((x or '').lower())
-    x = re.sub(r'\(.*?\)|\bh/?f\b|\bf/?h\b|\bm/?f\b|\bcdi\b|\bcdd\b', ' ', x)
+    x = re.sub(r'\(.*?\)|\bh[/\-]?f(?:[/\-][dwx])?\b|\bf[/\-]?h(?:[/\-][dwx])?\b|'
+               r'\bm[/\-]?f(?:[/\-][dwx])?\b|\bcdi\b|\bcdd\b', ' ', x)
     return re.sub(r'[^a-z0-9]+', ' ', x).strip()
 
 
