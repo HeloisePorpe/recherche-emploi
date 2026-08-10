@@ -286,6 +286,26 @@
     "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
+    "source": "LinkedIn (alerte)",
+    "title": "Campaign manager- influencer marketing (remote)",
+    "link": "https://www.linkedin.com/comm/jobs/view/4427347814?trackingId=&amp;refId=&amp;lipi=urn%3Ali%3Apage%3Aemail_email_jobs_saved_job_reminder_01%3B1u8uBl61QIaRzPC%2FOkc7nA%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=0fJLI1iEbGjco1&amp;trk=eml-email_jobs_saved_job_reminder_01-saved~jobs-0-job_posting&amp;trkEmail=eml-email_jobs_saved_job_reminder_01-saved~jobs-0-job_posting-null-8ulvbk~msnhrhly~al-null-null&amp;eid=8ulvbk-msnhrhly-al&amp;otpToken=MmVmZTMwNWFkODdhOTA4NmVhYWU0OTlhODE5ZTFmYjI5ZGYxZjllZGMwNjlhMjk0OTdlZTQyNWUzODU1MzU2ZDFlYTFmNzMwZjIyNTVhYzc3MTllMjM4NDA0NjdjOTllZWRlYWYyOTIxZDIyNDRiODZmNzI3MTBmOThiOTY2Yzc4NzkzMzhmMTExODhmMCwyLDE%3D",
+    "company": "",
+    "location": "",
+    "description": "",
+    "published": "2026-08-10T17:14:34+00:00",
+    "in_france": true,
+    "salary_extracted": null,
+    "telework_days": null,
+    "contract_type": null,
+    "flags": [],
+    "score": 6,
+    "score_reasons": [
+      "Signaux CRM lifecycle (email / segmentation / campagne)"
+    ],
+    "recommendation": "à_postuler",
+    "recommendation_reason": "Profil correspondant, aucun signal à vérifier (score 6/10)"
+  },
+  {
     "source": "Adzuna",
     "title": "Responsable CRM - CDI - Paris (H/F)",
     "link": "https://www.adzuna.fr/details/5782428756?utm_medium=api&utm_source=707eaaff",
