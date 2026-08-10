@@ -183,6 +183,32 @@
     "recommendation_reason": "À vérifier : Annonce ancienne (394 j)"
   },
   {
+    "source": "Site carrière — Vestiaire Collective",
+    "title": "Content Strategist",
+    "link": "https://jobs.lever.co/vestiairecollective/704c192f-11f4-464e-bdb2-4b5f45d381fa",
+    "company": "Vestiaire Collective",
+    "location": "Paris",
+    "description": "Vestiaire Collective is the leading global platform for desirable pre-loved fashion and a pioneer in transforming how people consume fashion.\n \nOur mission is simple: make circular fashion the norm, not the exception.\nThrough technology, expertise, and a highly engaged global community, we enable millions of people to buy and sell fashion in a more sustainable way.\n \nFounded in Paris in 2009, Vestiaire Collective is now a globally scaled marketplace with offices in Paris, London, Berlin, New York, Singapore, and Ho Chi Minh City, and logistics hubs across Europe, Asia, and the US.\nToday, we are a team of around 600 people from over 50 nationalities, united by a shared ambition: to drive meaningful change in the fashion industry.\n \nOur values, Activism, Transparency, Dedication, Greatness, and Collective, shape how we build, collaborate, and grow every day.\n\n\nAbout the role  : \nYou're the person in the room who can take a consumer insight, a cultural moment and turn it into a campaign idea that is relevant. \nYou'll work closely with the Head of Brand, the Creative Director, and the Campaign team to develop ideas that stretch across channels (360 approach). You'll shape copy direction, and make sure everything we put out sounds like us. You'll help structure and elevate creative ideas. \nWhat you will do: \nDevelop campaign concepts and creative territories rooted in brand strategy and business objectives.\nWrite compelling, on-brand copy across all touchpoints: Social, CRM, Performance Marketing, Offline and creative campaigns.\nTranslate strategic briefs into clear creative frameworks that guide designers, producers, and channel leads.\nOwn and champion the Vestiaire Collective tone of voice, ensuring every word is intentional, consistent, and on-brand.\nCollaborate with designers, art directors, and video producers to shape the full creative output.\nContribute to brand positioning work, naming, and messaging hierarchy.\nSupport and elevate junior creatives and cross-functional partners through feedback, guidance, and creative leadership.\nStay sharp on cultural trends, fashion conversations, and competitor creative and bring what's relevant to the table.\nWork together with our Product Copywriter to make sure we sound like one brand.  \nAbout you:\n3-5 years of experience in content strategy or copywriting for marketing.\nExperience writing (EN US) localization friendly copy for multinational audiences. \nA portfolio that demonstrates both strategic thinking and executional craft. Concepts and copy. Not just one or the other.\nA deep, genuine understanding of the luxury landscape and the ability to write across registers: witty for social, editorial for campaign, data-driven for performance marketing, precise and UX-friendly for CRM.\nNative/ Bilingual English speaker and one or two European languages (French, German, Italian) are a plus. \nExperience working in Figma; Familiarity with Contentstack and Braze (or similar tools) to understand the full copy lifecycle\nStrong collaboration skills and the confidence to present, defend, and refine creative ideas in a fast-moving team.\n",
+    "published": "2026-08-10T13:19:43.279000",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": null,
+    "flags": [
+      "Séniorité / management d'équipe ?",
+      "Poste junior / débutant ?",
+      "Télétravail non mentionné"
+    ],
+    "score": 7,
+    "score_reasons": [
+      "Compétences alignées (3)",
+      "Signaux CRM lifecycle (email / segmentation / campagne)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Séniorité / management d'équipe ? ; Poste junior / débutant ? ; Télétravail non mentionné"
+  },
+  {
     "source": "Adzuna",
     "title": "CRM Marketing Manager (H/F) (CDI)",
     "link": "https://www.adzuna.fr/details/5799659517?utm_medium=api&utm_source=707eaaff",
@@ -321,6 +347,27 @@
     "in_france": true,
     "contract_type": "CDI",
     "commute_minutes": null,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné"
+    ],
+    "score": 5,
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
+  },
+  {
+    "source": "LinkedIn (alerte)",
+    "title": "CDI - Senior CRM Manager (M/F/X)",
+    "link": "https://www.linkedin.com/comm/jobs/view/4451068278/?trackingId=ZOjN2nH82mjNL3cihbzoHQ%3D%3D&amp;refId=avAYLz0w%2B79zA%2B2X5mpNtA%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3Bt%2BSGafVFROK102jAHx35SA%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=177L8r5G52jco1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4451068278_ssid_8583513778_fmid_8ulvbk~msnbrmhe~j3&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4451068278_ssid_8583513778_fmid_8ulvbk~msnbrmhe~j3-null-8ulvbk~msnbrmhe~j3-null-null&amp;eid=8ulvbk-msnbrmhe-j3&amp;otpToken=ZTY0YzdmNmI2Zjc2YjdmZjdjMjRjYWZjNDQ3OWY2YzQzMzRiMGFmZTI1MDZkNzFmMDg4ODQyOGRjYTc5NTUwZjUzNmQ2MjYxMzdkODAxNzY5MWJhYzg1MDQ5NDI4YTFjM2E4MWVkYTgyYTZkMDE5YjVkYjQ2NDcwYzkzZjZkMDNmMzFkYmY0NzhhMWMwMywyLDE%3D",
+    "company": "",
+    "location": "",
+    "description": "",
+    "published": "2026-08-10T14:26:44+00:00",
+    "in_france": true,
+    "salary_extracted": null,
+    "telework_days": null,
+    "contract_type": "CDI",
     "flags": [
       "Pertinence CRM à confirmer",
       "Télétravail non mentionné"
