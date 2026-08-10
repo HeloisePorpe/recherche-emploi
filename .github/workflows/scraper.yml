@@ -98,6 +98,9 @@ jobs:
           print("config.json cree a la racine du depot")
           PY
 
+      - name: Diagnostic presence employeurs (ponctuel, branche uniquement)
+        run: python diagnostic_presence.py || true
+
       - name: Lancer le scraper
         run: python job_scraper.py
 
