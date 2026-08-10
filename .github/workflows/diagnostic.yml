@@ -1,0 +1,44 @@
+name: Diagnostic presence employeurs
+
+# Diagnostic ponctuel (manuel) : mesure la presence des employeurs proches sur
+# France Travail + Adzuna. Ne commit rien, n'envoie aucun email.
+on:
+  workflow_dispatch:
+
+jobs:
+  diagnostic:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Recuperer le code du depot
+        uses: actions/checkout@v4
+
+      - name: Installer Python 3.13
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Installer les dependances
+        run: pip install requests
+
+      - name: Creer le fichier config.json a partir des secrets
+        env:
+          FRANCETRAVAIL_CLIENT_ID: ${{ secrets.FRANCETRAVAIL_CLIENT_ID }}
+          FRANCETRAVAIL_CLIENT_SECRET: ${{ secrets.FRANCETRAVAIL_CLIENT_SECRET }}
+          ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
+          ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
+        run: |
+          python - <<'PY'
+          import json, os
+          config = {
+              "francetravail_client_id": os.environ.get("FRANCETRAVAIL_CLIENT_ID", ""),
+              "francetravail_client_secret": os.environ.get("FRANCETRAVAIL_CLIENT_SECRET", ""),
+              "adzuna_app_id": os.environ.get("ADZUNA_APP_ID", ""),
+              "adzuna_app_key": os.environ.get("ADZUNA_APP_KEY", ""),
+          }
+          with open("config.json", "w", encoding="utf-8") as f:
+              json.dump(config, f, ensure_ascii=False, indent=2)
+          print("config.json cree")
+          PY
+
+      - name: Lancer le diagnostic
+        run: python diagnostic_presence.py
