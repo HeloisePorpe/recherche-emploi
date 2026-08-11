@@ -11,72 +11,20 @@
     "contract_type": "CDI",
     "telework_days": 2,
     "in_france": true,
-    "commute_minutes": null,
-    "flags": [],
-    "score": 9,
+    "commute_minutes": 103,
+    "flags": [
+      "Trajet long (103 min)"
+    ],
+    "score": 8,
     "score_reasons": [
       "Compétences alignées (4)",
       "Signaux CRM lifecycle (email / segmentation / campagne)",
       "Salaire dans la cible (50,000€)",
+      "Trajet long (103 min)",
       "Télétravail 2j/sem"
     ],
-    "recommendation": "à_postuler",
-    "recommendation_reason": "Profil correspondant, aucun signal à vérifier (score 9/10)"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Chef·fe de Projet CRM & Marketing Automation (F/H/NB) – E-commerce & IA",
-    "link": "https://www.adzuna.fr/details/5727289947?utm_medium=api&utm_source=707eaaff",
-    "company": "Store & Supply",
-    "location": "Levallois-Perret, Nanterre",
-    "description": "À propos de Store & Supply Depuis 2014, nous propulsons 50 marques mode/lifestyle (Redskins, Lee Cooper, FRNCH…) grâce à un accompagnement e-commerce 360°. Notre croissance (x2 en 3 ans) ouvre la voie à des talents qui veulent tester, apprendre et automatiser . Le poste Ta mission Construire et optimiser des workflows multicanaux (email, SMS, push) sur Klaviyo, CartsGuru, Brevo & Shopify. Driver la stratégie data & IA : scoring, segments prédictifs, contenu généré (GPT-like). Piloter l’envoi de…",
-    "salary_raw": "",
-    "published": "2026-05-12T22:51:31Z",
-    "contract_raw": "",
-    "salary_extracted": null,
-    "telework_days": 2,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": null,
-    "flags": [
-      "Annonce ancienne (89 j)"
-    ],
-    "score": 9,
-    "score_reasons": [
-      "Outils : email, sms",
-      "Compétences alignées (3)",
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Télétravail 2j/sem"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Annonce ancienne (89 j)"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Owned media lead (H/F)",
-    "link": "https://www.adzuna.fr/details/5814822714?utm_medium=api&utm_source=707eaaff",
-    "company": "Groupe OpenSourcing",
-    "location": "9ème Arrondissement, Paris",
-    "description": "Job description You will act as the key link between global strategy and local execution, ensuring owned media aligns with paid/earned campaigns to drive conversion and grow the loyalty/membership program. CRM & Automation: Plan and deploy automated, data-driven CRM campaigns via a Marketing Automation Platform (MAP) in line with the local marketing calendar. Data & Personalization: Leverage customer segmentation to deliver targeted content, boost member growth, and support SEO initiatives. Omn…",
-    "salary_raw": "52000-65000 €",
-    "published": "2026-07-25T03:56:36Z",
-    "contract_raw": "permanent",
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": "CDI",
-    "commute_minutes": null,
-    "flags": [
-      "Télétravail non mentionné"
-    ],
-    "score": 9,
-    "score_reasons": [
-      "Outils : segmentation",
-      "Compétences alignées (3)",
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Salaire dans la cible (52,000€)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 103 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -104,27 +52,87 @@
   },
   {
     "source": "Adzuna",
-    "title": "CRM Campaign Manager H/F",
-    "link": "https://www.adzuna.fr/details/5816403470?utm_medium=api&utm_source=707eaaff",
+    "title": "Chef·fe de Projet CRM & Marketing Automation (F/H/NB) – E-commerce & IA",
+    "link": "https://www.adzuna.fr/details/5727289947?utm_medium=api&utm_source=707eaaff",
+    "company": "Store & Supply",
+    "location": "Levallois-Perret, Nanterre",
+    "description": "À propos de Store & Supply Depuis 2014, nous propulsons 50 marques mode/lifestyle (Redskins, Lee Cooper, FRNCH…) grâce à un accompagnement e-commerce 360°. Notre croissance (x2 en 3 ans) ouvre la voie à des talents qui veulent tester, apprendre et automatiser . Le poste Ta mission Construire et optimiser des workflows multicanaux (email, SMS, push) sur Klaviyo, CartsGuru, Brevo & Shopify. Driver la stratégie data & IA : scoring, segments prédictifs, contenu généré (GPT-like). Piloter l’envoi de…",
+    "salary_raw": "",
+    "published": "2026-05-12T22:51:31Z",
+    "contract_raw": "",
+    "salary_extracted": null,
+    "telework_days": 2,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": 105,
+    "flags": [
+      "Trajet long (105 min)",
+      "Annonce ancienne (90 j)"
+    ],
+    "score": 8,
+    "score_reasons": [
+      "Outils : email, sms",
+      "Compétences alignées (3)",
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (105 min)",
+      "Télétravail 2j/sem"
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 105 min et pas 100 % télétravail"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Owned media lead (H/F)",
+    "link": "https://www.adzuna.fr/details/5814822714?utm_medium=api&utm_source=707eaaff",
+    "company": "Groupe OpenSourcing",
+    "location": "9ème Arrondissement, Paris",
+    "description": "Job description You will act as the key link between global strategy and local execution, ensuring owned media aligns with paid/earned campaigns to drive conversion and grow the loyalty/membership program. CRM & Automation: Plan and deploy automated, data-driven CRM campaigns via a Marketing Automation Platform (MAP) in line with the local marketing calendar. Data & Personalization: Leverage customer segmentation to deliver targeted content, boost member growth, and support SEO initiatives. Omn…",
+    "salary_raw": "52000-65000 €",
+    "published": "2026-07-25T03:56:36Z",
+    "contract_raw": "permanent",
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": "CDI",
+    "commute_minutes": 105,
+    "flags": [
+      "Télétravail non mentionné",
+      "Trajet long (105 min)"
+    ],
+    "score": 8,
+    "score_reasons": [
+      "Outils : segmentation",
+      "Compétences alignées (3)",
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Salaire dans la cible (52,000€)",
+      "Trajet long (105 min)"
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 105 min et pas 100 % télétravail"
+  },
+  {
+    "source": "Adzuna",
+    "title": "CRM Campaign Manager F/H",
+    "link": "https://www.adzuna.fr/details/5818284325?utm_medium=api&utm_source=707eaaff",
     "company": "Nexton",
     "location": "Paris, Ile-de-France",
-    "description": "NEXTON recrute un CRM Campaign Manager H/F, en CDI, à Paris ! Ton futur environnement de travail : Tu rejoindras la direction Marketing & Relation Client d'un de nos partenaires grands comptes. Au sein d'une équipe dynamique et au coeur de la stratégie d'engagement client, ton rôle consistera à concevoir, orchestrer et optimiser des campagnes de communication impactantes, personnalisées et omnicanales pour maximiser la valeur et la fidélisation des utilisateurs. Tes missions : Tu conçois et pil…",
+    "description": "NEXTON recrute un CRM Campaign Manager H/F , en CDI , à Paris ! Ton futur environnement de travail : Tu rejoindras la direction Marketing & Relation Client d'un de nos partenaires grands comptes. Au sein d'une équipe dynamique et au cœur de la stratégie d'engagement client, ton rôle consistera à concevoir, orchestrer et optimiser des campagnes de communication impactantes, personnalisées et omnicanales pour maximiser la valeur et la fidélisation des utilisateurs. Tes missions : Tu conçois et pi…",
     "salary_raw": "",
-    "published": "2026-07-26T11:42:59Z",
-    "contract_raw": "",
+    "published": "2026-07-28T12:41:42Z",
+    "contract_raw": "permanent",
     "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
     "contract_type": "CDI",
-    "commute_minutes": null,
+    "commute_minutes": 80,
     "flags": [
       "Télétravail non mentionné"
     ],
-    "score": 8,
+    "score": 7,
     "score_reasons": [
       "Outils : omnicanal",
       "Compétences alignées (3)",
-      "Signaux CRM lifecycle (email / segmentation / campagne)"
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (80 min)"
     ],
     "recommendation": "à_revoir",
     "recommendation_reason": "À vérifier : Télétravail non mentionné"
@@ -143,15 +151,16 @@
     "telework_days": null,
     "in_france": true,
     "contract_type": "CDI",
-    "commute_minutes": null,
+    "commute_minutes": 80,
     "flags": [
       "Télétravail non mentionné"
     ],
-    "score": 8,
+    "score": 7,
     "score_reasons": [
       "Outils : segmentation",
       "Compétences alignées (3)",
-      "Signaux CRM lifecycle (email / segmentation / campagne)"
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (80 min)"
     ],
     "recommendation": "à_revoir",
     "recommendation_reason": "À vérifier : Télétravail non mentionné"
@@ -170,59 +179,31 @@
     "telework_days": null,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": null,
+    "commute_minutes": 80,
     "flags": [
-      "Annonce ancienne (394 j)"
-    ],
-    "score": 8,
-    "score_reasons": [
-      "Outils clés : email, sms, whatsapp",
-      "Signaux CRM lifecycle (email / segmentation / campagne)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Annonce ancienne (394 j)"
-  },
-  {
-    "source": "Site carrière — Vestiaire Collective",
-    "title": "Content Strategist",
-    "link": "https://jobs.lever.co/vestiairecollective/704c192f-11f4-464e-bdb2-4b5f45d381fa",
-    "company": "Vestiaire Collective",
-    "location": "Paris",
-    "description": "Vestiaire Collective is the leading global platform for desirable pre-loved fashion and a pioneer in transforming how people consume fashion.\n \nOur mission is simple: make circular fashion the norm, not the exception.\nThrough technology, expertise, and a highly engaged global community, we enable millions of people to buy and sell fashion in a more sustainable way.\n \nFounded in Paris in 2009, Vestiaire Collective is now a globally scaled marketplace with offices in Paris, London, Berlin, New York, Singapore, and Ho Chi Minh City, and logistics hubs across Europe, Asia, and the US.\nToday, we are a team of around 600 people from over 50 nationalities, united by a shared ambition: to drive meaningful change in the fashion industry.\n \nOur values, Activism, Transparency, Dedication, Greatness, and Collective, shape how we build, collaborate, and grow every day.\n\n\nAbout the role  : \nYou're the person in the room who can take a consumer insight, a cultural moment and turn it into a campaign idea that is relevant. \nYou'll work closely with the Head of Brand, the Creative Director, and the Campaign team to develop ideas that stretch across channels (360 approach). You'll shape copy direction, and make sure everything we put out sounds like us. You'll help structure and elevate creative ideas. \nWhat you will do: \nDevelop campaign concepts and creative territories rooted in brand strategy and business objectives.\nWrite compelling, on-brand copy across all touchpoints: Social, CRM, Performance Marketing, Offline and creative campaigns.\nTranslate strategic briefs into clear creative frameworks that guide designers, producers, and channel leads.\nOwn and champion the Vestiaire Collective tone of voice, ensuring every word is intentional, consistent, and on-brand.\nCollaborate with designers, art directors, and video producers to shape the full creative output.\nContribute to brand positioning work, naming, and messaging hierarchy.\nSupport and elevate junior creatives and cross-functional partners through feedback, guidance, and creative leadership.\nStay sharp on cultural trends, fashion conversations, and competitor creative and bring what's relevant to the table.\nWork together with our Product Copywriter to make sure we sound like one brand.  \nAbout you:\n3-5 years of experience in content strategy or copywriting for marketing.\nExperience writing (EN US) localization friendly copy for multinational audiences. \nA portfolio that demonstrates both strategic thinking and executional craft. Concepts and copy. Not just one or the other.\nA deep, genuine understanding of the luxury landscape and the ability to write across registers: witty for social, editorial for campaign, data-driven for performance marketing, precise and UX-friendly for CRM.\nNative/ Bilingual English speaker and one or two European languages (French, German, Italian) are a plus. \nExperience working in Figma; Familiarity with Contentstack and Braze (or similar tools) to understand the full copy lifecycle\nStrong collaboration skills and the confidence to present, defend, and refine creative ideas in a fast-moving team.\n",
-    "published": "2026-08-10T13:19:43.279000",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": null,
-    "flags": [
-      "Séniorité / management d'équipe ?",
-      "Poste junior / débutant ?",
-      "Télétravail non mentionné"
+      "Annonce ancienne (395 j)"
     ],
     "score": 7,
     "score_reasons": [
-      "Compétences alignées (3)",
-      "Signaux CRM lifecycle (email / segmentation / campagne)"
+      "Outils clés : email, sms, whatsapp",
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (80 min)"
     ],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Séniorité / management d'équipe ? ; Poste junior / débutant ? ; Télétravail non mentionné"
+    "recommendation_reason": "À vérifier : Annonce ancienne (395 j)"
   },
   {
-    "source": "Adzuna",
-    "title": "CRM Marketing Manager (H/F) (CDI)",
-    "link": "https://www.adzuna.fr/details/5799659517?utm_medium=api&utm_source=707eaaff",
-    "company": "ARAVATI FRANCE",
-    "location": "1er Arrondissement, Paris",
-    "description": "Vous aimez construire plutôt que maintenir ? Vous recherchez un poste où le CRM n'est pas seulement un outil marketing mais un véritable levier de transformation de l'entreprise ? Notre client, acteur majeur du conseil, de l'audit et de l'expertise auprès des entreprises, poursuit une transformation ambitieuse de son organisation et de son approche commerciale. Dans ce contexte, il crée le poste de CRM Marketing Manager, véritable référent de la stratégie CRM et Marketing Automation. Vous prene…",
-    "salary_raw": "",
-    "published": "2026-07-14T09:58:30Z",
-    "contract_raw": "permanent",
+    "source": "Cadremploi (alerte)",
+    "title": "CRM Marketing Manager (H/F)",
+    "link": "https://r.emails2.alertes.cadremploi.fr/tr/cl/8BnG7w6wwOBIWv5TIR6kBdUrCWHheQOgOsNvWvpii8SbQWaIPqm8Z-JJlb6ttoDims6d3TCNVX95tsjeFSI4nn0EaeW_tUTYYSxUVq4XgtTNpkOvWSTOGZNbb2Ck0mxG7BlhWNh6nxDJP-nED4oTK3g3FTmciqvxmOtHNPWkhWcX7VIcYRXRgI1jbfA4vdubveoyR5EyhI7Uy_MYySiVwXGFt03SBLhTwBW4CaFjWAXhgvN8IOYuWoasG93CHDCvrJ78FQIDrCsgPeHQ8QIXfCe8Q_yZqX18_pFMc_0a9cItE1vPDwUgKMQ9n7lPZtY2ndpdJqkCJFYuamWCIw6iDZIPEcqTVMGFBQhsckVXtVAhNmfl58DPCqVu7B5TDpwA7a4oo5yoDjJgOwZ06eYVc_4b4mD9xq8Im1omN8MooN6s5pmBeprVIqTAOT6CZLU1Xmayya4E1_yiHJx4NFprLEt52hcX6DuIzL9WUvZdh9rR3nEdrjSl0mMp1pLww1pfpq4sPTtxnNaN0afoT0nooF9Hwh80zniufsMaVAF5Qj_e_NSBTSap61ZKzwA-VV6rJOuKutnEvQJIwSRK667l-VnXWDNc0lEQ4Lx65fOyeGZFBBe9FqVQzIVk8Br_qL5VItK30CnG9Tdb7qZcGTfD6tEoxJfoBhPRZL3uiDyBR96WE-_rl87SnzMQrOUqB7IiTjNJaRALaQ8GhuIkb5no_xAYZvah5uYL4LERSXXgKnU9hNxGybYsUZM6swD75952IRpozA-6NdYLCxk7nGeR_vqkt9Ke622hKT5DaKJDfHN0xx2EBmEGKdpOSTGhrsI65010Hs9_Kh3L14b91Oso3khlggGFGw",
+    "company": "",
+    "location": "",
+    "description": "",
+    "published": "2026-08-11T04:50:03+00:00",
+    "in_france": true,
     "salary_extracted": null,
     "telework_days": null,
-    "in_france": true,
-    "contract_type": "CDI",
-    "commute_minutes": null,
+    "contract_type": null,
     "flags": [
       "Télétravail non mentionné"
     ],
@@ -247,17 +228,19 @@
     "telework_days": null,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": null,
+    "commute_minutes": 105,
     "flags": [
       "Télétravail non mentionné",
-      "Annonce ancienne (184 j)"
+      "Trajet long (105 min)",
+      "Annonce ancienne (185 j)"
     ],
-    "score": 6,
+    "score": 5,
     "score_reasons": [
-      "Signaux CRM lifecycle (email / segmentation / campagne)"
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (105 min)"
     ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné ; Annonce ancienne (184 j)"
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 105 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -273,37 +256,19 @@
     "telework_days": null,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": null,
+    "commute_minutes": 102,
     "flags": [
       "Pertinence CRM à confirmer",
-      "Télétravail non mentionné"
+      "Télétravail non mentionné",
+      "Trajet long (102 min)"
     ],
-    "score": 6,
+    "score": 5,
     "score_reasons": [
-      "Salaire dans la cible (45,000€)"
+      "Salaire dans la cible (45,000€)",
+      "Trajet long (102 min)"
     ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
-  },
-  {
-    "source": "LinkedIn (alerte)",
-    "title": "Campaign manager- influencer marketing (remote)",
-    "link": "https://www.linkedin.com/comm/jobs/view/4427347814?trackingId=&amp;refId=&amp;lipi=urn%3Ali%3Apage%3Aemail_email_jobs_saved_job_reminder_01%3B1u8uBl61QIaRzPC%2FOkc7nA%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=0fJLI1iEbGjco1&amp;trk=eml-email_jobs_saved_job_reminder_01-saved~jobs-0-job_posting&amp;trkEmail=eml-email_jobs_saved_job_reminder_01-saved~jobs-0-job_posting-null-8ulvbk~msnhrhly~al-null-null&amp;eid=8ulvbk-msnhrhly-al&amp;otpToken=MmVmZTMwNWFkODdhOTA4NmVhYWU0OTlhODE5ZTFmYjI5ZGYxZjllZGMwNjlhMjk0OTdlZTQyNWUzODU1MzU2ZDFlYTFmNzMwZjIyNTVhYzc3MTllMjM4NDA0NjdjOTllZWRlYWYyOTIxZDIyNDRiODZmNzI3MTBmOThiOTY2Yzc4NzkzMzhmMTExODhmMCwyLDE%3D",
-    "company": "",
-    "location": "",
-    "description": "",
-    "published": "2026-08-10T17:14:34+00:00",
-    "in_france": true,
-    "salary_extracted": null,
-    "telework_days": null,
-    "contract_type": null,
-    "flags": [],
-    "score": 6,
-    "score_reasons": [
-      "Signaux CRM lifecycle (email / segmentation / campagne)"
-    ],
-    "recommendation": "à_postuler",
-    "recommendation_reason": "Profil correspondant, aucun signal à vérifier (score 6/10)"
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 102 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -319,15 +284,46 @@
     "telework_days": null,
     "in_france": true,
     "contract_type": "CDI",
-    "commute_minutes": null,
+    "commute_minutes": 112,
     "flags": [
       "Pertinence CRM à confirmer",
-      "Télétravail non mentionné"
+      "Télétravail non mentionné",
+      "Trajet long (112 min)"
     ],
-    "score": 5,
-    "score_reasons": [],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
+    "score": 4,
+    "score_reasons": [
+      "Trajet long (112 min)"
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 112 min et pas 100 % télétravail"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Responsable de Projets - Opérations Commerciales & CRM H/F",
+    "link": "https://www.adzuna.fr/details/5700968789?utm_medium=api&utm_source=707eaaff",
+    "company": "JCDecaux",
+    "location": "Neuilly-sur-Seine, Nanterre",
+    "description": "Bienvenue chez JCDecaux ! Chez JCDecaux, nous façonnons l'avenir de la communication extérieure.Nous nous engageons à être le média responsable et durable qui sert la communauté, tant en ville que dans les lieux de transport et de commerce.Notre histoire commence en 1964 avec la création d'un nouveau modèle économique : proposer des produits et des services utiles et durables (Abribus, Mobilier Urbain pour l'Information, Kiosques, Sanitaires à entretien automatique, Vélos en libre-service), fin…",
+    "salary_raw": "",
+    "published": "2026-04-16T04:53:26Z",
+    "contract_raw": "",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": 124,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné",
+      "Trajet long (124 min)",
+      "Annonce ancienne (117 j)"
+    ],
+    "score": 4,
+    "score_reasons": [
+      "Trajet long (124 min)"
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 124 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -342,16 +338,19 @@
     "telework_days": null,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": null,
+    "commute_minutes": 97,
     "flags": [
       "Pertinence CRM à confirmer",
       "Séniorité / management d'équipe ?",
-      "Télétravail non mentionné"
+      "Télétravail non mentionné",
+      "Trajet long (97 min)"
     ],
-    "score": 5,
-    "score_reasons": [],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Séniorité / management d'équipe ? ; Télétravail non mentionné"
+    "score": 4,
+    "score_reasons": [
+      "Trajet long (97 min)"
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 97 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -366,34 +365,15 @@
     "telework_days": null,
     "in_france": true,
     "contract_type": "CDI",
-    "commute_minutes": null,
+    "commute_minutes": 80,
     "flags": [
       "Pertinence CRM à confirmer",
       "Télétravail non mentionné"
     ],
-    "score": 5,
-    "score_reasons": [],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
-  },
-  {
-    "source": "LinkedIn (alerte)",
-    "title": "CDI - Senior CRM Manager (M/F/X)",
-    "link": "https://www.linkedin.com/comm/jobs/view/4451068278/?trackingId=ZOjN2nH82mjNL3cihbzoHQ%3D%3D&amp;refId=avAYLz0w%2B79zA%2B2X5mpNtA%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3Bt%2BSGafVFROK102jAHx35SA%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=177L8r5G52jco1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4451068278_ssid_8583513778_fmid_8ulvbk~msnbrmhe~j3&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4451068278_ssid_8583513778_fmid_8ulvbk~msnbrmhe~j3-null-8ulvbk~msnbrmhe~j3-null-null&amp;eid=8ulvbk-msnbrmhe-j3&amp;otpToken=ZTY0YzdmNmI2Zjc2YjdmZjdjMjRjYWZjNDQ3OWY2YzQzMzRiMGFmZTI1MDZkNzFmMDg4ODQyOGRjYTc5NTUwZjUzNmQ2MjYxMzdkODAxNzY5MWJhYzg1MDQ5NDI4YTFjM2E4MWVkYTgyYTZkMDE5YjVkYjQ2NDcwYzkzZjZkMDNmMzFkYmY0NzhhMWMwMywyLDE%3D",
-    "company": "",
-    "location": "",
-    "description": "",
-    "published": "2026-08-10T14:26:44+00:00",
-    "in_france": true,
-    "salary_extracted": null,
-    "telework_days": null,
-    "contract_type": "CDI",
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Télétravail non mentionné"
+    "score": 4,
+    "score_reasons": [
+      "Trajet long (80 min)"
     ],
-    "score": 5,
-    "score_reasons": [],
     "recommendation": "à_revoir",
     "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   }
