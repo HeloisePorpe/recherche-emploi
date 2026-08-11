@@ -1,5 +1,60 @@
 [
   {
+    "source": "Adzuna",
+    "title": "Chef·fe de Projet CRM & Marketing Automation (F/H/NB) – E-commerce & IA",
+    "link": "https://www.adzuna.fr/details/5727289947?utm_medium=api&utm_source=707eaaff",
+    "company": "Store & Supply",
+    "location": "Levallois-Perret, Nanterre",
+    "description": "À propos de Store & Supply Depuis 2014, nous propulsons 50 marques mode/lifestyle (Redskins, Lee Cooper, FRNCH…) grâce à un accompagnement e-commerce 360°. Notre croissance (x2 en 3 ans) ouvre la voie à des talents qui veulent tester, apprendre et automatiser . Le poste Ta mission Construire et optimiser des workflows multicanaux (email, SMS, push) sur Klaviyo, CartsGuru, Brevo & Shopify. Driver la stratégie data & IA : scoring, segments prédictifs, contenu généré (GPT-like). Piloter l’envoi de…",
+    "salary_raw": "",
+    "published": "2026-05-12T22:51:31Z",
+    "contract_raw": "",
+    "salary_extracted": null,
+    "telework_days": 2,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": null,
+    "flags": [
+      "Annonce ancienne (90 j)"
+    ],
+    "score": 9,
+    "score_reasons": [
+      "Outils : email, sms",
+      "Compétences alignées (3)",
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Télétravail 2j/sem"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Annonce ancienne (90 j)"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Owned media lead (H/F)",
+    "link": "https://www.adzuna.fr/details/5814822714?utm_medium=api&utm_source=707eaaff",
+    "company": "Groupe OpenSourcing",
+    "location": "9ème Arrondissement, Paris",
+    "description": "Job description You will act as the key link between global strategy and local execution, ensuring owned media aligns with paid/earned campaigns to drive conversion and grow the loyalty/membership program. CRM & Automation: Plan and deploy automated, data-driven CRM campaigns via a Marketing Automation Platform (MAP) in line with the local marketing calendar. Data & Personalization: Leverage customer segmentation to deliver targeted content, boost member growth, and support SEO initiatives. Omn…",
+    "salary_raw": "52000-65000 €",
+    "published": "2026-07-25T03:56:36Z",
+    "contract_raw": "permanent",
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": "CDI",
+    "commute_minutes": null,
+    "flags": [
+      "Télétravail non mentionné"
+    ],
+    "score": 9,
+    "score_reasons": [
+      "Outils : segmentation",
+      "Compétences alignées (3)",
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Salaire dans la cible (52,000€)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+  },
+  {
     "source": "France Travail",
     "title": "Consultant Senior CRM - Marketing Automation Senior (H/F)",
     "link": "https://candidat.francetravail.fr/offres/recherche/detail/5177084",
@@ -52,62 +107,56 @@
   },
   {
     "source": "Adzuna",
-    "title": "Chef·fe de Projet CRM & Marketing Automation (F/H/NB) – E-commerce & IA",
-    "link": "https://www.adzuna.fr/details/5727289947?utm_medium=api&utm_source=707eaaff",
-    "company": "Store & Supply",
-    "location": "Levallois-Perret, Nanterre",
-    "description": "À propos de Store & Supply Depuis 2014, nous propulsons 50 marques mode/lifestyle (Redskins, Lee Cooper, FRNCH…) grâce à un accompagnement e-commerce 360°. Notre croissance (x2 en 3 ans) ouvre la voie à des talents qui veulent tester, apprendre et automatiser . Le poste Ta mission Construire et optimiser des workflows multicanaux (email, SMS, push) sur Klaviyo, CartsGuru, Brevo & Shopify. Driver la stratégie data & IA : scoring, segments prédictifs, contenu généré (GPT-like). Piloter l’envoi de…",
+    "title": "Consultant CRM F/H",
+    "link": "https://www.adzuna.fr/details/5806035270?utm_medium=api&utm_source=707eaaff",
+    "company": "CONVERTEO",
+    "location": "Paris, Ile-de-France",
+    "description": "Après formation interne sur nos méthodologies et obtention éventuelle des certifications nécessaires, vous : participerez, en autonomie, à la définition et au déploiement de stratégies de CRM, de gestion de campagnes, de Marketing Automation et de Marketing Relationnel chez nos clients êtes impliqué(e) sur toutes les problématiques liées à la relation client Quelques exemples de missions : Définition de parcours clients 360° Définition de plans relationnels Analyse et segmentation de base de do…",
     "salary_raw": "",
-    "published": "2026-05-12T22:51:31Z",
-    "contract_raw": "",
-    "salary_extracted": null,
-    "telework_days": 2,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": 106,
-    "flags": [
-      "Trajet long (106 min)",
-      "Annonce ancienne (90 j)"
-    ],
-    "score": 8,
-    "score_reasons": [
-      "Outils : email, sms",
-      "Compétences alignées (3)",
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (106 min)",
-      "Télétravail 2j/sem"
-    ],
-    "recommendation": "à_écarter",
-    "recommendation_reason": "Trajet 106 min et pas 100 % télétravail"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Owned media lead (H/F)",
-    "link": "https://www.adzuna.fr/details/5814822714?utm_medium=api&utm_source=707eaaff",
-    "company": "Groupe OpenSourcing",
-    "location": "9ème Arrondissement, Paris",
-    "description": "Job description You will act as the key link between global strategy and local execution, ensuring owned media aligns with paid/earned campaigns to drive conversion and grow the loyalty/membership program. CRM & Automation: Plan and deploy automated, data-driven CRM campaigns via a Marketing Automation Platform (MAP) in line with the local marketing calendar. Data & Personalization: Leverage customer segmentation to deliver targeted content, boost member growth, and support SEO initiatives. Omn…",
-    "salary_raw": "52000-65000 €",
-    "published": "2026-07-25T03:56:36Z",
+    "published": "2026-07-18T11:50:21Z",
     "contract_raw": "permanent",
+    "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
     "contract_type": "CDI",
-    "commute_minutes": 105,
+    "commute_minutes": null,
     "flags": [
-      "Télétravail non mentionné",
-      "Trajet long (105 min)"
+      "Télétravail non mentionné"
     ],
     "score": 8,
     "score_reasons": [
       "Outils : segmentation",
       "Compétences alignées (3)",
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Salaire dans la cible (52,000€)",
-      "Trajet long (105 min)"
+      "Signaux CRM lifecycle (email / segmentation / campagne)"
     ],
-    "recommendation": "à_écarter",
-    "recommendation_reason": "Trajet 105 min et pas 100 % télétravail"
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Spontaneous Application (Hybrid Remote Policy)",
+    "link": "https://www.adzuna.fr/details/5298580312?utm_medium=api&utm_source=707eaaff",
+    "company": "Brevo",
+    "location": "Paris, Ile-de-France",
+    "description": "At Brevo, we’re not just building a CRM. With our technology, we’re helping millions of organizations build lasting relationships with their customers. From emails and SMS to WhatsApp, Chat, and Marketing Automation, our tools are intuitive, powerful, and built to scale with every ambition. We give businesses a clear view of the customer journey, so they can focus on what matters: connection. As a certified B Corp , we’re proud to grow with purpose, committed to high standards of social and env…",
+    "salary_raw": "",
+    "published": "2025-07-11T22:59:42Z",
+    "contract_raw": "",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": null,
+    "flags": [
+      "Annonce ancienne (395 j)"
+    ],
+    "score": 8,
+    "score_reasons": [
+      "Outils clés : email, sms, whatsapp",
+      "Signaux CRM lifecycle (email / segmentation / campagne)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Annonce ancienne (395 j)"
   },
   {
     "source": "Adzuna",
@@ -139,63 +188,34 @@
   },
   {
     "source": "Adzuna",
-    "title": "Consultant CRM F/H",
-    "link": "https://www.adzuna.fr/details/5806035270?utm_medium=api&utm_source=707eaaff",
-    "company": "CONVERTEO",
-    "location": "Paris, Ile-de-France",
-    "description": "Après formation interne sur nos méthodologies et obtention éventuelle des certifications nécessaires, vous : participerez, en autonomie, à la définition et au déploiement de stratégies de CRM, de gestion de campagnes, de Marketing Automation et de Marketing Relationnel chez nos clients êtes impliqué(e) sur toutes les problématiques liées à la relation client Quelques exemples de missions : Définition de parcours clients 360° Définition de plans relationnels Analyse et segmentation de base de do…",
+    "title": "Growth Marketer - focus Build & CRM",
+    "link": "https://www.adzuna.fr/details/5830632081?utm_medium=api&utm_source=707eaaff",
+    "company": "AssoConnect",
+    "location": "2ème Arrondissement, Paris",
+    "description": " Who we are About the company Visit our Welcome To The Jungle homepage to learn more about AssoConnect and why you should join us! AssoConnect : pictures, videos, company information A ScaleUp that Transforms Nonprofit Management Market Leaders: AssoConnect is the leading software for nonprofit management in France, one of the largest markets in the world with over 1.5M nonprofits! We are also expanding in the U.S. with our Springly brand. Impact-driven: AssoConnect helps over 40,000 nonprofits…",
     "salary_raw": "",
-    "published": "2026-07-18T11:50:21Z",
-    "contract_raw": "permanent",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": "CDI",
-    "commute_minutes": 80,
-    "flags": [
-      "Télétravail non mentionné"
-    ],
-    "score": 7,
-    "score_reasons": [
-      "Outils : segmentation",
-      "Compétences alignées (3)",
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (80 min)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Spontaneous Application (Hybrid Remote Policy)",
-    "link": "https://www.adzuna.fr/details/5298580312?utm_medium=api&utm_source=707eaaff",
-    "company": "Brevo",
-    "location": "Paris, Ile-de-France",
-    "description": "At Brevo, we’re not just building a CRM. With our technology, we’re helping millions of organizations build lasting relationships with their customers. From emails and SMS to WhatsApp, Chat, and Marketing Automation, our tools are intuitive, powerful, and built to scale with every ambition. We give businesses a clear view of the customer journey, so they can focus on what matters: connection. As a certified B Corp , we’re proud to grow with purpose, committed to high standards of social and env…",
-    "salary_raw": "",
-    "published": "2025-07-11T22:59:42Z",
+    "published": "2026-08-06T17:23:25Z",
     "contract_raw": "",
-    "salary_extracted": null,
+    "salary_extracted": "45K–70K",
     "telework_days": null,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": 80,
+    "commute_minutes": null,
     "flags": [
-      "Annonce ancienne (395 j)"
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné"
     ],
-    "score": 7,
+    "score": 6,
     "score_reasons": [
-      "Outils clés : email, sms, whatsapp",
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (80 min)"
+      "Salaire dans la cible (45,000€)"
     ],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Annonce ancienne (395 j)"
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
     "title": "CRM Marketing Manager (H/F) (CDI)",
-    "link": "https://www.adzuna.fr/land/ad/5836192979?se=ZmasbHOV8RGNEO0SxDr7vQ&utm_medium=api&utm_source=707eaaff&v=C82C0A1C7D88A5E0F265A7D0DF281745A2B90DA2",
+    "link": "https://www.adzuna.fr/land/ad/5836192979?se=_lNAbp6V8RG5VMLygbg_Tg&utm_medium=api&utm_source=707eaaff&v=C82C0A1C7D88A5E0F265A7D0DF281745A2B90DA2",
     "company": "ARAVATI FRANCE",
     "location": "1er Arrondissement, Paris",
     "description": "Vous aimez construire plutôt que maintenir ? Vous recherchez un poste où le CRM n'est pas seulement un outil marketing mais un véritable levier de transformation de l'entreprise ? Notre client, acteur majeur du conseil, de l'audit et de l'expertise auprès des entreprises, poursuit une transformation ambitieuse de son organisation et de son approche commerciale. Dans ce contexte, il crée le poste de CRM Marketing Manager, véritable référent de la stratégie CRM et Marketing Automation. Vous prene…",
@@ -249,44 +269,42 @@
   },
   {
     "source": "Adzuna",
-    "title": "Growth Marketer - focus Build & CRM",
-    "link": "https://www.adzuna.fr/details/5830632081?utm_medium=api&utm_source=707eaaff",
-    "company": "AssoConnect",
-    "location": "2ème Arrondissement, Paris",
-    "description": " Who we are About the company Visit our Welcome To The Jungle homepage to learn more about AssoConnect and why you should join us! AssoConnect : pictures, videos, company information A ScaleUp that Transforms Nonprofit Management Market Leaders: AssoConnect is the leading software for nonprofit management in France, one of the largest markets in the world with over 1.5M nonprofits! We are also expanding in the U.S. with our Springly brand. Impact-driven: AssoConnect helps over 40,000 nonprofits…",
-    "salary_raw": "",
-    "published": "2026-08-06T17:23:25Z",
+    "title": "Head of E-commerce (F/H)",
+    "link": "https://www.adzuna.fr/details/5774380371?utm_medium=api&utm_source=707eaaff",
+    "company": "",
+    "location": "Boulogne-Billancourt, Hauts-de-Seine",
+    "description": "Rattaché·e au Directeur Digital, le/la Head of E-commerce / Responsable E-commerce contribue à la définition et à la mise en œuvre de la stratégie e-commerce, en cohérence avec les objectifs globaux de l'entreprise. À ce titre, les principales missions sont : Définir et piloter la stratégie e-commerce afin d'accroître le chiffre d'affaires et la rentabilité du canal digital Manager et structurer une équipe dédiée (traffic, CRM, chefs de projet, responsables de site) en assurant performance et e…",
+    "salary_raw": "80000-90000 €",
+    "published": "2026-06-24T06:46:51Z",
     "contract_raw": "",
-    "salary_extracted": "45K–70K",
     "telework_days": null,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": 102,
+    "commute_minutes": null,
     "flags": [
       "Pertinence CRM à confirmer",
-      "Télétravail non mentionné",
-      "Trajet long (102 min)"
+      "Séniorité / management d'équipe ?",
+      "Télétravail non mentionné"
     ],
     "score": 5,
-    "score_reasons": [
-      "Salaire dans la cible (45,000€)",
-      "Trajet long (102 min)"
-    ],
-    "recommendation": "à_écarter",
-    "recommendation_reason": "Trajet 102 min et pas 100 % télétravail"
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Séniorité / management d'équipe ? ; Télétravail non mentionné"
   },
   {
-    "source": "LinkedIn (alerte)",
-    "title": "Projektmanager / Product Owner SAP CX / CRM (m/w/d)",
-    "link": "https://www.linkedin.com/comm/jobs/view/4305989047/?trackingId=lO9CHXy4zuGHtRdEKWa9vg%3D%3D&amp;refId=O8v%2BQ2jKKDmMTU56imUcWg%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BLU%2BRnU6TR5OlUfe4wbEWqQ%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=1FOKFprBzOkco1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_1_jobid_4305989047_ssid_7916313282_fmid_8ulvbk~msoimu2g~y4&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_1_jobid_4305989047_ssid_7916313282_fmid_8ulvbk~msoimu2g~y4-null-8ulvbk~msoimu2g~y4-null-null&amp;eid=8ulvbk-msoimu2g-y4&amp;otpToken=YmMzMzJmM2Y3YzU3OTI5MTE5Mzk5NDJhODUxMGQ1ZTAyYmViYmM5OGRlYjQ0MzcyY2Y2M2MwMTFjODQ0MzM3YTM2OWQ0OWRiMTliMTJmZjBlNzlkNDI0NWUwOGJjMDE1YmU3Mjc3OWNlZTVlM2EzNTAwYTQ1MmE1OTBiODI4M2JlMTk0ZDgxNDFhMmMzOCwyLDE%3D",
-    "company": "",
-    "location": "",
-    "description": "",
-    "published": "2026-08-11T10:26:43+00:00",
-    "in_france": true,
-    "salary_extracted": null,
+    "source": "Adzuna",
+    "title": "Chef de projet CRM",
+    "link": "https://www.adzuna.fr/details/5823271450?utm_medium=api&utm_source=707eaaff",
+    "company": "ENOVA Consulting",
+    "location": "Paris, Ile-de-France",
+    "description": "ENOVA poursuit son développement et renforce ses équipes en intégrant un(e) Chef de Projet Technico-Fonctionnel CRM / Fidélisation en CDI. Vous rejoindrez notre communauté de consultants et interviendrez en mission longue durée au sein d'un grand compte, dans un environnement stimulant, transverse et orienté transformation digitale. Contexte de la mission Dans le cadre d'un projet stratégique de transformation de l'expérience client et de fidélisation, vous interviendrez auprès d'un acteur maje…",
+    "salary_raw": "600-700 €",
+    "published": "2026-08-01T05:49:12Z",
+    "contract_raw": "",
     "telework_days": null,
-    "contract_type": null,
+    "in_france": true,
+    "contract_type": "CDI",
+    "commute_minutes": null,
     "flags": [
       "Pertinence CRM à confirmer",
       "Télétravail non mentionné"
@@ -350,57 +368,5 @@
     ],
     "recommendation": "à_écarter",
     "recommendation_reason": "Trajet 124 min et pas 100 % télétravail"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Head of E-commerce (F/H)",
-    "link": "https://www.adzuna.fr/details/5774380371?utm_medium=api&utm_source=707eaaff",
-    "company": "",
-    "location": "Boulogne-Billancourt, Hauts-de-Seine",
-    "description": "Rattaché·e au Directeur Digital, le/la Head of E-commerce / Responsable E-commerce contribue à la définition et à la mise en œuvre de la stratégie e-commerce, en cohérence avec les objectifs globaux de l'entreprise. À ce titre, les principales missions sont : Définir et piloter la stratégie e-commerce afin d'accroître le chiffre d'affaires et la rentabilité du canal digital Manager et structurer une équipe dédiée (traffic, CRM, chefs de projet, responsables de site) en assurant performance et e…",
-    "salary_raw": "80000-90000 €",
-    "published": "2026-06-24T06:46:51Z",
-    "contract_raw": "",
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": 97,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Séniorité / management d'équipe ?",
-      "Télétravail non mentionné",
-      "Trajet long (97 min)"
-    ],
-    "score": 4,
-    "score_reasons": [
-      "Trajet long (97 min)"
-    ],
-    "recommendation": "à_écarter",
-    "recommendation_reason": "Trajet 97 min et pas 100 % télétravail"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Chef de projet CRM",
-    "link": "https://www.adzuna.fr/details/5823271450?utm_medium=api&utm_source=707eaaff",
-    "company": "ENOVA Consulting",
-    "location": "Paris, Ile-de-France",
-    "description": "ENOVA poursuit son développement et renforce ses équipes en intégrant un(e) Chef de Projet Technico-Fonctionnel CRM / Fidélisation en CDI. Vous rejoindrez notre communauté de consultants et interviendrez en mission longue durée au sein d'un grand compte, dans un environnement stimulant, transverse et orienté transformation digitale. Contexte de la mission Dans le cadre d'un projet stratégique de transformation de l'expérience client et de fidélisation, vous interviendrez auprès d'un acteur maje…",
-    "salary_raw": "600-700 €",
-    "published": "2026-08-01T05:49:12Z",
-    "contract_raw": "",
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": "CDI",
-    "commute_minutes": 80,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Télétravail non mentionné"
-    ],
-    "score": 4,
-    "score_reasons": [
-      "Trajet long (80 min)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   }
 ]
