@@ -17,6 +17,7 @@ import unicodedata
 import feedparser
 import requests
 import json
+import urllib.parse
 import time
 import re
 import smtplib
@@ -913,64 +914,79 @@ def fetch_themuse_jobs():
     return unique
 
 
+# Config Algolia PUBLIQUE de Welcome to the Jungle (embarquée dans leur front,
+# stable de longue date). Valeurs par défaut connues + découverte au runtime pour
+# suivre une éventuelle rotation. app id `CSEKHVMS53`, index CMS `wk_cms_jobs_production`.
+_WTTJ_ALGOLIA_APP = "CSEKHVMS53"
+_WTTJ_ALGOLIA_KEY = "4bd8f6215d0cc52b26430765769e65a0"
+_WTTJ_ALGOLIA_INDEX = "wk_cms_jobs_production"
+
+
 def _wttj_algolia_config():
-    """Découvre au runtime l'App ID, la clé de recherche et l'index Algolia
-    de Welcome to the Jungle (valeurs publiques embarquées dans leur front)."""
+    """App ID / clé de recherche / index Algolia de WTTJ. Part des valeurs publiques
+    connues, puis tente de les rafraîchir depuis le front (si elles ont tourné)."""
+    app, key, index = _WTTJ_ALGOLIA_APP, _WTTJ_ALGOLIA_KEY, _WTTJ_ALGOLIA_INDEX
     try:
         r = requests.get("https://www.welcometothejungle.com/fr/jobs",
                          headers={"User-Agent": "Mozilla/5.0"}, timeout=15)
         html = r.text
-        app = re.search(r'algolia[^"\']{0,25}app(?:lication)?[_-]?id["\']?\s*[:=]\s*["\']([A-Z0-9]{8,12})', html, re.I)
-        key = re.search(r'algolia[^"\']{0,30}(?:api[_-]?)?key[^"\']{0,12}["\']?\s*[:=]\s*["\']([a-f0-9]{24,})', html, re.I)
-        idx = re.search(r'["\'](wk_[a-z0-9_]+|[a-z_]*jobs[a-z_]*prod[a-z_]*)["\']', html, re.I)
-        if app and key and idx:
-            return app.group(1), key.group(1), idx.group(1)
-        print("     WTTJ : identifiants Algolia non trouvés dans la page")
+        m_app = re.search(r'app(?:lication)?[_-]?id["\']?\s*[:=]\s*["\']([A-Z0-9]{8,12})["\']', html, re.I)
+        m_key = re.search(r'(?:search[_-]?)?api[_-]?key["\']?\s*[:=]\s*["\']([a-f0-9]{32})["\']', html, re.I)
+        m_idx = re.search(r'["\'](wk_[a-z0-9_]*jobs[a-z0-9_]*prod[a-z0-9_]*)["\']', html, re.I)
+        if m_app:
+            app = m_app.group(1)
+        if m_key:
+            key = m_key.group(1)
+        if m_idx:
+            index = m_idx.group(1)
     except Exception as ex:
-        print(f"     WTTJ config error : {ex}")
-    return None
+        print(f"     WTTJ : découverte Algolia échouée ({ex}) — valeurs par défaut")
+    return app, key, index
 
 
 def fetch_wttj_jobs():
-    """Welcome to the Jungle via son index Algolia public (best-effort, zone grise CGU)."""
+    """Welcome to the Jungle via son index Algolia public (best-effort, zone grise CGU).
+    Beaucoup de postes CRM de startups/scale-ups ne vivent que sur WTTJ."""
     print("  → Welcome to the Jungle (Algolia)...")
-    cfg = _wttj_algolia_config()
-    if not cfg:
-        return []
-    app, key, index = cfg
-    jobs = []
-    for q in ["CRM", "campaign manager", "marketing automation", "email marketing"]:
+    app, key, index = _wttj_algolia_config()
+    jobs, raw_total = [], 0
+    for q in ["CRM", "campaign manager", "marketing automation", "email marketing",
+              "chef de projet CRM", "marketing direct", "emailing"]:
         try:
+            params = urllib.parse.urlencode({"query": q, "hitsPerPage": 40})
             r = requests.post(
-                f"https://{app}-dsn.algolia.net/1/indexes/{index}/query",
+                f"https://{app.lower()}-dsn.algolia.net/1/indexes/{index}/query",
                 headers={"X-Algolia-Application-Id": app, "X-Algolia-API-Key": key,
                          "Content-Type": "application/json"},
-                json={"params": f"query={q}&hitsPerPage=40"},
+                json={"params": params},
                 timeout=15)
             r.raise_for_status()
-            for h in r.json().get("hits", []):
-                org = h.get("organization", {}) or {}
-                offices = h.get("offices", []) or []
+            hits = r.json().get("hits", [])
+            raw_total += len(hits)
+            for h in hits:
+                org = h.get("organization") or {}
+                offices = h.get("offices") or []
                 o0 = offices[0] if offices else {}
                 loc = ", ".join(x for x in [o0.get("city", ""), o0.get("country", "")] if x) or "France"
-                slug, oslug = h.get("slug", ""), org.get("slug", "")
+                slug = h.get("slug") or ""
+                oslug = org.get("slug") or ""
                 link = (f"https://www.welcometothejungle.com/fr/companies/{oslug}/jobs/{slug}"
                         if oslug and slug else "")
                 jobs.append({
                     "source": "Welcome to the Jungle",
-                    "title": h.get("name", ""),
+                    "title": h.get("name") or h.get("title") or "",
                     "link": link,
-                    "company": org.get("name", ""),
+                    "company": org.get("name") or h.get("organization_name") or "",
                     "location": loc,
-                    "description": h.get("description", "") or "",
-                    "published": h.get("published_at", ""),
+                    "description": h.get("description") or h.get("profile") or "",
+                    "published": h.get("published_at") or "",
                 })
             time.sleep(0.3)
         except Exception as ex:
             print(f"     ERREUR WTTJ '{q}' : {ex}")
-    jobs = [j for j in jobs if is_relevant(j)]
+    jobs = [j for j in jobs if j.get("title") and is_relevant(j)]
     unique = _dedup(jobs)
-    print(f"     {len(unique)} offres pertinentes")
+    print(f"     {len(unique)} offres pertinentes (sur {raw_total} hits Algolia)")
     return unique
 
 
