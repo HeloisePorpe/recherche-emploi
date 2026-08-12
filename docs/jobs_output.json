@@ -133,62 +133,131 @@
   },
   {
     "source": "Adzuna",
-    "title": "Chef·fe de Projet CRM & Marketing Automation (F/H/NB) – E-commerce & IA",
-    "link": "https://www.adzuna.fr/details/5727289947?utm_medium=api&utm_source=707eaaff",
-    "company": "Store & Supply",
-    "location": "Levallois-Perret, Nanterre",
-    "description": "À propos de Store & Supply Depuis 2014, nous propulsons 50 marques mode/lifestyle (Redskins, Lee Cooper, FRNCH…) grâce à un accompagnement e-commerce 360°. Notre croissance (x2 en 3 ans) ouvre la voie à des talents qui veulent tester, apprendre et automatiser . Le poste Ta mission Construire et optimiser des workflows multicanaux (email, SMS, push) sur Klaviyo, CartsGuru, Brevo & Shopify. Driver la stratégie data & IA : scoring, segments prédictifs, contenu généré (GPT-like). Piloter l’envoi de…",
+    "title": "Consultant CRM F/H",
+    "link": "https://www.adzuna.fr/details/5806035270?utm_medium=api&utm_source=707eaaff",
+    "company": "CONVERTEO",
+    "location": "Paris, Ile-de-France",
+    "description": "Après formation interne sur nos méthodologies et obtention éventuelle des certifications nécessaires, vous : participerez, en autonomie, à la définition et au déploiement de stratégies de CRM, de gestion de campagnes, de Marketing Automation et de Marketing Relationnel chez nos clients êtes impliqué(e) sur toutes les problématiques liées à la relation client Quelques exemples de missions : Définition de parcours clients 360° Définition de plans relationnels Analyse et segmentation de base de do…",
     "salary_raw": "",
-    "published": "2026-05-12T22:51:31Z",
-    "contract_raw": "",
-    "salary_extracted": null,
-    "telework_days": 2,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": 106,
-    "flags": [
-      "Trajet long (106 min)",
-      "Annonce ancienne (91 j)"
-    ],
-    "score": 8,
-    "score_reasons": [
-      "Outils : email, sms",
-      "Compétences alignées (3)",
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (106 min)",
-      "Télétravail 2j/sem"
-    ],
-    "recommendation": "à_écarter",
-    "recommendation_reason": "Trajet 106 min et pas 100 % télétravail"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Owned media lead (H/F)",
-    "link": "https://www.adzuna.fr/details/5814822714?utm_medium=api&utm_source=707eaaff",
-    "company": "Groupe OpenSourcing",
-    "location": "9ème Arrondissement, Paris",
-    "description": "Job description You will act as the key link between global strategy and local execution, ensuring owned media aligns with paid/earned campaigns to drive conversion and grow the loyalty/membership program. CRM & Automation: Plan and deploy automated, data-driven CRM campaigns via a Marketing Automation Platform (MAP) in line with the local marketing calendar. Data & Personalization: Leverage customer segmentation to deliver targeted content, boost member growth, and support SEO initiatives. Omn…",
-    "salary_raw": "52000-65000 €",
-    "published": "2026-07-25T03:56:36Z",
+    "published": "2026-07-18T11:50:21Z",
     "contract_raw": "permanent",
+    "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
     "contract_type": "CDI",
-    "commute_minutes": 105,
+    "commute_minutes": null,
     "flags": [
-      "Télétravail non mentionné",
-      "Trajet long (105 min)"
+      "Télétravail non mentionné"
     ],
     "score": 8,
     "score_reasons": [
       "Outils : segmentation",
       "Compétences alignées (3)",
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Salaire dans la cible (52,000€)",
-      "Trajet long (105 min)"
+      "Signaux CRM lifecycle (email / segmentation / campagne)"
     ],
-    "recommendation": "à_écarter",
-    "recommendation_reason": "Trajet 105 min et pas 100 % télétravail"
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Spontaneous Application (Hybrid Remote Policy)",
+    "link": "https://www.adzuna.fr/details/5298580312?utm_medium=api&utm_source=707eaaff",
+    "company": "Brevo",
+    "location": "Paris, Ile-de-France",
+    "description": "At Brevo, we’re not just building a CRM. With our technology, we’re helping millions of organizations build lasting relationships with their customers. From emails and SMS to WhatsApp, Chat, and Marketing Automation, our tools are intuitive, powerful, and built to scale with every ambition. We give businesses a clear view of the customer journey, so they can focus on what matters: connection. As a certified B Corp , we’re proud to grow with purpose, committed to high standards of social and env…",
+    "salary_raw": "",
+    "published": "2025-07-11T22:59:42Z",
+    "contract_raw": "",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": null,
+    "flags": [
+      "Annonce ancienne (396 j)"
+    ],
+    "score": 8,
+    "score_reasons": [
+      "Outils clés : email, sms, whatsapp",
+      "Signaux CRM lifecycle (email / segmentation / campagne)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Annonce ancienne (396 j)"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Conseiller(ère) relation client H/F",
+    "link": "https://www.adzuna.fr/details/5788480776?utm_medium=api&utm_source=707eaaff",
+    "company": "Casanova Paris",
+    "location": "17ème Arrondissement, Paris",
+    "description": "L'entreprise Casanova Paris est une marque française de mobilier qui allie design, confort et qualité. Que ce soit un canapé , un canapé d’angle , un lit ou un lit-coffre : chaque produit est pensé pour s’adapter à tous les espaces et à toutes les envies. Nos collections sont conçues pour offrir un juste équilibre entre style et fonctionnalité. Description du poste Avant-vente & conseil commercial ● Répondre aux demandes d’information des prospects par email, chat et téléphone ● Conseiller les …",
+    "salary_raw": "1600-1800 €",
+    "published": "2026-07-05T00:12:06Z",
+    "contract_raw": "",
+    "telework_days": 5,
+    "in_france": true,
+    "contract_type": null,
+    "flags": [],
+    "score": 8,
+    "score_reasons": [
+      "Outils : email",
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Télétravail 5j/sem"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À confirmer : titre sans signal CRM explicite"
+  },
+  {
+    "source": "Site carrière — VML",
+    "title": "Consultant Data Analyst Marketing - F/H",
+    "link": "https://job-boards.greenhouse.io/vmlenterprisesolutions/jobs/8647187002",
+    "company": "VML",
+    "location": "Paris, France",
+    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;h4&gt;&lt;strong&gt;Who We Are&lt;/strong&gt;&lt;/h4&gt;\n&lt;p&gt;WPP Enterprise Solutions designs, builds, and operates the growth systems that competitive businesses rely on. In a world where Al is reshaping how companies drive growth, we lead clients in business transformation and marketing modernization, connecting strategy directly to execution. Our 12,000 experts in engineering and platforms, commerce, consulting, content transformation, CRM, and CX work within a unified global operating unit across 40+ markets. WPP Enterprise Solutions works alongside best-in-class partners including Adobe, AWS, Braze, Google, Microsoft, Salesforce, and Shopify, as well as innovators in AI, to deliver growth solutions tailored to the needs of our clients’ businesses. VML, part of WPP, supports WPP Enterprise Solutions by helping brands activate transformation through creativity and experience.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Pourquoi nous avons besoin de toi ?&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;Pour intégrer notre équipe Data, composée d’une cinquantaine de consultant.e.s et renforcer notre pôle Data Customer Insights.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Tes missions&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;Tu contribueras à l’amélioration de la connaissance client et constitueras une aide à la décision des équipes marketing de nos clients. Tu seras, entre autres, chargé.e des missions suivantes :&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Analyses de comportements clients,&lt;/li&gt;\n&lt;li&gt;Segmentations,&lt;/li&gt;\n&lt;li&gt;Scoring (churn, appétence, cross-sell,…),&lt;/li&gt;\n&lt;li&gt;Analyses des performances de campagnes,…&lt;/li&gt;\n&lt;li&gt;Dashboarding&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;Tu réaliseras des projets de bout en bout, et seras amené.e à intervenir sur les phases de la prise de brief jusqu’à la restitution des résultats et des recommandations marketing auprès des clients.&lt;/p&gt;\n&lt;h3&gt;Ton profil&lt;/h3&gt;\n&lt;ul&gt;\n&lt;li&gt;Tu es diplômé.e d’un Master d’orientation statistique, scientifique ou économétrie.&lt;/li&gt;\n&lt;li&gt;Tu justifies d’une première expérience significative dans le domaine du marketing, idéalement dans un environnement Conseil.&lt;/li&gt;\n&lt;li&gt;Tu t’intéresses tout particulièrement à l’application stratégique et opérationnelle des données sur la connaissance client et les actions marketing / ventes.&lt;/li&gt;\n&lt;li&gt;Tu possèdes des compétences marketing&amp;nbsp;: capacité à effectuer des recommandations marketing, calcul d’un ROI, acquisition, fidélisation et rétention clients, identification de potentiel, de valeur et de durée de vie client&lt;/li&gt;\n&lt;li&gt;Tu possèdes les compétences techniques &amp;amp; statistiques suivantes&amp;nbsp;:\n&lt;ul&gt;\n&lt;li&gt;Analyses descriptives simples et avancées&lt;/li&gt;\n&lt;li&gt;Analyses prédictives&lt;/li&gt;\n&lt;li&gt;Construction de scores&lt;/li&gt;\n&lt;li&gt;Mise en place de segmentations opérationnelles&lt;/li&gt;\n&lt;li&gt;Séries temporelles,&lt;/li&gt;\n&lt;li&gt;Méthodes de redressement de populations&lt;/li&gt;\n&lt;li&gt;Equations structurelles&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Expertise dans les langages de programmation statistiques et technos suivantes&amp;nbsp;: Python et/ ou R, SAS, SQL Dataiku, Tableau/Power B&lt;/strong&gt;&lt;/li&gt;\n&lt;li&gt;Tu t’intéresses également aux méthodologies avancées type Machine Learning, Deep Learning, Intelligence Artificielle.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;li&gt;Tu t’intéresses également aux méthodologies avancées type Machine Learning, Deep Learning, Intelligence Artificielle.&lt;/li&gt;\n&lt;li&gt;Tu fais preuve d’esprit d’analyse et d’esprit critique, tu es team-player, tu aimes apporter ta pierre à l’édifice et faire partie d’une équipe, tu sais t’adapter, vulgariser pour faire le pont entre les équipes techniques et opérationnelles, tu es curieux et à l’écoute, tu exprimes une forte expertise dans ton domaine et adoptes une réelle posture conseil.&lt;/li&gt;\n&lt;li&gt;Tu parles anglais couramment (nombreux clients internationaux).&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;Si tu te reconnais dans ce profil, postule&amp;nbsp;! Viens rejoindre une équipe de passionnés, dont la data est le dada, dans un groupe qui allie créativité et technologie&amp;nbsp;!&lt;/p&gt;\n&lt;p&gt;#LI-EMEA&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;h4&gt;&lt;strong&gt;About WPP&lt;/strong&gt;&lt;/h4&gt;\n&lt;p class=&quot;p1&quot;&gt;WPP is the trusted growth partner for the world’s leading brands. With exceptional talent, trusted data and intelligence and world-class partnerships – all united by our agentic marketing platform, WPP Open – we help clients navigate change, capture opportunity and deliver transformational growth. For more information, visit &lt;a href=&quot;http://wpp.com/&quot;&gt;&lt;span class=&quot;s1&quot;&gt;WPP.com&lt;/span&gt;&lt;/a&gt;&lt;span class=&quot;s2&quot;&gt;.&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&lt;span class=&quot;normaltextrun&quot;&gt;&lt;span lang=&quot;EN-GB&quot;&gt;WPP (VML/WPP Enterprise Solutions) is an equal opportunity employer and considers applicants for all positions without discrimination or regard to characteristics. We are committed to fostering a culture of respect in which everyone feels they belong and has the same opportunities to progress in their careers.&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;scxw176048299&quot;&gt;&lt;span lang=&quot;EN-GB&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;When you click &quot;Submit Application&quot;, this will send any information you add below to WPP (VML/WPP Enterprise Solutions). Before you do this, we think it&#39;s a good idea to read through our &lt;a href=&quot;https://www.vml.com/recruitment-privacy-policy&quot;&gt;Recruitment Privacy Policy&lt;/a&gt;. California residents should read our&amp;nbsp;&lt;a href=&quot;https://www.vml.com/california-recruitment-privacy-notice&quot;&gt;California Recruitment Privacy Notice&lt;/a&gt;. This explains what we do with your personal data when you apply for a role with us, and, how you can update the information you have provided us with or how to remove it.&lt;/p&gt;&lt;/div&gt;",
+    "published": "2026-08-07T12:33:27-04:00",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": null,
+    "flags": [
+      "Télétravail non mentionné"
+    ],
+    "score": 8,
+    "score_reasons": [
+      "Outils : segmentation",
+      "Compétences alignées (5)",
+      "Signaux CRM lifecycle (email / segmentation / campagne)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+  },
+  {
+    "source": "France Travail",
+    "title": "Marketing Campaign Manager - Événements B2B (H/F/X) (H/F)",
+    "link": "https://candidat.francetravail.fr/offres/recherche/detail/211XWTF",
+    "company": "EDITIONS TECHNIQUES POUR L'AUTOMOBILE ET",
+    "location": "94 - GENTILLY (94250)",
+    "description": "Infopro Digital, groupe B2B spécialisé dans l'information et la technologie, recherche actuellement un(e) Marketing Campaign Manager - Événements B2B en CDI pour renforcer l'équipe de son pôle Événements.\n\nLe pôle Événements d'Infopro Digital conçoit et déploie des conférences, congrès et trophées B2B en France et à l'international, portés par des marques fortes du groupe, dont L'Usine Nouvelle.\n\nRejoignez Infopro Digital et devenez un acteur clé de notre équipe !\n\nAvec des opportunités professionnelles passionnantes dans le monde entier, Infopro Digital vous ouvre un vaste univers de défis professionnels. Rejoindre notre groupe, c'est plonger au cœur de collaborations stimulantes au sein d'équipes multidisciplinaires.\n\nLe défi qui vous attend :\n\nEn tant que Marketing Campaign Manager, vous serez un acteur clé au sein du pôle Événements.\nVous piloterez l'acquisition et la performance marketing de plusieurs événements B2B simultanément, en France et à l'international. Votre rôle sera de recruter la bonne audience pour chaque événement et de contribuer directement à leur performance business.\n\nLes missions qui vous attendent :\n\nVous serez responsable de :\n Construire et piloter les plans marketing des événements (online et offline)\n Gérer les campagnes emailing de bout en bout (ciblage, rédaction, envoi, analyse)\n Activer les leviers digitaux d'acquisition (paid media, SEO/SEA, social media, display)\n Optimiser les sites événements et les parcours d'inscription\n Suivre et analyser les performances (open rate, CTR, conversion, coût d'acquisition.)\n Ajuster les campagnes en continu en fonction des résultats\n Travailler en lien étroit avec les équipes éditoriales et commerciales (sponsoring, génération de leads)\n\nÀ propos de vous :\n\n Vous avez au moins 3 ans d'expérience en marketing digital ou gestion de campagnes\n Vous maîtrisez les campagnes emailing de bout en bout\n Vous êtes à l'aise avec les données et le pilotage de la performance\n Vous savez gérer plusieurs projets en parallèle avec des deadlines courtes\n Vous avez un bon niveau rédactionnel\n Vous êtes capable d'analyser des résultats et de transformer les insights en actions concrètes\n Vous avez un anglais professionnel\n\nUn vrai plus :\n Expérience en B2B, média ou événementiel\n Connaissance des logiques d'acquisition et de génération de leads\n Maîtrise des outils CRM, emailing et analytics\n\nVous êtes un professionnel passionné à la recherche de nouvelles opportunités ? N'attendez plus et rejoignez la communauté de professionnels d'Infopro Digital !\n\nLes avantages qui vous attendent :\n\n Un environnement propice au développement professionnel\n Des formations dispensées par les experts d'Infopro Digital\n Un poste très opérationnel avec un impact direct sur la performance business\n Une forte autonomie dans la gestion des campagnes",
+    "salary_raw": "",
+    "published": "2026-07-31T11:28:17.384Z",
+    "contract_type": "CDI",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "commute_minutes": 84,
+    "flags": [
+      "Télétravail non mentionné"
+    ],
+    "score": 7,
+    "score_reasons": [
+      "Outils : email",
+      "Compétences alignées (4)",
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (84 min)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -295,58 +364,130 @@
   },
   {
     "source": "Adzuna",
-    "title": "Consultant CRM F/H",
-    "link": "https://www.adzuna.fr/details/5806035270?utm_medium=api&utm_source=707eaaff",
-    "company": "CONVERTEO",
-    "location": "Paris, Ile-de-France",
-    "description": "Après formation interne sur nos méthodologies et obtention éventuelle des certifications nécessaires, vous : participerez, en autonomie, à la définition et au déploiement de stratégies de CRM, de gestion de campagnes, de Marketing Automation et de Marketing Relationnel chez nos clients êtes impliqué(e) sur toutes les problématiques liées à la relation client Quelques exemples de missions : Définition de parcours clients 360° Définition de plans relationnels Analyse et segmentation de base de do…",
+    "title": "Consultant CRM Marketing - CDI - Creative Tech - C360 H/F",
+    "link": "https://www.adzuna.fr/details/5837479063?utm_medium=api&utm_source=707eaaff",
+    "company": "Devoteam France",
+    "location": "Levallois-Perret, Nanterre",
+    "description": "Devenez Consultant(e) Marketing Automation ! Rejoignez notre équipe Marketing 360 et menez des projets passionnants pour nos clients ! Vous serez au coeur de l'innovation, mêlant conseil et intégration sur des solutions de Marketing Automation. Vos missions principales : - Gestion de Projet CRM & E-Marketing : De la conception à la réalisation, vous piloterez le projet. Vous animerez des ateliers pour définir les besoins, rédigerez les spécifications et assurerez le reporting. - Stratégie Marke…",
     "salary_raw": "",
-    "published": "2026-07-18T11:50:21Z",
-    "contract_raw": "permanent",
+    "published": "2026-08-12T02:07:19Z",
+    "contract_raw": "",
     "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
     "contract_type": "CDI",
-    "commute_minutes": 80,
+    "commute_minutes": null,
     "flags": [
       "Télétravail non mentionné"
     ],
     "score": 7,
     "score_reasons": [
-      "Outils : segmentation",
       "Compétences alignées (3)",
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (80 min)"
+      "Signaux CRM lifecycle (email / segmentation / campagne)"
     ],
     "recommendation": "à_revoir",
     "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
-    "title": "Spontaneous Application (Hybrid Remote Policy)",
-    "link": "https://www.adzuna.fr/details/5298580312?utm_medium=api&utm_source=707eaaff",
-    "company": "Brevo",
-    "location": "Paris, Ile-de-France",
-    "description": "At Brevo, we’re not just building a CRM. With our technology, we’re helping millions of organizations build lasting relationships with their customers. From emails and SMS to WhatsApp, Chat, and Marketing Automation, our tools are intuitive, powerful, and built to scale with every ambition. We give businesses a clear view of the customer journey, so they can focus on what matters: connection. As a certified B Corp , we’re proud to grow with purpose, committed to high standards of social and env…",
+    "title": "Head of Growth H/F",
+    "link": "https://www.adzuna.fr/details/5045283177?utm_medium=api&utm_source=707eaaff",
+    "company": "Hyde Recruit",
+    "location": "Levallois-Perret, Nanterre",
+    "description": "En tant que Head of Growth , vous serez directement rattaché à la Direction Générale et travaillerez en étroite collaboration avec le Chief Marketing Officer (CMO). Votre rôle sera clé dans l’élaboration et l’exécution des stratégies de croissance et de performance marketing. Vous interviendrez sur plusieurs axes : Structurer et développer les stratégies de Growth Marketing. Optimiser les campagnes d’acquisition et de conversion. Mettre en place des stratégies d’emailing et de génération de lea…",
     "salary_raw": "",
-    "published": "2025-07-11T22:59:42Z",
+    "published": "2025-02-11T01:18:11Z",
     "contract_raw": "",
     "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": 80,
+    "commute_minutes": null,
     "flags": [
-      "Annonce ancienne (396 j)"
+      "Séniorité / management d'équipe ?",
+      "Télétravail non mentionné",
+      "Annonce ancienne (547 j)"
     ],
     "score": 7,
     "score_reasons": [
-      "Outils clés : email, sms, whatsapp",
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (80 min)"
+      "Outils : email",
+      "Signaux CRM lifecycle (email / segmentation / campagne)"
     ],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Annonce ancienne (396 j)"
+    "recommendation_reason": "À vérifier : Séniorité / management d'équipe ? ; Télétravail non mentionné ; Annonce ancienne (547 j)"
+  },
+  {
+    "source": "We Work Remotely",
+    "title": "Implementation Specialist (Variable Ops experience required)",
+    "link": "https://weworkremotely.com/remote-jobs/tekion-implementation-specialist-variable-ops-experience-required",
+    "company": "Tekion",
+    "location": "Anywhere in the World",
+    "description": "<img src=\"https://we-work-remotely.imgix.net/logos/0171/5835/logo.gif?ixlib=rails-4.0.0&amp;w=50&amp;h=50&amp;dpr=2&amp;fit=fill&amp;auto=compress\" />\n\n<p>\n  <strong>Headquarters:</strong> Remote, United States\n    <br /><strong>URL:</strong> <a href=\"http://tekion.com\">http://tekion.com</a>\n</p>\n\n<div class=\"job__description body\"><div><h2><strong>About Tekion:</strong></h2>\n<p>Positively disrupting an industry that has not seen any innovation in over 50 years, Tekion has challenged the paradigm with the first and fastest cloud-native automotive platform that includes the revolutionary Automotive Retail Cloud (ARC) for retailers, Automotive Enterprise Cloud (AEC) for manufacturers and other large automotive enterprises and Automotive Partner Cloud (APC) for technology and industry partners. Tekion connects the entire spectrum of the automotive retail ecosystem through one seamless platform. The transformative platform uses cutting-edge technology, big data, machine learning, and AI to seamlessly bring together OEMs, retailers/dealers and consumers. With its highly configurable integration and greater customer engagement capabilities, Tekion is enabling the best automotive retail experiences ever. Tekion employs close to 3,000 people across North America, Asia and Europe.</p></div><div><h2>Job Introduction</h2>\n<p>The Implementation Specialist for Variable operations (internal title Business Solutions Analyst I) supports the delivery and implementation of scalable solutions within Tekion’s Professional Services organization. This role assists with gathering business requirements, documenting processes, supporting configuration, and contributing to testing efforts. The ideal candidate is detail-oriented, analytically minded, and motivated to learn how technology can improve operational efficiency and customer experience.</p>\n<h2>Key Role &amp; Responsibilities</h2>\n<ul>\n<li>Assist in collecting and analyzing business and functional requirements to support solution development</li>\n<li>Document current- and future-state business processes, workflows, and system interactions</li>\n<li>Collaborate with cross-functional teams to identify pain points and recommend areas for improvement</li>\n<li>Participate in system configuration, testing, and user acceptance activities</li>\n<li>Support the creation of user documentation, process flows, and training materials</li>\n<li>Maintain project deliverables and assist in tracking milestones and timelines</li>\n<li>Perform basic data analysis to support solution design and post-implementation success</li>\n</ul>\n<h2>Basic Qualifications</h2>\n<ul>\n<li><strong>Position requires 90% travel</strong></li>\n<li><strong>Position requires 2-4 years of experience implementing Automotive Variable Operations (Retail &amp; Accounting) software</strong></li>\n<li>Bachelor’s degree in Business, Information Systems, Computer Science, or a related field</li>\n<li>Basic proficiency with Microsoft Excel and process mapping tools such as Lucidchart or Visio</li>\n<li>Familiarity with enterprise systems (e.g., CRM, ERP, PSA tools) is a plus</li>\n<li>Strong written and verbal communication skills</li>\n<li>Willingness to learn project delivery methodologies and enterprise business platforms</li>\n</ul>\n<h2>Perks &amp; Benefits&nbsp;</h2>\n<ul>\n<li>Competitive compensation and generous stock options  &nbsp;&nbsp;</li>\n<li>100% employer-paid top-of-the-line medical, dental and vision coverage &nbsp;&nbsp;</li>\n<li>Great benefits including unlimited PTO, parental leave and free snacks and beverages &nbsp;</li>\n<li>The opportunity to work with some of the brightest minds from Silicon Valley’s most dominant and successful companies  </li>\n<li>Be part of an early stage, hyper-growth start-up with the opportunity to grow and prosper   &nbsp;&nbsp;</li>\n<li>Work on the latest and coolest technologies – everything is home-grown and built ground-up  &nbsp;&nbsp;</li>\n<li>A dynamic work environment with a strong sense of community and collaboration  &nbsp;&nbsp;</li>\n<li>The open and transparent culture that encourages innovation, rewards performance and discourages hierarchy  &nbsp;&nbsp;</li>\n<li>Exciting opportunities for career growth and development  &nbsp;&nbsp;</li>\n</ul>\n<p><strong>Current Tekion Employees – Please apply via Greenhouse Internal Job Board&nbsp;</strong></p></div><div class=\"job__pay-ranges\"><div class=\"pay-range\"><div class=\"description\"><div class=\"body\"><span><p><span>The salary range describes the minimum to maximum base salary range for this position</span> <span>across applicable US locations</span><span>. </span><span>The actual compensation offered may vary from the posted hiring range based on geographic location, work experience, education, licensure requirements and/or skill level and will be finalized at the time of offer.</span><span> </span><span><strong>&nbsp;</strong></span>In addition to the compensation listed, this position may be eligible for equity compensation, and/or a bonus or commission whereby total compensation may exceed base salary depending on individual or company performance. <span>Your recruiter can share more about the specific salary range during the hiring process.</span></p></span></div></div><p class=\"body body--medium\">Base Salary Range</p><p class=\"body\">$60,000 - $100,000 USD</p></div></div><div><p>&nbsp;</p>\n\n<p><span>Tekion is proud to be an Equal Employment Opportunity employer. We do not discriminate based upon race, religion, color, national origin, gender (including pregnancy, childbirth, or related medical conditions), sexual orientation, gender identity, gender expression, age, status as a protected veteran, status as an individual with a disability, victim of violence or having a family member who is a victim of violence, the intersectionality of two or more protected categories, or other applicable legally protected characteristics.</span><span>&nbsp;</span></p>\n<p><span>For more information on our privacy practices, please refer to our Applicant Privacy Notice </span><a href=\"https://tekion.com/legal/privacy/applicant-and-candidate-privacy-notice\"><span><span>h</span><span>e</span><span>re</span></span></a>.</p></div></div>\n\n<p><strong>To apply:</strong> <a href=\"https://weworkremotely.com/remote-jobs/tekion-implementation-specialist-variable-ops-experience-required\">https://weworkremotely.com/remote-jobs/tekion-implementation-specialist-variable-ops-experience-required</a></p>",
+    "published": "Thu, 16 Jul 2026 14:57:01 +0000",
+    "telework_days": 5,
+    "in_france": true,
+    "salary_extracted": null,
+    "contract_type": null,
+    "flags": [
+      "Séniorité élevée (>7 ans ?)"
+    ],
+    "score": 7,
+    "score_reasons": [
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Télétravail 5j/sem"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Séniorité élevée (>7 ans ?)"
+  },
+  {
+    "source": "Site carrière — BlaBlaCar",
+    "title": "Confirmed Data Analyst - Demand",
+    "link": "https://jobs.lever.co/blablacar/83a2ef94-70ae-4667-a08f-792569c64c2b",
+    "company": "BlaBlaCar",
+    "location": "Paris, France",
+    "description": "About BlaBlaCar\n\nBlaBlaCar is the world’s leading community-based travel app enabling 27 million members a year to carpool or travel by bus in 21 countries. Our team of 800 employees counts over 50 nationalities and is spread across our 5 global offices, 30% working fully remotely.\n\n\nYour mission\nOur Data department is organised following Data Mesh principles, distributing data ownership to cross-functional and domain-specific teams that manage, own, and serve the data as a product.\nThe Data Demand team’s mission is to help BlaBlaCar grow as a global OTA through data, covering the full customer journey from brand and product discovery through marketing and landing pages, to search, booking, post-booking, and payment. As the team expands its scope from self-service towards decision intelligence, we want to strengthen our ability to proactively analyse member, marketplace, and product behaviours, and to influence the decisions that shape the product.\nAs a Data Analyst, you will join the Data Demand team to drive decision-making through data: framing the right questions with stakeholders, going deep into data to explain what is happening, sizing opportunities, interpreting experiments, and translating insights into actionable recommendations for Product and Marketing teams.\nYour responsibilities\nPartner with Product, Marketing, and Business stakeholders to understand their goals, frame analytical questions, and identify the decisions where data can have the highest impact.\nCollaborate with Data Engineers, Data Scientists, and other Data Analysts to improve the quality, usability, and coverage of our data products, and explore opportunities to turn advanced analytics or ML/AI initiatives into measurable business impact.\nLead end-to-end analyses on product and business topics such as marketplace dynamics, search-to-book performance, member behaviour, audience knowledge, or CRM and marketing impact.\nGo beyond dashboards to investigate the “why” behind trends, anomalies, and performance changes, combining exploratory analysis, statistical reasoning, and strong business context.\nBuild clear narratives from data: communicate findings, trade-offs, confidence levels, and recommendations in a way that helps stakeholders align and act.\nContribute to reusable business knowledge and context engineering by documenting insights, analytical frameworks, or business relationships, and play a governance role in aligning definitions, reducing gaps between teams, and improving data quality over time.\nLeverage BlaBlaCar’s available GenAI tools to work more efficiently in day-to-day analysis and documentation, while applying strong critical thinking to challenge, validate, and contextualise the outputs before using them in decision-making.\nYour qualifications\nMaster’s degree or equivalent: engineering school, business school, etc\nAt least 3 years of professional experience working as a Data Analyst\nStrong SQL skills and hands-on experience analysing large and complex datasets.\nGood understanding of product analytics, funnel analysis, cohort analysis, segmentation, experimentation, and performance monitoring.\nAbility to structure ambiguous problems, challenge assumptions, and translate business or product questions into robust analytical approaches.\nExperience with data visualisation, with a strong sense of how to design clear, trustworthy, and decision-oriented outputs.\nSolid communication skills: you can turn analysis into a compelling story, adapt your message to different audiences, and influence decisions with clarity and humility.\nComfort working with cross-functional teams and building strong stakeholder relationships.\nCuriosity for product, growth, marketplaces, and member behaviour, with a pragmatic mindset focused on impact over perfect analysis.\nPython or another analytical programming language, causal inference, or advanced experimentation knowledge is a plus.\nFluent in English \nIf you don’t meet 100% of the qualifications outlined above, tell us why you’d still be a great fit for this role in your application!\nWhat we have to offer\nHybrid: 2 to 3 days at the office for this role\n4 additional weeks on top of legal maternity/paternity leaves\n50% healthcare coverage (Alan)\nFinancial support for home office equipment\nMinimum 25 days holiday per year \nLocal meal plan policy (Swile card)\n50% transportation paid (Forfait Mobilité Durable)\nFree unlimited carpooling & bus rides\nPersonal growth via trainings, mentorship, and internal mobility programs\nEmployee Stock ownership plan\nRegular team building events\nMental health support through Moka.care\n1 day off per year to test our product\n1 day per year for social engagements with non-profits\nInterested in joining the ride?\nHere’s what your hiring journey will look like:\na 45-min video-call with @Maxime GAUDILLIÈRE , Talent Acquisition Manager to get to know you, understand your career expectations, and answer your first questions\na 60-min video-call with your future manager, @Adrien TORDJEMAN Engineering Manager, to get to know you, present you the team, and discuss your technical fit for the role.\na home assignment to evaluate your technical skills followed by a 90-min video-call with a Data Analyst and one of your future stakeholders.  \na 30-min video-call with @Orianne Friedrich, Head of Data for vision fit and rounding off the process\n",
+    "published": "2026-07-30T15:37:37.263000",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": null,
+    "flags": [
+      "Séniorité / management d'équipe ?"
+    ],
+    "score": 7,
+    "score_reasons": [
+      "Outils : segmentation",
+      "Signaux CRM lifecycle (email / segmentation / campagne)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Séniorité / management d'équipe ?"
+  },
+  {
+    "source": "Site carrière — VML",
+    "title": "Practice Lead MarTech",
+    "link": "https://job-boards.greenhouse.io/vmlenterprisesolutions/jobs/8647218002",
+    "company": "VML",
+    "location": "Paris, France",
+    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;h4&gt;&lt;strong&gt;Who We Are&lt;/strong&gt;&lt;/h4&gt;\n&lt;p&gt;WPP Enterprise Solutions designs, builds, and operates the growth systems that competitive businesses rely on. In a world where Al is reshaping how companies drive growth, we lead clients in business transformation and marketing modernization, connecting strategy directly to execution. Our 12,000 experts in engineering and platforms, commerce, consulting, content transformation, CRM, and CX work within a unified global operating unit across 40+ markets. WPP Enterprise Solutions works alongside best-in-class partners including Adobe, AWS, Braze, Google, Microsoft, Salesforce, and Shopify, as well as innovators in AI, to deliver growth solutions tailored to the needs of our clients’ businesses. VML, part of WPP, supports WPP Enterprise Solutions by helping brands activate transformation through creativity and experience.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;span data-contrast=&quot;none&quot;&gt;Dans un contexte de transformation profonde du triptyque marketing / vente / services par la technologie et l&#39;IA, WPP Enterprise Solutions renforce son pôle d&#39;expertise Martech pour accompagner les grandes marques françaises et internationales dans leur transition vers des organisations data-driven et customer-centric.&lt;/span&gt;&lt;span data-ccp-props=&quot;{&amp;quot;335559738&amp;quot;:60,&amp;quot;335559739&amp;quot;:60}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&lt;span data-contrast=&quot;none&quot;&gt;Le ou la Lead Practice Martech est un acteur clé de cette transformation. Il ou elle a pour mission de faire de la practice un levier de croissance et de différenciation pour WPP Enterprise Solutions et pour l&#39;ensemble du groupe WPP, en s&#39;appuyant sur un écosystème technologique de premier plan (Adobe, Braze, Imagino, Bloomreach, Salesforce…) et sur un réseau de talents experts en France, au Maroc et à l&#39;international.&lt;/span&gt;&lt;span data-ccp-props=&quot;{&amp;quot;335559738&amp;quot;:60,&amp;quot;335559739&amp;quot;:60}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;&lt;span data-ccp-props=&quot;{&amp;quot;335559738&amp;quot;:60,&amp;quot;335559739&amp;quot;:60}&quot;&gt;Vos missions&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;&lt;span data-ccp-props=&quot;{&amp;quot;335559738&amp;quot;:60,&amp;quot;335559739&amp;quot;:60}&quot;&gt;Business &amp;amp; Client&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li data-leveltext=&quot;•&quot; data-font=&quot;&quot; data-listid=&quot;2&quot; data-list-defn-props=&quot;{&amp;quot;335552541&amp;quot;:1,&amp;quot;335559685&amp;quot;:600,&amp;quot;335559991&amp;quot;:300,&amp;quot;469769242&amp;quot;:[8226],&amp;quot;469777803&amp;quot;:&amp;quot;left&amp;quot;,&amp;quot;469777804&amp;quot;:&amp;quot;•&amp;quot;,&amp;quot;469777815&amp;quot;:&amp;quot;hybridMultilevel&amp;quot;}&quot; data-aria-posinset=&quot;1&quot; data-aria-level=&quot;1&quot;&gt;&lt;span data-contrast=&quot;none&quot;&gt;Assurer le go-to-market&amp;nbsp;de l&#39;offre&amp;nbsp;Martech&amp;nbsp;en lien avec les partenaires technologiques (Braze,&amp;nbsp;Imagino, Adobe,&amp;nbsp;Bloomreach…)&lt;/span&gt;&lt;/li&gt;\n&lt;li data-leveltext=&quot;•&quot; data-font=&quot;&quot; data-listid=&quot;2&quot; data-list-defn-props=&quot;{&amp;quot;335552541&amp;quot;:1,&amp;quot;335559685&amp;quot;:600,&amp;quot;335559991&amp;quot;:300,&amp;quot;469769242&amp;quot;:[8226],&amp;quot;469777803&amp;quot;:&amp;quot;left&amp;quot;,&amp;quot;469777804&amp;quot;:&amp;quot;•&amp;quot;,&amp;quot;469777815&amp;quot;:&amp;quot;hybridMultilevel&amp;quot;}&quot; data-aria-posinset=&quot;1&quot; data-aria-level=&quot;1&quot;&gt;Développer le portefeuille clients et les comptes à potentiel multi-expertises&lt;/li&gt;\n&lt;li data-leveltext=&quot;•&quot; data-font=&quot;&quot; data-listid=&quot;2&quot; data-list-defn-props=&quot;{&amp;quot;335552541&amp;quot;:1,&amp;quot;335559685&amp;quot;:600,&amp;quot;335559991&amp;quot;:300,&amp;quot;469769242&amp;quot;:[8226],&amp;quot;469777803&amp;quot;:&amp;quot;left&amp;quot;,&amp;quot;469777804&amp;quot;:&amp;quot;•&amp;quot;,&amp;quot;469777815&amp;quot;:&amp;quot;hybridMultilevel&amp;quot;}&quot; data-aria-posinset=&quot;1&quot; data-aria-level=&quot;1&quot;&gt;Contribuer aux réponses stratégiques et aux dossiers clés&lt;/li&gt;\n&lt;li data-leveltext=&quot;•&quot; data-font=&quot;&quot; data-listid=&quot;2&quot; data-list-defn-props=&quot;{&amp;quot;335552541&amp;quot;:1,&amp;quot;335559685&amp;quot;:600,&amp;quot;335559991&amp;quot;:300,&amp;quot;469769242&amp;quot;:[8226],&amp;quot;469777803&amp;quot;:&amp;quot;left&amp;quot;,&amp;quot;469777804&amp;quot;:&amp;quot;•&amp;quot;,&amp;quot;469777815&amp;quot;:&amp;quot;hybridMultilevel&amp;quot;}&quot; data-aria-posinset=&quot;1&quot; data-aria-level=&quot;1&quot;&gt;Piloter la marge brute vendue et le P&amp;amp;L de la practice&lt;/li&gt;\n&lt;li data-leveltext=&quot;•&quot; data-font=&quot;&quot; data-listid=&quot;2&quot; data-list-defn-props=&quot;{&amp;quot;335552541&amp;quot;:1,&amp;quot;335559685&amp;quot;:600,&amp;quot;335559991&amp;quot;:300,&amp;quot;469769242&amp;quot;:[8226],&amp;quot;469777803&amp;quot;:&amp;quot;left&amp;quot;,&amp;quot;469777804&amp;quot;:&amp;quot;•&amp;quot;,&amp;quot;469777815&amp;quot;:&amp;quot;hybridMultilevel&amp;quot;}&quot; data-aria-posinset=&quot;1&quot; data-aria-level=&quot;1&quot;&gt;Construire des offres packagées et des modèles innovants (freemium, agents IA, BAV data)&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;&lt;span data-contrast=&quot;none&quot;&gt;Management&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li data-leveltext=&quot;•&quot; data-font=&quot;&quot; data-listid=&quot;2&quot; data-list-defn-props=&quot;{&amp;quot;335552541&amp;quot;:1,&amp;quot;335559685&amp;quot;:600,&amp;quot;335559991&amp;quot;:300,&amp;quot;469769242&amp;quot;:[8226],&amp;quot;469777803&amp;quot;:&amp;quot;left&amp;quot;,&amp;quot;469777804&amp;quot;:&amp;quot;•&amp;quot;,&amp;quot;469777815&amp;quot;:&amp;quot;hybridMultilevel&amp;quot;}&quot; data-aria-posinset=&quot;6&quot; data-aria-level=&quot;1&quot;&gt;&lt;span data-contrast=&quot;none&quot;&gt;Diriger et fédérer une équipe de 50 collaborateurs en France et au Maroc&lt;/span&gt;&lt;/li&gt;\n&lt;li data-leveltext=&quot;•&quot; data-font=&quot;&quot; data-listid=&quot;2&quot; data-list-defn-props=&quot;{&amp;quot;335552541&amp;quot;:1,&amp;quot;335559685&amp;quot;:600,&amp;quot;335559991&amp;quot;:300,&amp;quot;469769242&amp;quot;:[8226],&amp;quot;469777803&amp;quot;:&amp;quot;left&amp;quot;,&amp;quot;469777804&amp;quot;:&amp;quot;•&amp;quot;,&amp;quot;469777815&amp;quot;:&amp;quot;hybridMultilevel&amp;quot;}&quot; data-aria-posinset=&quot;6&quot; data-aria-level=&quot;1&quot;&gt;Assurer la montée en compétences, l&#39;engagement et la rétention des talents&lt;/li&gt;\n&lt;li data-leveltext=&quot;•&quot; data-font=&quot;&quot; data-listid=&quot;2&quot; data-list-defn-props=&quot;{&amp;quot;335552541&amp;quot;:1,&amp;quot;335559685&amp;quot;:600,&amp;quot;335559991&amp;quot;:300,&amp;quot;469769242&amp;quot;:[8226],&amp;quot;469777803&amp;quot;:&amp;quot;left&amp;quot;,&amp;quot;469777804&amp;quot;:&amp;quot;•&amp;quot;,&amp;quot;469777815&amp;quot;:&amp;quot;hybridMultilevel&amp;quot;}&quot; data-aria-posinset=&quot;6&quot; data-aria-level=&quot;1&quot;&gt;Animer le codir de la practice et piloter la performance collective&lt;/li&gt;\n&lt;li data-leveltext=&quot;•&quot; data-font=&quot;&quot; data-listid=&quot;2&quot; data-list-defn-props=&quot;{&amp;quot;335552541&amp;quot;:1,&amp;quot;335559685&amp;quot;:600,&amp;quot;335559991&amp;quot;:300,&amp;quot;469769242&amp;quot;:[8226],&amp;quot;469777803&amp;quot;:&amp;quot;left&amp;quot;,&amp;quot;469777804&amp;quot;:&amp;quot;•&amp;quot;,&amp;quot;469777815&amp;quot;:&amp;quot;hybridMultilevel&amp;quot;}&quot; data-aria-posinset=&quot;6&quot; data-aria-level=&quot;1&quot;&gt;Connecter l&#39;équipe aux réseaux de talents internationaux VML &amp;amp; WPP&lt;/li&gt;\n&lt;li data-leveltext=&quot;•&quot; data-font=&quot;&quot; data-listid=&quot;2&quot; data-list-defn-props=&quot;{&amp;quot;335552541&amp;quot;:1,&amp;quot;335559685&amp;quot;:600,&amp;quot;335559991&amp;quot;:300,&amp;quot;469769242&amp;quot;:[8226],&amp;quot;469777803&amp;quot;:&amp;quot;left&amp;quot;,&amp;quot;469777804&amp;quot;:&amp;quot;•&amp;quot;,&amp;quot;469777815&amp;quot;:&amp;quot;hybridMultilevel&amp;quot;}&quot; data-aria-posinset=&quot;6&quot; data-aria-level=&quot;1&quot;&gt;&lt;span data-ccp-props=&quot;{&amp;quot;335559738&amp;quot;:50,&amp;quot;335559739&amp;quot;:50}&quot;&gt;&lt;span class=&quot;NormalTextRun SCXW128372763 BCX8&quot;&gt;Développer des modèles d&#39;organisation agiles et&amp;nbsp;&lt;/span&gt;&lt;span class=&quot;NormalTextRun SCXW128372763 BCX8&quot;&gt;innovants (équipages, PO mutualisés)&lt;/span&gt;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;&lt;span data-ccp-props=&quot;{&amp;quot;335559738&amp;quot;:50,&amp;quot;335559739&amp;quot;:50}&quot;&gt;Thought Leadership&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li data-leveltext=&quot;•&quot; data-font=&quot;&quot; data-listid=&quot;2&quot; data-list-defn-props=&quot;{&amp;quot;335552541&amp;quot;:1,&amp;quot;335559685&amp;quot;:600,&amp;quot;335559991&amp;quot;:300,&amp;quot;469769242&amp;quot;:[8226],&amp;quot;469777803&amp;quot;:&amp;quot;left&amp;quot;,&amp;quot;469777804&amp;quot;:&amp;quot;•&amp;quot;,&amp;quot;469777815&amp;quot;:&amp;quot;hybridMultilevel&amp;quot;}&quot; data-aria-posinset=&quot;11&quot; data-aria-level=&quot;1&quot;&gt;&lt;span data-contrast=&quot;none&quot;&gt;Incarner l&#39;expertise&amp;nbsp;Martech&amp;nbsp;sur le marché français (prises de parole, événements, publications)&lt;/span&gt;&lt;/li&gt;\n&lt;li data-leveltext=&quot;•&quot; data-font=&quot;&quot; data-listid=&quot;2&quot; data-list-defn-props=&quot;{&amp;quot;335552541&amp;quot;:1,&amp;quot;335559685&amp;quot;:600,&amp;quot;335559991&amp;quot;:300,&amp;quot;469769242&amp;quot;:[8226],&amp;quot;469777803&amp;quot;:&amp;quot;left&amp;quot;,&amp;quot;469777804&amp;quot;:&amp;quot;•&amp;quot;,&amp;quot;469777815&amp;quot;:&amp;quot;hybridMultilevel&amp;quot;}&quot; data-aria-posinset=&quot;11&quot; data-aria-level=&quot;1&quot;&gt;Produire benchmarks, études et contenus de référence (LinkedIn, articles, tribunes)&lt;/li&gt;\n&lt;li data-leveltext=&quot;•&quot; data-font=&quot;&quot; data-listid=&quot;2&quot; data-list-defn-props=&quot;{&amp;quot;335552541&amp;quot;:1,&amp;quot;335559685&amp;quot;:600,&amp;quot;335559991&amp;quot;:300,&amp;quot;469769242&amp;quot;:[8226],&amp;quot;469777803&amp;quot;:&amp;quot;left&amp;quot;,&amp;quot;469777804&amp;quot;:&amp;quot;•&amp;quot;,&amp;quot;469777815&amp;quot;:&amp;quot;hybridMultilevel&amp;quot;}&quot; data-aria-posinset=&quot;11&quot; data-aria-level=&quot;1&quot;&gt;Intervenir en top2top auprès des CxO clients et prospects&lt;/li&gt;\n&lt;li data-leveltext=&quot;•&quot; data-font=&quot;&quot; data-listid=&quot;2&quot; data-list-defn-props=&quot;{&amp;quot;335552541&amp;quot;:1,&amp;quot;335559685&amp;quot;:600,&amp;quot;335559991&amp;quot;:300,&amp;quot;469769242&amp;quot;:[8226],&amp;quot;469777803&amp;quot;:&amp;quot;left&amp;quot;,&amp;quot;469777804&amp;quot;:&amp;quot;•&amp;quot;,&amp;quot;469777815&amp;quot;:&amp;quot;hybridMultilevel&amp;quot;}&quot; data-aria-posinset=&quot;11&quot; data-aria-level=&quot;1&quot;&gt;Organiser et animer des événements CX &lt;span class=&quot;TextRun SCXW204970267 BCX8&quot; lang=&quot;FR-FR&quot; data-contrast=&quot;none&quot;&gt;&lt;span class=&quot;NormalTextRun SCXW204970267 BCX8&quot;&gt;de référence (2 par an)&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;\n&lt;li data-leveltext=&quot;•&quot; data-font=&quot;&quot; data-listid=&quot;2&quot; data-list-defn-props=&quot;{&amp;quot;335552541&amp;quot;:1,&amp;quot;335559685&amp;quot;:600,&amp;quot;335559991&amp;quot;:300,&amp;quot;469769242&amp;quot;:[8226],&amp;quot;469777803&amp;quot;:&amp;quot;left&amp;quot;,&amp;quot;469777804&amp;quot;:&amp;quot;•&amp;quot;,&amp;quot;469777815&amp;quot;:&amp;quot;hybridMultilevel&amp;quot;}&quot; data-aria-posinset=&quot;11&quot; data-aria-level=&quot;1&quot;&gt;&lt;span class=&quot;NormalTextRun SCXW70485570 BCX8&quot;&gt;Représenter VML Consulting dans les&amp;nbsp;&lt;/span&gt;&lt;span class=&quot;NormalTextRun SCXW70485570 BCX8&quot;&gt;instances&lt;/span&gt;&lt;span class=&quot;NormalTextRun SCXW70485570 BCX8&quot;&gt;&amp;nbsp;partenaires et les cercles d&#39;influence&lt;/span&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;&lt;span class=&quot;NormalTextRun SCXW70485570 BCX8&quot;&gt;Profil recherché&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li data-leveltext=&quot;•&quot; data-font=&quot;&quot; data-listid=&quot;2&quot; data-list-defn-props=&quot;{&amp;quot;335552541&amp;quot;:1,&amp;quot;335559685&amp;quot;:600,&amp;quot;335559991&amp;quot;:300,&amp;quot;469769242&amp;quot;:[8226],&amp;quot;469777803&amp;quot;:&amp;quot;left&amp;quot;,&amp;quot;469777804&amp;quot;:&amp;quot;•&amp;quot;,&amp;quot;469777815&amp;quot;:&amp;quot;hybridMultilevel&amp;quot;}&quot; data-aria-posinset=&quot;24&quot; data-aria-level=&quot;1&quot;&gt;&lt;span data-contrast=&quot;none&quot;&gt;10 ans minimum d&#39;expérience en&amp;nbsp;Martech, CRM ou Digital Marketing&amp;nbsp;Technology&lt;/span&gt;&lt;/li&gt;\n&lt;li style=&quot;font-weight: bold;&quot; data-leveltext=&quot;•&quot; data-font=&quot;&quot; data-listid=&quot;2&quot; data-list-defn-props=&quot;{&amp;quot;335552541&amp;quot;:1,&amp;quot;335559685&amp;quot;:600,&amp;quot;335559991&amp;quot;:300,&amp;quot;469769242&amp;quot;:[8226],&amp;quot;469777803&amp;quot;:&amp;quot;left&amp;quot;,&amp;quot;469777804&amp;quot;:&amp;quot;•&amp;quot;,&amp;quot;469777815&amp;quot;:&amp;quot;hybridMultilevel&amp;quot;}&quot; data-aria-posinset=&quot;24&quot; data-aria-level=&quot;1&quot;&gt;&lt;strong&gt;Solide expertise technique des plateformes Martech (CDP, Marketing Automation, Personalisation, Analytics)&lt;/strong&gt;&lt;/li&gt;\n&lt;li data-leveltext=&quot;•&quot; data-font=&quot;&quot; data-listid=&quot;2&quot; data-list-defn-props=&quot;{&amp;quot;335552541&amp;quot;:1,&amp;quot;335559685&amp;quot;:600,&amp;quot;335559991&amp;quot;:300,&amp;quot;469769242&amp;quot;:[8226],&amp;quot;469777803&amp;quot;:&amp;quot;left&amp;quot;,&amp;quot;469777804&amp;quot;:&amp;quot;•&amp;quot;,&amp;quot;469777815&amp;quot;:&amp;quot;hybridMultilevel&amp;quot;}&quot; data-aria-posinset=&quot;24&quot; data-aria-level=&quot;1&quot;&gt;Expérience avérée dans un rôle alliant business development et delivery client&lt;/li&gt;\n&lt;li data-leveltext=&quot;•&quot; data-font=&quot;&quot; data-listid=&quot;2&quot; data-list-defn-props=&quot;{&amp;quot;335552541&amp;quot;:1,&amp;quot;335559685&amp;quot;:600,&amp;quot;335559991&amp;quot;:300,&amp;quot;469769242&amp;quot;:[8226],&amp;quot;469777803&amp;quot;:&amp;quot;left&amp;quot;,&amp;quot;469777804&amp;quot;:&amp;quot;•&amp;quot;,&amp;quot;469777815&amp;quot;:&amp;quot;hybridMultilevel&amp;quot;}&quot; data-aria-posinset=&quot;24&quot; data-aria-level=&quot;1&quot;&gt;Expérience du management d&#39;équipes pluriculturelles et multisites (idéalement France + offshore)&lt;/li&gt;\n&lt;li data-leveltext=&quot;•&quot; data-font=&quot;&quot; data-listid=&quot;2&quot; data-list-defn-props=&quot;{&amp;quot;335552541&amp;quot;:1,&amp;quot;335559685&amp;quot;:600,&amp;quot;335559991&amp;quot;:300,&amp;quot;469769242&amp;quot;:[8226],&amp;quot;469777803&amp;quot;:&amp;quot;left&amp;quot;,&amp;quot;469777804&amp;quot;:&amp;quot;•&amp;quot;,&amp;quot;469777815&amp;quot;:&amp;quot;hybridMultilevel&amp;quot;}&quot; data-aria-posinset=&quot;24&quot; data-aria-level=&quot;1&quot;&gt;La connaissance du marché des agences conseil ou des ESN est un vrai plus&lt;span data-ccp-props=&quot;{&amp;quot;335559738&amp;quot;:60,&amp;quot;335559739&amp;quot;:60}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;\n&lt;li data-leveltext=&quot;•&quot; data-font=&quot;&quot; data-listid=&quot;2&quot; data-list-defn-props=&quot;{&amp;quot;335552541&amp;quot;:1,&amp;quot;335559685&amp;quot;:600,&amp;quot;335559991&amp;quot;:300,&amp;quot;469769242&amp;quot;:[8226],&amp;quot;469777803&amp;quot;:&amp;quot;left&amp;quot;,&amp;quot;469777804&amp;quot;:&amp;quot;•&amp;quot;,&amp;quot;469777815&amp;quot;:&amp;quot;hybridMultilevel&amp;quot;}&quot; data-aria-posinset=&quot;29&quot; data-aria-level=&quot;1&quot;&gt;&lt;span data-contrast=&quot;none&quot;&gt;Approche data-driven et orientation résultats&lt;/span&gt;&lt;/li&gt;\n&lt;li data-leveltext=&quot;•&quot; data-font=&quot;&quot; data-listid=&quot;2&quot; data-list-defn-props=&quot;{&amp;quot;335552541&amp;quot;:1,&amp;quot;335559685&amp;quot;:600,&amp;quot;335559991&amp;quot;:300,&amp;quot;469769242&amp;quot;:[8226],&amp;quot;469777803&amp;quot;:&amp;quot;left&amp;quot;,&amp;quot;469777804&amp;quot;:&amp;quot;•&amp;quot;,&amp;quot;469777815&amp;quot;:&amp;quot;hybridMultilevel&amp;quot;}&quot; data-aria-posinset=&quot;29&quot; data-aria-level=&quot;1&quot;&gt;&lt;span data-contrast=&quot;none&quot;&gt;&lt;span class=&quot;TextRun SCXW101031758 BCX8&quot; lang=&quot;FR-FR&quot; data-contrast=&quot;none&quot;&gt;&lt;span class=&quot;NormalTextRun SCXW101031758 BCX8&quot;&gt;Capacité à faire le pont entre business et technologie&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;EOP Selected SCXW101031758 BCX8&quot; data-ccp-props=&quot;{&amp;quot;335559738&amp;quot;:50,&amp;quot;335559739&amp;quot;:50}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;\n&lt;li data-leveltext=&quot;•&quot; data-font=&quot;&quot; data-listid=&quot;2&quot; data-list-defn-props=&quot;{&amp;quot;335552541&amp;quot;:1,&amp;quot;335559685&amp;quot;:600,&amp;quot;335559991&amp;quot;:300,&amp;quot;469769242&amp;quot;:[8226],&amp;quot;469777803&amp;quot;:&amp;quot;left&amp;quot;,&amp;quot;469777804&amp;quot;:&amp;quot;•&amp;quot;,&amp;quot;469777815&amp;quot;:&amp;quot;hybridMultilevel&amp;quot;}&quot; data-aria-posinset=&quot;29&quot; data-aria-level=&quot;1&quot;&gt;&lt;span data-contrast=&quot;none&quot;&gt;&lt;span class=&quot;NormalTextRun SCXW232399651 BCX8&quot;&gt;Maîtrise du go-to-&lt;/span&gt;&lt;span class=&quot;NormalTextRun SpellingErrorV2Themed SCXW232399651 BCX8&quot;&gt;market&lt;/span&gt;&lt;span class=&quot;NormalTextRun SCXW232399651 BCX8&quot;&gt;&amp;nbsp;et de la vente conseil&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;\n&lt;li data-leveltext=&quot;•&quot; data-font=&quot;&quot; data-listid=&quot;2&quot; data-list-defn-props=&quot;{&amp;quot;335552541&amp;quot;:1,&amp;quot;335559685&amp;quot;:600,&amp;quot;335559991&amp;quot;:300,&amp;quot;469769242&amp;quot;:[8226],&amp;quot;469777803&amp;quot;:&amp;quot;left&amp;quot;,&amp;quot;469777804&amp;quot;:&amp;quot;•&amp;quot;,&amp;quot;469777815&amp;quot;:&amp;quot;hybridMultilevel&amp;quot;}&quot; data-aria-posinset=&quot;29&quot; data-aria-level=&quot;1&quot;&gt;&lt;span data-contrast=&quot;none&quot;&gt;&lt;span class=&quot;TextRun SCXW252503114 BCX8&quot; lang=&quot;FR-FR&quot; data-contrast=&quot;none&quot;&gt;&lt;span class=&quot;NormalTextRun SCXW252503114 BCX8&quot;&gt;Vision offre et ingénierie de solutions&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;EOP Selected SCXW252503114 BCX8&quot; data-ccp-props=&quot;{&amp;quot;335559738&amp;quot;:50,&amp;quot;335559739&amp;quot;:50}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;\n&lt;li data-leveltext=&quot;•&quot; data-font=&quot;&quot; data-listid=&quot;2&quot; data-list-defn-props=&quot;{&amp;quot;335552541&amp;quot;:1,&amp;quot;335559685&amp;quot;:600,&amp;quot;335559991&amp;quot;:300,&amp;quot;469769242&amp;quot;:[8226],&amp;quot;469777803&amp;quot;:&amp;quot;left&amp;quot;,&amp;quot;469777804&amp;quot;:&amp;quot;•&amp;quot;,&amp;quot;469777815&amp;quot;:&amp;quot;hybridMultilevel&amp;quot;}&quot; data-aria-posinset=&quot;29&quot; data-aria-level=&quot;1&quot;&gt;&lt;span data-contrast=&quot;none&quot;&gt;Leadership inspirant &amp;amp; fédérateur&lt;/span&gt;&lt;/li&gt;\n&lt;li data-leveltext=&quot;•&quot; data-font=&quot;&quot; data-listid=&quot;2&quot; data-list-defn-props=&quot;{&amp;quot;335552541&amp;quot;:1,&amp;quot;335559685&amp;quot;:600,&amp;quot;335559991&amp;quot;:300,&amp;quot;469769242&amp;quot;:[8226],&amp;quot;469777803&amp;quot;:&amp;quot;left&amp;quot;,&amp;quot;469777804&amp;quot;:&amp;quot;•&amp;quot;,&amp;quot;469777815&amp;quot;:&amp;quot;hybridMultilevel&amp;quot;}&quot; data-aria-posinset=&quot;29&quot; data-aria-level=&quot;1&quot;&gt;&lt;span data-contrast=&quot;none&quot;&gt;&lt;span class=&quot;TextRun SCXW223038945 BCX8&quot; lang=&quot;FR-FR&quot; data-contrast=&quot;none&quot;&gt;&lt;span class=&quot;NormalTextRun SCXW223038945 BCX8&quot;&gt;Sens commercial et aptitudes relationnelles fortes&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;EOP Selected SCXW223038945 BCX8&quot; data-ccp-props=&quot;{&amp;quot;335559738&amp;quot;:50,&amp;quot;335559739&amp;quot;:50}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;\n&lt;li data-leveltext=&quot;•&quot; data-font=&quot;&quot; data-listid=&quot;2&quot; data-list-defn-props=&quot;{&amp;quot;335552541&amp;quot;:1,&amp;quot;335559685&amp;quot;:600,&amp;quot;335559991&amp;quot;:300,&amp;quot;469769242&amp;quot;:[8226],&amp;quot;469777803&amp;quot;:&amp;quot;left&amp;quot;,&amp;quot;469777804&amp;quot;:&amp;quot;•&amp;quot;,&amp;quot;469777815&amp;quot;:&amp;quot;hybridMultilevel&amp;quot;}&quot; data-aria-posinset=&quot;29&quot; data-aria-level=&quot;1&quot;&gt;&lt;span data-contrast=&quot;none&quot;&gt;&lt;span class=&quot;TextRun SCXW267831067 BCX8&quot; lang=&quot;FR-FR&quot; data-contrast=&quot;none&quot;&gt;&lt;span class=&quot;NormalTextRun SCXW267831067 BCX8&quot;&gt;Aisance en environnement matriciel et international&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;EOP Selected SCXW267831067 BCX8&quot; data-ccp-props=&quot;{&amp;quot;335559738&amp;quot;:50,&amp;quot;335559739&amp;quot;:50}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;\n&lt;li data-leveltext=&quot;•&quot; data-font=&quot;&quot; data-listid=&quot;2&quot; data-list-defn-props=&quot;{&amp;quot;335552541&amp;quot;:1,&amp;quot;335559685&amp;quot;:600,&amp;quot;335559991&amp;quot;:300,&amp;quot;469769242&amp;quot;:[8226],&amp;quot;469777803&amp;quot;:&amp;quot;left&amp;quot;,&amp;quot;469777804&amp;quot;:&amp;quot;•&amp;quot;,&amp;quot;469777815&amp;quot;:&amp;quot;hybridMultilevel&amp;quot;}&quot; data-aria-posinset=&quot;29&quot; data-aria-level=&quot;1&quot;&gt;&lt;span data-contrast=&quot;none&quot;&gt;&lt;span class=&quot;TextRun SCXW48294436 BCX8&quot; lang=&quot;FR-FR&quot; data-contrast=&quot;none&quot;&gt;&lt;span class=&quot;NormalTextRun SCXW48294436 BCX8&quot;&gt;Orientation impact et transformation&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;EOP Selected SCXW48294436 BCX8&quot; data-ccp-props=&quot;{&amp;quot;335559738&amp;quot;:50,&amp;quot;335559739&amp;quot;:50}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;\n&lt;li data-leveltext=&quot;•&quot; data-font=&quot;&quot; data-listid=&quot;2&quot; data-list-defn-props=&quot;{&amp;quot;335552541&amp;quot;:1,&amp;quot;335559685&amp;quot;:600,&amp;quot;335559991&amp;quot;:300,&amp;quot;469769242&amp;quot;:[8226],&amp;quot;469777803&amp;quot;:&amp;quot;left&amp;quot;,&amp;quot;469777804&amp;quot;:&amp;quot;•&amp;quot;,&amp;quot;469777815&amp;quot;:&amp;quot;hybridMultilevel&amp;quot;}&quot; data-aria-posinset=&quot;24&quot; data-aria-level=&quot;1&quot;&gt;&lt;span data-ccp-props=&quot;{&amp;quot;335559738&amp;quot;:60,&amp;quot;335559739&amp;quot;:60}&quot;&gt;Bilingue anglais&lt;/span&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;span data-ccp-props=&quot;{&amp;quot;335559738&amp;quot;:60,&amp;quot;335559739&amp;quot;:60}&quot;&gt;Si vous vous reconnaissez dans ce profil, postulez !&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&lt;span data-ccp-props=&quot;{&amp;quot;335559738&amp;quot;:60,&amp;quot;335559739&amp;quot;:60}&quot;&gt;#LI-EMEA&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;h4&gt;&lt;strong&gt;About WPP&lt;/strong&gt;&lt;/h4&gt;\n&lt;p class=&quot;p1&quot;&gt;WPP is the trusted growth partner for the world’s leading brands. With exceptional talent, trusted data and intelligence and world-class partnerships – all united by our agentic marketing platform, WPP Open – we help clients navigate change, capture opportunity and deliver transformational growth. For more information, visit &lt;a href=&quot;http://wpp.com/&quot;&gt;&lt;span class=&quot;s1&quot;&gt;WPP.com&lt;/span&gt;&lt;/a&gt;&lt;span class=&quot;s2&quot;&gt;.&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&lt;span class=&quot;normaltextrun&quot;&gt;&lt;span lang=&quot;EN-GB&quot;&gt;WPP (VML/WPP Enterprise Solutions) is an equal opportunity employer and considers applicants for all positions without discrimination or regard to characteristics. We are committed to fostering a culture of respect in which everyone feels they belong and has the same opportunities to progress in their careers.&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;scxw176048299&quot;&gt;&lt;span lang=&quot;EN-GB&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;When you click &quot;Submit Application&quot;, this will send any information you add below to WPP (VML/WPP Enterprise Solutions). Before you do this, we think it&#39;s a good idea to read through our &lt;a href=&quot;https://www.vml.com/recruitment-privacy-policy&quot;&gt;Recruitment Privacy Policy&lt;/a&gt;. California residents should read our&amp;nbsp;&lt;a href=&quot;https://www.vml.com/california-recruitment-privacy-notice&quot;&gt;California Recruitment Privacy Notice&lt;/a&gt;. This explains what we do with your personal data when you apply for a role with us, and, how you can update the information you have provided us with or how to remove it.&lt;/p&gt;&lt;/div&gt;",
+    "published": "2026-08-07T12:33:27-04:00",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": null,
+    "flags": [
+      "Conseil / ESN — télétravail dépendant de la mission ?",
+      "Séniorité élevée (>7 ans ?)",
+      "Télétravail non mentionné"
+    ],
+    "score": 7,
+    "score_reasons": [
+      "Compétences alignées (3)",
+      "Signaux CRM lifecycle (email / segmentation / campagne)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Conseil / ESN — télétravail dépendant de la mission ? ; Séniorité élevée (>7 ans ?) ; Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -479,13 +620,13 @@
   },
   {
     "source": "Adzuna",
-    "title": "Consultant CRM Marketing - CDI - Creative Tech - C360 H/F",
-    "link": "https://www.adzuna.fr/details/5837479063?utm_medium=api&utm_source=707eaaff",
-    "company": "Devoteam France",
-    "location": "Levallois-Perret, Nanterre",
-    "description": "Devenez Consultant(e) Marketing Automation ! Rejoignez notre équipe Marketing 360 et menez des projets passionnants pour nos clients ! Vous serez au coeur de l'innovation, mêlant conseil et intégration sur des solutions de Marketing Automation. Vos missions principales : - Gestion de Projet CRM & E-Marketing : De la conception à la réalisation, vous piloterez le projet. Vous animerez des ateliers pour définir les besoins, rédigerez les spécifications et assurerez le reporting. - Stratégie Marke…",
+    "title": "Product Manager Make-Up Paris J Fr 75002 H/F",
+    "link": "https://www.adzuna.fr/details/5837482822?utm_medium=api&utm_source=707eaaff",
+    "company": "Coty",
+    "location": "Paris, Ile-de-France",
+    "description": "We are looking for a passionate and entrepreneurial experienced Product Manager to join the Burberry Makeup team. THE ROLE MISSION AND RESPONSIBILITIES - As our Senior Product Manager, you are responsible for driving the strategic development and growth of the Burberry Makeup category globally and you will be in charge of the growth of your lines with development supports teams and the 360-launch campaign management. You will participate in the category franchise positioning in key markets to r…",
     "salary_raw": "",
-    "published": "2026-08-12T02:07:19Z",
+    "published": "2026-08-12T02:09:14Z",
     "contract_raw": "",
     "salary_extracted": null,
     "telework_days": null,
@@ -715,66 +856,303 @@
   },
   {
     "source": "Adzuna",
-    "title": "Product Manager Make-Up Paris J Fr 75002 H/F",
-    "link": "https://www.adzuna.fr/details/5837482822?utm_medium=api&utm_source=707eaaff",
-    "company": "Coty",
+    "title": "Chef de projet CRM",
+    "link": "https://www.adzuna.fr/details/5823271450?utm_medium=api&utm_source=707eaaff",
+    "company": "ENOVA Consulting",
     "location": "Paris, Ile-de-France",
-    "description": "We are looking for a passionate and entrepreneurial experienced Product Manager to join the Burberry Makeup team. THE ROLE MISSION AND RESPONSIBILITIES - As our Senior Product Manager, you are responsible for driving the strategic development and growth of the Burberry Makeup category globally and you will be in charge of the growth of your lines with development supports teams and the 360-launch campaign management. You will participate in the category franchise positioning in key markets to r…",
+    "description": "ENOVA poursuit son développement et renforce ses équipes en intégrant un(e) Chef de Projet Technico-Fonctionnel CRM / Fidélisation en CDI. Vous rejoindrez notre communauté de consultants et interviendrez en mission longue durée au sein d'un grand compte, dans un environnement stimulant, transverse et orienté transformation digitale. Contexte de la mission Dans le cadre d'un projet stratégique de transformation de l'expérience client et de fidélisation, vous interviendrez auprès d'un acteur maje…",
+    "salary_raw": "600-700 €",
+    "published": "2026-08-01T05:49:12Z",
+    "contract_raw": "",
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": "CDI",
+    "commute_minutes": null,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné"
+    ],
+    "score": 5,
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Chef de Projet CRM Confirmé - Senior H/F",
+    "link": "https://www.adzuna.fr/details/5625858106?utm_medium=api&utm_source=707eaaff",
+    "company": "ASI",
+    "location": "Paris, Ile-de-France",
+    "description": "Dans un souci d'accessibilité et de clarté, les termes employés au masculin se réfèrent aussi bien au genre féminin que masculin Rattaché(e) au Cabinet de Conseil ASI et en coordination avec les équipes au niveau national, vous intervenez en tant que Consultant CRM Fonctionnel sur des projets structurants de connaissance client, de relation client et de transformation digitale. Vous accompagnez nos clients, grands comptes et acteurs publics, depuis la compréhension des enjeux métiers jusqu'à la…",
     "salary_raw": "",
-    "published": "2026-08-12T02:09:14Z",
+    "published": "2026-02-12T08:20:04Z",
     "contract_raw": "",
     "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": 80,
+    "commute_minutes": null,
     "flags": [
-      "Télétravail non mentionné"
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné",
+      "Annonce ancienne (181 j)"
     ],
     "score": 5,
-    "score_reasons": [
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (80 min)"
-    ],
+    "score_reasons": [],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné ; Annonce ancienne (181 j)"
   },
   {
     "source": "Adzuna",
-    "title": "Chef de Projet CRM H/F",
-    "link": "https://www.adzuna.fr/details/5618786566?utm_medium=api&utm_source=707eaaff",
-    "company": "Nexton",
-    "location": "Paris, Ile-de-France",
-    "description": "NEXTON recrute un Chef de Projet CRM H/F, en CDI, à Paris ! Ton futur environnement de travail : En tant que Chef de Projet CRM H/F, tu intègres l'équipe CRM de l'un de nos clients, évoluant dans un contexte international et multiculturel. Tu seras au coeur de la stratégie d'engagement client, en faisant le pont entre les besoins du siège et les spécificités des différents pays. Tes missions : - Pilotage de campagnes : Tu orchestres le déploiement des campagnes CRM, en assurant la cohérence des…",
+    "title": "Consultant CRM H/F",
+    "link": "https://www.adzuna.fr/details/5689628443?utm_medium=api&utm_source=707eaaff",
+    "company": "Orange Business",
+    "location": "Hauts-de-Seine, Ile-de-France",
+    "description": "Votre rôle: Dans le cadre de notre croissance, nous recherchons un(e) Consultant(e) CRM. Votre mission principale : comprendre les enjeux clients, concevoir des solutions CRM adaptées et convaincre grâce à des démonstrations à forte valeur ajoutée. Vous garantissez la pertinence technologique et l'adéquation de la solution CRM proposée (Salesforce ou Dynamics) avec les enjeux business des clients. Vous jouerez un rôle clé dans le développement commercial en intervenant en amont des projets, en …",
     "salary_raw": "",
-    "published": "2026-02-07T08:35:34Z",
+    "published": "2026-04-04T09:50:52Z",
+    "contract_raw": "",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": null,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné",
+      "Annonce ancienne (129 j)"
+    ],
+    "score": 5,
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné ; Annonce ancienne (129 j)"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Consultant technique CRM F/H",
+    "link": "https://www.adzuna.fr/details/5831901702?utm_medium=api&utm_source=707eaaff",
+    "company": "MASAO",
+    "location": "Paris, Ile-de-France",
+    "description": "Consultant.e technique CRM Dynamics 365 & Power platform Qui sommes-nous ? MASAO est un Pure Player Microsoft et un expert de la solution CRM Dynamics. C’est aussi le spécialiste de la digitalisation de la Relation Client avec les technologies Microsoft (Dynamics 365, Power Platform, Power BI, ) avec plus de 500 projets CRM délivrés. Reconnu plusieurs fois par Microsoft comme Partner of the Year et fait partie depuis plusieurs années de l'Inner Circle Microsoft Dynamics. Rejoindre MASAO c’est a…",
+    "salary_raw": "",
+    "published": "2026-08-07T12:46:04Z",
+    "contract_raw": "permanent",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": "CDI",
+    "commute_minutes": null,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Conseil / ESN — télétravail dépendant de la mission ?",
+      "Télétravail non mentionné"
+    ],
+    "score": 5,
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Conseil / ESN — télétravail dépendant de la mission ? ; Télétravail non mentionné"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Consultant(e) SI CRM F/H",
+    "link": "https://www.adzuna.fr/details/5831903041?utm_medium=api&utm_source=707eaaff",
+    "company": "mc2i",
+    "location": "Paris, Ile-de-France",
+    "description": "En tant que Consultant mc2i, vous accompagnez les acteurs majeurs de nos secteurs dans le pilotage de leurs projets stratégiques, au cœur de la transition énergétique où le digital représente un levier majeur de performance. Votre mission ? Accompagner la transformation de la relation client des acteurs du secteur en harmonisant les processus de relation client, améliorant l'expérience utilisateur, et en répondant aux attentes des clients. Vos missions: Cadrage et Conseil Métier Accompagner nos…",
+    "salary_raw": "",
+    "published": "2026-08-07T12:46:52Z",
+    "contract_raw": "permanent",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": "CDI",
+    "commute_minutes": null,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné"
+    ],
+    "score": 5,
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Consultant Customer eXperience & CRM - F/H",
+    "link": "https://www.adzuna.fr/details/5757709569?utm_medium=api&utm_source=707eaaff",
+    "company": "Onepoint",
+    "location": "Paris, Ile-de-France",
+    "description": "Contribuez aux grandes transformations des entreprises et des acteurs publics en alliant innovation technologique et expertise métier, au service de nos clients et de la société pour les faire avancer durablement. Au-delà de la RSE, nous avons développé notre propre approche, RESET, qui englobe l’ensemble de nos engagements en matière de responsabilité économique, sociale, environnementale et technologique, tant au sein de notre collectif que chez nos clients. Onepoint, est une entreprise inclu…",
+    "salary_raw": "",
+    "published": "2026-06-09T23:30:49Z",
+    "contract_raw": "",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": null,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné"
+    ],
+    "score": 5,
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Consultant fonctionnel F/H",
+    "link": "https://www.adzuna.fr/details/5831901641?utm_medium=api&utm_source=707eaaff",
+    "company": "MASAO",
+    "location": "Paris, Ile-de-France",
+    "description": "Qui sommes-nous ? MASAO est un Pure Player Microsoft et un expert de la solution CRM Dynamics, C’est un spécialiste de la transformation digitale dans la relation client avec plus de 400 projets CRM délivrés. Reconnu plusieurs fois par Microsoft comme “ Partner of the Year “ et fait partie depuis plusieurs années de l'Inner Circle Microsoft Dynamics. Rejoindre MASAO c’est avant tout, faire partie d’une équipe soudée dans laquelle vous allez pouvoir développer une forte expertise fonctionnelle e…",
+    "salary_raw": "",
+    "published": "2026-08-07T12:46:04Z",
+    "contract_raw": "permanent",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": "CDI",
+    "commute_minutes": null,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Conseil / ESN — télétravail dépendant de la mission ?",
+      "Télétravail non mentionné"
+    ],
+    "score": 5,
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Conseil / ESN — télétravail dépendant de la mission ? ; Télétravail non mentionné"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Responsable Marketing Transverse F/H",
+    "link": "https://www.adzuna.fr/details/5834576210?utm_medium=api&utm_source=707eaaff",
+    "company": "PRO BTP Groupe",
+    "location": "Vincennes, Nogent-sur-Marne",
+    "description": "Notre Direction Marketing et Communication recherche Un Responsable Marketing Transverse F/H Poste à pourvoir en CDI dès que possible. Le poste est basé à Vincennes, à proximité des transports en commun (Ligne 1 ou RER A). Rattaché à la Responsable du Pôle Marketing Particuliers, vous pilotez les activités marketing transverses BtoC et accompagnez le développement des dispositifs marketing au service de la relation client. Vous assurez la coordination de projets stratégiques, le pilotage de la …",
+    "salary_raw": "",
+    "published": "2026-08-09T12:41:23Z",
     "contract_raw": "",
     "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
     "contract_type": "CDI",
-    "commute_minutes": 80,
+    "commute_minutes": null,
     "flags": [
       "Télétravail non mentionné",
       "Annonce ancienne (186 j)"
     ],
     "score": 5,
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+  },
+  {
+    "source": "Site carrière — VML",
+    "title": "Consultant.e Senior - Transformation, Marketing & Expérience Client",
+    "link": "https://job-boards.greenhouse.io/vmlenterprisesolutions/jobs/8647211002",
+    "company": "VML",
+    "location": "Paris, France",
+    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;h4&gt;&lt;strong&gt;Who We Are&lt;/strong&gt;&lt;/h4&gt;\n&lt;p&gt;WPP Enterprise Solutions designs, builds, and operates the growth systems that competitive businesses rely on. In a world where Al is reshaping how companies drive growth, we lead clients in business transformation and marketing modernization, connecting strategy directly to execution. Our 12,000 experts in engineering and platforms, commerce, consulting, content transformation, CRM, and CX work within a unified global operating unit across 40+ markets. WPP Enterprise Solutions works alongside best-in-class partners including Adobe, AWS, Braze, Google, Microsoft, Salesforce, and Shopify, as well as innovators in AI, to deliver growth solutions tailored to the needs of our clients’ businesses. VML, part of WPP, supports WPP Enterprise Solutions by helping brands activate transformation through creativity and experience.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;span data-contrast=&quot;auto&quot;&gt;Structuré autour de trois pôles — Business Consulting, Data, Technology &amp;amp; Digital — nous intervenons de bout en bout, de la vision à l’exécution, avec une forte conviction : la performance passe par une expérience client réinventée, portée par la data et l’IA.&lt;/span&gt;&lt;span data-ccp-props=&quot;{}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&lt;span data-contrast=&quot;auto&quot;&gt;Nous recrutons un&amp;nbsp;&lt;strong&gt;Consultant Senior&amp;nbsp;&lt;/strong&gt;&lt;/span&gt;&lt;strong&gt;&lt;span data-contrast=&quot;auto&quot;&gt;Transformation, Marketing &amp;amp; Expérience Client&amp;nbsp;&lt;/span&gt;&lt;/strong&gt;&lt;span data-contrast=&quot;auto&quot;&gt;pour rejoindre notre Practice Business Consulting.&lt;/span&gt;&lt;span data-ccp-props=&quot;{}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;&lt;span data-ccp-props=&quot;{}&quot;&gt;Votre mission&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;span data-contrast=&quot;auto&quot;&gt;Vous intervenez sur des projets&amp;nbsp;à fort enjeu sur des problématiques&amp;nbsp;variées&amp;nbsp;de transformation,&amp;nbsp;d’expérience client,&amp;nbsp;de CRM, d’IA,&amp;nbsp;ou encore de&amp;nbsp;change management sur des clients exigeants (luxe,&amp;nbsp;retail, services financiers, hôtellerie…), en B2C et en B2B&lt;/span&gt;&lt;span data-contrast=&quot;auto&quot;&gt; &lt;/span&gt;&lt;span data-contrast=&quot;auto&quot;&gt;:&lt;/span&gt;&lt;span data-ccp-props=&quot;{}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;span data-contrast=&quot;auto&quot;&gt;Définir la vision stratégique et les roadmaps&amp;nbsp;&lt;/span&gt;&lt;span data-ccp-props=&quot;{}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;\n&lt;li&gt;&lt;span data-contrast=&quot;auto&quot;&gt;Identifier des opportunités et use&amp;nbsp;cases innovants&amp;nbsp;&lt;/span&gt;&lt;span data-ccp-props=&quot;{}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;\n&lt;li&gt;&lt;span data-contrast=&quot;auto&quot;&gt;Concevoir des&amp;nbsp;stratégies d’engagement et des&amp;nbsp;parcours clients,&amp;nbsp;en en mesurant&amp;nbsp;les impacts&amp;nbsp;&lt;/span&gt;&lt;span data-ccp-props=&quot;{}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;\n&lt;li&gt;&lt;span data-contrast=&quot;auto&quot;&gt;Repenser&amp;nbsp;les process et les organisations, notamment&amp;nbsp;dans des contextes d’intégration de l’IA&amp;nbsp;/ de l’agentique&lt;/span&gt;&lt;span data-ccp-props=&quot;{}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;\n&lt;li&gt;&lt;span data-contrast=&quot;auto&quot;&gt;Piloter la mise en œuvre opérationnelle des initiatives, du lancement à la mise à l’échelle&amp;nbsp;&lt;/span&gt;&lt;span data-ccp-props=&quot;{}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;\n&lt;li&gt;&lt;span data-contrast=&quot;auto&quot;&gt;Accompagner les équipes clientes dans le changement et l’adoption&amp;nbsp;des outils&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span data-ccp-props=&quot;{}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;\n&lt;li&gt;&lt;span data-contrast=&quot;auto&quot;&gt;Mesurer la performance et le ROI pour assurer le succès durable&amp;nbsp;des actions déployées&lt;/span&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Votre profil&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;span data-contrast=&quot;auto&quot;&gt;Vous justifiez d’au moins 5 ans d’expérience, sur des sujets de&amp;nbsp;transformation,&amp;nbsp;change management,&amp;nbsp;marketing et expérience client, idéalement dans le conseil&amp;nbsp;&lt;/span&gt;&lt;span data-ccp-props=&quot;{}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;\n&lt;li&gt;&lt;span data-contrast=&quot;auto&quot;&gt;Vous êtes&amp;nbsp;reconnu.e&amp;nbsp;pour votre leadership, votre esprit analytique et votre capacité à synthétiser des enjeux complexes&amp;nbsp;&lt;/span&gt;&lt;span data-ccp-props=&quot;{}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;\n&lt;li&gt;&lt;span data-contrast=&quot;auto&quot;&gt;Vous disposez de solides bases méthodologiques (cadrage stratégique, définition de roadmap,&amp;nbsp;construction de use&amp;nbsp;cases,…)&lt;/span&gt;&lt;span data-ccp-props=&quot;{}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;\n&lt;li&gt;&lt;span data-contrast=&quot;auto&quot;&gt;Vous avez une bonne connaissance / appétence aux sujets d’IA&lt;/span&gt;&lt;span data-ccp-props=&quot;{}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;\n&lt;li&gt;&lt;span data-contrast=&quot;auto&quot;&gt;Vous savez vous adapter rapidement à des contextes variés&amp;nbsp;et exigeants&lt;/span&gt;&lt;span data-ccp-props=&quot;{}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;\n&lt;li&gt;&lt;span data-contrast=&quot;auto&quot;&gt;Curieux.se et proactif.ve, vous proposez des solutions innovantes pour créer de la valeur&amp;nbsp;&lt;/span&gt;&lt;span data-ccp-props=&quot;{}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;\n&lt;li&gt;&lt;span data-contrast=&quot;auto&quot;&gt;L’anglais courant est indispensable&amp;nbsp;(clients et environnements internationaux)&amp;nbsp;&lt;/span&gt;&lt;span data-ccp-props=&quot;{}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;h3&gt;&lt;span data-contrast=&quot;auto&quot;&gt;Pourquoi rejoindre WPP Enterprise Solutions&lt;/span&gt;&lt;span data-contrast=&quot;auto&quot;&gt; &lt;/span&gt;&lt;span data-contrast=&quot;auto&quot;&gt;?&lt;/span&gt;&lt;span data-ccp-props=&quot;{}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/h3&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;span data-contrast=&quot;auto&quot;&gt;Monter en compétences&amp;nbsp;rapidement en intervenant sur des projets stratégiques&amp;nbsp;diversifiés&lt;/span&gt;&lt;span data-ccp-props=&quot;{}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;\n&lt;li&gt;&lt;span data-contrast=&quot;auto&quot;&gt;Gagnez une vision 360° de l’expérience client et de la transformation&amp;nbsp;des organisations&amp;nbsp;&lt;/span&gt;&lt;span data-ccp-props=&quot;{}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;\n&lt;li&gt;&lt;span data-contrast=&quot;auto&quot;&gt;Accédez à des outils d’IA pour booster votre créativité et votre efficacité&amp;nbsp;&lt;/span&gt;&lt;span data-ccp-props=&quot;{}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;\n&lt;li&gt;&lt;span data-contrast=&quot;auto&quot;&gt;Intégrez une équipe enthousiaste, bienveillante et soudée&amp;nbsp;&lt;/span&gt;&lt;span data-ccp-props=&quot;{}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;span data-contrast=&quot;auto&quot;&gt;Vous êtes&amp;nbsp;prêt.e&amp;nbsp;à relever des défis stratégiques&amp;nbsp;au cœur des enjeux de demain&amp;nbsp;?&lt;/span&gt;&amp;nbsp;&lt;br&gt;&lt;span data-contrast=&quot;auto&quot;&gt;Postulez dès maintenant et rejoignez l’aventure WPP Enterprise Solutions&lt;/span&gt;&lt;span data-contrast=&quot;auto&quot;&gt; &lt;/span&gt;&lt;span data-contrast=&quot;auto&quot;&gt;!&lt;/span&gt;&lt;span data-ccp-props=&quot;{}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&lt;span data-ccp-props=&quot;{}&quot;&gt;#LI-EMEA&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&lt;span data-contrast=&quot;auto&quot;&gt;Poste basé à Levallois-Perret.  &lt;/span&gt;&lt;span data-ccp-props=&quot;{}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&lt;span data-contrast=&quot;auto&quot;&gt;Hybride&lt;/span&gt;&lt;span data-contrast=&quot;auto&quot;&gt; &lt;/span&gt;&lt;span data-contrast=&quot;auto&quot;&gt;: mix présentiel / télétravail. &lt;/span&gt;&lt;span data-ccp-props=&quot;{}&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&lt;span data-ccp-props=&quot;{}&quot;&gt;#LI-EMEA&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;h4&gt;&lt;strong&gt;About WPP&lt;/strong&gt;&lt;/h4&gt;\n&lt;p class=&quot;p1&quot;&gt;WPP is the trusted growth partner for the world’s leading brands. With exceptional talent, trusted data and intelligence and world-class partnerships – all united by our agentic marketing platform, WPP Open – we help clients navigate change, capture opportunity and deliver transformational growth. For more information, visit &lt;a href=&quot;http://wpp.com/&quot;&gt;&lt;span class=&quot;s1&quot;&gt;WPP.com&lt;/span&gt;&lt;/a&gt;&lt;span class=&quot;s2&quot;&gt;.&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&lt;span class=&quot;normaltextrun&quot;&gt;&lt;span lang=&quot;EN-GB&quot;&gt;WPP (VML/WPP Enterprise Solutions) is an equal opportunity employer and considers applicants for all positions without discrimination or regard to characteristics. We are committed to fostering a culture of respect in which everyone feels they belong and has the same opportunities to progress in their careers.&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;scxw176048299&quot;&gt;&lt;span lang=&quot;EN-GB&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;When you click &quot;Submit Application&quot;, this will send any information you add below to WPP (VML/WPP Enterprise Solutions). Before you do this, we think it&#39;s a good idea to read through our &lt;a href=&quot;https://www.vml.com/recruitment-privacy-policy&quot;&gt;Recruitment Privacy Policy&lt;/a&gt;. California residents should read our&amp;nbsp;&lt;a href=&quot;https://www.vml.com/california-recruitment-privacy-notice&quot;&gt;California Recruitment Privacy Notice&lt;/a&gt;. This explains what we do with your personal data when you apply for a role with us, and, how you can update the information you have provided us with or how to remove it.&lt;/p&gt;&lt;/div&gt;",
+    "published": "2026-08-07T12:33:27-04:00",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": null,
+    "flags": [
+      "Pertinence CRM à confirmer"
+    ],
+    "score": 5,
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer"
+  },
+  {
+    "source": "Site carrière — VML",
+    "title": "Consultant IA Confirmé",
+    "link": "https://job-boards.greenhouse.io/vmlenterprisesolutions/jobs/8647192002",
+    "company": "VML",
+    "location": "Paris, France",
+    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;h4&gt;&lt;strong&gt;Who We Are&lt;/strong&gt;&lt;/h4&gt;\n&lt;p&gt;WPP Enterprise Solutions designs, builds, and operates the growth systems that competitive businesses rely on. In a world where Al is reshaping how companies drive growth, we lead clients in business transformation and marketing modernization, connecting strategy directly to execution. Our 12,000 experts in engineering and platforms, commerce, consulting, content transformation, CRM, and CX work within a unified global operating unit across 40+ markets. WPP Enterprise Solutions works alongside best-in-class partners including Adobe, AWS, Braze, Google, Microsoft, Salesforce, and Shopify, as well as innovators in AI, to deliver growth solutions tailored to the needs of our clients’ businesses. VML, part of WPP, supports WPP Enterprise Solutions by helping brands activate transformation through creativity and experience.&lt;/p&gt;&lt;/div&gt;&lt;p&gt;Nous sommes réputés pour notre expertise pointue en intelligence artificielle, data science et innovation technologique. Nous accompagnons nos clients dans l’optimisation de leurs performances grâce à des solutions IA avancées, en les aidant à tirer parti des dernières avancées en machine learning, deep learning et data analytics. Dans ce contexte, nous cherchons un nouveau profil pour intervenir directement chez nos clients sur des sujets touchant à l’IA générative.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Missions :&lt;/strong&gt;&lt;br&gt;En tant que Consultant Data &amp;amp; Innovation Confirmé, vous serez en charge d’intervenir sur des projets IA complexes, de proposer les solutions adaptées aux problématiques client, et d’assurer la qualité des livrables. En tant que membre de l’équipe Innovation, vous serez aussi amené à intervenir en interne pour vulgariser et évangéliser les pratiques autour des sujets d’IA. Vos principales missions incluront, sous la supervision d’un Manager Senior IA :&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;strong&gt;Intervention sur des projets IA :&lt;/strong&gt; vous interviendrez sur des projets d’intelligence artificielle, en vous assurant de l’adéquation des solutions proposées avec les besoins client. Vous vous assurerez en outre de respecter les délais et échéances du client, ainsi que de la qualité des livrables.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Relation client et conseil stratégique : &lt;/strong&gt;vous serez le principal interlocuteur des clients pour comprendre leurs besoins et leurs enjeux métiers. Vous proposerez des solutions IA adaptées et coordonnerez les efforts pour fournir des recommandations à fort impact. Vous serez encadré d’un Manager Senior pour vous accompagner dans cette gestion de la relation client et vous aider à identifier les solutions à proposer au client.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Veille scientifique et technique :&lt;/strong&gt; vous assurerez une veille continue sur les dernières avancées scientifiques et technologiques en IA, afin d’intégrer les meilleures pratiques et solutions dans les projets.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Accompagnement et transfert de compétences :&lt;/strong&gt; vous serez également responsable de la montée en compétences de vos collaborateurs, en les formant aux outils et méthodes, tout en favorisant l’échange de connaissances scientifiques au sein de l’équipe.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Profil recherché :&lt;/strong&gt;&lt;br&gt;Nous recherchons un profil autonome, avec une solide compréhension des concepts en IA, et idéalement de premières notions en IA générative. Vous devez être capable de traduire des enjeux scientifiques complexes en solutions concrètes pour les clients.&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;strong&gt;Formation :&lt;/strong&gt; Bac +5 (école d’ingénieur, Master en IA, Data Science, ou équivalent), &lt;strong&gt;idéalement avec une spécialisation ou une thèse en IA, machine learning, deep learning, ou data science&lt;/strong&gt;.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Compétences techniques :&lt;/strong&gt; une solide maîtrise des techniques avancées en IA (machine learning, deep learning, NLP, etc.) et des outils associés (Python, TensorFlow, PyTorch, etc.). Une expérience avec des modèles complexes et des architectures de deep-learning ou d’IA générative est un atout. Des connaissances en outils et pratiques de code est appréciée (Git, CI/CD, Docker, …). Enfin, des connaissances en environnement Cloud sont un vrai plus.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Expérience :&lt;/strong&gt; idéalement une première expérience sur des projets IA dans un environnement technique ou de conseil.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Qualités recherchées :&lt;/strong&gt; excellentes capacités organisationnelles et de travail en autonomie, capacité à comprendre et traduire des enjeux métiers complexes, aptitudes à travailler en équipe dans un environnement scientifique de haut niveau.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Pourquoi rejoindre WPP Enterprise Solutions ?&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;strong&gt;Des projets à forte valeur ajoutée :&lt;/strong&gt; vous travaillerez sur des projets innovants et stratégiques, en collaborant avec des experts du domaine.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Une équipe d&#39;experts :&lt;/strong&gt; vous rejoindrez une équipe composée de docteurs et de chercheurs passionnés, avec une forte culture scientifique et une envie de repousser les limites de l’intelligence artificielle.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Développement professionnel :&lt;/strong&gt; WPP Enterprise Solutions met un point d&#39;honneur à accompagner ses collaborateurs dans leur montée en compétences techniques et leur développement personnel.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Environnement stimulant :&lt;/strong&gt; vous évoluerez dans un environnement dynamique où l&#39;innovation est au cœur de notre stratégie, et où chaque membre de l&#39;équipe a un impact direct sur les projets.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;#LI-EMEA&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;h4&gt;&lt;strong&gt;About WPP&lt;/strong&gt;&lt;/h4&gt;\n&lt;p class=&quot;p1&quot;&gt;WPP is the trusted growth partner for the world’s leading brands. With exceptional talent, trusted data and intelligence and world-class partnerships – all united by our agentic marketing platform, WPP Open – we help clients navigate change, capture opportunity and deliver transformational growth. For more information, visit &lt;a href=&quot;http://wpp.com/&quot;&gt;&lt;span class=&quot;s1&quot;&gt;WPP.com&lt;/span&gt;&lt;/a&gt;&lt;span class=&quot;s2&quot;&gt;.&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&lt;span class=&quot;normaltextrun&quot;&gt;&lt;span lang=&quot;EN-GB&quot;&gt;WPP (VML/WPP Enterprise Solutions) is an equal opportunity employer and considers applicants for all positions without discrimination or regard to characteristics. We are committed to fostering a culture of respect in which everyone feels they belong and has the same opportunities to progress in their careers.&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;scxw176048299&quot;&gt;&lt;span lang=&quot;EN-GB&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;When you click &quot;Submit Application&quot;, this will send any information you add below to WPP (VML/WPP Enterprise Solutions). Before you do this, we think it&#39;s a good idea to read through our &lt;a href=&quot;https://www.vml.com/recruitment-privacy-policy&quot;&gt;Recruitment Privacy Policy&lt;/a&gt;. California residents should read our&amp;nbsp;&lt;a href=&quot;https://www.vml.com/california-recruitment-privacy-notice&quot;&gt;California Recruitment Privacy Notice&lt;/a&gt;. This explains what we do with your personal data when you apply for a role with us, and, how you can update the information you have provided us with or how to remove it.&lt;/p&gt;&lt;/div&gt;",
+    "published": "2026-08-07T12:33:27-04:00",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": null,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné"
+    ],
+    "score": 5,
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
+  },
+  {
+    "source": "France Travail",
+    "title": "Chargé(e) de développement commercial export (H/F)",
+    "link": "https://candidat.francetravail.fr/offres/recherche/detail/211SQYB",
+    "company": "DJ CAR",
+    "location": "94 - VILLENEUVE LE ROI (94290)",
+    "description": "À PROPOS DE DJ CAR\nDJ CAR est une entreprise spécialisée dans l'achat, la vente, l'importation et l'exportation de véhicules. Dans le cadre du développement de son activité à l'international, notamment sur les marchés algérien et tunisien, DJ CAR recrute un(e) Chargé(e) de Développement Commercial Export.\n\nPOURQUOI NOUS REJOINDRE ?\n- Un rôle clé à fort impact : Soyez au cœur du développement international d'une structure ambitieuse et réactive sur un secteur automobile très dynamique.\n- Autonomie & responsabilité : Gérez vos marchés et votre portefeuille clients de A à Z avec une réelle marge de manœuvre sur le terrain.\n- Projets stimulants : Participez activement à l'expansion de l'entreprise sur des marchés cibles stratégiques en forte croissance. \n\nMISSION PRINCIPALE \nDévelopper l'activité commerciale export, prospecter de nouveaux clients, fidéliser les partenaires et assurer le suivi commercial, administratif et logistique des opérations d'import-export de véhicules.\n\nMISSIONS \n- Prospecter et développer un portefeuille de clients à l'international.\n- Développer les marchés export prioritaires de l'entreprise, notamment l'Algérie et la Tunisie.\n- Élaborer les devis et négocier les offres commerciales.\n- Assurer le suivi des commandes jusqu'à la livraison.\n- Préparer les documents administratifs et douaniers liés aux opérations d'export.\n- Coordonner les échanges avec les transitaires, transporteurs et partenaires.\n-  Assurer une veille commerciale et concurrentielle. Participer aux déplacements et salons professionnels.\n\nPROFIL RECHERCHÉ \n- Formation Bac+3 à Bac+5 en Commerce International, Développement Commercial ou équivalent. Une expérience significative peut remplacer le niveau de diplôme.\n- Expérience de 1 à 2 ans en développement commercial export souhaitée.\n- Une expérience dans le domaine de l'import-export de véhicules est fortement appréciée.\n- Une bonne connaissance des marchés algérien et tunisien constitue un atout.\n- Excellente maîtrise des techniques de prospection, de négociation et de fidélisation.\n- Bonne connaissance des procédures administratives, douanières et logistiques liées à l'export.\n- Maîtrise du Pack Office et des outils de gestion commerciale (CRM).\n- Langue arabe exigée pour communiquer avec les clients étrangers\n- Excellentes capacités relationnelles et rédactionnelles.\n- Autonomie, rigueur et sens de l'organisation.",
+    "salary_raw": "Mensuel de 2805.0 Euros sur 12 mois",
+    "published": "2026-07-27T19:42:28.271Z",
+    "contract_type": "CDI",
+    "telework_days": null,
+    "in_france": true,
+    "commute_minutes": 84,
+    "flags": [
+      "Customer Success / Account mgmt ?",
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné"
+    ],
+    "score": 4,
     "score_reasons": [
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (80 min)"
+      "Trajet long (84 min)"
     ],
     "recommendation": "à_revoir",
     "recommendation_reason": "À vérifier : Télétravail non mentionné ; Annonce ancienne (186 j)"
   },
   {
     "source": "Adzuna",
-    "title": "Manager Delivery Martech H/F",
-    "link": "https://www.adzuna.fr/details/5793877776?utm_medium=api&utm_source=707eaaff",
-    "company": "Accenture France",
+    "title": "Consultante / Consultant CRM Siebel",
+    "link": "https://www.adzuna.fr/details/5821094566?utm_medium=api&utm_source=707eaaff",
+    "company": "Capgemini",
+    "location": "Hauts-de-Seine, Ile-de-France",
+    "description": "En tant qu'organisateur de forums de recrutement, Talents Handicap accompagne de très nombreuses entreprises & organisations en France dans leurs recrutements de collaborateurs en situation de handicap. Participant actuellement à l'un de nos forums. L'entreprise Capgemini recherche actuellement des profils : Votre mission Maitriser les différents environnements CRM Siebel (Siebel TOOLS > BC techniques, VBC, Business Services eScript) Participer au recueil du besoin et jusqu’à la conception / mo…",
+    "salary_raw": "43000-52000 €",
+    "published": "2026-07-30T14:04:11Z",
+    "contract_raw": "",
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": 109,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Conseil / ESN — télétravail dépendant de la mission ?",
+      "Télétravail non mentionné",
+      "Trajet long (109 min)"
+    ],
+    "score": 4,
+    "score_reasons": [
+      "Trajet long (109 min)"
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 109 min et pas 100 % télétravail"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Automotive Enterprise Account Director",
+    "link": "https://www.adzuna.fr/details/5785329128?utm_medium=api&utm_source=707eaaff",
+    "company": "MotorK",
     "location": "Paris, Ile-de-France",
-    "description": "Au sein de la practice Marketing d'Accenture Song, vous êtes le garant de la qualité et de la bonne livraison des projets d'implémentation de solutions Martech chez nos clients grands comptes (retail, luxe, FMCG, services financiers, télécoms). Vous pilotez les chantiers de déploiement de plateformes Marketing Automation, CDP, CMS, DAM, Programme de fidelite et outils de gestion de workflow marketing, de la phase de cadrage jusqu'à la mise en production. Véritable chef d'orchestre entre les équ…",
+    "description": "MotorK. Driving the AI revolution in automotive. MotorK is Europe's leading sales and marketing technology company for the automotive sector. We build AI-powered tools: from CRM and inventory management to predictive analytics and digital advertising, that help manufacturers and dealerships sell smarter. 90% of European automotive manufacturers run on our SparK Platform, alongside 6,000 dealerships across the continent. AI isn't a buzzword here. It's the engine behind every product decision we …",
     "salary_raw": "",
-    "published": "2026-07-09T10:11:01Z",
+    "published": "2026-07-02T12:36:39Z",
     "contract_raw": "",
     "salary_extracted": null,
     "telework_days": null,
@@ -782,16 +1160,42 @@
     "contract_type": null,
     "commute_minutes": 80,
     "flags": [
-      "Conseil / ESN — télétravail dépendant de la mission ?",
+      "Pertinence CRM à confirmer",
+      "Séniorité / management d'équipe ?",
       "Télétravail non mentionné"
     ],
-    "score": 5,
+    "score": 4,
     "score_reasons": [
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
       "Trajet long (80 min)"
     ],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Conseil / ESN — télétravail dépendant de la mission ? ; Télétravail non mentionné"
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Séniorité / management d'équipe ? ; Télétravail non mentionné"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Field Sales Executive - SaaS industry",
+    "link": "https://www.adzuna.fr/details/5814122052?utm_medium=api&utm_source=707eaaff",
+    "company": "MotorK",
+    "location": "Paris, Ile-de-France",
+    "description": "MotorK. Driving the AI revolution in automotive. MotorK is Europe's leading sales and marketing technology company for the automotive sector. We build AI-powered tools: from CRM and inventory management to predictive analytics and digital advertising, that help manufacturers and dealerships sell smarter and deliver better customer experiences. 90% of European automotive manufacturers run on our SparK Platform, alongside 6,000 dealerships across the continent. We move fast, we think big, and AI …",
+    "salary_raw": "",
+    "published": "2026-07-24T18:58:01Z",
+    "contract_raw": "",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": 80,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné"
+    ],
+    "score": 4,
+    "score_reasons": [
+      "Trajet long (80 min)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
     "source": "Adzuna",

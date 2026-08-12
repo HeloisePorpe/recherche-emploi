@@ -17,6 +17,7 @@ import unicodedata
 import feedparser
 import requests
 import json
+import urllib.parse
 import time
 import re
 import smtplib
@@ -154,31 +155,46 @@ def fetch_francetravail_jobs():
                # Élargissement (demande Héloïse)
                "marketing direct", "emailing", "email", "consultant CRM",
                "emarsys", "adobe campaign"]:
-        try:
-            r = requests.get(
-                "https://api.francetravail.io/partenaire/offresdemploi/v2/offres/search",
-                headers=headers,
-                params={"motsCles": kw, "typeContrat": "CDI",
-                        "region": "11", "range": "0-49"},
-                timeout=15,
-            )
-            r.raise_for_status()
-            for o in r.json().get("resultats", []):
-                lieu = o.get("lieuTravail", {})
-                all_jobs.append({
-                    "source": "France Travail",
-                    "title": o.get("intitule", ""),
-                    "link": o.get("origineOffre", {}).get("urlOrigine", ""),
-                    "company": o.get("entreprise", {}).get("nom", ""),
-                    "location": f"{lieu.get('libelle', '')} ({lieu.get('codePostal', '')})",
-                    "description": o.get("description", ""),
-                    "salary_raw": o.get("salaire", {}).get("libelle", ""),
-                    "published": o.get("dateCreation", ""),
-                    "contract_type": "CDI",  # requête typeContrat=CDI
-                })
-            time.sleep(0.5)
-        except Exception as ex:
-            print(f"     ERREUR '{kw}': {ex}")
+        # France Travail throttle quand on enchaîne trop de mots-clés : la réponse
+        # revient vide (ou 429). On réessaie une fois avec un petit délai, et on
+        # traite 204 (aucun résultat) comme un cas normal, pas une erreur.
+        resultats = []
+        for attempt in range(2):
+            try:
+                r = requests.get(
+                    "https://api.francetravail.io/partenaire/offresdemploi/v2/offres/search",
+                    headers=headers,
+                    params={"motsCles": kw, "typeContrat": "CDI",
+                            "region": "11", "range": "0-49"},
+                    timeout=15,
+                )
+                if r.status_code == 204:      # aucun résultat pour ce mot-clé
+                    break
+                if r.status_code == 429 or not r.content:   # throttling / réponse vide
+                    time.sleep(2 * (attempt + 1))
+                    continue
+                r.raise_for_status()
+                resultats = r.json().get("resultats", []) or []
+                break
+            except Exception as ex:
+                if attempt == 0:
+                    time.sleep(2)
+                    continue
+                print(f"     ERREUR '{kw}': {ex}")
+        for o in resultats:
+            lieu = o.get("lieuTravail", {})
+            all_jobs.append({
+                "source": "France Travail",
+                "title": o.get("intitule", ""),
+                "link": o.get("origineOffre", {}).get("urlOrigine", ""),
+                "company": o.get("entreprise", {}).get("nom", ""),
+                "location": f"{lieu.get('libelle', '')} ({lieu.get('codePostal', '')})",
+                "description": o.get("description", ""),
+                "salary_raw": o.get("salaire", {}).get("libelle", ""),
+                "published": o.get("dateCreation", ""),
+                "contract_type": "CDI",  # requête typeContrat=CDI
+            })
+        time.sleep(0.8)   # espace un peu plus les requêtes (throttling FT)
 
     unique = _dedup(all_jobs)
     print(f"     {len(unique)} offres uniques")
@@ -302,6 +318,16 @@ _TITLE_EXCLUDE_ENG = re.compile(r'\b(engineer|ing[ée]nieur)\b', re.I)
 # Salesforce et Microsoft Dynamics (postes trop centrés sur l'outil).
 _TITLE_EXCLUDE_TOOL = re.compile(
     r'\bsalesforce\b|\b(?:microsoft |ms )?dynamics(?:\s*(?:365|crm))?\b', re.I)
+# Rôles hors cible à écarter QUAND ils sont dans le titre (demande Héloïse) :
+# développeur/developer, conseiller, directeur/director, sales, commercial/commerce.
+# Précautions : ne matche PAS « e-commerce » (offres CRM e-commerce gardées),
+# ni « marketing direct » (mot-clé voulu), ni « Salesforce » (pas de \bsales\b).
+_TITLE_EXCLUDE_ROLE = re.compile(
+    r'\bd[ée]veloppeur(?:s|euse)?\b|\bdeveloper\b|'
+    r'\bconseill(?:er|ers|[èe]re|[èe]res)\b|'
+    r'\bdirect(?:eur|rice|or)\b|'
+    r'\bsales\b|'
+    r'\bcommercial(?:e|es|aux)?\b|(?<!e-)\bcommerce\b', re.I)
 
 _MEDICAL_COMPANIES = ["abbott", "boston scientific", "medtronic", "biotronik",
                       "livanova", "microport"]
@@ -610,6 +636,8 @@ def screen_offer(job):
         return True, "Titre exclu (engineer)", flags
     if _TITLE_EXCLUDE_TOOL.search(title):
         return True, "Titre exclu (Salesforce / Microsoft Dynamics)", flags
+    if _TITLE_EXCLUDE_ROLE.search(title):
+        return True, "Titre exclu (développeur / conseiller / directeur / sales / commercial)", flags
     if (job.get("contract_type") == "CDD" or job.get("contract_excluded")
             or _CONTRACT_EXCLUDE.search(text)):
         return True, "Contrat exclu (CDD / freelance / intérim)", flags
@@ -913,64 +941,92 @@ def fetch_themuse_jobs():
     return unique
 
 
+# Config Algolia PUBLIQUE de Welcome to the Jungle (embarquée dans leur front,
+# stable de longue date). Valeurs par défaut connues + découverte au runtime pour
+# suivre une éventuelle rotation. app id `CSEKHVMS53`, index CMS `wk_cms_jobs_production`.
+_WTTJ_ALGOLIA_APP = "CSEKHVMS53"
+_WTTJ_ALGOLIA_KEY = "4bd8f6215d0cc52b26430765769e65a0"
+_WTTJ_ALGOLIA_INDEX = "wk_cms_jobs_production"
+
+
 def _wttj_algolia_config():
-    """Découvre au runtime l'App ID, la clé de recherche et l'index Algolia
-    de Welcome to the Jungle (valeurs publiques embarquées dans leur front)."""
+    """App ID / clé de recherche / index Algolia de WTTJ. Part des valeurs publiques
+    connues, puis tente de les rafraîchir depuis le front (si elles ont tourné)."""
+    app, key, index = _WTTJ_ALGOLIA_APP, _WTTJ_ALGOLIA_KEY, _WTTJ_ALGOLIA_INDEX
     try:
         r = requests.get("https://www.welcometothejungle.com/fr/jobs",
                          headers={"User-Agent": "Mozilla/5.0"}, timeout=15)
         html = r.text
-        app = re.search(r'algolia[^"\']{0,25}app(?:lication)?[_-]?id["\']?\s*[:=]\s*["\']([A-Z0-9]{8,12})', html, re.I)
-        key = re.search(r'algolia[^"\']{0,30}(?:api[_-]?)?key[^"\']{0,12}["\']?\s*[:=]\s*["\']([a-f0-9]{24,})', html, re.I)
-        idx = re.search(r'["\'](wk_[a-z0-9_]+|[a-z_]*jobs[a-z_]*prod[a-z_]*)["\']', html, re.I)
-        if app and key and idx:
-            return app.group(1), key.group(1), idx.group(1)
-        print("     WTTJ : identifiants Algolia non trouvés dans la page")
+        m_app = re.search(r'app(?:lication)?[_-]?id["\']?\s*[:=]\s*["\']([A-Z0-9]{8,12})["\']', html, re.I)
+        m_key = re.search(r'(?:search[_-]?)?api[_-]?key["\']?\s*[:=]\s*["\']([a-f0-9]{32})["\']', html, re.I)
+        m_idx = re.search(r'["\'](wk_[a-z0-9_]*jobs[a-z0-9_]*prod[a-z0-9_]*)["\']', html, re.I)
+        if m_app:
+            app = m_app.group(1)
+        if m_key:
+            key = m_key.group(1)
+        if m_idx:
+            index = m_idx.group(1)
     except Exception as ex:
-        print(f"     WTTJ config error : {ex}")
-    return None
+        print(f"     WTTJ : découverte Algolia échouée ({ex}) — valeurs par défaut")
+    return app, key, index
 
 
 def fetch_wttj_jobs():
-    """Welcome to the Jungle via son index Algolia public (best-effort, zone grise CGU)."""
+    """Welcome to the Jungle via son index Algolia public (best-effort, zone grise CGU).
+    Beaucoup de postes CRM de startups/scale-ups ne vivent que sur WTTJ."""
     print("  → Welcome to the Jungle (Algolia)...")
-    cfg = _wttj_algolia_config()
-    if not cfg:
-        return []
-    app, key, index = cfg
-    jobs = []
-    for q in ["CRM", "campaign manager", "marketing automation", "email marketing"]:
+    app, key, index = _wttj_algolia_config()
+    jobs, raw_total = [], 0
+    for q in ["CRM", "campaign manager", "marketing automation", "email marketing",
+              "chef de projet CRM", "marketing direct", "emailing"]:
         try:
+            params = urllib.parse.urlencode({"query": q, "hitsPerPage": 40})
+            # La clé de recherche publique de WTTJ est restreinte à leur domaine
+            # (referer) → sans Referer/Origin, Algolia renvoie 403. On les fournit.
             r = requests.post(
-                f"https://{app}-dsn.algolia.net/1/indexes/{index}/query",
+                f"https://{app.lower()}-dsn.algolia.net/1/indexes/{index}/query",
                 headers={"X-Algolia-Application-Id": app, "X-Algolia-API-Key": key,
-                         "Content-Type": "application/json"},
-                json={"params": f"query={q}&hitsPerPage=40"},
+                         "Content-Type": "application/json",
+                         "Referer": "https://www.welcometothejungle.com/",
+                         "Origin": "https://www.welcometothejungle.com",
+                         "X-Algolia-Agent": "Algolia for JavaScript (4.23.3); Browser",
+                         "User-Agent": "Mozilla/5.0"},
+                json={"params": params},
                 timeout=15)
             r.raise_for_status()
-            for h in r.json().get("hits", []):
-                org = h.get("organization", {}) or {}
-                offices = h.get("offices", []) or []
+            hits = r.json().get("hits", [])
+            raw_total += len(hits)
+            for h in hits:
+                org = h.get("organization") or {}
+                offices = h.get("offices") or []
                 o0 = offices[0] if offices else {}
                 loc = ", ".join(x for x in [o0.get("city", ""), o0.get("country", "")] if x) or "France"
-                slug, oslug = h.get("slug", ""), org.get("slug", "")
+                slug = h.get("slug") or ""
+                oslug = org.get("slug") or ""
                 link = (f"https://www.welcometothejungle.com/fr/companies/{oslug}/jobs/{slug}"
                         if oslug and slug else "")
                 jobs.append({
                     "source": "Welcome to the Jungle",
-                    "title": h.get("name", ""),
+                    "title": h.get("name") or h.get("title") or "",
                     "link": link,
-                    "company": org.get("name", ""),
+                    "company": org.get("name") or h.get("organization_name") or "",
                     "location": loc,
-                    "description": h.get("description", "") or "",
-                    "published": h.get("published_at", ""),
+                    "description": h.get("description") or h.get("profile") or "",
+                    "published": h.get("published_at") or "",
                 })
             time.sleep(0.3)
         except Exception as ex:
-            print(f"     ERREUR WTTJ '{q}' : {ex}")
-    jobs = [j for j in jobs if is_relevant(j)]
+            body = ""
+            resp = getattr(ex, "response", None)
+            if resp is not None:
+                try:
+                    body = " | " + resp.text[:180]
+                except Exception:
+                    body = ""
+            print(f"     ERREUR WTTJ '{q}' : {ex}{body}")
+    jobs = [j for j in jobs if j.get("title") and is_relevant(j)]
     unique = _dedup(jobs)
-    print(f"     {len(unique)} offres pertinentes")
+    print(f"     {len(unique)} offres pertinentes (sur {raw_total} hits Algolia)")
     return unique
 
 
