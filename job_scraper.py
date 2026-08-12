@@ -155,31 +155,46 @@ def fetch_francetravail_jobs():
                # Élargissement (demande Héloïse)
                "marketing direct", "emailing", "email", "consultant CRM",
                "emarsys", "adobe campaign"]:
-        try:
-            r = requests.get(
-                "https://api.francetravail.io/partenaire/offresdemploi/v2/offres/search",
-                headers=headers,
-                params={"motsCles": kw, "typeContrat": "CDI",
-                        "region": "11", "range": "0-49"},
-                timeout=15,
-            )
-            r.raise_for_status()
-            for o in r.json().get("resultats", []):
-                lieu = o.get("lieuTravail", {})
-                all_jobs.append({
-                    "source": "France Travail",
-                    "title": o.get("intitule", ""),
-                    "link": o.get("origineOffre", {}).get("urlOrigine", ""),
-                    "company": o.get("entreprise", {}).get("nom", ""),
-                    "location": f"{lieu.get('libelle', '')} ({lieu.get('codePostal', '')})",
-                    "description": o.get("description", ""),
-                    "salary_raw": o.get("salaire", {}).get("libelle", ""),
-                    "published": o.get("dateCreation", ""),
-                    "contract_type": "CDI",  # requête typeContrat=CDI
-                })
-            time.sleep(0.5)
-        except Exception as ex:
-            print(f"     ERREUR '{kw}': {ex}")
+        # France Travail throttle quand on enchaîne trop de mots-clés : la réponse
+        # revient vide (ou 429). On réessaie une fois avec un petit délai, et on
+        # traite 204 (aucun résultat) comme un cas normal, pas une erreur.
+        resultats = []
+        for attempt in range(2):
+            try:
+                r = requests.get(
+                    "https://api.francetravail.io/partenaire/offresdemploi/v2/offres/search",
+                    headers=headers,
+                    params={"motsCles": kw, "typeContrat": "CDI",
+                            "region": "11", "range": "0-49"},
+                    timeout=15,
+                )
+                if r.status_code == 204:      # aucun résultat pour ce mot-clé
+                    break
+                if r.status_code == 429 or not r.content:   # throttling / réponse vide
+                    time.sleep(2 * (attempt + 1))
+                    continue
+                r.raise_for_status()
+                resultats = r.json().get("resultats", []) or []
+                break
+            except Exception as ex:
+                if attempt == 0:
+                    time.sleep(2)
+                    continue
+                print(f"     ERREUR '{kw}': {ex}")
+        for o in resultats:
+            lieu = o.get("lieuTravail", {})
+            all_jobs.append({
+                "source": "France Travail",
+                "title": o.get("intitule", ""),
+                "link": o.get("origineOffre", {}).get("urlOrigine", ""),
+                "company": o.get("entreprise", {}).get("nom", ""),
+                "location": f"{lieu.get('libelle', '')} ({lieu.get('codePostal', '')})",
+                "description": o.get("description", ""),
+                "salary_raw": o.get("salaire", {}).get("libelle", ""),
+                "published": o.get("dateCreation", ""),
+                "contract_type": "CDI",  # requête typeContrat=CDI
+            })
+        time.sleep(0.8)   # espace un peu plus les requêtes (throttling FT)
 
     unique = _dedup(all_jobs)
     print(f"     {len(unique)} offres uniques")
