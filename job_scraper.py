@@ -33,10 +33,10 @@ _config_path = os.path.join(os.path.dirname(__file__), "config.json")
 with open(_config_path, encoding="utf-8") as _f:
     CONFIG = json.load(_f)
 
-CONFIG.setdefault("penalized_sectors", [
-    "automobile", "automotive", "renault", "peugeot", "stellantis",
-    "citroën", "toyota", "volkswagen", "bmw", "mercedes", "diac",
-])
+# Aucun secteur n'est exclu ni pénalisé (choix d'Héloïse) : une annonce CRM
+# pertinente dans l'automobile — ou tout autre secteur — doit remonter
+# normalement, sur ses seuls mérites CRM.
+CONFIG.setdefault("penalized_sectors", [])
 CONFIG.setdefault("preferred_sectors", [
     "banque", "bank", "assurance", "insurance", "finance",
     "axa", "bnp", "société générale", "crédit", "allianz",
@@ -376,10 +376,6 @@ _STAFFING_COMPANIES = ["kicklox", "synopsia", "lineup7", "line up 7", "viseo",
                        "colombus consulting"]
 _STAFFING_TERMS = re.compile(r'\besn\b|staffing|portage salarial|r[ée]gie', re.I)
 
-_AUTO_TERMS = re.compile(
-    r'automobile|automotive|concession(?:naire)?|dealership|\bdms\b|'
-    r'[ée]quipementier auto|editions techniques pour l.automobile', re.I)
-
 _SPECIFIC_ESP = re.compile(
     r'marketo|salesforce marketing cloud|\bsfmc\b|braze|klaviyo|veeva|iterable|responsys', re.I)
 _NICHE_SECTOR = re.compile(
@@ -630,8 +626,7 @@ def screen_offer(job):
         return True, "CRM clienteling / boutique (présentiel)", flags
     if _RETAIL_TERMS.search(text):
         return True, "CRM = caisse / magasin", flags
-    if _AUTO_TERMS.search(text):
-        return True, "Secteur automobile", flags
+    # NB : aucune exclusion sectorielle (automobile inclus) — choix d'Héloïse.
     if _NO_REMOTE.search(text):
         return True, "Présentiel / pas de télétravail", flags
     tw = job.get("telework_days")
