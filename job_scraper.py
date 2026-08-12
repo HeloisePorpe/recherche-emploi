@@ -303,6 +303,16 @@ _TITLE_EXCLUDE_ENG = re.compile(r'\b(engineer|ing[ée]nieur)\b', re.I)
 # Salesforce et Microsoft Dynamics (postes trop centrés sur l'outil).
 _TITLE_EXCLUDE_TOOL = re.compile(
     r'\bsalesforce\b|\b(?:microsoft |ms )?dynamics(?:\s*(?:365|crm))?\b', re.I)
+# Rôles hors cible à écarter QUAND ils sont dans le titre (demande Héloïse) :
+# développeur/developer, conseiller, directeur/director, sales, commercial/commerce.
+# Précautions : ne matche PAS « e-commerce » (offres CRM e-commerce gardées),
+# ni « marketing direct » (mot-clé voulu), ni « Salesforce » (pas de \bsales\b).
+_TITLE_EXCLUDE_ROLE = re.compile(
+    r'\bd[ée]veloppeur(?:s|euse)?\b|\bdeveloper\b|'
+    r'\bconseill(?:er|ers|[èe]re|[èe]res)\b|'
+    r'\bdirect(?:eur|rice|or)\b|'
+    r'\bsales\b|'
+    r'\bcommercial(?:e|es|aux)?\b|(?<!e-)\bcommerce\b', re.I)
 
 _MEDICAL_COMPANIES = ["abbott", "boston scientific", "medtronic", "biotronik",
                       "livanova", "microport"]
@@ -611,6 +621,8 @@ def screen_offer(job):
         return True, "Titre exclu (engineer)", flags
     if _TITLE_EXCLUDE_TOOL.search(title):
         return True, "Titre exclu (Salesforce / Microsoft Dynamics)", flags
+    if _TITLE_EXCLUDE_ROLE.search(title):
+        return True, "Titre exclu (développeur / conseiller / directeur / sales / commercial)", flags
     if (job.get("contract_type") == "CDD" or job.get("contract_excluded")
             or _CONTRACT_EXCLUDE.search(text)):
         return True, "Contrat exclu (CDD / freelance / intérim)", flags
