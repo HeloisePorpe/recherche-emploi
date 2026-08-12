@@ -954,10 +954,16 @@ def fetch_wttj_jobs():
               "chef de projet CRM", "marketing direct", "emailing"]:
         try:
             params = urllib.parse.urlencode({"query": q, "hitsPerPage": 40})
+            # La clé de recherche publique de WTTJ est restreinte à leur domaine
+            # (referer) → sans Referer/Origin, Algolia renvoie 403. On les fournit.
             r = requests.post(
                 f"https://{app.lower()}-dsn.algolia.net/1/indexes/{index}/query",
                 headers={"X-Algolia-Application-Id": app, "X-Algolia-API-Key": key,
-                         "Content-Type": "application/json"},
+                         "Content-Type": "application/json",
+                         "Referer": "https://www.welcometothejungle.com/",
+                         "Origin": "https://www.welcometothejungle.com",
+                         "X-Algolia-Agent": "Algolia for JavaScript (4.23.3); Browser",
+                         "User-Agent": "Mozilla/5.0"},
                 json={"params": params},
                 timeout=15)
             r.raise_for_status()
@@ -983,7 +989,14 @@ def fetch_wttj_jobs():
                 })
             time.sleep(0.3)
         except Exception as ex:
-            print(f"     ERREUR WTTJ '{q}' : {ex}")
+            body = ""
+            resp = getattr(ex, "response", None)
+            if resp is not None:
+                try:
+                    body = " | " + resp.text[:180]
+                except Exception:
+                    body = ""
+            print(f"     ERREUR WTTJ '{q}' : {ex}{body}")
     jobs = [j for j in jobs if j.get("title") and is_relevant(j)]
     unique = _dedup(jobs)
     print(f"     {len(unique)} offres pertinentes (sur {raw_total} hits Algolia)")
