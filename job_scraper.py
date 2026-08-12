@@ -33,10 +33,10 @@ _config_path = os.path.join(os.path.dirname(__file__), "config.json")
 with open(_config_path, encoding="utf-8") as _f:
     CONFIG = json.load(_f)
 
-CONFIG.setdefault("penalized_sectors", [
-    "automobile", "automotive", "renault", "peugeot", "stellantis",
-    "citroën", "toyota", "volkswagen", "bmw", "mercedes", "diac",
-])
+# Aucun secteur n'est exclu ni pénalisé (choix d'Héloïse) : une annonce CRM
+# pertinente dans l'automobile — ou tout autre secteur — doit remonter
+# normalement, sur ses seuls mérites CRM.
+CONFIG.setdefault("penalized_sectors", [])
 CONFIG.setdefault("preferred_sectors", [
     "banque", "bank", "assurance", "insurance", "finance",
     "axa", "bnp", "société générale", "crédit", "allianz",
@@ -150,7 +150,10 @@ def fetch_francetravail_jobs():
     all_jobs = []
     for kw in ["CRM manager", "responsable CRM", "chef de projet CRM", "chargé CRM",
                "campaign manager", "marketing automation", "email marketing",
-               "lifecycle marketing", "responsable marketing CRM", "CRM télétravail"]:
+               "lifecycle marketing", "responsable marketing CRM", "CRM télétravail",
+               # Élargissement (demande Héloïse)
+               "marketing direct", "emailing", "email", "consultant CRM",
+               "emarsys", "adobe campaign"]:
         try:
             r = requests.get(
                 "https://api.francetravail.io/partenaire/offresdemploi/v2/offres/search",
@@ -195,7 +198,10 @@ def fetch_adzuna_jobs():
     all_jobs = []
     keywords = ["CRM manager", "responsable CRM", "campaign manager", "chef de projet CRM",
                 "marketing automation", "email marketing", "lifecycle marketing",
-                "CRM télétravail", "campaign manager remote"]
+                "CRM télétravail", "campaign manager remote",
+                # Élargissement (demande Héloïse)
+                "marketing direct", "emailing", "email", "consultant CRM",
+                "emarsys", "adobe campaign"]
     for kw in keywords:
         for page in (1, 2):  # 2 pages par mot-clé
             try:
@@ -282,6 +288,7 @@ _COMP_SCAM_RE = re.compile(
 # Titres toujours exclus (statut / niveau), quel que soit le reste.
 _TITLE_EXCLUDE_HARD = re.compile(
     r'\b(alternance|alternant[e]?|apprenti[e]?|apprentissage|stage|stagiaire|'
+    r'praktikum|'
     r'internship|intern|cdd|freelance|free-lance|int[ée]rim|vacataire|contractor|'
     r'fixed[- ]term|temporaire|'
     # Équivalents anglais de l'alternance / apprentissage / formation en entreprise.
@@ -291,6 +298,10 @@ _TITLE_EXCLUDE_HARD = re.compile(
     r'graduate (?:scheme|programme|program|trainee)|vocational training)\b', re.I)
 # Engineer / ingénieur : exclu sauf si le titre parle explicitement de marketing.
 _TITLE_EXCLUDE_ENG = re.compile(r'\b(engineer|ing[ée]nieur)\b', re.I)
+# Outils très spécialisés à écarter QUAND ils sont dans le titre (demande Héloïse) :
+# Salesforce et Microsoft Dynamics (postes trop centrés sur l'outil).
+_TITLE_EXCLUDE_TOOL = re.compile(
+    r'\bsalesforce\b|\b(?:microsoft |ms )?dynamics(?:\s*(?:365|crm))?\b', re.I)
 
 _MEDICAL_COMPANIES = ["abbott", "boston scientific", "medtronic", "biotronik",
                       "livanova", "microport"]
@@ -375,10 +386,6 @@ _STAFFING_COMPANIES = ["kicklox", "synopsia", "lineup7", "line up 7", "viseo",
                        "avanade", "sopra", "accenture", "wavestone", "colombus",
                        "colombus consulting"]
 _STAFFING_TERMS = re.compile(r'\besn\b|staffing|portage salarial|r[ée]gie', re.I)
-
-_AUTO_TERMS = re.compile(
-    r'automobile|automotive|concession(?:naire)?|dealership|\bdms\b|'
-    r'[ée]quipementier auto|editions techniques pour l.automobile', re.I)
 
 _SPECIFIC_ESP = re.compile(
     r'marketo|salesforce marketing cloud|\bsfmc\b|braze|klaviyo|veeva|iterable|responsys', re.I)
@@ -601,6 +608,8 @@ def screen_offer(job):
         return True, "Titre exclu (alternance / stage / CDD / freelance)", flags
     if _TITLE_EXCLUDE_ENG.search(title) and "marketing" not in tl:
         return True, "Titre exclu (engineer)", flags
+    if _TITLE_EXCLUDE_TOOL.search(title):
+        return True, "Titre exclu (Salesforce / Microsoft Dynamics)", flags
     if (job.get("contract_type") == "CDD" or job.get("contract_excluded")
             or _CONTRACT_EXCLUDE.search(text)):
         return True, "Contrat exclu (CDD / freelance / intérim)", flags
@@ -630,8 +639,7 @@ def screen_offer(job):
         return True, "CRM clienteling / boutique (présentiel)", flags
     if _RETAIL_TERMS.search(text):
         return True, "CRM = caisse / magasin", flags
-    if _AUTO_TERMS.search(text):
-        return True, "Secteur automobile", flags
+    # NB : aucune exclusion sectorielle (automobile inclus) — choix d'Héloïse.
     if _NO_REMOTE.search(text):
         return True, "Présentiel / pas de télétravail", flags
     tw = job.get("telework_days")
@@ -1219,6 +1227,13 @@ _CAREER_COMPANIES = [
     # un board SmartRecruiters public → surveillé directement. Toute future offre
     # CRM chez Sodexo apparaîtra automatiquement.
     {"name": "Sodexo", "slug": "sodexo", "ats": "smartrecruiters"},
+    # Agences / cabinets data-CRM (beaucoup de postes CRM/campagnes en IDF).
+    # VML (ex-twentysix/Wunderman) confirmé sur Greenhouse ; Converteo & Cartelis
+    # testés (probe tous les ATS). is_relevant ne garde que le CRM/marketing.
+    {"name": "VML", "slug": "vmlenterprisesolutions", "ats": "greenhouse",
+     "slugs": ["vml", "vmlenterprisesolutions", "wundermanthompson"]},
+    {"name": "Converteo", "slug": "converteo", "slugs": ["converteo"]},
+    {"name": "Cartelis", "slug": "cartelis", "slugs": ["cartelis"]},
     # NB : 16 autres employeurs proches ont été testés (Carrefour, CEA, McDonald's,
     # Bruneau, Horiba, Servier, EDF, Nokia, Mondelez, Lidl, Ericsson, Bouygues
     # Construction, Dassault Systèmes, Eiffage, MBDA, Colas) — AUCUN n'expose d'ATS

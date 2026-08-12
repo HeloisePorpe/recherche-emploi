@@ -154,7 +154,7 @@ Gmail dédiée (`heloise.emploi@gmail.com`), via IMAP (`fetch_email_alerts`) :
     **Qonto, Dataiku, Havas, PowerPlay, 360Learning**) ; **Alan / Doctolib exclus
     sauf titre CRM/lifecycle explicite** ; **disciplines adjacentes** (social media,
     ad-ops/programmatique, PMO stratégique, RH-ops — §2) ; freelance
-    marketplace (« I will… ») ; CRM = caisse ; automobile ; présentiel explicite /
+    marketplace (« I will… ») ; CRM = caisse ; présentiel explicite /
     pas de télétravail ; résidence US ou hors France obligatoire ; **télétravail /
     localisation dans un pays étranger précis** (UK, Allemagne, Espagne… ; « remote
     from UK ») — les zones larges Europe/EMEA/worldwide/anywhere restent acceptées ;
