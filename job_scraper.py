@@ -2793,34 +2793,44 @@ def run():
             job["expired"] = True
             time.sleep(0.2)
 
-        # Trajet : inutile pour le 100 % télétravail
-        loc = job.get("location", "")
-        if job.get("telework_days") != 5 and loc and loc != "Île-de-France":
-            job["commute_minutes"] = get_commute_time(loc)
-            time.sleep(0.2)
-
-        # Alertes de filtrage (Customer Success, contrat, séniorité, trajet...)
-        job["flags"] = screen_offer(job)[2]
-
         if (i + 1) % 10 == 0:
             print(f"  {i+1}/{len(all_jobs)}...")
     print(f"  Annonces complètes récupérées : {fetched}")
 
+    # Filtrage AVANT le calcul des trajets : inutile de calculer (et de se faire
+    # rate-limiter par IDFM) le trajet des centaines d'offres qui seront exclues.
+    from collections import Counter as _ReasonCounter
     filtered, excl = [], 0
+    reasons = _ReasonCounter()
     for job in all_jobs:
-        ok, _ = should_include(job)
+        ok, why = should_include(job)
         if ok:
             filtered.append(job)
         else:
             excl += 1
+            reasons[why] += 1
 
     print(f"\nFiltrage : {len(filtered)} retenues, {excl} exclues")
+    for motif, n in reasons.most_common():
+        print(f"    - {motif} : {n}")
 
     # Retire les offres déjà écartées par Héloïse (dépôt privé), quelle que soit
     # la plateforme : une annonce rejetée ne doit jamais réapparaître.
     filtered, dropped = drop_archived(filtered)
     if dropped:
         print(f"Archives : {dropped} offre(s) déjà écartée(s) retirée(s)")
+
+    # Trajets + alertes finales : calculés uniquement sur les offres retenues
+    # (≈quelques dizaines au lieu de ~1000) → ~30× moins d'appels IDFM, plus de
+    # storm 429, scan bien plus rapide. Le trajet n'entre pas dans les décisions
+    # d'exclusion (basées sur la chaîne « location »), donc le résultat est identique.
+    for job in filtered:
+        loc = job.get("location", "")
+        if job.get("telework_days") != 5 and loc and loc != "Île-de-France":
+            job["commute_minutes"] = get_commute_time(loc)
+            time.sleep(0.2)
+        # Alertes de filtrage (Customer Success, contrat, séniorité, trajet...)
+        job["flags"] = screen_offer(job)[2]
 
     filtered.sort(key=lambda j: compute_score(j)[0], reverse=True)
 
