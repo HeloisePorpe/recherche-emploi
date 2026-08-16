@@ -468,7 +468,10 @@ _EXCLUDE_COMPANIES = ["mr pape", "veripark", "max accelerate", "maxaccelerate",
                       "kennflik", "qonto", "dataiku", "havas", "powerplay",
                       "360learning", "360 learning",
                       "masao", "square management", "onepoint", "one point",
-                      "digitalisim", "mc2i", "belacom", "viseo"]
+                      "digitalisim", "mc2i", "belacom", "viseo",
+                      # Agrégateur RemoteOK « AI Supermarket » : annonces parasites
+                      # (titres = noms de produits, lieux hors zone) — écartées.
+                      "ai supermarket"]
 # Sigles courts / ambigus (risque de collision en sous-chaîne, ex. « asi » dans
 # « casino ») : test sur le NOM d'employeur avec frontières de mots uniquement.
 _EXCLUDE_COMPANY_RE = re.compile(
