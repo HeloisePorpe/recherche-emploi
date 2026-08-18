@@ -315,9 +315,10 @@ _TITLE_EXCLUDE_HARD = re.compile(
 # Engineer / ingénieur : exclu sauf si le titre parle explicitement de marketing.
 _TITLE_EXCLUDE_ENG = re.compile(r'\b(engineer|ing[ée]nieur)\b', re.I)
 # Outils très spécialisés à écarter QUAND ils sont dans le titre (demande Héloïse) :
-# Salesforce et Microsoft Dynamics (postes trop centrés sur l'outil).
+# Salesforce, Microsoft Dynamics et Siebel (CRM vente/service technique, calibr. v4)
+# → postes de configuration/paramétrage, pas d'exécution de campagnes.
 _TITLE_EXCLUDE_TOOL = re.compile(
-    r'\bsalesforce\b|\b(?:microsoft |ms )?dynamics(?:\s*(?:365|crm))?\b', re.I)
+    r'\bsalesforce\b|\b(?:microsoft |ms )?dynamics(?:\s*(?:365|crm))?\b|\bsiebel\b', re.I)
 # Rôles hors cible à écarter QUAND ils sont dans le titre (demande Héloïse) :
 # développeur/developer, conseiller, directeur/director, sales, commercial/commerce.
 # Précautions : ne matche PAS « e-commerce » (offres CRM e-commerce gardées),
@@ -366,6 +367,7 @@ _FOREIGN_LOCATION = re.compile(
     r'united states|\busa\b|u\.s\.a?\.|canada|toronto|vancouver|india|bangalore|'
     r'mumbai|brazil|br[ée]sil|s[ãa]o paulo|mexico|argentina|\blatam\b|\bapac\b|'
     r'australia|australie|sydney|philippines|singapore|dubai|\buae\b|abu dhabi|qatar|'
+    r'bangkok|tha[iï]land|tha[iï]lande|cayman|ca[iï]man|[iî]les?\s+ca[iï]man|'
     # Pays européens précis (≠ France) : « remote from UK », etc.
     r'united kingdom|\buk\b|england|scotland|wales|ireland|\beire\b|london|manchester|'
     r'germany|deutschland|allemagne|berlin|munich|m[üu]nchen|hamburg|'
@@ -398,6 +400,15 @@ _DEPT_93 = re.compile(
     r'dugny|le bourget|la plaine[- ]saint[- ]denis|coubron|vaujours|'
     r'gournay[- ]sur[- ]marne)\b', re.I)
 
+# Villes françaises clairement hors zone (>1h30 depuis Bures-sur-Yvette, 91),
+# confirmées par la calibration v4. Test sur le LIEU uniquement, jamais par
+# généralisation d'une commune francilienne (nuance v4 §2 : le trajet doit être
+# vérifié à l'adresse exacte en IDF). Exclusion levée si 100 % télétravail en France.
+_FAR_FR_CITY = re.compile(
+    r'\b(marseille|lyon|toulouse|rennes|\btours\b|nantes|bordeaux|lille|strasbourg|'
+    r'montpellier|nice|grenoble|nancy|metz|dijon|clermont[- ]ferrand|'
+    r'aix[- ]en[- ]provence)\b', re.I)
+
 _CONTRACT_TERMS = re.compile(
     r'independent contractor|contractor agreement|commission[- ]based|'
     r'rev(?:enue)?[- ]share|uncapped earnings|per hour|/\s*hr\b|\$\s*\d+\s*/\s*h|'
@@ -405,13 +416,25 @@ _CONTRACT_TERMS = re.compile(
 
 # Cabinets de conseil / ESN : télétravail dépendant du client, missions
 # successives → réserve structurelle à signaler (flag, pas exclusion).
-_STAFFING_COMPANIES = ["kicklox", "synopsia", "lineup7", "line up 7", "viseo",
-                       "cat-amania", "cat amania", "catamania", "masao",
-                       "bearingpoint", "square management", "capgemini",
+# NB : masao, square management, viseo sont passés en exclusion dure (v4) et
+# retirés d'ici (ils ne produisent que des postes de conseil/intégration hors cible).
+_STAFFING_COMPANIES = ["kicklox", "synopsia", "lineup7", "line up 7",
+                       "cat-amania", "cat amania", "catamania",
+                       "bearingpoint", "capgemini",
                        "alpha fmc", "brain logic", "niji", "keyrus", "micropole",
                        "avanade", "sopra", "accenture", "wavestone", "colombus",
                        "colombus consulting"]
 _STAFFING_TERMS = re.compile(r'\besn\b|staffing|portage salarial|r[ée]gie', re.I)
+
+# Signal « avant-vente » (calibration v4 §5) : responsabilité commerciale de cabinet
+# de conseil (propositions/soutenances commerciales, réponses aux appels d'offres,
+# développement de son réseau/portefeuille). Facteur de rejet même si le reste de
+# l'annonce semble aligné.
+_AVANT_VENTE = re.compile(
+    r'avant[- ]vente|pr[ée][- ]?vente\b|soutenances?|'
+    r'propositions?\s+commerciales?|r[ée]ponses?\s+(?:à|aux)\s+appels?\s+d.offres?|'
+    r'appels?\s+d.offres?\s+(?:client|commerc)|d[ée]velopper\s+(?:votre|son)\s+r[ée]seau\s+professionnel',
+    re.I)
 
 _SPECIFIC_ESP = re.compile(
     r'marketo|salesforce marketing cloud|\bsfmc\b|braze|klaviyo|veeva|iterable|responsys', re.I)
@@ -423,6 +446,12 @@ _SENIOR_YEARS = re.compile(r'(\d{1,2})\s*\+?\s*(?:ans|years|an[s]?\b)', re.I)
 _TEAM_MGMT = re.compile(
     r'management (?:d.une |d.)?[ée]quipe|manage a team|team management|'
     r'encadrement (?:d.une |hi[ée]rarchique|d.[ée]quipe)|team lead|head of', re.I)
+# Management d'une équipe constituée dans le TITRE (calibration v4 §4) : métier
+# distinct (blocage de nature, pas de niveau). Titres explicites uniquement — ne
+# matche pas « Campaign Manager » / « CRM Manager » (postes individuels visés).
+_TITLE_TEAM_LEAD = re.compile(
+    r'\bteam\s*lead(?:er)?\b|\bteam\s*manager\b|\bpeople\s*manager\b|'
+    r'chef(?:fe)?\s+d.[ée]quipe|responsable\s+d.[ée]quipe', re.I)
 _ENTRY_LEVEL = re.compile(
     r'd[ée]butant accept|junior|entry[- ]level|premier emploi|sans exp[ée]rience', re.I)
 _REMOTE_MENTION = re.compile(r't[ée]l[ée]travail|remote|distanciel|home[- ]office', re.I)
@@ -430,9 +459,23 @@ _REMOTE_MENTION = re.compile(r't[ée]l[ée]travail|remote|distanciel|home[- ]off
 # Employeurs identifiés comme non pertinents (portfolios, ESN Dynamics, tech pur…).
 # Volume de faux positifs confirmé (note de calibration v3) : ces employeurs ne
 # produisent que des postes hors cible (growth, produit, ops, RH, tech).
+# Calibration v4 : ajout des cabinets de conseil / intégrateurs CRM confirmés
+# systématiquement hors cible (conseil, intégration technique, avant-vente, jamais
+# d'exécution de campagnes) : MASAO, Square Management, Onepoint, Digitalisim, mc2i,
+# Belacom, VISEO, ainsi que VML/WPP (le mot « CRM » n'apparaît que dans la
+# présentation générique de l'entité, jamais dans les missions réelles).
 _EXCLUDE_COMPANIES = ["mr pape", "veripark", "max accelerate", "maxaccelerate",
                       "kennflik", "qonto", "dataiku", "havas", "powerplay",
-                      "360learning", "360 learning"]
+                      "360learning", "360 learning",
+                      "masao", "square management", "onepoint", "one point",
+                      "digitalisim", "mc2i", "belacom", "viseo",
+                      # Agrégateur RemoteOK « AI Supermarket » : annonces parasites
+                      # (titres = noms de produits, lieux hors zone) — écartées.
+                      "ai supermarket"]
+# Sigles courts / ambigus (risque de collision en sous-chaîne, ex. « asi » dans
+# « casino ») : test sur le NOM d'employeur avec frontières de mots uniquement.
+_EXCLUDE_COMPANY_RE = re.compile(
+    r'\bcgi\b|\basi\b|\bvml\b|\bwpp\b|\bexalt\b', re.I)
 
 # Employeurs à exclure SAUF si le titre porte un vrai signal CRM/lifecycle
 # (secteur autrement favorable mais beaucoup de postes hors cible). Bornes de mot
@@ -647,8 +690,8 @@ def screen_offer(job):
         return True, "Annonce dans une autre langue (ni FR ni EN)", flags
     if _TITLE_FREELANCE_MP.search(title):
         return True, "Profil freelance marketplace (« I will… »)", flags
-    if any(c in cl for c in _EXCLUDE_COMPANIES):
-        return True, "Employeur non pertinent (ESN / portfolio)", flags
+    if any(c in cl for c in _EXCLUDE_COMPANIES) or _EXCLUDE_COMPANY_RE.search(cl):
+        return True, "Employeur non pertinent (ESN / cabinet de conseil / portfolio)", flags
     if _CONDITIONAL_EXCLUDE_RE.search(cl) and not _CORE_CRM_TITLE.search(title):
         return True, "Employeur hors cible (sauf poste CRM/lifecycle explicite)", flags
     if any(c in cl for c in _MEDICAL_COMPANIES) or _MEDICAL_TERMS.search(text):
@@ -665,6 +708,10 @@ def screen_offer(job):
         return True, "Marketing hors cœur (acquisition / growth / marque / terrain)", flags
     if _TITLE_CLIENTELING.search(title):
         return True, "CRM clienteling / boutique (présentiel)", flags
+    if _AVANT_VENTE.search(text):
+        return True, "Avant-vente / responsabilité commerciale (cabinet de conseil)", flags
+    if _TITLE_TEAM_LEAD.search(title):
+        return True, "Management d'équipe (Team Lead / chef d'équipe)", flags
     if _RETAIL_TERMS.search(text):
         return True, "CRM = caisse / magasin", flags
     # NB : aucune exclusion sectorielle (automobile inclus) — choix d'Héloïse.
@@ -683,6 +730,9 @@ def screen_offer(job):
     # Seine-Saint-Denis (93) exclu, sauf 100 % télétravail en France.
     if _DEPT_93.search(loc) and not (job.get("telework_days") == 5 and job.get("in_france", True)):
         return True, "Localisation en Seine-Saint-Denis (93)", flags
+    # Ville française clairement hors zone (>1h30), sauf 100 % télétravail en France.
+    if _FAR_FR_CITY.search(loc) and not (job.get("telework_days") == 5 and job.get("in_france", True)):
+        return True, "Localisation hors zone (>1h30 de trajet)", flags
 
     # ---- ALERTES (signaux ambigus, on garde et on signale) ----
     if _ACQUISITION_BODY.search(text) and not has_mkt:
@@ -1284,10 +1334,9 @@ _CAREER_COMPANIES = [
     # CRM chez Sodexo apparaîtra automatiquement.
     {"name": "Sodexo", "slug": "sodexo", "ats": "smartrecruiters"},
     # Agences / cabinets data-CRM (beaucoup de postes CRM/campagnes en IDF).
-    # VML (ex-twentysix/Wunderman) confirmé sur Greenhouse ; Converteo & Cartelis
-    # testés (probe tous les ATS). is_relevant ne garde que le CRM/marketing.
-    {"name": "VML", "slug": "vmlenterprisesolutions", "ats": "greenhouse",
-     "slugs": ["vml", "vmlenterprisesolutions", "wundermanthompson"]},
+    # VML/WPP retiré (calibration v4) : « CRM » n'apparaît que dans la présentation
+    # générique de l'entité, jamais dans les missions réelles (conseil senior,
+    # business development, data science) → désormais exclu par employeur.
     {"name": "Converteo", "slug": "converteo", "slugs": ["converteo"]},
     {"name": "Cartelis", "slug": "cartelis", "slugs": ["cartelis"]},
     # NB : 16 autres employeurs proches ont été testés (Carrefour, CEA, McDonald's,
@@ -2747,34 +2796,44 @@ def run():
             job["expired"] = True
             time.sleep(0.2)
 
-        # Trajet : inutile pour le 100 % télétravail
-        loc = job.get("location", "")
-        if job.get("telework_days") != 5 and loc and loc != "Île-de-France":
-            job["commute_minutes"] = get_commute_time(loc)
-            time.sleep(0.2)
-
-        # Alertes de filtrage (Customer Success, contrat, séniorité, trajet...)
-        job["flags"] = screen_offer(job)[2]
-
         if (i + 1) % 10 == 0:
             print(f"  {i+1}/{len(all_jobs)}...")
     print(f"  Annonces complètes récupérées : {fetched}")
 
+    # Filtrage AVANT le calcul des trajets : inutile de calculer (et de se faire
+    # rate-limiter par IDFM) le trajet des centaines d'offres qui seront exclues.
+    from collections import Counter as _ReasonCounter
     filtered, excl = [], 0
+    reasons = _ReasonCounter()
     for job in all_jobs:
-        ok, _ = should_include(job)
+        ok, why = should_include(job)
         if ok:
             filtered.append(job)
         else:
             excl += 1
+            reasons[why] += 1
 
     print(f"\nFiltrage : {len(filtered)} retenues, {excl} exclues")
+    for motif, n in reasons.most_common():
+        print(f"    - {motif} : {n}")
 
     # Retire les offres déjà écartées par Héloïse (dépôt privé), quelle que soit
     # la plateforme : une annonce rejetée ne doit jamais réapparaître.
     filtered, dropped = drop_archived(filtered)
     if dropped:
         print(f"Archives : {dropped} offre(s) déjà écartée(s) retirée(s)")
+
+    # Trajets + alertes finales : calculés uniquement sur les offres retenues
+    # (≈quelques dizaines au lieu de ~1000) → ~30× moins d'appels IDFM, plus de
+    # storm 429, scan bien plus rapide. Le trajet n'entre pas dans les décisions
+    # d'exclusion (basées sur la chaîne « location »), donc le résultat est identique.
+    for job in filtered:
+        loc = job.get("location", "")
+        if job.get("telework_days") != 5 and loc and loc != "Île-de-France":
+            job["commute_minutes"] = get_commute_time(loc)
+            time.sleep(0.2)
+        # Alertes de filtrage (Customer Success, contrat, séniorité, trajet...)
+        job["flags"] = screen_offer(job)[2]
 
     filtered.sort(key=lambda j: compute_score(j)[0], reverse=True)
 
