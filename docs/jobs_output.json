@@ -1,34 +1,6 @@
 [
   {
     "source": "Adzuna",
-    "title": "Chef·fe de Projet CRM & Marketing Automation (F/H/NB) – E-commerce & IA",
-    "link": "https://www.adzuna.fr/details/5727289947?utm_medium=api&utm_source=707eaaff",
-    "company": "Store & Supply",
-    "location": "Levallois-Perret, Nanterre",
-    "description": "À propos de Store & Supply Depuis 2014, nous propulsons 50 marques mode/lifestyle (Redskins, Lee Cooper, FRNCH…) grâce à un accompagnement e-commerce 360°. Notre croissance (x2 en 3 ans) ouvre la voie à des talents qui veulent tester, apprendre et automatiser . Le poste Ta mission Construire et optimiser des workflows multicanaux (email, SMS, push) sur Klaviyo, CartsGuru, Brevo & Shopify. Driver la stratégie data & IA : scoring, segments prédictifs, contenu généré (GPT-like). Piloter l’envoi de…",
-    "salary_raw": "",
-    "published": "2026-05-12T22:51:31Z",
-    "contract_raw": "",
-    "salary_extracted": null,
-    "telework_days": 2,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": null,
-    "flags": [
-      "Annonce ancienne (94 j)"
-    ],
-    "score": 9,
-    "score_reasons": [
-      "Outils : email, sms",
-      "Compétences alignées (3)",
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Télétravail 2j/sem"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Annonce ancienne (94 j)"
-  },
-  {
-    "source": "Adzuna",
     "title": "Owned Media Lead H/F",
     "link": "https://www.adzuna.fr/details/5841077429?utm_medium=api&utm_source=707eaaff",
     "company": "OpenSourcing",
@@ -40,7 +12,7 @@
     "telework_days": null,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": null,
+    "commute_minutes": 74,
     "flags": [
       "Télétravail non mentionné"
     ],
@@ -55,30 +27,6 @@
     "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
-    "source": "RemoteOK",
-    "title": "AskYourPDF",
-    "link": "https://remoteOK.com/remote-jobs/remote-askyourpdf-ai-supermarket-1136704",
-    "company": "AI Supermarket",
-    "location": "Heartâs Content, ",
-    "description": "Professional forex trading simulator that replays historical market data so traders can practise strategies risk-free. Test and backtest trading systems across years of tick-level data at any speed, then review statistics on win rate, drawdown and risk-reward. Used by aspiring and experienced traders to build discipline and refine their edge.Text-to-3D and image-to-3D AI platform that generates game-ready 3D models and textures in minutes. Simply describe what you want or upload a reference image and Meshy produces a fully textured, exportable 3D asset. Used by game developers, product designers and metaverse creators to accelerate 3D production pipelines.AI-powered call tracking and analytics platform that shows you exactly which marketing campaigns are generating phone calls and customers. Conversation Intelligence automatically transcribes calls, scores leads and identifies keywords that convert. Trusted by 200,000+ businesses to optimise marketing spend and improve sales performance.AI meeting assistant that automatically joins your calls, records, transcribes and summarises every conversation. Smart search lets you find any moment from past meetings in seconds, and AI creates action items, follow-up emails and CRM updates automatically. Integrated with Zoom, Teams, Meet and 40+ business tools.Chat with any PDF, document or website using AI that reads and understands your files instantly. Ask complex questions, get cited summaries and extract key insights without reading every page. Used by 500,000+ students, lawyers and researchers to save hours of manual reading.AI writing assistant built specifically for academic researchers, students and scientists. Generates literature reviews, helps overcome writer block with auto-completions and cites sources from a database of 200+ million research papers. Trusted by students at Harvard, MIT and Oxford to write better papers in less time.Bilingual translation extension that translates entire web pages, PDFs and ebooks while keeping the original text visible for comparison. Supports 10+ AI translation engines including DeepL, OpenAI and Google for the best accuracy on any content type. Trusted by millions of users for reading foreign-language research, news and documents.The platform where modern web applications are built, deployed and scaled with the fastest global CDN and AI-enhanced developer tools. Push to Git and your site deploys automatically with instant rollbacks, branch previews and serverless functions built in. Trusted by 5 million developers and teams at Twilio, Nike and Peloton.Gemini is Google DeepMinds flagship model integrated across Google Workspace. Supports text, images, audio and video natively.Education Pro is 50% off for verified students, checked via SheerID at checkout.The world's most realistic AI voice generation platform with ultra-low latency and 1,000+ voices in 32 languages. Clone your own voice, create custom AI characters or produce professional voiceovers for videos, podcasts and apps. Used by millions of creators, publishers and developers for next-generation audio experiences.Professional remote recording platform that captures studio-quality audio and video locally on each participant device, regardless of internet quality. AI post-production tools automatically transcribe, clip highlights and generate show notes. The preferred recording studio for top podcasts and video interviews.An all-in-one email marketing and automation platform with AI-powered email generation, landing pages and webinar tools. Build sophisticated automated funnels triggered by subscriber behaviour, purchases and engagement signals. Trusted by 350,000+ businesses worldwide for growing and monetising their audiences.AI-powered job search platform that finds remote roles matching your skills and automatically tailors your resume and cover letter for each application. AI optimises your profile to pass Applicant Tracking Systems and highlights transferable skills employers are looking for. Reduces the time from job search to interview by automating the most tedious parts of applying.The newsletter platform built for growth, monetisation and AI-assisted writing. Create, send and analyse newsletters while growing your subscriber list with built-in referral programs and paid subscriptions. Used by over 100,000 creators and media brands worldwide.Smart calendar automation that protects focus time, schedules meetings and automatically reschedules tasks around your priorities. AI analyses your habits and workload to find the optimal time for deep work, habits and one-on-ones. Trusted by 40,000+ teams to improve productivity without working longer hours.Build and host custom websites, apps and internal tools. Trusted by Meta, Figma, Autodesk and Mattel.The platform where modern web applications are built, deployed and scaled with the fastest global CDN and AI-enhanced developer tools. Push to Git and your site deploys automatically with instant rollbacks, branch previews and serverless functions built in. Trusted by 5 million developers and teams at Twilio, Nike and Peloton.Record in studio quality, edit with AI, go live anywhere.Professional remote recording platform that captures studio-quality audio and video locally on each participant device, regardless of internet quality. AI post-production tools automatically transcribe, clip highlights and generate show notes. The preferred recording studio for top podcasts and video interviews.All-in-one AI assistant â GPT-4o, Claude 3.5 and Gemini in one place.All-in-one AI assistant powered by GPT-4, Claude and Gemini that works across every website in your browser. Chat, summarise pages, translate, write emails and analyse documents without switching tabs. Over 3 million professionals use Monica to save hours every day on research and communication tasks.Ultimate AI translator for web, PDFs and videos â 100+ language pairs.Bilingual translation extension that translates entire web pages, PDFs and ebooks while keeping the original text visible for comparison. Supports 10+ AI translation engines including DeepL, OpenAI and Google for the best accuracy on any content type. Trusted by millions of users for reading foreign-language research, news and documents.AI-powered video editor â if you can edit text, you can make viral clips.An all-in-one audio and video editor where you edit media by editing text, just like a document. AI removes filler words, silences and mistakes automatically, and the Overdub feature clones your voice to fix recording errors without re-recording. Used by podcasters, YouTubers and corporate video teams worldwide.Human-like AI speech in 32+ languages for audiobooks, video and podcasts.The world's most realistic AI voice generation platform with ultra-low latency and 1,000+ voices in 32 languages. Clone your own voice, create custom AI characters or produce professional voiceovers for videos, podcasts and apps. Used by millions of creators, publishers and developers for next-generation audio experiences.AI research workspace for reading, writing, citing and organising academic work.AI writing assistant built specifically for academic researchers, students and scientists. Generates literature reviews, helps overcome writer block with auto-completions and cites sources from a database of 200+ million research papers. Trusted by students at Harvard, MIT and Oxford to write better papers in less time.Turn complex PDFs into easy summaries and chat with any document instantly.Chat with any PDF, document or website using AI that reads and understands your files instantly. Ask complex questions, get cited summaries and extract key insights without reading every page. Used by 500,000+ students, lawyers and researchers to save hours of manual reading.All-in-one email marketing and automation with AI tools to grow audiences.An all-in-one email marketing and automation platform with AI-powered email generation, landing pages and webinar tools. Build sophisticated automated funnels triggered by subscriber behaviour, purchases and engagement signals. Trusted by 350,000+ businesses worldwide for growing and monetising their audiences.Transcribe, summarise, search and analyse meetings automatically.AI meeting assistant that automatically joins your calls, records, transcribes and summarises every conversation. Smart search lets you find any moment from past meetings in seconds, and AI creates action items, follow-up emails and CRM updates automatically. Integrated with Zoom, Teams, Meet and 40+ business tools.AI call tracking that attributes every call and chat to the campaign that drove it.AI-powered call tracking and analytics platform that shows you exactly which marketing campaigns are generating phone calls and customers. Conversation Intelligence automatically transcribes calls, scores leads and identifies keywords that convert. Trusted by 200,000+ businesses to optimise marketing spend and improve sales performance.Generate 1,000+ SEO-optimised articles in hours with WordPress auto-post.Generate long-form, SEO-optimised articles at scale with automatic internal linking and WordPress auto-publishing. Supports 50+ languages and produces fully structured posts with headings, meta descriptions and keyword targeting built in. Used by content agencies to produce 1,000+ articles per month.Turn long-form videos into viral short clips for TikTok, Reels and Shorts.Automatically repurpose long-form videos into multiple short clips optimised for TikTok, YouTube Shorts and Instagram Reels. AI identifies the most engaging moments, adds captions and formats each clip to the correct aspect ratio for every platform. Saves video teams hours of manual clipping and editing every week.Most popular AI 3D model generator â text to 3D in seconds.Text-to-3D and image-to-3D AI platform that generates game-ready 3D models and textures in minutes. Simply describe what you want or upload a reference image and Meshy produces a fully textured, exportable 3D asset. Used by game developers, product designers and metaverse creators to accelerate 3D production pipelines.The #1 email platform for creators â grow and monetize your audience with AI.The newsletter platform built for growth, monetisation and AI-assisted writing. Create, send and analyse newsletters while growing your subscriber list with built-in referral programs and paid subscriptions. Used by over 100,000 creators and media brands worldwide.AI calendar that optimises schedules and protects focus time.Smart calendar automation that protects focus time, schedules meetings and automatically reschedules tasks around your priorities. AI analyses your habits and workload to find the optimal time for deep work, habits and one-on-ones. Trusted by 40,000+ teams to improve productivity without working longer hours.The leading AI headshot generator â selfies to studio quality in minutes.Generate stunning professional headshots from selfies using AI that rivals expensive photography studios. Upload 12-20 casual photos and receive 40+ high-quality headshots in different backgrounds, outfits and styles within hours. Perfect for LinkedIn profiles, company websites and professional profiles.Full-stack web scraping â build, deploy and publish data extraction tools.The web scraping and browser automation platform used by developers to extract data from any website at scale. Build custom scrapers, automate repetitive browser tasks and deploy them on Apify cloud infrastructure without managing servers. Used by data teams, researchers and developers at thousands of companies worldwide.Study, write and solve problems faster â the most accurate AI for school.AI-powered research and analysis tool that synthesises information from multiple sources into clear, structured reports. Ask complex research questions and receive comprehensive answers with citations, comparisons and visualisations. Built for consultants, analysts and decision-makers who need fast, reliable intelligence.Write better content and grow faster across Twitter/X and LinkedIn.A distraction-free writing and scheduling tool for Twitter/X and LinkedIn creators. AI suggests threads, hooks and post ideas based on your writing style, and analytics show exactly what resonates with your audience. Trusted by 80,000+ creators to build their social presence.Create AI videos in 1 minute â 1,000+ avatars and 40,000 voices in 140 languages.Multilingual AI video and avatar creation platform that produces marketing videos and product demos in 140+ languages from a script. Choose from hundreds of realistic AI avatars or clone your own likeness for personalised video at scale. Used by global brands to localise video content for international markets without re-filming.Accurate AI detector, plagiarism checker and fact-checker.The most accurate AI content and plagiarism detector built specifically for publishers and SEO agencies. Scans articles to detect ChatGPT, Claude and other AI writing with high precision, and checks for copied content across the web. Provides readability scores and a full audit trail for content quality assurance.Turn text scripts into professional AI avatar videos in minutes.Create professional AI videos with realistic avatars and text-to-speech in 130+ languages without cameras, studios or actors. Produce training videos, product demos and personalised messages at scale from a simple script. Used by 50,000+ companies including Google, Zoom and Reuters to scale video content production.Land your dream job 3x faster with AI resume and cover letter optimisation.AI-powered job search platform that finds remote roles matching your skills and automatically tailors your resume and cover letter for each application. AI optimises your profile to pass Applicant Tracking Systems and highlights transferable skills employers are looking for. Reduces the time from job search to interview by automating the most tedious parts of applying.<br/><br/>Please mention the word **APPRECIATES** and tag RNTIuMTczLjE2NC4yMw== when applying to show you read the job post completely (#RNTIuMTczLjE2NC4yMw==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
-    "salary_raw": "",
-    "published": "2026-08-11T16:49:39+00:00",
-    "telework_days": 5,
-    "in_france": true,
-    "salary_extracted": null,
-    "contract_type": null,
-    "flags": [],
-    "score": 9,
-    "score_reasons": [
-      "Outils : email",
-      "Secteur favorable : assurance",
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Télétravail 5j/sem"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À confirmer : titre sans signal CRM explicite"
-  },
-  {
     "source": "Welcome to the Jungle",
     "title": "Consultant Marketing",
     "link": "https://www.welcometothejungle.com/fr/companies/accenture-digital-1/jobs/consultant-marketing_paris",
@@ -90,7 +38,7 @@
     "telework_days": null,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": null,
+    "commute_minutes": 74,
     "flags": [
       "Conseil / ESN — télétravail dépendant de la mission ?",
       "Télétravail non mentionné"
@@ -105,6 +53,30 @@
     "recommendation_reason": "À vérifier : Conseil / ESN — télétravail dépendant de la mission ? ; Télétravail non mentionné"
   },
   {
+    "source": "Adzuna",
+    "title": "CRM Manager | CDI | Full Remote",
+    "link": "https://www.adzuna.fr/details/5812520465?utm_medium=api&utm_source=707eaaff",
+    "company": "Standard Ecom",
+    "location": "Paris, Ile-de-France",
+    "description": "LA STANDARD ECOM, C’EST QUOI ET C’EST QUI ? La Standard Ecom est une jeune agence qui accompagne plus d’une trentaine de marques e-commerce comme The Bradery, JIMMY FAIRLY, Delsey dans le développement de leurs stratégies CRM. Cela passe par la mise en place d’automatisations emailing, la gestion de newsletters, la création de campagnes WhatsApp, etc. Au total, au sein de la Standard Ecom, nous sommes une dizaine de personnes partageant les mêmes valeurs et les mêmes ambitions. Nous évoluons to…",
+    "salary_raw": "",
+    "published": "2026-07-23T18:09:32Z",
+    "contract_raw": "",
+    "salary_extracted": null,
+    "telework_days": 5,
+    "in_france": true,
+    "contract_type": "CDI",
+    "flags": [],
+    "score": 8,
+    "score_reasons": [
+      "Outils : email, whatsapp",
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Télétravail 5j/sem"
+    ],
+    "recommendation": "à_postuler",
+    "recommendation_reason": "Profil correspondant, aucun signal à vérifier (100 % télétravail France, score 8/10)"
+  },
+  {
     "source": "Welcome to the Jungle",
     "title": "CRM Campaign Manager H/F",
     "link": "https://www.welcometothejungle.com/fr/companies/nexton-consulting/jobs/crm-campaign-manager-h-f_paris",
@@ -116,7 +88,7 @@
     "telework_days": null,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": null,
+    "commute_minutes": 74,
     "flags": [
       "Télétravail non mentionné"
     ],
@@ -143,7 +115,7 @@
     "telework_days": null,
     "in_france": true,
     "contract_type": "CDI",
-    "commute_minutes": null,
+    "commute_minutes": 74,
     "flags": [
       "Télétravail non mentionné"
     ],
@@ -155,6 +127,35 @@
     ],
     "recommendation": "à_revoir",
     "recommendation_reason": "À vérifier : Télétravail non mentionné"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Chef·fe de Projet CRM & Marketing Automation (F/H/NB) – E-commerce & IA",
+    "link": "https://www.adzuna.fr/details/5727289947?utm_medium=api&utm_source=707eaaff",
+    "company": "Store & Supply",
+    "location": "Levallois-Perret, Nanterre",
+    "description": "À propos de Store & Supply Depuis 2014, nous propulsons 50 marques mode/lifestyle (Redskins, Lee Cooper, FRNCH…) grâce à un accompagnement e-commerce 360°. Notre croissance (x2 en 3 ans) ouvre la voie à des talents qui veulent tester, apprendre et automatiser . Le poste Ta mission Construire et optimiser des workflows multicanaux (email, SMS, push) sur Klaviyo, CartsGuru, Brevo & Shopify. Driver la stratégie data & IA : scoring, segments prédictifs, contenu généré (GPT-like). Piloter l’envoi de…",
+    "salary_raw": "",
+    "published": "2026-05-12T22:51:31Z",
+    "contract_raw": "",
+    "salary_extracted": null,
+    "telework_days": 2,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": 86,
+    "flags": [
+      "Annonce ancienne (97 j)"
+    ],
+    "score": 8,
+    "score_reasons": [
+      "Outils : email, sms",
+      "Compétences alignées (3)",
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (86 min)",
+      "Télétravail 2j/sem"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Annonce ancienne (97 j)"
   },
   {
     "source": "Adzuna",
@@ -170,9 +171,9 @@
     "telework_days": null,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": null,
+    "commute_minutes": 74,
     "flags": [
-      "Annonce ancienne (399 j)"
+      "Annonce ancienne (402 j)"
     ],
     "score": 8,
     "score_reasons": [
@@ -180,32 +181,7 @@
       "Signaux CRM lifecycle (email / segmentation / campagne)"
     ],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Annonce ancienne (399 j)"
-  },
-  {
-    "source": "Welcome to the Jungle",
-    "title": "CRM Manager - B2B & B2C",
-    "link": "https://www.welcometothejungle.com/fr/companies/toutapprendre/jobs/charge-de-marketing-digital-crm_boulogne-billancourt",
-    "company": "Mozaik",
-    "location": "Boulogne-Billancourt, France",
-    "description": "**Expériences**\n\n* 3 ans minimum d'expérience opérationnelle en CRM / marketing automation, idéalement sur une plateforme à fort volume (Braze, Salesforce Marketing Cloud, Iterable, [Customer.io](http://Customer.io), Adobe Campaign...)\n    \n* Un profil marketing / business avec une vraie appétence tech et data : vous n'êtes pas développeur, mais un outil complexe, une logique de segmentation ou un dashboard ne vous font pas peur, et vous aimez comprendre comment ça marche sous le capot\n    \n* À l'aise avec les données : lire, comprendre et interpréter les chiffres pour en tirer des décisions marketing, pas juste produire un reporting\n    \n* Compréhension des enjeux B2B (cycles longs, comptes, pipeline commercial) ET des mécaniques B2C à grande échelle : vous savez que ce ne sont pas les mêmes métiers, et ça vous plaît\n    \n* Autonomie réelle : vous prenez des décisions, vous les assumez, vous n'attendez pas qu'on vous dise quoi faire\n    \n\n**Un vrai plus**\n\n* Expérience Braze ou Salesforce Marketing Cloud Growth spécifiquement\n    \n* Usage avancé et productif des outils d'IA (assistants, agents, workflows) : on ne parle pas d'avoir testé ChatGPT, on parle de livrer plus vite et mieux grâce à ces outils\n    \n* Notions de délivrabilité et de RGPD appliqué au CRM\n    \n\n**Pourquoi nous rejoindre ?**\n\n* Une équipe resserrée dans une entreprise en croissance, avec un accès direct à tous les outils et à toute la donnée\n    \n* Zéro silo, zéro armée de prestataires : on construit beaucoup nous-mêmes\n    \n* Un poste où l'on creuse, teste, industrialise et où l'on est fier du résultat\n    \n* Un environnement outillé et moderne : Salesforce (CRM + Marketing Cloud Growth), Braze, Zapier, GA4 / Looker Studio, WordPress, outils IA (Claude, agents…)",
-    "published": "2026-07-23T14:00:00.000+02:00",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": null,
-    "flags": [
-      "Télétravail non mentionné"
-    ],
-    "score": 8,
-    "score_reasons": [
-      "Outils : segmentation",
-      "Compétences alignées (6)",
-      "Signaux CRM lifecycle (email / segmentation / campagne)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+    "recommendation_reason": "À vérifier : Annonce ancienne (402 j)"
   },
   {
     "source": "Welcome to the Jungle",
@@ -214,12 +190,12 @@
     "company": "JOBGLOBER",
     "location": "Paris, France",
     "description": "Ce poste est fait pour vous si :\n\n* Vous justifiez d’au moins **3 ans d’expérience** sur un poste similaire (chez un éditeur SaaS, en agence ou en ESN), en tant que consultant, chef de projet senior ou product/project owner en CRM / CDP / Marketing Automation.\n    \n\nCe sera un plus si :\n\n* Vous avez déjà travaillé avec des solutions du marché telles que **Marketing Cloud, HubSpot, Selligent, Marketo, Adobe, ActiveCampaign, Klaviyo** ou équivalents,\n    \n* Vous êtes **autonome, proactif(ve)** et force de proposition,\n    \n* Vous avez une forte appétence pour le **marketing digital et les sujets techniques**,\n    \n* Vous êtes à l’aise à l’oral, pédagogue et clair(e) dans vos explications,\n    \n* Vous avez un excellent **sens du relationnel** et du service client,\n    \n* En option : vous avez des compétences en **front-end (HTML/CSS, JS, PHP, C#)** et/ou une appétence pour le **NoCode**.\n    \n\n* * *\n\n**Ce que l’entreprise propose**\n\n* Un projet ambitieux avec un **objectif de forte croissance** dans les années à venir,\n    \n* Une **grande autonomie** dans la conduite de vos projets,\n    \n* De réelles opportunités de **montée en compétences et de spécialisation** en marketing digital,\n    \n* Une attention particulière portée à l’**équilibre vie professionnelle / vie personnelle**,\n    \n* Des temps forts d’équipe réguliers (séminaires, kick-off, team building).",
-    "published": "2026-07-22T09:00:00.000+02:00",
+    "published": "2026-08-17T13:00:00.000+02:00",
     "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": null,
+    "commute_minutes": 74,
     "flags": [
       "Conseil / ESN — télétravail dépendant de la mission ?",
       "Télétravail non mentionné"
@@ -245,7 +221,7 @@
     "telework_days": null,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": null,
+    "commute_minutes": 74,
     "flags": [
       "Télétravail non mentionné"
     ],
@@ -259,61 +235,38 @@
     "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
-    "source": "Adzuna",
-    "title": "Cheffe Chef de Projet CRM Marketing Automation Senior H/F",
-    "link": "https://www.adzuna.fr/details/5809595891?utm_medium=api&utm_source=707eaaff",
-    "company": "Monoprix - Siège",
-    "location": "Clichy, Nanterre",
-    "description": "Rattaché(e) à la responsable CRM et au sein du département Engagement clients, vous pilotez la conception, la mise en oeuvre et l'optimisation des cycles CRM automatisés afin d'améliorer l'engagement client, la conversion, la fidélisation et la valeur client (CLV), via des dispositifs de marketing automation performants et data-driven. Vos principales missions seront les suivantes : Stratégie CRM et cycles de vie Client - Définir la stratégie omnicanale de gestion automatisée du cycle de vie cl…",
-    "salary_raw": "",
-    "published": "2026-07-21T19:51:38Z",
-    "contract_raw": "",
+    "source": "Welcome to the Jungle",
+    "title": "Chargé de Projet Communication Digitale Senior - H/F",
+    "link": "https://www.welcometothejungle.com/fr/companies/banque-populaire-rives-de-paris/jobs/charge-de-projet-communication-digitale-senior-h-f_paris-13e-arrondissement",
+    "company": "Banque Populaire Rives de Paris",
+    "location": "Paris-13e-Arrondissement, France",
+    "description": "<p style=\"text-align: justify;\">Diplômé(e) d'un Bac+5 en communication digitale, marketing digital, web ou équivalent, vous avez une expérience de 5 ans minimum en gestion de projets digitaux / communication digitale.</p>\r\n<p style=\"text-align: justify;\">Une première expérience dans un environnement structuré (banque, assurance, grande entreprise ou secteur public) est fortement apprécié.</p>\r\n<p><strong>Qualités attendues </strong>:</p>\r\n<ul>\r\n<li>Leadership transverse (sans dimension managériale)</li>\r\n<li>Rigueur, organisation, esprit d'analyse et de synthèse</li>\r\n<li>Capacité à structurer et à prioriser</li>\r\n<li>Force de proposition et posture de conseil</li>\r\n</ul>\r\n<p><strong>Compétences clés : </strong></p>\r\n<ul>\r\n<li>Bonne maîtrise des environnements web / intranet / CMS</li>\r\n<li>Connaissance des dispositifs de communication digitale (emailings, campagnes, contenus web)</li>\r\n<li>Sensibilité forte à l'UX et à la qualité des parcours utilisateurs</li>\r\n<li>Capacité à coordonner des interlocuteurs multiples (communication, métiers)</li>\r\n<li>À l'aise dans des environnements complexes et matriciels</li>\r\n</ul>",
+    "published": "2026-08-18T09:00:00.000+02:00",
     "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": null,
+    "commute_minutes": 74,
     "flags": [
       "Télétravail non mentionné"
     ],
-    "score": 7,
+    "score": 8,
     "score_reasons": [
-      "Outils : omnicanal",
+      "Outils : email",
+      "Secteur favorable : banque",
       "Signaux CRM lifecycle (email / segmentation / campagne)"
     ],
     "recommendation": "à_revoir",
     "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
-    "source": "Welcome to the Jungle",
-    "title": "Chargé(e) de campagnes CRM / Marketing Direct F/H",
-    "link": "https://www.welcometothejungle.com/fr/companies/matmut-fr/jobs/charge-de-campagnes-crm-marketing-direct-f-h_sotteville",
-    "company": "Matmut",
-    "location": "Sotteville, France",
-    "description": "PAS JUSTE UN PROFIL !\r\n\r\nAvoir le bon profil pour la Matmut, ce n'est pas qu'une question de compétences. Nous recherchons la personne qui partagera nos valeurs mutualistes et s'épanouira à nos côtés.\r\n\r\nDoté(e) d'un Bac +3 minimum en école de commerce, en marketing digital ou ingénieur…, vous disposez d'une expérience réussie de 3 ans minimum au sein d'un acteur du secteur financier sur des missions similaires et disposer d'une bonne maitrise d'un des principaux outils d'activation marketing (HubSpot, Adobe Campaign, Saleforces, Actito… ).\r\n\r\nVous avez d'excellentes connaissances de l'univers digital et un intérêt prononcé pour les KPI et les données.\r\n\r\nVous avez des bonnes capacités d'analyse et de synthèse.\r\n\r\nVous êtes reconnu pour votre rigueur, votre adaptabilité et votre autonomie\r\n\r\nVotre capacité à travailler en équipe est aussi un atout pour mener à bien vos missions\r\n\r\nVotre salaire et vos avantages ?\r\n\r\n•\tEntre 40 k€ et 50 k€ annuel brut \r\n•\tIntéressement et participation aux résultats\r\n•\tMutuelle santé à 4 € par mois\r\n•\tTélétravail (2 jours par semaine)\r\n•\tRemboursement des frais de transport public à hauteur de 75 %\r\n•\tComité Social et Économique (CSE) avec de nombreux avantages\r\n•\tMatmut Académie (formations et parcours professionnels)\r\n\r\nNous vous offrons une formation complète, un tutorat de proximité et un environnement de travail favorisant l'esprit d'équipe. De quoi grandir, en restant toujours motivé(e) !\r\n\r\nVous partagez ce sens de l'engagement ? Alors échangeons !\r\n\r\nA compétences égales, ce poste est ouvert aux travailleurs en situation de handicap ou assimilés au sens de l'article L. 5212-13 du Code du travail. L'UES Matmut s'engage en faveur de la diversité, l'égalité professionnelle, l'emploi des travailleurs handicapés.",
-    "published": "2026-07-25T02:00:00.000+02:00",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": null,
-    "flags": [],
-    "score": 7,
-    "score_reasons": [
-      "Compétences alignées (3)",
-      "Signaux CRM lifecycle (email / segmentation / campagne)"
-    ],
-    "recommendation": "à_postuler",
-    "recommendation_reason": "Profil correspondant, aucun signal à vérifier (score 7/10)"
-  },
-  {
     "source": "LinkedIn (alerte)",
     "title": "Email Marketing Manager",
-    "link": "https://www.linkedin.com/comm/jobs/view/4452923730/?trackingId=YCIvajqtSzWwZ%2BKgxjQasw%3D%3D&amp;refId=9lnpsrxiS3GTX%2FSmUS18uw%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_application_confirmation_with_nba_01%3BX8hchSjrTz%2BAx%2B8PQ%2F5DHQ%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=3i3LQAovYpnco1&amp;trk=eml-email_application_confirmation_with_nba_01-applied_jobs-0-job_posting&amp;trkEmail=eml-email_application_confirmation_with_nba_01-applied_jobs-0-job_posting-null-8ulvbk~msrclyze~gc-null-null&amp;eid=8ulvbk-msrclyze-gc&amp;otpToken=OGI0NDBjYzQ3NTZmNWY4MGFmMGEyNThhOTE4NWJkOWY0ZDEzMzBkODlhOGJlNjAyM2ZlZjBmZjRhMzNiOTMwZDUwOTRjMDcyYzYxYzc0Y2E4YjVmYjRkMjdlZTAwNzkyZDg5MmJhMTQ3ZjY4MTYwZDZlNmU5YzYzMjQ5M2M0ODViODY5MTY3ODA3YmUzZCwyLDE%3D",
+    "link": "https://www.linkedin.com/comm/jobs/view/4452923730/?trackingId=fDzG3fa%2FhwTzFVyMP8pu6g%3D%3D&amp;refId=0XuMDM0%2BGHtkRIoQ%2B3wMnQ%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3B%2B8V3hsF7SZmRCEIawmZtaw%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=22OQ7d21PWpIo1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_1_jobid_4452923730_ssid_8583513778_fmid_8ulvbk~msu43x8n~cl&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_1_jobid_4452923730_ssid_8583513778_fmid_8ulvbk~msu43x8n~cl-null-8ulvbk~msu43x8n~cl-null-null&amp;eid=8ulvbk-msu43x8n-cl&amp;otpToken=ZmExOGJlZmQ1MDQ2ZWU4ZDZkMjYwN2M5ZGNhNGJiZmMzNDkxOTc0N2ViZjM4NTRiNzZlMDdkMTg3NzE0MDQ1MThlMmZmMzdhMjZhZTFjMzY0Nzk5ZThmOWMwNzQxODJmYzRlOWQ3YjEzMDNjMWYwZjM0YmM5MjkyYzRmNDE1NjYzY2I1Yjk1NGQxN2ZiOSwyLDE%3D",
     "company": "",
     "location": "",
     "description": "",
-    "published": "2026-08-13T10:01:23+00:00",
+    "published": "2026-08-15T08:26:45+00:00",
     "in_france": true,
     "salary_extracted": null,
     "telework_days": null,
@@ -331,94 +284,18 @@
   },
   {
     "source": "Adzuna",
-    "title": "Adobe Campaign Expert",
-    "link": "https://www.adzuna.fr/details/5617752404?utm_medium=api&utm_source=707eaaff",
-    "company": "Numberly",
-    "location": "9ème Arrondissement, Paris",
-    "description": "Numberly is recognized as one of the world's leading data marketing specialists with nearly 500 employees and 11 offices worldwide serving more than 300 clients (L'Oréal, Campari, Colgate, Nestlé, HSBC). By putting technology to work for brands and consumers, Numberly is at the heart of business growth and everyone's desire for more sustainable and relevant marketing. Numberly leverages the latest advances in data processing, analysis and activation, incorporating artificial intelligence techno…",
-    "salary_raw": "",
-    "published": "2026-02-06T20:55:36Z",
-    "contract_raw": "",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": null,
-    "flags": [
-      "Télétravail non mentionné",
-      "Annonce ancienne (189 j)"
-    ],
-    "score": 6,
-    "score_reasons": [
-      "Signaux CRM lifecycle (email / segmentation / campagne)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné ; Annonce ancienne (189 j)"
-  },
-  {
-    "source": "Adzuna",
-    "title": "CRM Marketing Manager (H/F) (CDI)",
-    "link": "https://www.adzuna.fr/details/5836192979?utm_medium=api&utm_source=707eaaff",
-    "company": "ARAVATI FRANCE",
-    "location": "1er Arrondissement, Paris",
-    "description": "Vous aimez construire plutôt que maintenir ? Vous recherchez un poste où le CRM n'est pas seulement un outil marketing mais un véritable levier de transformation de l'entreprise ? Notre client, acteur majeur du conseil, de l'audit et de l'expertise auprès des entreprises, poursuit une transformation ambitieuse de son organisation et de son approche commerciale. Dans ce contexte, il crée le poste de CRM Marketing Manager, véritable référent de la stratégie CRM et Marketing Automation. Vous prene…",
-    "salary_raw": "",
-    "published": "2026-08-11T02:45:29Z",
-    "contract_raw": "permanent",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": "CDI",
-    "commute_minutes": null,
-    "flags": [
-      "Télétravail non mentionné"
-    ],
-    "score": 6,
-    "score_reasons": [
-      "Signaux CRM lifecycle (email / segmentation / campagne)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Manager Delivery Martech H/F",
-    "link": "https://www.adzuna.fr/details/5793877776?utm_medium=api&utm_source=707eaaff",
-    "company": "Accenture France",
-    "location": "Paris, Ile-de-France",
-    "description": "Au sein de la practice Marketing d'Accenture Song, vous êtes le garant de la qualité et de la bonne livraison des projets d'implémentation de solutions Martech chez nos clients grands comptes (retail, luxe, FMCG, services financiers, télécoms). Vous pilotez les chantiers de déploiement de plateformes Marketing Automation, CDP, CMS, DAM, Programme de fidelite et outils de gestion de workflow marketing, de la phase de cadrage jusqu'à la mise en production. Véritable chef d'orchestre entre les équ…",
-    "salary_raw": "",
-    "published": "2026-07-09T10:11:01Z",
-    "contract_raw": "",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": null,
-    "flags": [
-      "Conseil / ESN — télétravail dépendant de la mission ?",
-      "Télétravail non mentionné"
-    ],
-    "score": 6,
-    "score_reasons": [
-      "Signaux CRM lifecycle (email / segmentation / campagne)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Conseil / ESN — télétravail dépendant de la mission ? ; Télétravail non mentionné"
-  },
-  {
-    "source": "Welcome to the Jungle",
     "title": "CRM & Lifecycle Manager",
-    "link": "https://www.welcometothejungle.com/fr/companies/joko-1/jobs/crm-lifecycle-manager",
+    "link": "https://www.adzuna.fr/details/5797273355?utm_medium=api&utm_source=707eaaff",
     "company": "Joko",
-    "location": "Paris, France",
-    "description": "",
-    "published": "2026-08-14T00:00:00.000+02:00",
-    "salary_extracted": null,
+    "location": "Paris, Ile-de-France",
+    "description": "At Joko, our mission is to we help consumers save time and money when shopping online or in-store. Founded in Paris, Joko is a tech company and certified B Corp with over 105 talents across Paris, Barcelona, and New York (and beyond). More than 6 million users already save money every day at 10,000 merchants with Joko. From cashback and automatic coupons to price alerts, we've kept expanding our products to make shopping smarter. Today, Joko is an AI shopping app: with Juno, our shopping assist…",
+    "salary_raw": "43400-69300 €",
+    "published": "2026-07-11T23:40:15Z",
+    "contract_raw": "",
     "telework_days": null,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": null,
+    "commute_minutes": 74,
     "flags": [
       "Télétravail non mentionné"
     ],
@@ -428,30 +305,6 @@
     ],
     "recommendation": "à_revoir",
     "recommendation_reason": "À vérifier : Télétravail non mentionné"
-  },
-  {
-    "source": "Welcome to the Jungle",
-    "title": "Chef de projet CRM - Sénior F/H",
-    "link": "https://www.welcometothejungle.com/fr/companies/abeille-assurances-aema-groupe/jobs/chef-de-projet-crm-senior-f-h_bois-colombes",
-    "company": "Abeille Assurances (Aéma Groupe)",
-    "location": "Bois-Colombes, France",
-    "description": "",
-    "published": "2026-08-08T02:00:00.000+02:00",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": null,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Télétravail non mentionné"
-    ],
-    "score": 6,
-    "score_reasons": [
-      "Secteur favorable : assurance"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
     "source": "Welcome to the Jungle",
@@ -465,7 +318,7 @@
     "telework_days": null,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": null,
+    "commute_minutes": 74,
     "flags": [
       "Télétravail non mentionné"
     ],
@@ -488,7 +341,54 @@
     "telework_days": null,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": null,
+    "commute_minutes": 74,
+    "flags": [
+      "Télétravail non mentionné"
+    ],
+    "score": 6,
+    "score_reasons": [
+      "Signaux CRM lifecycle (email / segmentation / campagne)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+  },
+  {
+    "source": "Welcome to the Jungle",
+    "title": "Chargé(e) de campagnes CRM / Marketing Direct F/H",
+    "link": "https://www.welcometothejungle.com/fr/companies/matmut-fr/jobs/charge-de-campagnes-crm-marketing-direct-f-h_sotteville",
+    "company": "Matmut",
+    "location": "Sotteville, France",
+    "description": "PAS JUSTE UN PROFIL !\r\n\r\nAvoir le bon profil pour la Matmut, ce n'est pas qu'une question de compétences. Nous recherchons la personne qui partagera nos valeurs mutualistes et s'épanouira à nos côtés.\r\n\r\nDoté(e) d'un Bac +3 minimum en école de commerce, en marketing digital ou ingénieur…, vous disposez d'une expérience réussie de 3 ans minimum au sein d'un acteur du secteur financier sur des missions similaires et disposer d'une bonne maitrise d'un des principaux outils d'activation marketing (HubSpot, Adobe Campaign, Saleforces, Actito… ).\r\n\r\nVous avez d'excellentes connaissances de l'univers digital et un intérêt prononcé pour les KPI et les données.\r\n\r\nVous avez des bonnes capacités d'analyse et de synthèse.\r\n\r\nVous êtes reconnu pour votre rigueur, votre adaptabilité et votre autonomie\r\n\r\nVotre capacité à travailler en équipe est aussi un atout pour mener à bien vos missions\r\n\r\nVotre salaire et vos avantages ?\r\n\r\n•\tEntre 40 k€ et 50 k€ annuel brut \r\n•\tIntéressement et participation aux résultats\r\n•\tMutuelle santé à 4 € par mois\r\n•\tTélétravail (2 jours par semaine)\r\n•\tRemboursement des frais de transport public à hauteur de 75 %\r\n•\tComité Social et Économique (CSE) avec de nombreux avantages\r\n•\tMatmut Académie (formations et parcours professionnels)\r\n\r\nNous vous offrons une formation complète, un tutorat de proximité et un environnement de travail favorisant l'esprit d'équipe. De quoi grandir, en restant toujours motivé(e) !\r\n\r\nVous partagez ce sens de l'engagement ? Alors échangeons !\r\n\r\nA compétences égales, ce poste est ouvert aux travailleurs en situation de handicap ou assimilés au sens de l'article L. 5212-13 du Code du travail. L'UES Matmut s'engage en faveur de la diversité, l'égalité professionnelle, l'emploi des travailleurs handicapés.",
+    "published": "2026-07-25T02:00:00.000+02:00",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": 100,
+    "flags": [
+      "Trajet long (100 min)"
+    ],
+    "score": 6,
+    "score_reasons": [
+      "Compétences alignées (3)",
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (100 min)"
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 100 min et pas 100 % télétravail"
+  },
+  {
+    "source": "LinkedIn (alerte)",
+    "title": "Campaign & Customer Marketing Manager",
+    "link": "https://www.linkedin.com/comm/jobs/view/4453132685/?trackingId=khZO6S8MlbYMrEWqCW6gkA%3D%3D&amp;refId=AE%2BdGi2g6ozYxvnWhtjJJQ%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3B5lQT1cYUQbW141Wb5l6A1w%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=1DBWATijLioso1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4453132685_ssid_8583513778_fmid_8ulvbk~msssyds2~3j&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4453132685_ssid_8583513778_fmid_8ulvbk~msssyds2~3j-null-8ulvbk~msssyds2~3j-null-null&amp;eid=8ulvbk-msssyds2-3j&amp;otpToken=N2M5M2EyMDJhODcyMjRkNzBlYmE2ZTQ3YzE4Yjc4NzQ5MGM2YjFkNmMwYzhkNDQzODQ2MzE1NzVmYmYxNmI3YjJjNTc0YWU2NzFiYTRiM2M0MzQ1Y2RjMmE4NmVmNTZkYjViNTdjZDRlNTVlOWE0YjliMDIwYjczNTc1NzZlNzA1N2IyMWYyNjJmN2JmZSwyLDE%3D",
+    "company": "",
+    "location": "",
+    "description": "",
+    "published": "2026-08-14T10:26:45+00:00",
+    "in_france": true,
+    "salary_extracted": null,
+    "telework_days": null,
+    "contract_type": null,
     "flags": [
       "Télétravail non mentionné"
     ],
@@ -501,12 +401,32 @@
   },
   {
     "source": "LinkedIn (alerte)",
-    "title": "Campaign & Customer Marketing Manager",
-    "link": "https://www.linkedin.com/comm/jobs/view/4453132685/?trackingId=khZO6S8MlbYMrEWqCW6gkA%3D%3D&amp;refId=AE%2BdGi2g6ozYxvnWhtjJJQ%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3B5lQT1cYUQbW141Wb5l6A1w%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=1DBWATijLioso1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4453132685_ssid_8583513778_fmid_8ulvbk~msssyds2~3j&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4453132685_ssid_8583513778_fmid_8ulvbk~msssyds2~3j-null-8ulvbk~msssyds2~3j-null-null&amp;eid=8ulvbk-msssyds2-3j&amp;otpToken=N2M5M2EyMDJhODcyMjRkNzBlYmE2ZTQ3YzE4Yjc4NzQ5MGM2YjFkNmMwYzhkNDQzODQ2MzE1NzVmYmYxNmI3YjJjNTc0YWU2NzFiYTRiM2M0MzQ1Y2RjMmE4NmVmNTZkYjViNTdjZDRlNTVlOWE0YjliMDIwYjczNTc1NzZlNzA1N2IyMWYyNjJmN2JmZSwyLDE%3D",
+    "title": "Campaign manager- influencer marketing (remote)",
+    "link": "https://www.linkedin.com/comm/jobs/view/4427347814?trackingId=&amp;refId=&amp;lipi=urn%3Ali%3Apage%3Aemail_email_jobs_saved_job_reminder_01%3BTw0nZfOqSLCLI7JWIxLylw%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=1Rdgjrk7fYnso1&amp;trk=eml-email_jobs_saved_job_reminder_01-saved~jobs-0-job_posting&amp;trkEmail=eml-email_jobs_saved_job_reminder_01-saved~jobs-0-job_posting-null-8ulvbk~msrtuyge~no-null-null&amp;eid=8ulvbk-msrtuyge-no&amp;otpToken=OTI4MmM2Mzk4ZDQ2NmRhODc4OGZjY2Y2NWE5YzEwNDNjNjA3OGY3Y2U2MTYwM2MxNTM4MGI5MTQ4NTBhODhlYzYwODMwODU3NmVmOGUwYjgzN2E0ZTBkYjhmZjU5Njc0ODljYTIyMTIzMTVjYzRkMWRhODEzM2JkZjUzMmY2M2E3NzFiM2FhZTY2MWZkZSwyLDE%3D",
     "company": "",
     "location": "",
     "description": "",
-    "published": "2026-08-14T10:26:45+00:00",
+    "published": "2026-08-13T18:04:15+00:00",
+    "in_france": true,
+    "salary_extracted": null,
+    "telework_days": null,
+    "contract_type": null,
+    "flags": [],
+    "score": 6,
+    "score_reasons": [
+      "Signaux CRM lifecycle (email / segmentation / campagne)"
+    ],
+    "recommendation": "à_postuler",
+    "recommendation_reason": "Profil correspondant, aucun signal à vérifier (score 6/10)"
+  },
+  {
+    "source": "LinkedIn (alerte)",
+    "title": "CRM Campaign Manager H/F NEXTON · Paris (Sur site) Candidature simplifiée",
+    "link": "https://www.linkedin.com/comm/jobs/view/4444367149/?trackingId=HMPk4yMGIeia0XA1F%2B9e8A%3D%3D&amp;refId=2i9NkJwWReOdfEJBXl7aTw%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_smart_expansion_01%3B2EXZKKncSUetfj%2FAcaT7%2BQ%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=1pZWeyCF8GsYo1&amp;trk=eml-email_job_alert_digest_smart_expansion_01-JOBS_POSTING_SECTION_1-0-job_card_0_jobid_4444367149_fmid_8ulvbk~msx7k9z4~z9&amp;trkEmail=eml-email_job_alert_digest_smart_expansion_01-JOBS_POSTING_SECTION_1-0-job_card_0_jobid_4444367149_fmid_8ulvbk~msx7k9z4~z9-null-8ulvbk~msx7k9z4~z9-null-null&amp;eid=8ulvbk-msx7k9z4-z9&amp;otpToken=M2Q5YTE5NTk1MDJmNWUyOWE4YTExZmUzMzRlNGE3NmNmNDI1MDcwMDI0YmE1OTA3ZDNlMGE3OTU2MTk1MWM4NTVkMjdmZTlkYTNiZmE4YmMyNTZlZmRiOGU2MGZkZDkxNTI0M2I1ODA4MThmNzcwOGYwM2E4NDZlZGUyY2Q1YWY0NGMzNmVjNjQxZDZmZSwyLDE%3D",
+    "company": "",
+    "location": "",
+    "description": "",
+    "published": "2026-08-17T12:26:45+00:00",
     "in_france": true,
     "salary_extracted": null,
     "telework_days": null,
@@ -544,40 +464,72 @@
     "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
-    "source": "LinkedIn (alerte)",
-    "title": "Campaign manager- influencer marketing (remote)",
-    "link": "https://www.linkedin.com/comm/jobs/view/4427347814?trackingId=&amp;refId=&amp;lipi=urn%3Ali%3Apage%3Aemail_email_jobs_saved_job_reminder_01%3BTw0nZfOqSLCLI7JWIxLylw%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=1Rdgjrk7fYnso1&amp;trk=eml-email_jobs_saved_job_reminder_01-saved~jobs-0-job_posting&amp;trkEmail=eml-email_jobs_saved_job_reminder_01-saved~jobs-0-job_posting-null-8ulvbk~msrtuyge~no-null-null&amp;eid=8ulvbk-msrtuyge-no&amp;otpToken=OTI4MmM2Mzk4ZDQ2NmRhODc4OGZjY2Y2NWE5YzEwNDNjNjA3OGY3Y2U2MTYwM2MxNTM4MGI5MTQ4NTBhODhlYzYwODMwODU3NmVmOGUwYjgzN2E0ZTBkYjhmZjU5Njc0ODljYTIyMTIzMTVjYzRkMWRhODEzM2JkZjUzMmY2M2E3NzFiM2FhZTY2MWZkZSwyLDE%3D",
-    "company": "",
-    "location": "",
-    "description": "",
-    "published": "2026-08-13T18:04:15+00:00",
-    "in_france": true,
-    "salary_extracted": null,
-    "telework_days": null,
-    "contract_type": null,
-    "flags": [],
-    "score": 6,
-    "score_reasons": [
-      "Signaux CRM lifecycle (email / segmentation / campagne)"
-    ],
-    "recommendation": "à_postuler",
-    "recommendation_reason": "Profil correspondant, aucun signal à vérifier (score 6/10)"
-  },
-  {
     "source": "Adzuna",
-    "title": "Responsable CRM - CDI - Paris (H/F)",
-    "link": "https://www.adzuna.fr/details/5782428756?utm_medium=api&utm_source=707eaaff",
-    "company": "L'atelier des Chefs",
-    "location": "16ème Arrondissement, Paris",
-    "description": "À propos de L'atelier des Chefs L’atelier des Chefs est devenu un des leaders de la formation aux métiers essentiels de la main et de l’humain. Aujourd’hui, nous proposons plus de 30 formations diplômantes dans des secteurs clés et en tension : restauration, bâtiment, santé et social, beauté et bien-être, arts décoratifs et mécanique. Essentiels et porteurs de sens, ces métiers s'adressent à des passionnés prêts à relever les défis de demain ! Nos formations 100 % digitales, nous ont permis d'a…",
+    "title": "CRM Marketing Manager (H/F) (CDI)",
+    "link": "https://www.adzuna.fr/details/5836192979?utm_medium=api&utm_source=707eaaff",
+    "company": "ARAVATI FRANCE",
+    "location": "1er Arrondissement, Paris",
+    "description": "Vous aimez construire plutôt que maintenir ? Vous recherchez un poste où le CRM n'est pas seulement un outil marketing mais un véritable levier de transformation de l'entreprise ? Notre client, acteur majeur du conseil, de l'audit et de l'expertise auprès des entreprises, poursuit une transformation ambitieuse de son organisation et de son approche commerciale. Dans ce contexte, il crée le poste de CRM Marketing Manager, véritable référent de la stratégie CRM et Marketing Automation. Vous prene…",
     "salary_raw": "",
-    "published": "2026-06-30T22:49:04Z",
-    "contract_raw": "",
+    "published": "2026-08-11T02:45:29Z",
+    "contract_raw": "permanent",
     "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
     "contract_type": "CDI",
-    "commute_minutes": null,
+    "commute_minutes": 80,
+    "flags": [
+      "Télétravail non mentionné"
+    ],
+    "score": 5,
+    "score_reasons": [
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (80 min)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Adobe Campaign Expert",
+    "link": "https://www.adzuna.fr/details/5617752404?utm_medium=api&utm_source=707eaaff",
+    "company": "Numberly",
+    "location": "9ème Arrondissement, Paris",
+    "description": "Numberly is recognized as one of the world's leading data marketing specialists with nearly 500 employees and 11 offices worldwide serving more than 300 clients (L'Oréal, Campari, Colgate, Nestlé, HSBC). By putting technology to work for brands and consumers, Numberly is at the heart of business growth and everyone's desire for more sustainable and relevant marketing. Numberly leverages the latest advances in data processing, analysis and activation, incorporating artificial intelligence techno…",
+    "salary_raw": "",
+    "published": "2026-02-06T20:55:36Z",
+    "contract_raw": "",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": 76,
+    "flags": [
+      "Télétravail non mentionné",
+      "Annonce ancienne (192 j)"
+    ],
+    "score": 5,
+    "score_reasons": [
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (76 min)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné ; Annonce ancienne (192 j)"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Chef de projet CRM",
+    "link": "https://www.adzuna.fr/details/5823271450?utm_medium=api&utm_source=707eaaff",
+    "company": "ENOVA Consulting",
+    "location": "Paris, Ile-de-France",
+    "description": "ENOVA poursuit son développement et renforce ses équipes en intégrant un(e) Chef de Projet Technico-Fonctionnel CRM / Fidélisation en CDI. Vous rejoindrez notre communauté de consultants et interviendrez en mission longue durée au sein d'un grand compte, dans un environnement stimulant, transverse et orienté transformation digitale. Contexte de la mission Dans le cadre d'un projet stratégique de transformation de l'expérience client et de fidélisation, vous interviendrez auprès d'un acteur maje…",
+    "salary_raw": "600-700 €",
+    "published": "2026-08-01T05:49:12Z",
+    "contract_raw": "",
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": "CDI",
+    "commute_minutes": 74,
     "flags": [
       "Pertinence CRM à confirmer",
       "Télétravail non mentionné"
@@ -588,57 +540,66 @@
     "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
-    "source": "Welcome to the Jungle",
-    "title": "Growth Marketer - focus Build & CRM",
-    "link": "https://www.welcometothejungle.com/fr/companies/assoconnect/jobs/growth-marketer-focus-build-crm_paris",
-    "company": "AssoConnect",
-    "location": "Paris, France",
-    "description": "",
-    "published": "2026-08-09T00:00:00.000+02:00",
+    "source": "Adzuna",
+    "title": "Assistant / Assistante marketing",
+    "link": "https://www.adzuna.fr/details/5846288495?utm_medium=api&utm_source=707eaaff",
+    "company": "BMW France",
+    "location": "Yvelines, Ile-de-France",
+    "description": "Intégré(e) au sein du Service Marketing Communication et en étroite collaboration avec le/la Responsable Marketing 360°, vous serez amené(e) à participer aux missions suivantes : - Campagnes publicitaires et communication fil rouge :Élaboration des briefs à destination des agences de publicité et d’achat medias - Suivi des déclinaisons créatives (annonces Presse, spot TV, spot radio, affichage) - Optimisation de la création des fils rouges en fonction des learnings des précédentes activations (…",
+    "salary_raw": "",
+    "published": "2026-08-18T09:34:29Z",
+    "contract_raw": "permanent",
     "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
-    "contract_type": null,
-    "commute_minutes": null,
+    "contract_type": "CDI",
+    "commute_minutes": 161,
     "flags": [
-      "Pertinence CRM à confirmer",
-      "Télétravail non mentionné"
+      "Télétravail non mentionné",
+      "Trajet long (161 min)"
     ],
     "score": 5,
-    "score_reasons": [],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
+    "score_reasons": [
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (161 min)"
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 161 min et pas 100 % télétravail"
   },
   {
     "source": "Welcome to the Jungle",
-    "title": "Chef de Projet CRM H/F",
-    "link": "https://www.welcometothejungle.com/fr/companies/mcdonald-s-france/jobs/chef-de-projet-crm-h-f_guyancourt",
-    "company": "McDonald's France",
-    "location": "Guyancourt, France",
+    "title": "Chef de projet CRM - Sénior F/H",
+    "link": "https://www.welcometothejungle.com/fr/companies/abeille-assurances-aema-groupe/jobs/chef-de-projet-crm-senior-f-h_bois-colombes",
+    "company": "Abeille Assurances (Aéma Groupe)",
+    "location": "Bois-Colombes, France",
     "description": "",
-    "published": "2026-07-09T00:00:00.000+02:00",
+    "published": "2026-08-08T02:00:00.000+02:00",
     "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": null,
+    "commute_minutes": 101,
     "flags": [
       "Pertinence CRM à confirmer",
-      "Télétravail non mentionné"
+      "Télétravail non mentionné",
+      "Trajet long (101 min)"
     ],
     "score": 5,
-    "score_reasons": [],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
+    "score_reasons": [
+      "Secteur favorable : assurance",
+      "Trajet long (101 min)"
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 101 min et pas 100 % télétravail"
   },
   {
     "source": "LinkedIn (alerte)",
     "title": "Senior Manager CRM",
-    "link": "https://www.linkedin.com/comm/jobs/view/4442270134/?trackingId=j77QLj44QkafYDdDua%2FPdg%3D%3D&amp;refId=JY0WtxM9Sfy%2BSTI7jaQR%2BA%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_application_confirmation_with_nba_01%3BX8hchSjrTz%2BAx%2B8PQ%2F5DHQ%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=3i3LQAovYpnco1&amp;trk=eml-email_application_confirmation_with_nba_01-jymbii-0-job_posting&amp;trkEmail=eml-email_application_confirmation_with_nba_01-jymbii-0-job_posting-null-8ulvbk~msrclyze~gc-null-null&amp;eid=8ulvbk-msrclyze-gc&amp;otpToken=OGI0NDBjYzQ3NTZmNWY4MGFmMGEyNThhOTE4NWJkOWY0ZDEzMzBkODlhOGJlNjAyM2ZlZjBmZjRhMzNiOTMwZDUwOTRjMDcyYzYxYzc0Y2E4YjVmYjRkMjdlZTAwNzkyZDg5MmJhMTQ3ZjY4MTYwZDZlNmU5YzYzMjQ5M2M0ODViODY5MTY3ODA3YmUzZCwyLDE%3D",
+    "link": "https://www.linkedin.com/comm/jobs/view/4442270134/?trackingId=uGx%2FqcjDQUialA%2FrgU5K7w%3D%3D&amp;refId=5M9WAbPmT9KmYP7EIGNdVQ%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_application_confirmation_with_nba_01%3BjcbLlfpBQGS8bO12Ue168g%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=3EpkwsqOMonco1&amp;trk=eml-email_application_confirmation_with_nba_01-jymbii-0-job_posting&amp;trkEmail=eml-email_application_confirmation_with_nba_01-jymbii-0-job_posting-null-8ulvbk~msrclen6~9r-null-null&amp;eid=8ulvbk-msrclen6-9r&amp;otpToken=Yjk5YWI5NjA0MDNiODIxY2U2MmRlMGZhMzFlMTFjMWU3ZWE0OTZlYzNmMmQ2OWJmMTY0NjA1MmQyYTRkZjczNTdkNjdiM2E3OGUzOGMxM2E1NzRmMjMyNGY0NmZjMmM2NmFlZGM5YWExMWFkM2RkZTNiYTk4MDJhZDk4YTQxOTk5MDdlMTg0ZTNmYWU4NiwyLDE%3D",
     "company": "",
     "location": "",
     "description": "",
-    "published": "2026-08-13T10:01:23+00:00",
+    "published": "2026-08-13T10:00:57+00:00",
     "in_france": true,
     "salary_extracted": null,
     "telework_days": null,
@@ -656,11 +617,11 @@
   {
     "source": "LinkedIn (alerte)",
     "title": "Senior Manager CRM",
-    "link": "https://www.linkedin.com/comm/jobs/view/4442270134/?trackingId=uGx%2FqcjDQUialA%2FrgU5K7w%3D%3D&amp;refId=5M9WAbPmT9KmYP7EIGNdVQ%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_application_confirmation_with_nba_01%3BjcbLlfpBQGS8bO12Ue168g%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=3EpkwsqOMonco1&amp;trk=eml-email_application_confirmation_with_nba_01-jymbii-0-job_posting&amp;trkEmail=eml-email_application_confirmation_with_nba_01-jymbii-0-job_posting-null-8ulvbk~msrclen6~9r-null-null&amp;eid=8ulvbk-msrclen6-9r&amp;otpToken=Yjk5YWI5NjA0MDNiODIxY2U2MmRlMGZhMzFlMTFjMWU3ZWE0OTZlYzNmMmQ2OWJmMTY0NjA1MmQyYTRkZjczNTdkNjdiM2E3OGUzOGMxM2E1NzRmMjMyNGY0NmZjMmM2NmFlZGM5YWExMWFkM2RkZTNiYTk4MDJhZDk4YTQxOTk5MDdlMTg0ZTNmYWU4NiwyLDE%3D",
+    "link": "https://www.linkedin.com/comm/jobs/view/4442270134/?trackingId=j77QLj44QkafYDdDua%2FPdg%3D%3D&amp;refId=JY0WtxM9Sfy%2BSTI7jaQR%2BA%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_application_confirmation_with_nba_01%3BX8hchSjrTz%2BAx%2B8PQ%2F5DHQ%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=3i3LQAovYpnco1&amp;trk=eml-email_application_confirmation_with_nba_01-jymbii-0-job_posting&amp;trkEmail=eml-email_application_confirmation_with_nba_01-jymbii-0-job_posting-null-8ulvbk~msrclyze~gc-null-null&amp;eid=8ulvbk-msrclyze-gc&amp;otpToken=OGI0NDBjYzQ3NTZmNWY4MGFmMGEyNThhOTE4NWJkOWY0ZDEzMzBkODlhOGJlNjAyM2ZlZjBmZjRhMzNiOTMwZDUwOTRjMDcyYzYxYzc0Y2E4YjVmYjRkMjdlZTAwNzkyZDg5MmJhMTQ3ZjY4MTYwZDZlNmU5YzYzMjQ5M2M0ODViODY5MTY3ODA3YmUzZCwyLDE%3D",
     "company": "",
     "location": "",
     "description": "",
-    "published": "2026-08-13T10:00:57+00:00",
+    "published": "2026-08-13T10:01:23+00:00",
     "in_france": true,
     "salary_extracted": null,
     "telework_days": null,
@@ -695,5 +656,130 @@
     "score_reasons": [],
     "recommendation": "à_revoir",
     "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
+  },
+  {
+    "source": "LinkedIn (alerte)",
+    "title": "Senior Manager CRM",
+    "link": "https://www.linkedin.com/comm/jobs/view/4442270134?trackingId=&amp;refId=&amp;lipi=urn%3Ali%3Apage%3Aemail_email_jobs_saved_job_reminder_01%3BKXoPodpFTimVmi30nStfvg%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=3EO0ELsC_arIo1&amp;trk=eml-email_jobs_saved_job_reminder_01-saved~jobs-0-job_posting&amp;trkEmail=eml-email_jobs_saved_job_reminder_01-saved~jobs-0-job_posting-null-8ulvbk~msw3k4a4~7u-null-null&amp;eid=8ulvbk-msw3k4a4-7u&amp;otpToken=YzUwMzNjZWU0MTAzMDk5YzM3YWJiYTVjMDI5ODRjMTc1NmQ0MDkyZmNlODE0YjRjZDQ0N2I2MzNiMzcwMzZjYTljOGRkMTgzNDg1ZGY4OGFkODkwMGI1MmEzYzYzZThiNTEwY2RjMjNmYzY2ZWI2ODZkMWVhNmZlZDE2YzYwMjFhMjRkMTJmN2I4NmY0MiwyLDE%3D",
+    "company": "",
+    "location": "",
+    "description": "",
+    "published": "2026-08-16T17:46:51+00:00",
+    "in_france": true,
+    "salary_extracted": null,
+    "telework_days": null,
+    "contract_type": null,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Séniorité / management d'équipe ?",
+      "Télétravail non mentionné"
+    ],
+    "score": 5,
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Séniorité / management d'équipe ? ; Télétravail non mentionné"
+  },
+  {
+    "source": "France Travail",
+    "title": "Chef de projet IT, CRM et SI (H/F)",
+    "link": "https://candidat.francetravail.fr/offres/recherche/detail/212PFBH",
+    "company": "CDT RELATIONS HUMAINES",
+    "location": "75 - Paris 13e Arrondissement (75013)",
+    "description": "World Vision France est une ONG de solidarité internationale, engagée pour les enfants les plus vulnérables. Inspirée par les valeurs chrétiennes, elle intervient partout dans le monde pour soulager leurs souffrances et leur permettre de grandir dans un environnement plein d'espoir.\n\nMembre du réseau international World Vision, présent dans près de 100 pays, l'association intervient aussi bien en situation d'urgence humanitaire que dans des programmes de développement à long terme, notamment à travers le parrainage d'enfants.  \n\nPoste\n\nRattaché à la Directrice Marketing, en interaction directe avec l'équipe IT internationale et des prestataires en France, dans un environnement anglophone exigeant, vous contribuez à la transformation numérique de l'association, avec pour pièce maîtresse, l'intégration du CRM Microsoft Dynamics 365.\n\nVos activités principales :\n\nFinalisation de l'intégration CRM Microsoft Dynamics\n- Piloter la finalisation des flux entre le site internet, l'ERP Business Central et le CRM MS Dynamics\n- Rédiger, qualifier et valider les spécifications fonctionnelles, cahiers de recette et plans de tests\n- Configurer et maintenir les workflows d'automatisation via Power Automate\n- Superviser les flux API (JSON) entre les systèmes et garantir leur fiabilité\n- Assurer un suivi rigoureux des développements avec les prestataires en France et l'équipe IT internationale\n\nContribution technique quotidienne\n- Analyser les anomalies, en identifier les causes et proposer des correctifs\n- Documenter les processus, configurations et évolutions des systèmes\n- Participer aux tests et recettes fonctionnelles, identifier et qualifier les bugs\n\nOptimisation continue des systèmes\n- Identifier et prioriser les évolutions pour améliorer l'expérience donateur et fluidifier les opérations internes\n- Accompagner les équipes métier dans la prise en main des outils\n- Veiller à la cohérence et à l'évolutivité de l'écosystème technique global\n\nProjets à venir\n- Contribuer au déploiement d'une application mobile donateurs ou d'un espace parrains en ligne\n\nProfil recherché\n\nDe formation Bac+4/5 en SI, gestion de projet IT ou équivalent, vous justifiez d'au moins 2 ans d'expérience en gestion de projet IT, avec une participation active à un projet CRM.\nUne expérience confirmée sur Microsoft Dynamics 365 est requise ; la connaissance de Business Central constitue un atout apprécié.\nVous comprenez les flux d'intégration entre systèmes et savez dialoguer avec des développeurs. Autonome, proactif et orienté solution, vous êtes capable d'avancer sans cadrage systématique, dans des environnements complexes, multi-acteurs, avec des délais contraints et priorités mouvantes.\nAnglais courant impératif : échanges réguliers, écrits et oraux, avec les équipes techniques internationales.\nVous souhaitez contribuer par votre travail à la protection des enfants les plus vulnérables dans le monde, dans un environnement de travail collaboratif et bienveillant, à taille humaine.",
+    "salary_raw": "",
+    "published": "2026-08-18T09:24:27.769Z",
+    "contract_type": "CDI",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "commute_minutes": 78,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné"
+    ],
+    "score": 4,
+    "score_reasons": [
+      "Trajet long (78 min)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Responsable CRM - CDI - Paris (H/F)",
+    "link": "https://www.adzuna.fr/details/5782428756?utm_medium=api&utm_source=707eaaff",
+    "company": "L'atelier des Chefs",
+    "location": "16ème Arrondissement, Paris",
+    "description": "À propos de L'atelier des Chefs L’atelier des Chefs est devenu un des leaders de la formation aux métiers essentiels de la main et de l’humain. Aujourd’hui, nous proposons plus de 30 formations diplômantes dans des secteurs clés et en tension : restauration, bâtiment, santé et social, beauté et bien-être, arts décoratifs et mécanique. Essentiels et porteurs de sens, ces métiers s'adressent à des passionnés prêts à relever les défis de demain ! Nos formations 100 % digitales, nous ont permis d'a…",
+    "salary_raw": "",
+    "published": "2026-06-30T22:49:04Z",
+    "contract_raw": "",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": "CDI",
+    "commute_minutes": 85,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné"
+    ],
+    "score": 4,
+    "score_reasons": [
+      "Trajet long (85 min)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Head of E-commerce (F/H)",
+    "link": "https://www.adzuna.fr/details/5774380371?utm_medium=api&utm_source=707eaaff",
+    "company": "",
+    "location": "Boulogne-Billancourt, Hauts-de-Seine",
+    "description": "Rattaché·e au Directeur Digital, le/la Head of E-commerce / Responsable E-commerce contribue à la définition et à la mise en œuvre de la stratégie e-commerce, en cohérence avec les objectifs globaux de l'entreprise. À ce titre, les principales missions sont : Définir et piloter la stratégie e-commerce afin d'accroître le chiffre d'affaires et la rentabilité du canal digital Manager et structurer une équipe dédiée (traffic, CRM, chefs de projet, responsables de site) en assurant performance et e…",
+    "salary_raw": "80000-90000 €",
+    "published": "2026-06-24T06:46:51Z",
+    "contract_raw": "",
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": 95,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Séniorité / management d'équipe ?",
+      "Télétravail non mentionné",
+      "Trajet long (95 min)"
+    ],
+    "score": 4,
+    "score_reasons": [
+      "Trajet long (95 min)"
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 95 min et pas 100 % télétravail"
+  },
+  {
+    "source": "Welcome to the Jungle",
+    "title": "Chef de Projet CRM H/F",
+    "link": "https://www.welcometothejungle.com/fr/companies/mcdonald-s-france/jobs/chef-de-projet-crm-h-f_guyancourt",
+    "company": "McDonald's France",
+    "location": "Guyancourt, France",
+    "description": "",
+    "published": "2026-07-09T00:00:00.000+02:00",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": 98,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné",
+      "Trajet long (98 min)"
+    ],
+    "score": 4,
+    "score_reasons": [
+      "Trajet long (98 min)"
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 98 min et pas 100 % télétravail"
   }
 ]
