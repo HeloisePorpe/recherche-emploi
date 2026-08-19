@@ -1055,7 +1055,7 @@ def fetch_wttj_jobs():
                 oslug = org.get("slug") or ""
                 link = (f"https://www.welcometothejungle.com/fr/companies/{oslug}/jobs/{slug}"
                         if oslug and slug else "")
-                jobs.append({
+                job = {
                     "source": "Welcome to the Jungle",
                     "title": h.get("name") or h.get("title") or "",
                     "link": link,
@@ -1063,7 +1063,31 @@ def fetch_wttj_jobs():
                     "location": loc,
                     "description": h.get("description") or h.get("profile") or "",
                     "published": h.get("published_at") or "",
-                })
+                }
+                # Contrat & télétravail depuis les champs structurés WTTJ : ces
+                # infos (« CDD / Temporaire », « Télétravail non autorisé ») ne
+                # figurent souvent NI dans le titre NI dans la description, donc
+                # sans ce mapping les CDD / stages / alternances / postes sans
+                # télétravail passeraient le filtre. Défensif : on n'écarte que
+                # les valeurs non-CDI sans ambiguïté (un vrai CDI reste gardé).
+                ctype = str(h.get("new_contract_type") or h.get("contract_type") or "").lower()
+                if any(k in ctype for k in ("temporary", "cdd", "fixed", "interim", "intérim")):
+                    job["contract_type"] = "CDD"
+                elif any(k in ctype for k in ("internship", "stage", "apprentic",
+                                              "alternance", "work_study", "freelance",
+                                              "vie", "civic")):
+                    job["contract_excluded"] = True
+                elif any(k in ctype for k in ("full_time", "part_time", "permanent", "cdi")):
+                    job["contract_type"] = "CDI"
+                remote = h.get("remote")
+                if isinstance(remote, str) and remote:
+                    rl = remote.lower()
+                    if any(k in rl for k in ("no_remote", "no-remote", "not_allowed",
+                                             "onsite", "on_site", "on-site", "none")) or rl == "no":
+                        job.setdefault("telework_days", 0)   # présentiel → exclu (min 2 j)
+                    elif "full" in rl or "100" in rl:
+                        job.setdefault("telework_days", 5)   # full remote
+                jobs.append(job)
             time.sleep(0.3)
         except Exception as ex:
             body = ""
