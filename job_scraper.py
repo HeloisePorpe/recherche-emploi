@@ -1027,7 +1027,6 @@ def fetch_wttj_jobs():
     print("  → Welcome to the Jungle (Algolia)...")
     app, key, index = _wttj_algolia_config()
     jobs, raw_total = [], 0
-    _diag = {}  # (diag temporaire) distribution des valeurs contrat/remote WTTJ
     for q in ["CRM", "campaign manager", "marketing automation", "email marketing",
               "chef de projet CRM", "marketing direct", "emailing"]:
         try:
@@ -1071,8 +1070,6 @@ def fetch_wttj_jobs():
                 # sans ce mapping les CDD / stages / alternances / postes sans
                 # télétravail passeraient le filtre. Défensif : on n'écarte que
                 # les valeurs non-CDI sans ambiguïté (un vrai CDI reste gardé).
-                _kc = f"contract={h.get('new_contract_type') or h.get('contract_type')!r} remote={h.get('remote')!r}"
-                _diag[_kc] = _diag.get(_kc, 0) + 1
                 ctype = str(h.get("new_contract_type") or h.get("contract_type") or "").lower()
                 if any(k in ctype for k in ("temporary", "cdd", "fixed", "interim", "intérim")):
                     job["contract_type"] = "CDD"
@@ -1101,9 +1098,6 @@ def fetch_wttj_jobs():
                 except Exception:
                     body = ""
             print(f"     ERREUR WTTJ '{q}' : {ex}{body}")
-    # (diag temporaire) 15 combinaisons contrat/remote les plus fréquentes
-    for kc, n in sorted(_diag.items(), key=lambda x: -x[1])[:15]:
-        print(f"     [diag WTTJ] {kc} : {n}")
     jobs = [j for j in jobs if j.get("title") and is_relevant(j)]
     unique = _dedup(jobs)
     print(f"     {len(unique)} offres pertinentes (sur {raw_total} hits Algolia)")
