@@ -1027,6 +1027,7 @@ def fetch_wttj_jobs():
     print("  → Welcome to the Jungle (Algolia)...")
     app, key, index = _wttj_algolia_config()
     jobs, raw_total = [], 0
+    _diag = {}  # (diag temporaire) distribution des valeurs contrat/remote WTTJ
     for q in ["CRM", "campaign manager", "marketing automation", "email marketing",
               "chef de projet CRM", "marketing direct", "emailing"]:
         try:
@@ -1055,7 +1056,7 @@ def fetch_wttj_jobs():
                 oslug = org.get("slug") or ""
                 link = (f"https://www.welcometothejungle.com/fr/companies/{oslug}/jobs/{slug}"
                         if oslug and slug else "")
-                jobs.append({
+                job = {
                     "source": "Welcome to the Jungle",
                     "title": h.get("name") or h.get("title") or "",
                     "link": link,
@@ -1063,7 +1064,33 @@ def fetch_wttj_jobs():
                     "location": loc,
                     "description": h.get("description") or h.get("profile") or "",
                     "published": h.get("published_at") or "",
-                })
+                }
+                # Contrat & télétravail depuis les champs structurés WTTJ : ces
+                # infos (« CDD / Temporaire », « Télétravail non autorisé ») ne
+                # figurent souvent NI dans le titre NI dans la description, donc
+                # sans ce mapping les CDD / stages / alternances / postes sans
+                # télétravail passeraient le filtre. Défensif : on n'écarte que
+                # les valeurs non-CDI sans ambiguïté (un vrai CDI reste gardé).
+                _kc = f"contract={h.get('new_contract_type') or h.get('contract_type')!r} remote={h.get('remote')!r}"
+                _diag[_kc] = _diag.get(_kc, 0) + 1
+                ctype = str(h.get("new_contract_type") or h.get("contract_type") or "").lower()
+                if any(k in ctype for k in ("temporary", "cdd", "fixed", "interim", "intérim")):
+                    job["contract_type"] = "CDD"
+                elif any(k in ctype for k in ("internship", "stage", "apprentic",
+                                              "alternance", "work_study", "freelance",
+                                              "vie", "civic")):
+                    job["contract_excluded"] = True
+                elif any(k in ctype for k in ("full_time", "part_time", "permanent", "cdi")):
+                    job["contract_type"] = "CDI"
+                remote = h.get("remote")
+                if isinstance(remote, str) and remote:
+                    rl = remote.lower()
+                    if any(k in rl for k in ("no_remote", "no-remote", "not_allowed",
+                                             "onsite", "on_site", "on-site", "none")) or rl == "no":
+                        job.setdefault("telework_days", 0)   # présentiel → exclu (min 2 j)
+                    elif "full" in rl or "100" in rl:
+                        job.setdefault("telework_days", 5)   # full remote
+                jobs.append(job)
             time.sleep(0.3)
         except Exception as ex:
             body = ""
@@ -1074,6 +1101,9 @@ def fetch_wttj_jobs():
                 except Exception:
                     body = ""
             print(f"     ERREUR WTTJ '{q}' : {ex}{body}")
+    # (diag temporaire) 15 combinaisons contrat/remote les plus fréquentes
+    for kc, n in sorted(_diag.items(), key=lambda x: -x[1])[:15]:
+        print(f"     [diag WTTJ] {kc} : {n}")
     jobs = [j for j in jobs if j.get("title") and is_relevant(j)]
     unique = _dedup(jobs)
     print(f"     {len(unique)} offres pertinentes (sur {raw_total} hits Algolia)")
