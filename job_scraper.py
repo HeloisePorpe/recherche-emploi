@@ -436,6 +436,31 @@ _AVANT_VENTE = re.compile(
     r'appels?\s+d.offres?\s+(?:client|commerc)|d[ée]velopper\s+(?:votre|son)\s+r[ée]seau\s+professionnel',
     re.I)
 
+# Habilitation de sécurité gouvernementale (calibration v5 §7) : disqualifiant
+# immédiat — réservé aux citoyens accrédités du pays concerné.
+_CLEARANCE = re.compile(
+    r'security clearance|(?:active\s+)?secret clearance|clearance or higher|'
+    r'top[- ]secret|ts/sci|habilitation\s+(?:de\s+)?s[ée]curit[ée]|'
+    r'habilitation\s+d[ée]fense|habilitation\s+secr[èe]t\s+d[ée]fense', re.I)
+
+# Faux positif « e-CRM » en Cash Management / trésorerie / paiements (calibration
+# v5 §6) : SEPA, SWIFT, EBICS/Etebac, Kyriba, XRT — aucun rapport avec le marketing.
+_CASH_MGMT = re.compile(
+    r'\bsepa\b|\bebics\b|\betebac\b|\bkyriba\b|cash\s+management|'
+    r'gestion\s+de\s+tr[ée]sorerie|logiciels?\s+de\s+tr[ée]sorerie|'
+    r'paiements?\s+interbancaires?|moyens?\s+de\s+paiement\s+(?:sepa|swift)', re.I)
+
+# Page produit / publicité logicielle, pas une offre d'emploi (calibration v5 §1) :
+# CTA commerciaux (« Book a demo », « Request a quote », « Agendar demo »…) SANS
+# section missions/profil. Vu sur RemoteOK (éditeurs de logiciels CRM).
+_PRODUCT_AD = re.compile(
+    r'book\s+a\s+demo|request\s+a\s+(?:quote|demo)|agendar\s+demo|pedir\s+(?:propuesta|demo)|'
+    r'start\s+(?:your\s+)?free\s+trial|schedule\s+a\s+demo|get\s+a\s+quote', re.I)
+_JOB_STRUCTURE = re.compile(
+    r'missions?|responsabilit[ée]s?|responsibilities|profil\s+recherch|qualifications?|'
+    r'requirements|what\s+you.?ll\s+do|vos\s+missions|ce\s+que\s+(?:vous|tu)\s+(?:ferez|feras)|'
+    r'exp[ée]rience\s+requise|nous\s+recherchons', re.I)
+
 _SPECIFIC_ESP = re.compile(
     r'marketo|salesforce marketing cloud|\bsfmc\b|braze|klaviyo|veeva|iterable|responsys', re.I)
 _NICHE_SECTOR = re.compile(
@@ -471,11 +496,15 @@ _EXCLUDE_COMPANIES = ["mr pape", "veripark", "max accelerate", "maxaccelerate",
                       "digitalisim", "mc2i", "belacom", "viseo",
                       # Agrégateur RemoteOK « AI Supermarket » : annonces parasites
                       # (titres = noms de produits, lieux hors zone) — écartées.
-                      "ai supermarket"]
+                      "ai supermarket",
+                      # Calibration v5 : Cartelis (conseil), World Vision (CRM =
+                      # Dynamics 365 technique, pas marketing).
+                      "cartelis", "world vision"]
 # Sigles courts / ambigus (risque de collision en sous-chaîne, ex. « asi » dans
 # « casino ») : test sur le NOM d'employeur avec frontières de mots uniquement.
+# Epsilon (entité Publicis) ajouté en v5 : cabinet de conseil CRM/Martech.
 _EXCLUDE_COMPANY_RE = re.compile(
-    r'\bcgi\b|\basi\b|\bvml\b|\bwpp\b|\bexalt\b', re.I)
+    r'\bcgi\b|\basi\b|\bvml\b|\bwpp\b|\bexalt\b|\bepsilon\b', re.I)
 
 # Employeurs à exclure SAUF si le titre porte un vrai signal CRM/lifecycle
 # (secteur autrement favorable mais beaucoup de postes hors cible). Bornes de mot
@@ -604,7 +633,16 @@ _ALT_STAGE_BODY = re.compile(
     r'(?:contract|programme?|position|scheme)|'
     r'(?:as|for|hiring|recruit\w*|seeking|looking for)\s+(?:an?\s+)?'
     r'(?:apprentice|work[- ]study|trainee)\b|'
-    r'\bapprentice(?:ship)?\s+in\b', re.I)
+    r'\bapprentice(?:ship)?\s+in\b|'
+    # « en tant qu'alternant/stagiaire » : le lecteur EST l'alternant.
+    r'en\s+tant\s+qu[e\']\s*(?:alternant|stagiaire|apprenti)|'
+    # Cas « header CDI, mais le texte décrit l'alternant comme le poste » (calibr.
+    # v5 §3, ex. BMW « l'alternant(e) peut être amené(e)… »).
+    r'(?:l[e\']\s*|notre\s+(?:futur[e]?\s+)?)(?:alternant|stagiaire|apprenti)(?:e|es|s)?'
+    r'\s*(?:\(e\))?\s+(?:sera|serez|est\s+charg|peut\s+[êe]tre|aura|devra|'
+    r'participe|r[ée]alise|intervient|aidera|contribue)|'
+    # Profil explicitement étudiant → stage / alternance (calibr. v5 §9).
+    r'(?:vous\s+[êe]tes|recherchons?\s+un[e]?)\s+[ée]tudiant', re.I)
 
 
 # Détection de langue par mots-outils fréquents et distinctifs. Objectif :
@@ -673,6 +711,15 @@ def screen_offer(job):
     _sval = parse_salary_value(_sraw)
     if _COMP_SCAM_RE.search(_sraw) or (_sval and _sval > 300000):
         return True, "Rémunération anormale (scam probable)", flags
+    # Habilitation de sécurité gouvernementale requise (calibr. v5 §7) : disqualifiant.
+    if _CLEARANCE.search(text):
+        return True, "Habilitation de sécurité requise (réservé aux citoyens accrédités)", flags
+    # « e-CRM » en réalité Cash Management / trésorerie / paiements (calibr. v5 §6).
+    if _CASH_MGMT.search(text):
+        return True, "Faux positif CRM (cash management / trésorerie / paiements)", flags
+    # Page produit / pub logicielle (CTA « Book a demo » sans missions) — calibr. v5 §1.
+    if _PRODUCT_AD.search(text) and not _JOB_STRUCTURE.search(text):
+        return True, "Page produit / publicité (pas une offre d'emploi)", flags
     if _TITLE_EXCLUDE_HARD.search(title):
         return True, "Titre exclu (alternance / stage / CDD / freelance)", flags
     if _TITLE_EXCLUDE_ENG.search(title) and "marketing" not in tl:
@@ -1362,7 +1409,8 @@ _CAREER_COMPANIES = [
     # générique de l'entité, jamais dans les missions réelles (conseil senior,
     # business development, data science) → désormais exclu par employeur.
     {"name": "Converteo", "slug": "converteo", "slugs": ["converteo"]},
-    {"name": "Cartelis", "slug": "cartelis", "slugs": ["cartelis"]},
+    # Cartelis retiré (calibration v5) : cabinet de conseil (CRM parmi data/IA,
+    # recrutement type conseil, business development) → exclu par employeur.
     # NB : 16 autres employeurs proches ont été testés (Carrefour, CEA, McDonald's,
     # Bruneau, Horiba, Servier, EDF, Nokia, Mondelez, Lidl, Ericsson, Bouygues
     # Construction, Dassault Systèmes, Eiffage, MBDA, Colas) — AUCUN n'expose d'ATS
