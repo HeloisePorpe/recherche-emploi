@@ -11,7 +11,7 @@
     "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
-    "commute_minutes": 74,
+    "commute_minutes": 75,
     "flags": [
       "Conseil / ESN — télétravail dépendant de la mission ?",
       "Télétravail non mentionné"
@@ -61,7 +61,7 @@
     "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
-    "commute_minutes": 74,
+    "commute_minutes": 75,
     "flags": [
       "Télétravail non mentionné"
     ],
@@ -88,20 +88,20 @@
     "telework_days": 2,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": 86,
+    "commute_minutes": 89,
     "flags": [
-      "Annonce ancienne (98 j)"
+      "Annonce ancienne (99 j)"
     ],
     "score": 8,
     "score_reasons": [
       "Outils : email, sms",
       "Compétences alignées (3)",
       "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (86 min)",
+      "Trajet long (89 min)",
       "Télétravail 2j/sem"
     ],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Annonce ancienne (98 j)"
+    "recommendation_reason": "À vérifier : Annonce ancienne (99 j)"
   },
   {
     "source": "Adzuna",
@@ -145,9 +145,9 @@
     "telework_days": null,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": 74,
+    "commute_minutes": 75,
     "flags": [
-      "Annonce ancienne (403 j)"
+      "Annonce ancienne (404 j)"
     ],
     "score": 8,
     "score_reasons": [
@@ -155,7 +155,7 @@
       "Signaux CRM lifecycle (email / segmentation / campagne)"
     ],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Annonce ancienne (403 j)"
+    "recommendation_reason": "À vérifier : Annonce ancienne (404 j)"
   },
   {
     "source": "Welcome to the Jungle",
@@ -169,7 +169,7 @@
     "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
-    "commute_minutes": 74,
+    "commute_minutes": 75,
     "flags": [
       "Conseil / ESN — télétravail dépendant de la mission ?",
       "Télétravail non mentionné"
@@ -195,7 +195,7 @@
     "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
-    "commute_minutes": 74,
+    "commute_minutes": 75,
     "flags": [
       "Télétravail non mentionné"
     ],
@@ -207,28 +207,6 @@
     ],
     "recommendation": "à_revoir",
     "recommendation_reason": "À vérifier : Télétravail non mentionné"
-  },
-  {
-    "source": "RemoteOK",
-    "title": "Marketing Operations Specialist",
-    "link": "https://remoteOK.com/remote-jobs/remote-marketing-operations-specialist-engine-1136950",
-    "company": "Engine",
-    "location": "Remote - US",
-    "description": "About Engine\n\nAt Engine, weâre transforming business travel into something personalized, rewarding, and simple. For too long, managing travel and spend has been overwhelming and fragmented â weâre here to change that. We believe the future of travel should be seamless and powered by technology that delights customers at every step. Thatâs why weâre building a platform that brings together corporate travel, a powerful charge card, and modern spend management in one place.\n\nTo make this vision real, weâre looking for exceptional, mission-driven people to help redefine how businesses manage and experience travel.\n\nMore than 30,000 companies already rely on Engine to support over 1 million travelers and billions in annual bookings each year. Cash flow positive with rapid growth, we pair exclusive Engine-only rates, industry-leading rewards, and intelligent automation to help businesses save money while delivering world-class personalization and convenience.\n\nBacked by Telescope Partners, Blackstone, and Permira, Engine has been recognized as one of the fastest-growing travel and fintech platforms in North America, with honors including the Deloitte Fast 500 and Built Inâs Best Places to Work.\n\nAbout the Role\n\nThe Sr Marketing Operations Specialist is a marketing professional who will play a vital role in supporting and optimizing our marketing technology stack, executing campaigns, maintaining data hygiene, and ensuring smooth operational alignment across the marketing function. As a key member of Engine's Marketing Operations team (under the Revenue Operations division), you will partner closely with marketing, sales, and the rest of the revenue operations team to drive exceptional execution o<br/><br/>Please mention the word **ELATION** and tag RNDguMjE3LjI1MS4xNDE= when applying to show you read the job post completely (#RNDguMjE3LjI1MS4xNDE=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
-    "salary_raw": "",
-    "published": "2026-08-18T16:00:57+00:00",
-    "telework_days": 5,
-    "in_france": true,
-    "salary_extracted": null,
-    "contract_type": null,
-    "flags": [],
-    "score": 7,
-    "score_reasons": [
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Télétravail 5j/sem"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À confirmer : titre sans signal CRM explicite"
   },
   {
     "source": "Adzuna",
@@ -243,7 +221,7 @@
     "telework_days": null,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": 74,
+    "commute_minutes": 75,
     "flags": [
       "Télétravail non mentionné"
     ],
@@ -266,7 +244,7 @@
     "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
-    "commute_minutes": 74,
+    "commute_minutes": 75,
     "flags": [
       "Télétravail non mentionné"
     ],
@@ -289,7 +267,7 @@
     "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
-    "commute_minutes": 74,
+    "commute_minutes": 75,
     "flags": [
       "Télétravail non mentionné"
     ],
@@ -302,16 +280,39 @@
   },
   {
     "source": "LinkedIn (alerte)",
-    "title": "Adobe Campaign Expert Numberly · Paris (Hybride)",
-    "link": "https://www.linkedin.com/comm/jobs/view/4425556848/?trackingId=SJKnSx3zc%2FskQFyD1nwD5w%3D%3D&amp;refId=DYCyWyGyTbC4lrAeS%2BV98A%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_smart_expansion_01%3BlOM8uPQtSEOvUCtg8AtEZw%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=11fElaMRdGvIo1&amp;trk=eml-email_job_alert_digest_smart_expansion_01-JOBS_POSTING_SECTION_1-0-job_card_1_jobid_4425556848_fmid_8ulvbk~mt02fyof~v8&amp;trkEmail=eml-email_job_alert_digest_smart_expansion_01-JOBS_POSTING_SECTION_1-0-job_card_1_jobid_4425556848_fmid_8ulvbk~mt02fyof~v8-null-8ulvbk~mt02fyof~v8-null-null&amp;eid=8ulvbk-mt02fyof-v8&amp;otpToken=YTFhOTg2N2QzNGM3NmQwMmU5MTZjMGZiNzRhYjk4NDdmYTUwZTQ3N2UwZDk1YzE0Zjk5NzkwY2NiMDQ4NjBiZmQxYmIwMTM2OTI3NzY2YTllYmQ5MDQ0N2U1YTI1ZWI1NGUxMjNiZmUxN2EwYzlkZjNjNzU4MWMzMGMzYWQ5NmRlM2QwZjYyZTljMjQ4ZCwyLDE%3D",
+    "title": "Online Campaign Manager",
+    "link": "https://www.linkedin.com/comm/jobs/view/4454737562/?trackingId=Ez8Lil01mzJiumYlMorQXg%3D%3D&amp;refId=HTojYhtRFqTn4IgcKtniRw%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BfLlMvOovTl%2Bm9EBT%2F8cKGA%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=1KBY0deQGiwYo1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4454737562_ssid_8583513778_fmid_8ulvbk~mt1dli05~27&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4454737562_ssid_8583513778_fmid_8ulvbk~mt1dli05~27-null-8ulvbk~mt1dli05~27-null-null&amp;eid=8ulvbk-mt1dli05-27&amp;otpToken=MmE2NWJjYjllYTI5OGY1YTliZjJmNzViNjdlNTU1Mzg0NGJmMGMyNmU1N2MxZWYyMDEwMjk4N2VjMTJjMzQ0ODYzODExNWFiZDgxZmQ2ZGFjZGJhNjJhZTk3MmQ4YmNiYjQ1MjM5MzRiYWVjMjI1MTE3ZDU1ZjViNDgxZGY2MWJjZmZmMjRlNWZmN2Q2MywyLDE%3D",
     "company": "",
     "location": "",
     "description": "",
-    "published": "2026-08-19T12:26:45+00:00",
+    "published": "2026-08-20T10:26:44+00:00",
     "in_france": true,
     "salary_extracted": null,
     "telework_days": null,
     "contract_type": null,
+    "flags": [
+      "Télétravail non mentionné"
+    ],
+    "score": 6,
+    "score_reasons": [
+      "Signaux CRM lifecycle (email / segmentation / campagne)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+  },
+  {
+    "source": "Site carrière — Contentsquare",
+    "title": "Senior Product Manager - User and Lifecycle Analytics",
+    "link": "https://jobs.lever.co/contentsquare/2f1fa0dc-bc37-43ac-85c8-734fc719e03a",
+    "company": "Contentsquare",
+    "location": "Paris Area, France",
+    "description": "Contentsquare is the all-in-one experience intelligence platform designed to be easily used by anyone who cares about digital journeys. With our flexible and scalable platform, organizations quickly get a deep understanding of their customers’ whole online journey.\n \nWe are a global leader in the experience analytics space, with a growing presence across 15 offices worldwide. We’re here to stay—and we’re looking for team members who are excited to drive impact and help us scale even further.\n \nOur aim is to create an inclusive workplace where everyone learns and succeeds. Contentsquare has built a community of individuals who are daring, understanding, and deliberate. We invite you to join us in making the complex simpler—for our customers, their customers, and each other.\n \nImportant note: Be careful of scammers pretending to be from Contentsquare. We will never ask for money or contact you through random texts. Any communication from our in house Talent Acquisition team will only ever come from our contentsquare.com or @contentsquare-ext.com domain. For more information, visit our careers blog.\n",
+    "published": "2026-08-20T07:28:53.673000",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": null,
     "flags": [
       "Télétravail non mentionné"
     ],
@@ -365,7 +366,7 @@
     "commute_minutes": 76,
     "flags": [
       "Télétravail non mentionné",
-      "Annonce ancienne (193 j)"
+      "Annonce ancienne (194 j)"
     ],
     "score": 5,
     "score_reasons": [
@@ -373,7 +374,7 @@
       "Trajet long (76 min)"
     ],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné ; Annonce ancienne (193 j)"
+    "recommendation_reason": "À vérifier : Télétravail non mentionné ; Annonce ancienne (194 j)"
   },
   {
     "source": "Adzuna",
@@ -388,7 +389,7 @@
     "telework_days": null,
     "in_france": true,
     "contract_type": "CDI",
-    "commute_minutes": 74,
+    "commute_minutes": 75,
     "flags": [
       "Pertinence CRM à confirmer",
       "Télétravail non mentionné"
