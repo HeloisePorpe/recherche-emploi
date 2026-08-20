@@ -11,7 +11,7 @@
     "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
-    "commute_minutes": 75,
+    "commute_minutes": 74,
     "flags": [
       "Conseil / ESN — télétravail dépendant de la mission ?",
       "Télétravail non mentionné"
@@ -61,7 +61,7 @@
     "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
-    "commute_minutes": 75,
+    "commute_minutes": 74,
     "flags": [
       "Télétravail non mentionné"
     ],
@@ -88,20 +88,20 @@
     "telework_days": 2,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": 89,
+    "commute_minutes": 86,
     "flags": [
-      "Annonce ancienne (99 j)"
+      "Annonce ancienne (98 j)"
     ],
     "score": 8,
     "score_reasons": [
       "Outils : email, sms",
       "Compétences alignées (3)",
       "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (89 min)",
+      "Trajet long (86 min)",
       "Télétravail 2j/sem"
     ],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Annonce ancienne (99 j)"
+    "recommendation_reason": "À vérifier : Annonce ancienne (98 j)"
   },
   {
     "source": "Adzuna",
@@ -145,9 +145,9 @@
     "telework_days": null,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": 75,
+    "commute_minutes": 74,
     "flags": [
-      "Annonce ancienne (404 j)"
+      "Annonce ancienne (403 j)"
     ],
     "score": 8,
     "score_reasons": [
@@ -155,7 +155,7 @@
       "Signaux CRM lifecycle (email / segmentation / campagne)"
     ],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Annonce ancienne (404 j)"
+    "recommendation_reason": "À vérifier : Annonce ancienne (403 j)"
   },
   {
     "source": "Welcome to the Jungle",
@@ -169,7 +169,7 @@
     "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
-    "commute_minutes": 75,
+    "commute_minutes": 74,
     "flags": [
       "Conseil / ESN — télétravail dépendant de la mission ?",
       "Télétravail non mentionné"
@@ -195,7 +195,7 @@
     "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
-    "commute_minutes": 75,
+    "commute_minutes": 74,
     "flags": [
       "Télétravail non mentionné"
     ],
@@ -214,7 +214,7 @@
     "link": "https://remoteOK.com/remote-jobs/remote-marketing-operations-specialist-engine-1136950",
     "company": "Engine",
     "location": "Remote - US",
-    "description": "About Engine\n\nAt Engine, weâre transforming business travel into something personalized, rewarding, and simple. For too long, managing travel and spend has been overwhelming and fragmented â weâre here to change that. We believe the future of travel should be seamless and powered by technology that delights customers at every step. Thatâs why weâre building a platform that brings together corporate travel, a powerful charge card, and modern spend management in one place.\n\nTo make this vision real, weâre looking for exceptional, mission-driven people to help redefine how businesses manage and experience travel.\n\nMore than 30,000 companies already rely on Engine to support over 1 million travelers and billions in annual bookings each year. Cash flow positive with rapid growth, we pair exclusive Engine-only rates, industry-leading rewards, and intelligent automation to help businesses save money while delivering world-class personalization and convenience.\n\nBacked by Telescope Partners, Blackstone, and Permira, Engine has been recognized as one of the fastest-growing travel and fintech platforms in North America, with honors including the Deloitte Fast 500 and Built Inâs Best Places to Work.\n\nAbout the Role\n\nThe Sr Marketing Operations Specialist is a marketing professional who will play a vital role in supporting and optimizing our marketing technology stack, executing campaigns, maintaining data hygiene, and ensuring smooth operational alignment across the marketing function. As a key member of Engine's Marketing Operations team (under the Revenue Operations division), you will partner closely with marketing, sales, and the rest of the revenue operations team to drive exceptional execution o<br/><br/>Please mention the word **ELATION** and tag RMTY4LjYyLjE5Ny4yNA== when applying to show you read the job post completely (#RMTY4LjYyLjE5Ny4yNA==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+    "description": "About Engine\n\nAt Engine, weâre transforming business travel into something personalized, rewarding, and simple. For too long, managing travel and spend has been overwhelming and fragmented â weâre here to change that. We believe the future of travel should be seamless and powered by technology that delights customers at every step. Thatâs why weâre building a platform that brings together corporate travel, a powerful charge card, and modern spend management in one place.\n\nTo make this vision real, weâre looking for exceptional, mission-driven people to help redefine how businesses manage and experience travel.\n\nMore than 30,000 companies already rely on Engine to support over 1 million travelers and billions in annual bookings each year. Cash flow positive with rapid growth, we pair exclusive Engine-only rates, industry-leading rewards, and intelligent automation to help businesses save money while delivering world-class personalization and convenience.\n\nBacked by Telescope Partners, Blackstone, and Permira, Engine has been recognized as one of the fastest-growing travel and fintech platforms in North America, with honors including the Deloitte Fast 500 and Built Inâs Best Places to Work.\n\nAbout the Role\n\nThe Sr Marketing Operations Specialist is a marketing professional who will play a vital role in supporting and optimizing our marketing technology stack, executing campaigns, maintaining data hygiene, and ensuring smooth operational alignment across the marketing function. As a key member of Engine's Marketing Operations team (under the Revenue Operations division), you will partner closely with marketing, sales, and the rest of the revenue operations team to drive exceptional execution o<br/><br/>Please mention the word **ELATION** and tag RNDguMjE3LjI1MS4xNDE= when applying to show you read the job post completely (#RNDguMjE3LjI1MS4xNDE=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
     "salary_raw": "",
     "published": "2026-08-18T16:00:57+00:00",
     "telework_days": 5,
@@ -243,7 +243,7 @@
     "telework_days": null,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": 75,
+    "commute_minutes": 74,
     "flags": [
       "Télétravail non mentionné"
     ],
@@ -253,34 +253,6 @@
     ],
     "recommendation": "à_revoir",
     "recommendation_reason": "À vérifier : Télétravail non mentionné"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Strategic Partnerships Manager - Bank & Fintech - CDI - Paris - Papernest H/F",
-    "link": "https://www.adzuna.fr/details/5656157051?utm_medium=api&utm_source=707eaaff",
-    "company": "Papernest",
-    "location": "Paris, Ile-de-France",
-    "description": "As a Strategic Partnerships Manager, you will be responsible of: - Managing a portfolio of partners from the banking & fintech industry (French Market): define the roadmap, close new deals, manage performance, you're involved at every stage. - Developing strategic projects in close collaboration with the French Fintechs Manager and various internal teams (Sales, Account Managers, CRM, Product, Operations etc.). - Building strong relationships with key players in France by participating in key i…",
-    "salary_raw": "",
-    "published": "2026-03-06T09:40:54Z",
-    "contract_raw": "",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": "CDI",
-    "commute_minutes": 75,
-    "flags": [
-      "Customer Success / Account mgmt ?",
-      "Pertinence CRM à confirmer",
-      "Télétravail non mentionné",
-      "Annonce ancienne (166 j)"
-    ],
-    "score": 6,
-    "score_reasons": [
-      "Secteur favorable : bank"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Customer Success / Account mgmt ? ; Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
     "source": "Welcome to the Jungle",
@@ -294,7 +266,7 @@
     "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
-    "commute_minutes": 75,
+    "commute_minutes": 74,
     "flags": [
       "Télétravail non mentionné"
     ],
@@ -317,7 +289,7 @@
     "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
-    "commute_minutes": 75,
+    "commute_minutes": 74,
     "flags": [
       "Télétravail non mentionné"
     ],
@@ -393,7 +365,7 @@
     "commute_minutes": 76,
     "flags": [
       "Télétravail non mentionné",
-      "Annonce ancienne (194 j)"
+      "Annonce ancienne (193 j)"
     ],
     "score": 5,
     "score_reasons": [
@@ -401,7 +373,7 @@
       "Trajet long (76 min)"
     ],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné ; Annonce ancienne (194 j)"
+    "recommendation_reason": "À vérifier : Télétravail non mentionné ; Annonce ancienne (193 j)"
   },
   {
     "source": "Adzuna",
@@ -416,7 +388,7 @@
     "telework_days": null,
     "in_france": true,
     "contract_type": "CDI",
-    "commute_minutes": 75,
+    "commute_minutes": 74,
     "flags": [
       "Pertinence CRM à confirmer",
       "Télétravail non mentionné"
