@@ -209,6 +209,30 @@
     "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
+    "source": "Site carrière — BlaBlaCar",
+    "title": "Confirmed Product Analyst - Demand",
+    "link": "https://jobs.lever.co/blablacar/83a2ef94-70ae-4667-a08f-792569c64c2b",
+    "company": "BlaBlaCar",
+    "location": "Paris, France",
+    "description": "About BlaBlaCar\n\nBlaBlaCar is the world’s leading community-based travel app enabling 27 million members a year to carpool or travel by bus in 21 countries. Our team of 800 employees counts over 50 nationalities and is spread across our 5 global offices, 30% working fully remotely.\n\n\nYour mission\nOur Data department is organised following Data Mesh principles, distributing data ownership to cross-functional and domain-specific teams that manage, own, and serve the data as a product.\nThe Data Demand team’s mission is to help BlaBlaCar grow as a global OTA through data, covering the full customer journey from brand and product discovery through marketing and landing pages, to search, booking, post-booking, and payment. As the team expands its scope from self-service towards decision intelligence, we want to strengthen our ability to proactively analyse member, marketplace, and product behaviours, and to influence the decisions that shape the product.\nAs a Data Analyst, you will join the Data Demand team to drive decision-making through data: framing the right questions with stakeholders, going deep into data to explain what is happening, sizing opportunities, interpreting experiments, and translating insights into actionable recommendations for Product and Marketing teams.\nYour responsibilities\nPartner with Product, Marketing, and Business stakeholders to understand their goals, frame analytical questions, and identify the decisions where data can have the highest impact.\nCollaborate with Data Engineers, Data Scientists, and other Data Analysts to improve the quality, usability, and coverage of our data products, and explore opportunities to turn advanced analytics or ML/AI initiatives into measurable business impact.\nLead end-to-end analyses on product and business topics such as marketplace dynamics, search-to-book performance, member behaviour, audience knowledge, or CRM and marketing impact.\nGo beyond dashboards to investigate the “why” behind trends, anomalies, and performance changes, combining exploratory analysis, statistical reasoning, and strong business context.\nBuild clear narratives from data: communicate findings, trade-offs, confidence levels, and recommendations in a way that helps stakeholders align and act.\nContribute to reusable business knowledge and context engineering by documenting insights, analytical frameworks, or business relationships, and play a governance role in aligning definitions, reducing gaps between teams, and improving data quality over time.\nLeverage BlaBlaCar’s available GenAI tools to work more efficiently in day-to-day analysis and documentation, while applying strong critical thinking to challenge, validate, and contextualise the outputs before using them in decision-making.\nYour qualifications\nMaster’s degree or equivalent: engineering school, business school, etc\nAt least 3 years of professional experience working as a Data Analyst\nStrong SQL skills and hands-on experience analysing large and complex datasets.\nGood understanding of product analytics, funnel analysis, cohort analysis, segmentation, experimentation, and performance monitoring.\nAbility to structure ambiguous problems, challenge assumptions, and translate business or product questions into robust analytical approaches.\nExperience with data visualisation, with a strong sense of how to design clear, trustworthy, and decision-oriented outputs.\nSolid communication skills: you can turn analysis into a compelling story, adapt your message to different audiences, and influence decisions with clarity and humility.\nComfort working with cross-functional teams and building strong stakeholder relationships.\nCuriosity for product, growth, marketplaces, and member behaviour, with a pragmatic mindset focused on impact over perfect analysis.\nPython or another analytical programming language, causal inference, or advanced experimentation knowledge is a plus.\nFluent in English \nIf you don’t meet 100% of the qualifications outlined above, tell us why you’d still be a great fit for this role in your application!\nWhat we have to offer\nHybrid: 2 to 3 days at the office for this role\n4 additional weeks on top of legal maternity/paternity leaves\n50% healthcare coverage (Alan)\nFinancial support for home office equipment\nMinimum 25 days holiday per year \nLocal meal plan policy (Swile card)\n50% transportation paid (Forfait Mobilité Durable)\nFree unlimited carpooling & bus rides\nPersonal growth via trainings, mentorship, and internal mobility programs\nEmployee Stock ownership plan\nRegular team building events\nMental health support through Moka.care\n1 day off per year to test our product\n1 day per year for social engagements with non-profits\nInterested in joining the ride?\nHere’s what your hiring journey will look like:\na 45-min video-call with our Talent Acquisition Manager to get to know you, understand your career expectations, and answer your first questions\na 60-min video-call with your future manager, @Adrien TORDJEMAN Engineering Manager, to get to know you, present you the team, and discuss your technical fit for the role.\na home assignment to evaluate your technical skills followed by a 60-min video-call with a Data Analyst and one of your future stakeholders.  \na 30-min video-call with @Orianne Friedrich, Head of Data for vision fit and rounding off the process\n",
+    "published": "2026-07-30T15:37:37.263000",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": 75,
+    "flags": [
+      "Séniorité / management d'équipe ?"
+    ],
+    "score": 7,
+    "score_reasons": [
+      "Outils : segmentation",
+      "Signaux CRM lifecycle (email / segmentation / campagne)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Séniorité / management d'équipe ?"
+  },
+  {
     "source": "Adzuna",
     "title": "CRM & Lifecycle Manager",
     "link": "https://www.adzuna.fr/details/5797273355?utm_medium=api&utm_source=707eaaff",
@@ -281,11 +305,11 @@
   {
     "source": "LinkedIn (alerte)",
     "title": "Online Campaign Manager",
-    "link": "https://www.linkedin.com/comm/jobs/view/4454737562/?trackingId=Ez8Lil01mzJiumYlMorQXg%3D%3D&amp;refId=HTojYhtRFqTn4IgcKtniRw%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BfLlMvOovTl%2Bm9EBT%2F8cKGA%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=1KBY0deQGiwYo1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4454737562_ssid_8583513778_fmid_8ulvbk~mt1dli05~27&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4454737562_ssid_8583513778_fmid_8ulvbk~mt1dli05~27-null-8ulvbk~mt1dli05~27-null-null&amp;eid=8ulvbk-mt1dli05-27&amp;otpToken=MmE2NWJjYjllYTI5OGY1YTliZjJmNzViNjdlNTU1Mzg0NGJmMGMyNmU1N2MxZWYyMDEwMjk4N2VjMTJjMzQ0ODYzODExNWFiZDgxZmQ2ZGFjZGJhNjJhZTk3MmQ4YmNiYjQ1MjM5MzRiYWVjMjI1MTE3ZDU1ZjViNDgxZGY2MWJjZmZmMjRlNWZmN2Q2MywyLDE%3D",
+    "link": "https://www.linkedin.com/comm/jobs/view/4454737562/?trackingId=qrI2gTRbc6N%2FuBWM0m02nA%3D%3D&amp;refId=0O68Fw6gDyzYcqGIXDVm2w%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3B1eHfljxZQKu9eF8OIEMpaA%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=3CZy-EiQwqwYo1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4454737562_ssid_8910031666_fmid_8ulvbk~mt19b6e3~an&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4454737562_ssid_8910031666_fmid_8ulvbk~mt19b6e3~an-null-8ulvbk~mt19b6e3~an-null-null&amp;eid=8ulvbk-mt19b6e3-an&amp;otpToken=MjhmYjg4NjZkMzk5MjQ5NjlkNmU3M2NmNjNjNmMwZmQ3MzA0MWJlNGNhODM4OWI5ZDkyM2ZlNzMyNTBhZThmNTQyZDAwYmI4NjNmMGQwN2RmZTQxZWU1ZWZiYTQ5M2JmM2QyMjIwMThkYzBhNWE0OTFjMzYzYWU3YTc1YzUwZDgzNTk0MmY0OWEzZGQwNSwyLDE%3D",
     "company": "",
     "location": "",
     "description": "",
-    "published": "2026-08-20T10:26:44+00:00",
+    "published": "2026-08-20T08:26:43+00:00",
     "in_france": true,
     "salary_extracted": null,
     "telework_days": null,
@@ -386,6 +410,30 @@
     "salary_raw": "600-700 €",
     "published": "2026-08-01T05:49:12Z",
     "contract_raw": "",
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": "CDI",
+    "commute_minutes": 75,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné"
+    ],
+    "score": 5,
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Chef de projet IT, CRM et SI F/H",
+    "link": "https://www.adzuna.fr/details/5849542768?utm_medium=api&utm_source=707eaaff",
+    "company": "COMMUNAUTE TRAVAIL RELATIONS HUMAINES",
+    "location": "Paris, Ile-de-France",
+    "description": "World Vision France est une ONG de solidarité internationale, engagée pour les enfants les plus vulnérables. Elle intervient partout dans le monde pour soulager leurs souffrances et leur permettre de grandir dans un environnement plein d'espoir. Membre du réseau international World Vision, présent dans près de 100 pays, l’association intervient aussi bien en situation d’urgence humanitaire que dans des programmes de développement à long terme, notamment à travers le parrainage d’enfants. Rattac…",
+    "salary_raw": "",
+    "published": "2026-08-20T12:39:28Z",
+    "contract_raw": "permanent",
+    "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
     "contract_type": "CDI",
