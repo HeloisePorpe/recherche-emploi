@@ -1190,6 +1190,12 @@ _EMAIL_ALERT_SOURCES = [
      "senders": ["meteojob.com", "cleverconnect"],
      # Meteojob : liens d'offres directs www.meteojob.com/jobs/<id>
      "link_re": re.compile(r'https?://[^"\'\s>]*meteojob\.com/jobs/\d+', re.I)},
+    # JobLeads : mise en page atypique (titre + employeur dans des blocs SÉPARÉS
+    # du lien « Afficher l'offre d'emploi ») → parseur dédié « jobleads ».
+    {"name": "JobLeads (alerte)",
+     "senders": ["jobleads.com", "jobleads.de", "mailer@jobleads.com"],
+     "link_re": re.compile(r'https?://[^"\'\s>]*jobleads\.[a-z]+/[^"\'\s>]+', re.I),
+     "parser": "jobleads"},
 ]
 
 _HTML_TAG_RE = re.compile(r'<[^>]+>')
@@ -1310,6 +1316,91 @@ def _parse_alert_email(msg, cfg):
     return jobs
 
 
+# « Afficher l'offre d'emploi » / « View job » : ancre-bouton de JobLeads.
+_JL_VIEW_RE = re.compile(r'afficher\s+l.offre|voir\s+l.offre|view\s+(?:job|offer|details)', re.I)
+# Ligne « puce » d'un bloc JobLeads (localisation, salaire, avantages).
+_JL_BULLET = re.compile(r'^[•·▪‣∙]\s*(.+)$')
+
+
+def _html_lines(fragment):
+    """Fragment HTML → lignes de texte propres (une par bloc), entités décodées."""
+    # Les fins de bloc (</p>, <br>, </td>, </tr>, </h*>, </li>, </a>) deviennent
+    # des sauts de ligne, puis on retire les balises restantes.
+    t = re.sub(r'(?i)<\s*(?:br\s*/?|/p|/div|/td|/tr|/h[1-6]|/li|/a|/span)\s*>', '\n', fragment)
+    t = _HTML_TAG_RE.sub(' ', t)
+    t = _html.unescape(t)
+    out = []
+    for ln in t.split('\n'):
+        ln = re.sub(r'\s+', ' ', ln).strip()
+        if ln:
+            out.append(ln)
+    return out
+
+
+def _parse_jobleads_email(msg, cfg):
+    """Parseur dédié JobLeads : chaque offre = un bloc « Titre / Employeur /
+    • Ville | Hybride / • EUR … / … » suivi du bouton « Afficher l'offre d'emploi ».
+    On segmente l'e-mail sur ces boutons et on lit le bloc qui précède chacun."""
+    html, _text = _email_body_html(msg)
+    if not html:
+        return []
+    try:
+        published = email.utils.parsedate_to_datetime(msg.get("Date", "")).isoformat()
+    except Exception:
+        published = ""
+    # Boutons « Afficher l'offre » (délimiteurs d'offre) avec leur lien.
+    anchors = []
+    for m in _ANCHOR_RE.finditer(html):
+        if _JL_VIEW_RE.search(_html.unescape(_HTML_TAG_RE.sub(" ", m.group("text")))):
+            anchors.append((m.start(), m.end(), m.group("href")))
+    jobs, seen, prev = [], set(), 0
+    for s, e, href in anchors:
+        block = html[prev:s]
+        prev = e
+        lines = _html_lines(block)
+        # Indice de la première puce (localisation) : le titre et l'employeur sont
+        # les deux lignes juste avant.
+        bi = next((i for i, ln in enumerate(lines) if _JL_BULLET.match(ln)), None)
+        if bi is None or bi < 2:
+            continue
+        title = lines[bi - 2].strip()
+        company = lines[bi - 1].strip()
+        if not title or len(title) < 3:
+            continue
+        # Localisation = 1ʳᵉ puce, partie avant « | » (« Courbevoie | Hybride »).
+        loc = _JL_BULLET.match(lines[bi]).group(1).split("|")[0].strip()
+        # Salaire = puce contenant EUR / €. Télétravail explicite « … Xj/sem ».
+        salary = ""
+        tw = None
+        for ln in lines[bi:bi + 4]:
+            b = _JL_BULLET.match(ln)
+            if not b:
+                continue
+            seg = b.group(1)
+            if ("eur" in seg.lower() or "€" in seg) and not salary:
+                salary = seg.split("|")[0].strip()
+            mt = re.search(r't[ée]l[ée]travail\s*(\d)\s*(?:j|jour)', seg, re.I)
+            if mt:
+                tw = int(mt.group(1))
+        key = href.split("?")[0]
+        if key in seen:
+            continue
+        seen.add(key)
+        job = {"source": cfg["name"], "title": _clean_alert_title(title), "link": href,
+               "company": company, "location": loc or "", "description": "",
+               "published": published, "in_france": True}
+        if salary:
+            job["salary_raw"] = salary
+        if tw is not None:
+            job["telework_days"] = tw
+        jobs.append(job)
+    return jobs
+
+
+# Parseurs personnalisés par source (clé « parser » dans _EMAIL_ALERT_SOURCES).
+_CUSTOM_ALERT_PARSERS = {"jobleads": _parse_jobleads_email}
+
+
 def fetch_email_alerts():
     """Offres issues des e-mails d'alerte (Gmail IMAP, boîte dédiée)."""
     print("  → Alertes e-mail (Gmail IMAP)...")
@@ -1341,7 +1432,8 @@ def fetch_email_alerts():
                     if typ != "OK" or not msg_data or not msg_data[0]:
                         continue
                     msg = email.message_from_bytes(msg_data[0][1])
-                    jobs.extend(_parse_alert_email(msg, cfg))
+                    parser = _CUSTOM_ALERT_PARSERS.get(cfg.get("parser"))
+                    jobs.extend((parser or _parse_alert_email)(msg, cfg))
                 except Exception as ex:
                     print(f"     lecture mail {cfg['name']} : {ex}")
         try:
