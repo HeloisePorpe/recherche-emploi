@@ -1318,8 +1318,10 @@ def _parse_alert_email(msg, cfg):
 
 # « Afficher l'offre d'emploi » / « View job » : ancre-bouton de JobLeads.
 _JL_VIEW_RE = re.compile(r'afficher\s+l.offre|voir\s+l.offre|view\s+(?:job|offer|details)', re.I)
-# Ligne « puce » d'un bloc JobLeads (localisation, salaire, avantages).
-_JL_BULLET = re.compile(r'^[•·▪‣∙]\s*(.+)$')
+# Puce JobLeads SEULE sur sa ligne (le titre/employeur sont les 2 lignes juste
+# avant la 1re puce ; le lieu, le salaire et les avantages sont les lignes qui
+# suivent chaque puce). NB : dans le vrai HTML, « • » est isolé, pas préfixe.
+_JL_BULLET_ONLY = re.compile(r'^[•·▪‣∙]$')
 
 
 def _html_lines(fragment):
@@ -1353,43 +1355,30 @@ def _parse_jobleads_email(msg, cfg):
     for m in _ANCHOR_RE.finditer(html):
         if _JL_VIEW_RE.search(_html.unescape(_HTML_TAG_RE.sub(" ", m.group("text")))):
             anchors.append((m.start(), m.end(), m.group("href")))
-    # DIAG TEMP : structure réelle du mail JobLeads
-    _probe = "oui" if _JL_VIEW_RE.search(_html.unescape(_HTML_TAG_RE.sub(" ", html))) else "non"
-    print(f"     [diag JL] mail parsé : html={len(html)} ancres_view={len(anchors)} "
-          f"contient_'Afficher'={_probe}")
-    if anchors:  # DIAG TEMP : lignes réelles du bloc précédant la 1re ancre
-        _bl = _html_lines(html[:anchors[0][0]])[-12:]
-        for _i, _ln in enumerate(_bl):
-            print(f"     [diag JL bloc] L{_i}: {_ln[:90]!r}")
     jobs, seen, prev = [], set(), 0
     for s, e, href in anchors:
         block = html[prev:s]
         prev = e
         lines = _html_lines(block)
-        # Indice de la première puce (localisation) : le titre et l'employeur sont
-        # les deux lignes juste avant.
-        bi = next((i for i, ln in enumerate(lines) if _JL_BULLET.match(ln)), None)
-        if bi is None or bi < 2:
+        # 1re puce isolée : titre = ligne -2, employeur = ligne -1, lieu = ligne +1.
+        b = next((i for i, ln in enumerate(lines) if _JL_BULLET_ONLY.match(ln)), None)
+        if b is None or b < 2:
             continue
-        title = lines[bi - 2].strip()
-        company = lines[bi - 1].strip()
-        if not title or len(title) < 3:
+        title = lines[b - 2].strip()
+        company = lines[b - 1].strip()
+        # Écarte les lignes de CSS/parasites qui pourraient précéder un vrai titre.
+        if len(title) < 3 or re.search(r'[{}]|!important|@media|^\s*[.#@]', title):
             continue
-        # Localisation = 1ʳᵉ puce, partie avant « | » (« Courbevoie | Hybride »).
-        loc = _JL_BULLET.match(lines[bi]).group(1).split("|")[0].strip()
-        # Salaire = puce contenant EUR / €. Télétravail explicite « … Xj/sem ».
-        salary = ""
+        loc = lines[b + 1].split("|")[0].strip() if b + 1 < len(lines) else ""
+        # Salaire = 1re ligne suivante contenant EUR / €. Télétravail « … Xj/sem ».
+        salary = next((lines[j].split("|")[0].strip() for j in range(b, len(lines))
+                       if re.search(r'\bEUR\b|€', lines[j])), "")
         tw = None
-        for ln in lines[bi:bi + 4]:
-            b = _JL_BULLET.match(ln)
-            if not b:
-                continue
-            seg = b.group(1)
-            if ("eur" in seg.lower() or "€" in seg) and not salary:
-                salary = seg.split("|")[0].strip()
-            mt = re.search(r't[ée]l[ée]travail\s*(\d)\s*(?:j|jour)', seg, re.I)
+        for ln in lines[b:b + 8]:
+            mt = re.search(r't[ée]l[ée]travail\s*(\d)\s*(?:j|jour)', ln, re.I)
             if mt:
                 tw = int(mt.group(1))
+                break
         key = href.split("?")[0]
         if key in seen:
             continue
@@ -1458,18 +1447,6 @@ def fetch_email_alerts():
                         uids.update(data[0].split())
                 except Exception:
                     continue
-            print(f"     [diag] {cfg['name']} : {len(uids)} e-mail(s) trouvé(s)")  # DIAG TEMP
-            if cfg.get("parser") == "jobleads":  # DIAG TEMP : d'où vient (ou pas) le mail
-                for k, v in [("FROM", "jobleads"), ("BODY", "jobleads.com"),
-                             ("BODY", "Afficher"), ("HEADER", "X-Forwarded-For jobleads")]:
-                    try:
-                        args = (["SINCE", since, k, v] if k != "HEADER"
-                                else ["SINCE", since, "HEADER", "X-Forwarded-For", "jobleads"])
-                        typ, data = imap.search(None, *args)
-                        n = len(data[0].split()) if (typ == "OK" and data and data[0]) else 0
-                        print(f"     [diag JL] {k} {v!r} : {n}")
-                    except Exception as ex:
-                        print(f"     [diag JL] {k} {v!r} err {ex}")
             for uid in uids:
                 try:
                     typ, msg_data = imap.fetch(uid, "(RFC822)")
