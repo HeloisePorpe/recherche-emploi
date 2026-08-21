@@ -1,31 +1,5 @@
 [
   {
-    "source": "Welcome to the Jungle",
-    "title": "Consultant Marketing",
-    "link": "https://www.welcometothejungle.com/fr/companies/accenture-digital-1/jobs/consultant-marketing_paris",
-    "company": "Accenture France",
-    "location": "Paris, France",
-    "description": "<div><div><p><span><span>Formation : Bac&#43;5 </span><span>école</span><span> de commerce, école d&#39;ingénieur ou </span><span>master</span><span> spécialisé (marketing, digital, data)</span></span><span> </span></p></div><div><p><span><span>Expérience : 2 à 5 ans sur des missions CRM / </span><span>Martech</span><span>, en cabinet de conseil, ESN ou chez un annonceur</span></span><span> </span></p></div><div><p><span> </span></p></div><div><ul><li><p><span><span>Première expérience sur des projets CRM ou Marketing Automation (cadrage, paramétrage ou analyse de performance)</span></span><span> </span></p></li></ul></div><div><ul><li><p><span><span>Connaissance des outils </span><span>Martech</span><span> : CRM, CDP, Marketing Automation (Salesforce, Adobe, </span><span>Braze,…</span><span>) et/ou outils </span><span>analytics</span><span> (GA4, Tableau, Power BI)</span></span><span> </span></p></li></ul></div><div><ul><li><p><span><span>Compréhension des logiques de segmentation, </span><span>scoring</span><span> et parcours client omnicanal (</span><span>email</span><span>, SMS, push, </span><span>paid</span><span>)</span></span><span> </span></p></li></ul></div></div><div><div><ul><li><p><span><span>Capacité à rédiger des livrables structurés et à présenter des recommandations à des interlocuteurs métier</span></span><span> </span></p></li></ul></div><div><ul><li><p><span><span>Habitude de travailler avec des outils de </span><span>reporting</span><span> (Tableau, Power BI, Looker) ou capacité à les prendre en main rapidement</span></span><span> </span></p></li></ul></div><div><ul><li><p><span><span>Bon sens relationnel, rigueur, autonomie et goût pour le travail en équipe</span></span><span> </span></p></li></ul></div><div><ul><li><p><span><span>Anglais professionnel coura</span><span>nt</span></span><span> </span></p></li></ul></div></div>",
-    "published": "2026-07-24T12:00:00.000+02:00",
-    "contract_type": "CDI",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "commute_minutes": 74,
-    "flags": [
-      "Conseil / ESN — télétravail dépendant de la mission ?",
-      "Télétravail non mentionné"
-    ],
-    "score": 9,
-    "score_reasons": [
-      "Outils clés : segmentation, omnicanal, email, sms",
-      "Compétences alignées (3)",
-      "Signaux CRM lifecycle (email / segmentation / campagne)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Conseil / ESN — télétravail dépendant de la mission ? ; Télétravail non mentionné"
-  },
-  {
     "source": "Adzuna",
     "title": "CRM Manager | CDI | Full Remote",
     "link": "https://www.adzuna.fr/details/5812520465?utm_medium=api&utm_source=707eaaff",
@@ -50,31 +24,6 @@
     "recommendation_reason": "Profil correspondant, aucun signal à vérifier (100 % télétravail France, score 8/10)"
   },
   {
-    "source": "Welcome to the Jungle",
-    "title": "CRM Campaign Manager H/F",
-    "link": "https://www.welcometothejungle.com/fr/companies/nexton-consulting/jobs/crm-campaign-manager-h-f_paris",
-    "company": "NEXTON",
-    "location": "Paris, France",
-    "description": "\n\n<p><strong>De formation supérieure Bac +5</strong> acquise en école de commerce, de communication ou spécialisée en marketing digital, tu justifies d'au moins<strong> 4&#xa0;ans d'expérience</strong> réussie dans la gestion et l'opération de campagnes CRM complexes.</p><ul><li><p><strong>Tu démontres une vraie fibre rédactionnelle marketing</strong> te permettant d'adapter ton discours, de concevoir des objets d'emails percutants et de rédiger des messages engageants.</p></li><li><p><strong>Tu maîtrises parfaitement l'outil Adobe Campaign</strong> (Neolane) pour le ciblage, la scénarisation et le déploiement des workflows automatisés.</p></li><li><p><strong>Tu as une excellente pratique de Dartagnan</strong> pour la création rapide, responsive et modulaire de vos templates e-mails.</p></li><li><p><strong>Tu maîtrises les bases de Photoshop</strong> indispensables pour adapter les visuels, recadrer les contenus et intégrer les assets graphiques dans tes campagnes.</p></li><li><p><strong>Tu disposes d'un fort esprit d'analyse</strong> te permettant de traduire les chiffres en recommandations opérationnelles concrètes.</p></li><li><p><strong>Tu fais preuve d'autonomie et de rigueur</strong> pour gérer les plannings d'animation commerciale tout en garantissant une qualité d'exécution irréprochable.</p></li></ul>\n\n<h2>Informations supplémentaires</h2>\n\n<p><u><strong>Pourquoi choisir NEXTON ?&#xa0;</strong></u></p><p>Nous te proposons des avantages et des opportunités pour enrichir ton expérience professionnelle et personnelle tout au long de l'année :</p><p>▶ Des communautés dynamiques pour t'accompagner dans ton parcours.</p><p>▶ Des Meet Up pour développer tes compétences.</p><p>▶ Des formations pour te réinventer et progresser.</p><p>▶ Des événements sportifs et festifs pour t'épanouir.</p><p>▶ Un forfait mobilité durable pour faciliter ton quotidien et encourager la mobilité douce.</p><p>▶ Un téléphone de dernière génération pour rester connecté.</p><p>Prêt à nous rejoindre ?<strong> Rencontrons-nous !</strong></p><div sr-tagline=\"\"></p><p>NEXTON</p>",
-    "published": "2026-07-25T00:00:00.000+02:00",
-    "contract_type": "CDI",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "commute_minutes": 74,
-    "flags": [
-      "Télétravail non mentionné"
-    ],
-    "score": 8,
-    "score_reasons": [
-      "Outils : photoshop, email",
-      "Compétences alignées (6)",
-      "Signaux CRM lifecycle (email / segmentation / campagne)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné"
-  },
-  {
     "source": "Adzuna",
     "title": "Chef·fe de Projet CRM & Marketing Automation (F/H/NB) – E-commerce & IA",
     "link": "https://www.adzuna.fr/details/5727289947?utm_medium=api&utm_source=707eaaff",
@@ -88,20 +37,21 @@
     "telework_days": 2,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": 86,
+    "commute_minutes": 97,
     "flags": [
-      "Annonce ancienne (98 j)"
+      "Trajet long (97 min)",
+      "Annonce ancienne (100 j)"
     ],
     "score": 8,
     "score_reasons": [
       "Outils : email, sms",
       "Compétences alignées (3)",
       "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (86 min)",
+      "Trajet long (97 min)",
       "Télétravail 2j/sem"
     ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Annonce ancienne (98 j)"
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 97 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -116,7 +66,7 @@
     "telework_days": null,
     "in_france": true,
     "contract_type": "CDI",
-    "commute_minutes": 76,
+    "commute_minutes": 77,
     "flags": [
       "Télétravail non mentionné"
     ],
@@ -126,7 +76,60 @@
       "Compétences alignées (3)",
       "Signaux CRM lifecycle (email / segmentation / campagne)",
       "Salaire dans la cible (52,000€)",
-      "Trajet long (76 min)"
+      "Trajet long (77 min)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+  },
+  {
+    "source": "Welcome to the Jungle",
+    "title": "Consultant Marketing",
+    "link": "https://www.welcometothejungle.com/fr/companies/accenture-digital-1/jobs/consultant-marketing_paris",
+    "company": "Accenture France",
+    "location": "Paris, France",
+    "description": "<div><div><p><span><span>Formation : Bac&#43;5 </span><span>école</span><span> de commerce, école d&#39;ingénieur ou </span><span>master</span><span> spécialisé (marketing, digital, data)</span></span><span> </span></p></div><div><p><span><span>Expérience : 2 à 5 ans sur des missions CRM / </span><span>Martech</span><span>, en cabinet de conseil, ESN ou chez un annonceur</span></span><span> </span></p></div><div><p><span> </span></p></div><div><ul><li><p><span><span>Première expérience sur des projets CRM ou Marketing Automation (cadrage, paramétrage ou analyse de performance)</span></span><span> </span></p></li></ul></div><div><ul><li><p><span><span>Connaissance des outils </span><span>Martech</span><span> : CRM, CDP, Marketing Automation (Salesforce, Adobe, </span><span>Braze,…</span><span>) et/ou outils </span><span>analytics</span><span> (GA4, Tableau, Power BI)</span></span><span> </span></p></li></ul></div><div><ul><li><p><span><span>Compréhension des logiques de segmentation, </span><span>scoring</span><span> et parcours client omnicanal (</span><span>email</span><span>, SMS, push, </span><span>paid</span><span>)</span></span><span> </span></p></li></ul></div></div><div><div><ul><li><p><span><span>Capacité à rédiger des livrables structurés et à présenter des recommandations à des interlocuteurs métier</span></span><span> </span></p></li></ul></div><div><ul><li><p><span><span>Habitude de travailler avec des outils de </span><span>reporting</span><span> (Tableau, Power BI, Looker) ou capacité à les prendre en main rapidement</span></span><span> </span></p></li></ul></div><div><ul><li><p><span><span>Bon sens relationnel, rigueur, autonomie et goût pour le travail en équipe</span></span><span> </span></p></li></ul></div><div><ul><li><p><span><span>Anglais professionnel coura</span><span>nt</span></span><span> </span></p></li></ul></div></div>",
+    "published": "2026-07-24T12:00:00.000+02:00",
+    "contract_type": "CDI",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "commute_minutes": 78,
+    "flags": [
+      "Conseil / ESN — télétravail dépendant de la mission ?",
+      "Télétravail non mentionné"
+    ],
+    "score": 8,
+    "score_reasons": [
+      "Outils clés : segmentation, omnicanal, email, sms",
+      "Compétences alignées (3)",
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (78 min)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Conseil / ESN — télétravail dépendant de la mission ? ; Télétravail non mentionné"
+  },
+  {
+    "source": "Welcome to the Jungle",
+    "title": "CRM Campaign Manager H/F",
+    "link": "https://www.welcometothejungle.com/fr/companies/nexton-consulting/jobs/crm-campaign-manager-h-f_paris",
+    "company": "NEXTON",
+    "location": "Paris, France",
+    "description": "\n\n<p><strong>De formation supérieure Bac +5</strong> acquise en école de commerce, de communication ou spécialisée en marketing digital, tu justifies d'au moins<strong> 4&#xa0;ans d'expérience</strong> réussie dans la gestion et l'opération de campagnes CRM complexes.</p><ul><li><p><strong>Tu démontres une vraie fibre rédactionnelle marketing</strong> te permettant d'adapter ton discours, de concevoir des objets d'emails percutants et de rédiger des messages engageants.</p></li><li><p><strong>Tu maîtrises parfaitement l'outil Adobe Campaign</strong> (Neolane) pour le ciblage, la scénarisation et le déploiement des workflows automatisés.</p></li><li><p><strong>Tu as une excellente pratique de Dartagnan</strong> pour la création rapide, responsive et modulaire de vos templates e-mails.</p></li><li><p><strong>Tu maîtrises les bases de Photoshop</strong> indispensables pour adapter les visuels, recadrer les contenus et intégrer les assets graphiques dans tes campagnes.</p></li><li><p><strong>Tu disposes d'un fort esprit d'analyse</strong> te permettant de traduire les chiffres en recommandations opérationnelles concrètes.</p></li><li><p><strong>Tu fais preuve d'autonomie et de rigueur</strong> pour gérer les plannings d'animation commerciale tout en garantissant une qualité d'exécution irréprochable.</p></li></ul>\n\n<h2>Informations supplémentaires</h2>\n\n<p><u><strong>Pourquoi choisir NEXTON ?&#xa0;</strong></u></p><p>Nous te proposons des avantages et des opportunités pour enrichir ton expérience professionnelle et personnelle tout au long de l'année :</p><p>▶ Des communautés dynamiques pour t'accompagner dans ton parcours.</p><p>▶ Des Meet Up pour développer tes compétences.</p><p>▶ Des formations pour te réinventer et progresser.</p><p>▶ Des événements sportifs et festifs pour t'épanouir.</p><p>▶ Un forfait mobilité durable pour faciliter ton quotidien et encourager la mobilité douce.</p><p>▶ Un téléphone de dernière génération pour rester connecté.</p><p>Prêt à nous rejoindre ?<strong> Rencontrons-nous !</strong></p><div sr-tagline=\"\"></p><p>NEXTON</p>",
+    "published": "2026-07-25T00:00:00.000+02:00",
+    "contract_type": "CDI",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "commute_minutes": 78,
+    "flags": [
+      "Télétravail non mentionné"
+    ],
+    "score": 7,
+    "score_reasons": [
+      "Outils : photoshop, email",
+      "Compétences alignées (6)",
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (78 min)"
     ],
     "recommendation": "à_revoir",
     "recommendation_reason": "À vérifier : Télétravail non mentionné"
@@ -145,17 +148,18 @@
     "telework_days": null,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": 74,
+    "commute_minutes": 78,
     "flags": [
-      "Annonce ancienne (403 j)"
+      "Annonce ancienne (405 j)"
     ],
-    "score": 8,
+    "score": 7,
     "score_reasons": [
       "Outils clés : email, sms, whatsapp",
-      "Signaux CRM lifecycle (email / segmentation / campagne)"
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (78 min)"
     ],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Annonce ancienne (403 j)"
+    "recommendation_reason": "À vérifier : Annonce ancienne (405 j)"
   },
   {
     "source": "Welcome to the Jungle",
@@ -169,16 +173,17 @@
     "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
-    "commute_minutes": 74,
+    "commute_minutes": 78,
     "flags": [
       "Conseil / ESN — télétravail dépendant de la mission ?",
       "Télétravail non mentionné"
     ],
-    "score": 8,
+    "score": 7,
     "score_reasons": [
       "Outils : html, css",
       "Compétences alignées (3)",
-      "Signaux CRM lifecycle (email / segmentation / campagne)"
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (78 min)"
     ],
     "recommendation": "à_revoir",
     "recommendation_reason": "À vérifier : Conseil / ESN — télétravail dépendant de la mission ? ; Télétravail non mentionné"
@@ -195,78 +200,55 @@
     "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
-    "commute_minutes": 74,
+    "commute_minutes": 78,
     "flags": [
       "Télétravail non mentionné"
     ],
-    "score": 8,
+    "score": 7,
     "score_reasons": [
       "Outils : segmentation, omnicanal",
       "Compétences alignées (3)",
-      "Signaux CRM lifecycle (email / segmentation / campagne)"
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (78 min)"
     ],
     "recommendation": "à_revoir",
     "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
-    "source": "RemoteOK",
-    "title": "Marketing Operations Specialist",
-    "link": "https://remoteOK.com/remote-jobs/remote-marketing-operations-specialist-engine-1136950",
-    "company": "Engine",
-    "location": "Remote - US",
-    "description": "About Engine\n\nAt Engine, weâre transforming business travel into something personalized, rewarding, and simple. For too long, managing travel and spend has been overwhelming and fragmented â weâre here to change that. We believe the future of travel should be seamless and powered by technology that delights customers at every step. Thatâs why weâre building a platform that brings together corporate travel, a powerful charge card, and modern spend management in one place.\n\nTo make this vision real, weâre looking for exceptional, mission-driven people to help redefine how businesses manage and experience travel.\n\nMore than 30,000 companies already rely on Engine to support over 1 million travelers and billions in annual bookings each year. Cash flow positive with rapid growth, we pair exclusive Engine-only rates, industry-leading rewards, and intelligent automation to help businesses save money while delivering world-class personalization and convenience.\n\nBacked by Telescope Partners, Blackstone, and Permira, Engine has been recognized as one of the fastest-growing travel and fintech platforms in North America, with honors including the Deloitte Fast 500 and Built Inâs Best Places to Work.\n\nAbout the Role\n\nThe Sr Marketing Operations Specialist is a marketing professional who will play a vital role in supporting and optimizing our marketing technology stack, executing campaigns, maintaining data hygiene, and ensuring smooth operational alignment across the marketing function. As a key member of Engine's Marketing Operations team (under the Revenue Operations division), you will partner closely with marketing, sales, and the rest of the revenue operations team to drive exceptional execution o<br/><br/>Please mention the word **ELATION** and tag RNDguMjE3LjI1MS4xNDE= when applying to show you read the job post completely (#RNDguMjE3LjI1MS4xNDE=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
-    "salary_raw": "",
-    "published": "2026-08-18T16:00:57+00:00",
-    "telework_days": 5,
+    "source": "LinkedIn (alerte)",
+    "title": "Email Marketing Manager",
+    "link": "https://www.linkedin.com/comm/jobs/view/4452923730/?trackingId=S6xDOq%2B3VjiN%2B4ot6XXNPA%3D%3D&amp;refId=ipX5o3e7jZDTdpjnTlsONg%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BE1YD47aVSFqu%2BylUe2THsQ%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=07kkSDEKpOpYo1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_1_jobid_4452923730_ssid_8910031666_fmid_8ulvbk~msu8e8ss~39&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_1_jobid_4452923730_ssid_8910031666_fmid_8ulvbk~msu8e8ss~39-null-8ulvbk~msu8e8ss~39-null-null&amp;eid=8ulvbk-msu8e8ss-39&amp;otpToken=Mzg3Y2U1NjE1ZDkwY2Q0N2U0NTY3MDc3NTVlNDUwMTM1MTcwMTMwYmJhZWEwMWIxYWI4NjJkZmM0NGI3ZDEwN2U0OTM1ZmRiODFhOWI1YWFmNjU0NDdhNzA5NjdiYmUyMmI0NmU2MjE5NzI3ZmI3MmNlNzMyY2VkMjkyMjZjZTFjM2M3NjllNzI3ZDhmZSwyLDE%3D",
+    "company": "",
+    "location": "",
+    "description": "",
+    "published": "2026-08-15T10:26:44+00:00",
     "in_france": true,
     "salary_extracted": null,
+    "telework_days": null,
     "contract_type": null,
-    "flags": [],
+    "flags": [
+      "Télétravail non mentionné"
+    ],
     "score": 7,
     "score_reasons": [
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Télétravail 5j/sem"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À confirmer : titre sans signal CRM explicite"
-  },
-  {
-    "source": "Adzuna",
-    "title": "CRM & Lifecycle Manager",
-    "link": "https://www.adzuna.fr/details/5797273355?utm_medium=api&utm_source=707eaaff",
-    "company": "Joko",
-    "location": "Paris, Ile-de-France",
-    "description": "At Joko, our mission is to we help consumers save time and money when shopping online or in-store. Founded in Paris, Joko is a tech company and certified B Corp with over 105 talents across Paris, Barcelona, and New York (and beyond). More than 6 million users already save money every day at 10,000 merchants with Joko. From cashback and automatic coupons to price alerts, we've kept expanding our products to make shopping smarter. Today, Joko is an AI shopping app: with Juno, our shopping assist…",
-    "salary_raw": "43400-69300 €",
-    "published": "2026-07-11T23:40:15Z",
-    "contract_raw": "",
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": 74,
-    "flags": [
-      "Télétravail non mentionné"
-    ],
-    "score": 6,
-    "score_reasons": [
+      "Outils : email",
       "Signaux CRM lifecycle (email / segmentation / campagne)"
     ],
     "recommendation": "à_revoir",
     "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
-    "source": "Welcome to the Jungle",
-    "title": "Global Campaign Manager",
-    "link": "https://www.welcometothejungle.com/fr/companies/guesttoguest/jobs/global-campaign-manager_paris",
-    "company": "HomeExchange",
-    "location": "Paris, France",
+    "source": "LinkedIn (alerte)",
+    "title": "Campaign & Customer Marketing Manager",
+    "link": "https://www.linkedin.com/comm/jobs/view/4453132685/?trackingId=khZO6S8MlbYMrEWqCW6gkA%3D%3D&amp;refId=AE%2BdGi2g6ozYxvnWhtjJJQ%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3B5lQT1cYUQbW141Wb5l6A1w%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=1DBWATijLioso1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4453132685_ssid_8583513778_fmid_8ulvbk~msssyds2~3j&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4453132685_ssid_8583513778_fmid_8ulvbk~msssyds2~3j-null-8ulvbk~msssyds2~3j-null-null&amp;eid=8ulvbk-msssyds2-3j&amp;otpToken=N2M5M2EyMDJhODcyMjRkNzBlYmE2ZTQ3YzE4Yjc4NzQ5MGM2YjFkNmMwYzhkNDQzODQ2MzE1NzVmYmYxNmI3YjJjNTc0YWU2NzFiYTRiM2M0MzQ1Y2RjMmE4NmVmNTZkYjViNTdjZDRlNTVlOWE0YjliMDIwYjczNTc1NzZlNzA1N2IyMWYyNjJmN2JmZSwyLDE%3D",
+    "company": "",
+    "location": "",
     "description": "",
-    "published": "2026-06-30T14:00:00.000+02:00",
-    "contract_type": "CDI",
+    "published": "2026-08-14T10:26:45+00:00",
+    "in_france": true,
     "salary_extracted": null,
     "telework_days": null,
-    "in_france": true,
-    "commute_minutes": 74,
+    "contract_type": null,
     "flags": [
       "Télétravail non mentionné"
     ],
@@ -278,18 +260,17 @@
     "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
-    "source": "Welcome to the Jungle",
-    "title": "Consultant Sénior Data & Marketing Cloud – F/H",
-    "link": "https://www.welcometothejungle.com/fr/companies/deloitte/jobs/consultant-senior-data-marketing-cloud-f-h_paris",
-    "company": "Deloitte",
-    "location": "Paris, France",
-    "description": "<p><b>Et si c’était vous ?</b></p><p><span>En rejoignant <b>Deloitte</b>, vous aurez l’opportunité de développer un set de compétences, partagées avec notre réseau international, et structurées autour des dimensions suivantes : leadership, métier et spécialité. Grâce aux missions variées auxquelles vous participerez et au programme de formations proposé, vous pourrez renforcer progressivement ces compétences, en acquérir de nouvelles et progresser ainsi au sein de notre firme.</span></p><p></p><p>Votre profil :</p><ul><li>Bac&#43;5, 4 ans minimum d&#39;experience en marketing digital / marketing automation / CRM.</li><li>Expérience sur Salesforce ou solutions équivalentes, bonne culture MarTech &amp; data.</li><li>Solide compréhension des enjeux marketing (acquisition, engagement, fidélisation, valeur client).</li><li>À l’aise en gestion de projet et méthodes agiles, contextes internationaux.</li><li>Excellentes capacités de communication, vulgarisation auprès d’équipes marketing, data et IT.</li><li>Maîtrise du français et de l’anglais ; certifications Salesforce / agiles appréciées ou envie de se certifier.</li></ul><p></p><p><i>Poste basé à la Défense.</i></p>",
-    "published": "2026-08-07T00:00:00.000+02:00",
-    "contract_type": "CDI",
+    "source": "LinkedIn (alerte)",
+    "title": "CRM Campaign Manager H/F NEXTON · Paris (Sur site) Candidature simplifiée",
+    "link": "https://www.linkedin.com/comm/jobs/view/4444367149/?trackingId=GMDXZMpyDZZbpA564tUzBg%3D%3D&amp;refId=X0nfZtpQRfKQkjNjEvBExg%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_smart_expansion_01%3BOxH36qU%2FSb6sKSVqPyFQ%2Bg%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=1Ow-utclOOsIo1&amp;trk=eml-email_job_alert_digest_smart_expansion_01-JOBS_POSTING_SECTION_1-0-job_card_0_jobid_4444367149_fmid_8ulvbk~msx39y3t~vu&amp;trkEmail=eml-email_job_alert_digest_smart_expansion_01-JOBS_POSTING_SECTION_1-0-job_card_0_jobid_4444367149_fmid_8ulvbk~msx39y3t~vu-null-8ulvbk~msx39y3t~vu-null-null&amp;eid=8ulvbk-msx39y3t-vu&amp;otpToken=OGViNWM3NjIxMTQ3ZmMzMTEyNzM2OGY0NmFhNDEyNTRhOTI0ZDdkNjJlN2M0NTE2NGFhYWU4MTFmZjE0MTMzM2YyNTUwZjBiZDRlZWYxNjgxY2U3YzM2ZTgzZDBmYjcxOWFlZjY2NWM5ZjhmYjlhMDBiYzAwYzQ5NTA5NWQxNjk4YWY5MTNiMDM1N2VlYywyLDE%3D",
+    "company": "",
+    "location": "",
+    "description": "",
+    "published": "2026-08-17T10:26:45+00:00",
+    "in_france": true,
     "salary_extracted": null,
     "telework_days": null,
-    "in_france": true,
-    "commute_minutes": 74,
+    "contract_type": null,
     "flags": [
       "Télétravail non mentionné"
     ],
@@ -323,6 +304,56 @@
     "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
+    "source": "Site carrière — BlaBlaCar",
+    "title": "Confirmed Product Analyst - Demand",
+    "link": "https://jobs.lever.co/blablacar/83a2ef94-70ae-4667-a08f-792569c64c2b",
+    "company": "BlaBlaCar",
+    "location": "Paris, France",
+    "description": "About BlaBlaCar\n\nBlaBlaCar is the world’s leading community-based travel app enabling 27 million members a year to carpool or travel by bus in 21 countries. Our team of 800 employees counts over 50 nationalities and is spread across our 5 global offices, 30% working fully remotely.\n\n\nYour mission\nOur Data department is organised following Data Mesh principles, distributing data ownership to cross-functional and domain-specific teams that manage, own, and serve the data as a product.\nThe Data Demand team’s mission is to help BlaBlaCar grow as a global OTA through data, covering the full customer journey from brand and product discovery through marketing and landing pages, to search, booking, post-booking, and payment. As the team expands its scope from self-service towards decision intelligence, we want to strengthen our ability to proactively analyse member, marketplace, and product behaviours, and to influence the decisions that shape the product.\nAs a Data Analyst, you will join the Data Demand team to drive decision-making through data: framing the right questions with stakeholders, going deep into data to explain what is happening, sizing opportunities, interpreting experiments, and translating insights into actionable recommendations for Product and Marketing teams.\nYour responsibilities\nPartner with Product, Marketing, and Business stakeholders to understand their goals, frame analytical questions, and identify the decisions where data can have the highest impact.\nCollaborate with Data Engineers, Data Scientists, and other Data Analysts to improve the quality, usability, and coverage of our data products, and explore opportunities to turn advanced analytics or ML/AI initiatives into measurable business impact.\nLead end-to-end analyses on product and business topics such as marketplace dynamics, search-to-book performance, member behaviour, audience knowledge, or CRM and marketing impact.\nGo beyond dashboards to investigate the “why” behind trends, anomalies, and performance changes, combining exploratory analysis, statistical reasoning, and strong business context.\nBuild clear narratives from data: communicate findings, trade-offs, confidence levels, and recommendations in a way that helps stakeholders align and act.\nContribute to reusable business knowledge and context engineering by documenting insights, analytical frameworks, or business relationships, and play a governance role in aligning definitions, reducing gaps between teams, and improving data quality over time.\nLeverage BlaBlaCar’s available GenAI tools to work more efficiently in day-to-day analysis and documentation, while applying strong critical thinking to challenge, validate, and contextualise the outputs before using them in decision-making.\nYour qualifications\nMaster’s degree or equivalent: engineering school, business school, etc\nAt least 3 years of professional experience working as a Data Analyst\nStrong SQL skills and hands-on experience analysing large and complex datasets.\nGood understanding of product analytics, funnel analysis, cohort analysis, segmentation, experimentation, and performance monitoring.\nAbility to structure ambiguous problems, challenge assumptions, and translate business or product questions into robust analytical approaches.\nExperience with data visualisation, with a strong sense of how to design clear, trustworthy, and decision-oriented outputs.\nSolid communication skills: you can turn analysis into a compelling story, adapt your message to different audiences, and influence decisions with clarity and humility.\nComfort working with cross-functional teams and building strong stakeholder relationships.\nCuriosity for product, growth, marketplaces, and member behaviour, with a pragmatic mindset focused on impact over perfect analysis.\nPython or another analytical programming language, causal inference, or advanced experimentation knowledge is a plus.\nFluent in English \nIf you don’t meet 100% of the qualifications outlined above, tell us why you’d still be a great fit for this role in your application!\nWhat we have to offer\nHybrid: 2 to 3 days at the office for this role\n4 additional weeks on top of legal maternity/paternity leaves\n50% healthcare coverage (Alan)\nFinancial support for home office equipment\nMinimum 25 days holiday per year \nLocal meal plan policy (Swile card)\n50% transportation paid (Forfait Mobilité Durable)\nFree unlimited carpooling & bus rides\nPersonal growth via trainings, mentorship, and internal mobility programs\nEmployee Stock ownership plan\nRegular team building events\nMental health support through Moka.care\n1 day off per year to test our product\n1 day per year for social engagements with non-profits\nInterested in joining the ride?\nHere’s what your hiring journey will look like:\na 45-min video-call with our Talent Acquisition Manager to get to know you, understand your career expectations, and answer your first questions\na 60-min video-call with your future manager, @Adrien TORDJEMAN Engineering Manager, to get to know you, present you the team, and discuss your technical fit for the role.\na home assignment to evaluate your technical skills followed by a 60-min video-call with a Data Analyst and one of your future stakeholders.  \na 30-min video-call with @Orianne Friedrich, Head of Data for vision fit and rounding off the process\n",
+    "published": "2026-07-30T15:37:37.263000",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": 78,
+    "flags": [
+      "Séniorité / management d'équipe ?"
+    ],
+    "score": 6,
+    "score_reasons": [
+      "Outils : segmentation",
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (78 min)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Séniorité / management d'équipe ?"
+  },
+  {
+    "source": "Adzuna",
+    "title": "CRM & Lifecycle Manager",
+    "link": "https://www.adzuna.fr/details/5797273355?utm_medium=api&utm_source=707eaaff",
+    "company": "Joko",
+    "location": "Paris, Ile-de-France",
+    "description": "At Joko, our mission is to we help consumers save time and money when shopping online or in-store. Founded in Paris, Joko is a tech company and certified B Corp with over 105 talents across Paris, Barcelona, and New York (and beyond). More than 6 million users already save money every day at 10,000 merchants with Joko. From cashback and automatic coupons to price alerts, we've kept expanding our products to make shopping smarter. Today, Joko is an AI shopping app: with Juno, our shopping assist…",
+    "salary_raw": "43400-69300 €",
+    "published": "2026-07-11T23:40:15Z",
+    "contract_raw": "",
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": 78,
+    "flags": [
+      "Télétravail non mentionné"
+    ],
+    "score": 5,
+    "score_reasons": [
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (78 min)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+  },
+  {
     "source": "Adzuna",
     "title": "CRM Marketing Manager (H/F) (CDI)",
     "link": "https://www.adzuna.fr/details/5836192979?utm_medium=api&utm_source=707eaaff",
@@ -336,14 +367,14 @@
     "telework_days": null,
     "in_france": true,
     "contract_type": "CDI",
-    "commute_minutes": 80,
+    "commute_minutes": 84,
     "flags": [
       "Télétravail non mentionné"
     ],
     "score": 5,
     "score_reasons": [
       "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (80 min)"
+      "Trajet long (84 min)"
     ],
     "recommendation": "à_revoir",
     "recommendation_reason": "À vérifier : Télétravail non mentionné"
@@ -362,33 +393,100 @@
     "telework_days": null,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": 76,
+    "commute_minutes": 77,
     "flags": [
       "Télétravail non mentionné",
-      "Annonce ancienne (193 j)"
+      "Annonce ancienne (195 j)"
     ],
     "score": 5,
     "score_reasons": [
       "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (76 min)"
+      "Trajet long (77 min)"
     ],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné ; Annonce ancienne (193 j)"
+    "recommendation_reason": "À vérifier : Télétravail non mentionné ; Annonce ancienne (195 j)"
   },
   {
-    "source": "Adzuna",
-    "title": "Chef de projet CRM",
-    "link": "https://www.adzuna.fr/details/5823271450?utm_medium=api&utm_source=707eaaff",
-    "company": "ENOVA Consulting",
-    "location": "Paris, Ile-de-France",
-    "description": "ENOVA poursuit son développement et renforce ses équipes en intégrant un(e) Chef de Projet Technico-Fonctionnel CRM / Fidélisation en CDI. Vous rejoindrez notre communauté de consultants et interviendrez en mission longue durée au sein d'un grand compte, dans un environnement stimulant, transverse et orienté transformation digitale. Contexte de la mission Dans le cadre d'un projet stratégique de transformation de l'expérience client et de fidélisation, vous interviendrez auprès d'un acteur maje…",
-    "salary_raw": "600-700 €",
-    "published": "2026-08-01T05:49:12Z",
-    "contract_raw": "",
+    "source": "Welcome to the Jungle",
+    "title": "Global Campaign Manager",
+    "link": "https://www.welcometothejungle.com/fr/companies/guesttoguest/jobs/global-campaign-manager_paris",
+    "company": "HomeExchange",
+    "location": "Paris, France",
+    "description": "",
+    "published": "2026-06-30T14:00:00.000+02:00",
+    "contract_type": "CDI",
+    "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
+    "commute_minutes": 78,
+    "flags": [
+      "Télétravail non mentionné"
+    ],
+    "score": 5,
+    "score_reasons": [
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (78 min)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+  },
+  {
+    "source": "Welcome to the Jungle",
+    "title": "Consultant Sénior Data & Marketing Cloud – F/H",
+    "link": "https://www.welcometothejungle.com/fr/companies/deloitte/jobs/consultant-senior-data-marketing-cloud-f-h_paris",
+    "company": "Deloitte",
+    "location": "Paris, France",
+    "description": "<p><b>Et si c’était vous ?</b></p><p><span>En rejoignant <b>Deloitte</b>, vous aurez l’opportunité de développer un set de compétences, partagées avec notre réseau international, et structurées autour des dimensions suivantes : leadership, métier et spécialité. Grâce aux missions variées auxquelles vous participerez et au programme de formations proposé, vous pourrez renforcer progressivement ces compétences, en acquérir de nouvelles et progresser ainsi au sein de notre firme.</span></p><p></p><p>Votre profil :</p><ul><li>Bac&#43;5, 4 ans minimum d&#39;experience en marketing digital / marketing automation / CRM.</li><li>Expérience sur Salesforce ou solutions équivalentes, bonne culture MarTech &amp; data.</li><li>Solide compréhension des enjeux marketing (acquisition, engagement, fidélisation, valeur client).</li><li>À l’aise en gestion de projet et méthodes agiles, contextes internationaux.</li><li>Excellentes capacités de communication, vulgarisation auprès d’équipes marketing, data et IT.</li><li>Maîtrise du français et de l’anglais ; certifications Salesforce / agiles appréciées ou envie de se certifier.</li></ul><p></p><p><i>Poste basé à la Défense.</i></p>",
+    "published": "2026-08-07T00:00:00.000+02:00",
     "contract_type": "CDI",
-    "commute_minutes": 74,
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "commute_minutes": 78,
+    "flags": [
+      "Télétravail non mentionné"
+    ],
+    "score": 5,
+    "score_reasons": [
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (78 min)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+  },
+  {
+    "source": "LinkedIn (alerte)",
+    "title": "Chef de projet CRM SFMC (F/H/X) Epsilon France · Paris (Hybride)",
+    "link": "https://www.linkedin.com/comm/jobs/view/4416584413/?trackingId=2W28nKllQCmMrqn9HbgJHw%3D%3D&amp;refId=Zrik1exRRVC2oy8Lb8wgPg%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_smart_expansion_01%3BbNJkYxx7R4GVITcZjJxCaQ%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=0KO2G2QgHauco1&amp;trk=eml-email_job_alert_digest_smart_expansion_01-JOBS_POSTING_SECTION_1-0-job_card_0_jobid_4416584413_fmid_8ulvbk~msyn04jk~mp&amp;trkEmail=eml-email_job_alert_digest_smart_expansion_01-JOBS_POSTING_SECTION_1-0-job_card_0_jobid_4416584413_fmid_8ulvbk~msyn04jk~mp-null-8ulvbk~msyn04jk~mp-null-null&amp;eid=8ulvbk-msyn04jk-mp&amp;otpToken=NjgyMWZjYTAyZWM3OTdlMmYxOTRkYzQzYjhkNjVlYzE3MDVlY2U2OGI4ZjYzNWM4OTY3YTUzZDUzMTIzMTEzZGViZjgzNDM2M2FhMzk0ZmFlNWE2NDkzM2YxNWVjNzMyYzRiMjg0ZDJmMGFmY2Y5ZjQwYmEwN2EzNzQ1M2FjN2I4OTUyZjQzY2RmZGFjZSwyLDE%3D",
+    "company": "",
+    "location": "",
+    "description": "",
+    "published": "2026-08-18T12:26:45+00:00",
+    "in_france": true,
+    "salary_extracted": null,
+    "telework_days": null,
+    "contract_type": null,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné"
+    ],
+    "score": 5,
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
+  },
+  {
+    "source": "LinkedIn (alerte)",
+    "title": "Chef de projet crm H/F Kicklox · Paris (Hybride)",
+    "link": "https://www.linkedin.com/comm/jobs/view/4455247356/?trackingId=PabRlTLMWoGT5wpqIq6RUQ%3D%3D&amp;refId=vO7Au4nATo%2BpP26fAq4WAw%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_smart_expansion_01%3BbNJkYxx7R4GVITcZjJxCaQ%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=0KO2G2QgHauco1&amp;trk=eml-email_job_alert_digest_smart_expansion_01-JOBS_POSTING_SECTION_1-0-job_card_1_jobid_4455247356_fmid_8ulvbk~msyn04jk~mp&amp;trkEmail=eml-email_job_alert_digest_smart_expansion_01-JOBS_POSTING_SECTION_1-0-job_card_1_jobid_4455247356_fmid_8ulvbk~msyn04jk~mp-null-8ulvbk~msyn04jk~mp-null-null&amp;eid=8ulvbk-msyn04jk-mp&amp;otpToken=NjgyMWZjYTAyZWM3OTdlMmYxOTRkYzQzYjhkNjVlYzE3MDVlY2U2OGI4ZjYzNWM4OTY3YTUzZDUzMTIzMTEzZGViZjgzNDM2M2FhMzk0ZmFlNWE2NDkzM2YxNWVjNzMyYzRiMjg0ZDJmMGFmY2Y5ZjQwYmEwN2EzNzQ1M2FjN2I4OTUyZjQzY2RmZGFjZSwyLDE%3D",
+    "company": "",
+    "location": "",
+    "description": "",
+    "published": "2026-08-18T12:26:45+00:00",
+    "in_france": true,
+    "salary_extracted": null,
+    "telework_days": null,
+    "contract_type": null,
     "flags": [
       "Pertinence CRM à confirmer",
       "Télétravail non mentionné"
@@ -412,14 +510,14 @@
     "telework_days": null,
     "in_france": true,
     "contract_type": "CDI",
-    "commute_minutes": 85,
+    "commute_minutes": 87,
     "flags": [
       "Pertinence CRM à confirmer",
       "Télétravail non mentionné"
     ],
     "score": 4,
     "score_reasons": [
-      "Trajet long (85 min)"
+      "Trajet long (87 min)"
     ],
     "recommendation": "à_revoir",
     "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
@@ -437,19 +535,43 @@
     "telework_days": null,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": 95,
+    "commute_minutes": 88,
     "flags": [
       "Pertinence CRM à confirmer",
       "Séniorité / management d'équipe ?",
-      "Télétravail non mentionné",
-      "Trajet long (95 min)"
+      "Télétravail non mentionné"
     ],
     "score": 4,
     "score_reasons": [
-      "Trajet long (95 min)"
+      "Trajet long (88 min)"
     ],
-    "recommendation": "à_écarter",
-    "recommendation_reason": "Trajet 95 min et pas 100 % télétravail"
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Séniorité / management d'équipe ? ; Télétravail non mentionné"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Chef de projet CRM",
+    "link": "https://www.adzuna.fr/details/5823271450?utm_medium=api&utm_source=707eaaff",
+    "company": "ENOVA Consulting",
+    "location": "Paris, Ile-de-France",
+    "description": "ENOVA poursuit son développement et renforce ses équipes en intégrant un(e) Chef de Projet Technico-Fonctionnel CRM / Fidélisation en CDI. Vous rejoindrez notre communauté de consultants et interviendrez en mission longue durée au sein d'un grand compte, dans un environnement stimulant, transverse et orienté transformation digitale. Contexte de la mission Dans le cadre d'un projet stratégique de transformation de l'expérience client et de fidélisation, vous interviendrez auprès d'un acteur maje…",
+    "salary_raw": "600-700 €",
+    "published": "2026-08-01T05:49:12Z",
+    "contract_raw": "",
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": "CDI",
+    "commute_minutes": 78,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné"
+    ],
+    "score": 4,
+    "score_reasons": [
+      "Trajet long (78 min)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
     "source": "Welcome to the Jungle",
@@ -463,17 +585,17 @@
     "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
-    "commute_minutes": 98,
+    "commute_minutes": 100,
     "flags": [
       "Pertinence CRM à confirmer",
       "Télétravail non mentionné",
-      "Trajet long (98 min)"
+      "Trajet long (100 min)"
     ],
     "score": 4,
     "score_reasons": [
-      "Trajet long (98 min)"
+      "Trajet long (100 min)"
     ],
     "recommendation": "à_écarter",
-    "recommendation_reason": "Trajet 98 min et pas 100 % télétravail"
+    "recommendation_reason": "Trajet 100 min et pas 100 % télétravail"
   }
 ]
