@@ -1401,6 +1401,29 @@ def _parse_jobleads_email(msg, cfg):
 _CUSTOM_ALERT_PARSERS = {"jobleads": _parse_jobleads_email}
 
 
+def _gmail_all_mail_folder(imap):
+    """Dossier « Tous les messages » de Gmail (contient TOUS les e-mails, quels
+    que soient l'onglet, le libellé ou l'archivage) → on ne manque aucune alerte,
+    y compris celles rangées sous un libellé « Alertes » hors boîte de réception.
+    Détection par le flag spécial \\All (indépendant de la langue) ; repli sur le
+    dossier configuré si non trouvé."""
+    configured = CONFIG.get("gmail_folder", "INBOX")
+    if configured and configured != "INBOX":
+        return configured  # choix explicite de l'utilisatrice : on le respecte
+    try:
+        typ, data = imap.list()
+        if typ == "OK":
+            for raw in data or []:
+                line = raw.decode(errors="replace") if isinstance(raw, bytes) else str(raw)
+                if "\\All" in line:
+                    m = re.search(r'"([^"]+)"\s*$', line) or re.search(r'(\S+)\s*$', line)
+                    if m:
+                        return m.group(1)
+    except Exception:
+        pass
+    return configured or "INBOX"
+
+
 def fetch_email_alerts():
     """Offres issues des e-mails d'alerte (Gmail IMAP, boîte dédiée)."""
     print("  → Alertes e-mail (Gmail IMAP)...")
@@ -1409,14 +1432,15 @@ def fetch_email_alerts():
     if not address or not password:
         print("     Gmail non configuré (GMAIL_ADDRESS / GMAIL_APP_PASSWORD) — ignoré")
         return []
-    folder = CONFIG.get("gmail_folder", "INBOX")
     lookback = int(CONFIG.get("gmail_lookback_days", 7))
     since = (datetime.now() - timedelta(days=lookback)).strftime("%d-%b-%Y")
     jobs = []
     try:
         imap = imaplib.IMAP4_SSL("imap.gmail.com", 993, timeout=30)
         imap.login(address, password)
+        folder = _gmail_all_mail_folder(imap)
         imap.select(f'"{folder}"', readonly=True)
+        print(f"     Dossier lu : {folder}")
         for cfg in _EMAIL_ALERT_SOURCES:
             uids = set()
             for sender in cfg["senders"]:
