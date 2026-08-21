@@ -1357,6 +1357,10 @@ def _parse_jobleads_email(msg, cfg):
     _probe = "oui" if _JL_VIEW_RE.search(_html.unescape(_HTML_TAG_RE.sub(" ", html))) else "non"
     print(f"     [diag JL] mail parsé : html={len(html)} ancres_view={len(anchors)} "
           f"contient_'Afficher'={_probe}")
+    if anchors:  # DIAG TEMP : lignes réelles du bloc précédant la 1re ancre
+        _bl = _html_lines(html[:anchors[0][0]])[-12:]
+        for _i, _ln in enumerate(_bl):
+            print(f"     [diag JL bloc] L{_i}: {_ln[:90]!r}")
     jobs, seen, prev = [], set(), 0
     for s, e, href in anchors:
         block = html[prev:s]
