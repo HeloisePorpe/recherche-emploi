@@ -1,31 +1,5 @@
 [
   {
-    "source": "Welcome to the Jungle",
-    "title": "Consultant Marketing",
-    "link": "https://www.welcometothejungle.com/fr/companies/accenture-digital-1/jobs/consultant-marketing_paris",
-    "company": "Accenture France",
-    "location": "Paris, France",
-    "description": "<div><div><p><span><span>Formation : Bac&#43;5 </span><span>école</span><span> de commerce, école d&#39;ingénieur ou </span><span>master</span><span> spécialisé (marketing, digital, data)</span></span><span> </span></p></div><div><p><span><span>Expérience : 2 à 5 ans sur des missions CRM / </span><span>Martech</span><span>, en cabinet de conseil, ESN ou chez un annonceur</span></span><span> </span></p></div><div><p><span> </span></p></div><div><ul><li><p><span><span>Première expérience sur des projets CRM ou Marketing Automation (cadrage, paramétrage ou analyse de performance)</span></span><span> </span></p></li></ul></div><div><ul><li><p><span><span>Connaissance des outils </span><span>Martech</span><span> : CRM, CDP, Marketing Automation (Salesforce, Adobe, </span><span>Braze,…</span><span>) et/ou outils </span><span>analytics</span><span> (GA4, Tableau, Power BI)</span></span><span> </span></p></li></ul></div><div><ul><li><p><span><span>Compréhension des logiques de segmentation, </span><span>scoring</span><span> et parcours client omnicanal (</span><span>email</span><span>, SMS, push, </span><span>paid</span><span>)</span></span><span> </span></p></li></ul></div></div><div><div><ul><li><p><span><span>Capacité à rédiger des livrables structurés et à présenter des recommandations à des interlocuteurs métier</span></span><span> </span></p></li></ul></div><div><ul><li><p><span><span>Habitude de travailler avec des outils de </span><span>reporting</span><span> (Tableau, Power BI, Looker) ou capacité à les prendre en main rapidement</span></span><span> </span></p></li></ul></div><div><ul><li><p><span><span>Bon sens relationnel, rigueur, autonomie et goût pour le travail en équipe</span></span><span> </span></p></li></ul></div><div><ul><li><p><span><span>Anglais professionnel coura</span><span>nt</span></span><span> </span></p></li></ul></div></div>",
-    "published": "2026-07-24T12:00:00.000+02:00",
-    "contract_type": "CDI",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "commute_minutes": 75,
-    "flags": [
-      "Conseil / ESN — télétravail dépendant de la mission ?",
-      "Télétravail non mentionné"
-    ],
-    "score": 9,
-    "score_reasons": [
-      "Outils clés : segmentation, omnicanal, email, sms",
-      "Compétences alignées (3)",
-      "Signaux CRM lifecycle (email / segmentation / campagne)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Conseil / ESN — télétravail dépendant de la mission ? ; Télétravail non mentionné"
-  },
-  {
     "source": "France Travail",
     "title": "Chargé-e de Marketing Direct - Digital et Hors ligne (H/F)",
     "link": "https://candidat.francetravail.fr/offres/recherche/detail/6147194",
@@ -38,18 +12,17 @@
     "salary_extracted": null,
     "telework_days": 2,
     "in_france": true,
-    "commute_minutes": 78,
+    "commute_minutes": 74,
     "flags": [],
-    "score": 8,
+    "score": 9,
     "score_reasons": [
       "Outils : canva",
       "Secteur favorable : assurance",
       "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (78 min)",
       "Télétravail 2j/sem"
     ],
     "recommendation": "à_revoir",
-    "recommendation_reason": "Trajet 78 min, hors critère (≤75 min ou 100 % télétravail)"
+    "recommendation_reason": "À confirmer : titre sans signal CRM explicite"
   },
   {
     "source": "Adzuna",
@@ -76,31 +49,6 @@
     "recommendation_reason": "Profil correspondant, aucun signal à vérifier (100 % télétravail France, score 8/10)"
   },
   {
-    "source": "Welcome to the Jungle",
-    "title": "CRM Campaign Manager H/F",
-    "link": "https://www.welcometothejungle.com/fr/companies/nexton-consulting/jobs/crm-campaign-manager-h-f_paris",
-    "company": "NEXTON",
-    "location": "Paris, France",
-    "description": "\n\n<p><strong>De formation supérieure Bac +5</strong> acquise en école de commerce, de communication ou spécialisée en marketing digital, tu justifies d'au moins<strong> 4&#xa0;ans d'expérience</strong> réussie dans la gestion et l'opération de campagnes CRM complexes.</p><ul><li><p><strong>Tu démontres une vraie fibre rédactionnelle marketing</strong> te permettant d'adapter ton discours, de concevoir des objets d'emails percutants et de rédiger des messages engageants.</p></li><li><p><strong>Tu maîtrises parfaitement l'outil Adobe Campaign</strong> (Neolane) pour le ciblage, la scénarisation et le déploiement des workflows automatisés.</p></li><li><p><strong>Tu as une excellente pratique de Dartagnan</strong> pour la création rapide, responsive et modulaire de vos templates e-mails.</p></li><li><p><strong>Tu maîtrises les bases de Photoshop</strong> indispensables pour adapter les visuels, recadrer les contenus et intégrer les assets graphiques dans tes campagnes.</p></li><li><p><strong>Tu disposes d'un fort esprit d'analyse</strong> te permettant de traduire les chiffres en recommandations opérationnelles concrètes.</p></li><li><p><strong>Tu fais preuve d'autonomie et de rigueur</strong> pour gérer les plannings d'animation commerciale tout en garantissant une qualité d'exécution irréprochable.</p></li></ul>\n\n<h2>Informations supplémentaires</h2>\n\n<p><u><strong>Pourquoi choisir NEXTON ?&#xa0;</strong></u></p><p>Nous te proposons des avantages et des opportunités pour enrichir ton expérience professionnelle et personnelle tout au long de l'année :</p><p>▶ Des communautés dynamiques pour t'accompagner dans ton parcours.</p><p>▶ Des Meet Up pour développer tes compétences.</p><p>▶ Des formations pour te réinventer et progresser.</p><p>▶ Des événements sportifs et festifs pour t'épanouir.</p><p>▶ Un forfait mobilité durable pour faciliter ton quotidien et encourager la mobilité douce.</p><p>▶ Un téléphone de dernière génération pour rester connecté.</p><p>Prêt à nous rejoindre ?<strong> Rencontrons-nous !</strong></p><div sr-tagline=\"\"></p><p>NEXTON</p>",
-    "published": "2026-07-25T00:00:00.000+02:00",
-    "contract_type": "CDI",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "commute_minutes": 75,
-    "flags": [
-      "Télétravail non mentionné"
-    ],
-    "score": 8,
-    "score_reasons": [
-      "Outils : photoshop, email",
-      "Compétences alignées (6)",
-      "Signaux CRM lifecycle (email / segmentation / campagne)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné"
-  },
-  {
     "source": "Adzuna",
     "title": "Chef·fe de Projet CRM & Marketing Automation (F/H/NB) – E-commerce & IA",
     "link": "https://www.adzuna.fr/details/5727289947?utm_medium=api&utm_source=707eaaff",
@@ -114,20 +62,21 @@
     "telework_days": 2,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": 89,
+    "commute_minutes": 97,
     "flags": [
-      "Annonce ancienne (99 j)"
+      "Trajet long (97 min)",
+      "Annonce ancienne (100 j)"
     ],
     "score": 8,
     "score_reasons": [
       "Outils : email, sms",
       "Compétences alignées (3)",
       "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (89 min)",
+      "Trajet long (97 min)",
       "Télétravail 2j/sem"
     ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Annonce ancienne (99 j)"
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 97 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
@@ -142,7 +91,7 @@
     "telework_days": null,
     "in_france": true,
     "contract_type": "CDI",
-    "commute_minutes": 76,
+    "commute_minutes": 77,
     "flags": [
       "Télétravail non mentionné"
     ],
@@ -152,7 +101,60 @@
       "Compétences alignées (3)",
       "Signaux CRM lifecycle (email / segmentation / campagne)",
       "Salaire dans la cible (52,000€)",
-      "Trajet long (76 min)"
+      "Trajet long (77 min)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+  },
+  {
+    "source": "Welcome to the Jungle",
+    "title": "Consultant Marketing",
+    "link": "https://www.welcometothejungle.com/fr/companies/accenture-digital-1/jobs/consultant-marketing_paris",
+    "company": "Accenture France",
+    "location": "Paris, France",
+    "description": "<div><div><p><span><span>Formation : Bac&#43;5 </span><span>école</span><span> de commerce, école d&#39;ingénieur ou </span><span>master</span><span> spécialisé (marketing, digital, data)</span></span><span> </span></p></div><div><p><span><span>Expérience : 2 à 5 ans sur des missions CRM / </span><span>Martech</span><span>, en cabinet de conseil, ESN ou chez un annonceur</span></span><span> </span></p></div><div><p><span> </span></p></div><div><ul><li><p><span><span>Première expérience sur des projets CRM ou Marketing Automation (cadrage, paramétrage ou analyse de performance)</span></span><span> </span></p></li></ul></div><div><ul><li><p><span><span>Connaissance des outils </span><span>Martech</span><span> : CRM, CDP, Marketing Automation (Salesforce, Adobe, </span><span>Braze,…</span><span>) et/ou outils </span><span>analytics</span><span> (GA4, Tableau, Power BI)</span></span><span> </span></p></li></ul></div><div><ul><li><p><span><span>Compréhension des logiques de segmentation, </span><span>scoring</span><span> et parcours client omnicanal (</span><span>email</span><span>, SMS, push, </span><span>paid</span><span>)</span></span><span> </span></p></li></ul></div></div><div><div><ul><li><p><span><span>Capacité à rédiger des livrables structurés et à présenter des recommandations à des interlocuteurs métier</span></span><span> </span></p></li></ul></div><div><ul><li><p><span><span>Habitude de travailler avec des outils de </span><span>reporting</span><span> (Tableau, Power BI, Looker) ou capacité à les prendre en main rapidement</span></span><span> </span></p></li></ul></div><div><ul><li><p><span><span>Bon sens relationnel, rigueur, autonomie et goût pour le travail en équipe</span></span><span> </span></p></li></ul></div><div><ul><li><p><span><span>Anglais professionnel coura</span><span>nt</span></span><span> </span></p></li></ul></div></div>",
+    "published": "2026-07-24T12:00:00.000+02:00",
+    "contract_type": "CDI",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "commute_minutes": 78,
+    "flags": [
+      "Conseil / ESN — télétravail dépendant de la mission ?",
+      "Télétravail non mentionné"
+    ],
+    "score": 8,
+    "score_reasons": [
+      "Outils clés : segmentation, omnicanal, email, sms",
+      "Compétences alignées (3)",
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (78 min)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Conseil / ESN — télétravail dépendant de la mission ? ; Télétravail non mentionné"
+  },
+  {
+    "source": "Welcome to the Jungle",
+    "title": "CRM Campaign Manager H/F",
+    "link": "https://www.welcometothejungle.com/fr/companies/nexton-consulting/jobs/crm-campaign-manager-h-f_paris",
+    "company": "NEXTON",
+    "location": "Paris, France",
+    "description": "\n\n<p><strong>De formation supérieure Bac +5</strong> acquise en école de commerce, de communication ou spécialisée en marketing digital, tu justifies d'au moins<strong> 4&#xa0;ans d'expérience</strong> réussie dans la gestion et l'opération de campagnes CRM complexes.</p><ul><li><p><strong>Tu démontres une vraie fibre rédactionnelle marketing</strong> te permettant d'adapter ton discours, de concevoir des objets d'emails percutants et de rédiger des messages engageants.</p></li><li><p><strong>Tu maîtrises parfaitement l'outil Adobe Campaign</strong> (Neolane) pour le ciblage, la scénarisation et le déploiement des workflows automatisés.</p></li><li><p><strong>Tu as une excellente pratique de Dartagnan</strong> pour la création rapide, responsive et modulaire de vos templates e-mails.</p></li><li><p><strong>Tu maîtrises les bases de Photoshop</strong> indispensables pour adapter les visuels, recadrer les contenus et intégrer les assets graphiques dans tes campagnes.</p></li><li><p><strong>Tu disposes d'un fort esprit d'analyse</strong> te permettant de traduire les chiffres en recommandations opérationnelles concrètes.</p></li><li><p><strong>Tu fais preuve d'autonomie et de rigueur</strong> pour gérer les plannings d'animation commerciale tout en garantissant une qualité d'exécution irréprochable.</p></li></ul>\n\n<h2>Informations supplémentaires</h2>\n\n<p><u><strong>Pourquoi choisir NEXTON ?&#xa0;</strong></u></p><p>Nous te proposons des avantages et des opportunités pour enrichir ton expérience professionnelle et personnelle tout au long de l'année :</p><p>▶ Des communautés dynamiques pour t'accompagner dans ton parcours.</p><p>▶ Des Meet Up pour développer tes compétences.</p><p>▶ Des formations pour te réinventer et progresser.</p><p>▶ Des événements sportifs et festifs pour t'épanouir.</p><p>▶ Un forfait mobilité durable pour faciliter ton quotidien et encourager la mobilité douce.</p><p>▶ Un téléphone de dernière génération pour rester connecté.</p><p>Prêt à nous rejoindre ?<strong> Rencontrons-nous !</strong></p><div sr-tagline=\"\"></p><p>NEXTON</p>",
+    "published": "2026-07-25T00:00:00.000+02:00",
+    "contract_type": "CDI",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "commute_minutes": 78,
+    "flags": [
+      "Télétravail non mentionné"
+    ],
+    "score": 7,
+    "score_reasons": [
+      "Outils : photoshop, email",
+      "Compétences alignées (6)",
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (78 min)"
     ],
     "recommendation": "à_revoir",
     "recommendation_reason": "À vérifier : Télétravail non mentionné"
@@ -171,17 +173,40 @@
     "telework_days": null,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": 75,
+    "commute_minutes": 78,
     "flags": [
-      "Annonce ancienne (404 j)"
+      "Annonce ancienne (405 j)"
     ],
-    "score": 8,
+    "score": 7,
     "score_reasons": [
       "Outils clés : email, sms, whatsapp",
-      "Signaux CRM lifecycle (email / segmentation / campagne)"
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (78 min)"
     ],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Annonce ancienne (404 j)"
+    "recommendation_reason": "À vérifier : Annonce ancienne (405 j)"
+  },
+  {
+    "source": "RemoteOK",
+    "title": "Laborer",
+    "link": "https://remoteOK.com/remote-jobs/remote-laborer-wood-1137016",
+    "company": "Wood",
+    "location": "Carlsbad, ",
+    "description": "<strong>About Us<br><br></strong>Wood is a global leader in consulting, engineering and operations for the energy and materials sectors. With 33,000 people in around 50 countries, Wood supports clients across the full asset lifecycle, delivering safe, predictable outcomes while enabling resilient operations and a lower carbon future. Wood forms the Energy &amp; Materials pillar of Sidara - a global partnership uniting leading multidisciplinary engineering, design, and project management companies. www.woodgroup.com<br><br><strong>Diversity Statement <br><br></strong>We are an equal opportunity employer that recognises the value of a diverse workforce. All suitably qualified applicants will receive consideration for employment on the basis of objective criteria and without regard to the following (which is a non-exhaustive list): race, colour, age, religion, gender, national origin, disability, sexual orientation, gender identity, protected veteran status, or other characteristics in accordance with the relevant governing laws.<br/><br/>Please mention the word **MIRACLES** and tag RMTcyLjE4Mi4yMDIuMTk5 when applying to show you read the job post completely (#RMTcyLjE4Mi4yMDIuMTk5). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+    "salary_raw": "",
+    "published": "2026-08-19T21:28:35+00:00",
+    "telework_days": 5,
+    "in_france": true,
+    "salary_extracted": null,
+    "contract_type": null,
+    "flags": [],
+    "score": 7,
+    "score_reasons": [
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Télétravail 5j/sem"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À confirmer : titre sans signal CRM explicite"
   },
   {
     "source": "Welcome to the Jungle",
@@ -195,16 +220,17 @@
     "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
-    "commute_minutes": 75,
+    "commute_minutes": 78,
     "flags": [
       "Conseil / ESN — télétravail dépendant de la mission ?",
       "Télétravail non mentionné"
     ],
-    "score": 8,
+    "score": 7,
     "score_reasons": [
       "Outils : html, css",
       "Compétences alignées (3)",
-      "Signaux CRM lifecycle (email / segmentation / campagne)"
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (78 min)"
     ],
     "recommendation": "à_revoir",
     "recommendation_reason": "À vérifier : Conseil / ESN — télétravail dépendant de la mission ? ; Télétravail non mentionné"
@@ -221,14 +247,37 @@
     "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
-    "commute_minutes": 75,
+    "commute_minutes": 78,
     "flags": [
       "Télétravail non mentionné"
     ],
-    "score": 8,
+    "score": 7,
     "score_reasons": [
       "Outils : segmentation, omnicanal",
       "Compétences alignées (3)",
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (78 min)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+  },
+  {
+    "source": "LinkedIn (alerte)",
+    "title": "Online Campaign Manager",
+    "link": "https://www.linkedin.com/comm/jobs/view/4454737562/?trackingId=Ez8Lil01mzJiumYlMorQXg%3D%3D&amp;refId=HTojYhtRFqTn4IgcKtniRw%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BfLlMvOovTl%2Bm9EBT%2F8cKGA%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=1KBY0deQGiwYo1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4454737562_ssid_8583513778_fmid_8ulvbk~mt1dli05~27&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4454737562_ssid_8583513778_fmid_8ulvbk~mt1dli05~27-null-8ulvbk~mt1dli05~27-null-null&amp;eid=8ulvbk-mt1dli05-27&amp;otpToken=MmE2NWJjYjllYTI5OGY1YTliZjJmNzViNjdlNTU1Mzg0NGJmMGMyNmU1N2MxZWYyMDEwMjk4N2VjMTJjMzQ0ODYzODExNWFiZDgxZmQ2ZGFjZGJhNjJhZTk3MmQ4YmNiYjQ1MjM5MzRiYWVjMjI1MTE3ZDU1ZjViNDgxZGY2MWJjZmZmMjRlNWZmN2Q2MywyLDE%3D",
+    "company": "",
+    "location": "",
+    "description": "",
+    "published": "2026-08-20T10:26:44+00:00",
+    "in_france": true,
+    "salary_extracted": null,
+    "telework_days": null,
+    "contract_type": null,
+    "flags": [
+      "Télétravail non mentionné"
+    ],
+    "score": 6,
+    "score_reasons": [
       "Signaux CRM lifecycle (email / segmentation / campagne)"
     ],
     "recommendation": "à_revoir",
@@ -246,109 +295,18 @@
     "telework_days": null,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": 75,
+    "commute_minutes": 78,
     "flags": [
       "Séniorité / management d'équipe ?"
     ],
-    "score": 7,
+    "score": 6,
     "score_reasons": [
       "Outils : segmentation",
-      "Signaux CRM lifecycle (email / segmentation / campagne)"
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (78 min)"
     ],
     "recommendation": "à_revoir",
     "recommendation_reason": "À vérifier : Séniorité / management d'équipe ?"
-  },
-  {
-    "source": "Adzuna",
-    "title": "CRM & Lifecycle Manager",
-    "link": "https://www.adzuna.fr/details/5797273355?utm_medium=api&utm_source=707eaaff",
-    "company": "Joko",
-    "location": "Paris, Ile-de-France",
-    "description": "At Joko, our mission is to we help consumers save time and money when shopping online or in-store. Founded in Paris, Joko is a tech company and certified B Corp with over 105 talents across Paris, Barcelona, and New York (and beyond). More than 6 million users already save money every day at 10,000 merchants with Joko. From cashback and automatic coupons to price alerts, we've kept expanding our products to make shopping smarter. Today, Joko is an AI shopping app: with Juno, our shopping assist…",
-    "salary_raw": "43400-69300 €",
-    "published": "2026-07-11T23:40:15Z",
-    "contract_raw": "",
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": 75,
-    "flags": [
-      "Télétravail non mentionné"
-    ],
-    "score": 6,
-    "score_reasons": [
-      "Signaux CRM lifecycle (email / segmentation / campagne)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné"
-  },
-  {
-    "source": "Welcome to the Jungle",
-    "title": "Global Campaign Manager",
-    "link": "https://www.welcometothejungle.com/fr/companies/guesttoguest/jobs/global-campaign-manager_paris",
-    "company": "HomeExchange",
-    "location": "Paris, France",
-    "description": "",
-    "published": "2026-06-30T14:00:00.000+02:00",
-    "contract_type": "CDI",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "commute_minutes": 75,
-    "flags": [
-      "Télétravail non mentionné"
-    ],
-    "score": 6,
-    "score_reasons": [
-      "Signaux CRM lifecycle (email / segmentation / campagne)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné"
-  },
-  {
-    "source": "Welcome to the Jungle",
-    "title": "Consultant Sénior Data & Marketing Cloud – F/H",
-    "link": "https://www.welcometothejungle.com/fr/companies/deloitte/jobs/consultant-senior-data-marketing-cloud-f-h_paris",
-    "company": "Deloitte",
-    "location": "Paris, France",
-    "description": "<p><b>Et si c’était vous ?</b></p><p><span>En rejoignant <b>Deloitte</b>, vous aurez l’opportunité de développer un set de compétences, partagées avec notre réseau international, et structurées autour des dimensions suivantes : leadership, métier et spécialité. Grâce aux missions variées auxquelles vous participerez et au programme de formations proposé, vous pourrez renforcer progressivement ces compétences, en acquérir de nouvelles et progresser ainsi au sein de notre firme.</span></p><p></p><p>Votre profil :</p><ul><li>Bac&#43;5, 4 ans minimum d&#39;experience en marketing digital / marketing automation / CRM.</li><li>Expérience sur Salesforce ou solutions équivalentes, bonne culture MarTech &amp; data.</li><li>Solide compréhension des enjeux marketing (acquisition, engagement, fidélisation, valeur client).</li><li>À l’aise en gestion de projet et méthodes agiles, contextes internationaux.</li><li>Excellentes capacités de communication, vulgarisation auprès d’équipes marketing, data et IT.</li><li>Maîtrise du français et de l’anglais ; certifications Salesforce / agiles appréciées ou envie de se certifier.</li></ul><p></p><p><i>Poste basé à la Défense.</i></p>",
-    "published": "2026-08-07T00:00:00.000+02:00",
-    "contract_type": "CDI",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "commute_minutes": 75,
-    "flags": [
-      "Télétravail non mentionné"
-    ],
-    "score": 6,
-    "score_reasons": [
-      "Signaux CRM lifecycle (email / segmentation / campagne)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné"
-  },
-  {
-    "source": "LinkedIn (alerte)",
-    "title": "Online Campaign Manager",
-    "link": "https://www.linkedin.com/comm/jobs/view/4454737562/?trackingId=qrI2gTRbc6N%2FuBWM0m02nA%3D%3D&amp;refId=0O68Fw6gDyzYcqGIXDVm2w%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3B1eHfljxZQKu9eF8OIEMpaA%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=3CZy-EiQwqwYo1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4454737562_ssid_8910031666_fmid_8ulvbk~mt19b6e3~an&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4454737562_ssid_8910031666_fmid_8ulvbk~mt19b6e3~an-null-8ulvbk~mt19b6e3~an-null-null&amp;eid=8ulvbk-mt19b6e3-an&amp;otpToken=MjhmYjg4NjZkMzk5MjQ5NjlkNmU3M2NmNjNjNmMwZmQ3MzA0MWJlNGNhODM4OWI5ZDkyM2ZlNzMyNTBhZThmNTQyZDAwYmI4NjNmMGQwN2RmZTQxZWU1ZWZiYTQ5M2JmM2QyMjIwMThkYzBhNWE0OTFjMzYzYWU3YTc1YzUwZDgzNTk0MmY0OWEzZGQwNSwyLDE%3D",
-    "company": "",
-    "location": "",
-    "description": "",
-    "published": "2026-08-20T08:26:43+00:00",
-    "in_france": true,
-    "salary_extracted": null,
-    "telework_days": null,
-    "contract_type": null,
-    "flags": [
-      "Télétravail non mentionné"
-    ],
-    "score": 6,
-    "score_reasons": [
-      "Signaux CRM lifecycle (email / segmentation / campagne)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
     "source": "Site carrière — Contentsquare",
@@ -375,6 +333,31 @@
   },
   {
     "source": "Adzuna",
+    "title": "CRM & Lifecycle Manager",
+    "link": "https://www.adzuna.fr/details/5797273355?utm_medium=api&utm_source=707eaaff",
+    "company": "Joko",
+    "location": "Paris, Ile-de-France",
+    "description": "At Joko, our mission is to we help consumers save time and money when shopping online or in-store. Founded in Paris, Joko is a tech company and certified B Corp with over 105 talents across Paris, Barcelona, and New York (and beyond). More than 6 million users already save money every day at 10,000 merchants with Joko. From cashback and automatic coupons to price alerts, we've kept expanding our products to make shopping smarter. Today, Joko is an AI shopping app: with Juno, our shopping assist…",
+    "salary_raw": "43400-69300 €",
+    "published": "2026-07-11T23:40:15Z",
+    "contract_raw": "",
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": 78,
+    "flags": [
+      "Télétravail non mentionné"
+    ],
+    "score": 5,
+    "score_reasons": [
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (78 min)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+  },
+  {
+    "source": "Adzuna",
     "title": "CRM Marketing Manager (H/F) (CDI)",
     "link": "https://www.adzuna.fr/details/5836192979?utm_medium=api&utm_source=707eaaff",
     "company": "ARAVATI FRANCE",
@@ -387,14 +370,14 @@
     "telework_days": null,
     "in_france": true,
     "contract_type": "CDI",
-    "commute_minutes": 80,
+    "commute_minutes": 84,
     "flags": [
       "Télétravail non mentionné"
     ],
     "score": 5,
     "score_reasons": [
       "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (80 min)"
+      "Trajet long (84 min)"
     ],
     "recommendation": "à_revoir",
     "recommendation_reason": "À vérifier : Télétravail non mentionné"
@@ -413,65 +396,118 @@
     "telework_days": null,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": 76,
+    "commute_minutes": 77,
     "flags": [
       "Télétravail non mentionné",
-      "Annonce ancienne (194 j)"
+      "Annonce ancienne (195 j)"
     ],
     "score": 5,
     "score_reasons": [
       "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (76 min)"
+      "Trajet long (77 min)"
     ],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné ; Annonce ancienne (194 j)"
+    "recommendation_reason": "À vérifier : Télétravail non mentionné ; Annonce ancienne (195 j)"
   },
   {
     "source": "Adzuna",
-    "title": "Chef de projet CRM",
-    "link": "https://www.adzuna.fr/details/5823271450?utm_medium=api&utm_source=707eaaff",
-    "company": "ENOVA Consulting",
+    "title": "Founding Growth Manager",
+    "link": "https://www.adzuna.fr/details/5849994971?utm_medium=api&utm_source=707eaaff",
+    "company": "WhyHireWrong?",
     "location": "Paris, Ile-de-France",
-    "description": "ENOVA poursuit son développement et renforce ses équipes en intégrant un(e) Chef de Projet Technico-Fonctionnel CRM / Fidélisation en CDI. Vous rejoindrez notre communauté de consultants et interviendrez en mission longue durée au sein d'un grand compte, dans un environnement stimulant, transverse et orienté transformation digitale. Contexte de la mission Dans le cadre d'un projet stratégique de transformation de l'expérience client et de fidélisation, vous interviendrez auprès d'un acteur maje…",
-    "salary_raw": "600-700 €",
-    "published": "2026-08-01T05:49:12Z",
-    "contract_raw": "",
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": "CDI",
-    "commute_minutes": 75,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Télétravail non mentionné"
-    ],
-    "score": 5,
-    "score_reasons": [],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Chef de projet IT, CRM et SI F/H",
-    "link": "https://www.adzuna.fr/details/5849542768?utm_medium=api&utm_source=707eaaff",
-    "company": "COMMUNAUTE TRAVAIL RELATIONS HUMAINES",
-    "location": "Paris, Ile-de-France",
-    "description": "World Vision France est une ONG de solidarité internationale, engagée pour les enfants les plus vulnérables. Elle intervient partout dans le monde pour soulager leurs souffrances et leur permettre de grandir dans un environnement plein d'espoir. Membre du réseau international World Vision, présent dans près de 100 pays, l’association intervient aussi bien en situation d’urgence humanitaire que dans des programmes de développement à long terme, notamment à travers le parrainage d’enfants. Rattac…",
+    "description": "I'm helping a Paris-based app studio (pre-seed, €5M funded) find their first growth hire. They're building a portfolio of creator-led Health & Fitness apps. This role: own paid user acquisition from end to end. Build the strategy, run the campaigns, manage the budget, analyze the data, keep iterating. No one above you doing the real work. No agency handing off reports. Just you, the budget, and the apps. What you'll actually do Plan, execute, and optimize mobile UA campaigns across TikTok, Meta…",
     "salary_raw": "",
-    "published": "2026-08-20T12:39:28Z",
-    "contract_raw": "permanent",
+    "published": "2026-08-20T23:53:23Z",
+    "contract_raw": "",
     "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
-    "contract_type": "CDI",
-    "commute_minutes": 75,
+    "contract_type": null,
+    "commute_minutes": 78,
+    "flags": [
+      "Télétravail non mentionné"
+    ],
+    "score": 5,
+    "score_reasons": [
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (78 min)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Business Developper - Agence de Communication H/F",
+    "link": "https://www.adzuna.fr/details/5792344202?utm_medium=api&utm_source=707eaaff",
+    "company": "Intonae",
+    "location": "Paris, Ile-de-France",
+    "description": "Ce qui fait la différence : - Une spécialisation reconnue dans la création d'identités de marque - Un positionnement haut de gamme orienté sur le conseil et la qualité des prestations - Un ERP performant, un CRM et des outils de prospection efficaces - Des ambitions de croissance soutenues par des opérations de croissance externe et interne - Des bonus récompensant vos performances commerciales Missions et enjeux du poste : Rattaché.e au co-gérant associé en charge du développement en Ile De Fr…",
+    "salary_raw": "55000-65000 €",
+    "published": "2026-07-08T12:23:46Z",
+    "contract_raw": "",
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": 78,
     "flags": [
       "Pertinence CRM à confirmer",
       "Télétravail non mentionné"
     ],
     "score": 5,
-    "score_reasons": [],
+    "score_reasons": [
+      "Salaire dans la cible (55,000€)",
+      "Trajet long (78 min)"
+    ],
     "recommendation": "à_revoir",
     "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
+  },
+  {
+    "source": "Welcome to the Jungle",
+    "title": "Global Campaign Manager",
+    "link": "https://www.welcometothejungle.com/fr/companies/guesttoguest/jobs/global-campaign-manager_paris",
+    "company": "HomeExchange",
+    "location": "Paris, France",
+    "description": "",
+    "published": "2026-06-30T14:00:00.000+02:00",
+    "contract_type": "CDI",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "commute_minutes": 78,
+    "flags": [
+      "Télétravail non mentionné"
+    ],
+    "score": 5,
+    "score_reasons": [
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (78 min)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+  },
+  {
+    "source": "Welcome to the Jungle",
+    "title": "Consultant Sénior Data & Marketing Cloud – F/H",
+    "link": "https://www.welcometothejungle.com/fr/companies/deloitte/jobs/consultant-senior-data-marketing-cloud-f-h_paris",
+    "company": "Deloitte",
+    "location": "Paris, France",
+    "description": "<p><b>Et si c’était vous ?</b></p><p><span>En rejoignant <b>Deloitte</b>, vous aurez l’opportunité de développer un set de compétences, partagées avec notre réseau international, et structurées autour des dimensions suivantes : leadership, métier et spécialité. Grâce aux missions variées auxquelles vous participerez et au programme de formations proposé, vous pourrez renforcer progressivement ces compétences, en acquérir de nouvelles et progresser ainsi au sein de notre firme.</span></p><p></p><p>Votre profil :</p><ul><li>Bac&#43;5, 4 ans minimum d&#39;experience en marketing digital / marketing automation / CRM.</li><li>Expérience sur Salesforce ou solutions équivalentes, bonne culture MarTech &amp; data.</li><li>Solide compréhension des enjeux marketing (acquisition, engagement, fidélisation, valeur client).</li><li>À l’aise en gestion de projet et méthodes agiles, contextes internationaux.</li><li>Excellentes capacités de communication, vulgarisation auprès d’équipes marketing, data et IT.</li><li>Maîtrise du français et de l’anglais ; certifications Salesforce / agiles appréciées ou envie de se certifier.</li></ul><p></p><p><i>Poste basé à la Défense.</i></p>",
+    "published": "2026-08-07T00:00:00.000+02:00",
+    "contract_type": "CDI",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "commute_minutes": 78,
+    "flags": [
+      "Télétravail non mentionné"
+    ],
+    "score": 5,
+    "score_reasons": [
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (78 min)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -487,14 +523,14 @@
     "telework_days": null,
     "in_france": true,
     "contract_type": "CDI",
-    "commute_minutes": 85,
+    "commute_minutes": 87,
     "flags": [
       "Pertinence CRM à confirmer",
       "Télétravail non mentionné"
     ],
     "score": 4,
     "score_reasons": [
-      "Trajet long (85 min)"
+      "Trajet long (87 min)"
     ],
     "recommendation": "à_revoir",
     "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
@@ -512,19 +548,69 @@
     "telework_days": null,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": 95,
+    "commute_minutes": 88,
     "flags": [
       "Pertinence CRM à confirmer",
       "Séniorité / management d'équipe ?",
-      "Télétravail non mentionné",
-      "Trajet long (95 min)"
+      "Télétravail non mentionné"
     ],
     "score": 4,
     "score_reasons": [
-      "Trajet long (95 min)"
+      "Trajet long (88 min)"
     ],
-    "recommendation": "à_écarter",
-    "recommendation_reason": "Trajet 95 min et pas 100 % télétravail"
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Séniorité / management d'équipe ? ; Télétravail non mentionné"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Chef de projet CRM",
+    "link": "https://www.adzuna.fr/details/5823271450?utm_medium=api&utm_source=707eaaff",
+    "company": "ENOVA Consulting",
+    "location": "Paris, Ile-de-France",
+    "description": "ENOVA poursuit son développement et renforce ses équipes en intégrant un(e) Chef de Projet Technico-Fonctionnel CRM / Fidélisation en CDI. Vous rejoindrez notre communauté de consultants et interviendrez en mission longue durée au sein d'un grand compte, dans un environnement stimulant, transverse et orienté transformation digitale. Contexte de la mission Dans le cadre d'un projet stratégique de transformation de l'expérience client et de fidélisation, vous interviendrez auprès d'un acteur maje…",
+    "salary_raw": "600-700 €",
+    "published": "2026-08-01T05:49:12Z",
+    "contract_raw": "",
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": "CDI",
+    "commute_minutes": 78,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné"
+    ],
+    "score": 4,
+    "score_reasons": [
+      "Trajet long (78 min)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Chef de projet IT, CRM et SI F/H",
+    "link": "https://www.adzuna.fr/details/5849542768?utm_medium=api&utm_source=707eaaff",
+    "company": "COMMUNAUTE TRAVAIL RELATIONS HUMAINES",
+    "location": "Paris, Ile-de-France",
+    "description": "World Vision France est une ONG de solidarité internationale, engagée pour les enfants les plus vulnérables. Elle intervient partout dans le monde pour soulager leurs souffrances et leur permettre de grandir dans un environnement plein d'espoir. Membre du réseau international World Vision, présent dans près de 100 pays, l’association intervient aussi bien en situation d’urgence humanitaire que dans des programmes de développement à long terme, notamment à travers le parrainage d’enfants. Rattac…",
+    "salary_raw": "",
+    "published": "2026-08-20T12:39:28Z",
+    "contract_raw": "permanent",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": "CDI",
+    "commute_minutes": 78,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné"
+    ],
+    "score": 4,
+    "score_reasons": [
+      "Trajet long (78 min)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
     "source": "Welcome to the Jungle",
@@ -538,17 +624,17 @@
     "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
-    "commute_minutes": 98,
+    "commute_minutes": 100,
     "flags": [
       "Pertinence CRM à confirmer",
       "Télétravail non mentionné",
-      "Trajet long (98 min)"
+      "Trajet long (100 min)"
     ],
     "score": 4,
     "score_reasons": [
-      "Trajet long (98 min)"
+      "Trajet long (100 min)"
     ],
     "recommendation": "à_écarter",
-    "recommendation_reason": "Trajet 98 min et pas 100 % télétravail"
+    "recommendation_reason": "Trajet 100 min et pas 100 % télétravail"
   }
 ]
