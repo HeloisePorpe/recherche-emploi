@@ -1353,6 +1353,10 @@ def _parse_jobleads_email(msg, cfg):
     for m in _ANCHOR_RE.finditer(html):
         if _JL_VIEW_RE.search(_html.unescape(_HTML_TAG_RE.sub(" ", m.group("text")))):
             anchors.append((m.start(), m.end(), m.group("href")))
+    # DIAG TEMP : structure réelle du mail JobLeads
+    _probe = "oui" if _JL_VIEW_RE.search(_html.unescape(_HTML_TAG_RE.sub(" ", html))) else "non"
+    print(f"     [diag JL] mail parsé : html={len(html)} ancres_view={len(anchors)} "
+          f"contient_'Afficher'={_probe}")
     jobs, seen, prev = [], set(), 0
     for s, e, href in anchors:
         block = html[prev:s]
@@ -1450,6 +1454,18 @@ def fetch_email_alerts():
                         uids.update(data[0].split())
                 except Exception:
                     continue
+            print(f"     [diag] {cfg['name']} : {len(uids)} e-mail(s) trouvé(s)")  # DIAG TEMP
+            if cfg.get("parser") == "jobleads":  # DIAG TEMP : d'où vient (ou pas) le mail
+                for k, v in [("FROM", "jobleads"), ("BODY", "jobleads.com"),
+                             ("BODY", "Afficher"), ("HEADER", "X-Forwarded-For jobleads")]:
+                    try:
+                        args = (["SINCE", since, k, v] if k != "HEADER"
+                                else ["SINCE", since, "HEADER", "X-Forwarded-For", "jobleads"])
+                        typ, data = imap.search(None, *args)
+                        n = len(data[0].split()) if (typ == "OK" and data and data[0]) else 0
+                        print(f"     [diag JL] {k} {v!r} : {n}")
+                    except Exception as ex:
+                        print(f"     [diag JL] {k} {v!r} err {ex}")
             for uid in uids:
                 try:
                     typ, msg_data = imap.fetch(uid, "(RFC822)")
