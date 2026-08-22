@@ -468,6 +468,32 @@
     "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
+    "source": "Adzuna",
+    "title": "Spécialiste Business Solution Retail & CRM H/F",
+    "link": "https://www.adzuna.fr/details/5796654387?utm_medium=api&utm_source=707eaaff",
+    "company": "Diptyque SAS",
+    "location": "Paris, Ile-de-France",
+    "description": "Au sein de la Direction Business Solutions et rattaché(e) au Customer Facing Domain Manager, vous êtes l'interlocuteur fonctionnel et applicatif sur les zones d'interaction entre leRetailet les solutions CRM et Customer Engagement. Vous comprenez le fonctionnement de ces outils afin d'accompagner les équipes CRM au HQ dès qu'il y a une interaction avec leretail, les boutiques, les parcours clients et les outils CustomerFacing. Vous assurez la cohérence technico-fonctionnelle et le bon fonctionn…",
+    "salary_raw": "",
+    "published": "2026-07-11T09:39:25Z",
+    "contract_raw": "",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": 78,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné"
+    ],
+    "score": 4,
+    "score_reasons": [
+      "Trajet long (78 min)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
+  },
+  {
     "source": "Welcome to the Jungle",
     "title": "Chef de Projet CRM H/F",
     "link": "https://www.welcometothejungle.com/fr/companies/mcdonald-s-france/jobs/chef-de-projet-crm-h-f_guyancourt",
