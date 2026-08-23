@@ -65,7 +65,7 @@
     "commute_minutes": 97,
     "flags": [
       "Trajet long (97 min)",
-      "Annonce ancienne (101 j)"
+      "Annonce ancienne (102 j)"
     ],
     "score": 8,
     "score_reasons": [
@@ -161,6 +161,35 @@
   },
   {
     "source": "Adzuna",
+    "title": "Chef Projet CRM et Data Marketing Automation H/F",
+    "link": "https://www.adzuna.fr/details/5775958931?utm_medium=api&utm_source=707eaaff",
+    "company": "Mitsubishi Electric France",
+    "location": "Rueil-Malmaison, Nanterre",
+    "description": "Gestion et coordination de projet CRM - Cadrer le projet de centralisation des différentes bases de données clients - Recueillir et formaliser les besoins des équipes métiers - Animer les ateliers avec les équipes internes et les prestataires - Coordonner les parties prenantes et suivre l'avancement du projet - Accompagner la consolidation d'une base clients unique, fiable et exploitable Marketing automation & campagnes - Administrer et exploiter la base de données clients (segmentation, enrich…",
+    "salary_raw": "",
+    "published": "2026-06-25T09:55:07Z",
+    "contract_raw": "",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": 95,
+    "flags": [
+      "Télétravail non mentionné",
+      "Trajet long (95 min)"
+    ],
+    "score": 7,
+    "score_reasons": [
+      "Outils : segmentation",
+      "Compétences alignées (4)",
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (95 min)"
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 95 min et pas 100 % télétravail"
+  },
+  {
+    "source": "Adzuna",
     "title": "Spontaneous Application (Hybrid Remote Policy)",
     "link": "https://www.adzuna.fr/details/5298580312?utm_medium=api&utm_source=707eaaff",
     "company": "Brevo",
@@ -175,7 +204,7 @@
     "contract_type": null,
     "commute_minutes": 78,
     "flags": [
-      "Annonce ancienne (406 j)"
+      "Annonce ancienne (407 j)"
     ],
     "score": 7,
     "score_reasons": [
@@ -184,7 +213,7 @@
       "Trajet long (78 min)"
     ],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Annonce ancienne (406 j)"
+    "recommendation_reason": "À vérifier : Annonce ancienne (407 j)"
   },
   {
     "source": "Welcome to the Jungle",
@@ -235,6 +264,61 @@
       "Compétences alignées (3)",
       "Signaux CRM lifecycle (email / segmentation / campagne)",
       "Trajet long (78 min)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Chargé de Marketing Digital CRM & Marketing Automation H/F",
+    "link": "https://www.adzuna.fr/details/5808992499?utm_medium=api&utm_source=707eaaff",
+    "company": "Forvis Mazars",
+    "location": "Levallois-Perret, Nanterre",
+    "description": "Rattaché(e) au Responsable Marketing Digital Data & Business Intelligence, vous serez en charge de la mise en oeuvre opérationnelle des dispositifs CRM et Marketing Automation (Salesforce et Account Engagement). Le poste s'inscrit dans un contexte de transformation du CRM et du marketing, avec un enjeu fort de gouvernance, de structuration des données, de fiabilisation des processus et d'industrialisation des campagnes marketing. Vous interviendrez comme référent opérationnel CRM, garant de la …",
+    "salary_raw": "",
+    "published": "2026-07-21T10:34:50Z",
+    "contract_raw": "",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": 97,
+    "flags": [
+      "Télétravail non mentionné",
+      "Trajet long (97 min)"
+    ],
+    "score": 6,
+    "score_reasons": [
+      "Compétences alignées (3)",
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (97 min)"
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 97 min et pas 100 % télétravail"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Chargé de Marketing Digital H/F",
+    "link": "https://www.adzuna.fr/details/5853126935?utm_medium=api&utm_source=707eaaff",
+    "company": "Bouygues Construction",
+    "location": "Épinay-sur-Orge, Essonne",
+    "description": "Dans le cadre de la poursuite du développement de DISTRIMO, nous recherchons aujourd'hui un CHARGE DE MARKETING DIGITAL H/F pour rejoindre notre équipe et dynamiser notre présence commerciale et digitale. Basé sur notre site de Chilly-Mazarin (Départ. 91) ou Petit-Couronne (76), vous aurez les missions suivantes : - Définir et mettre en oeuvre la stratégie de marketing digital et de promotion des produits, - Concevoir et piloter les campagnes marketing (email, réseaux sociaux, supports numériqu…",
+    "salary_raw": "",
+    "published": "2026-08-23T02:28:50Z",
+    "contract_raw": "",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": 80,
+    "flags": [
+      "Télétravail non mentionné"
+    ],
+    "score": 6,
+    "score_reasons": [
+      "Outils : email",
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (80 min)"
     ],
     "recommendation": "à_revoir",
     "recommendation_reason": "À vérifier : Télétravail non mentionné"
@@ -332,7 +416,7 @@
     "commute_minutes": 77,
     "flags": [
       "Télétravail non mentionné",
-      "Annonce ancienne (196 j)"
+      "Annonce ancienne (197 j)"
     ],
     "score": 5,
     "score_reasons": [
@@ -340,7 +424,114 @@
       "Trajet long (77 min)"
     ],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné ; Annonce ancienne (196 j)"
+    "recommendation_reason": "À vérifier : Télétravail non mentionné ; Annonce ancienne (197 j)"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Campaign Success Management & Growth Analyst M H/F",
+    "link": "https://www.adzuna.fr/details/5853126955?utm_medium=api&utm_source=707eaaff",
+    "company": "Hager Group",
+    "location": "Paris, Ile-de-France",
+    "description": "Why join the Marketing & Sales department? As our organisation transforms, so does Marketing. We are evolving from a traditional communications and campaign function into a strategic growth partner that works hand in hand with the business. Our mission is to place the customer at the centre of every decision, connect business strategy with customer needs, and accelerate sustainable growth through data, digital, content, and customer experience. Joining our Global Marketing & Digital team means …",
+    "salary_raw": "",
+    "published": "2026-08-23T02:28:53Z",
+    "contract_raw": "",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": 78,
+    "flags": [
+      "Télétravail non mentionné"
+    ],
+    "score": 5,
+    "score_reasons": [
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (78 min)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Chef de Projet Digital F/H",
+    "link": "https://www.adzuna.fr/details/5827660615?utm_medium=api&utm_source=707eaaff",
+    "company": "KPMG SA",
+    "location": "Courbevoie, Nanterre",
+    "description": "Vos challenges En collaboration avec l'équipe Digitale, votre mission, en tant que Chef de Projet Digital F/H consiste à : SEA/GEO · Déployer la stratégie SEO/GEO en lien avec l'agence​ · Générer du contenu assisté : création, déclinaison, optimisation de contenu​ · Structurer les contenus pour qu'ils répondent aux critères IA et adapter les bonnes pratiques​ SEA​ · Concevoir des maquettes dédiées aux campagnes sponsorisées, intégration​ · Suivi des performances & optimisation​ UX UI​ · Amélior…",
+    "salary_raw": "",
+    "published": "2026-08-04T12:33:08Z",
+    "contract_raw": "permanent",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": "CDI",
+    "commute_minutes": 96,
+    "flags": [
+      "Télétravail non mentionné",
+      "Trajet long (96 min)"
+    ],
+    "score": 5,
+    "score_reasons": [
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (96 min)"
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 96 min et pas 100 % télétravail"
+  },
+  {
+    "source": "Adzuna",
+    "title": "CDI - CRM Support Specialist H/F",
+    "link": "https://www.adzuna.fr/details/5744200638?utm_medium=api&utm_source=707eaaff",
+    "company": "MARIONNAUD LAFAYETTE",
+    "location": "Paris, Ile-de-France",
+    "description": "CDI - CRM Support Specialist H/F Objectif du poste : Le/La CRM Support Specialist a pour objectif d'assurer le bon fonctionnement quotidien des outils CRM du Groupe (Siebel, Adobe Campaign, Insider), tout en garantissant un haut niveau de qualité de service auprès des équipes métiers. Il/Elle intervient comme point de contact privilégié entre les équipes opérationnelles, les équipes IT Groupe et les prestataires, afin de résoudre les incidents, formuler les demandes d'évolutions mineures et con…",
+    "salary_raw": "",
+    "published": "2026-05-29T05:22:16Z",
+    "contract_raw": "",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": "CDI",
+    "commute_minutes": 78,
+    "flags": [
+      "Télétravail non mentionné",
+      "Annonce ancienne (86 j)"
+    ],
+    "score": 5,
+    "score_reasons": [
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (78 min)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné ; Annonce ancienne (86 j)"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Consultant·e SEA - Sma H/F",
+    "link": "https://www.adzuna.fr/details/5705640659?utm_medium=api&utm_source=707eaaff",
+    "company": "Yumens",
+    "location": "Paris, Ile-de-France",
+    "description": "En tant que Consultant.e SEA - SMA, vous serez responsable d'un portefeuille de clients et assurerez la mise en place, le suivi et le développement de leur stratégie d'acquisition digitale. À ce titre, plusieurs missions vous seront confiées : - Conseiller et accompagner des clients dimensionnés dans le développement de leur business ; - Construire la stratégie d'acquisition webmarketing de vos clients ; - Mettre en place et optimiser des campagnes SEA et social ads ; - Activer et suivre les ré…",
+    "salary_raw": "",
+    "published": "2026-04-21T03:27:07Z",
+    "contract_raw": "",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": 78,
+    "flags": [
+      "Télétravail non mentionné",
+      "Annonce ancienne (124 j)"
+    ],
+    "score": 5,
+    "score_reasons": [
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (78 min)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné ; Annonce ancienne (124 j)"
   },
   {
     "source": "Welcome to the Jungle",
@@ -469,13 +660,39 @@
   },
   {
     "source": "Adzuna",
-    "title": "Spécialiste Business Solution Retail & CRM H/F",
-    "link": "https://www.adzuna.fr/details/5796654387?utm_medium=api&utm_source=707eaaff",
-    "company": "Diptyque SAS",
-    "location": "Paris, Ile-de-France",
-    "description": "Au sein de la Direction Business Solutions et rattaché(e) au Customer Facing Domain Manager, vous êtes l'interlocuteur fonctionnel et applicatif sur les zones d'interaction entre leRetailet les solutions CRM et Customer Engagement. Vous comprenez le fonctionnement de ces outils afin d'accompagner les équipes CRM au HQ dès qu'il y a une interaction avec leretail, les boutiques, les parcours clients et les outils CustomerFacing. Vous assurez la cohérence technico-fonctionnelle et le bon fonctionn…",
+    "title": "CDI - Responsable Marketing Canal Télécom Africa H/F",
+    "link": "https://www.adzuna.fr/details/5835141255?utm_medium=api&utm_source=707eaaff",
+    "company": "Canal Plus",
+    "location": "Issy-les-Moulineaux, Boulogne-Billancourt",
+    "description": "Votre rôle Rattaché/rattachée au Directeur Marketing et Commercial, vous êtes en charge de la définition de la stratégie marketing du groupe, du développement de nouvelles offres et du pilotage du parc d'abonnés. Vous êtes responsable d'une équipe de chargés / chargées de produit marketing et travaillez en étroite collaboration avec les filiales d'Afrique subsaharienne ainsi qu'avec les équipes techniques, data, commerce, relation client et communication. Poste basé à Paris, avec des déplacemen…",
     "salary_raw": "",
-    "published": "2026-07-11T09:39:25Z",
+    "published": "2026-08-10T02:24:25Z",
+    "contract_raw": "",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": "CDI",
+    "commute_minutes": 97,
+    "flags": [
+      "Télétravail non mentionné",
+      "Trajet long (97 min)"
+    ],
+    "score": 4,
+    "score_reasons": [
+      "Trajet long (97 min)"
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 97 min et pas 100 % télétravail"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Gestionnaire Production et Relation Clients Pôle Protection Sociale & Avantages H/F",
+    "link": "https://www.adzuna.fr/details/5829767277?utm_medium=api&utm_source=707eaaff",
+    "company": "Bessé",
+    "location": "Paris, Ile-de-France",
+    "description": "Vous travaillerez au sein du secteur Affinitaire du pôle PROTECTION SOCIALE ET AVANTAGES. Le département associatif de Bessé Protection sociale & Avantages a aujourd'hui pour principale mission la conception, la distribution et la gestion des contrats prévoyance et santé de l'APPA (association de médecins hospitaliers et assimilés créée en 1980, qui compte aujourd'hui plus de 11 000 adhérents et représente près d'un médecin sur cinq à l'hôpital). Au sein d'une équipe de 9 collaborateurs, vous s…",
+    "salary_raw": "",
+    "published": "2026-08-06T02:11:39Z",
     "contract_raw": "",
     "salary_extracted": null,
     "telework_days": null,
@@ -483,7 +700,6 @@
     "contract_type": null,
     "commute_minutes": 78,
     "flags": [
-      "Pertinence CRM à confirmer",
       "Télétravail non mentionné"
     ],
     "score": 4,
@@ -491,7 +707,7 @@
       "Trajet long (78 min)"
     ],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
     "source": "Welcome to the Jungle",
