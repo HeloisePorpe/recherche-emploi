@@ -65,7 +65,7 @@
     "commute_minutes": 97,
     "flags": [
       "Trajet long (97 min)",
-      "Annonce ancienne (102 j)"
+      "Annonce ancienne (103 j)"
     ],
     "score": 8,
     "score_reasons": [
@@ -161,32 +161,57 @@
   },
   {
     "source": "Adzuna",
-    "title": "Chef Projet CRM et Data Marketing Automation H/F",
-    "link": "https://www.adzuna.fr/details/5775958931?utm_medium=api&utm_source=707eaaff",
-    "company": "Mitsubishi Electric France",
-    "location": "Rueil-Malmaison, Nanterre",
-    "description": "Gestion et coordination de projet CRM - Cadrer le projet de centralisation des différentes bases de données clients - Recueillir et formaliser les besoins des équipes métiers - Animer les ateliers avec les équipes internes et les prestataires - Coordonner les parties prenantes et suivre l'avancement du projet - Accompagner la consolidation d'une base clients unique, fiable et exploitable Marketing automation & campagnes - Administrer et exploiter la base de données clients (segmentation, enrich…",
+    "title": "Head of France Marketing & Global Integrated Marketing",
+    "link": "https://www.adzuna.fr/details/5780541532?utm_medium=api&utm_source=707eaaff",
+    "company": "Brevo",
+    "location": "Paris, Ile-de-France",
+    "description": "At Brevo, we’re not just building a CRM. With our technology, we’re helping millions of organizations build lasting relationships with their customers. From emails and SMS to WhatsApp, Chat, and Marketing Automation, our tools are intuitive, powerful, and built to scale with every ambition. We give businesses a clear view of the customer journey, so they can focus on what matters: connection. As a certified B Corp , we’re proud to grow with purpose, committed to high standards of social and env…",
     "salary_raw": "",
-    "published": "2026-06-25T09:55:07Z",
+    "published": "2026-06-28T23:21:48Z",
     "contract_raw": "",
     "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": 95,
+    "commute_minutes": 78,
     "flags": [
-      "Télétravail non mentionné",
-      "Trajet long (95 min)"
+      "Séniorité / management d'équipe ?",
+      "Télétravail non mentionné"
     ],
     "score": 7,
     "score_reasons": [
-      "Outils : segmentation",
-      "Compétences alignées (4)",
+      "Outils clés : email, sms, whatsapp",
       "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (95 min)"
+      "Trajet long (78 min)"
     ],
-    "recommendation": "à_écarter",
-    "recommendation_reason": "Trajet 95 min et pas 100 % télétravail"
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Séniorité / management d'équipe ? ; Télétravail non mentionné"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Chef de projet crm H/F",
+    "link": "https://www.adzuna.fr/details/5844996648?utm_medium=api&utm_source=707eaaff",
+    "company": "",
+    "location": "5ème Arrondissement, Paris",
+    "description": "L'offre Secteurs Automobile, Aéronautique, Spatial, Défense & Sécurité, Ferroviaire, Télécommunications, Energie, Services & Systèmes d'Informations, Chimie / Pétrochimie, Digital & E-Commerce, Naval, Machines & Industrie Lourde, Pharmaceutique / Biotechnologie, Banque & Assurance, BTP Description de l'offre Nous recrutons pour l'un de nos clients un Chef de projet CRM, à pourvoir dès que possible. Les responsabilités du poste incluent : - Implémenter et optimiser les solutions CRM pour amélior…",
+    "salary_raw": "50000-60000 €",
+    "published": "2026-08-17T10:09:13Z",
+    "contract_raw": "permanent",
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": "CDI",
+    "commute_minutes": 73,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné"
+    ],
+    "score": 7,
+    "score_reasons": [
+      "Secteur favorable : banque",
+      "Salaire dans la cible (50,000€)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -204,7 +229,7 @@
     "contract_type": null,
     "commute_minutes": 78,
     "flags": [
-      "Annonce ancienne (407 j)"
+      "Annonce ancienne (408 j)"
     ],
     "score": 7,
     "score_reasons": [
@@ -213,7 +238,7 @@
       "Trajet long (78 min)"
     ],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Annonce ancienne (407 j)"
+    "recommendation_reason": "À vérifier : Annonce ancienne (408 j)"
   },
   {
     "source": "We Work Remotely",
@@ -288,6 +313,33 @@
     ],
     "recommendation": "à_revoir",
     "recommendation_reason": "À vérifier : Télétravail non mentionné"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Head Of CRM H/F",
+    "link": "https://www.adzuna.fr/details/5854048063?utm_medium=api&utm_source=707eaaff",
+    "company": "CAB À TALENTS",
+    "location": "Paris, Ile-de-France",
+    "description": "Dans le cadre d'une forte accélération, nous recherchons un(e) Head of CRM capable de concevoir et piloter une stratégie CRM ambitieuse, en mettant en place les outils, les process et les campagnes qui permettront d'améliorer durablement l'engagement, la conversion et la fidélisation de notre base utilisateurs. Ce poste est stratégique : tout est à construire. Vos missions: Définir la stratégie CRM - Construire la vision CRM de l'entreprise en lien avec les objectifs de croissance. - Définir la…",
+    "salary_raw": "60000-70000 €",
+    "published": "2026-08-24T02:33:40Z",
+    "contract_raw": "",
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": 78,
+    "flags": [
+      "Séniorité / management d'équipe ?",
+      "Télétravail non mentionné"
+    ],
+    "score": 6,
+    "score_reasons": [
+      "Compétences alignées (3)",
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (78 min)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Séniorité / management d'équipe ? ; Télétravail non mentionné"
   },
   {
     "source": "Site carrière — BlaBlaCar",
@@ -382,7 +434,7 @@
     "commute_minutes": 77,
     "flags": [
       "Télétravail non mentionné",
-      "Annonce ancienne (197 j)"
+      "Annonce ancienne (198 j)"
     ],
     "score": 5,
     "score_reasons": [
@@ -390,7 +442,7 @@
       "Trajet long (77 min)"
     ],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné ; Annonce ancienne (197 j)"
+    "recommendation_reason": "À vérifier : Télétravail non mentionné ; Annonce ancienne (198 j)"
   },
   {
     "source": "Welcome to the Jungle",
@@ -587,5 +639,33 @@
     ],
     "recommendation": "à_écarter",
     "recommendation_reason": "Trajet 100 min et pas 100 % télétravail"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Growth & Lead Gen Manager - Hunteed H/F",
+    "link": "https://www.adzuna.fr/details/5854048041?utm_medium=api&utm_source=707eaaff",
+    "company": "Hunteed",
+    "location": "Paris, Ile-de-France",
+    "description": "Growth & Lead Gen Manager - Hunteed Nous recherchons un(e) Growth & Lead Gen Manager capable d'optimiser, structurer et faire évoluer notre machine de génération de leads. Tu évolueras au croisement du growth, de l'automatisation, du CRM et de l'expérimentation opérationnelle. Tu travailleras avec des équipes sales, community, marketing et tech dans un environnement où la compréhension globale des systèmes et la capacité à challenger l'existant sont essentielles. Tes missions Construire et main…",
+    "salary_raw": "",
+    "published": "2026-08-24T02:33:40Z",
+    "contract_raw": "",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": 78,
+    "flags": [
+      "Orientation acquisition / growth ?",
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné"
+    ],
+    "score": 2,
+    "score_reasons": [
+      "Orientation acquisition / growth (hors lifecycle)",
+      "Trajet long (78 min)"
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Score faible (2/10)"
   }
 ]
