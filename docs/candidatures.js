@@ -23,6 +23,18 @@ const board = document.getElementById('board');
 // Mémorise les fiches « Détails » ouvertes pour ne pas les refermer au re-rendu.
 const openDetails = new Set();
 
+// Colonnes repliées (masquées) — mémorisé sur cet appareil.
+const COLLAPSE_KEY = 'recherche-emploi-cand-collapsed';
+let collapsedCols = new Set();
+try {
+  const raw = localStorage.getItem(COLLAPSE_KEY);
+  if (raw) collapsedCols = new Set(JSON.parse(raw));
+} catch (_) { /* localStorage indisponible : on ignore */ }
+function saveCollapsed() {
+  try { localStorage.setItem(COLLAPSE_KEY, JSON.stringify([...collapsedCols])); }
+  catch (_) { /* ignore */ }
+}
+
 function escapeHtml(str) {
   if (str == null) return '';
   return String(str)
@@ -175,10 +187,11 @@ function render() {
   const list = activeCandidatures().filter(matchesSearch);
   board.innerHTML = COLUMNS.map((col) => {
     const cards = list.filter((c) => (VALID_STATUS.has(c.status) ? c.status : 'a_postuler') === col.key);
+    const collapsed = collapsedCols.has(col.key);
     return `
-      <section class="column" data-col="${col.key}">
-        <header class="col-head">
-          <span class="col-title">${col.label}</span>
+      <section class="column${collapsed ? ' collapsed' : ''}" data-col="${col.key}">
+        <header class="col-head" title="Masquer / afficher cette colonne">
+          <span class="col-title"><span class="col-caret">▾</span>${col.label}</span>
           <span class="col-count">${cards.length}</span>
         </header>
         <div class="col-body" data-drop="${col.key}">
@@ -251,9 +264,22 @@ board.addEventListener('toggle', (e) => {
 }, true);
 board.addEventListener('click', (e) => {
   const del = e.target.closest('[data-del]');
-  if (!del) return;
-  removeCandidature(del.getAttribute('data-del'));
-  render();
+  if (del) {
+    removeCandidature(del.getAttribute('data-del'));
+    render();
+    return;
+  }
+  // Clic sur l'en-tête d'une colonne : plier / déplier (masquer / afficher).
+  const head = e.target.closest('.col-head');
+  if (head) {
+    const col = head.closest('.column');
+    const key = col && col.getAttribute('data-col');
+    if (key) {
+      const nowCollapsed = col.classList.toggle('collapsed');
+      if (nowCollapsed) collapsedCols.add(key); else collapsedCols.delete(key);
+      saveCollapsed();
+    }
+  }
 });
 
 // --- Recherche dans les candidatures (entreprise / poste) ---

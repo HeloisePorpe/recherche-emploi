@@ -566,8 +566,20 @@ html, body {
   justify-content: space-between;
   padding: 12px 14px;
   border-bottom: 1px solid var(--border);
+  cursor: pointer;
+  user-select: none;
 }
-.col-title { font-weight: 700; font-size: 0.95rem; }
+.col-head:hover { background: var(--bg); }
+.col-title { font-weight: 700; font-size: 0.95rem; display: flex; align-items: center; gap: 6px; }
+.col-caret {
+  display: inline-block;
+  font-size: 0.8em;
+  color: var(--text-muted);
+  transition: transform 0.15s ease;
+}
+.column.collapsed .col-caret { transform: rotate(-90deg); }
+.column.collapsed .col-body { display: none; }
+.column.collapsed .col-head { border-bottom: none; }
 .col-count {
   background: var(--bg);
   color: var(--text-muted);
