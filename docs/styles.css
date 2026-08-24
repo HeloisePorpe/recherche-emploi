@@ -219,6 +219,58 @@ html, body {
   gap: 16px;
 }
 
+/* Sections repliables par catégorie (À postuler / À revoir / À écarter / Autres) */
+.cards.grouped { display: block; }
+.cat-group {
+  margin-bottom: 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.cat-summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 16px;
+  font-size: 1.02rem;
+  font-weight: 700;
+  user-select: none;
+}
+.cat-summary::-webkit-details-marker { display: none; }
+.cat-summary::before {
+  content: '▸';
+  font-size: 0.9em;
+  color: var(--text-muted);
+  transition: transform 0.15s ease;
+}
+.cat-group[open] > .cat-summary::before { transform: rotate(90deg); }
+.cat-summary:hover { background: var(--bg); }
+.cat-count {
+  margin-left: auto;
+  background: var(--bg);
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 1px 11px;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+.cat-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
+  gap: 16px;
+  padding: 0 16px 16px;
+}
+/* Accent de couleur par catégorie sur l'en-tête */
+.cat-group.reco-go .cat-summary .cat-label { color: var(--green); }
+.cat-group.reco-review .cat-summary .cat-label { color: var(--orange); }
+.cat-group.reco-skip .cat-summary .cat-label,
+.cat-group.reco-other .cat-summary .cat-label { color: var(--text-muted); }
+
 /* Card */
 .card {
   background: var(--surface);
@@ -812,5 +864,6 @@ html, body {
   }
   .filters.open { display: block; }
   .cards { grid-template-columns: 1fr; }
+  .cat-cards { grid-template-columns: 1fr; }
   .header-inner { padding: 14px 16px; }
 }

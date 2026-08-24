@@ -19,6 +19,7 @@ const defaultState = () => ({
   myCriteria: false,     // filtre trajet + télétravail — désactivé par défaut (opt-in)
   criteriaStrict: false, // masquer aussi les offres à l'info manquante
   sources: new Set(), // sources cochées ; vide = toutes
+  collapsed: {},   // sections de catégorie repliées : { 'à_postuler': true, ... }
 });
 
 let state = defaultState();
@@ -174,6 +175,7 @@ function loadState() {
       ...defaultState(),
       ...data,
       sources: new Set(Array.isArray(data.sources) ? data.sources : []),
+      collapsed: (data.collapsed && typeof data.collapsed === 'object') ? data.collapsed : {},
     };
   } catch (_) { /* données corrompues : on garde les défauts */ }
 }
@@ -422,6 +424,46 @@ function renderCard(job) {
     </article>`;
 }
 
+// --- Rendu groupé par catégorie (sections repliables) ---
+const CAT_ORDER = ['à_postuler', 'à_revoir', 'à_écarter', ''];
+const CAT_LABELS = {
+  'à_postuler': 'À postuler', 'à_revoir': 'À revoir', 'à_écarter': 'À écarter', '': 'Autres',
+};
+
+function renderGroupedCards(jobs) {
+  const groups = new Map(CAT_ORDER.map((k) => [k, []]));
+  jobs.forEach((j) => {
+    const k = RECO_META[j.recommendation] ? j.recommendation : '';
+    groups.get(k).push(j);
+  });
+  let html = '';
+  CAT_ORDER.forEach((k) => {
+    const list = groups.get(k);
+    if (!list.length) return;
+    const collapsed = !!(state.collapsed && state.collapsed[k]);
+    const cls = RECO_META[k] ? RECO_META[k].cls : 'reco-other';
+    html += `<details class="cat-group ${cls}" data-cat="${escapeHtml(k)}"${collapsed ? '' : ' open'}>
+        <summary class="cat-summary">
+          <span class="cat-label">${escapeHtml(CAT_LABELS[k])}</span>
+          <span class="cat-count">${list.length}</span>
+        </summary>
+        <div class="cat-cards">${list.map(renderCard).join('')}</div>
+      </details>`;
+  });
+  return html;
+}
+
+// Mémorise l'état plié/déplié de chaque section (l'événement `toggle` ne bulle pas).
+function bindCatToggles() {
+  els.cards.querySelectorAll('.cat-group').forEach((d) => {
+    d.addEventListener('toggle', () => {
+      if (!state.collapsed) state.collapsed = {};
+      state.collapsed[d.dataset.cat] = !d.open;
+      saveState();
+    });
+  });
+}
+
 // --- Rendu principal ---
 function render() {
   if (typeof refreshCandidatureCache === 'function') refreshCandidatureCache();
@@ -465,7 +507,14 @@ function render() {
     els.empty.hidden = false;
   } else {
     els.empty.hidden = true;
-    els.cards.innerHTML = jobs.map(renderCard).join('');
+    // Vue offres : sections repliables par catégorie. Vue archivées : liste plate.
+    els.cards.classList.toggle('grouped', !showArchived);
+    if (showArchived) {
+      els.cards.innerHTML = jobs.map(renderCard).join('');
+    } else {
+      els.cards.innerHTML = renderGroupedCards(jobs);
+      bindCatToggles();
+    }
   }
   saveState();
 }
