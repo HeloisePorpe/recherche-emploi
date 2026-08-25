@@ -187,30 +187,6 @@
   },
   {
     "source": "Welcome to the Jungle",
-    "title": "Chef de projet CRM & Expérience client H/F - CDI - Paris (17ème) ",
-    "link": "https://www.welcometothejungle.com/fr/companies/rexel-france/jobs/chef-de-projet-crm-experience-client-h-f-cdi-paris-17eme_paris",
-    "company": "Rexel France",
-    "location": "Paris, France",
-    "description": "\n\n<p>Vous êtes diplômé(e) d'une formation supérieure en marketing, communication, digital ou équivalent.&#xa0;</p><p>Vous possédez une expérience significative en gestion de campagnes CRM / emailing et maîtrisez les indicateurs emailing : taux d’ouverture, taux de clic, conversion, revenu. Vous avez une bonne connaissance de GA4.&#xa0;</p><p>Vous êtes organisé, rigoureux et êtes à l'aise pour gérer plusieurs projets simultanément. Vous avez un bon esprit d’analyse et êtes synthétique.&#xa0;</p><p>Vous êtes force de proposition, orienté résultats et souhaitez adopter une démarche d’amélioration continue.</p>\n\n<h2>Additional Information</h2>\n\n<div sr-tagline=\"\"></p><p><strong>POURQUOI NOUS REJOINDRE :</strong></p><p>Rejoindre Rexel, c’est intégrer un groupe qui valorise les talents et offre de réelles opportunités d’évolution, en France comme à l’international, avec 588 mobilités internes réalisées en 2025 (85 % de nos collaborateurs recommandent REXEL comme employeur).</p><p>Vous bénéficiez d’un package de rémunération attractif avec un salaire de base sur 13 mois. Vous profitez également de la participation, de l’intéressement et de solutions d’épargne avantageuses.</p><p>Notre politique sociale favorise l’équilibre entre vie professionnelle et personnelle. Vous pouvez bénéficier jusqu’à 12 jours de RTT par an, ainsi qu’un cadre de travail flexible avec une journée de télétravail par semaine selon le poste.</p><p>Enfin, nous enrichissons la vie de nos équipes par des avantages sociaux (chèques vacances, ticket de cinéma à tarif réduit, activités et voyages organisés par le CSE…).</p><p><strong>Postulez maintenant et devenez un acteur clé du déploiement de l’expertise et des solutions Rexel.</strong></p><p>&#xa0;</p><p><strong>A propos de REXEL :</strong></p><p>Avec un chiffre d’affaires de <strong>3,2 </strong>Mds€ en 2025, Rexel est le leader français de la distribution professionnelle de produits et services pour le monde de l’énergie. L’entreprise conçoit et distribue des solutions d'électrification sur 3 marchés : résidentiel, tertiaire et industriel et couvre 4 domaines d’expertises principaux&#xa0;: distribution d’énergie, génie climatique, automatismes industriels, data-communication et sécurité.</p><p>Forts d’un important maillage territorial comptant 435 agences, 8 centres logistiques régionaux, et d’une offre digitale puissante, les experts Rexel accompagnent et conseillent les professionnels dans le choix et l’installation de solutions électriques conciliant performance et responsabilité, avec un objectif en tête : distribuer les bonnes énergies sur l’ensemble de l’Hexagone.</p><p>Rexel s’engage en faveur de l’éducation à la transition énergétique au travers de la <a href=\"https://www.rexel.com/fr/engagements/fondation-rexel/\" rel=\"noopener noreferrer\">Fondation Rexel</a>, abritée par la Fondation de France<strong>.&#xa0;</strong></p><p>Le Groupe Rexel est présent dans 17 pays, à travers un réseau de plus de 1 950 agences, et compte plus de 26 500 collaborateurs. La Société est cotée sur le marché Eurolist d’Euronext Paris.</p><p>Pour plus d’information, rendez-vous sur <a href=\"https://courant-positif.rexel.fr/\" rel=\"noopener noreferrer\">Courant Positif</a>, le média de Rexel France.</p>",
-    "published": "2026-08-25T00:00:00.000+02:00",
-    "contract_type": "CDI",
-    "salary_extracted": null,
-    "telework_days": 2,
-    "in_france": true,
-    "commute_minutes": 78,
-    "flags": [],
-    "score": 7,
-    "score_reasons": [
-      "Outils : email",
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (78 min)",
-      "Télétravail 2j/sem"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "Trajet 78 min, hors critère (≤75 min ou 100 % télétravail)"
-  },
-  {
-    "source": "Welcome to the Jungle",
     "title": "Consultant(e) Senior - Chef de projet Data & CRM (H/F)",
     "link": "https://www.welcometothejungle.com/fr/companies/thinkmarket/jobs/consultant-senior-chef-de-projet-data-crm-h-f_paris",
     "company": "Thinkmarket",
@@ -236,13 +212,63 @@
     "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
+    "source": "Adzuna",
+    "title": "Chargé des admissions B2C (F/H)",
+    "link": "https://www.adzuna.fr/land/ad/5775829946?se=3pp5gHGg8RG_lI43IzQKFA&utm_medium=api&utm_source=707eaaff&v=E3D66B7CA2DD4E7B0890E2B899365E15A201A37F",
+    "company": "Michael Page",
+    "location": "1er Arrondissement, Paris",
+    "description": "Le poste de Chargé des admissions B2C (F/H) Missions principales * Informer, conseiller et orienter les prospects vers les formations adaptées à leur projet * Répondre aux sollicitations via téléphone, email, chat et réseaux sociaux * Assurer la gestion et la mise à jour du CRM * Qualifier les leads entrants et piloter les relances commerciales * Garantir la traçabilité et le suivi des interactions * Identifier de nouveaux prospects et mener des actions de prospection * Participer à des campagn…",
+    "salary_raw": "",
+    "published": "2026-06-25T08:21:00Z",
+    "contract_raw": "permanent",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": "CDI",
+    "commute_minutes": 84,
+    "flags": [
+      "Télétravail non mentionné"
+    ],
+    "score": 6,
+    "score_reasons": [
+      "Outils : email",
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (84 min)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+  },
+  {
+    "source": "Welcome to the Jungle",
+    "title": "Chef de projet CRM & Expérience client H/F - CDI - Paris (17ème) ",
+    "link": "https://www.welcometothejungle.com/fr/companies/rexel-france/jobs/chef-de-projet-crm-experience-client-h-f-cdi-paris-17eme_paris",
+    "company": "Rexel France",
+    "location": "Paris, France",
+    "description": "\n\n<p>Vous êtes diplômé(e) d'une formation supérieure en marketing, communication, digital ou équivalent.&#xa0;</p><p>Vous possédez une expérience significative en gestion de campagnes CRM / emailing et maîtrisez les indicateurs emailing : taux d’ouverture, taux de clic, conversion, revenu. Vous avez une bonne connaissance de GA4.&#xa0;</p><p>Vous êtes organisé, rigoureux et êtes à l'aise pour gérer plusieurs projets simultanément. Vous avez un bon esprit d’analyse et êtes synthétique.&#xa0;</p><p>Vous êtes force de proposition, orienté résultats et souhaitez adopter une démarche d’amélioration continue.</p>\n\n<h2>Additional Information</h2>\n\n<div sr-tagline=\"\"></p><p><strong>POURQUOI NOUS REJOINDRE :</strong></p><p>Rejoindre Rexel, c’est intégrer un groupe qui valorise les talents et offre de réelles opportunités d’évolution, en France comme à l’international, avec 588 mobilités internes réalisées en 2025 (85 % de nos collaborateurs recommandent REXEL comme employeur).</p><p>Vous bénéficiez d’un package de rémunération attractif avec un salaire de base sur 13 mois. Vous profitez également de la participation, de l’intéressement et de solutions d’épargne avantageuses.</p><p>Notre politique sociale favorise l’équilibre entre vie professionnelle et personnelle. Vous pouvez bénéficier jusqu’à 12 jours de RTT par an, ainsi qu’un cadre de travail flexible avec une journée de télétravail par semaine selon le poste.</p><p>Enfin, nous enrichissons la vie de nos équipes par des avantages sociaux (chèques vacances, ticket de cinéma à tarif réduit, activités et voyages organisés par le CSE…).</p><p><strong>Postulez maintenant et devenez un acteur clé du déploiement de l’expertise et des solutions Rexel.</strong></p><p>&#xa0;</p><p><strong>A propos de REXEL :</strong></p><p>Avec un chiffre d’affaires de <strong>3,2 </strong>Mds€ en 2025, Rexel est le leader français de la distribution professionnelle de produits et services pour le monde de l’énergie. L’entreprise conçoit et distribue des solutions d'électrification sur 3 marchés : résidentiel, tertiaire et industriel et couvre 4 domaines d’expertises principaux&#xa0;: distribution d’énergie, génie climatique, automatismes industriels, data-communication et sécurité.</p><p>Forts d’un important maillage territorial comptant 435 agences, 8 centres logistiques régionaux, et d’une offre digitale puissante, les experts Rexel accompagnent et conseillent les professionnels dans le choix et l’installation de solutions électriques conciliant performance et responsabilité, avec un objectif en tête : distribuer les bonnes énergies sur l’ensemble de l’Hexagone.</p><p>Rexel s’engage en faveur de l’éducation à la transition énergétique au travers de la <a href=\"https://www.rexel.com/fr/engagements/fondation-rexel/\" rel=\"noopener noreferrer\">Fondation Rexel</a>, abritée par la Fondation de France<strong>.&#xa0;</strong></p><p>Le Groupe Rexel est présent dans 17 pays, à travers un réseau de plus de 1 950 agences, et compte plus de 26 500 collaborateurs. La Société est cotée sur le marché Eurolist d’Euronext Paris.</p><p>Pour plus d’information, rendez-vous sur <a href=\"https://courant-positif.rexel.fr/\" rel=\"noopener noreferrer\">Courant Positif</a>, le média de Rexel France.</p>",
+    "published": "2026-08-25T00:00:00.000+02:00",
+    "contract_type": "CDI",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "commute_minutes": 78,
+    "flags": [],
+    "score": 6,
+    "score_reasons": [
+      "Outils : email",
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (78 min)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "Trajet 78 min, hors critère (≤75 min ou 100 % télétravail)"
+  },
+  {
     "source": "LinkedIn (alerte)",
-    "title": "CRM & Lifecycle Manager Joko · Paris (À distance)",
-    "link": "https://www.linkedin.com/comm/jobs/view/4454074623/?trackingId=LhR5VRRor9z9Tg8aHBZOaw%3D%3D&amp;refId=z1TfyaSk7GA%2FGPEtYoeoRA%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_jobs_facet_suggestions%3BYnp50hK6SZ%2BzJFdcMrVGGw%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=3-a7t4kuaJyso1&amp;trk=eml-email_jobs_facet_suggestions-JOBS_POSTING_SECTION_1-0-job_card_0_jobid_4454074623_sectionid_275005_fmid_8ulvbk~mt2xfi6o~og&amp;trkEmail=eml-email_jobs_facet_suggestions-JOBS_POSTING_SECTION_1-0-job_card_0_jobid_4454074623_sectionid_275005_fmid_8ulvbk~mt2xfi6o~og-null-8ulvbk~mt2xfi6o~og-null-null&amp;eid=8ulvbk-mt2xfi6o-og&amp;otpToken=YzUzNzcyN2UwYzM3YzhjMDk1YzlhNzk3YmY2NTI1NTc1NjZiMTUyNzQzZmE2N2M3MGVkNDUwYzU0YjcxOWZiMWE1MDk4Zjg3NmVjZWU2NTAxZjI1YjE0NzI5ZmM2Yzg3ZTRjYjI1Nzk3NThjY2JhYmEyMDQ3ODQ2ZjVlYWQwYzEyNDM1NmU2ZDQyMGVmZSwyLDE%3D",
+    "title": "Adobe Campaign Expert Numberly · Paris (Hybride)",
+    "link": "https://www.linkedin.com/comm/jobs/view/4425556848/?trackingId=SJKnSx3zc%2FskQFyD1nwD5w%3D%3D&amp;refId=DYCyWyGyTbC4lrAeS%2BV98A%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_smart_expansion_01%3BlOM8uPQtSEOvUCtg8AtEZw%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=11fElaMRdGvIo1&amp;trk=eml-email_job_alert_digest_smart_expansion_01-JOBS_POSTING_SECTION_1-0-job_card_1_jobid_4425556848_fmid_8ulvbk~mt02fyof~v8&amp;trkEmail=eml-email_job_alert_digest_smart_expansion_01-JOBS_POSTING_SECTION_1-0-job_card_1_jobid_4425556848_fmid_8ulvbk~mt02fyof~v8-null-8ulvbk~mt02fyof~v8-null-null&amp;eid=8ulvbk-mt02fyof-v8&amp;otpToken=YTFhOTg2N2QzNGM3NmQwMmU5MTZjMGZiNzRhYjk4NDdmYTUwZTQ3N2UwZDk1YzE0Zjk5NzkwY2NiMDQ4NjBiZmQxYmIwMTM2OTI3NzY2YTllYmQ5MDQ0N2U1YTI1ZWI1NGUxMjNiZmUxN2EwYzlkZjNjNzU4MWMzMGMzYWQ5NmRlM2QwZjYyZTljMjQ4ZCwyLDE%3D",
     "company": "",
     "location": "",
     "description": "",
-    "published": "2026-08-21T12:29:42+00:00",
+    "published": "2026-08-19T12:26:45+00:00",
     "in_france": true,
     "salary_extracted": null,
     "telework_days": null,
@@ -259,12 +285,12 @@
   },
   {
     "source": "LinkedIn (alerte)",
-    "title": "Adobe Campaign Expert Numberly · Paris (Hybride)",
-    "link": "https://www.linkedin.com/comm/jobs/view/4425556848/?trackingId=SJKnSx3zc%2FskQFyD1nwD5w%3D%3D&amp;refId=DYCyWyGyTbC4lrAeS%2BV98A%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_smart_expansion_01%3BlOM8uPQtSEOvUCtg8AtEZw%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=11fElaMRdGvIo1&amp;trk=eml-email_job_alert_digest_smart_expansion_01-JOBS_POSTING_SECTION_1-0-job_card_1_jobid_4425556848_fmid_8ulvbk~mt02fyof~v8&amp;trkEmail=eml-email_job_alert_digest_smart_expansion_01-JOBS_POSTING_SECTION_1-0-job_card_1_jobid_4425556848_fmid_8ulvbk~mt02fyof~v8-null-8ulvbk~mt02fyof~v8-null-null&amp;eid=8ulvbk-mt02fyof-v8&amp;otpToken=YTFhOTg2N2QzNGM3NmQwMmU5MTZjMGZiNzRhYjk4NDdmYTUwZTQ3N2UwZDk1YzE0Zjk5NzkwY2NiMDQ4NjBiZmQxYmIwMTM2OTI3NzY2YTllYmQ5MDQ0N2U1YTI1ZWI1NGUxMjNiZmUxN2EwYzlkZjNjNzU4MWMzMGMzYWQ5NmRlM2QwZjYyZTljMjQ4ZCwyLDE%3D",
+    "title": "CRM & Lifecycle Manager Joko · Paris (À distance)",
+    "link": "https://www.linkedin.com/comm/jobs/view/4454074623/?trackingId=LhR5VRRor9z9Tg8aHBZOaw%3D%3D&amp;refId=z1TfyaSk7GA%2FGPEtYoeoRA%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_jobs_facet_suggestions%3BYnp50hK6SZ%2BzJFdcMrVGGw%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=3-a7t4kuaJyso1&amp;trk=eml-email_jobs_facet_suggestions-JOBS_POSTING_SECTION_1-0-job_card_0_jobid_4454074623_sectionid_275005_fmid_8ulvbk~mt2xfi6o~og&amp;trkEmail=eml-email_jobs_facet_suggestions-JOBS_POSTING_SECTION_1-0-job_card_0_jobid_4454074623_sectionid_275005_fmid_8ulvbk~mt2xfi6o~og-null-8ulvbk~mt2xfi6o~og-null-null&amp;eid=8ulvbk-mt2xfi6o-og&amp;otpToken=YzUzNzcyN2UwYzM3YzhjMDk1YzlhNzk3YmY2NTI1NTc1NjZiMTUyNzQzZmE2N2M3MGVkNDUwYzU0YjcxOWZiMWE1MDk4Zjg3NmVjZWU2NTAxZjI1YjE0NzI5ZmM2Yzg3ZTRjYjI1Nzk3NThjY2JhYmEyMDQ3ODQ2ZjVlYWQwYzEyNDM1NmU2ZDQyMGVmZSwyLDE%3D",
     "company": "",
     "location": "",
     "description": "",
-    "published": "2026-08-19T12:26:45+00:00",
+    "published": "2026-08-21T12:29:42+00:00",
     "in_france": true,
     "salary_extracted": null,
     "telework_days": null,
@@ -482,33 +508,12 @@
   },
   {
     "source": "LinkedIn (alerte)",
-    "title": "Chef de projet CRM SFMC (F/H/X) Epsilon France · Paris (Hybride)",
-    "link": "https://www.linkedin.com/comm/jobs/view/4416584413/?trackingId=2W28nKllQCmMrqn9HbgJHw%3D%3D&amp;refId=Zrik1exRRVC2oy8Lb8wgPg%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_smart_expansion_01%3BbNJkYxx7R4GVITcZjJxCaQ%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=0KO2G2QgHauco1&amp;trk=eml-email_job_alert_digest_smart_expansion_01-JOBS_POSTING_SECTION_1-0-job_card_0_jobid_4416584413_fmid_8ulvbk~msyn04jk~mp&amp;trkEmail=eml-email_job_alert_digest_smart_expansion_01-JOBS_POSTING_SECTION_1-0-job_card_0_jobid_4416584413_fmid_8ulvbk~msyn04jk~mp-null-8ulvbk~msyn04jk~mp-null-null&amp;eid=8ulvbk-msyn04jk-mp&amp;otpToken=NjgyMWZjYTAyZWM3OTdlMmYxOTRkYzQzYjhkNjVlYzE3MDVlY2U2OGI4ZjYzNWM4OTY3YTUzZDUzMTIzMTEzZGViZjgzNDM2M2FhMzk0ZmFlNWE2NDkzM2YxNWVjNzMyYzRiMjg0ZDJmMGFmY2Y5ZjQwYmEwN2EzNzQ1M2FjN2I4OTUyZjQzY2RmZGFjZSwyLDE%3D",
+    "title": "CRM & Communications Coordinator",
+    "link": "https://www.linkedin.com/comm/jobs/view/4456263424/?trackingId=VDlDURGrYlMF1Yk%2BIcQUmw%3D%3D&amp;refId=IdnwlbiJWtdYDffOmP37HA%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BK1gZ8xQ0T1yOU3b4%2Bhxx%2Fg%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=0UCh4faWbGBco1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4456263424_ssid_8910031762_fmid_8ulvbk~mt5s7dlp~97&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4456263424_ssid_8910031762_fmid_8ulvbk~mt5s7dlp~97-null-8ulvbk~mt5s7dlp~97-null-null&amp;eid=8ulvbk-mt5s7dlp-97&amp;otpToken=MWYyZGRlZTc5OGZlNWM0OTU1MzdkNWQ2NTg5MDU3NzdjMjY0OGMxZjE3MDk1NDMzOWU2Y2IzYzg5MmFlOTZiMjI5NjM3YTM0MzM3NDE4NGUyYjAzN2VmYzA2YjVmMWEwZGViYjM2NDRjMzRhNDIxMjI1ZTQ4NTQ2NTIwOWQ1ZmU3OTViYjE2YjBjMTI2NCwyLDE%3D",
     "company": "",
     "location": "",
     "description": "",
-    "published": "2026-08-18T12:26:45+00:00",
-    "in_france": true,
-    "salary_extracted": null,
-    "telework_days": null,
-    "contract_type": null,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Télétravail non mentionné"
-    ],
-    "score": 5,
-    "score_reasons": [],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
-  },
-  {
-    "source": "LinkedIn (alerte)",
-    "title": "Chef de projet crm H/F Kicklox · Paris (Hybride)",
-    "link": "https://www.linkedin.com/comm/jobs/view/4455247356/?trackingId=PabRlTLMWoGT5wpqIq6RUQ%3D%3D&amp;refId=vO7Au4nATo%2BpP26fAq4WAw%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_smart_expansion_01%3BbNJkYxx7R4GVITcZjJxCaQ%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=0KO2G2QgHauco1&amp;trk=eml-email_job_alert_digest_smart_expansion_01-JOBS_POSTING_SECTION_1-0-job_card_1_jobid_4455247356_fmid_8ulvbk~msyn04jk~mp&amp;trkEmail=eml-email_job_alert_digest_smart_expansion_01-JOBS_POSTING_SECTION_1-0-job_card_1_jobid_4455247356_fmid_8ulvbk~msyn04jk~mp-null-8ulvbk~msyn04jk~mp-null-null&amp;eid=8ulvbk-msyn04jk-mp&amp;otpToken=NjgyMWZjYTAyZWM3OTdlMmYxOTRkYzQzYjhkNjVlYzE3MDVlY2U2OGI4ZjYzNWM4OTY3YTUzZDUzMTIzMTEzZGViZjgzNDM2M2FhMzk0ZmFlNWE2NDkzM2YxNWVjNzMyYzRiMjg0ZDJmMGFmY2Y5ZjQwYmEwN2EzNzQ1M2FjN2I4OTUyZjQzY2RmZGFjZSwyLDE%3D",
-    "company": "",
-    "location": "",
-    "description": "",
-    "published": "2026-08-18T12:26:45+00:00",
+    "published": "2026-08-23T12:26:43+00:00",
     "in_france": true,
     "salary_extracted": null,
     "telework_days": null,
@@ -545,12 +550,12 @@
   },
   {
     "source": "LinkedIn (alerte)",
-    "title": "CRM & Communications Coordinator",
-    "link": "https://www.linkedin.com/comm/jobs/view/4456263424/?trackingId=Qs01AZVHRZKxLocUk4HbLQ%3D%3D&amp;refId=KusU6ViVTbGbrMwiHHnSkQ%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_application_confirmation_with_nba_01%3BVumHi4WHRkyUfgh0I4ryIA%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=1C4lWkznS_Cso1&amp;trk=eml-email_application_confirmation_with_nba_01-applied_jobs-0-job_posting&amp;trkEmail=eml-email_application_confirmation_with_nba_01-applied_jobs-0-job_posting-null-8ulvbk~mt70edwj~p8-null-null&amp;eid=8ulvbk-mt70edwj-p8&amp;otpToken=MTdkNDVhMDYwOTMzNDg3NTdkOThiMmM0ODM4YTJmNmYzYmEwY2U3ZDIxMjE1ZTljY2I4NDlmNDRhOTAzMDVjYTMyMjU0NDU2YzM0ZmIwNjUyNDczYmUyNmI1NjliMjliYzYxNWNjOWI5YTY2OWEwMDM4N2FmZWQ4OTMzNTllZDU4NjVmNzA2Y2FjMzQ0NywyLDE%3D",
+    "title": "Chef de projet CRM SFMC (F/H/X) Epsilon France · Paris (Hybride)",
+    "link": "https://www.linkedin.com/comm/jobs/view/4416584413/?trackingId=mu4kd%2BeulPR1F46Thfg8qw%3D%3D&amp;refId=sj455cB%2BSOWZTyT3MfsDfQ%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_smart_expansion_01%3BJcEB0gA1R9yt5OWTQT3O5g%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=19kUbK3j9iuco1&amp;trk=eml-email_job_alert_digest_smart_expansion_01-JOBS_POSTING_SECTION_1-0-job_card_1_jobid_4416584413_fmid_8ulvbk~msyipt14~ym&amp;trkEmail=eml-email_job_alert_digest_smart_expansion_01-JOBS_POSTING_SECTION_1-0-job_card_1_jobid_4416584413_fmid_8ulvbk~msyipt14~ym-null-8ulvbk~msyipt14~ym-null-null&amp;eid=8ulvbk-msyipt14-ym&amp;otpToken=NGVmYWY2NWM1ZGRmZTk3MjYwZGMxNzAxNDE4OWI3OGUwY2EwMjdlMTIzYzBlZjEyMDZiMzA1ZDAyNzczODlmNjcxOGIyODIxMzcxZmFmMzUzNzViMGU0YTM0NTcyOTUyNTNjMDFjM2E1YTE0ZjE3YzgxNWQ1YjZmZmE1MmJiOWFkZDliNTljYzY5NDZiOCwyLDE%3D",
     "company": "",
     "location": "",
     "description": "",
-    "published": "2026-08-24T09:03:53+00:00",
+    "published": "2026-08-18T10:26:45+00:00",
     "in_france": true,
     "salary_extracted": null,
     "telework_days": null,
@@ -565,28 +570,25 @@
     "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
-    "source": "JobLeads (alerte)",
-    "title": "SFMC Marketing Automation Specialist — Hybrid",
-    "link": "https://www.jobleads.com/job/e33a9fc6c155107fa6d19f0d40ed318f4?kuuid=c4f4cab94056c7309cb04363dac3b327&view=search&saved_search_email_id=019ff5d8-3318-7a51-8d82-c4d960d2e3f4&utm_source=vdb_is_saved_search&utm_medium=email&utm_campaign=campaign%3Dvdb_is_job_alert&utm_content=job_id%3Dexternal-33a9fc6c155107fa6d19f0d40ed318f4%7Csearch_id%3D019ff5d8-3318-7a51-8d82-c4d960d2e3f4%7Ccontent%3Djob_card&search_id=a09b7ea8-cf9b-4aca-8ecc-b54deba47192&vector_distance=0.58099747&job_rank=2&m=5d72390a-0084-43c1-a072-6ee267106a3c&u=69512022&t=id_1752225913",
-    "company": "MSD France",
-    "location": "Paris",
+    "source": "LinkedIn (alerte)",
+    "title": "Chef de projet crm H/F Kicklox · Paris (Hybride)",
+    "link": "https://www.linkedin.com/comm/jobs/view/4455247356/?trackingId=PabRlTLMWoGT5wpqIq6RUQ%3D%3D&amp;refId=vO7Au4nATo%2BpP26fAq4WAw%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_smart_expansion_01%3BbNJkYxx7R4GVITcZjJxCaQ%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=0KO2G2QgHauco1&amp;trk=eml-email_job_alert_digest_smart_expansion_01-JOBS_POSTING_SECTION_1-0-job_card_1_jobid_4455247356_fmid_8ulvbk~msyn04jk~mp&amp;trkEmail=eml-email_job_alert_digest_smart_expansion_01-JOBS_POSTING_SECTION_1-0-job_card_1_jobid_4455247356_fmid_8ulvbk~msyn04jk~mp-null-8ulvbk~msyn04jk~mp-null-null&amp;eid=8ulvbk-msyn04jk-mp&amp;otpToken=NjgyMWZjYTAyZWM3OTdlMmYxOTRkYzQzYjhkNjVlYzE3MDVlY2U2OGI4ZjYzNWM4OTY3YTUzZDUzMTIzMTEzZGViZjgzNDM2M2FhMzk0ZmFlNWE2NDkzM2YxNWVjNzMyYzRiMjg0ZDJmMGFmY2Y5ZjQwYmEwN2EzNzQ1M2FjN2I4OTUyZjQzY2RmZGFjZSwyLDE%3D",
+    "company": "",
+    "location": "",
     "description": "",
-    "published": "2026-08-23T07:53:23+02:00",
+    "published": "2026-08-18T12:26:45+00:00",
     "in_france": true,
-    "salary_raw": "EUR 60 000 - 85 000",
+    "salary_extracted": null,
     "telework_days": null,
     "contract_type": null,
-    "commute_minutes": 78,
     "flags": [
+      "Pertinence CRM à confirmer",
       "Télétravail non mentionné"
     ],
     "score": 5,
-    "score_reasons": [
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (78 min)"
-    ],
+    "score_reasons": [],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
     "source": "JobLeads (alerte)",
@@ -637,6 +639,30 @@
     ],
     "recommendation": "à_écarter",
     "recommendation_reason": "Trajet 100 min et pas 100 % télétravail"
+  },
+  {
+    "source": "JobLeads (alerte)",
+    "title": "SFMC Marketing Automation Specialist — Hybrid",
+    "link": "https://www.jobleads.com/job/e33a9fc6c155107fa6d19f0d40ed318f4?kuuid=c4f4cab94056c7309cb04363dac3b327&view=search&saved_search_email_id=019ff5d8-3318-7a51-8d82-c4d960d2e3f4&utm_source=vdb_is_saved_search&utm_medium=email&utm_campaign=campaign%3Dvdb_is_job_alert&utm_content=job_id%3Dexternal-33a9fc6c155107fa6d19f0d40ed318f4%7Csearch_id%3D019ff5d8-3318-7a51-8d82-c4d960d2e3f4%7Ccontent%3Djob_card&search_id=a09b7ea8-cf9b-4aca-8ecc-b54deba47192&vector_distance=0.58099747&job_rank=2&m=5d72390a-0084-43c1-a072-6ee267106a3c&u=69512022&t=id_1752225913",
+    "company": "MSD France",
+    "location": "Paris",
+    "description": "",
+    "published": "2026-08-23T07:53:23+02:00",
+    "in_france": true,
+    "salary_raw": "EUR 60 000 - 85 000",
+    "telework_days": null,
+    "contract_type": null,
+    "commute_minutes": 78,
+    "flags": [
+      "Télétravail non mentionné"
+    ],
+    "score": 5,
+    "score_reasons": [
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (78 min)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -788,33 +814,5 @@
     ],
     "recommendation": "à_écarter",
     "recommendation_reason": "Trajet 100 min et pas 100 % télétravail"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Growth & Lead Gen Manager - Hunteed H/F",
-    "link": "https://www.adzuna.fr/details/5854048041?utm_medium=api&utm_source=707eaaff",
-    "company": "Hunteed",
-    "location": "Paris, Ile-de-France",
-    "description": "Growth & Lead Gen Manager - Hunteed Nous recherchons un(e) Growth & Lead Gen Manager capable d'optimiser, structurer et faire évoluer notre machine de génération de leads. Tu évolueras au croisement du growth, de l'automatisation, du CRM et de l'expérimentation opérationnelle. Tu travailleras avec des équipes sales, community, marketing et tech dans un environnement où la compréhension globale des systèmes et la capacité à challenger l'existant sont essentielles. Tes missions Construire et main…",
-    "salary_raw": "",
-    "published": "2026-08-24T02:33:40Z",
-    "contract_raw": "",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": 78,
-    "flags": [
-      "Orientation acquisition / growth ?",
-      "Pertinence CRM à confirmer",
-      "Télétravail non mentionné"
-    ],
-    "score": 2,
-    "score_reasons": [
-      "Orientation acquisition / growth (hors lifecycle)",
-      "Trajet long (78 min)"
-    ],
-    "recommendation": "à_écarter",
-    "recommendation_reason": "Score faible (2/10)"
   }
 ]
