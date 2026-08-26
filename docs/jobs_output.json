@@ -180,6 +180,29 @@
     "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
+    "source": "Cadremploi (alerte)",
+    "title": "Chef de Projet CRM Omnicanal / CRM Campaign Manager (H/F)",
+    "link": "https://r.emails3.alertes.cadremploi.fr/tr/cl/zsisEBtkibBT5yXfOBWo1PwJd1CBWBMtusRjve49S7IAapq0hBAKnZYJ3y2LTaJZwmSkrfUjf1O3kPMo0cIOU59DCxKvrRw4Vg81sVamhfD5goPAvZ01hN0EvNeC4D-neDCdRIaNnyeM_pSg0L_TGn7EvglZj6T5jt5RBUiZ-VZ7h3xcuxt4zTq-EAil3Lr4In0ak5sOm6YzgJpc8030nzMGDYBIpTuwdBwtInwklujctsZa-s2sCKZPK1oXk9c59S6OQXOlsVxK81blLRXlK6LLBbADC1QHPqXwhl_DzZnoGTpquKksumRrpKz8PEAkbau81yP0_uL_bLoxjKeQdVuoi_Pu0pen-USDLeLdpFt3shy_vbZJr5tyHNZ5duMJq7D_g4PQYPEtYL_AZGYfICaP6ahKGX-4pIAJqaeeNVMSfDDwu8CeSWx8FEoeFQ4BFJLdl1ogNBp0DDW0A6QZdUict8D0IY23KfzCGHoSE0jLiZUDqV9BCVsIq2lnbvHb7vTlBh8F75dv4nZNmwHERweTMLlNhZ1dQN4wxdAI64g92FSQhCwyzh9Ydo8qHm8KMpWIo_EiajvDxhq_OXQ3EDKkEziwD2_eeaUff9cL0T1Ac21yDazs3o4NQpcYaoM36KpQwBXVVJD0md44bdqXgb8Nsz78dXmnLNrZRFh8IiCsWfFv2aBUIGoOPQ5XyfUhqVgL0Cdvry-fFeJqRLas4he5yFFeLczyrsYZQpQjH06km9etXU9YIX0ibDhzZDJ29mvZ64Hrw5Q1Uw",
+    "company": "",
+    "location": "",
+    "description": "",
+    "published": "2026-08-26T17:20:25+00:00",
+    "in_france": true,
+    "salary_extracted": null,
+    "telework_days": null,
+    "contract_type": null,
+    "flags": [
+      "Télétravail non mentionné"
+    ],
+    "score": 7,
+    "score_reasons": [
+      "Outils : omnicanal",
+      "Signaux CRM lifecycle (email / segmentation / campagne)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+  },
+  {
     "source": "Site carrière — Vestiaire Collective",
     "title": "Graphic Designer",
     "link": "https://jobs.lever.co/vestiairecollective/91940f13-c788-45b0-bf63-f6c5813bbf55",
@@ -369,7 +392,7 @@
     "commute_minutes": 77,
     "flags": [
       "Télétravail non mentionné",
-      "Annonce ancienne (200 j)"
+      "Annonce ancienne (201 j)"
     ],
     "score": 5,
     "score_reasons": [
@@ -377,7 +400,7 @@
       "Trajet long (77 min)"
     ],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné ; Annonce ancienne (200 j)"
+    "recommendation_reason": "À vérifier : Télétravail non mentionné ; Annonce ancienne (201 j)"
   },
   {
     "source": "Welcome to the Jungle",
@@ -429,33 +452,12 @@
   },
   {
     "source": "LinkedIn (alerte)",
-    "title": "Growth & CRM Manager",
-    "link": "https://www.linkedin.com/comm/jobs/view/4456867388/?trackingId=4PZ1%2FlN5cGSbCarQona9%2BQ%3D%3D&amp;refId=caCOC8pbOH1NWirwiC%2FqIQ%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3B%2BZeBDuieRSS3KGJ7S3HBRA%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=0Q4KyM_BzqFco1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_1_jobid_4456867388_ssid_8583513778_fmid_8ulvbk~mt9tya9o~1p&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_1_jobid_4456867388_ssid_8583513778_fmid_8ulvbk~mt9tya9o~1p-null-8ulvbk~mt9tya9o~1p-null-null&amp;eid=8ulvbk-mt9tya9o-1p&amp;otpToken=N2I3ZmY3YWJmZWU5NzhmNGRkMGQxMjQ3MGRkMGQzYTFjNjc0Y2I0NWNjZmEyMzE4Y2Q5MDY2ODFhNTRiYTMzMzQ4NmI0ZmI1MzE5NDY5YTY4ZmExMWM3NjlkZDBiODMzNDQwN2RlYjE0ZmRhNDExYmFhMmJhZjU1OWQzYzc3ZWZmNjdjMTg0ODQ4YTk3YSwyLDE%3D",
+    "title": "📋Consultant Data & CRM (senior)",
+    "link": "https://www.linkedin.com/comm/jobs/view/4458269960/?trackingId=5MJURcQpuzLIRmXZWfSM7g%3D%3D&amp;refId=VKFE%2Bsr918ud0ndFPSVnzg%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3B9rYqicZsRQW%2B8l4mGvXBRw%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=0gy4M3eOdiFso1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4458269960_ssid_8910031762_fmid_8ulvbk~mt9y8lq1~wv&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4458269960_ssid_8910031762_fmid_8ulvbk~mt9y8lq1~wv-null-8ulvbk~mt9y8lq1~wv-null-null&amp;eid=8ulvbk-mt9y8lq1-wv&amp;otpToken=MTIzZDkzNTViOTk4MDc2NjA2ZjZmNzQ0OTQ2NGUzMTA3NjlkOWJmNzgzZmE0NTgxNGU4OWRkM2RiMDNlYjgwNzE3YjgzMDM0ZTVkNmIwZTNkNDUxZjk1YWViMmUzYjQ1YWUzYzQ0ODkwNDE0OWJjNjllMjU3ZDRjNzE0NDkxYjlmZDNkYzY2MTQzNWE0MywyLDE%3D",
     "company": "",
     "location": "",
     "description": "",
-    "published": "2026-08-26T08:26:45+00:00",
-    "in_france": true,
-    "salary_extracted": null,
-    "telework_days": null,
-    "contract_type": null,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Télétravail non mentionné"
-    ],
-    "score": 5,
-    "score_reasons": [],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
-  },
-  {
-    "source": "LinkedIn (alerte)",
-    "title": "CRM & Communications Coordinator",
-    "link": "https://www.linkedin.com/comm/jobs/view/4456263424/?trackingId=VDlDURGrYlMF1Yk%2BIcQUmw%3D%3D&amp;refId=IdnwlbiJWtdYDffOmP37HA%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BK1gZ8xQ0T1yOU3b4%2Bhxx%2Fg%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=0UCh4faWbGBco1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4456263424_ssid_8910031762_fmid_8ulvbk~mt5s7dlp~97&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4456263424_ssid_8910031762_fmid_8ulvbk~mt5s7dlp~97-null-8ulvbk~mt5s7dlp~97-null-null&amp;eid=8ulvbk-mt5s7dlp-97&amp;otpToken=MWYyZGRlZTc5OGZlNWM0OTU1MzdkNWQ2NTg5MDU3NzdjMjY0OGMxZjE3MDk1NDMzOWU2Y2IzYzg5MmFlOTZiMjI5NjM3YTM0MzM3NDE4NGUyYjAzN2VmYzA2YjVmMWEwZGViYjM2NDRjMzRhNDIxMjI1ZTQ4NTQ2NTIwOWQ1ZmU3OTViYjE2YjBjMTI2NCwyLDE%3D",
-    "company": "",
-    "location": "",
-    "description": "",
-    "published": "2026-08-23T12:26:43+00:00",
+    "published": "2026-08-26T10:26:44+00:00",
     "in_france": true,
     "salary_extracted": null,
     "telework_days": null,
@@ -492,12 +494,33 @@
   },
   {
     "source": "LinkedIn (alerte)",
-    "title": "📋Consultant Data & CRM (senior)",
-    "link": "https://www.linkedin.com/comm/jobs/view/4458269960/?trackingId=5MJURcQpuzLIRmXZWfSM7g%3D%3D&amp;refId=VKFE%2Bsr918ud0ndFPSVnzg%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3B9rYqicZsRQW%2B8l4mGvXBRw%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=0gy4M3eOdiFso1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4458269960_ssid_8910031762_fmid_8ulvbk~mt9y8lq1~wv&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4458269960_ssid_8910031762_fmid_8ulvbk~mt9y8lq1~wv-null-8ulvbk~mt9y8lq1~wv-null-null&amp;eid=8ulvbk-mt9y8lq1-wv&amp;otpToken=MTIzZDkzNTViOTk4MDc2NjA2ZjZmNzQ0OTQ2NGUzMTA3NjlkOWJmNzgzZmE0NTgxNGU4OWRkM2RiMDNlYjgwNzE3YjgzMDM0ZTVkNmIwZTNkNDUxZjk1YWViMmUzYjQ1YWUzYzQ0ODkwNDE0OWJjNjllMjU3ZDRjNzE0NDkxYjlmZDNkYzY2MTQzNWE0MywyLDE%3D",
+    "title": "CRM & Communications Coordinator",
+    "link": "https://www.linkedin.com/comm/jobs/view/4456263424/?trackingId=Qs01AZVHRZKxLocUk4HbLQ%3D%3D&amp;refId=KusU6ViVTbGbrMwiHHnSkQ%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_application_confirmation_with_nba_01%3BVumHi4WHRkyUfgh0I4ryIA%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=1C4lWkznS_Cso1&amp;trk=eml-email_application_confirmation_with_nba_01-applied_jobs-0-job_posting&amp;trkEmail=eml-email_application_confirmation_with_nba_01-applied_jobs-0-job_posting-null-8ulvbk~mt70edwj~p8-null-null&amp;eid=8ulvbk-mt70edwj-p8&amp;otpToken=MTdkNDVhMDYwOTMzNDg3NTdkOThiMmM0ODM4YTJmNmYzYmEwY2U3ZDIxMjE1ZTljY2I4NDlmNDRhOTAzMDVjYTMyMjU0NDU2YzM0ZmIwNjUyNDczYmUyNmI1NjliMjliYzYxNWNjOWI5YTY2OWEwMDM4N2FmZWQ4OTMzNTllZDU4NjVmNzA2Y2FjMzQ0NywyLDE%3D",
     "company": "",
     "location": "",
     "description": "",
-    "published": "2026-08-26T10:26:44+00:00",
+    "published": "2026-08-24T09:03:53+00:00",
+    "in_france": true,
+    "salary_extracted": null,
+    "telework_days": null,
+    "contract_type": null,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné"
+    ],
+    "score": 5,
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
+  },
+  {
+    "source": "LinkedIn (alerte)",
+    "title": "Growth & CRM Manager",
+    "link": "https://www.linkedin.com/comm/jobs/view/4456867388/?trackingId=4PZ1%2FlN5cGSbCarQona9%2BQ%3D%3D&amp;refId=caCOC8pbOH1NWirwiC%2FqIQ%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3B%2BZeBDuieRSS3KGJ7S3HBRA%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=0Q4KyM_BzqFco1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_1_jobid_4456867388_ssid_8583513778_fmid_8ulvbk~mt9tya9o~1p&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_1_jobid_4456867388_ssid_8583513778_fmid_8ulvbk~mt9tya9o~1p-null-8ulvbk~mt9tya9o~1p-null-null&amp;eid=8ulvbk-mt9tya9o-1p&amp;otpToken=N2I3ZmY3YWJmZWU5NzhmNGRkMGQxMjQ3MGRkMGQzYTFjNjc0Y2I0NWNjZmEyMzE4Y2Q5MDY2ODFhNTRiYTMzMzQ4NmI0ZmI1MzE5NDY5YTY4ZmExMWM3NjlkZDBiODMzNDQwN2RlYjE0ZmRhNDExYmFhMmJhZjU1OWQzYzc3ZWZmNjdjMTg0ODQ4YTk3YSwyLDE%3D",
+    "company": "",
+    "location": "",
+    "description": "",
+    "published": "2026-08-26T08:26:45+00:00",
     "in_france": true,
     "salary_extracted": null,
     "telework_days": null,
