@@ -131,6 +131,32 @@
     "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
+    "source": "Welcome to the Jungle",
+    "title": "CRM Campaign Manager H/F",
+    "link": "https://www.welcometothejungle.com/fr/companies/nexton-consulting/jobs/crm-campaign-manager-h-f_paris_NEXTO_7gwo6Dl",
+    "company": "NEXTON",
+    "location": "Paris, France",
+    "description": "\n\n<p><strong>De formation supérieure Bac +5</strong> acquise en école de commerce, de communication ou spécialisée en marketing digital, tu justifies d'au moins<strong> 4&#xa0;ans d'expérience</strong> réussie dans la gestion et l'opération de campagnes CRM complexes.</p><p>Tu démontres une vraie fibre rédactionnelle marketing te permettant d'adapter ton discours, de concevoir des objets d'emails percutants et de rédiger des messages engageants.</p><p>Tu maîtrises parfaitement l'outil Adobe Campaign (Neolane) pour le ciblage, la scénarisation et le déploiement des workflows automatisés.</p><p>Tu as une excellente pratique de Dartagnan pour la création rapide, responsive et modulaire de vos templates e-mails.</p><p>Tu maîtrises les bases de Photoshop indispensables pour adapter les visuels, recadrer les contenus et intégrer les assets graphiques dans tes campagnes.</p><p>Tu disposes d'un fort esprit d'analyse te permettant de traduire les chiffres en recommandations opérationnelles concrètes.</p><p>Tu fais preuve d'autonomie et de rigueur pour gérer les plannings d'animation commerciale tout en garantissant une qualité d'exécution irréprochable.</p>\n\n<h2>Informations supplémentaires</h2>\n\n<p><u><strong>Pourquoi choisir NEXTON ?&#xa0;</strong></u></p><p>Nous te proposons des avantages et des opportunités pour enrichir ton expérience professionnelle et personnelle tout au long de l'année :</p><p>▶ Des communautés dynamiques pour t'accompagner dans ton parcours.</p><p>▶ Des Meet Up pour développer tes compétences.</p><p>▶ Des formations pour te réinventer et progresser.</p><p>▶ Des événements sportifs et festifs pour t'épanouir.</p><p>▶ Un forfait mobilité durable pour faciliter ton quotidien et encourager la mobilité douce.</p><p>▶ Un téléphone de dernière génération pour rester connecté.</p><p>Prêt à nous rejoindre ?<strong> Rencontrons-nous !</strong></p><div sr-tagline=\"\"></p><p>NEXTON</p>",
+    "published": "2026-08-28T00:00:00.000+02:00",
+    "contract_type": "CDI",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "commute_minutes": 78,
+    "flags": [
+      "Télétravail non mentionné"
+    ],
+    "score": 7,
+    "score_reasons": [
+      "Outils : photoshop, email",
+      "Compétences alignées (6)",
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (78 min)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+  },
+  {
     "source": "Adzuna",
     "title": "Chef de projet crm H/F",
     "link": "https://www.adzuna.fr/details/5844996648?utm_medium=api&utm_source=707eaaff",
@@ -184,54 +210,6 @@
     "recommendation_reason": "À vérifier : Annonce ancienne (413 j)"
   },
   {
-    "source": "RemoteOK",
-    "title": "Journeyman I P",
-    "link": "https://remoteOK.com/remote-jobs/remote-journeyman-i-p-wood-1137197",
-    "company": "Wood",
-    "location": "Carlsbad, ",
-    "description": "<strong>About Us<br><br></strong>Wood is a global leader in consulting, engineering and operations for the energy and materials sectors. With 33,000 people in around 50 countries, Wood supports clients across the full asset lifecycle, delivering safe, predictable outcomes while enabling resilient operations and a lower carbon future. Wood forms the Energy &amp; Materials pillar of Sidara - a global partnership uniting leading multidisciplinary engineering, design, and project management companies. www.woodgroup.com<br><br><strong>Diversity Statement <br><br></strong>We are an equal opportunity employer that recognises the value of a diverse workforce. All suitably qualified applicants will receive consideration for employment on the basis of objective criteria and without regard to the following (which is a non-exhaustive list): race, colour, age, religion, gender, national origin, disability, sexual orientation, gender identity, protected veteran status, or other characteristics in accordance with the relevant governing laws.<br/><br/>Please mention the word **GRACEFUL** and tag RNTIuMTYxLjU5LjE1OQ== when applying to show you read the job post completely (#RNTIuMTYxLjU5LjE1OQ==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
-    "salary_raw": "",
-    "published": "2026-08-27T15:42:12+00:00",
-    "telework_days": 5,
-    "in_france": true,
-    "salary_extracted": null,
-    "contract_type": null,
-    "flags": [],
-    "score": 7,
-    "score_reasons": [
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Télétravail 5j/sem"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À confirmer : titre sans signal CRM explicite"
-  },
-  {
-    "source": "Welcome to the Jungle",
-    "title": "CRM Campaign Manager H/F",
-    "link": "https://www.welcometothejungle.com/fr/companies/nexton-consulting/jobs/crm-campaign-manager-h-f_paris_NEXTO_7gwo6Dl",
-    "company": "NEXTON",
-    "location": "Paris, France",
-    "description": "\n\n<p><strong>De formation supérieure Bac +5</strong> acquise en école de commerce, de communication ou spécialisée en marketing digital, tu justifies d'au moins<strong> 4&#xa0;ans d'expérience</strong> réussie dans la gestion et l'opération de campagnes CRM complexes.</p><p>Tu démontres une vraie fibre rédactionnelle marketing te permettant d'adapter ton discours, de concevoir des objets d'emails percutants et de rédiger des messages engageants.</p><p>Tu maîtrises parfaitement l'outil Adobe Campaign (Neolane) pour le ciblage, la scénarisation et le déploiement des workflows automatisés.</p><p>Tu as une excellente pratique de Dartagnan pour la création rapide, responsive et modulaire de vos templates e-mails.</p><p>Tu maîtrises les bases de Photoshop indispensables pour adapter les visuels, recadrer les contenus et intégrer les assets graphiques dans tes campagnes.</p><p>Tu disposes d'un fort esprit d'analyse te permettant de traduire les chiffres en recommandations opérationnelles concrètes.</p><p>Tu fais preuve d'autonomie et de rigueur pour gérer les plannings d'animation commerciale tout en garantissant une qualité d'exécution irréprochable.</p>\n\n<h2>Informations supplémentaires</h2>\n\n<p><u><strong>Pourquoi choisir NEXTON ?&#xa0;</strong></u></p><p>Nous te proposons des avantages et des opportunités pour enrichir ton expérience professionnelle et personnelle tout au long de l'année :</p><p>▶ Des communautés dynamiques pour t'accompagner dans ton parcours.</p><p>▶ Des Meet Up pour développer tes compétences.</p><p>▶ Des formations pour te réinventer et progresser.</p><p>▶ Des événements sportifs et festifs pour t'épanouir.</p><p>▶ Un forfait mobilité durable pour faciliter ton quotidien et encourager la mobilité douce.</p><p>▶ Un téléphone de dernière génération pour rester connecté.</p><p>Prêt à nous rejoindre ?<strong> Rencontrons-nous !</strong></p><div sr-tagline=\"\"></p><p>NEXTON</p>",
-    "published": "2026-08-28T00:00:00.000+02:00",
-    "contract_type": "CDI",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "commute_minutes": 78,
-    "flags": [
-      "Télétravail non mentionné"
-    ],
-    "score": 7,
-    "score_reasons": [
-      "Outils : photoshop, email",
-      "Compétences alignées (6)",
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (78 min)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné"
-  },
-  {
     "source": "Welcome to the Jungle",
     "title": "Consultant(e) Senior - Chef de projet Data & CRM (H/F)",
     "link": "https://www.welcometothejungle.com/fr/companies/thinkmarket/jobs/consultant-senior-chef-de-projet-data-crm-h-f_paris",
@@ -258,37 +236,13 @@
     "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
-    "source": "Welcome to the Jungle",
-    "title": "CHEF DE PROJET INTEGRATION - H/F",
-    "link": "https://www.welcometothejungle.com/fr/companies/suez/jobs/chef-de-projet-integration-h-f_montbonnot-saint-martin",
-    "company": "SUEZ",
-    "location": "Montbonnot-Saint-Martin, France",
-    "description": "<p>\n  <span>\n    <font>\n      <strong>\n        <span>\n          QUALIFICATION ET EXPERIENCE\n        </span>\n      </strong>\n      <br/>\n      Bac+\n    </font>\n  </span>\n  <span>\n    5 écoles d’ingénieurs ou formations universitaires informatique\n  </span>\n</p>\n<p>\n  <span>\n    3 à 5 ans d’expérience\n  </span>\n</p>\n<p>\n  <span>\n    <font>\n      Développement de compétence en mode projet permettant d’acquérir un excellent savoir-faire dans de nombreux domaines.\n    </font>\n  </span>\n</p>\n<p>\n  <span>\n    <font>\n      <strong>\n        <span>\n          CERTIFICATION\n        </span>\n      </strong>\n      <br/>\n      Project Management professionnel (PMP) du Project Management Institute (PMI)\n    </font>\n  </span>\n</p>\n<p>\n  <span>\n    <font>\n      <span>\n        <strong>\n          COMPETENCES COEUR DE METIER\n        </strong>\n      </span>\n    </font>\n  </span>\n</p>\n<ul><li>\n    <span>\n      <font>\n        <strong>\n          <span>\n            Architecture fonctionnelle SI\n          </span>\n        </strong>\n        :\n        <br/>\n        Connaitre un ou plusieurs domaines métier\n        <br/>\n        Concevoir des cartographies fonctionnelles et applicatives\n        <br/>\n        Concevoir et modéliser l’architecture fonctionnelle d’une application\n      </font>\n    </span>\n  </li>\n</ul>\n<ul><li>\n    <span>\n      <font>\n        <span>\n          <strong>\n            Architecture technique SI\n          </strong>\n        </span>\n        :\n        <br/>\n        Analyser les acteurs et outils du marché\n      </font>\n    </span>\n  </li>\n</ul>\n<ul><li>\n    <span>\n      <font>\n        <span>\n          <strong>\n            Intégration\n          </strong>\n        </span>\n        :\n        <br/>\n        Concevoir et rédiger un cahier d’intégration\n        <br/>\n        Organiser et coordonner l’ensemble des travaux d’intégration (matériel, logiciel, réseau, organisation…planification des tests)\n      </font>\n    </span>\n  </li>\n</ul>\n<ul><li>\n    <span>\n      <font>\n        <strong>\n          <span>\n            Assistance Maitrise d’Ouvrage en cadrage projet\n          </span>\n        </strong>\n        :\n        <br/>\n        Analyser la demande du client, le besoin, les risques et opportunités du projet\n      </font>\n    </span>\n  </li>\n</ul>\n<ul><li>\n    <span>\n      <font>\n        <span>\n          <strong>\n            Supervision et administration d’un système d’information\n          </strong>\n        </span>\n        :\n        <br/>\n        Installer, paramétrer et configurer des ressources informatiques\n      </font>\n    </span>\n  </li>\n</ul>\n<ul><li>\n    <span>\n      <font>\n        <span>\n          <strong>\n            Développement d’ouvrages, produits ou évènements\n          </strong>\n        </span>\n        :\n        <br/>\n        Utiliser des méthodes lean et/ou agiles pour maitriser un produit/un programme\n        <br/>\n        Monter un dossier de pré-qualification ou d’habilitation\n      </font>\n    </span>\n  </li>\n</ul>\n<ul><li>\n    <span>\n      <font>\n        <span>\n          <strong>\n            Formation et transmission de connaissances\n          </strong>\n        </span>\n        :\n        <br/>\n        Former les clients\n      </font>\n    </span>\n  </li>\n</ul>\n<ul><li>\n    <span>\n      <font>\n        <span>\n          <strong>\n            Gestion des risques\n          </strong>\n        </span>\n        :\n        <br/>\n        Réaliser une analyse de risques et d’impacts de mise en production\n      </font>\n    </span>\n  </li>\n</ul>\n<ul><li>\n    <span>\n      <font>\n        <strong>\n          <span>\n            Gestion des contrôles, tests et diagnostics\n          </span>\n        </strong>\n        :\n        <br/>\n        Ecrire formellement un dysfonctionnement, incident ou accident\n        <br/>\n        Analyser et comprendre l’origine d’un dysfonctionnement, incident ou accident (spécifications physiques du produit, processus…)\n        <br/>\n        Proposer une solution permettant de résoudre le problème\n      </font>\n    </span>\n  </li>\n</ul>\n<ul><li>\n    <span>\n      <font>\n        <span>\n          <strong>\n            Mise en exploitation / production et maintenance\n          </strong>\n        </span>\n        :\n        <br/>\n        Rédiger la documentation technique (guides utilisateur, guides métier, schémas d’architecture…)\n        <br/>\n        Réaliser le paramétrage et de debugging de période de lancement\n      </font>\n    </span>\n  </li>\n</ul>\n<ul><li>\n    <span>\n      <font>\n        <strong>\n          <span>\n            Résolution de problèmes complexes\n          </span>\n        </strong>\n        :\n        <br/>\n        Analyser une situation problématique dans un environnement complexe\n        <br/>\n        Elaborer et déployer une méthodologie de résolution\n        <br/>\n        Elaborer des préconisations, proposer des solutions et des scenarii d’amélioration\n      </font>\n    </span>\n  </li>\n</ul>\n<ul><li>\n    <span>\n      <font>\n        <span>\n          <strong>\n            Veille, analyse et gestion documentaire\n          </strong>\n        </span>\n        :\n        <br/>\n        Réaliser une veille et une recherche documentaire\n        <br/>\n        Connaitre son marché, les différents acteurs et l’état de la concurrence\n      </font>\n    </span>\n  </li>\n</ul>\n<ul><li>\n    <span>\n      <font>\n        <strong>\n          <span>\n            Maitrise des logiciels\n          </span>\n        </strong>\n        :\n        <br/>\n        Maitriser les logiciels de bureautique\n        <br/>\n        Maitriser les logiciels de gestion (gestion de planning, estimations, CRM…)\n        <br/>\n        Maitriser des outils web (gestion de contenu, gestion des flux…)\n      </font>\n    </span>\n  </li>\n</ul>\n<ul><li>\n    <span>\n      <font>\n        <strong>\n          <span>\n            Anglais\n          </span>\n        </strong>\n        :\n        <br/>\n        Converser en anglais en contexte professionnel\n        <br/>\n        Utiliser un vocabulaire technique en anglais\n        <br/>\n        Comprendre de la documentation technique en anglais\n        <br/>\n        Ecrire en anglais des livrables, notes, emails nécessaires à la réalisation des activités\n      </font>\n    </span>\n  </li>\n</ul>\n",
-    "published": "2026-08-28T12:00:00.000+02:00",
-    "contract_type": "CDI",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "commute_minutes": null,
-    "flags": [
-      "Télétravail non mentionné"
-    ],
-    "score": 7,
-    "score_reasons": [
-      "Outils : email",
-      "Signaux CRM lifecycle (email / segmentation / campagne)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné"
-  },
-  {
     "source": "Cadremploi (alerte)",
     "title": "Chef de Projet CRM Omnicanal / CRM Campaign Manager (H/F)",
-    "link": "https://r.emails3.alertes.cadremploi.fr/tr/cl/zsisEBtkibBT5yXfOBWo1PwJd1CBWBMtusRjve49S7IAapq0hBAKnZYJ3y2LTaJZwmSkrfUjf1O3kPMo0cIOU59DCxKvrRw4Vg81sVamhfD5goPAvZ01hN0EvNeC4D-neDCdRIaNnyeM_pSg0L_TGn7EvglZj6T5jt5RBUiZ-VZ7h3xcuxt4zTq-EAil3Lr4In0ak5sOm6YzgJpc8030nzMGDYBIpTuwdBwtInwklujctsZa-s2sCKZPK1oXk9c59S6OQXOlsVxK81blLRXlK6LLBbADC1QHPqXwhl_DzZnoGTpquKksumRrpKz8PEAkbau81yP0_uL_bLoxjKeQdVuoi_Pu0pen-USDLeLdpFt3shy_vbZJr5tyHNZ5duMJq7D_g4PQYPEtYL_AZGYfICaP6ahKGX-4pIAJqaeeNVMSfDDwu8CeSWx8FEoeFQ4BFJLdl1ogNBp0DDW0A6QZdUict8D0IY23KfzCGHoSE0jLiZUDqV9BCVsIq2lnbvHb7vTlBh8F75dv4nZNmwHERweTMLlNhZ1dQN4wxdAI64g92FSQhCwyzh9Ydo8qHm8KMpWIo_EiajvDxhq_OXQ3EDKkEziwD2_eeaUff9cL0T1Ac21yDazs3o4NQpcYaoM36KpQwBXVVJD0md44bdqXgb8Nsz78dXmnLNrZRFh8IiCsWfFv2aBUIGoOPQ5XyfUhqVgL0Cdvry-fFeJqRLas4he5yFFeLczyrsYZQpQjH06km9etXU9YIX0ibDhzZDJ29mvZ64Hrw5Q1Uw",
+    "link": "https://r.emails3.alertes.cadremploi.fr/tr/cl/bepGC2eYqX-D6EkuGfmbK0WO9Y3rg6JMj5YjqJjNMxW7e8UXBjdDhFDB9qufkNFlO_n4Iz5Mn98uQH24MUgZsTBUxKgBOI_EDEAxkBShDHMXzYXKJg2V-gjrBYawEOrUcDljf5UmbBmSje-ffjfQoQsi8YbixGHBrMP9JeWMUokkmfXqf51QcGD-_ZehXR7tqmBEECHDWDa7JNR1yI7PLZWnvuktWAJBJZBRSCbpJX-LxQ-pwgIKj3MDsIgh-8gnIhnygkuLO0SltbormGH0sv_kAXQTSmePUTDRfFBLE0K6ylcRXXOQFHAhh20JhiQFLv5FKyrgGvRNjgFTtL3vqIPUwFAr76TRTxxNBCsawxy82wntZl3RvR3HYC9yDPfZBnuoYW9-sGBno6-rHlJPJLVW5L0PtCVZAc-LgnCTSvn12BweU_V256rxm56sJDUY6gvgsKTW0pyefeuUWOCQ46baCb9fEbZOOtVUddMV9G5XTpFPZseQYdpGOCloy3cjH-1vXelXvNQGMjzqvIwdnKqVUXpuz1mFiFbLh0zOgqcgP37CyznuxleVVYS9D1SofpKBUCwV-IChhedaIiP9Zp3g55OgRiDxjKKzdnRnWstD4PnZmx1gralXc3ItvIbrRmeBCVvI8HM-0FU7sGxX_tknw-agMsevLBP6Ta_KdqYWH8Wtmz3y1T4bIya6h0EhZOCszaarEmP1WsBjqOQN3X9jl2j8UfOMfW1O8tMiDCf-kj0jDrSIR3XyT82QskvT0tvuBNwVXXbeJzXJkrdACWVeTQNDsN4kXyLOkprSOJfAtZt9WMnH25s3q9rIHrtmSadXnSVYiIXzE_PbDTvAihLrgALtW0RGzw",
     "company": "",
     "location": "",
     "description": "",
-    "published": "2026-08-26T17:20:25+00:00",
+    "published": "2026-08-27T05:40:33+00:00",
     "in_france": true,
     "salary_extracted": null,
     "telework_days": null,
@@ -303,59 +257,6 @@
     ],
     "recommendation": "à_revoir",
     "recommendation_reason": "À vérifier : Télétravail non mentionné"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Digital CRM Project Manager Paris Fr H/F",
-    "link": "https://www.adzuna.fr/details/5860432821?utm_medium=api&utm_source=707eaaff",
-    "company": "Otb",
-    "location": "Paris, Ile-de-France",
-    "description": "Nous recherchons un(e) Digital CRM Project Manager stratégique, orienté(e) data et passionné(e) par l'univers du luxe afin de piloter l'écosystème CRM global de Maison Margiela. Ce poste est responsable de la définition et du déploiement de la stratégie CRM digitale globale de Maison Margiela, incluant le marketing automation, l'orchestration des parcours clients, la personnalisation, l'activation de la donnée client et la mesure de la performance sur l'ensemble des canaux digitaux propriétaire…",
-    "salary_raw": "",
-    "published": "2026-08-29T02:40:15Z",
-    "contract_raw": "",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": 78,
-    "flags": [
-      "Télétravail non mentionné"
-    ],
-    "score": 6,
-    "score_reasons": [
-      "Compétences alignées (3)",
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (78 min)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné"
-  },
-  {
-    "source": "RemoteOK",
-    "title": "Sourcer Private Destinations",
-    "link": "https://remoteOK.com/remote-jobs/remote-sourcer-private-destinations-royal-caribbean-group-1137172",
-    "company": "Royal Caribbean Group",
-    "location": "Nassau, ",
-    "description": "<strong>Journey with us!</strong> Combine your career goals and sense of adventure by joining our incredible team of employees at <strong>Royal Caribbean Group</strong>. We are proud to offer a competitive compensation and benefits package, and excellent career development opportunities, each offering unique ways to explore the world.<br><br>We are proud to be the vacation-industry leader with global brands â including Royal Caribbean International, Celebrity Cruises and Silversea Cruises â the most innovative fleet and private destinations, and the best people. Together, we are dedicated to turning the vacation of a lifetime into a lifetime of vacations for our guests.<br><br>Royal Caribbean Groupâs <strong>Shipboard Recruiting team</strong> has an exciting career opportunity for a full time <strong>Sourcer, Private Destinations</strong> reporting to the <strong>Director, Shipboard Recruiting</strong>.<br><br><strong>This position will reside in Nassau Bahamas and will sit in our main office.<br><br></strong><strong>Position Summary<br><br></strong>The Sourcer executes all strategic sourcing activities in partnership with the Private Destinations talent acquisition initiatives across entry levels and functions.<br><br>The goal is to ensure that the organization can consistently proactively deploy the right people, in the right place, at the right time, at the most efficient cost, and for them to be fully engaged.<br><br><strong>Essential Duties And Responsibilities<br><br></strong><ul><li>Builds and implements sourcing strategy.</li><li>Understands and executes current trends and best practices in sourcing and talent attraction.</li><li>Builds talent pipelines from various platforms such as social media, job boards, niche sites, and other similar platforms to implement sourcing strategy.</li><li>Creates candidate pipeline ahead of need and real time.</li><li>Leverages proprietary pipelines of candidates through our ATS and CRM.</li><li>Collaborates with recruiters to develop market strategy, pipeline candidates, provide insights, and share competitive intelligence.</li><li>Partners with the necessary team(s) to establish, develop, and maintain relationships with hiring managers.</li><li>Provides support of inbound sourcing (candidate / req management) as needed.</li><li>Assists with recruitment marketing and events initiatives.</li><li>Help support candidates with applications.</li><li>Assists with overseeing Smartsheet trackers.</li><li>Meets operational business goals and KPIâs.<br><br></li></ul><strong>Qualifications<br><br></strong><ul><li>Bachelorâs degree in human resource management, business administration, or related field from an accredited college or university or the international equivalent required.</li><li>Minimum two (2) yearsâ experience in working for a global/international or reputable local organization in the same capacity.</li><li>Working knowledge of computers, internet access, and the ability to navigate within an automated HRIS system as well as variety software packages such as Excel, Word, and PowerPoint; familiar with social media and relevant company/brand efforts.</li><li>Good working knowledge in recruitment strategies and talent pool management</li><li>Knowledge of accepted human resources practices and the laws governing employment and fair treatment of employees globally.</li><li>Must be tactful, resolute, and committed to providing excellent customer service.</li><li>Must have a flexible approach to change, is able to work effectively in a variety of situations, seeks improvements and looks to the future.</li><li>Strong written and presentational skills; ability to clearly communicate complex messages to a variety of audiences including management.</li><li>Ability to work with colleagues, managers, and stakeholders in effective partnership.<br><br></li></ul><strong>We know there's a lot to consider.</strong> As you go through the application process, our recruiters will be glad to provide guidance, and more relevant details to answer any additional questions. Thank you again for your interest in Royal Caribbean Group. We'll hope to see you onboard soon!<br><br>It is the policy of the Company to ensure equal employment and promotion opportunity to qualified candidates without discrimination or harassment on the basis of race, color, religion, sex, age, national origin, disability, sexual orientation, sexuality, gender identity or expression, marital status, or any other characteristic protected by law. Royal Caribbean Group and each of its subsidiaries prohibit and will not tolerate discrimination or harassment.<br/><br/>Please mention the word **HARMLESS** and tag RNTIuMTYxLjU5LjE1OQ== when applying to show you read the job post completely (#RNTIuMTYxLjU5LjE1OQ==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
-    "salary_raw": "",
-    "published": "2026-08-27T14:11:22+00:00",
-    "telework_days": 5,
-    "in_france": true,
-    "salary_extracted": null,
-    "contract_type": null,
-    "flags": [
-      "CRM = sourcing RH ?",
-      "Pertinence CRM à confirmer",
-      "Séniorité / management d'équipe ?",
-      "Poste junior / débutant ?"
-    ],
-    "score": 6,
-    "score_reasons": [
-      "Télétravail 5j/sem"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : CRM = sourcing RH ? ; Pertinence CRM à confirmer ; Séniorité / management d'équipe ?"
   },
   {
     "source": "LinkedIn (alerte)",
@@ -555,12 +456,33 @@
   },
   {
     "source": "LinkedIn (alerte)",
-    "title": "Senior CRM Consultant",
-    "link": "https://www.linkedin.com/comm/jobs/view/4457733749/?trackingId=oh2K3nYZJLuq0eqYa8IqTg%3D%3D&amp;refId=O%2Bg8wmVQxGoEd1Cjj0qqSA%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3Bkwrw3ayKTDCSOWX%2FdG4qyQ%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=2DKbaddGiiIco1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4457733749_ssid_8910031762_fmid_8ulvbk~mtct4b2i~st&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4457733749_ssid_8910031762_fmid_8ulvbk~mtct4b2i~st-null-8ulvbk~mtct4b2i~st-null-null&amp;eid=8ulvbk-mtct4b2i-st&amp;otpToken=NjIzNjZkMDIzNDgxY2Q5ZmVhZTU0YTgyMzE4NThhZWNhYjk3ODBkNzI4MWI2OTk1ZDBjYTlkMTdjNGM4NjFhMzdhNDY2NzA4NjRkMGFhMGNjOTI0MzQ4MTI3NDQ1Njc0ZWMxNDVjMTk0YzI2Yjk0MTk2MDllYzQ2MDA4NzIxZjJkMDZhNTc2MzYwMTlkMCwyLDE%3D",
+    "title": "CRM & Communications Coordinator",
+    "link": "https://www.linkedin.com/comm/jobs/view/4456263424/?trackingId=VDlDURGrYlMF1Yk%2BIcQUmw%3D%3D&amp;refId=IdnwlbiJWtdYDffOmP37HA%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BK1gZ8xQ0T1yOU3b4%2Bhxx%2Fg%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=0UCh4faWbGBco1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4456263424_ssid_8910031762_fmid_8ulvbk~mt5s7dlp~97&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4456263424_ssid_8910031762_fmid_8ulvbk~mt5s7dlp~97-null-8ulvbk~mt5s7dlp~97-null-null&amp;eid=8ulvbk-mt5s7dlp-97&amp;otpToken=MWYyZGRlZTc5OGZlNWM0OTU1MzdkNWQ2NTg5MDU3NzdjMjY0OGMxZjE3MDk1NDMzOWU2Y2IzYzg5MmFlOTZiMjI5NjM3YTM0MzM3NDE4NGUyYjAzN2VmYzA2YjVmMWEwZGViYjM2NDRjMzRhNDIxMjI1ZTQ4NTQ2NTIwOWQ1ZmU3OTViYjE2YjBjMTI2NCwyLDE%3D",
     "company": "",
     "location": "",
     "description": "",
-    "published": "2026-08-28T10:26:44+00:00",
+    "published": "2026-08-23T12:26:43+00:00",
+    "in_france": true,
+    "salary_extracted": null,
+    "telework_days": null,
+    "contract_type": null,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné"
+    ],
+    "score": 5,
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
+  },
+  {
+    "source": "LinkedIn (alerte)",
+    "title": "Senior CRM Consultant",
+    "link": "https://www.linkedin.com/comm/jobs/view/4457733749/?trackingId=AOfd%2FAuLF98OE%2BrLJn4Yqg%3D%3D&amp;refId=3bwBdF3K0zo5nX0BSSme4Q%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BOdXnTbMSRe2oEZ7wueDeEA%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=3WP1TvcEMqIco1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4457733749_ssid_8910031666_fmid_8ulvbk~mtcotzuu~j1&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4457733749_ssid_8910031666_fmid_8ulvbk~mtcotzuu~j1-null-8ulvbk~mtcotzuu~j1-null-null&amp;eid=8ulvbk-mtcotzuu-j1&amp;otpToken=MGRiYjdkY2IzYTJkODk0MzgyOGE5NzBjYTc5NWI5MmE1ZTliOGNkNzFlY2FmYjA4M2Y0MTY3ZGFhZDMwN2I2NjhiNzE5MDFiZWExNTUyZmIxMmQyYzk3Zjk4ZjkwNjMzYmJhYWNiNTRkYjFkOGMyOGUyMzk3NGFmNGYxYjEzYmI3MDZjMGU5N2UyNTY4YiwyLDE%3D",
+    "company": "",
+    "location": "",
+    "description": "",
+    "published": "2026-08-28T08:26:45+00:00",
     "in_france": true,
     "salary_extracted": null,
     "telework_days": null,
@@ -615,51 +537,6 @@
     "score_reasons": [],
     "recommendation": "à_revoir",
     "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
-  },
-  {
-    "source": "LinkedIn (alerte)",
-    "title": "CRM & Communications Coordinator",
-    "link": "https://www.linkedin.com/comm/jobs/view/4456263424/?trackingId=Qs01AZVHRZKxLocUk4HbLQ%3D%3D&amp;refId=KusU6ViVTbGbrMwiHHnSkQ%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_application_confirmation_with_nba_01%3BVumHi4WHRkyUfgh0I4ryIA%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=1C4lWkznS_Cso1&amp;trk=eml-email_application_confirmation_with_nba_01-applied_jobs-0-job_posting&amp;trkEmail=eml-email_application_confirmation_with_nba_01-applied_jobs-0-job_posting-null-8ulvbk~mt70edwj~p8-null-null&amp;eid=8ulvbk-mt70edwj-p8&amp;otpToken=MTdkNDVhMDYwOTMzNDg3NTdkOThiMmM0ODM4YTJmNmYzYmEwY2U3ZDIxMjE1ZTljY2I4NDlmNDRhOTAzMDVjYTMyMjU0NDU2YzM0ZmIwNjUyNDczYmUyNmI1NjliMjliYzYxNWNjOWI5YTY2OWEwMDM4N2FmZWQ4OTMzNTllZDU4NjVmNzA2Y2FjMzQ0NywyLDE%3D",
-    "company": "",
-    "location": "",
-    "description": "",
-    "published": "2026-08-24T09:03:53+00:00",
-    "in_france": true,
-    "salary_extracted": null,
-    "telework_days": null,
-    "contract_type": null,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Télétravail non mentionné"
-    ],
-    "score": 5,
-    "score_reasons": [],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
-  },
-  {
-    "source": "JobLeads (alerte)",
-    "title": "France Marketing Lead - Growth, Automation & Campaigns",
-    "link": "https://www.jobleads.com/job/e6c6cfabf8297463ffb4fffecde62efba?kuuid=c4f4cab94056c7309cb04363dac3b327&view=search&saved_search_email_id=019ff5d8-3318-7a51-8d82-c4d960d2e3f4&utm_source=vdb_is_saved_search&utm_medium=email&utm_campaign=campaign%3Dvdb_is_job_alert&utm_content=job_id%3Dexternal-6c6cfabf8297463ffb4fffecde62efba%7Csearch_id%3D019ff5d8-3318-7a51-8d82-c4d960d2e3f4%7Ccontent%3Djob_card&search_id=45e46793-14f0-4784-8df1-535bb70e0729&vector_distance=0.5278244&job_rank=5&m=44aa7fa6-678a-4256-bf09-22042341c6d9&u=69512022&t=id_1752225913",
-    "company": "verifone",
-    "location": "Boulogne-Billancourt",
-    "description": "",
-    "published": "2026-08-27T03:35:13+02:00",
-    "in_france": true,
-    "salary_raw": "EUR 65 000 - 90 000",
-    "telework_days": null,
-    "contract_type": null,
-    "commute_minutes": 89,
-    "flags": [
-      "Télétravail non mentionné"
-    ],
-    "score": 5,
-    "score_reasons": [
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (89 min)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -750,6 +627,32 @@
     "salary_raw": "600-700 €",
     "published": "2026-08-01T05:49:12Z",
     "contract_raw": "",
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": "CDI",
+    "commute_minutes": 78,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné"
+    ],
+    "score": 4,
+    "score_reasons": [
+      "Trajet long (78 min)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Consultant CRM Martech - CDI H/F",
+    "link": "https://www.adzuna.fr/details/5860436458?utm_medium=api&utm_source=707eaaff",
+    "company": "Converteo",
+    "location": "12ème Arrondissement, Paris",
+    "description": "Description de l'entreprise Converteo est une société de conseil et de services technologiques qui pilote la transformation de ses clients grâce à la Data, l'IA et l'Agentique. De la stratégie à l'exécution, ses 450 consultants et experts déploient les solutions technologiques les plus avancées pour plus de 200 acteurs majeurs de l'économie. Fondé en 2007, Converteo a son siège à Paris et dispose de bureaux à New York, Toronto, Madrid et Milan. Découvrez le Hub Conseil Business Le Hub Conseil B…",
+    "salary_raw": "",
+    "published": "2026-08-29T02:42:47Z",
+    "contract_raw": "",
+    "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
     "contract_type": "CDI",
