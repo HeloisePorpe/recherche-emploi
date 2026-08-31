@@ -12,17 +12,18 @@
     "salary_extracted": null,
     "telework_days": 2,
     "in_france": true,
-    "commute_minutes": 74,
+    "commute_minutes": 76,
     "flags": [],
-    "score": 9,
+    "score": 8,
     "score_reasons": [
       "Outils : canva",
       "Secteur favorable : assurance",
       "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (76 min)",
       "Télétravail 2j/sem"
     ],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À confirmer : titre sans signal CRM explicite"
+    "recommendation_reason": "Trajet 76 min, hors critère (≤75 min ou 100 % télétravail)"
   },
   {
     "source": "Adzuna",
@@ -60,7 +61,7 @@
     "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
-    "commute_minutes": 60,
+    "commute_minutes": 64,
     "flags": [
       "Télétravail non mentionné"
     ],
@@ -75,18 +76,47 @@
   },
   {
     "source": "Adzuna",
-    "title": "Owned media lead (H/F)",
-    "link": "https://www.adzuna.fr/details/5814822714?utm_medium=api&utm_source=707eaaff",
-    "company": "Groupe OpenSourcing",
-    "location": "9ème Arrondissement, Paris",
-    "description": "Job description You will act as the key link between global strategy and local execution, ensuring owned media aligns with paid/earned campaigns to drive conversion and grow the loyalty/membership program. CRM & Automation: Plan and deploy automated, data-driven CRM campaigns via a Marketing Automation Platform (MAP) in line with the local marketing calendar. Data & Personalization: Leverage customer segmentation to deliver targeted content, boost member growth, and support SEO initiatives. Omn…",
+    "title": "Chef·fe de Projet CRM & Marketing Automation (F/H/NB) – E-commerce & IA",
+    "link": "https://www.adzuna.fr/details/5727289947?utm_medium=api&utm_source=707eaaff",
+    "company": "Store & Supply",
+    "location": "Levallois-Perret, Nanterre",
+    "description": "À propos de Store & Supply Depuis 2014, nous propulsons 50 marques mode/lifestyle (Redskins, Lee Cooper, FRNCH…) grâce à un accompagnement e-commerce 360°. Notre croissance (x2 en 3 ans) ouvre la voie à des talents qui veulent tester, apprendre et automatiser . Le poste Ta mission Construire et optimiser des workflows multicanaux (email, SMS, push) sur Klaviyo, CartsGuru, Brevo & Shopify. Driver la stratégie data & IA : scoring, segments prédictifs, contenu généré (GPT-like). Piloter l’envoi de…",
+    "salary_raw": "",
+    "published": "2026-05-12T22:51:31Z",
+    "contract_raw": "",
+    "salary_extracted": null,
+    "telework_days": 2,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": 89,
+    "flags": [
+      "Annonce ancienne (110 j)"
+    ],
+    "score": 8,
+    "score_reasons": [
+      "Outils : email, sms",
+      "Compétences alignées (3)",
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (89 min)",
+      "Télétravail 2j/sem"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Annonce ancienne (110 j)"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Owned Media Lead H/F",
+    "link": "https://www.adzuna.fr/details/5841077429?utm_medium=api&utm_source=707eaaff",
+    "company": "OpenSourcing",
+    "location": "Paris, Ile-de-France",
+    "description": "You will act as the key link between global strategy and local execution, ensuring owned media aligns with paid/earned campaigns to drive conversion and grow the loyalty/membership program. CRM & Automation: Plan and deploy automated, data-driven CRM campaigns via a Marketing Automation Platform (MAP) in line with the local marketing calendar. Data & Personalization: Leverage customer segmentation to deliver targeted content, boost member growth, and support SEO initiatives. Omnichannel Collabo…",
     "salary_raw": "52000-65000 €",
-    "published": "2026-07-25T03:56:36Z",
-    "contract_raw": "permanent",
+    "published": "2026-08-14T02:35:42Z",
+    "contract_raw": "",
     "telework_days": null,
     "in_france": true,
-    "contract_type": "CDI",
-    "commute_minutes": 77,
+    "contract_type": null,
+    "commute_minutes": 78,
     "flags": [
       "Télétravail non mentionné"
     ],
@@ -96,7 +126,7 @@
       "Compétences alignées (3)",
       "Signaux CRM lifecycle (email / segmentation / campagne)",
       "Salaire dans la cible (52,000€)",
-      "Trajet long (77 min)"
+      "Trajet long (78 min)"
     ],
     "recommendation": "à_revoir",
     "recommendation_reason": "À vérifier : Télétravail non mentionné"
@@ -126,32 +156,6 @@
     ],
     "recommendation": "à_revoir",
     "recommendation_reason": "À vérifier : Télétravail non mentionné"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Chef de projet crm H/F",
-    "link": "https://www.adzuna.fr/details/5844996648?utm_medium=api&utm_source=707eaaff",
-    "company": "",
-    "location": "5ème Arrondissement, Paris",
-    "description": "L'offre Secteurs Automobile, Aéronautique, Spatial, Défense & Sécurité, Ferroviaire, Télécommunications, Energie, Services & Systèmes d'Informations, Chimie / Pétrochimie, Digital & E-Commerce, Naval, Machines & Industrie Lourde, Pharmaceutique / Biotechnologie, Banque & Assurance, BTP Description de l'offre Nous recrutons pour l'un de nos clients un Chef de projet CRM, à pourvoir dès que possible. Les responsabilités du poste incluent : - Implémenter et optimiser les solutions CRM pour amélior…",
-    "salary_raw": "50000-60000 €",
-    "published": "2026-08-17T10:09:13Z",
-    "contract_raw": "permanent",
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": "CDI",
-    "commute_minutes": 73,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Télétravail non mentionné"
-    ],
-    "score": 7,
-    "score_reasons": [
-      "Secteur favorable : banque",
-      "Salaire dans la cible (50,000€)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
     "source": "Welcome to the Jungle",
@@ -198,6 +202,84 @@
     "score_reasons": [
       "Outils : omnicanal",
       "Signaux CRM lifecycle (email / segmentation / campagne)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Campaign Manager Adobe Campaign H/F",
+    "link": "https://www.adzuna.fr/details/5854047954?utm_medium=api&utm_source=707eaaff",
+    "company": "APTENIA",
+    "location": "Paris, Ile-de-France",
+    "description": "- Définir et optimiser les stratégies de contact - Cibler et scénariser des campagnes CRM multi-canal - Paramétrer les workflows de campagnes - Coordonner les campagnes marketing avec les équipes internes - Analyser les performances et proposer des optimisations - Accompagner et former les utilisateurs sur les outils CRM",
+    "salary_raw": "",
+    "published": "2026-08-24T02:33:39Z",
+    "contract_raw": "",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": 78,
+    "flags": [
+      "Télétravail non mentionné"
+    ],
+    "score": 6,
+    "score_reasons": [
+      "Compétences alignées (4)",
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (78 min)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Marketing Manager EMEA H/F",
+    "link": "https://www.adzuna.fr/details/5862635663?utm_medium=api&utm_source=707eaaff",
+    "company": "Grafton",
+    "location": "Paris, Ile-de-France",
+    "description": "Livraison & orchestration de campagnes * Gestion de campagne de bout en bout * Orchestration de parcours cross-canal * Segmentation avancée des audiences * Marketabilité & gouvernance de la base Plateformes & exécution technique * Volumes & échelle : support et exécution d'environ 190 campagnes marketing par trimestre sur la région (EMEA) et les canaux (email, nurturing, webinars, événements), en gérant des productions de campagnes en parallèle (intake, QA, activation, reporting) * Marketo : co…",
+    "salary_raw": "60000-76000 €",
+    "published": "2026-08-31T02:45:54Z",
+    "contract_raw": "",
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": 78,
+    "flags": [
+      "Télétravail non mentionné"
+    ],
+    "score": 6,
+    "score_reasons": [
+      "Outils : segmentation, email",
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (78 min)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+  },
+  {
+    "source": "Welcome to the Jungle",
+    "title": "Responsable CRM",
+    "link": "https://www.welcometothejungle.com/fr/companies/little-cigogne/jobs/responsable-crm_paris_LC_4OYDpW",
+    "company": "LITTLE CIGOGNE",
+    "location": "Paris, France",
+    "description": "* Compétences analytiques : Solide capacité pour analyser, traiter et interpréter des données afin d'éclairer les décisions stratégiques et identifier de nouvelles opportunités.\n    \n* Expert des outils CRM (Maitrise de [customer.io](http://customer.io) un plus)\n    \n* Expert des logiques business de l'abonnement (CAC, LTV, Repeat, taux de churn, etc...)\n    \n* Expérience dans un site ecommerce est un plus\n    \n* Familier des outils de no-code, de marketing automation, d'IA\n    \n* Plus de 3 ans d’expérience en Marketing",
+    "published": "2026-08-31T11:00:00.000+02:00",
+    "contract_type": "CDI",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "commute_minutes": 78,
+    "flags": [
+      "Télétravail non mentionné"
+    ],
+    "score": 6,
+    "score_reasons": [
+      "Compétences alignées (3)",
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (78 min)"
     ],
     "recommendation": "à_revoir",
     "recommendation_reason": "À vérifier : Télétravail non mentionné"
@@ -351,6 +433,32 @@
     "recommendation_reason": "À vérifier : Télétravail non mentionné ; Annonce ancienne (205 j)"
   },
   {
+    "source": "Adzuna",
+    "title": "Responsable Marketing Client - CRM, Lifecycle & Fidlisation F/H",
+    "link": "https://www.adzuna.fr/land/ad/5861936679?se=ZmlwiS-l8RGEeLI7Dotn4Q&utm_medium=api&utm_source=707eaaff&v=2B0CD43C6656FF6BD455B4BAEBAD5D99AE47B04A",
+    "company": "RELX INC",
+    "location": "Paris, Ile-de-France",
+    "description": "Paris Full time R116949 Êtes-vous passionné(e) par la création d'expériences clients engageantes tout au long du cycle de vie et motivé(e) par l'impact de stratégies basées sur les données ? Souhaitez-vous contribuer à transformer l'expérience client en concevant des parcours innovants qui favorisent l'adoption, la fidélisation et la croissance ? À propos de notre équipe LexisNexis Legal & Professional, qui accompagne des clients dans plus de 150 pays avec 11 800 collaborateurs dans le monde, f…",
+    "salary_raw": "",
+    "published": "2026-08-30T07:33:32Z",
+    "contract_raw": "",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": 78,
+    "flags": [
+      "Télétravail non mentionné"
+    ],
+    "score": 5,
+    "score_reasons": [
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (78 min)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+  },
+  {
     "source": "Welcome to the Jungle",
     "title": "Global Campaign Manager",
     "link": "https://www.welcometothejungle.com/fr/companies/guesttoguest/jobs/global-campaign-manager_paris",
@@ -400,12 +508,12 @@
   },
   {
     "source": "LinkedIn (alerte)",
-    "title": "Senior CRM Consultant",
-    "link": "https://www.linkedin.com/comm/jobs/view/4457733749/?trackingId=mCsDJsCyn%2B8%2BVV0ozr1BqA%3D%3D&amp;refId=Qy0R8FkjjPgt6T5yal9odA%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BQ%2BCea7DyS%2BWQWxoADvkYwA%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=36-GE9xGGyHYo1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4457733749_ssid_8583513778_fmid_8ulvbk~mtckjoau~jg&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4457733749_ssid_8583513778_fmid_8ulvbk~mtckjoau~jg-null-8ulvbk~mtckjoau~jg-null-null&amp;eid=8ulvbk-mtckjoau-jg&amp;otpToken=YzlmZGViYjc1ZjRhZDdhYWZjNjllMzhiZjhjMTA3NDE1OTlkNDU0NWEzMTQ2Yjc0MjllNmJmODE5NzgyZmNjZWIyNTFkYzFjNmQwM2JjMWFiNmRkNGRlZjAyZmE0YjllY2I0MGQ3YzQ0Yjk3MGJjYzA0ZDRlMjQ3MDYxZGRjODA5NTRlYzJlYTE5NTBkNSwyLDE%3D",
+    "title": "Growth & CRM Manager",
+    "link": "https://www.linkedin.com/comm/jobs/view/4456867388/?trackingId=4PZ1%2FlN5cGSbCarQona9%2BQ%3D%3D&amp;refId=caCOC8pbOH1NWirwiC%2FqIQ%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3B%2BZeBDuieRSS3KGJ7S3HBRA%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=0Q4KyM_BzqFco1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_1_jobid_4456867388_ssid_8583513778_fmid_8ulvbk~mt9tya9o~1p&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_1_jobid_4456867388_ssid_8583513778_fmid_8ulvbk~mt9tya9o~1p-null-8ulvbk~mt9tya9o~1p-null-null&amp;eid=8ulvbk-mt9tya9o-1p&amp;otpToken=N2I3ZmY3YWJmZWU5NzhmNGRkMGQxMjQ3MGRkMGQzYTFjNjc0Y2I0NWNjZmEyMzE4Y2Q5MDY2ODFhNTRiYTMzMzQ4NmI0ZmI1MzE5NDY5YTY4ZmExMWM3NjlkZDBiODMzNDQwN2RlYjE0ZmRhNDExYmFhMmJhZjU1OWQzYzc3ZWZmNjdjMTg0ODQ4YTk3YSwyLDE%3D",
     "company": "",
     "location": "",
     "description": "",
-    "published": "2026-08-28T06:26:43+00:00",
+    "published": "2026-08-26T08:26:45+00:00",
     "in_france": true,
     "salary_extracted": null,
     "telework_days": null,
@@ -442,12 +550,12 @@
   },
   {
     "source": "LinkedIn (alerte)",
-    "title": "CRM & Communications Coordinator",
-    "link": "https://www.linkedin.com/comm/jobs/view/4456263424/?trackingId=Qs01AZVHRZKxLocUk4HbLQ%3D%3D&amp;refId=KusU6ViVTbGbrMwiHHnSkQ%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_application_confirmation_with_nba_01%3BVumHi4WHRkyUfgh0I4ryIA%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=1C4lWkznS_Cso1&amp;trk=eml-email_application_confirmation_with_nba_01-applied_jobs-0-job_posting&amp;trkEmail=eml-email_application_confirmation_with_nba_01-applied_jobs-0-job_posting-null-8ulvbk~mt70edwj~p8-null-null&amp;eid=8ulvbk-mt70edwj-p8&amp;otpToken=MTdkNDVhMDYwOTMzNDg3NTdkOThiMmM0ODM4YTJmNmYzYmEwY2U3ZDIxMjE1ZTljY2I4NDlmNDRhOTAzMDVjYTMyMjU0NDU2YzM0ZmIwNjUyNDczYmUyNmI1NjliMjliYzYxNWNjOWI5YTY2OWEwMDM4N2FmZWQ4OTMzNTllZDU4NjVmNzA2Y2FjMzQ0NywyLDE%3D",
+    "title": "Senior CRM Consultant",
+    "link": "https://www.linkedin.com/comm/jobs/view/4457733749/?trackingId=mCsDJsCyn%2B8%2BVV0ozr1BqA%3D%3D&amp;refId=Qy0R8FkjjPgt6T5yal9odA%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BQ%2BCea7DyS%2BWQWxoADvkYwA%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=36-GE9xGGyHYo1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4457733749_ssid_8583513778_fmid_8ulvbk~mtckjoau~jg&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4457733749_ssid_8583513778_fmid_8ulvbk~mtckjoau~jg-null-8ulvbk~mtckjoau~jg-null-null&amp;eid=8ulvbk-mtckjoau-jg&amp;otpToken=YzlmZGViYjc1ZjRhZDdhYWZjNjllMzhiZjhjMTA3NDE1OTlkNDU0NWEzMTQ2Yjc0MjllNmJmODE5NzgyZmNjZWIyNTFkYzFjNmQwM2JjMWFiNmRkNGRlZjAyZmE0YjllY2I0MGQ3YzQ0Yjk3MGJjYzA0ZDRlMjQ3MDYxZGRjODA5NTRlYzJlYTE5NTBkNSwyLDE%3D",
     "company": "",
     "location": "",
     "description": "",
-    "published": "2026-08-24T09:03:53+00:00",
+    "published": "2026-08-28T06:26:43+00:00",
     "in_france": true,
     "salary_extracted": null,
     "telework_days": null,
@@ -463,12 +571,12 @@
   },
   {
     "source": "LinkedIn (alerte)",
-    "title": "Growth & CRM Manager",
-    "link": "https://www.linkedin.com/comm/jobs/view/4456867388/?trackingId=4PZ1%2FlN5cGSbCarQona9%2BQ%3D%3D&amp;refId=caCOC8pbOH1NWirwiC%2FqIQ%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3B%2BZeBDuieRSS3KGJ7S3HBRA%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=0Q4KyM_BzqFco1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_1_jobid_4456867388_ssid_8583513778_fmid_8ulvbk~mt9tya9o~1p&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_1_jobid_4456867388_ssid_8583513778_fmid_8ulvbk~mt9tya9o~1p-null-8ulvbk~mt9tya9o~1p-null-null&amp;eid=8ulvbk-mt9tya9o-1p&amp;otpToken=N2I3ZmY3YWJmZWU5NzhmNGRkMGQxMjQ3MGRkMGQzYTFjNjc0Y2I0NWNjZmEyMzE4Y2Q5MDY2ODFhNTRiYTMzMzQ4NmI0ZmI1MzE5NDY5YTY4ZmExMWM3NjlkZDBiODMzNDQwN2RlYjE0ZmRhNDExYmFhMmJhZjU1OWQzYzc3ZWZmNjdjMTg0ODQ4YTk3YSwyLDE%3D",
+    "title": "CRM & Communications Coordinator",
+    "link": "https://www.linkedin.com/comm/jobs/view/4456263424/?trackingId=Qs01AZVHRZKxLocUk4HbLQ%3D%3D&amp;refId=KusU6ViVTbGbrMwiHHnSkQ%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_application_confirmation_with_nba_01%3BVumHi4WHRkyUfgh0I4ryIA%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=1C4lWkznS_Cso1&amp;trk=eml-email_application_confirmation_with_nba_01-applied_jobs-0-job_posting&amp;trkEmail=eml-email_application_confirmation_with_nba_01-applied_jobs-0-job_posting-null-8ulvbk~mt70edwj~p8-null-null&amp;eid=8ulvbk-mt70edwj-p8&amp;otpToken=MTdkNDVhMDYwOTMzNDg3NTdkOThiMmM0ODM4YTJmNmYzYmEwY2U3ZDIxMjE1ZTljY2I4NDlmNDRhOTAzMDVjYTMyMjU0NDU2YzM0ZmIwNjUyNDczYmUyNmI1NjliMjliYzYxNWNjOWI5YTY2OWEwMDM4N2FmZWQ4OTMzNTllZDU4NjVmNzA2Y2FjMzQ0NywyLDE%3D",
     "company": "",
     "location": "",
     "description": "",
-    "published": "2026-08-26T08:26:45+00:00",
+    "published": "2026-08-24T09:03:53+00:00",
     "in_france": true,
     "salary_extracted": null,
     "telework_days": null,
@@ -510,6 +618,33 @@
   },
   {
     "source": "Adzuna",
+    "title": "Head Of E-Commerce H/F",
+    "link": "https://www.adzuna.fr/details/5854047908?utm_medium=api&utm_source=707eaaff",
+    "company": "Michael Page",
+    "location": "Saint-Cloud, Boulogne-Billancourt",
+    "description": "Rattaché·e au Directeur Digital, le/la Head of E-commerce / Responsable E-commerce contribue à la définition et à la mise en oeuvre de la stratégie e-commerce, en cohérence avec les objectifs globaux de l'entreprise. À ce titre, les principales missions sont : * Définir et piloter la stratégie e-commerce afin d'accroître le chiffre d'affaires et la rentabilité du canal digital * Manager et structurer une équipe dédiée (traffic, CRM, chefs de projet, responsables de site) en assurant performance…",
+    "salary_raw": "80000-90000 €",
+    "published": "2026-08-24T02:33:38Z",
+    "contract_raw": "",
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": 99,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Séniorité / management d'équipe ?",
+      "Télétravail non mentionné",
+      "Trajet long (99 min)"
+    ],
+    "score": 4,
+    "score_reasons": [
+      "Trajet long (99 min)"
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 99 min et pas 100 % télétravail"
+  },
+  {
+    "source": "Adzuna",
     "title": "Head of E-commerce (F/H)",
     "link": "https://www.adzuna.fr/details/5774380371?utm_medium=api&utm_source=707eaaff",
     "company": "",
@@ -521,28 +656,29 @@
     "telework_days": null,
     "in_france": true,
     "contract_type": null,
-    "commute_minutes": 89,
+    "commute_minutes": 96,
     "flags": [
       "Pertinence CRM à confirmer",
       "Séniorité / management d'équipe ?",
-      "Télétravail non mentionné"
+      "Télétravail non mentionné",
+      "Trajet long (96 min)"
     ],
     "score": 4,
     "score_reasons": [
-      "Trajet long (89 min)"
+      "Trajet long (96 min)"
     ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Séniorité / management d'équipe ? ; Télétravail non mentionné"
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 96 min et pas 100 % télétravail"
   },
   {
     "source": "Adzuna",
-    "title": "Chef de projet CRM",
-    "link": "https://www.adzuna.fr/details/5823271450?utm_medium=api&utm_source=707eaaff",
+    "title": "Chef de Projet CRM H/F",
+    "link": "https://www.adzuna.fr/details/5862632331?utm_medium=api&utm_source=707eaaff",
     "company": "ENOVA Consulting",
     "location": "Paris, Ile-de-France",
     "description": "ENOVA poursuit son développement et renforce ses équipes en intégrant un(e) Chef de Projet Technico-Fonctionnel CRM / Fidélisation en CDI. Vous rejoindrez notre communauté de consultants et interviendrez en mission longue durée au sein d'un grand compte, dans un environnement stimulant, transverse et orienté transformation digitale. Contexte de la mission Dans le cadre d'un projet stratégique de transformation de l'expérience client et de fidélisation, vous interviendrez auprès d'un acteur maje…",
     "salary_raw": "600-700 €",
-    "published": "2026-08-01T05:49:12Z",
+    "published": "2026-08-31T02:39:31Z",
     "contract_raw": "",
     "telework_days": null,
     "in_france": true,
@@ -560,33 +696,6 @@
     "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
-    "source": "Adzuna",
-    "title": "Consultant CRM H/F",
-    "link": "https://www.adzuna.fr/details/5861724320?utm_medium=api&utm_source=707eaaff",
-    "company": "Orange Business",
-    "location": "Hauts-de-Seine, Ile-de-France",
-    "description": "Votre rôle: Dans le cadre de notre croissance, nous recherchons un(e) Consultant(e) CRM. Votre mission principale : comprendre les enjeux clients, concevoir des solutions CRM adaptées et convaincre grâce à des démonstrations à forte valeur ajoutée. Vous garantissez la pertinence technologique et l'adéquation de la solution CRM proposée (Salesforce ou Dynamics) avec les enjeux business des clients. Vous jouerez un rôle clé dans le développement commercial en intervenant en amont des projets, en …",
-    "salary_raw": "",
-    "published": "2026-08-30T02:43:12Z",
-    "contract_raw": "",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": 93,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Télétravail non mentionné",
-      "Trajet long (93 min)"
-    ],
-    "score": 4,
-    "score_reasons": [
-      "Trajet long (93 min)"
-    ],
-    "recommendation": "à_écarter",
-    "recommendation_reason": "Trajet 93 min et pas 100 % télétravail"
-  },
-  {
     "source": "Welcome to the Jungle",
     "title": "Chef de Projet CRM H/F",
     "link": "https://www.welcometothejungle.com/fr/companies/mcdonald-s-france/jobs/chef-de-projet-crm-h-f_guyancourt",
@@ -598,17 +707,17 @@
     "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
-    "commute_minutes": 100,
+    "commute_minutes": 104,
     "flags": [
       "Pertinence CRM à confirmer",
       "Télétravail non mentionné",
-      "Trajet long (100 min)"
+      "Trajet long (104 min)"
     ],
     "score": 4,
     "score_reasons": [
-      "Trajet long (100 min)"
+      "Trajet long (104 min)"
     ],
     "recommendation": "à_écarter",
-    "recommendation_reason": "Trajet 100 min et pas 100 % télétravail"
+    "recommendation_reason": "Trajet 104 min et pas 100 % télétravail"
   }
 ]
