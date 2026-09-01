@@ -1,0 +1,42 @@
+name: Diagnostic alertes Talent.com
+
+# Diagnostic ponctuel (manuel) : inspecte la structure des e-mails Talent.com
+# dans la boite Gmail dediee. Ne commit rien, n'ecrit aucune offre.
+on:
+  workflow_dispatch:
+
+jobs:
+  diagnostic:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Recuperer le code du depot
+        uses: actions/checkout@v4
+
+      - name: Installer Python 3.13
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Installer les dependances
+        run: pip install feedparser requests
+
+      - name: Creer le fichier config.json a partir des secrets
+        env:
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+        run: |
+          python - <<'PY'
+          import json, os
+          config = {
+              "gmail_address": os.environ.get("GMAIL_ADDRESS", ""),
+              "gmail_app_password": os.environ.get("GMAIL_APP_PASSWORD", ""),
+              "gmail_folder": "INBOX",
+              "gmail_lookback_days": 14,
+          }
+          with open("config.json", "w", encoding="utf-8") as f:
+              json.dump(config, f, ensure_ascii=False, indent=2)
+          print("config.json cree")
+          PY
+
+      - name: Lancer le diagnostic Talent.com
+        run: python diagnostic_talent.py
