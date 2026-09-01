@@ -2277,19 +2277,47 @@ def _title_match(a, b):
     return len(shorter) >= 24 and longer.startswith(shorter)
 
 
+# Identifiant STABLE d'une offre extrait de son lien (ignore les paramètres de
+# suivi qui varient d'une alerte à l'autre). Deux liens partageant cet identifiant
+# pointent la MÊME offre — même si titre/entreprise/lieu sont vides ou diffèrent
+# (cas fréquent des alertes LinkedIn reçues via deux recherches sauvegardées).
+_LINK_ID_PATTERNS = [
+    ('li', re.compile(r'linkedin\.com/(?:comm/)?jobs/view/(\d+)', re.I)),
+    ('mj', re.compile(r'meteojob\.com/jobs/(\d+)', re.I)),
+    ('indeed', re.compile(r'\bjk=([0-9a-f]+)', re.I)),
+    ('wttj', re.compile(r'welcometothejungle\.com/[^"\'\s?#]*?/jobs/([a-z0-9_-]+)', re.I)),
+]
+
+
+def _link_key(url):
+    if not url:
+        return ''
+    for name, rx in _LINK_ID_PATTERNS:
+        m = rx.search(url)
+        if m:
+            return f"{name}:{m.group(1).lower()}"
+    return ''
+
+
 def _dedup(jobs):
-    """Dédoublonne y compris entre plateformes : titre normalisé (ignore H/F,
-    (F/H), ponctuation, casse) + entreprise souple. Une même offre diffusée sur
-    Adzuna / France Travail / e-mail = une seule ligne (la plus complète)."""
-    kept = []  # chaque élément : {"job":..., "tk":..., "cn":..., "loc":..., "src":...}
+    """Dédoublonne y compris entre plateformes : (1) même identifiant d'offre dans
+    le lien (LinkedIn/Meteojob/Indeed/WTTJ), sinon (2) titre normalisé (ignore
+    H/F, ponctuation, casse) + entreprise souple. Une même offre diffusée sur
+    plusieurs plateformes / alertes = une seule ligne (la plus complète)."""
+    kept = []  # chaque élément : {"job":..., "tk":..., "cn":..., "loc":..., "lk":...}
     for j in jobs:
         tk = _norm_txt(j.get("title", ""))[:60]
         cn = _norm_txt(j.get("company", ""))
         loc = _norm_txt(j.get("location", ""))
         src = (j.get("source") or "").strip().lower()
         day = (str(j.get("published") or "")[:10])  # AAAA-MM-JJ
+        lk = _link_key(j.get("link", ""))
         hit = None
         for u in kept:
+            # (1) Même identifiant d'offre dans le lien = même offre, sans condition.
+            if lk and lk == u["lk"]:
+                hit = u
+                break
             if not _title_match(tk, u["tk"]):
                 continue
             same_company = cn and u["cn"] and (cn in u["cn"] or u["cn"] in cn)
@@ -2308,10 +2336,14 @@ def _dedup(jobs):
                 hit = u
                 break
         if hit is None:
-            kept.append({"job": j, "tk": tk, "cn": cn, "loc": loc, "src": src, "day": day})
-        elif _job_completeness(j) > _job_completeness(hit["job"]):
-            # garde la version la plus complète
-            hit["job"], hit["cn"], hit["loc"], hit["day"] = j, cn, loc, day
+            kept.append({"job": j, "tk": tk, "cn": cn, "loc": loc, "src": src, "day": day, "lk": lk})
+        else:
+            # Complète la clé lien si elle manquait sur la version conservée.
+            if lk and not hit["lk"]:
+                hit["lk"] = lk
+            if _job_completeness(j) > _job_completeness(hit["job"]):
+                # garde la version la plus complète
+                hit["job"], hit["cn"], hit["loc"], hit["day"] = j, cn, loc, day
     return [u["job"] for u in kept]
 
 
