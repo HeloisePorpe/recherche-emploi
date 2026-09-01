@@ -187,6 +187,10 @@ function render() {
   const list = activeCandidatures().filter(matchesSearch);
   board.innerHTML = COLUMNS.map((col) => {
     const cards = list.filter((c) => (VALID_STATUS.has(c.status) ? c.status : 'a_postuler') === col.key);
+    // Tri par date d'envoi de la candidature, du plus récent au plus ancien.
+    // Les dates ISO (AAAA-MM-JJ) se comparent alphabétiquement = chronologiquement.
+    // Les candidatures sans date d'envoi restent en fin (tri stable = ordre conservé).
+    cards.sort((a, b) => (b.appliedDate || '').localeCompare(a.appliedDate || ''));
     const collapsed = collapsedCols.has(col.key);
     return `
       <section class="column${collapsed ? ' collapsed' : ''}" data-col="${col.key}">
