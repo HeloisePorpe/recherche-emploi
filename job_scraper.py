@@ -1196,6 +1196,12 @@ _EMAIL_ALERT_SOURCES = [
      "senders": ["jobleads.com", "jobleads.de", "mailer@jobleads.com"],
      "link_re": re.compile(r'https?://[^"\'\s>]*jobleads\.[a-z]+/[^"\'\s>]+', re.I),
      "parser": "jobleads"},
+    # Talent.com : mise en page atypique (id de l'offre dans la query-string,
+    # titre précédé de badges) → parseur dédié « talent ».
+    {"name": "Talent.com (alerte)",
+     "senders": ["talent.com", "alerts.talent.com", "no-reply@alerts.talent.com"],
+     "link_re": re.compile(r'https?://[^"\'\s>]*talent\.com/redirect\?[^"\'\s>]+', re.I),
+     "parser": "talent"},
 ]
 
 _HTML_TAG_RE = re.compile(r'<[^>]+>')
@@ -1394,8 +1400,87 @@ def _parse_jobleads_email(msg, cfg):
     return jobs
 
 
+# Talent.com : chaque offre est un lien « /redirect?id=<hex>&… » dont le TEXTE
+# de l'ancre porte le titre, précédé d'un ou plusieurs badges (« RECRUTEMENT
+# URGENT », « Choix de Talent.com »…). Le lieu (ligne finissant par France/FR
+# avec virgule) puis la société suivent le titre dans le corps.
+# NB : dans le HTML brut, l'URL est encodée en entités (id&#x3D;…&amp;…) → il
+# faut la décoder avant de lire l'id ou de la stocker.
+_TALENT_JOB_URL_RE = re.compile(r'talent\.com/redirect\?', re.I)
+_TALENT_ID_RE = re.compile(r'[?&]id=([0-9A-Za-z]+)', re.I)
+# Lieu Talent.com : « Ville, Région, France » / « Ville, FR » / « …, France, FR ».
+# La virgule est exigée pour ne pas confondre avec une société type « IFB France ».
+_TALENT_LOC_RE = re.compile(r',[^,]*\b(?:France|FR)\.?\s*$', re.I)
+# Badges collés en préfixe du titre (à retirer), ou seuls (carte sans vrai titre).
+_TALENT_BADGE_RE = re.compile(
+    r'^\s*(?:'
+    r'choix de talent[.\u2024]?\s?com|recrutement urgent|expire bient[\u00f4o]t|'
+    r'(?:meilleure|tr[\u00e8e]s bonne|bonne) correspondance|proche de vous|'
+    r'quick apply|vivement recommand[\u00e9e]\s*!?|candidature spontan[\u00e9e]+e?|'
+    r'nouveau|sponsoris[\u00e9e]|sponsored'
+    r')\b\s*!?[\s:\u2013-]*', re.I)
+
+
+def _talent_strip_badges(txt):
+    """Retire les badges Talent.com collés en tête du texte d'ancre."""
+    prev = None
+    while txt and txt != prev:
+        prev = txt
+        txt = _TALENT_BADGE_RE.sub("", txt).strip()
+    return txt
+
+
+def _parse_talent_email(msg, cfg):
+    """Parseur dédié Talent.com : liens « /redirect?id=… », titre dans le texte
+    de l'ancre (badges en préfixe), lieu + société dans le bloc qui suit."""
+    html, _text = _email_body_html(msg)
+    if not html:
+        return []
+    try:
+        published = email.utils.parsedate_to_datetime(msg.get("Date", "")).isoformat()
+    except Exception:
+        published = ""
+    # Ancres d'offres, dans l'ordre du document (href décodé des entités HTML).
+    anchors = []
+    for m in _ANCHOR_RE.finditer(html):
+        href = _html.unescape(m.group("href"))
+        if not _TALENT_JOB_URL_RE.search(href):
+            continue
+        txt = re.sub(r"\s+", " ", _html.unescape(_HTML_TAG_RE.sub(" ", m.group("text")))).strip()
+        anchors.append((m.start(), m.end(), href, txt))
+    jobs, seen = [], set()
+    for idx, (s, e, href, txt) in enumerate(anchors):
+        mid = _TALENT_ID_RE.search(href)
+        jid = mid.group(1).lower() if mid else href
+        if jid in seen:
+            continue
+        title = _clean_alert_title(_talent_strip_badges(txt))
+        # Cartes « Candidature spontanée » (sans intitulé) et titres vides : ignorés.
+        if not title or len(title) < 3:
+            continue
+        seen.add(jid)
+        # Bloc jusqu'à l'ancre d'offre suivante → lieu (1re ligne « …, France/FR »)
+        # puis société (ligne juste après, sauf si c'est un badge ou un autre lieu).
+        nxt = anchors[idx + 1][0] if idx + 1 < len(anchors) else len(html)
+        lines = _html_lines(html[e:nxt])
+        loc, company = "", ""
+        for i, ln in enumerate(lines):
+            if _TALENT_LOC_RE.search(ln):
+                loc = ln
+                nextln = lines[i + 1].strip() if i + 1 < len(lines) else ""
+                if nextln and not _TALENT_BADGE_RE.match(nextln) and not _TALENT_LOC_RE.search(nextln):
+                    company = nextln
+                break
+        jobs.append({
+            "source": cfg["name"], "title": title, "link": href,
+            "company": company, "location": loc, "description": "",
+            "published": published, "in_france": True,
+        })
+    return jobs
+
+
 # Parseurs personnalisés par source (clé « parser » dans _EMAIL_ALERT_SOURCES).
-_CUSTOM_ALERT_PARSERS = {"jobleads": _parse_jobleads_email}
+_CUSTOM_ALERT_PARSERS = {"jobleads": _parse_jobleads_email, "talent": _parse_talent_email}
 
 
 def _gmail_all_mail_folder(imap):
@@ -2286,6 +2371,7 @@ _LINK_ID_PATTERNS = [
     ('mj', re.compile(r'meteojob\.com/jobs/(\d+)', re.I)),
     ('indeed', re.compile(r'\bjk=([0-9a-f]+)', re.I)),
     ('wttj', re.compile(r'welcometothejungle\.com/[^"\'\s?#]*?/jobs/([a-z0-9_-]+)', re.I)),
+    ('talent', re.compile(r'talent\.com/redirect\?[^"\'\s]*?\bid=([0-9a-f]+)', re.I)),
 ]
 
 
