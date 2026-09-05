@@ -349,6 +349,10 @@ function renderCard(job) {
   if (Array.isArray(job.flags)) {
     job.flags.forEach((f) => tags.push(`<span class="tag tag-flag">⚠ ${escapeHtml(f)}</span>`));
   }
+  // Notes informatives : signalées sans déclasser l'offre (ex. léger écart d'expérience)
+  if (Array.isArray(job.info_flags)) {
+    job.info_flags.forEach((f) => tags.push(`<span class="tag tag-info">ℹ ${escapeHtml(f)}</span>`));
+  }
 
   const reasons = Array.isArray(job.score_reasons) && job.score_reasons.length
     ? `<ul class="reasons">${job.score_reasons
