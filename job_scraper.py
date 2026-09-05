@@ -423,7 +423,11 @@ _STAFFING_COMPANIES = ["kicklox", "synopsia", "lineup7", "line up 7",
                        "bearingpoint", "capgemini",
                        "alpha fmc", "brain logic", "niji", "keyrus", "micropole",
                        "avanade", "sopra", "accenture", "wavestone", "colombus",
-                       "colombus consulting"]
+                       "colombus consulting",
+                       # Calibration v6 §3 : Fed IT / Fed Group (recrutement pour
+                       # clients anonymes en delivery CRM, avant-vente) → client
+                       # final à confirmer avant d'évaluer le poste réel.
+                       "fed it", "fed group"]
 _STAFFING_TERMS = re.compile(r'\besn\b|staffing|portage salarial|r[ée]gie', re.I)
 
 # Signal « avant-vente » (calibration v4 §5) : responsabilité commerciale de cabinet
@@ -499,12 +503,20 @@ _EXCLUDE_COMPANIES = ["mr pape", "veripark", "max accelerate", "maxaccelerate",
                       "ai supermarket",
                       # Calibration v5 : Cartelis (conseil), World Vision (CRM =
                       # Dynamics 365 technique, pas marketing).
-                      "cartelis", "world vision"]
+                      "cartelis", "world vision",
+                      # Calibration v6 §3 : cabinets/ESN CRM confirmés (conseil,
+                      # intégration, migration, avant-vente — jamais d'exécution).
+                      # Converteo repassé en exclusion (exigence 4-5 ans conseil/agence).
+                      "converteo"]
 # Sigles courts / ambigus (risque de collision en sous-chaîne, ex. « asi » dans
 # « casino ») : test sur le NOM d'employeur avec frontières de mots uniquement.
 # Epsilon (entité Publicis) ajouté en v5 : cabinet de conseil CRM/Martech.
+# Klint (consulting Dynamics CE), Elevate (migration CRM vers Brevo), ENOVA
+# Consulting (ESN) ajoutés en v6 §3 — bornes de mot (« elevate », « enova » et
+# « klint » sont des sous-chaînes ambiguës).
 _EXCLUDE_COMPANY_RE = re.compile(
-    r'\bcgi\b|\basi\b|\bvml\b|\bwpp\b|\bexalt\b|\bepsilon\b', re.I)
+    r'\bcgi\b|\basi\b|\bvml\b|\bwpp\b|\bexalt\b|\bepsilon\b|'
+    r'\bklint\b|\belevate\b|\benova\b', re.I)
 
 # Employeurs à exclure SAUF si le titre porte un vrai signal CRM/lifecycle
 # (secteur autrement favorable mais beaucoup de postes hors cible). Bornes de mot
@@ -691,95 +703,141 @@ def is_foreign_language(text):
     return foreign >= 5 and foreign >= fren + 3
 
 
+# ── Calibration v6 ──────────────────────────────────────────────────────────────
+# §2 Migration CRM : refonte/bascule d'un CRM vers un autre = poste de conseil /
+# delivery technique (cadrage, archi, recette, formation), pas d'exécution
+# marketing. Signalé (flag), pas exclu en dur : un poste interne « piloter la
+# migration de notre CRM » reste pertinent et doit rester visible.
+_CRM_MIGRATION = re.compile(
+    r'migration\s+(?:de\s+)?(?:l[ae\']\s*)?crm|migration\s+crm|crm\s+migration|'
+    r'migration\s+(?:de\s+)?(?:salesforce|hubspot|braze|splio|adobe|emarsys|dynamics|marketo)|'
+    r'migration\s+vers\s+(?:brevo|braze|hubspot|salesforce|dynamics|emarsys|splio)|'
+    r'migrer\s+(?:le\s+|votre\s+|leur\s+|un\s+)?crm|refonte\s+(?:de\s+)?(?:l[ae\']\s*)?crm', re.I)
+
+# §4 Cœur CRM mais avec une mission d'animation réseaux sociaux / community
+# management : à signaler pour qu'Héloïse tranche (elle n'est pas intéressée).
+# Détection dans le CORPS (le titre « community manager » est déjà exclu ailleurs).
+_SOCIAL_MEDIA_BODY = re.compile(
+    r'community\s+management|community\s+manager|animation\s+(?:des?\s+|de\s+la\s+)?'
+    r'(?:r[ée]seaux\s+sociaux|communaut[ée]s?)|gestion\s+des\s+r[ée]seaux\s+sociaux|'
+    r'\bsocial\s+media\b|r[ée]seaux\s+sociaux', re.I)
+
+# §5 Faux positif « Relation Client » en banque back-office / titres (ex. CACEIS :
+# OST, dividendes, assemblées générales) — aucun rapport avec le CRM marketing.
+_SECURITIES_OPS = re.compile(
+    r'op[ée]rations?\s+sur\s+titres?|\bost\b|corporate\s+actions?|'
+    r'assembl[ée]es?\s+g[ée]n[ée]rales?|conservation\s+(?:de\s+)?titres?|'
+    r'd[ée]positaire|asset\s+servicing|custody|back[- ]office\s+titres?|'
+    r'\bdividendes?\b', re.I)
+_BANKING_RELATION = re.compile(
+    r'relation[s]?\s+client|client\s+relation|client\s+operations?', re.I)
+
+# §6 Secteur iGaming : pas d'exclusion automatique — simple note pour évaluation.
+_IGAMING = re.compile(
+    r'\bigaming\b|i-gaming\b|\bbetting\b|\bcasino\b|paris\s+sportifs|gambling', re.I)
+
+# §7 Employeur anonyme (Jobgether « partner company » et assimilés) : incertitude
+# à lever avant candidature, distincte de l'évaluation du poste.
+_ANON_EMPLOYER = re.compile(
+    r'partner\s+company|entreprise\s+partenaire|soci[ée]t[ée]\s+partenaire|'
+    r'employeur\s+confidentiel|client\s+confidentiel|entreprise\s+confidentielle', re.I)
+
+
 def screen_offer(job):
-    """Renvoie (exclure: bool, motif: str|None, alertes: list[str])."""
+    """Renvoie (exclure: bool, motif: str|None, alertes: list[str], notes: list[str]).
+    `alertes` (flags) déclassent l'offre en « à revoir » ; `notes` (info) sont
+    affichées mais ne déclassent pas (ex. léger écart d'expérience — calibr. v6 §1)."""
     title = job.get("title") or ""
     text = f"{title} {job.get('description') or ''} {job.get('company') or ''}"
     tl, cl = title.lower(), (job.get("company") or "").lower()
     has_mkt = bool(_MARKETING_SIGNALS.search(text))
     flags = []
+    info = []
 
     # ---- EXCLUSIONS (signaux non ambigus) ----
+    # Faux positif « Relation Client » en banque back-office / titres (calibr. v6 §5).
+    if _BANKING_RELATION.search(text) and _SECURITIES_OPS.search(text) and not has_mkt:
+        return True, "Faux positif CRM (back-office titres / opérations bancaires)", flags, info
     if job.get("expired"):
-        return True, "Offre expirée / plus disponible", flags
+        return True, "Offre expirée / plus disponible", flags, info
     # Pré-filtre structurel (étape 1) : aucun mot-clé CRM / marketing lifecycle
     # dans le titre ou la description -> hors sujet, écartée sans évaluation.
     if not _CRM_KEYWORD_RE.search(f"{title} {job.get('description') or ''}"):
-        return True, "Hors sujet (aucun mot-clé CRM / marketing)", flags
+        return True, "Hors sujet (aucun mot-clé CRM / marketing)", flags, info
     # Rémunération anormale (millions) = scam probable — testé sur le champ salaire.
     _sraw = f"{job.get('salary_raw') or ''} {job.get('salary_extracted') or ''}"
     _sval = parse_salary_value(_sraw)
     if _COMP_SCAM_RE.search(_sraw) or (_sval and _sval > 300000):
-        return True, "Rémunération anormale (scam probable)", flags
+        return True, "Rémunération anormale (scam probable)", flags, info
     # Habilitation de sécurité gouvernementale requise (calibr. v5 §7) : disqualifiant.
     if _CLEARANCE.search(text):
-        return True, "Habilitation de sécurité requise (réservé aux citoyens accrédités)", flags
+        return True, "Habilitation de sécurité requise (réservé aux citoyens accrédités)", flags, info
     # « e-CRM » en réalité Cash Management / trésorerie / paiements (calibr. v5 §6).
     if _CASH_MGMT.search(text):
-        return True, "Faux positif CRM (cash management / trésorerie / paiements)", flags
+        return True, "Faux positif CRM (cash management / trésorerie / paiements)", flags, info
     # Page produit / pub logicielle (CTA « Book a demo » sans missions) — calibr. v5 §1.
     if _PRODUCT_AD.search(text) and not _JOB_STRUCTURE.search(text):
-        return True, "Page produit / publicité (pas une offre d'emploi)", flags
+        return True, "Page produit / publicité (pas une offre d'emploi)", flags, info
     if _TITLE_EXCLUDE_HARD.search(title):
-        return True, "Titre exclu (alternance / stage / CDD / freelance)", flags
+        return True, "Titre exclu (alternance / stage / CDD / freelance)", flags, info
     if _TITLE_EXCLUDE_ENG.search(title) and "marketing" not in tl:
-        return True, "Titre exclu (engineer)", flags
+        return True, "Titre exclu (engineer)", flags, info
     if _TITLE_EXCLUDE_TOOL.search(title):
-        return True, "Titre exclu (Salesforce / Microsoft Dynamics)", flags
+        return True, "Titre exclu (Salesforce / Microsoft Dynamics)", flags, info
     if _TITLE_EXCLUDE_ROLE.search(title):
-        return True, "Titre exclu (développeur / conseiller / directeur / sales / commercial)", flags
+        return True, "Titre exclu (développeur / conseiller / directeur / sales / commercial)", flags, info
     if (job.get("contract_type") == "CDD" or job.get("contract_excluded")
             or _CONTRACT_EXCLUDE.search(text)):
-        return True, "Contrat exclu (CDD / freelance / intérim)", flags
+        return True, "Contrat exclu (CDD / freelance / intérim)", flags, info
     if _ALT_STAGE_BODY.search(text):
-        return True, "Contrat exclu (alternance / apprentissage / stage)", flags
+        return True, "Contrat exclu (alternance / apprentissage / stage)", flags, info
     if is_foreign_language(f"{title} {job.get('description') or ''}"):
-        return True, "Annonce dans une autre langue (ni FR ni EN)", flags
+        return True, "Annonce dans une autre langue (ni FR ni EN)", flags, info
     if _TITLE_FREELANCE_MP.search(title):
-        return True, "Profil freelance marketplace (« I will… »)", flags
+        return True, "Profil freelance marketplace (« I will… »)", flags, info
     if any(c in cl for c in _EXCLUDE_COMPANIES) or _EXCLUDE_COMPANY_RE.search(cl):
-        return True, "Employeur non pertinent (ESN / cabinet de conseil / portfolio)", flags
+        return True, "Employeur non pertinent (ESN / cabinet de conseil / portfolio)", flags, info
     if _CONDITIONAL_EXCLUDE_RE.search(cl) and not _CORE_CRM_TITLE.search(title):
-        return True, "Employeur hors cible (sauf poste CRM/lifecycle explicite)", flags
+        return True, "Employeur hors cible (sauf poste CRM/lifecycle explicite)", flags, info
     if any(c in cl for c in _MEDICAL_COMPANIES) or _MEDICAL_TERMS.search(text):
-        return True, "CRM médical (dispositifs cardiaques)", flags
+        return True, "CRM médical (dispositifs cardiaques)", flags, info
     if _TITLE_LOGISTICS.search(title):
-        return True, "Titre logistique (cariste / CACES / entrepôt)", flags
+        return True, "Titre logistique (cariste / CACES / entrepôt)", flags, info
     if _TITLE_CRM_TECH.search(title) or _CRM_TECH_BODY.search(text):
-        return True, "CRM technique / admin (IT, pas marketing)", flags
+        return True, "CRM technique / admin (IT, pas marketing)", flags, info
     if _TITLE_CS.search(title) and "marketing" not in tl and "campaign" not in tl:
-        return True, "Titre Customer Success / relation client", flags
+        return True, "Titre Customer Success / relation client", flags, info
     if _TITLE_SALES.search(title) and "crm" not in tl:
-        return True, "Titre commercial / vente", flags
+        return True, "Titre commercial / vente", flags, info
     if _TITLE_OFFCORE.search(title) and "crm" not in tl:
-        return True, "Marketing hors cœur (acquisition / growth / marque / terrain)", flags
+        return True, "Marketing hors cœur (acquisition / growth / marque / terrain)", flags, info
     if _TITLE_CLIENTELING.search(title):
-        return True, "CRM clienteling / boutique (présentiel)", flags
+        return True, "CRM clienteling / boutique (présentiel)", flags, info
     if _AVANT_VENTE.search(text):
-        return True, "Avant-vente / responsabilité commerciale (cabinet de conseil)", flags
+        return True, "Avant-vente / responsabilité commerciale (cabinet de conseil)", flags, info
     if _TITLE_TEAM_LEAD.search(title):
-        return True, "Management d'équipe (Team Lead / chef d'équipe)", flags
+        return True, "Management d'équipe (Team Lead / chef d'équipe)", flags, info
     if _RETAIL_TERMS.search(text):
-        return True, "CRM = caisse / magasin", flags
+        return True, "CRM = caisse / magasin", flags, info
     # NB : aucune exclusion sectorielle (automobile inclus) — choix d'Héloïse.
     if _NO_REMOTE.search(text):
-        return True, "Présentiel / pas de télétravail", flags
+        return True, "Présentiel / pas de télétravail", flags, info
     tw = job.get("telework_days")
     if isinstance(tw, int) and tw < 2:
-        return True, f"Télétravail insuffisant ({tw} j/sem, min. 2)", flags
+        return True, f"Télétravail insuffisant ({tw} j/sem, min. 2)", flags, info
     if _US_RESIDENCE.search(text):
-        return True, "Résidence / citoyenneté US requise", flags
+        return True, "Résidence / citoyenneté US requise", flags, info
     if _FOREIGN_RESIDENCE_HARD.search(text):
-        return True, "Résidence hors France obligatoire", flags
+        return True, "Résidence hors France obligatoire", flags, info
     loc = job.get("location") or ""
     if _FOREIGN_LOCATION.search(loc) and "france" not in loc.lower():
-        return True, "Télétravail / localisation hors France", flags
+        return True, "Télétravail / localisation hors France", flags, info
     # Seine-Saint-Denis (93) exclu, sauf 100 % télétravail en France.
     if _DEPT_93.search(loc) and not (job.get("telework_days") == 5 and job.get("in_france", True)):
-        return True, "Localisation en Seine-Saint-Denis (93)", flags
+        return True, "Localisation en Seine-Saint-Denis (93)", flags, info
     # Ville française clairement hors zone (>1h30), sauf 100 % télétravail en France.
     if _FAR_FR_CITY.search(loc) and not (job.get("telework_days") == 5 and job.get("in_france", True)):
-        return True, "Localisation hors zone (>1h30 de trajet)", flags
+        return True, "Localisation hors zone (>1h30 de trajet)", flags, info
 
     # ---- ALERTES (signaux ambigus, on garde et on signale) ----
     if _ACQUISITION_BODY.search(text) and not has_mkt:
@@ -809,12 +867,32 @@ def screen_offer(job):
             flags.append("Conseil / ESN — télétravail dépendant de la mission ?")
     if _SPECIFIC_ESP.search(text) and _PROG_TERMS.search(text) and _NICHE_SECTOR.search(text):
         flags.append("Écart technique large")
-    if any(int(y) > 7 for y in _SENIOR_YEARS.findall(text)):
-        flags.append("Séniorité élevée (>7 ans ?)")
+    # Écart d'expérience (calibr. v6 §1) : Héloïse a ~5 ans. Un écart de 1 à 3 ans
+    # (poste à 6-8 ans) n'est PAS rédhibitoire → simple note, ne déclasse pas.
+    # Seul un écart de 5+ ans (≥10 ans exigés) reste un facteur de rejet fort → flag.
+    _years = [int(y) for y in _SENIOR_YEARS.findall(text)]
+    if _years:
+        _maxy = max(_years)
+        if _maxy >= 10:
+            flags.append(f"Expérience très supérieure ({_maxy} ans exigés, ~5 en poste)")
+        elif _maxy >= 6:
+            info.append(f"Expérience un peu au-dessus ({_maxy} ans demandés) — à assumer, non bloquant")
     if _TEAM_MGMT.search(text) or _TITLE_SENIOR.search(title):
         flags.append("Séniorité / management d'équipe ?")
     if _ENTRY_LEVEL.search(text):
         flags.append("Poste junior / débutant ?")
+    # Migration/refonte CRM = présomption de conseil/delivery technique (calibr. v6 §2).
+    if _CRM_MIGRATION.search(text):
+        flags.append("Migration / refonte CRM — poste de conseil / delivery ?")
+    # Cœur CRM incluant de l'animation réseaux sociaux / community mgmt (calibr. v6 §4).
+    if _SOCIAL_MEDIA_BODY.search(text):
+        flags.append("Inclut de l'animation réseaux sociaux / community management")
+    # Employeur anonyme (« partner company ») à confirmer avant candidature (v6 §7).
+    if _ANON_EMPLOYER.search(f"{text} {cl}"):
+        flags.append("Employeur non précisé (à confirmer avant candidature)")
+    # Secteur iGaming : note d'évaluation, sans exclusion ni déclassement (v6 §6).
+    if _IGAMING.search(text):
+        info.append("Secteur iGaming — à évaluer sur le fond (pas un motif de rejet en soi)")
 
     # tw < 2 est déjà exclu plus haut ; ici on ne signale que l'info manquante.
     if job.get("telework_days") is None and not _REMOTE_MENTION.search(text):
@@ -834,7 +912,7 @@ def screen_offer(job):
         except Exception:
             pass
 
-    return False, None, flags
+    return False, None, flags, info
 
 
 _REMOTE_OUT_OF_REACH = [
@@ -1605,8 +1683,8 @@ _CAREER_COMPANIES = [
     # Agences / cabinets data-CRM (beaucoup de postes CRM/campagnes en IDF).
     # VML/WPP retiré (calibration v4) : « CRM » n'apparaît que dans la présentation
     # générique de l'entité, jamais dans les missions réelles (conseil senior,
-    # business development, data science) → désormais exclu par employeur.
-    {"name": "Converteo", "slug": "converteo", "slugs": ["converteo"]},
+    # business development, data science). Calibration v6 §3 : exigence confirmée
+    # de 4-5 ans en cabinet/agence → repassé en exclusion par employeur, retiré ici.
     # Cartelis retiré (calibration v5) : cabinet de conseil (CRM parmi data/IA,
     # recrutement type conseil, business development) → exclu par employeur.
     # NB : 16 autres employeurs proches ont été testés (Carrefour, CEA, McDonald's,
@@ -2221,7 +2299,7 @@ def should_include(job):
     if not is_relevant(job):
         return False, "Hors périmètre CRM / Campaign Manager"
 
-    exclude, reason, _ = screen_offer(job)
+    exclude, reason, _, _ = screen_offer(job)
     if exclude:
         return False, reason
 
@@ -3136,7 +3214,10 @@ def run():
             job["commute_minutes"] = get_commute_time(loc)
             time.sleep(0.2)
         # Alertes de filtrage (Customer Success, contrat, séniorité, trajet...)
-        job["flags"] = screen_offer(job)[2]
+        # + notes informatives (écart d'expérience léger, iGaming…) qui ne déclassent pas.
+        _sc = screen_offer(job)
+        job["flags"] = _sc[2]
+        job["info_flags"] = _sc[3]
 
     filtered.sort(key=lambda j: compute_score(j)[0], reverse=True)
 
