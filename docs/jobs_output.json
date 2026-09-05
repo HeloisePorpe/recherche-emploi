@@ -114,7 +114,7 @@
     "contract_type": null,
     "commute_minutes": 90,
     "flags": [
-      "Annonce ancienne (114 j)"
+      "Annonce ancienne (115 j)"
     ],
     "score": 8,
     "score_reasons": [
@@ -125,7 +125,7 @@
       "Télétravail 2j/sem"
     ],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Annonce ancienne (114 j)"
+    "recommendation_reason": "À vérifier : Annonce ancienne (115 j)"
   },
   {
     "source": "Adzuna",
@@ -182,6 +182,34 @@
     "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
+    "source": "Adzuna",
+    "title": "Consultant CRM F/H",
+    "link": "https://www.adzuna.fr/details/5870491055?utm_medium=api&utm_source=707eaaff",
+    "company": "CONVERTEO",
+    "location": "Paris, Ile-de-France",
+    "description": "Après formation interne sur nos méthodologies et obtention éventuelle des certifications nécessaires, vous : participerez, en autonomie, à la définition et au déploiement de stratégies de CRM, de gestion de campagnes, de Marketing Automation et de Marketing Relationnel chez nos clients êtes impliqué(e) sur toutes les problématiques liées à la relation client Quelques exemples de missions : Définition de parcours clients 360° Définition de plans relationnels Analyse et segmentation de base de do…",
+    "salary_raw": "",
+    "published": "2026-09-04T12:49:33Z",
+    "contract_raw": "permanent",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": "CDI",
+    "commute_minutes": 76,
+    "flags": [
+      "Télétravail non mentionné"
+    ],
+    "score": 7,
+    "score_reasons": [
+      "Outils : segmentation",
+      "Compétences alignées (3)",
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (76 min)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+  },
+  {
     "source": "Welcome to the Jungle",
     "title": "Consultant(e) Senior - Chef de projet Data & CRM (H/F)",
     "link": "https://www.welcometothejungle.com/fr/companies/thinkmarket/jobs/consultant-senior-chef-de-projet-data-crm-h-f_paris",
@@ -201,33 +229,6 @@
     "score_reasons": [
       "Outils : segmentation, omnicanal",
       "Compétences alignées (3)",
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (76 min)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Senior Product Manager - User And Lifecycle Analytics H/F",
-    "link": "https://www.adzuna.fr/details/5869754875?utm_medium=api&utm_source=707eaaff",
-    "company": "Content Square",
-    "location": "Paris, Ile-de-France",
-    "description": "The role We're looking for a Senior Product Manager to help customers understand how different groups of users behave over time: who converts, who comes back, who becomes more engaged, and who may be starting to drop away. You will lead the product strategy for user segmentation and lifecycle analytics. The work sits between product analytics and marketing technology. You will help customers define meaningful audiences, compare their behavior, understand what drives conversion and retention, an…",
-    "salary_raw": "",
-    "published": "2026-09-04T02:35:28Z",
-    "contract_raw": "",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": 76,
-    "flags": [
-      "Télétravail non mentionné"
-    ],
-    "score": 6,
-    "score_reasons": [
-      "Outils : segmentation",
       "Signaux CRM lifecycle (email / segmentation / campagne)",
       "Trajet long (76 min)"
     ],
@@ -259,11 +260,11 @@
   {
     "source": "LinkedIn (alerte)",
     "title": "Chef de projet CRM & Marketing Automation H/F",
-    "link": "https://www.linkedin.com/comm/jobs/view/4459316121?alertAction=markasviewed&amp;savedSearchId=8962023274&amp;savedSearchAuthToken=1&amp;AQHLdKgVKPzLRQAAAaBcmEeWpV_Igk39bEzfkTNnmpJXUxuK9UfuytDMfCB2_i5gWym4NHOdxxE-A1e-Z3SOOT6u75SJSGz4Z2jEpBrEmfJ1WA6XGXNFEdIuwt5Cs8W_RyfJHsMViTYE2QFRssI8rsufFjAPtxnoLs4UXWyBstJPpek54d_h-vLy1L1K1SxkIwTfuvKJtigyEiOes8njauINY_m9TdebThupBTo1C9DYStJP0TMfiWTPW7stn17syQOQaiOEEQXc1G9rh17OgwjiimmXlHebG5DZWjzG6XOdMr7L_GnooQ=&amp;AUt4kEuQ4qtWEQxrnj2ljwaWpoO6=&amp;trackingId=m1onbH5tulUOGstbL5ejKw%3D%3D&amp;refId=c6f3vQ7cdF1pI4SJ9iiYcQ%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_confirmation_01%3BDY4WvjFwQKqOivNuPHqN0A%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=0nlGhG50E2Oco1&amp;trk=eml-email_job_alert_confirmation_01-email_job_alert_confirmation-0-job_posting&amp;trkEmail=eml-email_job_alert_confirmation_01-email_job_alert_confirmation-0-job_posting-null-8ulvbk~mtirgdra~as-null-null&amp;eid=8ulvbk-mtirgdra-as&amp;otpToken=YjM4NDI0YjFjZTNmMmUxZWUwMTA4MThhOWU5Y2IwN2UwOTM3ZTIwNGI3OTBlMmM0MDA4NjM5MmRjNDM3ZjUxNWZkYjRjMGUxNjA0MTVkYTNiZjEyNjA0ODkyZWM0OTdlNDA0MzUyZmI1NGJjMjdlYmEzNjE2Y2Q0MjUwMDI0YzAxYmRiNWRkYTI5MWRhYywyLDE%3D",
+    "link": "https://www.linkedin.com/comm/jobs/view/4459316121?alertAction=markasviewed&amp;savedSearchId=8962023266&amp;savedSearchAuthToken=1&amp;AQE37SGTQusNBwAAAaBcmG93jSMEyTPwLT_P22hVHf3D6A7yTNEKbr6-Bo0AFuUQqpZe8V_a8YlQ8bbKHxcRXrip5Fke5xCjrvGpHo-8VrymAzNuS7ZRJiF_xEj9ctTtmT4EJQEs_w2Hx1_pvlVCWMQXPoGVsv2Bn74_glBnclloc2mLvtr0-aTyhkUY4UgE1TZo9SeE9vMu0Ln7q0-ietqDRoR0t_T86hs9ju5wUo27rSgBhS21TaoW50zni8Njwms2Q1TNaWH7cJ5kpwy39kL6mDO1AduZYG2LOjXjV2ZaR_1xTXAcww=&amp;AQf6SjqzFHaskUxy5LJvZh4OLlq3=&amp;trackingId=7XsUqWV4Co8Uow8r0C40JA%3D%3D&amp;refId=jR%2Bqi%2BIYMyzEkiBzbgezkA%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_confirmation_01%3Bv27a8pllRwKHWRiXmz7wtA%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=2If4CFoBKaNYo1&amp;trk=eml-email_job_alert_confirmation_01-email_job_alert_confirmation-0-job_posting&amp;trkEmail=eml-email_job_alert_confirmation_01-email_job_alert_confirmation-0-job_posting-null-8ulvbk~mtin62na~ed-null-null&amp;eid=8ulvbk-mtin62na-ed&amp;otpToken=ZGU5YmFkMzY4ZDIzZTFjYTA1NDE1OTdjYzZjYmE4ZmMwMGE0NWE2NTRmNjRjM2Y1NmZjMDg0NzE4ODFkZjI4OWQ1YTI3OWMxNTRhN2I5ODkzYjE3MTI5NTAwNzFiNDFmNTIyNDgyZWQ5NjcxZjI5ZDkzNTUwMWY1MjY1YmJhYzAwYThkMjI0NDhkYTdhOSwyLDE%3D",
     "company": "",
     "location": "",
     "description": "",
-    "published": "2026-09-01T14:26:46+00:00",
+    "published": "2026-09-01T12:26:45+00:00",
     "in_france": true,
     "salary_extracted": null,
     "telework_days": null,
@@ -299,29 +300,6 @@
     ],
     "recommendation": "à_revoir",
     "recommendation_reason": "À vérifier : Télétravail non mentionné"
-  },
-  {
-    "source": "JobLeads (alerte)",
-    "title": "Senior CRM & Marketing Automation Consultant - Remote 2d/wk",
-    "link": "https://www.jobleads.com/job/e3a86e53aa9f0a171b9e93106f065858d?kuuid=c4f4cab94056c7309cb04363dac3b327&view=search&saved_search_email_id=019ff5d8-3318-7a51-8d82-c4d960d2e3f4&utm_source=vdb_is_saved_search&utm_medium=email&utm_campaign=campaign%3Dvdb_is_job_alert&utm_content=job_id%3Dexternal-3a86e53aa9f0a171b9e93106f065858d%7Csearch_id%3D019ff5d8-3318-7a51-8d82-c4d960d2e3f4%7Ccontent%3Djob_card&search_id=31e0233a-47d3-4bf2-9b1f-55fd7d7fc67c&vector_distance=0.54286575&job_rank=3&m=f291f321-8b75-437c-80fa-f2f6d67c181d&u=69512022&t=id_1752225913",
-    "company": "Fed Group",
-    "location": "Issy-les-Moulineaux",
-    "description": "",
-    "published": "2026-08-28T22:04:01+02:00",
-    "in_france": true,
-    "salary_raw": "EUR 50 000 - 55 000",
-    "telework_days": null,
-    "contract_type": null,
-    "commute_minutes": 83,
-    "flags": [],
-    "score": 6,
-    "score_reasons": [
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Salaire dans la cible (50,000€)",
-      "Trajet long (83 min)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "Trajet 83 min, hors critère (≤75 min ou 100 % télétravail)"
   },
   {
     "source": "Site carrière — BlaBlaCar",
@@ -427,111 +405,6 @@
     "recommendation_reason": "À vérifier : Télétravail non mentionné ; Annonce ancienne (210 j)"
   },
   {
-    "source": "Adzuna",
-    "title": "Marketing Digital Manager H/F",
-    "link": "https://www.adzuna.fr/details/5870857462?utm_medium=api&utm_source=707eaaff",
-    "company": "Geodis",
-    "location": "Levallois-Perret, Nanterre",
-    "description": "Description du poste Type de contrat CDI-Temps plein Fonction Fonctions Supports - Marketing & communication Intitulé du poste Marketing Digital Manager H/F Description de la mission Manager de l'équipe Digitale qui recouvre 3 pôles : gestion du site web, chef de campagnes marketing, et chef de projet MyGeodis.com Sa 1ère mission sera de coordonner l'ensemble des sites web (75 versions) ainsi que les responsables et contributeurs marketing de « GEODIS.com », et de maintenir le site à jour en ma…",
-    "salary_raw": "",
-    "published": "2026-09-04T18:58:39Z",
-    "contract_raw": "permanent",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": "CDI",
-    "commute_minutes": 90,
-    "flags": [
-      "Télétravail non mentionné"
-    ],
-    "score": 5,
-    "score_reasons": [
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (90 min)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Intitulé du poste: Chef de projet technico-fonctionnel CRM D365 (F/H)",
-    "link": "https://www.adzuna.fr/details/5869628620?utm_medium=api&utm_source=707eaaff",
-    "company": "MICHAEL PAGE",
-    "location": "La Défense, Courbevoie",
-    "description": "Le poste de Intitulé du poste: Chef de projet technico-fonctionnel CRM D365 (F/H) En tant que Chef de projet Technico-fonctionnel CRM D365, vous êtes le référent technique des solutions CRM et de leurs interfaces. Vos missions : * Piloter l'expertise CRM Microsoft Dynamics auprès des métiers; * Analyser et challenger les besoins fonctionnels et techniques; * Concevoir les User Stories, Epics et solutions techniques; * Superviser le développement, les tests et l'intégration SI; * Garantir la qua…",
-    "salary_raw": "",
-    "published": "2026-09-04T01:10:38Z",
-    "contract_raw": "permanent",
-    "salary_extracted": null,
-    "telework_days": 2,
-    "in_france": true,
-    "contract_type": "CDI",
-    "commute_minutes": 83,
-    "flags": [
-      "Pertinence CRM à confirmer"
-    ],
-    "score": 5,
-    "score_reasons": [
-      "Trajet long (83 min)",
-      "Télétravail 2j/sem"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Chef de Projet IT Expérience Clients et CRM H/F",
-    "link": "https://www.adzuna.fr/details/5869774452?utm_medium=api&utm_source=707eaaff",
-    "company": "Lapeyre",
-    "location": "La Défense, Courbevoie",
-    "description": "Au sein de la Direction IT Expérience clients omnicanal, le chef de Projet IT Expérience Client & CRM pilote les projets liés aux outils et parcours de la relation client, en lien avec les équipes métiers, digitales, data et IT. Il intervient sur des projets transverses visant à améliorer la connaissance client, l'engagement et la performance des dispositifs CRM et marketing. Missions principales Pilotage de projets - Recueillir et cadrer les besoins métiers autour des parcours et outils CRM. -…",
-    "salary_raw": "",
-    "published": "2026-09-04T02:47:14Z",
-    "contract_raw": "",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": 83,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Télétravail non mentionné"
-    ],
-    "score": 5,
-    "score_reasons": [
-      "Outils : omnicanal",
-      "Trajet long (83 min)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Consultant CRM Microsoft - IA First (Hu002FF)",
-    "link": "https://www.adzuna.fr/details/5870755873?utm_medium=api&utm_source=707eaaff",
-    "company": "Klint",
-    "location": "Levallois-Perret, Nanterre",
-    "description": "Rejoignez notre équipe Microsoft dédiée à la relation client et accompagnez nos clients dans la transformation digitale de leurs processus commerciaux grâce aux solutions Microsoft Dynamics CE et Power Platform.  Votre mission En tant que consultant fonctionnel confirmé, vous jouez un rôle clé dans la réussite des projets CRM. Vous pouvez intervenir de la phase de cadrage stratégique jusqu’à l’accompagnement au changement, en passant par le recueil des besoins et la rédaction des spécifications…",
-    "salary_raw": "45000-55000 €",
-    "published": "2026-09-04T17:43:39Z",
-    "contract_raw": "",
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": 90,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Télétravail non mentionné"
-    ],
-    "score": 5,
-    "score_reasons": [
-      "Salaire dans la cible (45,000€)",
-      "Trajet long (90 min)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
-  },
-  {
     "source": "Welcome to the Jungle",
     "title": "Global Campaign Manager",
     "link": "https://www.welcometothejungle.com/fr/companies/guesttoguest/jobs/global-campaign-manager_paris",
@@ -554,31 +427,6 @@
     ],
     "recommendation": "à_revoir",
     "recommendation_reason": "À vérifier : Télétravail non mentionné"
-  },
-  {
-    "source": "Welcome to the Jungle",
-    "title": "Partnership Manager – Marketing",
-    "link": "https://www.welcometothejungle.com/fr/companies/arenametrix/jobs/partnership-manager-marketing_paris",
-    "company": "Arenametrix",
-    "location": "Paris, France",
-    "description": "**Your Qualifications**\n\nIdeally, you have:\n\n* 3+ years of experience managing partnerships, alliances, or partner programs.\n    \n* Strong hands-on marketing experience or capabilities, including content, campaigns, digital marketing, or events.\n    \n* Experience activating partners through co-marketing and co-selling.\n    \n* Strong project management and organizational skills.\n    \n* A data-driven mindset and experience measuring the performance of your initiatives.\n    \n* Excellent communication and interpersonal skills, including with senior stakeholders.\n    \n* Professional fluency in English. French, Dutch, German, Spanish, or Italian is appreciated.\n    \n* Experience with HubSpot is a strong plus.\n    \n* Experience with a PRM platform is a plus.\n    \n* Comfortable using AI tools to support day-to-day work, improve efficiency, and enhance the quality of your output.\n    \n* Experience in SaaS, CRM, MarTech, ticketing, sports, culture, or live entertainment is a plus.\n    \n\n**Your Responsibilities**\n\nYou will be responsible for growing and activating Arenametrix’s partner ecosystem.\n\n* **Grow and onboard partners**\n    \n    * Build relationships with new partners and onboard them into the Arenametrix Partner Program.\n        \n    * Use partner marketing initiatives, content, campaigns, and events to attract and engage potential partners.\n        \n* **Activate partners through Co-Marketing and Co-Selling**\n    \n    * Build joint campaigns, content, webinars, events, and other initiatives with partners.\n        \n    * Create strong collaboration between Arenametrix Sales teams and partner Sales teams around shared customers, opportunities, and target accounts.\n        \n    * Negotiate the marketing resources, visibility, and commitments needed to make partnerships successful.\n        \n* **Measure impact and coordinate internally**\n    \n    * Define success metrics, track results, and focus efforts on the initiatives creating the most value.\n        \n    * Work closely with Marketing, Sales, Customer Success, Product, and the Head of Partnerships to deliver partner initiatives.\n        \n\nYour goal is to build strong partner relationships and turn them into an **active growth channel** through effective activation, marketing, and commercial collaboration.",
-    "published": "2026-09-04T12:00:00.000+02:00",
-    "contract_type": "CDI",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "commute_minutes": 76,
-    "flags": [
-      "Séniorité / management d'équipe ?",
-      "Télétravail non mentionné"
-    ],
-    "score": 5,
-    "score_reasons": [
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Trajet long (76 min)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Séniorité / management d'équipe ? ; Télétravail non mentionné"
   },
   {
     "source": "Welcome to the Jungle",
@@ -607,11 +455,32 @@
   {
     "source": "LinkedIn (alerte)",
     "title": "Senior CRM Manager (Monetisation)",
-    "link": "https://www.linkedin.com/comm/jobs/view/4460212344?alertAction=markasviewed&amp;savedSearchId=8962689098&amp;savedSearchAuthToken=1&amp;AQH0907aj10qbgAAAaBdoREPJTRy_XOeIjIlFFgSaALI2cvpOiqCUockJ-W01WyR7rSRKWn8IAJcH9_wongLp45Ht9hRbF05YM7SGJfwSx38vxR8-wuP3NTQEwVRs7JZZYgjCQKAa13oGo0LPJT-EFPZ9ZnCCOi3E8oPMN6znjSWWSwVeSZzU68b1teHwgzYrE9vo_qLlkrUjzF0mwIk74hzvBLwKKWGcuwGP9EwgYnOMh8_pEKagePUHJVacxW6xfHzqIcun2RBhmfof-ZnxESOgGJKIGwQWyxn6Asi9dxljljIC9AKYw=&amp;ATQNNA6xDRV_DAqKXNyxwNOrkLgG=&amp;trackingId=7v4fjF%2BBO9xF4Y9vD%2FSsVw%3D%3D&amp;refId=IXMXTMNnesX6%2FJzWPISHlA%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_confirmation_01%3BJgBdcCX3RuCnmA%2FrhiRHAQ%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=2374Vnc19YOco1&amp;trk=eml-email_job_alert_confirmation_01-email_job_alert_confirmation-0-job_posting&amp;trkEmail=eml-email_job_alert_confirmation_01-email_job_alert_confirmation-0-job_posting-null-8ulvbk~mtivswhu~g-null-null&amp;eid=8ulvbk-mtivswhu-g&amp;otpToken=YmQ4ZDUzYmNkZTYxNzM2NzU1MGRlNmExNmM5NzdjNzMwMjUyYmQ0MTkzNmYxYTU4N2RkYzgyZmVlZWJmZTVmOTRjZWZiNjAxOTZmNWU0YTAyNjljMjQ0YjBiYzRhMTliYjNjN2Y2MGE0NjZkYjA2ZWE5ZTNjOTNlMDk4NDY3YjY5YzVhMTJmOGNiODFjNCwyLDE%3D",
+    "link": "https://www.linkedin.com/comm/jobs/view/4460212344/?trackingId=VLiVwEotQn%2BP4HMuvYK%2FXA%3D%3D&amp;refId=T9WxW6PpQp6sKpl4whun%2BQ%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_application_confirmation_with_nba_01%3Bi%2F4LyOi0TDSNeUvk3%2BJM7w%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=3C3RmUwz2hOco1&amp;trk=eml-email_application_confirmation_with_nba_01-applied_jobs-0-job_posting&amp;trkEmail=eml-email_application_confirmation_with_nba_01-applied_jobs-0-job_posting-null-8ulvbk~mtiwkb9g~1l-null-null&amp;eid=8ulvbk-mtiwkb9g-1l&amp;otpToken=ZTcxYjEwZDExMTY0M2QxNmRjODE2YmNjYjlhNzU3NzIzNzkzYTRkODgwNDFhYzljMzMxYzRiOTI2MGViZmJiNTQ1ZjQwM2U5NjAwOTg0ODE4Zjk5Y2Q4OWZiNjFjZGI3MDg2M2E5MDM1MzQ1ZjU1NTQ4YzFlZmIzYTM4ODk1NTUxY2FjZjVkZTA0ZjJiMCwyLDE%3D",
     "company": "",
     "location": "",
     "description": "",
-    "published": "2026-09-01T16:28:27+00:00",
+    "published": "2026-09-01T16:49:45+00:00",
+    "in_france": true,
+    "salary_extracted": null,
+    "telework_days": null,
+    "contract_type": null,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné"
+    ],
+    "score": 5,
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
+  },
+  {
+    "source": "LinkedIn (alerte)",
+    "title": "CRM MANAGER (H/F) — PARIS",
+    "link": "https://www.linkedin.com/comm/jobs/view/4432649387/?trackingId=vRvtASG%2FSb22ulABrSUEhQ%3D%3D&amp;refId=s9CTDg6ORA2iYSFBLLy6dA%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_application_confirmation_with_nba_01%3Bi%2F4LyOi0TDSNeUvk3%2BJM7w%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=3C3RmUwz2hOco1&amp;trk=eml-email_application_confirmation_with_nba_01-jymbii-0-job_posting&amp;trkEmail=eml-email_application_confirmation_with_nba_01-jymbii-0-job_posting-null-8ulvbk~mtiwkb9g~1l-null-null&amp;eid=8ulvbk-mtiwkb9g-1l&amp;otpToken=ZTcxYjEwZDExMTY0M2QxNmRjODE2YmNjYjlhNzU3NzIzNzkzYTRkODgwNDFhYzljMzMxYzRiOTI2MGViZmJiNTQ1ZjQwM2U5NjAwOTg0ODE4Zjk5Y2Q4OWZiNjFjZGI3MDg2M2E5MDM1MzQ1ZjU1NTQ4YzFlZmIzYTM4ODk1NTUxY2FjZjVkZTA0ZjJiMCwyLDE%3D",
+    "company": "",
+    "location": "",
+    "description": "",
+    "published": "2026-09-01T16:49:45+00:00",
     "in_france": true,
     "salary_extracted": null,
     "telework_days": null,
@@ -648,12 +517,12 @@
   },
   {
     "source": "LinkedIn (alerte)",
-    "title": "Chargé.e CRM F/H/X",
-    "link": "https://www.linkedin.com/comm/jobs/view/4460600939/?trackingId=MeoFc70ztYf804Xx1%2FH9og%3D%3D&amp;refId=9nuk0o6NuZzTYIQ31LCVmA%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BF%2FBX1yy4Sv2U%2BEf0ZsjqXQ%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=1NVnuoiVyWQYo1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_1_jobid_4460600939_ssid_8583513778_fmid_8ulvbk~mtlqmew8~8g&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_1_jobid_4460600939_ssid_8583513778_fmid_8ulvbk~mtlqmew8~8g-null-8ulvbk~mtlqmew8~8g-null-null&amp;eid=8ulvbk-mtlqmew8-8g&amp;otpToken=Yjg3ODljZDQwYjNhOWRiY2YzYmZjNGU2ODg4YzE4Y2UwNmIyZjMxNmJiN2QyMGQyMTliN2U3ODA0MDAwODA5YThmZmY3OTk0Y2I5YzFlYzU1NGVhMzk4MmE4MDhlNjZhNTJjZTM5NWQzOGM3YWQwMGJiMjY4M2YyYjJmM2QxNmFiZjk2OTgwZGNiNWU2ZSwyLDE%3D",
+    "title": "Digital CRM Project Manager Maison Margiela · Paris",
+    "link": "https://www.linkedin.com/comm/jobs/view/4457360669/?trackingId=XZUdH4vteXK%2FcY3w8zr6fw%3D%3D&amp;refId=BpMLo5zr7jIRh33h%2BIBGcQ%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_jobs_facet_suggestions%3BB60vnO5ITJy6teCz4neGUw%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=3kgKu8cGEJPso1&amp;trk=eml-email_jobs_facet_suggestions-JOBS_POSTING_SECTION_2-0-job_card_1_jobid_4457360669_sectionid_275005_fmid_8ulvbk~mtk2pqhf~n&amp;trkEmail=eml-email_jobs_facet_suggestions-JOBS_POSTING_SECTION_2-0-job_card_1_jobid_4457360669_sectionid_275005_fmid_8ulvbk~mtk2pqhf~n-null-8ulvbk~mtk2pqhf~n-null-null&amp;eid=8ulvbk-mtk2pqhf-n&amp;otpToken=Yzc3M2ZlM2U0OGJlYjcxYWE5OWQyZWM1OGNkMTUyYzgzYmU4MmVlNTQ5N2ZjY2UwNzg4ZjViZTIyNjQ3NWY1MmY0ZmYzYTk1YzRjMzYwNmNlYmYwN2Y2MjM1MWMwYTMyYmMyNTQzODAyY2Q2YmVmNzhlMTM3NzcwNWExZjdkMGI5NDQ5NzQzY2JiMjk2NCwyLDE%3D",
     "company": "",
     "location": "",
     "description": "",
-    "published": "2026-09-03T16:26:45+00:00",
+    "published": "2026-09-02T12:29:42+00:00",
     "in_france": true,
     "salary_extracted": null,
     "telework_days": null,
@@ -669,12 +538,12 @@
   },
   {
     "source": "LinkedIn (alerte)",
-    "title": "Digital CRM Project Manager Maison Margiela · Paris",
-    "link": "https://www.linkedin.com/comm/jobs/view/4457360669/?trackingId=XZUdH4vteXK%2FcY3w8zr6fw%3D%3D&amp;refId=BpMLo5zr7jIRh33h%2BIBGcQ%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_jobs_facet_suggestions%3BB60vnO5ITJy6teCz4neGUw%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=3kgKu8cGEJPso1&amp;trk=eml-email_jobs_facet_suggestions-JOBS_POSTING_SECTION_2-0-job_card_1_jobid_4457360669_sectionid_275005_fmid_8ulvbk~mtk2pqhf~n&amp;trkEmail=eml-email_jobs_facet_suggestions-JOBS_POSTING_SECTION_2-0-job_card_1_jobid_4457360669_sectionid_275005_fmid_8ulvbk~mtk2pqhf~n-null-8ulvbk~mtk2pqhf~n-null-null&amp;eid=8ulvbk-mtk2pqhf-n&amp;otpToken=Yzc3M2ZlM2U0OGJlYjcxYWE5OWQyZWM1OGNkMTUyYzgzYmU4MmVlNTQ5N2ZjY2UwNzg4ZjViZTIyNjQ3NWY1MmY0ZmYzYTk1YzRjMzYwNmNlYmYwN2Y2MjM1MWMwYTMyYmMyNTQzODAyY2Q2YmVmNzhlMTM3NzcwNWExZjdkMGI5NDQ5NzQzY2JiMjk2NCwyLDE%3D",
+    "title": "Responsable PRM/CRM (H/F)",
+    "link": "https://www.linkedin.com/comm/jobs/view/4459174541?alertAction=markasviewed&amp;savedSearchId=8962023266&amp;savedSearchAuthToken=1&amp;AQE37SGTQusNBwAAAaBcmG93jSMEyTPwLT_P22hVHf3D6A7yTNEKbr6-Bo0AFuUQqpZe8V_a8YlQ8bbKHxcRXrip5Fke5xCjrvGpHo-8VrymAzNuS7ZRJiF_xEj9ctTtmT4EJQEs_w2Hx1_pvlVCWMQXPoGVsv2Bn74_glBnclloc2mLvtr0-aTyhkUY4UgE1TZo9SeE9vMu0Ln7q0-ietqDRoR0t_T86hs9ju5wUo27rSgBhS21TaoW50zni8Njwms2Q1TNaWH7cJ5kpwy39kL6mDO1AduZYG2LOjXjV2ZaR_1xTXAcww=&amp;AQf6SjqzFHaskUxy5LJvZh4OLlq3=&amp;trackingId=yK%2Bc6CSM9TWPAGgqjDimAw%3D%3D&amp;refId=jR%2Bqi%2BIYMyzEkiBzbgezkA%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_confirmation_01%3Bv27a8pllRwKHWRiXmz7wtA%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=2If4CFoBKaNYo1&amp;trk=eml-email_job_alert_confirmation_01-email_job_alert_confirmation-0-job_posting&amp;trkEmail=eml-email_job_alert_confirmation_01-email_job_alert_confirmation-0-job_posting-null-8ulvbk~mtin62na~ed-null-null&amp;eid=8ulvbk-mtin62na-ed&amp;otpToken=ZGU5YmFkMzY4ZDIzZTFjYTA1NDE1OTdjYzZjYmE4ZmMwMGE0NWE2NTRmNjRjM2Y1NmZjMDg0NzE4ODFkZjI4OWQ1YTI3OWMxNTRhN2I5ODkzYjE3MTI5NTAwNzFiNDFmNTIyNDgyZWQ5NjcxZjI5ZDkzNTUwMWY1MjY1YmJhYzAwYThkMjI0NDhkYTdhOSwyLDE%3D",
     "company": "",
     "location": "",
     "description": "",
-    "published": "2026-09-02T12:29:42+00:00",
+    "published": "2026-09-01T12:26:45+00:00",
     "in_france": true,
     "salary_extracted": null,
     "telework_days": null,
@@ -711,12 +580,33 @@
   },
   {
     "source": "LinkedIn (alerte)",
-    "title": "CRM MANAGER (H/F) — PARIS",
-    "link": "https://www.linkedin.com/comm/jobs/view/4432649387/?trackingId=CiB0prusSX%2BuDBp00VPMQw%3D%3D&amp;refId=02s9uDr3SouhoUjOVSrJ2Q%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_application_confirmation_with_nba_01%3BNfqqnyvJR0KrcCt%2BR2F0Qw%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=3RdgSe4PicOco1&amp;trk=eml-email_application_confirmation_with_nba_01-jymbii-0-job_posting&amp;trkEmail=eml-email_application_confirmation_with_nba_01-jymbii-0-job_posting-null-8ulvbk~mtiwe6an~13-null-null&amp;eid=8ulvbk-mtiwe6an-13&amp;otpToken=MDYwNmUzMTk1MDc0MDRiMmZlYzJjMmM5NTExMzY5ODdiZWQ1NmQyZTExZjI1Yzc3M2ZhOWZkMWVlNTY2NmYyZTYxZTU2MmJjYTIxOGU4NDg5NjBmOGYwYzY1YTA0MTY1YWZlZjc1ZWM5NDA2Njk3YjQyY2E4NjY2ODA3MmZiNzk4MmJjYjNlNzY2NjFhNiwyLDE%3D",
+    "title": "Chargé.e CRM F/H/X",
+    "link": "https://www.linkedin.com/comm/jobs/view/4460600939/?trackingId=MeoFc70ztYf804Xx1%2FH9og%3D%3D&amp;refId=9nuk0o6NuZzTYIQ31LCVmA%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BF%2FBX1yy4Sv2U%2BEf0ZsjqXQ%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=1NVnuoiVyWQYo1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_1_jobid_4460600939_ssid_8583513778_fmid_8ulvbk~mtlqmew8~8g&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_1_jobid_4460600939_ssid_8583513778_fmid_8ulvbk~mtlqmew8~8g-null-8ulvbk~mtlqmew8~8g-null-null&amp;eid=8ulvbk-mtlqmew8-8g&amp;otpToken=Yjg3ODljZDQwYjNhOWRiY2YzYmZjNGU2ODg4YzE4Y2UwNmIyZjMxNmJiN2QyMGQyMTliN2U3ODA0MDAwODA5YThmZmY3OTk0Y2I5YzFlYzU1NGVhMzk4MmE4MDhlNjZhNTJjZTM5NWQzOGM3YWQwMGJiMjY4M2YyYjJmM2QxNmFiZjk2OTgwZGNiNWU2ZSwyLDE%3D",
     "company": "",
     "location": "",
     "description": "",
-    "published": "2026-09-01T16:44:58+00:00",
+    "published": "2026-09-03T16:26:45+00:00",
+    "in_france": true,
+    "salary_extracted": null,
+    "telework_days": null,
+    "contract_type": null,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné"
+    ],
+    "score": 5,
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
+  },
+  {
+    "source": "LinkedIn (alerte)",
+    "title": "Responsable CRM",
+    "link": "https://www.linkedin.com/comm/jobs/view/4462800315/?trackingId=k4a%2Fxxe5obGkzGEMGYa4UQ%3D%3D&amp;refId=NXS0ou%2Fy5FKrVpKNA9gBMw%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3Bz9rREMPzSx%2Bf6O%2FIC3gFCw%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=1ObuYqwm0qTso1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_2_jobid_4462800315_ssid_8962023274_fmid_8ulvbk~mto4cu4o~o4&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_2_jobid_4462800315_ssid_8962023274_fmid_8ulvbk~mto4cu4o~o4-null-8ulvbk~mto4cu4o~o4-null-null&amp;eid=8ulvbk-mto4cu4o-o4&amp;otpToken=ZmNlOTFjZWNmZDM5MzUyOGY2OWNjOWZhYjY5MDE1YjNhMTNmYTYzNzk1ZGQyMjRjM2M1NzhkMGQwODJiZGRhNmI4YTAyNmQzNmRjNmI0YjRiZjkwZmYzZjcxNmViMWY3ZDUxNTY5NDVlMTEyYTE0OTdmZGI4ZTJiOGM5NzZkMzY0MDczYzNjMTFhYmIwZCwyLDE%3D",
+    "company": "",
+    "location": "",
+    "description": "",
+    "published": "2026-09-05T08:26:45+00:00",
     "in_france": true,
     "salary_extracted": null,
     "telework_days": null,
@@ -753,27 +643,6 @@
   },
   {
     "source": "LinkedIn (alerte)",
-    "title": "Responsable PRM/CRM (H/F)",
-    "link": "https://www.linkedin.com/comm/jobs/view/4459174541?alertAction=markasviewed&amp;savedSearchId=8962023274&amp;savedSearchAuthToken=1&amp;AQHLdKgVKPzLRQAAAaBcmEeWpV_Igk39bEzfkTNnmpJXUxuK9UfuytDMfCB2_i5gWym4NHOdxxE-A1e-Z3SOOT6u75SJSGz4Z2jEpBrEmfJ1WA6XGXNFEdIuwt5Cs8W_RyfJHsMViTYE2QFRssI8rsufFjAPtxnoLs4UXWyBstJPpek54d_h-vLy1L1K1SxkIwTfuvKJtigyEiOes8njauINY_m9TdebThupBTo1C9DYStJP0TMfiWTPW7stn17syQOQaiOEEQXc1G9rh17OgwjiimmXlHebG5DZWjzG6XOdMr7L_GnooQ=&amp;AUt4kEuQ4qtWEQxrnj2ljwaWpoO6=&amp;trackingId=52MB6%2BjGw8E%2FmP%2BUlJfZ6Q%3D%3D&amp;refId=c6f3vQ7cdF1pI4SJ9iiYcQ%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_confirmation_01%3BDY4WvjFwQKqOivNuPHqN0A%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=0nlGhG50E2Oco1&amp;trk=eml-email_job_alert_confirmation_01-email_job_alert_confirmation-0-job_posting&amp;trkEmail=eml-email_job_alert_confirmation_01-email_job_alert_confirmation-0-job_posting-null-8ulvbk~mtirgdra~as-null-null&amp;eid=8ulvbk-mtirgdra-as&amp;otpToken=YjM4NDI0YjFjZTNmMmUxZWUwMTA4MThhOWU5Y2IwN2UwOTM3ZTIwNGI3OTBlMmM0MDA4NjM5MmRjNDM3ZjUxNWZkYjRjMGUxNjA0MTVkYTNiZjEyNjA0ODkyZWM0OTdlNDA0MzUyZmI1NGJjMjdlYmEzNjE2Y2Q0MjUwMDI0YzAxYmRiNWRkYTI5MWRhYywyLDE%3D",
-    "company": "",
-    "location": "",
-    "description": "",
-    "published": "2026-09-01T14:26:46+00:00",
-    "in_france": true,
-    "salary_extracted": null,
-    "telework_days": null,
-    "contract_type": null,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Télétravail non mentionné"
-    ],
-    "score": 5,
-    "score_reasons": [],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
-  },
-  {
-    "source": "LinkedIn (alerte)",
     "title": "CONSULTANT(E) CRM CONFIRMÉ(E) H/F",
     "link": "https://www.linkedin.com/comm/jobs/view/4461762531/?trackingId=iM1NtLQ58oq0ho35gGZGHw%3D%3D&amp;refId=w32xASbU72Kwh68RSIJyHA%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BnwAA2EcXSB21kJ57LtE9rQ%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=3CqM1aegNiQIo1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4461762531_ssid_8962023266_fmid_8ulvbk~mtldrg9a~vg&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4461762531_ssid_8962023266_fmid_8ulvbk~mtldrg9a~vg-null-8ulvbk~mtldrg9a~vg-null-null&amp;eid=8ulvbk-mtldrg9a-vg&amp;otpToken=OWNlNDkwNzAwNTZmYzNkMjNmY2IyMjQzZWNhMjY3NTFhNWVkMmFlMDMyOWRlOWE4MTJhMzEzNzg3ZjNjMGVlNmY5NTQzMjBhMjJjNzAzY2FhYmIzNzYxNWRhZmQ1MjI0OGY4ZTM3ZTczNzZjZjViZGFlZDNhOGRmMGM4NDBlYzNlMWNmODZlYTlhNmQ0NiwyLDE%3D",
     "company": "",
@@ -790,59 +659,6 @@
     ],
     "score": 5,
     "score_reasons": [],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
-  },
-  {
-    "source": "Site carrière — Mirakl",
-    "title": "Revenue Operations Analyst, Paris",
-    "link": "https://job-boards.greenhouse.io/mirakl/jobs/6182493004",
-    "company": "Mirakl",
-    "location": "Paris, France",
-    "description": "&lt;div class=&quot;content-intro&quot;&gt;&lt;p&gt;&lt;strong&gt;About Mirakl:&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;Founded in 2012, Mirakl has been at the forefront of marketplace innovation, empowering every business to compete in the platform economy.&lt;br&gt;&lt;br&gt;Today, Mirakl’s operating system combines an enterprise marketplace solution (Mirakl Platform) that enables retailers and B2B organizations to launch, scale, and operate marketplaces and dropship, AI-powered multichannel selling (Mirakl Connect), retail media (Mirakl Ads) and an agentic commerce infrastructure (Mirakl Nexus).&lt;br&gt;&lt;br&gt;With dual headquarters in Boston and Paris, Mirakl helps a global ecosystem of 450+ marketplaces (B2C and B2B) and a network of over 100k third-party marketplace sellers. Brands like Macy’s, Decathlon, Carrefour, Asos, and Airbus Helicopters use Mirakl to grow their businesses in new and remarkable ways.&lt;/p&gt;\n&lt;p&gt;For more information, visit &lt;a href=&quot;http://www.mirakl.com&quot;&gt;www.mirakl.com&lt;/a&gt;.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Mirakl in Numbers:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;🗓️ Founded in 2012 | Member of French Tech Next40&lt;/li&gt;\n&lt;li&gt;👥 750+ employees in 9 offices worldwide: Paris, Barcelona, Bordeaux, Boston, London, Munich, New York, Sydney, Tokyo&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Our Values:&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;Working at Mirakl means accelerating your career alongside ambitious, passionate, and supportive colleagues. We&#39;re proud of the diversity of backgrounds, perspectives, and experiences that make our teams unique.&lt;/p&gt;\n&lt;p&gt;Our 5 values guide how we collaborate:&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;💡&lt;strong&gt; Work Hard Together:&lt;/strong&gt; Teamwork and collaboration are the foundation of our success&lt;/li&gt;\n&lt;li&gt;🏆 &lt;strong&gt;Get Things Done: &lt;/strong&gt;&amp;nbsp;We prioritize action and efficiency for impactful results&lt;/li&gt;\n&lt;li&gt;🚀 &lt;strong&gt;Go Above &amp;amp; Beyond:&lt;/strong&gt;&amp;nbsp; We tackle challenges proactively and always aim for excellence&lt;/li&gt;\n&lt;li&gt;🎓 &lt;strong&gt;Succeed Through Expertise:&lt;/strong&gt; Knowledge sharing and continuous learning are core to our culture&lt;/li&gt;\n&lt;li&gt;🤝 &lt;strong&gt;Satisfy &amp;amp; Empower Clients:&lt;/strong&gt; We&#39;re committed to our clients&#39; success&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;&lt;strong&gt;The Team You&#39;ll Join&lt;/strong&gt;&lt;/h2&gt;\n&lt;p&gt;You&#39;ll be part of our Revenue Operations team led by &lt;a href=&quot;https://www.linkedin.com/in/julien-amoureaux-12aa9a73/&quot;&gt;Julien Amoureaux&lt;/a&gt;, Team Lead, Revenue Operations. The team consists of 10 Revenue Operations Analysts working across all of Mirakl&#39;s suite of products. Together, you&#39;ll be driving the efficiency and scalability of Mirakl&#39;s sales cycle by ensuring systems, processes, and automation run seamlessly across the organization.&lt;/p&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n&lt;h2&gt;&lt;strong&gt;Your Impact&lt;/strong&gt;&lt;/h2&gt;\n&lt;p&gt;&lt;strong&gt;Revenue Systems Support&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Maintain and improve the tools supporting prospecting, sales execution, quoting, and revenue recognition across all of Mirakl&#39;s business units&lt;/li&gt;\n&lt;li&gt;Administer Salesforce — managing users, permissions, workflows, approvals, and data quality — to keep the sales organization running smoothly&lt;/li&gt;\n&lt;li&gt;Collaborate with RevOps Business Analysts to understand business needs and translate them into system or process improvements&lt;/li&gt;\n&lt;li&gt;Partner with the RevOps Tech Lead on system architecture, integrations, data quality, and prioritization&lt;/li&gt;\n&lt;li&gt;Document solutions, recurring issues, and standard operating procedures to build a reliable, scalable knowledge base for the team&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;AI &amp;amp; Automation&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Design, deploy, and maintain AI-agent processes and n8n workflows that automate recurring operational tasks across Revenue Operations&lt;/li&gt;\n&lt;li&gt;Support business users and RevOps analysts in identifying automation opportunities and translating requirements into reliable, scalable solutions&lt;/li&gt;\n&lt;li&gt;Monitor automated processes, troubleshoot failures, and continuously improve their performance and usability&lt;/li&gt;\n&lt;li&gt;Contribute to building a robust automation framework with appropriate documentation, controls, and support processes&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;CPQ Transformation&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Support the rollout of Mirakl&#39;s new AI-enabled CPQ operating model, coordinating requirements, testing, documentation, and rollout activities&lt;/li&gt;\n&lt;li&gt;Work cross-functionally with Sales, Finance, RevOps, and technical stakeholders to ensure new CPQ processes meet business needs&lt;/li&gt;\n&lt;li&gt;Monitor the reliability and performance of CPQ processes post-launch and drive continuous improvement&lt;/li&gt;\n&lt;li&gt;Contribute to migrating from manual administrative maintenance toward more automated management of product, pricing, and approval rules&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n&lt;h2&gt;&lt;strong&gt;What You&#39;ll Bring to the Role&lt;/strong&gt;&lt;/h2&gt;\n&lt;p&gt;&lt;strong&gt;Experience:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;2+ years of experience supporting business applications such as &lt;strong&gt;Salesforce&lt;/strong&gt;, CPQ, CRM, sales engagement tools, or related Revenue Operations platforms&lt;/li&gt;\n&lt;li&gt;Demonstrated ability to manage complex, cross-functional projects with multiple stakeholders&lt;/li&gt;\n&lt;li&gt;Hands-on experience with or strong interest in AI agents, workflow automation, or tools such as n8n&lt;/li&gt;\n&lt;li&gt;Bachelor&#39;s degree in Business, Information Systems, or a related field — or equivalent experience&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Skills:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Analytical problem-solving with strong attention to detail&lt;/li&gt;\n&lt;li&gt;Ability to translate business requirements into system or automation solutions&lt;/li&gt;\n&lt;li&gt;Clear communication and cross-functional collaboration&lt;/li&gt;\n&lt;li&gt;Strong organizational skills with the ability to prioritize multiple requests&lt;/li&gt;\n&lt;li&gt;Adaptability and eagerness to learn in a fast-moving environment&lt;/li&gt;\n&lt;/ul&gt;\n&lt;h2&gt;&lt;strong&gt;&amp;nbsp;Tools Used&lt;/strong&gt;&lt;/h2&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;strong&gt;CRM:&lt;/strong&gt; Salesforce&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;CPQ:&lt;/strong&gt; DealHub or equivalent CPQ platform&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Automation:&lt;/strong&gt; n8n, Dust, AI agents&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Data Managerment : &lt;/strong&gt;Databricks&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Sales Engagement:&lt;/strong&gt; Prospecting and outbounding tools (e.g. Gong, Outreach)&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Productivity &amp;amp; Documentation:&lt;/strong&gt; Google Workspace or Microsoft 365, Confluence or Notion&lt;/li&gt;\n&lt;/ul&gt;\n&lt;h2&gt;&lt;strong&gt;Languages&lt;/strong&gt;&lt;/h2&gt;\n&lt;ul&gt;\n&lt;li&gt;English: C2 (Full professional proficiency)&lt;/li&gt;\n&lt;li&gt;French: C2 (Full professional proficiency)&lt;/li&gt;\n&lt;/ul&gt;\n&lt;h2&gt;&lt;strong&gt;Our Hiring Process&lt;/strong&gt;&lt;/h2&gt;\n&lt;p&gt;We warmly encourage you to apply to any of our roles, even if you think you&#39;re not an exact match.&lt;/p&gt;\n&lt;p&gt;Please click the &quot;Apply&quot; button to submit your application — this helps us make the best possible assessment and get back to you as quickly as possible.&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;strong&gt;Intro call with Talent Acquisition&lt;/strong&gt; — 30 minutes to explore your background, motivations, and answer any questions about Mirakl&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Interview with Julien, the hiring manager&lt;/strong&gt; — A deep dive into your RevOps experience, technical background, and motivations&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Values-based interviews&lt;/strong&gt; — Conversations with colleagues from across the business to assess alignment with Mirakl&#39;s core values&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Strategic presentation&lt;/strong&gt; — An opportunity to showcase your RevOps thinking and approach to a real-world challenge&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Final decision &amp;amp; offer&lt;/strong&gt; — We consolidate feedback quickly and aim to share decisions without delay. If successful, we&#39;ll walk you through the offer details, benefits, and next steps&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;em&gt;We welcome collaborators with their diverse perspectives and experiences to power us forward. These often far exceed conventional job requirements and help us create a culture of continuous learning. If you’re ready to join a global leader powering digital transformation for 450+ of the world’s most innovative retailers and B2B organizations.&lt;/em&gt;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;As part of our recruitment process, Mirakl processes your personal data to review and manage your application and, where appropriate, to consider your profile for future opportunities. You can exercise your data protection rights at any time, and as further detailed in our policies. For more information about how we process your personal data and your rights, please consult our Recruitment Privacy Notice, &lt;a href=&quot;https://www.mirakl.com/recruitment-privacy-notice&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt; in English and &lt;a href=&quot;https://www.mirakl.com/fr-FR/recruitment-privacy-notice&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt; in French.&amp;nbsp;&lt;/em&gt;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;We may use Artificial Intelligence (AI) solutions to help streamline our hiring process, including screening applications, analyzing resumes, and assessing responses. While AI helps us work efficiently, all final hiring decisions are made by humans. For more information, visit our &lt;/em&gt;&lt;a href=&quot;https://info.mirakl.com/ai-guidelines-for-candidates-and-interviews&quot; target=&quot;_blank&quot;&gt;&lt;em&gt;AI Guidelines for Candidates and Interviews&lt;/em&gt;&lt;/a&gt;&lt;em&gt;.&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;",
-    "published": "2026-09-04T11:47:51-04:00",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": 76,
-    "flags": [
-      "CRM = sourcing RH ?",
-      "Pertinence CRM à confirmer",
-      "Séniorité / management d'équipe ?",
-      "Télétravail non mentionné"
-    ],
-    "score": 5,
-    "score_reasons": [
-      "Secteur favorable : finance",
-      "Trajet long (76 min)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : CRM = sourcing RH ? ; Pertinence CRM à confirmer ; Séniorité / management d'équipe ?"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Consultant.e Data CRM Senior Brevo",
-    "link": "https://www.adzuna.fr/details/5870759469?utm_medium=api&utm_source=707eaaff",
-    "company": "Elevate",
-    "location": "9ème Arrondissement, Paris",
-    "description": "Nous recherchons un.e Consultant.e Data CRM Senior BREVO Dans le cadre du développement du cabinet, nous recherchons un.e Consultant.e Data CRM Senior pour piloter des projets de migration CRM vers l’écosystème BREVO . Après formation interne à notre méthodologie et à notre offre, vous serez le chef d’orchestre technique et fonctionnel des projets de nos clients. Votre mission : sécuriser, cadrer et exécuter leurs projets de migration CRM tout en exploitant au maximum le potentiel de la donnée …",
-    "salary_raw": "",
-    "published": "2026-09-04T17:45:31Z",
-    "contract_raw": "",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": 78,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Télétravail non mentionné"
-    ],
-    "score": 4,
-    "score_reasons": [
-      "Trajet long (78 min)"
-    ],
     "recommendation": "à_revoir",
     "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
@@ -900,57 +716,29 @@
     "recommendation_reason": "Trajet 96 min et pas 100 % télétravail"
   },
   {
-    "source": "Adzuna",
-    "title": "Spécialiste CRM et Réseaux Sociaux BMW Motorrad - CDI (F/H)",
-    "link": "https://www.adzuna.fr/details/5870224484?utm_medium=api&utm_source=707eaaff",
-    "company": "BMW France",
-    "location": "Yvelines, Ile-de-France",
-    "description": "Votre rôle en tant que Spécialiste CRM & Réseaux Sociaux est d’assurer le suivi de l’activité CRM / PRM de la marque BMW Motorrad et la mise en place de projets digitaux visant à l’amélioration de l’expérience client et prospect au quotidien. En phase avec les directives de BMW AG, vous organisez le marketing direct de la marque et dynamisez l’image de BMW Motorrad au travers des activités « social media ». A ce titre, vos missions sont de : - Participer à l’élaboration de la stratégie Marketin…",
-    "salary_raw": "",
-    "published": "2026-09-04T09:45:10Z",
-    "contract_raw": "permanent",
+    "source": "Welcome to the Jungle",
+    "title": "Head of Engineering, CRM",
+    "link": "https://www.welcometothejungle.com/fr/companies/maquette-l-oreal-beauty-tech/jobs/tech-program-manager-crm-europe-it_levallois-perret",
+    "company": "L'Oréal Groupe",
+    "location": "Levallois-Perret, France",
+    "description": "",
+    "published": "2026-09-05T00:00:00.000+02:00",
+    "contract_type": "CDI",
     "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
-    "contract_type": "CDI",
-    "commute_minutes": 152,
+    "commute_minutes": 90,
     "flags": [
       "Pertinence CRM à confirmer",
-      "Télétravail non mentionné",
-      "Trajet long (152 min)"
-    ],
-    "score": 4,
-    "score_reasons": [
-      "Trajet long (152 min)"
-    ],
-    "recommendation": "à_écarter",
-    "recommendation_reason": "Trajet 152 min et pas 100 % télétravail"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Consultant CRM Martech - CDI H/F",
-    "link": "https://www.adzuna.fr/details/5860436458?utm_medium=api&utm_source=707eaaff",
-    "company": "Converteo",
-    "location": "12ème Arrondissement, Paris",
-    "description": "Description de l'entreprise Converteo est une société de conseil et de services technologiques qui pilote la transformation de ses clients grâce à la Data, l'IA et l'Agentique. De la stratégie à l'exécution, ses 450 consultants et experts déploient les solutions technologiques les plus avancées pour plus de 200 acteurs majeurs de l'économie. Fondé en 2007, Converteo a son siège à Paris et dispose de bureaux à New York, Toronto, Madrid et Milan. Découvrez le Hub Conseil Business Le Hub Conseil B…",
-    "salary_raw": "",
-    "published": "2026-08-29T02:42:47Z",
-    "contract_raw": "",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": "CDI",
-    "commute_minutes": 77,
-    "flags": [
-      "Pertinence CRM à confirmer",
+      "Séniorité / management d'équipe ?",
       "Télétravail non mentionné"
     ],
     "score": 4,
     "score_reasons": [
-      "Trajet long (77 min)"
+      "Trajet long (90 min)"
     ],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Séniorité / management d'équipe ? ; Télétravail non mentionné"
   },
   {
     "source": "Welcome to the Jungle",
