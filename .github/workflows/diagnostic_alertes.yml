@@ -1,0 +1,42 @@
+name: Diagnostic dossier Alertes
+
+# Diagnostic ponctuel (manuel) : inventorie les expediteurs du dossier Gmail
+# « Alertes » et verifie qu'ils sont traites par le dashboard. Ne commit rien.
+on:
+  workflow_dispatch:
+
+jobs:
+  diagnostic:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Recuperer le code du depot
+        uses: actions/checkout@v4
+
+      - name: Installer Python 3.13
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Installer les dependances
+        run: pip install feedparser requests
+
+      - name: Creer le fichier config.json a partir des secrets
+        env:
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+        run: |
+          python - <<'PY'
+          import json, os
+          config = {
+              "gmail_address": os.environ.get("GMAIL_ADDRESS", ""),
+              "gmail_app_password": os.environ.get("GMAIL_APP_PASSWORD", ""),
+              "gmail_folder": "INBOX",
+              "gmail_lookback_days": 60,
+          }
+          with open("config.json", "w", encoding="utf-8") as f:
+              json.dump(config, f, ensure_ascii=False, indent=2)
+          print("config.json cree")
+          PY
+
+      - name: Lancer le diagnostic Alertes
+        run: python diagnostic_alertes.py
