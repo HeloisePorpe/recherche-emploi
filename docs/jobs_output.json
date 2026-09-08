@@ -164,34 +164,6 @@
     "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
-    "source": "France Travail",
-    "title": "Chef de Projet CRM (H/F)",
-    "link": "https://candidat.francetravail.fr/offres/recherche/detail/213NCGR",
-    "company": "E-KENT",
-    "location": "75 - Paris 1er Arrondissement (75001)",
-    "description": "Rôles & Missions\n\nDans le cadre du renforcement de son système d'information, notre client recherche un Chef de Projet IT pour intervenir en tant que référent sur le pilotage de plusieurs outils métiers, dans un contexte de gestion de la formation et de l'alternance.\n\nVous jouerez un rôle central dans le pilotage des projets IT, la fiabilisation des outils du quotidien et l'accompagnement des utilisateurs non-IT sur les sujets techniques stratégiques.\n\nVos principales responsabilités :\n\nCadrer, planifier et piloter les projets de transformation digitale : déploiement, évolution et maintenance des outils du système d'information.\nAnalyser les besoins métiers afin de définir les priorités et les évolutions à apporter aux outils.\nCoordonner les prestataires externes et les éditeurs de solutions.\nSuperviser la configuration, le paramétrage et les évolutions des outils CRM comme Salesforce\nGarantir la fiabilité, la sécurité et la cohérence des données au sein des outils métiers.\nAssurer le bon fonctionnement et le suivi des outils dédiés à la gestion de la formation et de l'alternance.\nFaire le lien entre les besoins pédagogiques et administratifs et les paramétrages techniques.\nDévelopper et faire évoluer des tableaux de bord et outils de reporting pour le suivi de l'activité.\nFournir aux différentes directions des indicateurs fiables d'aide à la décision.\nEncadrer et animer une petite équipe technique.\nAcompagner les utilisateurs non-IT dans l'appropriation des outils : formation, support et documentation.\nAssurer le suivi budgétaire et le respect des délais sur l'ensemble des projets.\nÊtre force de proposition pour améliorer les usages et l'efficacité des processus internes.\nProfil Attendu\n\nVous justifiez d'une expérience confirmée de 5 à 8 ans en gestion de projet IT.\nExpérience confirmée sur un outil CRM de type Salesforce.\nUne première expérience sur un outil de gestion de la formation et de l'alternance est fortement appréciée.\nLa maîtrise de Power BI constitue un plus.\nUne bonne connaissance du secteur de la formation, de l'alternance ou du secteur associatif constitue un véritable différenciant.\nCapacité à manager une petite équipe technique.\nAptitude confirmée à conduire le changement auprès d'utilisateurs non-IT.\nAutonomie, rigueur et sens de l'organisation.\nPédagogie et capacité à accompagner les utilisateurs internes.\nBon relationnel et sens du service.\nEsprit d'initiative et capacité à travailler en transversalité avec des interlocuteurs variés.\n\nDate de début souhaitée\nASAP",
-    "salary_raw": "Annuel de 50000.0 Euros à 55000.0 Euros",
-    "published": "2026-09-07T20:09:44.878Z",
-    "contract_type": "CDI",
-    "telework_days": null,
-    "in_france": true,
-    "commute_minutes": 74,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Télétravail non mentionné"
-    ],
-    "info_flags": [
-      "Expérience un peu au-dessus (8 ans demandés) — à assumer, non bloquant"
-    ],
-    "score": 7,
-    "score_reasons": [
-      "Compétences alignées (3)",
-      "Salaire dans la cible (50,000€)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
-  },
-  {
     "source": "Welcome to the Jungle",
     "title": "CRM Campaign Manager H/F",
     "link": "https://www.welcometothejungle.com/fr/companies/nexton-consulting/jobs/crm-campaign-manager-h-f_paris_NEXTO_7gwo6Dl",
@@ -270,29 +242,6 @@
   },
   {
     "source": "LinkedIn (alerte)",
-    "title": "(Senior) Campaign Marketing Manager - Paris Shippeo · Paris (Hybride) Appliquer",
-    "link": "https://www.linkedin.com/comm/jobs/view/4448426284/?trackingId=SpmGV00eaFKcFWn4fT5Zpg%3D%3D&amp;refId=BpMLo5zr7jIRh33h%2BIBGcQ%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_jobs_facet_suggestions%3BB60vnO5ITJy6teCz4neGUw%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=3kgKu8cGEJPso1&amp;trk=eml-email_jobs_facet_suggestions-JOBS_POSTING_SECTION_2-0-job_card_0_jobid_4448426284_sectionid_275005_fmid_8ulvbk~mtk2pqhf~n&amp;trkEmail=eml-email_jobs_facet_suggestions-JOBS_POSTING_SECTION_2-0-job_card_0_jobid_4448426284_sectionid_275005_fmid_8ulvbk~mtk2pqhf~n-null-8ulvbk~mtk2pqhf~n-null-null&amp;eid=8ulvbk-mtk2pqhf-n&amp;otpToken=Yzc3M2ZlM2U0OGJlYjcxYWE5OWQyZWM1OGNkMTUyYzgzYmU4MmVlNTQ5N2ZjY2UwNzg4ZjViZTIyNjQ3NWY1MmY0ZmYzYTk1YzRjMzYwNmNlYmYwN2Y2MjM1MWMwYTMyYmMyNTQzODAyY2Q2YmVmNzhlMTM3NzcwNWExZjdkMGI5NDQ5NzQzY2JiMjk2NCwyLDE%3D",
-    "company": "",
-    "location": "",
-    "description": "",
-    "published": "2026-09-02T12:29:42+00:00",
-    "in_france": true,
-    "salary_extracted": null,
-    "telework_days": null,
-    "contract_type": null,
-    "flags": [
-      "Télétravail non mentionné"
-    ],
-    "info_flags": [],
-    "score": 6,
-    "score_reasons": [
-      "Signaux CRM lifecycle (email / segmentation / campagne)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné"
-  },
-  {
-    "source": "LinkedIn (alerte)",
     "title": "Senior Marketing Campaign Specialist (French Speaking) Trip.com Group · Paris (Hybride) Recrutement actif",
     "link": "https://www.linkedin.com/comm/jobs/view/4457478579/?trackingId=IhqSeW8Zmj0H6p3h5a%2FMgQ%3D%3D&amp;refId=FIn0cDmvHRtmAB5BEyhRgQ%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_jobs_facet_suggestions%3BHanwS5zNTryXmv4ZXumN2w%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=0QiFI2R4dJSco1&amp;trk=eml-email_jobs_facet_suggestions-JOBS_POSTING_SECTION_3-0-job_card_1_jobid_4457478579_sectionid_276018_fmid_8ulvbk~mtmxlgcg~u3&amp;trkEmail=eml-email_jobs_facet_suggestions-JOBS_POSTING_SECTION_3-0-job_card_1_jobid_4457478579_sectionid_276018_fmid_8ulvbk~mtmxlgcg~u3-null-8ulvbk~mtmxlgcg~u3-null-null&amp;eid=8ulvbk-mtmxlgcg-u3&amp;otpToken=NjJjODE4N2NmZDQ0MTNiM2Q4ODUzNmVjMmJjNTQzMjA3ZGZjZmU5NzJlNjVkM2U4OTU1ZTQ1ZDMxYmI0ZjIxYmM1MmIwOWEyNjU5MjEzNWRiNjhkNDdhYzFjYWIzNzNmMTAyNDBjYTE3MmI2NzAwYWY0YWNjZWNkNzdlZjQ4ZjY5NzFiMjkzOTIxZjIwOSwyLDE%3D",
     "company": "",
@@ -317,11 +266,34 @@
   {
     "source": "LinkedIn (alerte)",
     "title": "Chef de projet CRM & Marketing Automation H/F",
-    "link": "https://www.linkedin.com/comm/jobs/view/4459316121?alertAction=markasviewed&amp;savedSearchId=8962023274&amp;savedSearchAuthToken=1&amp;AQHLdKgVKPzLRQAAAaBcmEeWpV_Igk39bEzfkTNnmpJXUxuK9UfuytDMfCB2_i5gWym4NHOdxxE-A1e-Z3SOOT6u75SJSGz4Z2jEpBrEmfJ1WA6XGXNFEdIuwt5Cs8W_RyfJHsMViTYE2QFRssI8rsufFjAPtxnoLs4UXWyBstJPpek54d_h-vLy1L1K1SxkIwTfuvKJtigyEiOes8njauINY_m9TdebThupBTo1C9DYStJP0TMfiWTPW7stn17syQOQaiOEEQXc1G9rh17OgwjiimmXlHebG5DZWjzG6XOdMr7L_GnooQ=&amp;AUt4kEuQ4qtWEQxrnj2ljwaWpoO6=&amp;trackingId=m1onbH5tulUOGstbL5ejKw%3D%3D&amp;refId=c6f3vQ7cdF1pI4SJ9iiYcQ%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_confirmation_01%3BDY4WvjFwQKqOivNuPHqN0A%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=0nlGhG50E2Oco1&amp;trk=eml-email_job_alert_confirmation_01-email_job_alert_confirmation-0-job_posting&amp;trkEmail=eml-email_job_alert_confirmation_01-email_job_alert_confirmation-0-job_posting-null-8ulvbk~mtirgdra~as-null-null&amp;eid=8ulvbk-mtirgdra-as&amp;otpToken=YjM4NDI0YjFjZTNmMmUxZWUwMTA4MThhOWU5Y2IwN2UwOTM3ZTIwNGI3OTBlMmM0MDA4NjM5MmRjNDM3ZjUxNWZkYjRjMGUxNjA0MTVkYTNiZjEyNjA0ODkyZWM0OTdlNDA0MzUyZmI1NGJjMjdlYmEzNjE2Y2Q0MjUwMDI0YzAxYmRiNWRkYTI5MWRhYywyLDE%3D",
+    "link": "https://www.linkedin.com/comm/jobs/view/4459316121?alertAction=markasviewed&amp;savedSearchId=8962023266&amp;savedSearchAuthToken=1&amp;AQE37SGTQusNBwAAAaBcmG93jSMEyTPwLT_P22hVHf3D6A7yTNEKbr6-Bo0AFuUQqpZe8V_a8YlQ8bbKHxcRXrip5Fke5xCjrvGpHo-8VrymAzNuS7ZRJiF_xEj9ctTtmT4EJQEs_w2Hx1_pvlVCWMQXPoGVsv2Bn74_glBnclloc2mLvtr0-aTyhkUY4UgE1TZo9SeE9vMu0Ln7q0-ietqDRoR0t_T86hs9ju5wUo27rSgBhS21TaoW50zni8Njwms2Q1TNaWH7cJ5kpwy39kL6mDO1AduZYG2LOjXjV2ZaR_1xTXAcww=&amp;AQf6SjqzFHaskUxy5LJvZh4OLlq3=&amp;trackingId=7XsUqWV4Co8Uow8r0C40JA%3D%3D&amp;refId=jR%2Bqi%2BIYMyzEkiBzbgezkA%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_confirmation_01%3Bv27a8pllRwKHWRiXmz7wtA%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=2If4CFoBKaNYo1&amp;trk=eml-email_job_alert_confirmation_01-email_job_alert_confirmation-0-job_posting&amp;trkEmail=eml-email_job_alert_confirmation_01-email_job_alert_confirmation-0-job_posting-null-8ulvbk~mtin62na~ed-null-null&amp;eid=8ulvbk-mtin62na-ed&amp;otpToken=ZGU5YmFkMzY4ZDIzZTFjYTA1NDE1OTdjYzZjYmE4ZmMwMGE0NWE2NTRmNjRjM2Y1NmZjMDg0NzE4ODFkZjI4OWQ1YTI3OWMxNTRhN2I5ODkzYjE3MTI5NTAwNzFiNDFmNTIyNDgyZWQ5NjcxZjI5ZDkzNTUwMWY1MjY1YmJhYzAwYThkMjI0NDhkYTdhOSwyLDE%3D",
     "company": "",
     "location": "",
     "description": "",
-    "published": "2026-09-01T14:26:46+00:00",
+    "published": "2026-09-01T12:26:45+00:00",
+    "in_france": true,
+    "salary_extracted": null,
+    "telework_days": null,
+    "contract_type": null,
+    "flags": [
+      "Télétravail non mentionné"
+    ],
+    "info_flags": [],
+    "score": 6,
+    "score_reasons": [
+      "Signaux CRM lifecycle (email / segmentation / campagne)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+  },
+  {
+    "source": "LinkedIn (alerte)",
+    "title": "(Senior) Campaign Marketing Manager - Paris Shippeo · Paris (Hybride) Appliquer",
+    "link": "https://www.linkedin.com/comm/jobs/view/4448426284/?trackingId=SpmGV00eaFKcFWn4fT5Zpg%3D%3D&amp;refId=BpMLo5zr7jIRh33h%2BIBGcQ%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_jobs_facet_suggestions%3BB60vnO5ITJy6teCz4neGUw%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=3kgKu8cGEJPso1&amp;trk=eml-email_jobs_facet_suggestions-JOBS_POSTING_SECTION_2-0-job_card_0_jobid_4448426284_sectionid_275005_fmid_8ulvbk~mtk2pqhf~n&amp;trkEmail=eml-email_jobs_facet_suggestions-JOBS_POSTING_SECTION_2-0-job_card_0_jobid_4448426284_sectionid_275005_fmid_8ulvbk~mtk2pqhf~n-null-8ulvbk~mtk2pqhf~n-null-null&amp;eid=8ulvbk-mtk2pqhf-n&amp;otpToken=Yzc3M2ZlM2U0OGJlYjcxYWE5OWQyZWM1OGNkMTUyYzgzYmU4MmVlNTQ5N2ZjY2UwNzg4ZjViZTIyNjQ3NWY1MmY0ZmYzYTk1YzRjMzYwNmNlYmYwN2Y2MjM1MWMwYTMyYmMyNTQzODAyY2Q2YmVmNzhlMTM3NzcwNWExZjdkMGI5NDQ5NzQzY2JiMjk2NCwyLDE%3D",
+    "company": "",
+    "location": "",
+    "description": "",
+    "published": "2026-09-02T12:29:42+00:00",
     "in_france": true,
     "salary_extracted": null,
     "telework_days": null,
@@ -363,6 +335,52 @@
     ],
     "recommendation": "à_écarter",
     "recommendation_reason": "Trajet 93 min et pas 100 % télétravail"
+  },
+  {
+    "source": "Talent.com (alerte)",
+    "title": "Crm Lifecycle Specialist - F/H/X - €2.500 - €3.500 A Month - Remote",
+    "link": "https://fr.talent.com/redirect?id=cedd1f7841d5&source=talent&context=email&email_id=5db8b3d37e20663023ff&utm_product=talent-email&user_id=69045f05-d1a7-4857-9a83-0aa24a6abaee&click_type=em-jobredirect&utm_medium=email&t_id=755&search_id=427da97b0fb077c192ad4077bff27167&c_id=jbalerts_b&d_sent=1788865546&pid=4f4b6cc05545&bpid=f035115bd38c66dcdea8ad07ec499b1e&vcid=97",
+    "company": "Honoré Gaming",
+    "location": "Paris, France, FR",
+    "description": "",
+    "published": "2026-09-08T11:05:46+00:00",
+    "in_france": true,
+    "salary_extracted": null,
+    "telework_days": null,
+    "contract_type": null,
+    "commute_minutes": null,
+    "flags": [],
+    "info_flags": [],
+    "score": 6,
+    "score_reasons": [
+      "Signaux CRM lifecycle (email / segmentation / campagne)"
+    ],
+    "recommendation": "à_postuler",
+    "recommendation_reason": "Profil correspondant, aucun signal à vérifier (score 6/10)"
+  },
+  {
+    "source": "Talent.com (alerte)",
+    "title": "Remote Crm Lifecycle Specialist - Boost Engagement - €2.500 - €3.500 A Month - Remote",
+    "link": "https://fr.talent.com/redirect?id=6a212f3ba79d&source=talent&context=email&email_id=5db8b3d37e20663023ff&utm_product=talent-email&user_id=69045f05-d1a7-4857-9a83-0aa24a6abaee&click_type=em-jobredirect&utm_medium=email&t_id=755&search_id=427da97b0fb077c192ad4077bff27167&c_id=jbalerts_b&d_sent=1788865546&pid=4f4b6cc05545&bpid=25fcaae5de66f81116cdd82e53ea7c7a&vcid=79",
+    "company": "iGaming company",
+    "location": "Paris, France, FR",
+    "description": "",
+    "published": "2026-09-08T11:05:46+00:00",
+    "in_france": true,
+    "salary_extracted": null,
+    "telework_days": null,
+    "contract_type": null,
+    "commute_minutes": null,
+    "flags": [],
+    "info_flags": [
+      "Secteur iGaming — à évaluer sur le fond (pas un motif de rejet en soi)"
+    ],
+    "score": 6,
+    "score_reasons": [
+      "Signaux CRM lifecycle (email / segmentation / campagne)"
+    ],
+    "recommendation": "à_postuler",
+    "recommendation_reason": "Profil correspondant, aucun signal à vérifier (score 6/10)"
   },
   {
     "source": "Adzuna",
@@ -417,6 +435,31 @@
     ],
     "recommendation": "à_revoir",
     "recommendation_reason": "À vérifier : Télétravail non mentionné ; Annonce ancienne (213 j)"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Responsable CRM - CDI - Paris (H/F)",
+    "link": "https://www.adzuna.fr/details/5782428756?utm_medium=api&utm_source=707eaaff",
+    "company": "L'atelier des Chefs",
+    "location": "16ème Arrondissement, Paris",
+    "description": "À propos de L'atelier des Chefs L’atelier des Chefs est devenu un des leaders de la formation aux métiers essentiels de la main et de l’humain. Aujourd’hui, nous proposons plus de 30 formations diplômantes dans des secteurs clés et en tension : restauration, bâtiment, santé et social, beauté et bien-être, arts décoratifs et mécanique. Essentiels et porteurs de sens, ces métiers s'adressent à des passionnés prêts à relever les défis de demain ! Nos formations 100 % digitales, nous ont permis d'a…",
+    "salary_raw": "",
+    "published": "2026-06-30T22:49:04Z",
+    "contract_raw": "",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": "CDI",
+    "commute_minutes": null,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné"
+    ],
+    "info_flags": [],
+    "score": 5,
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
     "source": "Welcome to the Jungle",
@@ -494,57 +537,67 @@
     "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
-    "source": "LinkedIn (alerte)",
-    "title": "Senior CRM Manager (Monetisation)",
-    "link": "https://www.linkedin.com/comm/jobs/view/4460212344?alertAction=markasviewed&amp;savedSearchId=8962689098&amp;savedSearchAuthToken=1&amp;AQH0907aj10qbgAAAaBdoREPJTRy_XOeIjIlFFgSaALI2cvpOiqCUockJ-W01WyR7rSRKWn8IAJcH9_wongLp45Ht9hRbF05YM7SGJfwSx38vxR8-wuP3NTQEwVRs7JZZYgjCQKAa13oGo0LPJT-EFPZ9ZnCCOi3E8oPMN6znjSWWSwVeSZzU68b1teHwgzYrE9vo_qLlkrUjzF0mwIk74hzvBLwKKWGcuwGP9EwgYnOMh8_pEKagePUHJVacxW6xfHzqIcun2RBhmfof-ZnxESOgGJKIGwQWyxn6Asi9dxljljIC9AKYw=&amp;ATQNNA6xDRV_DAqKXNyxwNOrkLgG=&amp;trackingId=7v4fjF%2BBO9xF4Y9vD%2FSsVw%3D%3D&amp;refId=IXMXTMNnesX6%2FJzWPISHlA%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_confirmation_01%3BJgBdcCX3RuCnmA%2FrhiRHAQ%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=2374Vnc19YOco1&amp;trk=eml-email_job_alert_confirmation_01-email_job_alert_confirmation-0-job_posting&amp;trkEmail=eml-email_job_alert_confirmation_01-email_job_alert_confirmation-0-job_posting-null-8ulvbk~mtivswhu~g-null-null&amp;eid=8ulvbk-mtivswhu-g&amp;otpToken=YmQ4ZDUzYmNkZTYxNzM2NzU1MGRlNmExNmM5NzdjNzMwMjUyYmQ0MTkzNmYxYTU4N2RkYzgyZmVlZWJmZTVmOTRjZWZiNjAxOTZmNWU0YTAyNjljMjQ0YjBiYzRhMTliYjNjN2Y2MGE0NjZkYjA2ZWE5ZTNjOTNlMDk4NDY3YjY5YzVhMTJmOGNiODFjNCwyLDE%3D",
-    "company": "",
-    "location": "",
-    "description": "",
-    "published": "2026-09-01T16:28:27+00:00",
-    "in_france": true,
+    "source": "Welcome to the Jungle",
+    "title": "Head of Marketing & Communication",
+    "link": "https://www.welcometothejungle.com/fr/companies/reemo/jobs/head-of-marketing-communication_vincennes",
+    "company": "Reemo",
+    "location": "Vincennes, France",
+    "description": "### **Votre profil**\n\n* **Obsédé(e) par le Revenue :** Vous parlez couramment la langue des commerciaux (Pipeline, Win rate, Churn, ARR). Vous savez que le meilleur contenu est celui qui signe des contrats.\n    \n* **Pragmatique et Analytique :** Vous pilotez par la donnée et vous n'avez pas peur d'abandonner une initiative si les KPIs financiers ne suivent pas.\n    \n* **Copywriting Business :** Vous savez écrire pour convaincre et vendre, avec des mots percutants et orientés \"bénéfices client\".\n    \n* **Expérience :** Vous avez une expérience prouvée (5+ années) dans un rôle similaire en B2B / SaaS, avec un track record de collaboration réussie avec des équipes Sales.\n    \n* **Hands-on :** Vous êtes capable de penser la stratégie mais aussi de mettre les mains dans le cambouis pour exécuter et délivrer rapidement.\n    \n    Vous prendrez en charge l'ensemble du scope Marketing et Communication, avec une approche systématiquement ROIste :\n    \n\n**1\\. Alignement Ventes & Revenue Enablement**\n\n* Produire, tester et itérer sur le matériel d'aide à la vente (pitch decks, battle cards, calculatrices de ROI, études de cas chiffrées).\n    \n* Mettre en place des boucles de feedback avec les Sales pour adapter les contenus aux objections réelles du terrain.\n    \n* Suivre l'utilisation et l'impact des supports marketing sur le taux de closing.\n    \n\n**2\\. Génération de Demande & Soutien Leadgen**\n\n* Définir le *messaging*, les scripts et les angles d'accroche pour nos campagnes d'acquisition Inbound et Outbound.\n    \n* Tester et optimiser les messages pour maximiser les taux de réponse.\n    \n* Piloter vos actions via des indicateurs transactionnels stricts.\n    \n\n**3\\. Product Marketing & Rétention (Client existant)**\n\n* Traduire chaque nouveauté produit (Release) en bénéfices économiques et opérationnels clairs pour nos clients (zéro jargon, 100% valeur métier).\n    \n* Orchestrer l'adoption et l'upsell via nos canaux clients (newsletters ciblées, in-app, webinaires utilisateurs).\n    \n* Outiller l'équipe Customer Success (CSM) avec les bons supports (cas d'usage, templates) pour faciliter les montées en gamme et sécuriser les renouvellements.\n    \n\n**4\\. Stratégie Événementielle Ultra-ROIste**\n\n* Organiser nos événements externes (salons, webinaires) avec des objectifs de rentabilité : nombre de rendez-vous qualifiés générés et pipeline influencé.\n    \n* Imposer un processus de suivi post-événement implacable en lien avec notre directrice commerciale (SLA de relance commerciale).\n    \n\n**5\\. Intelligence Marché, Positionnement, Image & Com’ Externe**\n\n* Piloter l'image globale de l'entreprise : s'assurer que chaque action de communication reflète fidèlement notre ADN et renforce notre rayonnement sur le marché\n    \n* Assurer une veille concurrentielle active pour armer nos commerciaux d'arguments différenciants.\n    \n* Optimiser notre site web, notre blog et nos réseaux sociaux pour en faire de véritables moteurs de conversion.\n    \n* Cibler des actions de Relations Publiques (RP) ultra-qualifiées, lues par nos décideurs finaux.\n    \n* Cartographier et infiltrer les réseaux d'influence, lobbys et fédérations clés pour positionner l'entreprise au cœur des cercles de décision qui comptent.",
+    "published": "2026-09-08T13:00:00.000+02:00",
+    "contract_type": "CDI",
     "salary_extracted": null,
     "telework_days": null,
-    "contract_type": null,
+    "in_france": true,
+    "commute_minutes": 89,
     "flags": [
-      "Pertinence CRM à confirmer",
+      "Séniorité / management d'équipe ?",
+      "Inclut de l'animation réseaux sociaux / community management",
       "Télétravail non mentionné"
     ],
     "info_flags": [],
     "score": 5,
-    "score_reasons": [],
+    "score_reasons": [
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (89 min)"
+    ],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
+    "recommendation_reason": "À vérifier : Séniorité / management d'équipe ? ; Inclut de l'animation réseaux sociaux / community management ; Télétravail non mentionné"
   },
   {
-    "source": "LinkedIn (alerte)",
-    "title": "Lead CRM Manager",
-    "link": "https://www.linkedin.com/comm/jobs/view/4454997794/?trackingId=IyWFXzqFSk%2B0RK8U5CzIoA%3D%3D&amp;refId=65P4nTmoQveX67bfZggubQ%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_application_confirmation_with_nba_01%3BNfqqnyvJR0KrcCt%2BR2F0Qw%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=3RdgSe4PicOco1&amp;trk=eml-email_application_confirmation_with_nba_01-applied_jobs-0-job_posting&amp;trkEmail=eml-email_application_confirmation_with_nba_01-applied_jobs-0-job_posting-null-8ulvbk~mtiwe6an~13-null-null&amp;eid=8ulvbk-mtiwe6an-13&amp;otpToken=MDYwNmUzMTk1MDc0MDRiMmZlYzJjMmM5NTExMzY5ODdiZWQ1NmQyZTExZjI1Yzc3M2ZhOWZkMWVlNTY2NmYyZTYxZTU2MmJjYTIxOGU4NDg5NjBmOGYwYzY1YTA0MTY1YWZlZjc1ZWM5NDA2Njk3YjQyY2E4NjY2ODA3MmZiNzk4MmJjYjNlNzY2NjFhNiwyLDE%3D",
-    "company": "",
-    "location": "",
-    "description": "",
-    "published": "2026-09-01T16:44:58+00:00",
-    "in_france": true,
+    "source": "Welcome to the Jungle",
+    "title": "Head of Marketing & Brand",
+    "link": "https://www.welcometothejungle.com/fr/companies/ipem/jobs/head-of-marketing-brand_paris",
+    "company": "Ipem",
+    "location": "Paris, France",
+    "description": "–     7–10+ years in B2B marketing, ideally in events, financial services, or a related sector, including people management experience\n\n–     Deeply results- and data-driven: you set KPIs, track them rigorously, and let the numbers, not habit, drive your decisions\n\n–     Strong customer vision: you think in journeys and experience, not just campaigns and assets\n\n–     Deep knowledge of the private equity / private markets ecosystem : you know the players, the associations, and the media that cover them\n\n–     Experience contributing to brand strategy and go-to-market for a product, portfolio, or event\n\n–     Comfortable operating with real strategic and creative latitude: you help define the brief on brand direction, not just deliver against one\n\n–     Strong editorial and creative sensibility : you can write and direct high-quality content yourself, not just brief others\n\n–     Experience running a PR agency and media relationships, with a track record of securing coverage\n\n–     Partnership development experience :  you know how to identify, negotiate, and activate high-value relationships\n\n–     A natural people manager, comfortable setting direction and coaching a small team\n\n–     Fluent in English and French\n\nBONUS\n\n–     Experience at a financial events company, PE firm, GP/LP-facing organization, or industry association\n\n–     An existing network within the European private equity / private markets ecosystem\n\n–     Experience launching or repositioning a brand\n\n–     A background combining marketing strategy with hands-on content creation",
+    "published": "2026-09-08T11:00:00.000+02:00",
+    "contract_type": "CDI",
     "salary_extracted": null,
     "telework_days": null,
-    "contract_type": null,
+    "in_france": true,
+    "commute_minutes": 76,
     "flags": [
-      "Pertinence CRM à confirmer",
+      "Expérience très supérieure (10 ans exigés, ~5 en poste)",
+      "Séniorité / management d'équipe ?",
       "Télétravail non mentionné"
     ],
     "info_flags": [],
     "score": 5,
-    "score_reasons": [],
+    "score_reasons": [
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (76 min)"
+    ],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
+    "recommendation_reason": "À vérifier : Expérience très supérieure (10 ans exigés, ~5 en poste) ; Séniorité / management d'équipe ? ; Télétravail non mentionné"
   },
   {
     "source": "LinkedIn (alerte)",
-    "title": "CRM MANAGER (H/F) — PARIS",
-    "link": "https://www.linkedin.com/comm/jobs/view/4432649387/?trackingId=CiB0prusSX%2BuDBp00VPMQw%3D%3D&amp;refId=02s9uDr3SouhoUjOVSrJ2Q%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_application_confirmation_with_nba_01%3BNfqqnyvJR0KrcCt%2BR2F0Qw%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=3RdgSe4PicOco1&amp;trk=eml-email_application_confirmation_with_nba_01-jymbii-0-job_posting&amp;trkEmail=eml-email_application_confirmation_with_nba_01-jymbii-0-job_posting-null-8ulvbk~mtiwe6an~13-null-null&amp;eid=8ulvbk-mtiwe6an-13&amp;otpToken=MDYwNmUzMTk1MDc0MDRiMmZlYzJjMmM5NTExMzY5ODdiZWQ1NmQyZTExZjI1Yzc3M2ZhOWZkMWVlNTY2NmYyZTYxZTU2MmJjYTIxOGU4NDg5NjBmOGYwYzY1YTA0MTY1YWZlZjc1ZWM5NDA2Njk3YjQyY2E4NjY2ODA3MmZiNzk4MmJjYjNlNzY2NjFhNiwyLDE%3D",
+    "title": "Senior CRM Manager",
+    "link": "https://www.linkedin.com/comm/jobs/view/4463357019/?trackingId=7m5qqLa6eiWeHSlquvCSGg%3D%3D&amp;refId=BW77cDP768CI5IsiRVwv9Q%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BzlhnwN9GQh2pTl%2B60pGhkg%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=2EU7XZRASWUIo1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_2_jobid_4463357019_ssid_8962023274_fmid_8ulvbk~mtpjspav~zr&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_2_jobid_4463357019_ssid_8962023274_fmid_8ulvbk~mtpjspav~zr-null-8ulvbk~mtpjspav~zr-null-null&amp;eid=8ulvbk-mtpjspav-zr&amp;otpToken=MDQ0YTgwMjUwOGRiMTdjOGI3ZjQzNTc4M2JkOWMwNmUyOTZiYmY3YTljNjQ4ZGMwNDkzZTI3NTgzZDI2MGM0ODQzMGYyZGYwOTU4NTlkMTkxMTVlYWU2NjkzODUwZGE4ZWMxMWNkODZmOGQyZGFlOTRiMjUyMzZkZjYwMDIzZTQ1YzRkOGQ3MDhmNTYxMCwyLDE%3D",
     "company": "",
     "location": "",
     "description": "",
-    "published": "2026-09-01T16:44:58+00:00",
+    "published": "2026-09-06T08:26:45+00:00",
     "in_france": true,
     "salary_extracted": null,
     "telework_days": null,
@@ -583,12 +636,12 @@
   },
   {
     "source": "LinkedIn (alerte)",
-    "title": "Senior CRM Consultant",
-    "link": "https://www.linkedin.com/comm/jobs/view/4457733749/?trackingId=VagsBfngQr2VuwY2jSw1ZA%3D%3D&amp;refId=yNGmY9PDQ4e1AR48HekCzQ%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_application_confirmation_with_nba_01%3BLQuRFVkbQhm2amOiz2luJg%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=0QBvwAyt4ENIo1&amp;trk=eml-email_application_confirmation_with_nba_01-applied_jobs-0-job_posting&amp;trkEmail=eml-email_application_confirmation_with_nba_01-applied_jobs-0-job_posting-null-8ulvbk~mtiai5nk~o5-null-null&amp;eid=8ulvbk-mtiai5nk-o5&amp;otpToken=YzlkZTg4YjU2MWVlOTYxOTUwMWQ5NTAwMjY0ODE0MTIzZGE0NzM5MjgzZmZlMjI2ZDZlOTQxZTYxZjA2Y2U2MDllYmJjNjVmNDE1ZGIzZTk3NjVhYmQ5ODUxOWVjZTU4YWVkNTU2M2MxNmU3NWZkMzE5ODFlOTYxYzJlN2ZhM2I5ZDc5Y2QxMTMyMjBhYywyLDE%3D",
+    "title": "Responsable PRM/CRM (H/F)",
+    "link": "https://www.linkedin.com/comm/jobs/view/4459174541?alertAction=markasviewed&amp;savedSearchId=8962023266&amp;savedSearchAuthToken=1&amp;AQE37SGTQusNBwAAAaBcmG93jSMEyTPwLT_P22hVHf3D6A7yTNEKbr6-Bo0AFuUQqpZe8V_a8YlQ8bbKHxcRXrip5Fke5xCjrvGpHo-8VrymAzNuS7ZRJiF_xEj9ctTtmT4EJQEs_w2Hx1_pvlVCWMQXPoGVsv2Bn74_glBnclloc2mLvtr0-aTyhkUY4UgE1TZo9SeE9vMu0Ln7q0-ietqDRoR0t_T86hs9ju5wUo27rSgBhS21TaoW50zni8Njwms2Q1TNaWH7cJ5kpwy39kL6mDO1AduZYG2LOjXjV2ZaR_1xTXAcww=&amp;AQf6SjqzFHaskUxy5LJvZh4OLlq3=&amp;trackingId=yK%2Bc6CSM9TWPAGgqjDimAw%3D%3D&amp;refId=jR%2Bqi%2BIYMyzEkiBzbgezkA%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_confirmation_01%3Bv27a8pllRwKHWRiXmz7wtA%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=2If4CFoBKaNYo1&amp;trk=eml-email_job_alert_confirmation_01-email_job_alert_confirmation-0-job_posting&amp;trkEmail=eml-email_job_alert_confirmation_01-email_job_alert_confirmation-0-job_posting-null-8ulvbk~mtin62na~ed-null-null&amp;eid=8ulvbk-mtin62na-ed&amp;otpToken=ZGU5YmFkMzY4ZDIzZTFjYTA1NDE1OTdjYzZjYmE4ZmMwMGE0NWE2NTRmNjRjM2Y1NmZjMDg0NzE4ODFkZjI4OWQ1YTI3OWMxNTRhN2I5ODkzYjE3MTI5NTAwNzFiNDFmNTIyNDgyZWQ5NjcxZjI5ZDkzNTUwMWY1MjY1YmJhYzAwYThkMjI0NDhkYTdhOSwyLDE%3D",
     "company": "",
     "location": "",
     "description": "",
-    "published": "2026-09-01T06:32:13+00:00",
+    "published": "2026-09-01T12:26:45+00:00",
     "in_france": true,
     "salary_extracted": null,
     "telework_days": null,
@@ -605,12 +658,34 @@
   },
   {
     "source": "LinkedIn (alerte)",
-    "title": "Digital CRM Project Manager Maison Margiela · Paris",
-    "link": "https://www.linkedin.com/comm/jobs/view/4457360669/?trackingId=XZUdH4vteXK%2FcY3w8zr6fw%3D%3D&amp;refId=BpMLo5zr7jIRh33h%2BIBGcQ%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_jobs_facet_suggestions%3BB60vnO5ITJy6teCz4neGUw%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=3kgKu8cGEJPso1&amp;trk=eml-email_jobs_facet_suggestions-JOBS_POSTING_SECTION_2-0-job_card_1_jobid_4457360669_sectionid_275005_fmid_8ulvbk~mtk2pqhf~n&amp;trkEmail=eml-email_jobs_facet_suggestions-JOBS_POSTING_SECTION_2-0-job_card_1_jobid_4457360669_sectionid_275005_fmid_8ulvbk~mtk2pqhf~n-null-8ulvbk~mtk2pqhf~n-null-null&amp;eid=8ulvbk-mtk2pqhf-n&amp;otpToken=Yzc3M2ZlM2U0OGJlYjcxYWE5OWQyZWM1OGNkMTUyYzgzYmU4MmVlNTQ5N2ZjY2UwNzg4ZjViZTIyNjQ3NWY1MmY0ZmYzYTk1YzRjMzYwNmNlYmYwN2Y2MjM1MWMwYTMyYmMyNTQzODAyY2Q2YmVmNzhlMTM3NzcwNWExZjdkMGI5NDQ5NzQzY2JiMjk2NCwyLDE%3D",
+    "title": "Senior CRM Consultant",
+    "link": "https://www.linkedin.com/comm/jobs/view/4457733749?alertAction=markasviewed&amp;savedSearchId=8962023266&amp;savedSearchAuthToken=1&amp;AQE37SGTQusNBwAAAaBcmG93jSMEyTPwLT_P22hVHf3D6A7yTNEKbr6-Bo0AFuUQqpZe8V_a8YlQ8bbKHxcRXrip5Fke5xCjrvGpHo-8VrymAzNuS7ZRJiF_xEj9ctTtmT4EJQEs_w2Hx1_pvlVCWMQXPoGVsv2Bn74_glBnclloc2mLvtr0-aTyhkUY4UgE1TZo9SeE9vMu0Ln7q0-ietqDRoR0t_T86hs9ju5wUo27rSgBhS21TaoW50zni8Njwms2Q1TNaWH7cJ5kpwy39kL6mDO1AduZYG2LOjXjV2ZaR_1xTXAcww=&amp;AQf6SjqzFHaskUxy5LJvZh4OLlq3=&amp;trackingId=w7FBSy4Lh%2BsgBQd0MnGFdg%3D%3D&amp;refId=jR%2Bqi%2BIYMyzEkiBzbgezkA%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_confirmation_01%3Bv27a8pllRwKHWRiXmz7wtA%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=2If4CFoBKaNYo1&amp;trk=eml-email_job_alert_confirmation_01-email_job_alert_confirmation-0-job_posting&amp;trkEmail=eml-email_job_alert_confirmation_01-email_job_alert_confirmation-0-job_posting-null-8ulvbk~mtin62na~ed-null-null&amp;eid=8ulvbk-mtin62na-ed&amp;otpToken=ZGU5YmFkMzY4ZDIzZTFjYTA1NDE1OTdjYzZjYmE4ZmMwMGE0NWE2NTRmNjRjM2Y1NmZjMDg0NzE4ODFkZjI4OWQ1YTI3OWMxNTRhN2I5ODkzYjE3MTI5NTAwNzFiNDFmNTIyNDgyZWQ5NjcxZjI5ZDkzNTUwMWY1MjY1YmJhYzAwYThkMjI0NDhkYTdhOSwyLDE%3D",
     "company": "",
     "location": "",
     "description": "",
-    "published": "2026-09-02T12:29:42+00:00",
+    "published": "2026-09-01T12:26:45+00:00",
+    "in_france": true,
+    "salary_extracted": null,
+    "telework_days": null,
+    "contract_type": null,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné"
+    ],
+    "info_flags": [],
+    "score": 5,
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
+  },
+  {
+    "source": "LinkedIn (alerte)",
+    "title": "Senior CRM Manager (Monetisation)",
+    "link": "https://www.linkedin.com/comm/jobs/view/4460212344?alertAction=markasviewed&amp;savedSearchId=8962689098&amp;savedSearchAuthToken=1&amp;AQH0907aj10qbgAAAaBdoREPJTRy_XOeIjIlFFgSaALI2cvpOiqCUockJ-W01WyR7rSRKWn8IAJcH9_wongLp45Ht9hRbF05YM7SGJfwSx38vxR8-wuP3NTQEwVRs7JZZYgjCQKAa13oGo0LPJT-EFPZ9ZnCCOi3E8oPMN6znjSWWSwVeSZzU68b1teHwgzYrE9vo_qLlkrUjzF0mwIk74hzvBLwKKWGcuwGP9EwgYnOMh8_pEKagePUHJVacxW6xfHzqIcun2RBhmfof-ZnxESOgGJKIGwQWyxn6Asi9dxljljIC9AKYw=&amp;ATQNNA6xDRV_DAqKXNyxwNOrkLgG=&amp;trackingId=7v4fjF%2BBO9xF4Y9vD%2FSsVw%3D%3D&amp;refId=IXMXTMNnesX6%2FJzWPISHlA%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_confirmation_01%3BJgBdcCX3RuCnmA%2FrhiRHAQ%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=2374Vnc19YOco1&amp;trk=eml-email_job_alert_confirmation_01-email_job_alert_confirmation-0-job_posting&amp;trkEmail=eml-email_job_alert_confirmation_01-email_job_alert_confirmation-0-job_posting-null-8ulvbk~mtivswhu~g-null-null&amp;eid=8ulvbk-mtivswhu-g&amp;otpToken=YmQ4ZDUzYmNkZTYxNzM2NzU1MGRlNmExNmM5NzdjNzMwMjUyYmQ0MTkzNmYxYTU4N2RkYzgyZmVlZWJmZTVmOTRjZWZiNjAxOTZmNWU0YTAyNjljMjQ0YjBiYzRhMTliYjNjN2Y2MGE0NjZkYjA2ZWE5ZTNjOTNlMDk4NDY3YjY5YzVhMTJmOGNiODFjNCwyLDE%3D",
+    "company": "",
+    "location": "",
+    "description": "",
+    "published": "2026-09-01T16:28:27+00:00",
     "in_france": true,
     "salary_extracted": null,
     "telework_days": null,
@@ -649,12 +724,78 @@
   },
   {
     "source": "LinkedIn (alerte)",
-    "title": "Responsable PRM/CRM (H/F)",
-    "link": "https://www.linkedin.com/comm/jobs/view/4459174541?alertAction=markasviewed&amp;savedSearchId=8962023274&amp;savedSearchAuthToken=1&amp;AQHLdKgVKPzLRQAAAaBcmEeWpV_Igk39bEzfkTNnmpJXUxuK9UfuytDMfCB2_i5gWym4NHOdxxE-A1e-Z3SOOT6u75SJSGz4Z2jEpBrEmfJ1WA6XGXNFEdIuwt5Cs8W_RyfJHsMViTYE2QFRssI8rsufFjAPtxnoLs4UXWyBstJPpek54d_h-vLy1L1K1SxkIwTfuvKJtigyEiOes8njauINY_m9TdebThupBTo1C9DYStJP0TMfiWTPW7stn17syQOQaiOEEQXc1G9rh17OgwjiimmXlHebG5DZWjzG6XOdMr7L_GnooQ=&amp;AUt4kEuQ4qtWEQxrnj2ljwaWpoO6=&amp;trackingId=52MB6%2BjGw8E%2FmP%2BUlJfZ6Q%3D%3D&amp;refId=c6f3vQ7cdF1pI4SJ9iiYcQ%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_confirmation_01%3BDY4WvjFwQKqOivNuPHqN0A%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=0nlGhG50E2Oco1&amp;trk=eml-email_job_alert_confirmation_01-email_job_alert_confirmation-0-job_posting&amp;trkEmail=eml-email_job_alert_confirmation_01-email_job_alert_confirmation-0-job_posting-null-8ulvbk~mtirgdra~as-null-null&amp;eid=8ulvbk-mtirgdra-as&amp;otpToken=YjM4NDI0YjFjZTNmMmUxZWUwMTA4MThhOWU5Y2IwN2UwOTM3ZTIwNGI3OTBlMmM0MDA4NjM5MmRjNDM3ZjUxNWZkYjRjMGUxNjA0MTVkYTNiZjEyNjA0ODkyZWM0OTdlNDA0MzUyZmI1NGJjMjdlYmEzNjE2Y2Q0MjUwMDI0YzAxYmRiNWRkYTI5MWRhYywyLDE%3D",
+    "title": "Responsable CRM",
+    "link": "https://www.linkedin.com/comm/jobs/view/4462800315/?trackingId=k4a%2Fxxe5obGkzGEMGYa4UQ%3D%3D&amp;refId=NXS0ou%2Fy5FKrVpKNA9gBMw%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3Bz9rREMPzSx%2Bf6O%2FIC3gFCw%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=1ObuYqwm0qTso1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_2_jobid_4462800315_ssid_8962023274_fmid_8ulvbk~mto4cu4o~o4&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_2_jobid_4462800315_ssid_8962023274_fmid_8ulvbk~mto4cu4o~o4-null-8ulvbk~mto4cu4o~o4-null-null&amp;eid=8ulvbk-mto4cu4o-o4&amp;otpToken=ZmNlOTFjZWNmZDM5MzUyOGY2OWNjOWZhYjY5MDE1YjNhMTNmYTYzNzk1ZGQyMjRjM2M1NzhkMGQwODJiZGRhNmI4YTAyNmQzNmRjNmI0YjRiZjkwZmYzZjcxNmViMWY3ZDUxNTY5NDVlMTEyYTE0OTdmZGI4ZTJiOGM5NzZkMzY0MDczYzNjMTFhYmIwZCwyLDE%3D",
     "company": "",
     "location": "",
     "description": "",
-    "published": "2026-09-01T14:26:46+00:00",
+    "published": "2026-09-05T08:26:45+00:00",
+    "in_france": true,
+    "salary_extracted": null,
+    "telework_days": null,
+    "contract_type": null,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné"
+    ],
+    "info_flags": [],
+    "score": 5,
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
+  },
+  {
+    "source": "LinkedIn (alerte)",
+    "title": "CRM MANAGER (H/F) — PARIS",
+    "link": "https://www.linkedin.com/comm/jobs/view/4432649387/?trackingId=vRvtASG%2FSb22ulABrSUEhQ%3D%3D&amp;refId=s9CTDg6ORA2iYSFBLLy6dA%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_application_confirmation_with_nba_01%3Bi%2F4LyOi0TDSNeUvk3%2BJM7w%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=3C3RmUwz2hOco1&amp;trk=eml-email_application_confirmation_with_nba_01-jymbii-0-job_posting&amp;trkEmail=eml-email_application_confirmation_with_nba_01-jymbii-0-job_posting-null-8ulvbk~mtiwkb9g~1l-null-null&amp;eid=8ulvbk-mtiwkb9g-1l&amp;otpToken=ZTcxYjEwZDExMTY0M2QxNmRjODE2YmNjYjlhNzU3NzIzNzkzYTRkODgwNDFhYzljMzMxYzRiOTI2MGViZmJiNTQ1ZjQwM2U5NjAwOTg0ODE4Zjk5Y2Q4OWZiNjFjZGI3MDg2M2E5MDM1MzQ1ZjU1NTQ4YzFlZmIzYTM4ODk1NTUxY2FjZjVkZTA0ZjJiMCwyLDE%3D",
+    "company": "",
+    "location": "",
+    "description": "",
+    "published": "2026-09-01T16:49:45+00:00",
+    "in_france": true,
+    "salary_extracted": null,
+    "telework_days": null,
+    "contract_type": null,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné"
+    ],
+    "info_flags": [],
+    "score": 5,
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
+  },
+  {
+    "source": "LinkedIn (alerte)",
+    "title": "Lead CRM Manager",
+    "link": "https://www.linkedin.com/comm/jobs/view/4454997794/?trackingId=IyWFXzqFSk%2B0RK8U5CzIoA%3D%3D&amp;refId=65P4nTmoQveX67bfZggubQ%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_application_confirmation_with_nba_01%3BNfqqnyvJR0KrcCt%2BR2F0Qw%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=3RdgSe4PicOco1&amp;trk=eml-email_application_confirmation_with_nba_01-applied_jobs-0-job_posting&amp;trkEmail=eml-email_application_confirmation_with_nba_01-applied_jobs-0-job_posting-null-8ulvbk~mtiwe6an~13-null-null&amp;eid=8ulvbk-mtiwe6an-13&amp;otpToken=MDYwNmUzMTk1MDc0MDRiMmZlYzJjMmM5NTExMzY5ODdiZWQ1NmQyZTExZjI1Yzc3M2ZhOWZkMWVlNTY2NmYyZTYxZTU2MmJjYTIxOGU4NDg5NjBmOGYwYzY1YTA0MTY1YWZlZjc1ZWM5NDA2Njk3YjQyY2E4NjY2ODA3MmZiNzk4MmJjYjNlNzY2NjFhNiwyLDE%3D",
+    "company": "",
+    "location": "",
+    "description": "",
+    "published": "2026-09-01T16:44:58+00:00",
+    "in_france": true,
+    "salary_extracted": null,
+    "telework_days": null,
+    "contract_type": null,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné"
+    ],
+    "info_flags": [],
+    "score": 5,
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
+  },
+  {
+    "source": "LinkedIn (alerte)",
+    "title": "Digital CRM Project Manager Maison Margiela · Paris",
+    "link": "https://www.linkedin.com/comm/jobs/view/4457360669/?trackingId=XZUdH4vteXK%2FcY3w8zr6fw%3D%3D&amp;refId=BpMLo5zr7jIRh33h%2BIBGcQ%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_jobs_facet_suggestions%3BB60vnO5ITJy6teCz4neGUw%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=3kgKu8cGEJPso1&amp;trk=eml-email_jobs_facet_suggestions-JOBS_POSTING_SECTION_2-0-job_card_1_jobid_4457360669_sectionid_275005_fmid_8ulvbk~mtk2pqhf~n&amp;trkEmail=eml-email_jobs_facet_suggestions-JOBS_POSTING_SECTION_2-0-job_card_1_jobid_4457360669_sectionid_275005_fmid_8ulvbk~mtk2pqhf~n-null-8ulvbk~mtk2pqhf~n-null-null&amp;eid=8ulvbk-mtk2pqhf-n&amp;otpToken=Yzc3M2ZlM2U0OGJlYjcxYWE5OWQyZWM1OGNkMTUyYzgzYmU4MmVlNTQ5N2ZjY2UwNzg4ZjViZTIyNjQ3NWY1MmY0ZmYzYTk1YzRjMzYwNmNlYmYwN2Y2MjM1MWMwYTMyYmMyNTQzODAyY2Q2YmVmNzhlMTM3NzcwNWExZjdkMGI5NDQ5NzQzY2JiMjk2NCwyLDE%3D",
+    "company": "",
+    "location": "",
+    "description": "",
+    "published": "2026-09-02T12:29:42+00:00",
     "in_france": true,
     "salary_extracted": null,
     "telework_days": null,
@@ -714,77 +855,6 @@
     "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
-    "source": "LinkedIn (alerte)",
-    "title": "Responsable CRM",
-    "link": "https://www.linkedin.com/comm/jobs/view/4462800315/?trackingId=k4a%2Fxxe5obGkzGEMGYa4UQ%3D%3D&amp;refId=NXS0ou%2Fy5FKrVpKNA9gBMw%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3Bz9rREMPzSx%2Bf6O%2FIC3gFCw%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=1ObuYqwm0qTso1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_2_jobid_4462800315_ssid_8962023274_fmid_8ulvbk~mto4cu4o~o4&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_2_jobid_4462800315_ssid_8962023274_fmid_8ulvbk~mto4cu4o~o4-null-8ulvbk~mto4cu4o~o4-null-null&amp;eid=8ulvbk-mto4cu4o-o4&amp;otpToken=ZmNlOTFjZWNmZDM5MzUyOGY2OWNjOWZhYjY5MDE1YjNhMTNmYTYzNzk1ZGQyMjRjM2M1NzhkMGQwODJiZGRhNmI4YTAyNmQzNmRjNmI0YjRiZjkwZmYzZjcxNmViMWY3ZDUxNTY5NDVlMTEyYTE0OTdmZGI4ZTJiOGM5NzZkMzY0MDczYzNjMTFhYmIwZCwyLDE%3D",
-    "company": "",
-    "location": "",
-    "description": "",
-    "published": "2026-09-05T08:26:45+00:00",
-    "in_france": true,
-    "salary_extracted": null,
-    "telework_days": null,
-    "contract_type": null,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Télétravail non mentionné"
-    ],
-    "info_flags": [],
-    "score": 5,
-    "score_reasons": [],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
-  },
-  {
-    "source": "LinkedIn (alerte)",
-    "title": "Senior CRM Manager",
-    "link": "https://www.linkedin.com/comm/jobs/view/4463357019/?trackingId=7m5qqLa6eiWeHSlquvCSGg%3D%3D&amp;refId=BW77cDP768CI5IsiRVwv9Q%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BzlhnwN9GQh2pTl%2B60pGhkg%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=2EU7XZRASWUIo1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_2_jobid_4463357019_ssid_8962023274_fmid_8ulvbk~mtpjspav~zr&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_2_jobid_4463357019_ssid_8962023274_fmid_8ulvbk~mtpjspav~zr-null-8ulvbk~mtpjspav~zr-null-null&amp;eid=8ulvbk-mtpjspav-zr&amp;otpToken=MDQ0YTgwMjUwOGRiMTdjOGI3ZjQzNTc4M2JkOWMwNmUyOTZiYmY3YTljNjQ4ZGMwNDkzZTI3NTgzZDI2MGM0ODQzMGYyZGYwOTU4NTlkMTkxMTVlYWU2NjkzODUwZGE4ZWMxMWNkODZmOGQyZGFlOTRiMjUyMzZkZjYwMDIzZTQ1YzRkOGQ3MDhmNTYxMCwyLDE%3D",
-    "company": "",
-    "location": "",
-    "description": "",
-    "published": "2026-09-06T08:26:45+00:00",
-    "in_france": true,
-    "salary_extracted": null,
-    "telework_days": null,
-    "contract_type": null,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Télétravail non mentionné"
-    ],
-    "info_flags": [],
-    "score": 5,
-    "score_reasons": [],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Responsable CRM - CDI - Paris (H/F)",
-    "link": "https://www.adzuna.fr/details/5782428756?utm_medium=api&utm_source=707eaaff",
-    "company": "L'atelier des Chefs",
-    "location": "16ème Arrondissement, Paris",
-    "description": "À propos de L'atelier des Chefs L’atelier des Chefs est devenu un des leaders de la formation aux métiers essentiels de la main et de l’humain. Aujourd’hui, nous proposons plus de 30 formations diplômantes dans des secteurs clés et en tension : restauration, bâtiment, santé et social, beauté et bien-être, arts décoratifs et mécanique. Essentiels et porteurs de sens, ces métiers s'adressent à des passionnés prêts à relever les défis de demain ! Nos formations 100 % digitales, nous ont permis d'a…",
-    "salary_raw": "",
-    "published": "2026-06-30T22:49:04Z",
-    "contract_raw": "",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": "CDI",
-    "commute_minutes": 87,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Télétravail non mentionné"
-    ],
-    "info_flags": [],
-    "score": 4,
-    "score_reasons": [
-      "Trajet long (87 min)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
-  },
-  {
     "source": "Adzuna",
     "title": "Head of E-commerce (F/H)",
     "link": "https://www.adzuna.fr/details/5774380371?utm_medium=api&utm_source=707eaaff",
@@ -812,6 +882,33 @@
     ],
     "recommendation": "à_écarter",
     "recommendation_reason": "Trajet 96 min et pas 100 % télétravail"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Consultant CRM/Consultante CRM (Partiel)",
+    "link": "https://www.adzuna.fr/land/ad/5858158485?se=fL-EsJCr8RGpOLn1IELdUA&utm_medium=api&utm_source=707eaaff&v=B089F23B8B7D139015554689879246D399AB15BA",
+    "company": "CASTOR&POLLUX",
+    "location": "Paris, Ile-de-France",
+    "description": "Dans le cadre de notre offre Talents (https://www.castoretpollux.com/talents) et pour une solution d'investissement, nous recherchons un(e) consultant CRM dans un contexte international. Vos missions : Piloter le back log produit : définir, prioriser et suivre les user stories en étroite collaboration avec les équipes. Capacité à travailler sur un outil CRM Hubspot and Salesforce Coordonner les différentes parties prenantes (équipe technique, marketing, UX/UI, Data Analyste, etc.) pour garantir…",
+    "salary_raw": "",
+    "published": "2026-08-27T12:44:48Z",
+    "contract_raw": "",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": 76,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné"
+    ],
+    "info_flags": [],
+    "score": 4,
+    "score_reasons": [
+      "Trajet long (76 min)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
     "source": "Welcome to the Jungle",
