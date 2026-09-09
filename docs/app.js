@@ -324,27 +324,6 @@ function activeFilterCount() {
 }
 
 // --- Rendu d'une carte ---
-// Talent.com : le lien reçu par e-mail est un redirect de tracking à usage
-// unique qui aboutit souvent sur une liste d'offres d'un autre agrégateur
-// (jobtome / Jobgether…), jamais sur l'annonce elle-même — impossible de
-// retrouver le poste. On ajoute un lien de secours qui RECHERCHE l'annonce par
-// son intitulé (+ entreprise / lieu) sur Google, ce qui remonte l'annonce
-// d'origine (site de l'entreprise, LinkedIn, board réel).
-function aggregatorSearchHtml(job) {
-  const link = job.link || '';
-  const src = job.source || '';
-  const isTalent = /talent\.com\/redirect/i.test(link) || /talent\.com/i.test(src);
-  if (!isTalent || !job.title) return '';
-  // Employeur anonyme (« partner company ») : inutile dans la recherche.
-  const company = /partner company|confidentiel|entreprise partenaire|société partenaire/i
-    .test(job.company || '') ? '' : (job.company || '');
-  const q = `"${job.title}" ${company} ${job.location || ''} offre emploi`
-    .replace(/\s+/g, ' ').trim();
-  const url = `https://www.google.com/search?q=${encodeURIComponent(q)}`;
-  return `<div class="agg-fallback">🔎 <a href="${url}" target="_blank" rel="noopener noreferrer">Retrouver l'annonce</a>
-    <span class="agg-note">lien Talent.com indirect</span></div>`;
-}
-
 function renderCard(job) {
   const score = job.score != null ? job.score : 0;
   const salary = getSalary(job);
@@ -437,7 +416,6 @@ function renderCard(job) {
         </div>
       </div>
       ${companyHtml}
-      ${aggregatorSearchHtml(job)}
       ${appliedHtml}
       ${recoHtml}
       ${dateHtml}
@@ -655,6 +633,11 @@ async function init() {
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     allJobs = await res.json();
     if (!Array.isArray(allJobs)) throw new Error('Format inattendu');
+    // Talent.com retiré : ses liens de tracking à usage unique n'aboutissent
+    // jamais sur l'annonce (redirection vers une liste d'un autre agrégateur),
+    // offres inexploitables. Garde-fou côté affichage en plus du retrait scraper.
+    allJobs = allJobs.filter((job) =>
+      !/talent\.com/i.test(job.source || '') && !/talent\.com/i.test(job.link || ''));
     // Pré-calcul du salaire annuel normalisé pour filtre & tri
     allJobs.forEach((job) => { job._sal = parseSalaryAnnual(job); });
     loadState();
