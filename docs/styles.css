@@ -299,12 +299,6 @@ html, body {
 /* Note informative (signalée sans déclasser l'offre) */
 .tag-info { background: var(--blue-bg); color: var(--blue); border-color: #c7d6f7; }
 
-/* Lien de secours pour les offres à lien indirect (Talent.com) */
-.agg-fallback { margin: 4px 0 2px; font-size: 13px; }
-.agg-fallback a { color: var(--primary); font-weight: 600; text-decoration: none; }
-.agg-fallback a:hover { text-decoration: underline; }
-.agg-note { color: var(--text-muted); font-size: 11px; margin-left: 6px; }
-
 /* Badge « déjà postulée / suivie » (anti double-candidature) */
 .applied {
   display: inline-block;
