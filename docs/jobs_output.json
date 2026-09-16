@@ -269,11 +269,11 @@
   {
     "source": "LinkedIn (alerte)",
     "title": "Senior Lifecycle Marketing Manager",
-    "link": "https://www.linkedin.com/comm/jobs/view/4464842909/?trackingId=%2FwWQYkBpUEkI2hkvSwNA3w%3D%3D&amp;refId=%2BmYRKSOufTBxI%2BhzTfz3ow%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3Bf6XTvwTqQoyLWsghgBYMOQ%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=3J6aFi5UPO1cs1&amp;trk=eml-email_job_alert_digest_01-secondary_job_list_1-0-job_posting_1_jobid_4464842909_ssid_8962689098_fmid_8ulvbk~mty8q4jr~ia&amp;trkEmail=eml-email_job_alert_digest_01-secondary_job_list_1-0-job_posting_1_jobid_4464842909_ssid_8962689098_fmid_8ulvbk~mty8q4jr~ia-null-8ulvbk~mty8q4jr~ia-null-null&amp;eid=8ulvbk-mty8q4jr-ia&amp;otpToken=Y2U1YzczNWM1NGRhZjIzMmQ4ZGJlMDdiMjA3MGZlNWUzMjRlOWI1NjUyMWM4ZjhjZmNiMTM2NTNiN2RkZjlmMWI2NjkxMzhlNWU1MGRiYmZiMThjNmM1NDQzNTAyODRmZjVlMjM3ZGVmMDY2OGNmZmZjOTcxYTZiY2U1Y2FjMDgxZmY0YWEyMjI2MGZmZiwyLDE%3D",
+    "link": "https://www.linkedin.com/comm/jobs/view/4464842909/?trackingId=UuDQvkfHTpmEjQdO%2BO2ODg%3D%3D&amp;refId=%2Fc%2FgDTz0SOm0ySjmjBLJew%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_application_confirmation_with_nba_01%3BnSFFIRCDQ5GeA5w5T%2BPozg%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=3sDUSJrXAe1Ys1&amp;trk=eml-email_application_confirmation_with_nba_01-applied_jobs-0-job_posting&amp;trkEmail=eml-email_application_confirmation_with_nba_01-applied_jobs-0-job_posting-null-8ulvbk~mtyrzskr~ky-null-null&amp;eid=8ulvbk-mtyrzskr-ky&amp;otpToken=MThmMWUzMWFjNTJlYTJkMzYzMzY2MDMxOWM0ZDU3ZjkyNWQ3OWIyOTIzZTlhZGMwNTNjY2IyYjJkMDE1MGY5MTBlMTAzNmUxZWVjNGQ2MDY5YjQ2OWMzMmY0YThmMzBhNGQxYjJlYzU5NTlmN2I5NTU1ZDJlNjFiYzQ4NThjMTMwNjIxZTg2ZDZjZmY2MywyLDE%3D",
     "company": "",
     "location": "",
     "description": "",
-    "published": "2026-09-12T10:26:46+00:00",
+    "published": "2026-09-12T19:26:08+00:00",
     "in_france": true,
     "salary_extracted": null,
     "telework_days": null,
@@ -297,6 +297,29 @@
     "location": "",
     "description": "",
     "published": "2026-09-09T15:43:07+00:00",
+    "in_france": true,
+    "salary_extracted": null,
+    "telework_days": null,
+    "contract_type": null,
+    "flags": [
+      "Télétravail non mentionné"
+    ],
+    "info_flags": [],
+    "score": 6,
+    "score_reasons": [
+      "Signaux CRM lifecycle (email / segmentation / campagne)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+  },
+  {
+    "source": "LinkedIn (alerte)",
+    "title": "CRM & Lifecycle Manager Joko · Paris (À distance) Cette entreprise recrute rapidement Croissance rapide",
+    "link": "https://www.linkedin.com/comm/jobs/view/4461735120/?trackingId=%2FxaKwU5IgSfwwPeLr19Vjg%3D%3D&amp;refId=8YKCMp155lj4gni0b10RvA%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_jobs_facet_suggestions%3B6gPNCpK%2BRgqDtyuh1stN1A%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=2aldv_dsmdZco1&amp;trk=eml-email_jobs_facet_suggestions-JOBS_POSTING_SECTION_1-0-job_card_0_jobid_4461735120_sectionid_272001_fmid_8ulvbk~mtu2spas~l2&amp;trkEmail=eml-email_jobs_facet_suggestions-JOBS_POSTING_SECTION_1-0-job_card_0_jobid_4461735120_sectionid_272001_fmid_8ulvbk~mtu2spas~l2-null-8ulvbk~mtu2spas~l2-null-null&amp;eid=8ulvbk-mtu2spas-l2&amp;otpToken=ODJhZmEyMTNiZDM2M2E3ZjY5NmUwMmM0ZDI4ZTA5NTI4ZDg5YmZmZjUzMzRmMzUwOTQzYWFmYWNkYmU5NDFmNzZkNTEzNjM3ZDAzYzVmN2I3ZjMzYmZhMDkyODdhMTE4ZTFkMzNmNTliMjJiZGNlZGM4MjVkNjc2ZjkzMjBhMzVhYTk2MjFkZWNjYTIzMywyLDE%3D",
+    "company": "",
+    "location": "",
+    "description": "",
+    "published": "2026-09-09T12:29:42+00:00",
     "in_france": true,
     "salary_extracted": null,
     "telework_days": null,
@@ -366,29 +389,6 @@
     "location": "",
     "description": "",
     "published": "2026-09-16T11:35:57+00:00",
-    "in_france": true,
-    "salary_extracted": null,
-    "telework_days": null,
-    "contract_type": null,
-    "flags": [
-      "Télétravail non mentionné"
-    ],
-    "info_flags": [],
-    "score": 6,
-    "score_reasons": [
-      "Signaux CRM lifecycle (email / segmentation / campagne)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné"
-  },
-  {
-    "source": "LinkedIn (alerte)",
-    "title": "CRM & Lifecycle Manager Joko · Paris (À distance) Cette entreprise recrute rapidement Croissance rapide",
-    "link": "https://www.linkedin.com/comm/jobs/view/4461735120/?trackingId=%2FxaKwU5IgSfwwPeLr19Vjg%3D%3D&amp;refId=8YKCMp155lj4gni0b10RvA%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_jobs_facet_suggestions%3B6gPNCpK%2BRgqDtyuh1stN1A%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=2aldv_dsmdZco1&amp;trk=eml-email_jobs_facet_suggestions-JOBS_POSTING_SECTION_1-0-job_card_0_jobid_4461735120_sectionid_272001_fmid_8ulvbk~mtu2spas~l2&amp;trkEmail=eml-email_jobs_facet_suggestions-JOBS_POSTING_SECTION_1-0-job_card_0_jobid_4461735120_sectionid_272001_fmid_8ulvbk~mtu2spas~l2-null-8ulvbk~mtu2spas~l2-null-null&amp;eid=8ulvbk-mtu2spas-l2&amp;otpToken=ODJhZmEyMTNiZDM2M2E3ZjY5NmUwMmM0ZDI4ZTA5NTI4ZDg5YmZmZjUzMzRmMzUwOTQzYWFmYWNkYmU5NDFmNzZkNTEzNjM3ZDAzYzVmN2I3ZjMzYmZhMDkyODdhMTE4ZTFkMzNmNTliMjJiZGNlZGM4MjVkNjc2ZjkzMjBhMzVhYTk2MjFkZWNjYTIzMywyLDE%3D",
-    "company": "",
-    "location": "",
-    "description": "",
-    "published": "2026-09-09T12:29:42+00:00",
     "in_france": true,
     "salary_extracted": null,
     "telework_days": null,
@@ -526,7 +526,7 @@
     "commute_minutes": 78,
     "flags": [
       "Télétravail non mentionné",
-      "Annonce ancienne (221 j)"
+      "Annonce ancienne (222 j)"
     ],
     "info_flags": [],
     "score": 5,
@@ -535,7 +535,7 @@
       "Trajet long (78 min)"
     ],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Télétravail non mentionné ; Annonce ancienne (221 j)"
+    "recommendation_reason": "À vérifier : Télétravail non mentionné ; Annonce ancienne (222 j)"
   },
   {
     "source": "Welcome to the Jungle",
@@ -589,12 +589,12 @@
   },
   {
     "source": "LinkedIn (alerte)",
-    "title": "Chef de projet CRM H/F",
-    "link": "https://www.linkedin.com/comm/jobs/view/4456210731/?trackingId=GAgYs%2FbuiCIaHlzS8e06cw%3D%3D&amp;refId=i58kBf0su97ikxfAWf685w%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3ByboeF3FMRYWENLuY7yhn1A%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=0VBiYGWyga2Ys1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_4_jobid_4456210731_ssid_8962023274_fmid_8ulvbk~mtzsgat1~ns&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_4_jobid_4456210731_ssid_8962023274_fmid_8ulvbk~mtzsgat1~ns-null-8ulvbk~mtzsgat1~ns-null-null&amp;eid=8ulvbk-mtzsgat1-ns&amp;otpToken=ZWE2ZTZhZjg1NTNlZDJhNjY5MzM5Y2U4NThjYTNlYzVhZTRkN2U5NWRmYTk2NWM2YTZlMjQ2NDNiZTRlNTcxYmM4YzJiN2FkMDRiZDIzYjcxNzZjYjhkNDBhYWI0ZjZjNDlkZTlkMDgyZGIxYTQzNDgwMzY5MGVmMDQ5YmJiM2VjMjY3NjRlZTQ4ODQzNCwyLDE%3D",
+    "title": "Senior CRM Manager",
+    "link": "https://www.linkedin.com/comm/jobs/view/4466761081/?trackingId=XIOXogwR2LgIVC%2FE%2BTOD2A%3D%3D&amp;refId=KHvD9LBhKTjHAUV2RfPtPA%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BngnqcbDnQWi3rrVqBIef5Q%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=37a5gV65SW3Ys1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4466761081_ssid_8962023274_fmid_8ulvbk~mu0zbigq~qj&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4466761081_ssid_8962023274_fmid_8ulvbk~mu0zbigq~qj-null-8ulvbk~mu0zbigq~qj-null-null&amp;eid=8ulvbk-mu0zbigq-qj&amp;otpToken=MDI4YzBiMDk0ZWFhNGZkNTIwMDgzZDIxZDc2YTQ5YjllMTViYzY2NzE2MWNkMDhkNDQzODUwMDExNzljZTQwNDg5MGVkNTdmYmQ1YjMxMmNlYTJhZWIyYzlhZDUzNjc3ZDVhMjMzMWQxY2VjZTI0NjJkOWZkNDMwOTBkNmM0YjZkNDkyMzEzYmY4MzU3ZSwyLDE%3D",
     "company": "",
     "location": "",
     "description": "",
-    "published": "2026-09-13T12:26:46+00:00",
+    "published": "2026-09-14T08:26:45+00:00",
     "in_france": true,
     "salary_extracted": null,
     "telework_days": null,
@@ -617,6 +617,28 @@
     "location": "",
     "description": "",
     "published": "2026-09-09T14:26:46+00:00",
+    "in_france": true,
+    "salary_extracted": null,
+    "telework_days": null,
+    "contract_type": null,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné"
+    ],
+    "info_flags": [],
+    "score": 5,
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
+  },
+  {
+    "source": "LinkedIn (alerte)",
+    "title": "Chef de projet CRM H/F",
+    "link": "https://www.linkedin.com/comm/jobs/view/4456210731/?trackingId=%2BzS1ra3ioNDrrN2vyQDxXQ%3D%3D&amp;refId=6buX9fN1dNzMFXLlaBXTSQ%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BaW6wL%2FsrRZeoz2t47pfXwA%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=1WP7YAv3wq2Is1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_2_jobid_4456210731_ssid_8962023266_fmid_8ulvbk~mtzjvnsd~77&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_2_jobid_4456210731_ssid_8962023266_fmid_8ulvbk~mtzjvnsd~77-null-8ulvbk~mtzjvnsd~77-null-null&amp;eid=8ulvbk-mtzjvnsd-77&amp;otpToken=MDU0YWJhZDJhYjE1OWQ0OTI3YTdkY2E4MTllYjYyYWM1ZjI1MmQ4YTFiOWUzZjNjOWI0ZmUzZWJkMDM4MmE0NjE4ZjU4Y2FlMjZmOGVjMGY0NGJmNGUyZDllZWFhZjMyOGMxODMwNzllOTkwODk4MDM1MTlkMWUwMzc2NDI3NjU3YjU3ODNjN2Y0MzRhOCwyLDE%3D",
+    "company": "",
+    "location": "",
+    "description": "",
+    "published": "2026-09-13T08:26:45+00:00",
     "in_france": true,
     "salary_extracted": null,
     "telework_days": null,
@@ -677,12 +699,34 @@
   },
   {
     "source": "LinkedIn (alerte)",
-    "title": "CRM manager",
-    "link": "https://www.linkedin.com/comm/jobs/view/4463853269?trackingId=&amp;refId=&amp;lipi=urn%3Ali%3Apage%3Aemail_email_jobs_application_rejected_01%3BDjinzsQeSGet0yXc3U%2FV4A%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=09ulVs4WFfZso1&amp;trk=eml-email_jobs_application_rejected_01-applied_jobs-0-applied_job&amp;trkEmail=eml-email_jobs_application_rejected_01-applied_jobs-0-applied_job-null-8ulvbk~mtu9pgc4~kj-null-null&amp;eid=8ulvbk-mtu9pgc4-kj&amp;otpToken=YWIwNTVhOTYzMmQ3MGMzZWQxOTM2MDU4MzI2Mjg4YjFiNTcyZDFmNDhjODM5ZGI3YmM1ZTUxOWE4ZTZlNDhhZjVkMWRkMGE0Mzg0ZTlmMTc5ZjBjOWI3MzEzMjI3NDkzOWE2MWE3YjZlYjdlMDI5ZDEwYTVkY2FmNWNmMDFmNzA5NTQxNjkxMjc2MTM1MSwyLDE%3D",
+    "title": "CDI - Senior CRM Manager (M/F/X)",
+    "link": "https://www.linkedin.com/comm/jobs/view/4465042174/?trackingId=OKoer55RQtrch4nqzQ8jeg%3D%3D&amp;refId=Jc6AMYDy1SX7VrtJIcdZPQ%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3B5zxGePPkTS6Fick9apag8w%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=1vXBRXVKli_Yo1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_1_jobid_4465042174_ssid_8962023274_fmid_8ulvbk~mtwtaa6f~hh&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_1_jobid_4465042174_ssid_8962023274_fmid_8ulvbk~mtwtaa6f~hh-null-8ulvbk~mtwtaa6f~hh-null-null&amp;eid=8ulvbk-mtwtaa6f-hh&amp;otpToken=N2MxMDM4ZmU4MWM2YmEyNGQ4YWM3ZTlkNmUxNjUzZDVhYjM4YTMxOGEwOGY1M2RhNjBkZTFiOTIzNDgyNTcxODBkOWE2ODA1ZGM1MWRkNzVlYTc1OWQyNzU2NzUwMTg1Y2Q5ODJhZGQwMzFlOTA5YzhlMzM2Yzk5ZWNiYTY0MTI5OTNlYTViYzdmODRhYywyLDE%3D",
     "company": "",
     "location": "",
     "description": "",
-    "published": "2026-09-09T15:43:07+00:00",
+    "published": "2026-09-11T10:26:45+00:00",
+    "in_france": true,
+    "salary_extracted": null,
+    "telework_days": null,
+    "contract_type": "CDI",
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné"
+    ],
+    "info_flags": [],
+    "score": 5,
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
+  },
+  {
+    "source": "LinkedIn (alerte)",
+    "title": "CRM & Growth Marketing Manager B2B",
+    "link": "https://www.linkedin.com/comm/jobs/view/4464366076/?trackingId=2YivAGu7MYQvZNF40JrJVg%3D%3D&amp;refId=GJcllh1XIy2Suoi1yqlXcg%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BrYOaC5F%2FTAO%2Bw3A%2FQD%2Bx6Q%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=0Xe33TeZeqYYo1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_5_jobid_4464366076_ssid_8962023266_fmid_8ulvbk~mttu491n~2d&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_5_jobid_4464366076_ssid_8962023266_fmid_8ulvbk~mttu491n~2d-null-8ulvbk~mttu491n~2d-null-null&amp;eid=8ulvbk-mttu491n-2d&amp;otpToken=YWI1NzY1ZjYwZTViNjI5YjVjM2E0MTZlMTc3MDJhMjU5Y2JiODBlZWRkMDBlOGY1ODU2YmZmZDE0NGIxNDJhOTY4YTYxZDM3MGE0MzAyZGQwYzQyMzY2MzI5YmVlMWI4ODMwM2E5MDZhZjJiOGU3NzFmMGYxMzNhYzVkNmZkMzc2YTAxNDhkM2IwZmUzZiwyLDE%3D",
+    "company": "",
+    "location": "",
+    "description": "",
+    "published": "2026-09-09T08:26:45+00:00",
     "in_france": true,
     "salary_extracted": null,
     "telework_days": null,
@@ -699,8 +743,30 @@
   },
   {
     "source": "LinkedIn (alerte)",
-    "title": "CDI - Senior CRM Manager (M/F/X)",
-    "link": "https://www.linkedin.com/comm/jobs/view/4465042174?trackingId=&amp;refId=&amp;lipi=urn%3Ali%3Apage%3Aemail_email_jobs_application_rejected_01%3BDjinzsQeSGet0yXc3U%2FV4A%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=09ulVs4WFfZso1&amp;trk=eml-email_jobs_application_rejected_01-similar_jobs-0-similar_job&amp;trkEmail=eml-email_jobs_application_rejected_01-similar_jobs-0-similar_job-null-8ulvbk~mtu9pgc4~kj-null-null&amp;eid=8ulvbk-mtu9pgc4-kj&amp;otpToken=YWIwNTVhOTYzMmQ3MGMzZWQxOTM2MDU4MzI2Mjg4YjFiNTcyZDFmNDhjODM5ZGI3YmM1ZTUxOWE4ZTZlNDhhZjVkMWRkMGE0Mzg0ZTlmMTc5ZjBjOWI3MzEzMjI3NDkzOWE2MWE3YjZlYjdlMDI5ZDEwYTVkY2FmNWNmMDFmNzA5NTQxNjkxMjc2MTM1MSwyLDE%3D",
+    "title": "Chef de projet CRM (F/H)",
+    "link": "https://www.linkedin.com/comm/jobs/view/4464656084/?trackingId=gJqiPSMoQBec4FzHDxaMzQ%3D%3D&amp;refId=00ByrlExQHKBVboS5kknug%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_application_confirmation_with_nba_01%3BnSFFIRCDQ5GeA5w5T%2BPozg%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=3sDUSJrXAe1Ys1&amp;trk=eml-email_application_confirmation_with_nba_01-jymbii-0-job_posting&amp;trkEmail=eml-email_application_confirmation_with_nba_01-jymbii-0-job_posting-null-8ulvbk~mtyrzskr~ky-null-null&amp;eid=8ulvbk-mtyrzskr-ky&amp;otpToken=MThmMWUzMWFjNTJlYTJkMzYzMzY2MDMxOWM0ZDU3ZjkyNWQ3OWIyOTIzZTlhZGMwNTNjY2IyYjJkMDE1MGY5MTBlMTAzNmUxZWVjNGQ2MDY5YjQ2OWMzMmY0YThmMzBhNGQxYjJlYzU5NTlmN2I5NTU1ZDJlNjFiYzQ4NThjMTMwNjIxZTg2ZDZjZmY2MywyLDE%3D",
+    "company": "",
+    "location": "",
+    "description": "",
+    "published": "2026-09-12T19:26:08+00:00",
+    "in_france": true,
+    "salary_extracted": null,
+    "telework_days": null,
+    "contract_type": null,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné"
+    ],
+    "info_flags": [],
+    "score": 5,
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
+  },
+  {
+    "source": "LinkedIn (alerte)",
+    "title": "CRM manager",
+    "link": "https://www.linkedin.com/comm/jobs/view/4463853269?trackingId=&amp;refId=&amp;lipi=urn%3Ali%3Apage%3Aemail_email_jobs_application_rejected_01%3BDjinzsQeSGet0yXc3U%2FV4A%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=09ulVs4WFfZso1&amp;trk=eml-email_jobs_application_rejected_01-applied_jobs-0-applied_job&amp;trkEmail=eml-email_jobs_application_rejected_01-applied_jobs-0-applied_job-null-8ulvbk~mtu9pgc4~kj-null-null&amp;eid=8ulvbk-mtu9pgc4-kj&amp;otpToken=YWIwNTVhOTYzMmQ3MGMzZWQxOTM2MDU4MzI2Mjg4YjFiNTcyZDFmNDhjODM5ZGI3YmM1ZTUxOWE4ZTZlNDhhZjVkMWRkMGE0Mzg0ZTlmMTc5ZjBjOWI3MzEzMjI3NDkzOWE2MWE3YjZlYjdlMDI5ZDEwYTVkY2FmNWNmMDFmNzA5NTQxNjkxMjc2MTM1MSwyLDE%3D",
     "company": "",
     "location": "",
     "description": "",
@@ -708,7 +774,7 @@
     "in_france": true,
     "salary_extracted": null,
     "telework_days": null,
-    "contract_type": "CDI",
+    "contract_type": null,
     "flags": [
       "Pertinence CRM à confirmer",
       "Télétravail non mentionné"
@@ -793,72 +859,6 @@
     "location": "",
     "description": "",
     "published": "2026-09-10T08:26:45+00:00",
-    "in_france": true,
-    "salary_extracted": null,
-    "telework_days": null,
-    "contract_type": null,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Télétravail non mentionné"
-    ],
-    "info_flags": [],
-    "score": 5,
-    "score_reasons": [],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
-  },
-  {
-    "source": "LinkedIn (alerte)",
-    "title": "Chef de projet CRM (F/H)",
-    "link": "https://www.linkedin.com/comm/jobs/view/4464656084/?trackingId=gJqiPSMoQBec4FzHDxaMzQ%3D%3D&amp;refId=00ByrlExQHKBVboS5kknug%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_application_confirmation_with_nba_01%3BnSFFIRCDQ5GeA5w5T%2BPozg%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=3sDUSJrXAe1Ys1&amp;trk=eml-email_application_confirmation_with_nba_01-jymbii-0-job_posting&amp;trkEmail=eml-email_application_confirmation_with_nba_01-jymbii-0-job_posting-null-8ulvbk~mtyrzskr~ky-null-null&amp;eid=8ulvbk-mtyrzskr-ky&amp;otpToken=MThmMWUzMWFjNTJlYTJkMzYzMzY2MDMxOWM0ZDU3ZjkyNWQ3OWIyOTIzZTlhZGMwNTNjY2IyYjJkMDE1MGY5MTBlMTAzNmUxZWVjNGQ2MDY5YjQ2OWMzMmY0YThmMzBhNGQxYjJlYzU5NTlmN2I5NTU1ZDJlNjFiYzQ4NThjMTMwNjIxZTg2ZDZjZmY2MywyLDE%3D",
-    "company": "",
-    "location": "",
-    "description": "",
-    "published": "2026-09-12T19:26:08+00:00",
-    "in_france": true,
-    "salary_extracted": null,
-    "telework_days": null,
-    "contract_type": null,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Télétravail non mentionné"
-    ],
-    "info_flags": [],
-    "score": 5,
-    "score_reasons": [],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
-  },
-  {
-    "source": "LinkedIn (alerte)",
-    "title": "Senior CRM Manager",
-    "link": "https://www.linkedin.com/comm/jobs/view/4466761081/?trackingId=XIOXogwR2LgIVC%2FE%2BTOD2A%3D%3D&amp;refId=KHvD9LBhKTjHAUV2RfPtPA%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BngnqcbDnQWi3rrVqBIef5Q%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=37a5gV65SW3Ys1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4466761081_ssid_8962023274_fmid_8ulvbk~mu0zbigq~qj&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4466761081_ssid_8962023274_fmid_8ulvbk~mu0zbigq~qj-null-8ulvbk~mu0zbigq~qj-null-null&amp;eid=8ulvbk-mu0zbigq-qj&amp;otpToken=MDI4YzBiMDk0ZWFhNGZkNTIwMDgzZDIxZDc2YTQ5YjllMTViYzY2NzE2MWNkMDhkNDQzODUwMDExNzljZTQwNDg5MGVkNTdmYmQ1YjMxMmNlYTJhZWIyYzlhZDUzNjc3ZDVhMjMzMWQxY2VjZTI0NjJkOWZkNDMwOTBkNmM0YjZkNDkyMzEzYmY4MzU3ZSwyLDE%3D",
-    "company": "",
-    "location": "",
-    "description": "",
-    "published": "2026-09-14T08:26:45+00:00",
-    "in_france": true,
-    "salary_extracted": null,
-    "telework_days": null,
-    "contract_type": null,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Télétravail non mentionné"
-    ],
-    "info_flags": [],
-    "score": 5,
-    "score_reasons": [],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
-  },
-  {
-    "source": "LinkedIn (alerte)",
-    "title": "CRM & Growth Marketing Manager B2B",
-    "link": "https://www.linkedin.com/comm/jobs/view/4464366076/?trackingId=2YivAGu7MYQvZNF40JrJVg%3D%3D&amp;refId=GJcllh1XIy2Suoi1yqlXcg%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BrYOaC5F%2FTAO%2Bw3A%2FQD%2Bx6Q%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=0Xe33TeZeqYYo1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_5_jobid_4464366076_ssid_8962023266_fmid_8ulvbk~mttu491n~2d&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_5_jobid_4464366076_ssid_8962023266_fmid_8ulvbk~mttu491n~2d-null-8ulvbk~mttu491n~2d-null-null&amp;eid=8ulvbk-mttu491n-2d&amp;otpToken=YWI1NzY1ZjYwZTViNjI5YjVjM2E0MTZlMTc3MDJhMjU5Y2JiODBlZWRkMDBlOGY1ODU2YmZmZDE0NGIxNDJhOTY4YTYxZDM3MGE0MzAyZGQwYzQyMzY2MzI5YmVlMWI4ODMwM2E5MDZhZjJiOGU3NzFmMGYxMzNhYzVkNmZkMzc2YTAxNDhkM2IwZmUzZiwyLDE%3D",
-    "company": "",
-    "location": "",
-    "description": "",
-    "published": "2026-09-09T08:26:45+00:00",
     "in_france": true,
     "salary_extracted": null,
     "telework_days": null,
