@@ -57,19 +57,45 @@
     "recommendation_reason": "À vérifier : Écart technique large"
   },
   {
-    "source": "Adzuna",
-    "title": "Owned media lead (H/F)",
-    "link": "https://www.adzuna.fr/details/5814822714?utm_medium=api&utm_source=707eaaff",
-    "company": "Groupe OpenSourcing",
-    "location": "12ème Arrondissement, Paris",
-    "description": "Description du poste You will act as the key link between global strategy and local execution, ensuring owned media aligns with paid/earned campaigns to drive conversion and grow the loyalty/membership program. CRM & Automation: Plan and deploy automated, data-driven CRM campaigns via a Marketing Automation Platform (MAP) in line with the local marketing calendar. Data & Personalization: Leverage customer segmentation to deliver targeted content, boost member growth, and support SEO initiatives…",
-    "salary_raw": "52000-65000 €",
-    "published": "2026-07-25T03:56:36Z",
-    "contract_raw": "permanent",
+    "source": "Welcome to the Jungle",
+    "title": "Responsable Content Marketing, CRM & Conversion International H/F",
+    "link": "https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/responsable-content-marketing-crm-conversion-international-h-f_massy",
+    "company": "Crédit Agricole",
+    "location": "Massy, France",
+    "description": "<p>• Diplômé(e) d'une formation supérieure en marketing ou communication.<br><br></p><br/><p>Bonne compréhension des enjeux UX, produit et conversion.<br>Maîtrise des outils CRM et marketing automation.<br>Capacité à piloter des projets transverses dans un environnement international.<br>Excellentes qualités rédactionnelles et analytiques.<br>Anglais courant.<br>Les qualités qui feront la différence</p><p>Orientation client très forte.<br>Culture du résultat.<br>Esprit de synthèse.<br>Sens de la pédagogie.<br>Créativité associée à une approche data-driven.<br>Capacité à piloter plusieurs partenaires tout en gardant une vision stratégique.</p><br/>Anglais ",
+    "published": "2026-08-27T11:00:00.000+02:00",
+    "contract_type": "CDI",
+    "salary_extracted": null,
     "telework_days": null,
     "in_france": true,
-    "contract_type": "CDI",
-    "commute_minutes": 77,
+    "commute_minutes": 61,
+    "flags": [
+      "Télétravail non mentionné"
+    ],
+    "info_flags": [],
+    "score": 8,
+    "score_reasons": [
+      "Compétences alignées (3)",
+      "Secteur favorable : crédit",
+      "Signaux CRM lifecycle (email / segmentation / campagne)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Owned Media Lead H/F",
+    "link": "https://www.adzuna.fr/details/5841077429?utm_medium=api&utm_source=707eaaff",
+    "company": "OpenSourcing",
+    "location": "Paris, Ile-de-France",
+    "description": "You will act as the key link between global strategy and local execution, ensuring owned media aligns with paid/earned campaigns to drive conversion and grow the loyalty/membership program. CRM & Automation: Plan and deploy automated, data-driven CRM campaigns via a Marketing Automation Platform (MAP) in line with the local marketing calendar. Data & Personalization: Leverage customer segmentation to deliver targeted content, boost member growth, and support SEO initiatives. Omnichannel Collabo…",
+    "salary_raw": "52000-65000 €",
+    "published": "2026-08-14T02:35:42Z",
+    "contract_raw": "",
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": 76,
     "flags": [
       "Télétravail non mentionné"
     ],
@@ -80,10 +106,38 @@
       "Compétences alignées (3)",
       "Signaux CRM lifecycle (email / segmentation / campagne)",
       "Salaire dans la cible (52,000€)",
-      "Trajet long (77 min)"
+      "Trajet long (76 min)"
     ],
     "recommendation": "à_revoir",
     "recommendation_reason": "À vérifier : Télétravail non mentionné"
+  },
+  {
+    "source": "RemoteOK",
+    "title": "VP Pricing & Packaging",
+    "link": "https://remoteOK.com/remote-jobs/remote-vp-pricing-packaging-delinea-1137407",
+    "company": "Delinea",
+    "location": "Redwood City",
+    "description": "<p style=\"min-height:1.5em\"><strong>About Delinea:</strong><br />Delinea is a pioneer in securing human and machine identities through intelligent, centralized authorization, empowering organizations to seamlessly govern their interactions across the modern enterprise. Leveraging AI-powered intelligence, Delineaâs leading cloud-native Identity Security Platform applies context throughout the entire identity lifecycle â across cloud and traditional infrastructure, data, SaaS applications, and AI. It is the only platform that enables you to discover all identities â including workforce, IT administrator, developers, and machines â assign appropriate access levels, detect irregularities, and respond to threats in real-time. With deployment in weeks, not months, 90% fewer resources to manage than the nearest competitor, and a 99.995% uptime, Delinea delivers robust security and operational efficiency without compromise. Learn more about Delinea on <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://Delinea.com\">Delinea.com</a>, <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://nam12.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fdelinea%2F&amp;data=05%7C02%7CMichele.Eaton%40delinea.com%7C766420d58b9a492d94ca08ddd6949f59%7C18d6ed03f0e5486183d2bb7b6c7c2bb2%7C0%7C0%7C638902656186877399%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=b1LCPIWSjxvblUYLlabUnRZ43S8rcspTQcBZsz0UbmU%3D&amp;reserved=0\">LinkedIn</a>, <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://nam12.safelinks.protection.outlook.com/?url=https%3A%2F%2Fx.com%2Fdelineainc&amp;data=05%7C02%7CMichele.Eaton%40delinea.com%7C766420d58b9a492d94ca08ddd6949f59%7C18d6ed03f0e5486183d2bb7b6c7c2bb2%7C0%7C0%7C638902656186902236%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=goZhva9hWR8F0P5pO6SQUEwigdbvbZiWqmw5%2BHhhf1A%3D&amp;reserved=0\">X</a>, and <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://nam12.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.youtube.com%2F%40Delinea&amp;data=05%7C02%7CMichele.Eaton%40delinea.com%7C766420d58b9a492d94ca08ddd6949f59%7C18d6ed03f0e5486183d2bb7b6c7c2bb2%7C0%7C0%7C638902656186928751%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=uXgjuXTFu4kHWBJZ1XdNWN88Mrk5iT9Y24Ejw8fFBi8%3D&amp;reserved=0\">YouTube</a>.</p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\">Join our passionate, global team at Delinea and help us make the world a safer and more secure place. Our success is driven by world-class product leadership, outstanding engineers, and strategic investment from TPG. We value diversity, innovation, and a culture of respect and fairness. If you're ready to push boundaries and challenge the status quo in security, we want to hear from you.<br />Â </p><p style=\"min-height:1.5em\">Apply today to help us achieve our mission.</p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\">Delinea secures human, machine, and AI identities, eliminating standing privilege and reducing the attack surface across on-premises and cloud. As the platform expands into Non-Human Identity governance, AI agent identity, StrongDM, and consumption-based licensing, we are hiring a dedicated leader to own how we package value and price capability across the whole portfolio. This is a horizontal L-1 role, peer to the General Managers of Workforce, Workload and AI, reporting to the Chief Product Officer. </p><p style=\"min-height:1.5em\"><strong>What You Will Own</strong> </p><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Price and packaging architecture across the portfolio: tiering, licensing metrics, add-on structure, bundling. </p></li></ul><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Proposal quality into our monthly Price Committee: the analysis, the financial model, the recommendation, and the action register through to closure. </p></li></ul><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Discount governance, including band policy and the guardrails behind it. </p></li></ul><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Monetization for new categories: NHI governance, AI agent identity, StrongDM, consumption-based licensing. </p></li></ul><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Commercial readiness at launch, so packaging and pricing ship with the product. </p></li></ul><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">The single source of truth for pricing, packaging and quoting guidance, partnering with Product Marketing on seller enablement. </p></li></ul><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Price realization, attach rate and competitive position, informed by competitor pricing, market benchmarks and win/loss data. </p></li></ul><p style=\"min-height:1.5em\"><strong>What We Are Looking For</strong> </p><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">12+ years across pricing strategy, monetization, product management or product marketing, including 5+ years owning pricing as a named function. </p></li></ul><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">A track record of building a monetization function where none existed: cadence, governance, documentation, analytical bench. </p></li></ul><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Experience preparing and defending recommendations to a formal pricing committee or equivalent decision body. </p></li></ul><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Demonstrated design of tiered packaging for enterprise software, and strong financial modeling (pricing impact, ARR and expansion, discount optimization). </p></li></ul><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Credibility with executive peers, holding a position on pricing under pressure without direct authority over sales or finance. </p></li></ul><p style=\"min-height:1.5em\"><strong>Strongly preferred</strong> </p><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Cybersecurity or identity security (PAM, IAM, SIEM, endpoint); exposure to NHI, machine identity or secrets management. </p></li></ul><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Consumption-, usage-, or outcome-based pricing models alongside seat-based subscription. </p></li></ul><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Working knowledge of CPQ (Salesforce CPQ, Apttus); pricing through M&amp;A integration or a major commercial model transition. MBA a plus. </p></li></ul><p style=\"min-height:1.5em\"><strong>Why Now</strong> </p><p style=\"min-height:1.5em\">Pricing at Delinea has been carried by people doing it well alongside a full portfolio, and the surface area keeps growing. The opportunity is to make monetization a professional discipline, with a decision forum that already works. If you want to own monetization end-to-end rather than manage an approval queue, this role is built for it. </p><p style=\"min-height:1.5em\"><strong>Why work at Delinea? </strong></p><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">We're passionate problem-solvers helping the world's largest organizations protect what matters most: their human and machine identities.</p></li></ul><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">We invest in people who are smart, self-motivated, and collaborative.</p></li></ul><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">What we offer in return is meaningful work, a culture of innovation and great career progression.</p></li></ul><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\"><strong>At Delinea, our core values are STRONG and guide our behaviors and success:</strong></p><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Spirited - We bring energy and passion to everything we do</p></li></ul><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Trust - We act with integrity and deliver on our commitments</p></li></ul><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Respect - We listen, value different perspectives, and work as one team</p></li></ul><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Ownership - We take initiative and follow through</p></li></ul><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Nimble - We adapt quickly in a fast-changing environment</p></li></ul><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Global - We embrace diverse people and ideas to drive better outcomes</p></li></ul><p style=\"min-height:1.5em\">We believe weaving these core values into our day-to-day actions, and our process for hiring, evaluating, and promoting employees, helps us cultivate a work environment that embraces collaboration and camaraderie.</p><p style=\"min-height:1.5em\">We take care of our employees. We offer competitive salaries, a meaningful bonus program, and excellent benefits, including healthcare insurance, as well as pension/retirement matching, comprehensive life insurance, an employee assistance program, time off plans, and paid company holidays. </p><p style=\"min-height:1.5em\"><em>Delinea is an Equal Opportunity and Affirmative Action employer and prohibits discrimination and harassment of any type with regard to race, color, religion, age, sex, national origin, disability status, genetics, protected veteran status, sexual orientation, gender identity or expression, or any other characteristic protected by federal, state or local laws.</em></p><p style=\"min-height:1.5em\"><em>Upon conditional offer of employment, candidates are required to complete comprehensive criminal background check, verification of education, and verification of employment, per employment policy. In addition, all publicly posted social media sites may be reviewed.</em></p><p style=\"min-height:1.5em\"><em>Â </em></p><p style=\"min-height:1.5em\"><em>Â </em></p><p style=\"min-height:1.5em\"><em>Â </em></p><p style=\"min-height:1.5em\">Â </p><p style=\"min-height:1.5em\"><strong><br /></strong></p><br/><br/>Please mention the word **JOLLIFY** and tag RNDguMjE0LjUzLjg2 when applying to show you read the job post completely (#RNDguMjE0LjUzLjg2). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+    "salary_raw": "300000-340000 $",
+    "published": "2026-09-19T00:00:16+00:00",
+    "telework_days": 5,
+    "in_france": true,
+    "contract_type": null,
+    "flags": [
+      "Salaire en USD",
+      "Expérience très supérieure (12 ans exigés, ~5 en poste)",
+      "Séniorité / management d'équipe ?",
+      "Inclut de l'animation réseaux sociaux / community management"
+    ],
+    "info_flags": [],
+    "score": 8,
+    "score_reasons": [
+      "Secteur favorable : insurance",
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Télétravail 5j/sem"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Salaire en USD ; Expérience très supérieure (12 ans exigés, ~5 en poste) ; Séniorité / management d'équipe ?"
   },
   {
     "source": "Welcome to the Jungle",
@@ -218,40 +272,13 @@
     "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
-    "source": "Adzuna",
-    "title": "Responsable Content Marketing, CRM & Conversion International H/F",
-    "link": "https://www.adzuna.fr/details/5857645104?utm_medium=api&utm_source=707eaaff",
-    "company": "Crédit Agricole Consumer Finance",
-    "location": "Massy, Palaiseau",
-    "description": "Dans le cadre de notre développement international, nous recherchons un(e) Responsable Content Marketing, CRM & Conversion pour piloter l'ensemble de la stratégie de contenu, de nurturing et d'optimisation des parcours clients. Au sein de l'équipe Marketing & Distribution de CA Savings, vous jouerez un rôle clé dans la transformation du trafic digital en opportunités commerciales et en clients fidèles. Vos missions Vous aurez pour responsabilités de : Traduire les offres et produits en messages…",
-    "salary_raw": "",
-    "published": "2026-08-27T03:04:29Z",
-    "contract_raw": "permanent",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": "CDI",
-    "commute_minutes": 48,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Télétravail non mentionné"
-    ],
-    "info_flags": [],
-    "score": 6,
-    "score_reasons": [
-      "Secteur favorable : finance"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
-  },
-  {
     "source": "LinkedIn (alerte)",
-    "title": "Senior Lifecycle Marketing Manager",
-    "link": "https://www.linkedin.com/comm/jobs/view/4464842909/?trackingId=%2FwWQYkBpUEkI2hkvSwNA3w%3D%3D&amp;refId=%2BmYRKSOufTBxI%2BhzTfz3ow%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3Bf6XTvwTqQoyLWsghgBYMOQ%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=3J6aFi5UPO1cs1&amp;trk=eml-email_job_alert_digest_01-secondary_job_list_1-0-job_posting_1_jobid_4464842909_ssid_8962689098_fmid_8ulvbk~mty8q4jr~ia&amp;trkEmail=eml-email_job_alert_digest_01-secondary_job_list_1-0-job_posting_1_jobid_4464842909_ssid_8962689098_fmid_8ulvbk~mty8q4jr~ia-null-8ulvbk~mty8q4jr~ia-null-null&amp;eid=8ulvbk-mty8q4jr-ia&amp;otpToken=Y2U1YzczNWM1NGRhZjIzMmQ4ZGJlMDdiMjA3MGZlNWUzMjRlOWI1NjUyMWM4ZjhjZmNiMTM2NTNiN2RkZjlmMWI2NjkxMzhlNWU1MGRiYmZiMThjNmM1NDQzNTAyODRmZjVlMjM3ZGVmMDY2OGNmZmZjOTcxYTZiY2U1Y2FjMDgxZmY0YWEyMjI2MGZmZiwyLDE%3D",
+    "title": "Integrated Campaigns and Industry Marketing Lead – EMEA",
+    "link": "https://www.linkedin.com/comm/jobs/view/4468022839/?trackingId=k2Kgx5GuWq2MP3U7neOlMA%3D%3D&amp;refId=g93wjH%2B834EE8VCzkuKAMA%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BkwQba5NBTOKOOwXAMFkF9A%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=0RtG21JuVWcss1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_1_jobid_4468022839_ssid_8962023266_fmid_8ulvbk~mu9jykdo~ju&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_1_jobid_4468022839_ssid_8962023266_fmid_8ulvbk~mu9jykdo~ju-null-8ulvbk~mu9jykdo~ju-null-null&amp;eid=8ulvbk-mu9jykdo-ju&amp;otpToken=NWM0NGRiM2UxOGQzNmEzZTE2OTRkZmE5YTgzNTYyMmM5YmFmZmE1YTI1MTc4MmRkYjVmMzNkYWMzY2YwYmNhYzRlOWExMmM1MWZhMjQ4NTNkMjc4MGE5ZDc5MDA4MzQ3NGM0NGQ5ZjAyNjA4NTliODc0ZTJkMTMzOTEzMmUzY2Y2ZmFlMjNjN2U3NmM4YywyLDE%3D",
     "company": "",
     "location": "",
     "description": "",
-    "published": "2026-09-12T10:26:46+00:00",
+    "published": "2026-09-20T08:26:42+00:00",
     "in_france": true,
     "salary_extracted": null,
     "telework_days": null,
@@ -270,11 +297,11 @@
   {
     "source": "LinkedIn (alerte)",
     "title": "(Senior) Campaign Marketing Manager - Paris",
-    "link": "https://www.linkedin.com/comm/jobs/view/4465561108/?trackingId=9zmjN%2FX9m%2BrfiSrIgwSPqg%3D%3D&amp;refId=0iNEIJK6%2FuieuMax5TvpXw%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BSS6oJkAVTwGHFJ5IHebxUA%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=3Pqr5f5G8y8cs1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4465561108_ssid_8962023274_fmid_8ulvbk~mu55cp4i~ik&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4465561108_ssid_8962023274_fmid_8ulvbk~mu55cp4i~ik-null-8ulvbk~mu55cp4i~ik-null-null&amp;eid=8ulvbk-mu55cp4i-ik&amp;otpToken=ZTk0MjU1NjlhMzc0YTBmMGYzMDE3NWJiOTk2NmFlOTkzMWM2NmViYTIyZTNjNWEyMmZjMTU1NTYxNDRlMWZhOTRmNjYyMmZhNzY3NDY4YmQ5ODA1NDcyYTI5N2JlNjkxZTZmNWY1YTU4ZDI1MTI5ZGQxOTc3MmFjMzdiMWVhMTZhMDljNjdkZmY3NzQzOCwyLDE%3D",
+    "link": "https://www.linkedin.com/comm/jobs/view/4465561108/?trackingId=fSURAxVZ8foxxkgRQo9bIw%3D%3D&amp;refId=A%2BdAXh5QXOIIUo%2FcFBb2Lw%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3B0sJe8haORM2mFHBFwEE61g%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=3ufjOZqLiq8cs1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4465561108_ssid_8962023266_fmid_8ulvbk~mu59n0fz~p9&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4465561108_ssid_8962023266_fmid_8ulvbk~mu59n0fz~p9-null-8ulvbk~mu59n0fz~p9-null-null&amp;eid=8ulvbk-mu59n0fz-p9&amp;otpToken=ZDU5MGRkOGE4NzIyZDA1NGNmOGM5MTA3MDIzMzc5YzIyMjdjZWVkYzJjYzdiODI4N2E5NWU0ZDQyNGZkN2MyODE1ZGNhMjRiOGU1YWYxMzM5ZjgxYWNhODk1MmNhOWYzMWQyZjFmYWYxZjE1YzFmNDlhNmM4NmIxMTk3Nzc2YTMwMGRmYzdkNzlmNWJkNiwyLDE%3D",
     "company": "",
     "location": "",
     "description": "",
-    "published": "2026-09-17T06:26:43+00:00",
+    "published": "2026-09-17T08:26:43+00:00",
     "in_france": true,
     "salary_extracted": null,
     "telework_days": null,
@@ -365,7 +392,7 @@
   {
     "source": "Adzuna",
     "title": "CRM Marketing Manager (H/F) (CDI)",
-    "link": "https://www.adzuna.fr/land/ad/5877890650?se=GFN9cnC08RGSI57gYuD12g&utm_medium=api&utm_source=707eaaff&v=66F2F948FB2BC7E56840F16DF27856962C2D36BD",
+    "link": "https://www.adzuna.fr/land/ad/5877890650?se=PkCpqNe08RGk6dCvHcHp9g&utm_medium=api&utm_source=707eaaff&v=66F2F948FB2BC7E56840F16DF27856962C2D36BD",
     "company": "ARAVATI FRANCE",
     "location": "1er Arrondissement, Paris",
     "description": "Vous aimez construire plutôt que maintenir ? Vous recherchez un poste où le CRM n'est pas seulement un outil marketing mais un véritable levier de transformation de l'entreprise ? Notre client, acteur majeur du conseil, de l'audit et de l'expertise auprès des entreprises, poursuit une transformation ambitieuse de son organisation et de son approche commerciale. Dans ce contexte, il crée le poste de CRM Marketing Manager, véritable référent de la stratégie CRM et Marketing Automation. Vous prene…",
@@ -414,6 +441,33 @@
     ],
     "recommendation": "à_revoir",
     "recommendation_reason": "À vérifier : Télétravail non mentionné"
+  },
+  {
+    "source": "Adzuna",
+    "title": "Revenue Operations Expert - Remote",
+    "link": "https://www.adzuna.fr/details/5890298991?utm_medium=api&utm_source=707eaaff",
+    "company": "YO AI Labs",
+    "location": "Paris, Ile-de-France",
+    "description": "Sales / Revenue / CS Operations Expert Job Type: Contractor Location: Remote Role Overview We are looking for experienced Sales, Revenue, or Customer Success Operations professionals with strong CRM expertise and operational judgment. The role focuses on improving workflows, data accuracy, reporting, and revenue operations across SaaS environments. Key Responsibilities Configure and manage CRM platforms such as Salesforce, HubSpot, or similar tools . Manage revenue tools including quoting, bill…",
+    "salary_raw": "40-80 €",
+    "published": "2026-09-19T09:20:51Z",
+    "contract_raw": "",
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": 76,
+    "flags": [
+      "Customer Success / Account mgmt ?",
+      "Pertinence CRM à confirmer"
+    ],
+    "info_flags": [],
+    "score": 5,
+    "score_reasons": [
+      "Compétences alignées (3)",
+      "Trajet long (76 min)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Customer Success / Account mgmt ? ; Pertinence CRM à confirmer"
   },
   {
     "source": "Adzuna",
@@ -521,34 +575,34 @@
   },
   {
     "source": "LinkedIn (alerte)",
-    "title": "Rétention & CRM DTC compléments alimentaires (100% - remote Europe)",
-    "link": "https://www.linkedin.com/comm/jobs/view/4464551069/?trackingId=xG37UoCZX4zADMintBnzTw%3D%3D&amp;refId=CNpiHghAmoM3N2k1MTae0Q%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3Bf6XTvwTqQoyLWsghgBYMOQ%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=3J6aFi5UPO1cs1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_1_jobid_4464551069_ssid_8910031762_fmid_8ulvbk~mty8q4jr~ia&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_1_jobid_4464551069_ssid_8910031762_fmid_8ulvbk~mty8q4jr~ia-null-8ulvbk~mty8q4jr~ia-null-null&amp;eid=8ulvbk-mty8q4jr-ia&amp;otpToken=Y2U1YzczNWM1NGRhZjIzMmQ4ZGJlMDdiMjA3MGZlNWUzMjRlOWI1NjUyMWM4ZjhjZmNiMTM2NTNiN2RkZjlmMWI2NjkxMzhlNWU1MGRiYmZiMThjNmM1NDQzNTAyODRmZjVlMjM3ZGVmMDY2OGNmZmZjOTcxYTZiY2U1Y2FjMDgxZmY0YWEyMjI2MGZmZiwyLDE%3D",
+    "title": "Responsable CRM",
+    "link": "https://www.linkedin.com/comm/jobs/view/4467556348/?trackingId=VI7CkQvO%2F4vtGHF0gEJ9ig%3D%3D&amp;refId=Uzsw4GF6sV1wR4X79rQhUw%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BRkwDh%2FjAQVeysLkoksGsgA%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=1reW1MFVnqaYs1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_3_jobid_4467556348_ssid_8962023266_fmid_8ulvbk~mu84irir~rg&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_3_jobid_4467556348_ssid_8962023266_fmid_8ulvbk~mu84irir~rg-null-8ulvbk~mu84irir~rg-null-null&amp;eid=8ulvbk-mu84irir-rg&amp;otpToken=OGJmYWY5MTgwMzliZWQyNzdmOWQ5M2QyYTM4YWYwYmQxNjY3YjNiNTNmY2YwZDQ4NjZmZDQwY2NkYWZjNDUxMjcyYWJiODA1NzJmNGY1ZDIyM2VmYzVkMjdiN2EyZTM2OTgzNzI3NjRjZTgxMzM3MDYzNmY0NjAzZDY0OTAzOWI3OTg3OTUxMDI4ZTM0YiwyLDE%3D",
     "company": "",
     "location": "",
     "description": "",
-    "published": "2026-09-12T10:26:46+00:00",
+    "published": "2026-09-19T08:26:46+00:00",
     "in_france": true,
     "salary_extracted": null,
     "telework_days": null,
     "contract_type": null,
     "flags": [
-      "Customer Success / Account mgmt ?",
-      "Pertinence CRM à confirmer"
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné"
     ],
     "info_flags": [],
     "score": 5,
     "score_reasons": [],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Customer Success / Account mgmt ? ; Pertinence CRM à confirmer"
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
     "source": "LinkedIn (alerte)",
-    "title": "CRM Manager",
-    "link": "https://www.linkedin.com/comm/jobs/view/4465531797/?trackingId=Ca8%2FNQE9pi95EoTUzU0lAg%3D%3D&amp;refId=0iNEIJK6%2FuieuMax5TvpXw%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BSS6oJkAVTwGHFJ5IHebxUA%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=3Pqr5f5G8y8cs1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_1_jobid_4465531797_ssid_8962023274_fmid_8ulvbk~mu55cp4i~ik&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_1_jobid_4465531797_ssid_8962023274_fmid_8ulvbk~mu55cp4i~ik-null-8ulvbk~mu55cp4i~ik-null-null&amp;eid=8ulvbk-mu55cp4i-ik&amp;otpToken=ZTk0MjU1NjlhMzc0YTBmMGYzMDE3NWJiOTk2NmFlOTkzMWM2NmViYTIyZTNjNWEyMmZjMTU1NTYxNDRlMWZhOTRmNjYyMmZhNzY3NDY4YmQ5ODA1NDcyYTI5N2JlNjkxZTZmNWY1YTU4ZDI1MTI5ZGQxOTc3MmFjMzdiMWVhMTZhMDljNjdkZmY3NzQzOCwyLDE%3D",
+    "title": "📋Consultant Data & CRM (senior)",
+    "link": "https://www.linkedin.com/comm/jobs/view/4469217549/?trackingId=5x16X4JPkkubvrds9bPyDQ%3D%3D&amp;refId=0xac6gecmtgxka6ZAA0FiA%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BkwQba5NBTOKOOwXAMFkF9A%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=0RtG21JuVWcss1&amp;trk=eml-email_job_alert_digest_01-secondary_job_list_1-0-job_posting_1_jobid_4469217549_ssid_8910031762_fmid_8ulvbk~mu9jykdo~ju&amp;trkEmail=eml-email_job_alert_digest_01-secondary_job_list_1-0-job_posting_1_jobid_4469217549_ssid_8910031762_fmid_8ulvbk~mu9jykdo~ju-null-8ulvbk~mu9jykdo~ju-null-null&amp;eid=8ulvbk-mu9jykdo-ju&amp;otpToken=NWM0NGRiM2UxOGQzNmEzZTE2OTRkZmE5YTgzNTYyMmM5YmFmZmE1YTI1MTc4MmRkYjVmMzNkYWMzY2YwYmNhYzRlOWExMmM1MWZhMjQ4NTNkMjc4MGE5ZDc5MDA4MzQ3NGM0NGQ5ZjAyNjA4NTliODc0ZTJkMTMzOTEzMmUzY2Y2ZmFlMjNjN2U3NmM4YywyLDE%3D",
     "company": "",
     "location": "",
     "description": "",
-    "published": "2026-09-17T06:26:43+00:00",
+    "published": "2026-09-20T08:26:42+00:00",
     "in_france": true,
     "salary_extracted": null,
     "telework_days": null,
@@ -566,11 +620,77 @@
   {
     "source": "LinkedIn (alerte)",
     "title": "CRM Manager",
-    "link": "https://www.linkedin.com/comm/jobs/view/4466806720/?trackingId=WuP4sU8MraytiTlSzr0fAA%3D%3D&amp;refId=0iNEIJK6%2FuieuMax5TvpXw%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BSS6oJkAVTwGHFJ5IHebxUA%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=3Pqr5f5G8y8cs1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_3_jobid_4466806720_ssid_8962023274_fmid_8ulvbk~mu55cp4i~ik&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_3_jobid_4466806720_ssid_8962023274_fmid_8ulvbk~mu55cp4i~ik-null-8ulvbk~mu55cp4i~ik-null-null&amp;eid=8ulvbk-mu55cp4i-ik&amp;otpToken=ZTk0MjU1NjlhMzc0YTBmMGYzMDE3NWJiOTk2NmFlOTkzMWM2NmViYTIyZTNjNWEyMmZjMTU1NTYxNDRlMWZhOTRmNjYyMmZhNzY3NDY4YmQ5ODA1NDcyYTI5N2JlNjkxZTZmNWY1YTU4ZDI1MTI5ZGQxOTc3MmFjMzdiMWVhMTZhMDljNjdkZmY3NzQzOCwyLDE%3D",
+    "link": "https://www.linkedin.com/comm/jobs/view/4465531797/?trackingId=fDEJBl3j9pu9XmPQ%2FOHrsw%3D%3D&amp;refId=A%2BdAXh5QXOIIUo%2FcFBb2Lw%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3B0sJe8haORM2mFHBFwEE61g%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=3ufjOZqLiq8cs1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_1_jobid_4465531797_ssid_8962023266_fmid_8ulvbk~mu59n0fz~p9&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_1_jobid_4465531797_ssid_8962023266_fmid_8ulvbk~mu59n0fz~p9-null-8ulvbk~mu59n0fz~p9-null-null&amp;eid=8ulvbk-mu59n0fz-p9&amp;otpToken=ZDU5MGRkOGE4NzIyZDA1NGNmOGM5MTA3MDIzMzc5YzIyMjdjZWVkYzJjYzdiODI4N2E5NWU0ZDQyNGZkN2MyODE1ZGNhMjRiOGU1YWYxMzM5ZjgxYWNhODk1MmNhOWYzMWQyZjFmYWYxZjE1YzFmNDlhNmM4NmIxMTk3Nzc2YTMwMGRmYzdkNzlmNWJkNiwyLDE%3D",
     "company": "",
     "location": "",
     "description": "",
-    "published": "2026-09-17T06:26:43+00:00",
+    "published": "2026-09-17T08:26:43+00:00",
+    "in_france": true,
+    "salary_extracted": null,
+    "telework_days": null,
+    "contract_type": null,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné"
+    ],
+    "info_flags": [],
+    "score": 5,
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
+  },
+  {
+    "source": "LinkedIn (alerte)",
+    "title": "CRM Manager",
+    "link": "https://www.linkedin.com/comm/jobs/view/4466806720/?trackingId=Imq7F%2Fx%2FtvxoYkA5UeTxVA%3D%3D&amp;refId=A%2BdAXh5QXOIIUo%2FcFBb2Lw%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3B0sJe8haORM2mFHBFwEE61g%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=3ufjOZqLiq8cs1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_3_jobid_4466806720_ssid_8962023266_fmid_8ulvbk~mu59n0fz~p9&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_3_jobid_4466806720_ssid_8962023266_fmid_8ulvbk~mu59n0fz~p9-null-8ulvbk~mu59n0fz~p9-null-null&amp;eid=8ulvbk-mu59n0fz-p9&amp;otpToken=ZDU5MGRkOGE4NzIyZDA1NGNmOGM5MTA3MDIzMzc5YzIyMjdjZWVkYzJjYzdiODI4N2E5NWU0ZDQyNGZkN2MyODE1ZGNhMjRiOGU1YWYxMzM5ZjgxYWNhODk1MmNhOWYzMWQyZjFmYWYxZjE1YzFmNDlhNmM4NmIxMTk3Nzc2YTMwMGRmYzdkNzlmNWJkNiwyLDE%3D",
+    "company": "",
+    "location": "",
+    "description": "",
+    "published": "2026-09-17T08:26:43+00:00",
+    "in_france": true,
+    "salary_extracted": null,
+    "telework_days": null,
+    "contract_type": null,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné"
+    ],
+    "info_flags": [],
+    "score": 5,
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
+  },
+  {
+    "source": "LinkedIn (alerte)",
+    "title": "Chef de projet CRM H/F",
+    "link": "https://www.linkedin.com/comm/jobs/view/4456210731/?trackingId=GAgYs%2FbuiCIaHlzS8e06cw%3D%3D&amp;refId=i58kBf0su97ikxfAWf685w%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3ByboeF3FMRYWENLuY7yhn1A%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=0VBiYGWyga2Ys1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_4_jobid_4456210731_ssid_8962023274_fmid_8ulvbk~mtzsgat1~ns&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_4_jobid_4456210731_ssid_8962023274_fmid_8ulvbk~mtzsgat1~ns-null-8ulvbk~mtzsgat1~ns-null-null&amp;eid=8ulvbk-mtzsgat1-ns&amp;otpToken=ZWE2ZTZhZjg1NTNlZDJhNjY5MzM5Y2U4NThjYTNlYzVhZTRkN2U5NWRmYTk2NWM2YTZlMjQ2NDNiZTRlNTcxYmM4YzJiN2FkMDRiZDIzYjcxNzZjYjhkNDBhYWI0ZjZjNDlkZTlkMDgyZGIxYTQzNDgwMzY5MGVmMDQ5YmJiM2VjMjY3NjRlZTQ4ODQzNCwyLDE%3D",
+    "company": "",
+    "location": "",
+    "description": "",
+    "published": "2026-09-13T12:26:46+00:00",
+    "in_france": true,
+    "salary_extracted": null,
+    "telework_days": null,
+    "contract_type": null,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné"
+    ],
+    "info_flags": [],
+    "score": 5,
+    "score_reasons": [],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
+  },
+  {
+    "source": "LinkedIn (alerte)",
+    "title": "Senior CRM Manager",
+    "link": "https://www.linkedin.com/comm/jobs/view/4466761081/?trackingId=XIOXogwR2LgIVC%2FE%2BTOD2A%3D%3D&amp;refId=KHvD9LBhKTjHAUV2RfPtPA%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BngnqcbDnQWi3rrVqBIef5Q%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=37a5gV65SW3Ys1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4466761081_ssid_8962023274_fmid_8ulvbk~mu0zbigq~qj&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4466761081_ssid_8962023274_fmid_8ulvbk~mu0zbigq~qj-null-8ulvbk~mu0zbigq~qj-null-null&amp;eid=8ulvbk-mu0zbigq-qj&amp;otpToken=MDI4YzBiMDk0ZWFhNGZkNTIwMDgzZDIxZDc2YTQ5YjllMTViYzY2NzE2MWNkMDhkNDQzODUwMDExNzljZTQwNDg5MGVkNTdmYmQ1YjMxMmNlYTJhZWIyYzlhZDUzNjc3ZDVhMjMzMWQxY2VjZTI0NjJkOWZkNDMwOTBkNmM0YjZkNDkyMzEzYmY4MzU3ZSwyLDE%3D",
+    "company": "",
+    "location": "",
+    "description": "",
+    "published": "2026-09-14T08:26:45+00:00",
     "in_france": true,
     "salary_extracted": null,
     "telework_days": null,
@@ -610,13 +730,13 @@
     "recommendation_reason": "À vérifier : Customer Success / Account mgmt ? ; Pertinence CRM à confirmer ; Séniorité / management d'équipe ?"
   },
   {
-    "source": "LinkedIn (alerte)",
-    "title": "Responsable CRM",
-    "link": "https://www.linkedin.com/comm/jobs/view/4467556348/?trackingId=SnJTs7g2yNKSipT141U32Q%3D%3D&amp;refId=R6ErVlcFp21qj8eVoflPxQ%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BOFcOWeIXSBC2WEZrlJdmKQ%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=2mCIcznsvabcs1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_5_jobid_4467556348_ssid_8962023274_fmid_8ulvbk~mu8d3eji~2z&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_5_jobid_4467556348_ssid_8962023274_fmid_8ulvbk~mu8d3eji~2z-null-8ulvbk~mu8d3eji~2z-null-null&amp;eid=8ulvbk-mu8d3eji-2z&amp;otpToken=MmE1YmYwMTJiOWI0ZDA4ZmIxMGNmOWQxOGM1MTY5YzlhZmIzNjhjNWNhOTE3N2NlNjBlOTZlNjFjOGMwMmVmMzI4MjU1OGZkYWU5ZjIzOTVhN2VmMzVkNGU5OGY0MzAyZjkyZDA5YjIyOTQzYWZhNThjMDIzMGRiNGY1MTBmMDBlMDYzZTBkZDQ5NWZhOSwyLDE%3D",
+    "source": "Meteojob (alerte)",
+    "title": "Scrum Master CRM H/F",
+    "link": "https://www.meteojob.com/jobs/54882234?my-meteo=true&auth=u3t5KCbo3jYekf9mnpO1lS2EsKJBv9ynzjg4uJAtOCg&utm_source=mailing&utm_medium=email&utm_campaign=newOfferAlert_HotOffer&campaign=HOT_OFFER_20260920&client=14951836&cc_mail_id=HOT_OFFER_20260920&cc_campaign=HOT_OFFER&cc_variant=DEFAULT&utm_content=linkTextOffer",
     "company": "",
     "location": "",
     "description": "",
-    "published": "2026-09-19T12:26:45+00:00",
+    "published": "2026-09-20T04:57:47+02:00",
     "in_france": true,
     "salary_extracted": null,
     "telework_days": null,
@@ -632,13 +752,13 @@
     "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
-    "source": "LinkedIn (alerte)",
-    "title": "Chef de projet CRM H/F",
-    "link": "https://www.linkedin.com/comm/jobs/view/4456210731/?trackingId=%2BzS1ra3ioNDrrN2vyQDxXQ%3D%3D&amp;refId=6buX9fN1dNzMFXLlaBXTSQ%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BaW6wL%2FsrRZeoz2t47pfXwA%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=1WP7YAv3wq2Is1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_2_jobid_4456210731_ssid_8962023266_fmid_8ulvbk~mtzjvnsd~77&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_2_jobid_4456210731_ssid_8962023266_fmid_8ulvbk~mtzjvnsd~77-null-8ulvbk~mtzjvnsd~77-null-null&amp;eid=8ulvbk-mtzjvnsd-77&amp;otpToken=MDU0YWJhZDJhYjE1OWQ0OTI3YTdkY2E4MTllYjYyYWM1ZjI1MmQ4YTFiOWUzZjNjOWI0ZmUzZWJkMDM4MmE0NjE4ZjU4Y2FlMjZmOGVjMGY0NGJmNGUyZDllZWFhZjMyOGMxODMwNzllOTkwODk4MDM1MTlkMWUwMzc2NDI3NjU3YjU3ODNjN2Y0MzRhOCwyLDE%3D",
+    "source": "Meteojob (alerte)",
+    "title": "Scrum Master CRM H/F",
+    "link": "https://www.meteojob.com/jobs/54882233?my-meteo=true&auth=u3t5KCbo3jYekf9mnpO1lS2EsKJBv9ynzjg4uJAtOCg&utm_source=mailing&utm_medium=email&utm_campaign=newOfferAlert_HotOffer&campaign=HOT_OFFER_20260920&client=14951836&cc_mail_id=HOT_OFFER_20260920&cc_campaign=HOT_OFFER&cc_variant=DEFAULT&utm_content=linkTextOffer",
     "company": "",
     "location": "",
     "description": "",
-    "published": "2026-09-13T08:26:45+00:00",
+    "published": "2026-09-20T04:57:47+02:00",
     "in_france": true,
     "salary_extracted": null,
     "telework_days": null,
@@ -654,70 +774,29 @@
     "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
-    "source": "LinkedIn (alerte)",
-    "title": "CRM MANAGER (H/F) — PARIS",
-    "link": "https://www.linkedin.com/comm/jobs/view/4432649387/?trackingId=MguD1VUlT1aIFSF4LBw3tQ%3D%3D&amp;refId=6cCqRVT%2BSzqdi%2FxrffVDsw%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_application_confirmation_with_nba_01%3BnSFFIRCDQ5GeA5w5T%2BPozg%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=3sDUSJrXAe1Ys1&amp;trk=eml-email_application_confirmation_with_nba_01-jymbii-0-job_posting&amp;trkEmail=eml-email_application_confirmation_with_nba_01-jymbii-0-job_posting-null-8ulvbk~mtyrzskr~ky-null-null&amp;eid=8ulvbk-mtyrzskr-ky&amp;otpToken=MThmMWUzMWFjNTJlYTJkMzYzMzY2MDMxOWM0ZDU3ZjkyNWQ3OWIyOTIzZTlhZGMwNTNjY2IyYjJkMDE1MGY5MTBlMTAzNmUxZWVjNGQ2MDY5YjQ2OWMzMmY0YThmMzBhNGQxYjJlYzU5NTlmN2I5NTU1ZDJlNjFiYzQ4NThjMTMwNjIxZTg2ZDZjZmY2MywyLDE%3D",
-    "company": "",
-    "location": "",
+    "source": "JobLeads (alerte)",
+    "title": "EMEA Marketing Manager — ABM & AI-Driven Campaigns (6mo)",
+    "link": "https://www.jobleads.com/job/ec2ac66141c71604c3cb50f6f5373d649?kuuid=c4f4cab94056c7309cb04363dac3b327&view=search&saved_search_email_id=019ff5d8-3318-7a51-8d82-c4d960d2e3f4&utm_source=vdb_is_saved_search&utm_medium=email&utm_campaign=campaign%3Dvdb_is_job_alert&utm_content=job_id%3Dexternal-c2ac66141c71604c3cb50f6f5373d649%7Csearch_id%3D019ff5d8-3318-7a51-8d82-c4d960d2e3f4%7Ccontent%3Djob_card&search_id=f59fe963-eb7a-4243-86ac-3df3896b1123&vector_distance=0.5521927&job_rank=1&m=c0d2be3f-aa81-420c-873b-188a11f1a27b&u=69512022&t=id_1752225913",
+    "company": "Valiantys",
+    "location": "Paris",
     "description": "",
-    "published": "2026-09-12T19:26:08+00:00",
+    "published": "2026-09-20T00:21:16+02:00",
     "in_france": true,
-    "salary_extracted": null,
+    "salary_raw": "EUR 65 000 - 98 000",
     "telework_days": null,
     "contract_type": null,
+    "commute_minutes": 76,
     "flags": [
-      "Pertinence CRM à confirmer",
       "Télétravail non mentionné"
     ],
     "info_flags": [],
     "score": 5,
-    "score_reasons": [],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
-  },
-  {
-    "source": "LinkedIn (alerte)",
-    "title": "Chef de projet CRM (F/H)",
-    "link": "https://www.linkedin.com/comm/jobs/view/4464656084/?trackingId=gJqiPSMoQBec4FzHDxaMzQ%3D%3D&amp;refId=00ByrlExQHKBVboS5kknug%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_application_confirmation_with_nba_01%3BnSFFIRCDQ5GeA5w5T%2BPozg%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=3sDUSJrXAe1Ys1&amp;trk=eml-email_application_confirmation_with_nba_01-jymbii-0-job_posting&amp;trkEmail=eml-email_application_confirmation_with_nba_01-jymbii-0-job_posting-null-8ulvbk~mtyrzskr~ky-null-null&amp;eid=8ulvbk-mtyrzskr-ky&amp;otpToken=MThmMWUzMWFjNTJlYTJkMzYzMzY2MDMxOWM0ZDU3ZjkyNWQ3OWIyOTIzZTlhZGMwNTNjY2IyYjJkMDE1MGY5MTBlMTAzNmUxZWVjNGQ2MDY5YjQ2OWMzMmY0YThmMzBhNGQxYjJlYzU5NTlmN2I5NTU1ZDJlNjFiYzQ4NThjMTMwNjIxZTg2ZDZjZmY2MywyLDE%3D",
-    "company": "",
-    "location": "",
-    "description": "",
-    "published": "2026-09-12T19:26:08+00:00",
-    "in_france": true,
-    "salary_extracted": null,
-    "telework_days": null,
-    "contract_type": null,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Télétravail non mentionné"
+    "score_reasons": [
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Trajet long (76 min)"
     ],
-    "info_flags": [],
-    "score": 5,
-    "score_reasons": [],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
-  },
-  {
-    "source": "LinkedIn (alerte)",
-    "title": "Senior CRM Manager",
-    "link": "https://www.linkedin.com/comm/jobs/view/4466761081/?trackingId=XIOXogwR2LgIVC%2FE%2BTOD2A%3D%3D&amp;refId=KHvD9LBhKTjHAUV2RfPtPA%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BngnqcbDnQWi3rrVqBIef5Q%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=37a5gV65SW3Ys1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4466761081_ssid_8962023274_fmid_8ulvbk~mu0zbigq~qj&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4466761081_ssid_8962023274_fmid_8ulvbk~mu0zbigq~qj-null-8ulvbk~mu0zbigq~qj-null-null&amp;eid=8ulvbk-mu0zbigq-qj&amp;otpToken=MDI4YzBiMDk0ZWFhNGZkNTIwMDgzZDIxZDc2YTQ5YjllMTViYzY2NzE2MWNkMDhkNDQzODUwMDExNzljZTQwNDg5MGVkNTdmYmQ1YjMxMmNlYTJhZWIyYzlhZDUzNjc3ZDVhMjMzMWQxY2VjZTI0NjJkOWZkNDMwOTBkNmM0YjZkNDkyMzEzYmY4MzU3ZSwyLDE%3D",
-    "company": "",
-    "location": "",
-    "description": "",
-    "published": "2026-09-14T08:26:45+00:00",
-    "in_france": true,
-    "salary_extracted": null,
-    "telework_days": null,
-    "contract_type": null,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Télétravail non mentionné"
-    ],
-    "info_flags": [],
-    "score": 5,
-    "score_reasons": [],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
+    "recommendation_reason": "À vérifier : Télétravail non mentionné"
   },
   {
     "source": "JobLeads (alerte)",
@@ -748,7 +827,7 @@
   {
     "source": "Adzuna",
     "title": "CRM & Client Engagement Manager H/F - Mode (CDI)",
-    "link": "https://www.adzuna.fr/land/ad/5886730773?se=GFN9cnC08RGSI57gYuD12g&utm_medium=api&utm_source=707eaaff&v=0CD435507FBEA88A4405B7B40C44ADD74532E100",
+    "link": "https://www.adzuna.fr/land/ad/5886730773?se=PkCpqNe08RGk6dCvHcHp9g&utm_medium=api&utm_source=707eaaff&v=0CD435507FBEA88A4405B7B40C44ADD74532E100",
     "company": "MICHAEL PAGE",
     "location": "1er Arrondissement, Paris",
     "description": "Notre client est une marque de mode premium reconnue pour la qualité de ses collections, son savoir-faire et son sens du service. Dans un contexte de croissance, l'entreprise poursuit le développement de sa stratégie de relation client et recherche un CRM & Client Engagement Manager H/F capable d'accompagner ses ambitions en matière de fidélisation, de personnalisation et d'expérience client. Rattaché(e) à la Direction Marketing Digitale, vous jouez un rôle central dans le développement de la c…",
@@ -774,6 +853,34 @@
   },
   {
     "source": "Adzuna",
+    "title": "Coordinateur des Ventes H/F",
+    "link": "https://www.adzuna.fr/details/5891184609?utm_medium=api&utm_source=707eaaff",
+    "company": "Tereos",
+    "location": "Dammartin-en-Goële, Meaux",
+    "description": "En tant que Coordinateur des ventes, vous jouez un rôle essentiel dans le bon fonctionnement des équipes commerciales en assurant les fonctions back-office et en prenant en charge la gestion administrative des négociations commerciales, des opportunités aux contrats, ainsi que le suivi des demandes clients. Dans ce cadre général, vos principales missions au quotidien sont les suivantes : - Créer, modifier et mettre à jour les opportunités dans le CRM - Préparer et vérifier la conformité des con…",
+    "salary_raw": "",
+    "published": "2026-09-20T02:50:10Z",
+    "contract_raw": "",
+    "salary_extracted": null,
+    "telework_days": null,
+    "in_france": true,
+    "contract_type": null,
+    "commute_minutes": 139,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné",
+      "Trajet long (139 min)"
+    ],
+    "info_flags": [],
+    "score": 4,
+    "score_reasons": [
+      "Trajet long (139 min)"
+    ],
+    "recommendation": "à_écarter",
+    "recommendation_reason": "Trajet 139 min et pas 100 % télétravail"
+  },
+  {
+    "source": "Adzuna",
     "title": "Responsable CRM - CDI - Paris (H/F)",
     "link": "https://www.adzuna.fr/details/5782428756?utm_medium=api&utm_source=707eaaff",
     "company": "L'atelier des Chefs",
@@ -790,7 +897,7 @@
     "flags": [
       "Pertinence CRM à confirmer",
       "Télétravail non mentionné",
-      "Annonce ancienne (80 j)"
+      "Annonce ancienne (81 j)"
     ],
     "info_flags": [],
     "score": 4,
@@ -798,7 +905,7 @@
       "Trajet long (87 min)"
     ],
     "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné ; Annonce ancienne (80 j)"
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné ; Annonce ancienne (81 j)"
   },
   {
     "source": "Adzuna",
@@ -847,7 +954,7 @@
       "Séniorité / management d'équipe ?",
       "Télétravail non mentionné",
       "Trajet long (96 min)",
-      "Annonce ancienne (87 j)"
+      "Annonce ancienne (88 j)"
     ],
     "info_flags": [],
     "score": 4,
@@ -856,33 +963,6 @@
     ],
     "recommendation": "à_écarter",
     "recommendation_reason": "Trajet 96 min et pas 100 % télétravail"
-  },
-  {
-    "source": "Adzuna",
-    "title": "Chef de Projet Marketing Relationnel & CRM H/F",
-    "link": "https://www.adzuna.fr/details/5890022878?utm_medium=api&utm_source=707eaaff",
-    "company": "Datanumia",
-    "location": "La Défense, Courbevoie",
-    "description": "Au sein du Pôle Marketing & Communication et rattaché(e) au Responsable Marketing & Communication, vous contribuez au développement de la relation client en concevant et en pilotant des parcours et dispositifs de communication personnalisés à destination de nos clients et prospects. Dans le cadre de nos activités en marque propre et en marque blanche, vous intervenez auprès de clients, prospects et partenaires commercialisateurs d'énergie sur des dispositifs de marketing relationnel destinés à …",
-    "salary_raw": "",
-    "published": "2026-09-19T03:04:42Z",
-    "contract_raw": "",
-    "salary_extracted": null,
-    "telework_days": null,
-    "in_france": true,
-    "contract_type": null,
-    "commute_minutes": 90,
-    "flags": [
-      "Pertinence CRM à confirmer",
-      "Télétravail non mentionné"
-    ],
-    "info_flags": [],
-    "score": 4,
-    "score_reasons": [
-      "Trajet long (90 min)"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
   },
   {
     "source": "Adzuna",
@@ -915,7 +995,7 @@
   {
     "source": "Adzuna",
     "title": "Consultant amoa crm data& marketing h/f (CDI)",
-    "link": "https://www.adzuna.fr/land/ad/5878545972?se=Qok_eHC08RGAiZB_kbelpA&utm_medium=api&utm_source=707eaaff&v=2EF48863B052762B80C79EC4E40EB3A3B8780D0D",
+    "link": "https://www.adzuna.fr/land/ad/5878545972?se=5D8qr9e08RGYE95Rdte0Sg&utm_medium=api&utm_source=707eaaff&v=2EF48863B052762B80C79EC4E40EB3A3B8780D0D",
     "company": "Free-Work",
     "location": "1er Arrondissement, Paris",
     "description": "Free-Work est une plateforme qui s'adresse à tous les professionnels des métiers de l'informatique. Ses contenus et son jobboard IT sont mis à disposition 100% gratuitement pour les indépendants et les salariés du secteur. L'accompagnement s'inscrit dans le cadre du renforcement sur le pilotages CRM Data et Marketing, du pilotage liés aux outils CRM, de la gestion des données marketing et aux dispositifs d'activation client. Vos missions consisteront à contribuer: Formaliser et prioriser les be…",
@@ -991,9 +1071,34 @@
     "recommendation_reason": "Trajet 102 min et pas 100 % télétravail"
   },
   {
+    "source": "JobLeads (alerte)",
+    "title": "CRM & Customer Growth Lead — Next Best Action & IA",
+    "link": "https://www.jobleads.com/job/e23a042ee74e167653c00a55f9e144866?kuuid=c4f4cab94056c7309cb04363dac3b327&view=search&saved_search_email_id=019ff5d8-3318-7a51-8d82-c4d960d2e3f4&utm_source=vdb_is_saved_search&utm_medium=email&utm_campaign=campaign%3Dvdb_is_job_alert&utm_content=job_id%3Dexternal-23a042ee74e167653c00a55f9e144866%7Csearch_id%3D019ff5d8-3318-7a51-8d82-c4d960d2e3f4%7Ccontent%3Djob_card&search_id=f59fe963-eb7a-4243-86ac-3df3896b1123&vector_distance=0.53621674&job_rank=2&m=c0d2be3f-aa81-420c-873b-188a11f1a27b&u=69512022&t=id_1752225913",
+    "company": "lesfurets",
+    "location": "Paris",
+    "description": "",
+    "published": "2026-09-20T00:21:16+02:00",
+    "in_france": true,
+    "salary_raw": "EUR 90 000 - 110 000",
+    "telework_days": null,
+    "contract_type": null,
+    "commute_minutes": 76,
+    "flags": [
+      "Pertinence CRM à confirmer",
+      "Télétravail non mentionné"
+    ],
+    "info_flags": [],
+    "score": 4,
+    "score_reasons": [
+      "Trajet long (76 min)"
+    ],
+    "recommendation": "à_revoir",
+    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer ; Télétravail non mentionné"
+  },
+  {
     "source": "Adzuna",
     "title": "Senior Digital Performance & CRM Manager",
-    "link": "https://www.adzuna.fr/land/ad/5890513022?se=GFN9cnC08RGSI57gYuD12g&utm_medium=api&utm_source=707eaaff&v=BFEF08A426AD15BD33CC736A66EA9FD8836D5774",
+    "link": "https://www.adzuna.fr/land/ad/5890513022?se=PkCpqNe08RGk6dCvHcHp9g&utm_medium=api&utm_source=707eaaff&v=BFEF08A426AD15BD33CC736A66EA9FD8836D5774",
     "company": "Source One Technical Solutions",
     "location": "Paris, Ile-de-France",
     "description": "Compensation: €70,000 base salary plus a 10% annual bonus Must be fluent in French and English Looking for a Senior Manager Digital Performance & CRM who can build and lead the full acquisition, conversion, CRM, and performance analytics strategy. The role reports to the AVP Marketing and plays a key part in traffic generation, ticket sales, revenue optimization, and visitor retention. The candidate will be responsible for: The digital acquisition strategy (Search, Paid Social, Programmatic, Af…",
