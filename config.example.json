@@ -19,7 +19,8 @@
   "email_password": "VOTRE_MOT_DE_PASSE_APPLICATION",
   "email_recipient": "VOTRE_EMAIL_DESTINATAIRE@gmail.com",
   "max_commute_minutes": 90,
-  "min_telework_days": 2,
+  "min_telework_days": 5,
+  "target_titles_only": true,
   "salary_hard_min": 42055,
   "salary_target_min": 45000,
   "salary_target_max": 50000

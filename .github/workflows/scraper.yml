@@ -69,7 +69,12 @@ jobs:
               "salary_target_min": 45000,
               "salary_target_max": 50000,
               "max_commute_minutes": 90,
-              "min_telework_days": 2,
+              # Recherche passive : Heloise a 3 j de teletravail dans son poste
+              # actuel, elle ne bouge que pour un 100 % teletravail (5 j) sur un
+              # intitule Campaign Manager / Chef de projet CRM. Repasser a 2 et
+              # false pour rouvrir la recherche active.
+              "min_telework_days": 5,
+              "target_titles_only": True,
 
               # Calcul des trajets : IDFM PRIM (gratuit) en priorite, sinon Navitia/Google.
               # Actif seulement si le secret correspondant est defini.
