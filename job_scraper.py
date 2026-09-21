@@ -56,6 +56,7 @@ CONFIG.setdefault("email_smtp_server", "smtp.gmail.com")
 CONFIG.setdefault("email_smtp_port", 587)
 CONFIG.setdefault("max_commute_minutes", 90)
 CONFIG.setdefault("min_telework_days", 2)
+CONFIG.setdefault("target_titles_only", False)  # recherche passive : intitulés cibles only
 CONFIG.setdefault("commute_provider", "")       # "idfm" | "navitia" | "google" | "" (auto)
 CONFIG.setdefault("fetch_full_descriptions", True)  # récupère le texte complet des annonces tronquées
 
@@ -743,6 +744,30 @@ _ANON_EMPLOYER = re.compile(
     r'employeur\s+confidentiel|client\s+confidentiel|entreprise\s+confidentielle', re.I)
 
 
+# ── Recherche passive : 100 % télétravail réalisable depuis la France ──────────
+# Héloïse a obtenu 3 j de télétravail dans son poste actuel : elle ne change de
+# poste que pour un 100 % télétravail, sans décalage horaire bloquant.
+# NB : les acronymes nus (EST, PST…) sont volontairement écartés — « EST »
+# apparaît en majuscules dans des textes français (« CE POSTE EST… »).
+_TZ_OUT_OF_REACH = re.compile(
+    r'eastern (?:standard )?time|pacific (?:standard )?time|central (?:standard )?time|'
+    r'mountain (?:standard )?time|us time ?zones?|u\.?s\.? (?:business )?hours|'
+    r'overlap\s+(?:with\s+)?(?:the\s+)?(?:us\b|u\.s\.|pacific|eastern|americas)|'
+    r'work(?:ing)?\s+hours?\s+in\s+(?:the\s+)?(?:us\b|u\.s\.|pacific|eastern)|'
+    r'(?:utc|gmt)\s*[-\u2212]\s*(?:4|5|6|7|8|9|10)\b|'
+    r'(?:utc|gmt)\s*\+\s*(?:7|8|9|10|11|12)\b', re.I)
+
+# Intitulés cibles en recherche passive : Campaign Manager / Chef de projet CRM
+# et leurs équivalents directs. Activé par la clé de config « target_titles_only ».
+_TARGET_TITLE_RE = re.compile(
+    r'campaign\s+manager|manager\s+de\s+campagnes?|'
+    r'chef(?:fe)?\s+de\s+projet\s+crm|crm\s+project\s+manager|'
+    r'\bcrm\s+manager\b|manager\s+crm|responsable\s+crm|'
+    r'charg[e\u00e9]e?\s+de\s+campagnes?|'
+    r'lifecycle\s+(?:marketing\s+)?manager|marketing\s+automation\s+manager|'
+    r'crm\s*(?:&|et|/)\s*(?:campagnes?|marketing|communication)', re.I)
+
+
 def screen_offer(job):
     """Renvoie (exclure: bool, motif: str|None, alertes: list[str], notes: list[str]).
     `alertes` (flags) déclassent l'offre en « à revoir » ; `notes` (info) sont
@@ -764,6 +789,10 @@ def screen_offer(job):
     # dans le titre ou la description -> hors sujet, écartée sans évaluation.
     if not _CRM_KEYWORD_RE.search(f"{title} {job.get('description') or ''}"):
         return True, "Hors sujet (aucun mot-clé CRM / marketing)", flags, info
+    # Recherche passive : seuls les intitulés Campaign Manager / Chef de projet
+    # CRM (et équivalents directs) sont retenus. Désactivable via la config.
+    if CONFIG.get("target_titles_only") and not _TARGET_TITLE_RE.search(title):
+        return True, "Titre hors cible (Campaign Manager / Chef de projet CRM)", flags, info
     # Rémunération anormale (millions) = scam probable — testé sur le champ salaire.
     _sraw = f"{job.get('salary_raw') or ''} {job.get('salary_extracted') or ''}"
     _sval = parse_salary_value(_sraw)
@@ -823,8 +852,18 @@ def screen_offer(job):
     if _NO_REMOTE.search(text):
         return True, "Présentiel / pas de télétravail", flags, info
     tw = job.get("telework_days")
-    if isinstance(tw, int) and tw < 2:
-        return True, f"Télétravail insuffisant ({tw} j/sem, min. 2)", flags, info
+    _min_tw = int(CONFIG.get("min_telework_days", 2))
+    if isinstance(tw, int) and tw < _min_tw:
+        return True, f"Télétravail insuffisant ({tw} j/sem, min. {_min_tw})", flags, info
+    # Mode 100 % télétravail : une offre qui ne l'annonce pas explicitement est
+    # écartée (sinon le flux se remplit d'hybrides au télétravail non renseigné).
+    if _min_tw >= 5 and tw is None:
+        return True, "Télétravail 100 % non confirmé", flags, info
+    # Le télétravail doit être réalisable depuis la France, sans décalage bloquant.
+    if not job.get("in_france", True):
+        return True, "Télétravail limité à une zone hors France", flags, info
+    if _TZ_OUT_OF_REACH.search(text):
+        return True, "Décalage horaire incompatible (zone US / APAC)", flags, info
     if _US_RESIDENCE.search(text):
         return True, "Résidence / citoyenneté US requise", flags, info
     if _FOREIGN_RESIDENCE_HARD.search(text):
@@ -918,6 +957,11 @@ def screen_offer(job):
 _REMOTE_OUT_OF_REACH = [
     "usa", "united states", "u.s.", "canada", "brazil", "brésil", "india", "inde",
     "australia", "australie", "latam", "apac", "argentina", "mexico", "philippines",
+    "us-based", "us only", "americas", "north america", "amérique du nord",
+    "colombia", "colombie", "chile", "chili", "peru", "pérou", "uruguay",
+    "new zealand", "nouvelle-zélande", "japan", "japon", "singapore", "singapour",
+    "indonesia", "vietnam", "thailand", "malaysia", "china", "chine", "hong kong",
+    "south africa", "afrique du sud", "nigeria", "kenya", "pakistan", "bangladesh",
 ]
 
 
@@ -928,9 +972,12 @@ def remote_scope_in_france(text):
     t = (text or "").lower()
     if not t:
         return True
-    if any(k in t for k in ["france", "europe", "emea", "worldwide", "anywhere",
-                            "global", "european", "remote"]):
+    # France / Europe explicites : toujours OK.
+    if any(k in t for k in ["france", "europe", "emea", "european"]):
         return True
+    # Zone lointaine explicite : écartée. Testé AVANT « worldwide / anywhere »,
+    # et sans le mot « remote » qui, présent dans presque toutes les annonces
+    # distancielles, rendait ce test totalement inopérant.
     if any(k in t for k in _REMOTE_OUT_OF_REACH):
         return False
     return True
