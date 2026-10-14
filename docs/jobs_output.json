@@ -46,5 +46,30 @@
     ],
     "recommendation": "à_postuler",
     "recommendation_reason": "Profil correspondant, aucun signal à vérifier (100 % télétravail France, score 9/10)"
+  },
+  {
+    "source": "Adzuna",
+    "title": "CRM Manager | CDI | Full Remote",
+    "link": "https://www.adzuna.fr/details/5925603053?utm_medium=api&utm_source=707eaaff",
+    "company": "Standard Ecom",
+    "location": "Paris, Ile-de-France",
+    "description": "LA STANDARD ECOM, C’EST QUOI ET C’EST QUI ? La Standard Ecom est une jeune agence qui accompagne plus d’une trentaine de marques e-commerce comme The Bradery, JIMMY FAIRLY, Delsey dans le développement de leurs stratégies CRM. Cela passe par la mise en place d’automatisations emailing, la gestion de newsletters, la création de campagnes WhatsApp, etc. Au total, au sein de la Standard Ecom, nous sommes une dizaine de personnes partageant les mêmes valeurs et les mêmes ambitions. Nous évoluons to…",
+    "salary_raw": "",
+    "published": "2026-10-13T12:39:35Z",
+    "contract_raw": "",
+    "salary_extracted": null,
+    "telework_days": 5,
+    "in_france": true,
+    "contract_type": "CDI",
+    "flags": [],
+    "info_flags": [],
+    "score": 8,
+    "score_reasons": [
+      "Outils : email, whatsapp",
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Télétravail 5j/sem"
+    ],
+    "recommendation": "à_postuler",
+    "recommendation_reason": "Profil correspondant, aucun signal à vérifier (100 % télétravail France, score 8/10)"
   }
 ]
