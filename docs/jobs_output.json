@@ -48,26 +48,28 @@
     "recommendation_reason": "Profil correspondant, aucun signal à vérifier (100 % télétravail France, score 9/10)"
   },
   {
-    "source": "LinkedIn (alerte)",
+    "source": "Adzuna",
     "title": "CRM Manager | CDI | Full Remote",
-    "link": "https://www.linkedin.com/comm/jobs/view/4476029888/?trackingId=mEMypdXExUiW9oy%2BMZp2GA%3D%3D&amp;refId=IkRMYm8cDHFcM3WO4NbCew%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BIkfLU4HmRG6PLN0l3q4jqg%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=3e4n9d_vE2Kcs1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4476029888_ssid_8910031666_fmid_8ulvbk~mv7q8qgp~ph&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4476029888_ssid_8910031666_fmid_8ulvbk~mv7q8qgp~ph-null-8ulvbk~mv7q8qgp~ph-null-null&amp;eid=8ulvbk-mv7q8qgp-ph&amp;otpToken=OTdjZTc2ZjFlNzY4MWQ5MDdiNzE3YTZlYTNlZjA1M2RhZTcyOTA0MTBhMmU5NmQ1OGI3ZjUxMjQ0OWE3YjFlNTc1YzgzZTFlNTllNzY1YTAxOGEyNzZhZWM5MTM4OTJjMDEzNmMyYzFlYjJkYmIzYTNjOGIwYzZjNTgzNDAxZDEzNGQzOTFiMWM5YWUxMiwyLDE%3D",
-    "company": "",
-    "location": "",
-    "description": "",
-    "published": "2026-10-14T06:26:46+00:00",
-    "in_france": true,
+    "link": "https://www.adzuna.fr/details/5925603053?utm_medium=api&utm_source=707eaaff",
+    "company": "Standard Ecom",
+    "location": "Paris, Ile-de-France",
+    "description": "LA STANDARD ECOM, C’EST QUOI ET C’EST QUI ? La Standard Ecom est une jeune agence qui accompagne plus d’une trentaine de marques e-commerce comme The Bradery, JIMMY FAIRLY, Delsey dans le développement de leurs stratégies CRM. Cela passe par la mise en place d’automatisations emailing, la gestion de newsletters, la création de campagnes WhatsApp, etc. Au total, au sein de la Standard Ecom, nous sommes une dizaine de personnes partageant les mêmes valeurs et les mêmes ambitions. Nous évoluons to…",
+    "salary_raw": "",
+    "published": "2026-10-13T12:39:35Z",
+    "contract_raw": "",
     "salary_extracted": null,
     "telework_days": 5,
+    "in_france": true,
     "contract_type": "CDI",
-    "flags": [
-      "Pertinence CRM à confirmer"
-    ],
+    "flags": [],
     "info_flags": [],
-    "score": 6,
+    "score": 8,
     "score_reasons": [
+      "Outils : email, whatsapp",
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
       "Télétravail 5j/sem"
     ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Pertinence CRM à confirmer"
+    "recommendation": "à_postuler",
+    "recommendation_reason": "Profil correspondant, aucun signal à vérifier (100 % télétravail France, score 8/10)"
   }
 ]
