@@ -71,5 +71,27 @@
     ],
     "recommendation": "à_postuler",
     "recommendation_reason": "Profil correspondant, aucun signal à vérifier (100 % télétravail France, score 8/10)"
+  },
+  {
+    "source": "LinkedIn (alerte)",
+    "title": "Senior/Lead Lifecycle Marketing Manager (Full Remote - France)",
+    "link": "https://www.linkedin.com/comm/jobs/view/4479874850/?trackingId=sXO3xr2cnT8JbhMrTKFV%2Fw%3D%3D&amp;refId=9RZN%2Ffu4CxU1dXMEOaWeHw%3D%3D&amp;lipi=urn%3Ali%3Apage%3Aemail_email_job_alert_digest_01%3BLuazYorrReaNf46yZduUXQ%3D%3D&amp;midToken=AQENr2hHpmNehw&amp;midSig=0Tys37dX5qOss1&amp;trk=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4479874850_ssid_8962689098_fmid_8ulvbk~mvc4ulyq~hf&amp;trkEmail=eml-email_job_alert_digest_01-primary_job_list-0-job_posting_0_jobid_4479874850_ssid_8962689098_fmid_8ulvbk~mvc4ulyq~hf-null-8ulvbk~mvc4ulyq~hf-null-null&amp;eid=8ulvbk-mvc4ulyq-hf&amp;otpToken=OWU2N2IwMDQ4MmRjYjc3Mjg1OWI2NjhiNmMxOTQ4M2E4MTkwNTc3MDgwMWU1NmQ5ZmNlNDgzODE0ZmNiNTU2NWZmZGZkNGMwOTUzMDEzYjdiNmI0YzUxOWRmNTRhYWMyZmY5YzY4MDkyYzE5NTlkNmY1YTlkZjAzMDVkYjAzNzgxMWQyZjc2M2MxZDljYywyLDE%3D",
+    "company": "",
+    "location": "",
+    "description": "",
+    "published": "2026-10-17T08:26:45+00:00",
+    "in_france": true,
+    "salary_extracted": null,
+    "telework_days": 5,
+    "contract_type": null,
+    "flags": [],
+    "info_flags": [],
+    "score": 7,
+    "score_reasons": [
+      "Signaux CRM lifecycle (email / segmentation / campagne)",
+      "Télétravail 5j/sem"
+    ],
+    "recommendation": "à_postuler",
+    "recommendation_reason": "Profil correspondant, aucun signal à vérifier (100 % télétravail France, score 7/10)"
   }
 ]
