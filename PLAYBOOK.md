@@ -27,6 +27,27 @@ boîte e-mail dédiée.
 
 ---
 
+## Comment lire ce document
+
+**Ne pas le lire en entier à chaque session.** Il est fait pour être chargé
+par morceaux, selon le jalon en cours.
+
+| Moment | À lire |
+| --- | --- |
+| Première session | « Ce que le projet produit », principes, Phase 1, ordre de construction |
+| Jalons 1–2 | Phases 2 à 4, puis Phase 6 |
+| Jalon 3 | Phase 8 : spécification fonctionnelle et design de référence |
+| Jalon 4 | Phase 3 |
+| Jalon 5 | Phase 8, partie synchronisation |
+| Jalon 6 | Phase 5, puis Phase 7 |
+| À chaque session | La mémoire de projet du dépôt, et les pièges à éviter |
+
+Pour situer le coût : ce document entier pèse moins que la lecture de deux
+fichiers source du dashboard. Le charger une fois est négligeable ; le
+recharger intégralement à chaque session l'est beaucoup moins.
+
+---
+
 ## Principes directeurs
 
 1. **La pertinence se calibre, elle ne se devine pas.** Aucune règle écrite
@@ -450,6 +471,48 @@ lieu de le découvrir au fil des mois.
 | Préférences d'affichage | Stockage local du navigateur | Propres à l'appareil |
 | Jeton d'accès au dépôt privé | Stockage local uniquement | Ne doit jamais être commité |
 
+### Design de référence
+
+Thème clair unique, pas de mode sombre. Aucune bibliothèque de composants :
+une seule feuille de style, pilotée par des variables CSS déclarées à la
+racine — jamais de couleur littérale dans les règles.
+
+Le design n'est pas décoratif ici : **la couleur porte le jugement du moteur
+de filtrage**. Un badge rouge et un badge bleu ne disent pas la même chose, et
+c'est ce qui permet de trier d'un coup d'œil.
+
+| Rôle | Usage |
+| --- | --- |
+| Fond de page / surface | gris très clair pour la page, blanc pour les cartes |
+| Texte | gris très foncé, plus une variante atténuée pour le secondaire |
+| Primaire | bleu, pour les actions et les liens |
+| Vert | note élevée, critère satisfait |
+| Orange | à revoir, information à vérifier |
+| Rouge | alerte, offre écartée |
+| Bleu clair | note informative qui ne pénalise pas |
+
+Chaque couleur sémantique vient **par paire** : une teinte soutenue pour le
+texte et une teinte très claire pour le fond du badge. C'est ce qui rend les
+badges lisibles sans les rendre criards.
+
+**Formes et profondeur.** Rayon de 12 px partout, bordure fine d'un gris
+neutre, et deux ombres seulement : une très discrète au repos, une plus
+marquée au survol des cartes. Aucun dégradé.
+
+**Typographie.** Pile système, 15 px de base, interligne 1,5. Titre de page en
+gras serré ; intitulés de carte à environ 0,92 rem, en gras.
+
+**Mise en page.**
+
+- En-tête collant en haut, portant la navigation entre les deux onglets.
+- Panneau de filtres présenté en carte, collant lui aussi.
+- Offres : grille automatique, colonnes de 280 px minimum, qui se réduit
+  naturellement à une seule colonne sur mobile.
+- Candidatures : quatre colonnes égales, qui se resserrent sous 1100 px puis
+  s'empilent sous 860 px.
+
+Deux points de rupture suffisent : **1100 px et 860 px**.
+
 **Synchronisation.** Un jeton à portée restreinte, saisi une fois par appareil
 et conservé localement, suffit à lire et écrire dans le dépôt privé. Côté
 scraper, retirer au scan suivant les offres déjà écartées.
@@ -577,6 +640,36 @@ calibration.
 La calibration, elle, est économique par nature : chaque cycle se résume à
 lire des notes, ajouter quelques règles, lancer un scan et en lire le bilan.
 C'est la construction initiale qu'il faut découper, pas le suivi.
+
+---
+
+### Choix du modèle et de l'effort
+
+Principe : **le modèle le plus capable sur les moments de jugement, le modèle
+rapide sur le volume de code.** C'est contre-intuitif — on est tenté de sortir
+l'artillerie pour écrire des centaines de lignes de style, alors que c'est là
+qu'elle sert le moins.
+
+| Travail | Modèle | Effort |
+| --- | --- | --- |
+| Entretien de cadrage | rapide | normal |
+| Schéma, pipeline, moteur de filtrage | le plus capable | élevé |
+| Dashboard, feuille de style | rapide | normal |
+| Workflow et automatisation | rapide | normal |
+| Suivi de candidatures et synchronisation | le plus capable | élevé |
+| Parseurs de sources | capable pour analyser la donnée réelle, rapide pour écrire | élevé puis normal |
+| Calibration | le plus capable | élevé |
+| Diagnostic d'un problème signalé | le plus capable | élevé |
+
+Au moment d'écrire ces lignes, cela correspond à Opus 5 pour le jugement et
+Sonnet 5 pour le volume — mais les gammes évoluent, c'est le principe qui
+compte, pas les noms.
+
+Un forfait d'entrée de gamme suffit : le gros du volume part sur le modèle
+rapide, le modèle capable n'intervient que par sessions courtes, la
+calibration est peu coûteuse et l'exploitation est gratuite. Si les limites se
+font sentir, le découpage en jalons permet de s'arrêter proprement et de
+reprendre le lendemain.
 
 ---
 
