@@ -177,6 +177,48 @@ Commencer par deux ou trois sources qui marchent, pas par dix à moitié.
 | ATS de pages carrière | moyen | haute | Idéal pour une liste d'employeurs ciblés. |
 | Alertes e-mail | élevé | haute | Seule voie vers les sites sans API. Boîte dédiée, parfois un parseur par expéditeur. |
 
+### Sources concrètes, confirmées en production
+
+Ces sources ont été effectivement interrogées et exploitées sur un projet de
+ce type. Elles constituent un point de départ, pas une liste à jour : vérifier
+endpoints, quotas et conditions avant de coder.
+
+| Source | Type | Portée | Accès |
+| --- | --- | --- | --- |
+| France Travail | API | France | OAuth, inscription gratuite |
+| Adzuna | API | une vingtaine de pays | `app_id` + `app_key` gratuits |
+| The Muse | API | international | clé gratuite, volume modeste |
+| Welcome to the Jungle | RSS + moteur interne | France, Europe | sans clé |
+| Remotive | API | 100 % télétravail | sans clé |
+| Jobicy | API | 100 % télétravail | sans clé |
+| RemoteOK | API | 100 % télétravail | sans clé |
+| We Work Remotely | RSS | 100 % télétravail | sans clé |
+
+**Pages carrière (ATS).** Cinq ATS couvrent une grande part du marché :
+**Greenhouse, Lever, SmartRecruiters, Ashby, Workable**. Chacun expose un
+endpoint public interrogeable avec l'identifiant de l'entreprise. C'est la
+meilleure voie pour surveiller une liste d'employeurs ciblés, et elle
+fonctionne dans tous les pays.
+
+**Alertes e-mail.** Parsage confirmé pour **LinkedIn, Indeed, HelloWork,
+Cadremploi, Meteojob, JobLeads**. La plupart se traitent avec un parseur
+générique qui suit les liens d'offres ; certains expéditeurs imposent un
+parseur dédié.
+
+**Calcul des trajets.** **IDFM PRIM** (Île-de-France, gratuit), **Navitia**
+(France et international), **Google Maps** (payant au-delà d'un quota). À
+n'activer que si l'utilisateur a un critère de trajet.
+
+**Hors de France.** Chercher l'équivalent de deux catégories seulement : le
+service public de l'emploi national, qui expose souvent une API ouverte, et
+l'API de transport régionale pour les trajets. Les cinq ATS et les plateformes
+100 % télétravail sont internationaux et fonctionnent tels quels.
+
+> **Vérifier avant d'intégrer.** Sur ce projet, le flux RSS d'Indeed ne
+> renvoyait plus aucune offre alors qu'il était toujours documenté. Toujours
+> confirmer qu'une source remonte réellement des annonces avant de lui
+> consacrer du code.
+
 ### Méthode d'intégration — valable pour toute source
 
 **Ne jamais écrire un parseur à l'aveugle.** C'est l'erreur la plus coûteuse.
