@@ -121,30 +121,5 @@
     ],
     "recommendation": "à_postuler",
     "recommendation_reason": "Profil correspondant, aucun signal à vérifier (100 % télétravail France, score 7/10)"
-  },
-  {
-    "source": "Jobicy",
-    "title": "Junior Campaign Manager",
-    "link": "https://jobicy.com/jobs/158606-junior-campaign-manager",
-    "company": "Canonical",
-    "location": "EMEA",
-    "description": "The role of an Junior Campaign Manager at Canonical Canonical has provided developers with open source since 2004, helping them build innovations such as public cloud, machine learning, robotics or blockchain. Marketing at Canonical means being at the forefront of technology adoption, for our customers and for our own martech stack. We’re on the look&hellip;",
-    "salary_raw": "",
-    "published": "2026-11-03T05:50:27+00:00",
-    "telework_days": 5,
-    "in_france": true,
-    "salary_extracted": null,
-    "contract_type": null,
-    "flags": [
-      "Poste junior / débutant ?"
-    ],
-    "info_flags": [],
-    "score": 7,
-    "score_reasons": [
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Télétravail 5j/sem"
-    ],
-    "recommendation": "à_revoir",
-    "recommendation_reason": "À vérifier : Poste junior / débutant ?"
   }
 ]
