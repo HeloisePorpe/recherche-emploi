@@ -540,6 +540,46 @@ connaître le rend gratuit.
 
 ---
 
+## Économie de tokens
+
+**Le dashboard en fonctionnement ne consomme aucun token.** Le scan est un
+script Python exécuté par l'automatisation : aucun appel de modèle. Tout le
+coût se concentre sur la construction, et dans une moindre mesure sur la
+calibration.
+
+| Phase | Coût | Pourquoi |
+| --- | --- | --- |
+| Entretien de cadrage | faible | une conversation |
+| Construction | **élevé** | plusieurs milliers de lignes à écrire |
+| Exploitation quotidienne | **nul** | aucun appel de modèle |
+| Calibration | faible par cycle | quelques règles, un scan, un résumé |
+
+### Pratiques qui tiennent le coût bas
+
+- **Une session par jalon.** C'est la raison d'être de l'ordre de construction
+  en six étapes : chaque jalon tient dans une session, et le suivant reprend
+  sur un socle qui marche.
+- **Ne jamais lire un gros fichier en entier.** Chercher le motif, puis lire la
+  plage utile. Relire plusieurs fois un fichier de 3 000 lignes est le premier
+  poste de gaspillage.
+- **Ne pas verser les gros volumes dans la conversation.** Journaux
+  d'exécution, JSON de sortie, listes de runs : les enregistrer dans un fichier
+  et en extraire l'information par script. Un journal de scan complet suffit à
+  saturer une réponse.
+- **Demander les dernières lignes d'un journal**, pas son intégralité : le
+  résumé de filtrage et les erreurs sont toujours à la fin.
+- **Éditer par correctif ciblé** plutôt que réécrire un fichier entier.
+- **Tenir la mémoire de projet.** Relire un fichier de synthèse en début de
+  session coûte bien moins que redécouvrir le projet par exploration.
+- **Ne pas surveiller un scan en boucle.** Il dure une demi-heure : planifier
+  une vérification plutôt que sonder l'état toutes les deux minutes.
+
+La calibration, elle, est économique par nature : chaque cycle se résume à
+lire des notes, ajouter quelques règles, lancer un scan et en lire le bilan.
+C'est la construction initiale qu'il faut découper, pas le suivi.
+
+---
+
 ## Exploitation et checklist
 
 **Coût : nul.** Minutes d'automatisation gratuites sur un dépôt public,
