@@ -69,6 +69,10 @@ remplissent pas à l'entretien : elles émergent de la calibration, ne pas
 insister. Et demander un *écart acceptable* sur chaque seuil, pas une valeur
 unique : un plancher trop net écarte des offres négociables.
 
+**Présenter le menu de fonctionnalités.** Dérouler la spécification de
+référence (Phase 8) et laisser l'utilisateur choisir. C'est ce qui remplace
+des mois de découverte progressive.
+
 **Livrable.** Une fiche de critères écrite, relue et validée par
 l'utilisateur, qui devient le fichier de configuration. Si un critère ne peut
 pas s'exprimer en valeur vérifiable dans une annonce, il ne sera pas codé : le
@@ -323,9 +327,55 @@ Deux onglets suffisent. **Offres** : la liste filtrable, avec la note, les
 badges et deux actions, suivre et écarter. **Candidatures** : un tableau par
 statut, alimenté depuis le premier onglet.
 
-Filtres côté navigateur à prévoir : recherche texte, source, ancienneté, note
-minimale, salaire, critères personnels de télétravail et de trajet, et un
-interrupteur pour masquer les offres signalées.
+### Spécification fonctionnelle de référence
+
+Liste complète des fonctionnalités d'un dashboard abouti. **À présenter comme
+un menu dès la Phase 1** : l'utilisateur choisit ce qu'il veut d'emblée, au
+lieu de le découvrir au fil des mois.
+
+#### Onglet Offres
+
+| Bloc | Fonctionnalités |
+| --- | --- |
+| Tri | Note décroissante, date de publication, salaire décroissant |
+| Filtres | Recherche texte ; recommandation (à postuler / à revoir / à écarter) ; ancienneté (7, 14, 30, 90 jours) ; note minimale ; salaire minimum ; sources, en cases générées depuis les données |
+| Filtres booléens | Avec salaire affiché uniquement ; télétravail uniquement ; CDI uniquement ; masquer les offres signalées |
+| Critères personnels | Un interrupteur « mes critères » (trajet + télétravail), doublé d'un **mode strict** qui masque aussi les offres dont l'information manque |
+| Carte d'offre | Note sur 10 colorée ; recommandation et sa raison ; badges source, contrat, salaire, télétravail, trajet ; alertes ⚠ ; notes ℹ ; raisons du score ; description repliable |
+| Actions | Suivre, qui crée une candidature ; Pas pertinent, qui archive |
+| Garde-fou | Badge « déjà suivie » sur une offre déjà en candidature, contre la double candidature |
+| Archives | Vue dédiée, recherche dans les archivées, restauration, export |
+| Divers | Compteur d'offres, réinitialisation des filtres, état vide explicite |
+
+#### Onglet Candidatures
+
+| Bloc | Fonctionnalités |
+| --- | --- |
+| Colonnes | À postuler, Postulé, Entretien, Réponse négative — repliables, état mémorisé |
+| Tri | Par date d'envoi décroissante |
+| Ajout | Formulaire manuel (intitulé, entreprise, lien), en plus de l'ajout depuis les Offres |
+| Fiche | Intitulé, entreprise, adresse, date d'envoi, plateforme (liste suggérée), trajet, télétravail, salaire, contrat, notes |
+| Critères cochables | Trajet acceptable, télétravail suffisant, salaire cible, secteur favorable, type de contrat, coup de cœur |
+| Sauvegarde du contenu | Un champ pour coller le texte de l'annonce — **indispensable** : les liens d'agrégateurs expirent et l'offre devient introuvable |
+| Déplacement | Menu de statut et glisser-déposer |
+| Recherche | Sur l'entreprise et l'intitulé |
+| Synchronisation | Panneau dédié, jeton saisi par appareil, état de synchronisation visible |
+
+#### Côté scraper, invisible mais essentiel
+
+- Dédoublonnage inter-plateformes sur une clé stable
+- Enrichissement des annonces tronquées
+- Extraction du télétravail, du salaire et du contrat depuis le texte
+- Calcul du trajet, après filtrage uniquement
+- Retrait des offres déjà écartées, lues depuis le dépôt privé
+- Compteur des motifs d'exclusion
+- Détection des réponses de recruteurs dans la boîte e-mail, pour mettre à jour les statuts
+
+> **Quatre fonctionnalités nées d'un problème concret**, à proposer d'emblée
+> plutôt qu'à attendre : le champ de sauvegarde du contenu (liens morts), le
+> badge « déjà suivie » (double candidature), le mode strict (information
+> manquante) et la synchronisation des archives (une offre écartée qui
+> réapparaît).
 
 | Donnée | Où elle vit | Pourquoi |
 | --- | --- | --- |
