@@ -97,6 +97,25 @@ tourne en permanence : le robot écrit un fichier, le dashboard le lit.
 
 ---
 
+## Ordre de construction
+
+Six jalons. Chacun produit quelque chose que l'utilisateur peut **voir** :
+c'est ce qui maintient son engagement pendant les semaines de calibration.
+
+| Jalon | Contenu | Ce que l'utilisateur voit |
+| --- | --- | --- |
+| 1 | Une source, le schéma normalisé, un JSON, une page qui liste les offres | Des offres réelles, dès le premier jour |
+| 2 | Exclusions dures, score, recommandation, compteur de motifs | Une liste déjà triée, et pourquoi |
+| 3 | Dashboard complet : tri, filtres, badges, archives | L'outil du quotidien |
+| 4 | Automatisation : workflow, cron, Pages | Ça tourne sans lui |
+| 5 | Suivi de candidatures et synchronisation | Son historique, sur tous ses appareils |
+| 6 | Sources supplémentaires, alertes e-mail, calibration | Le volume, puis la précision |
+
+Ne pas inverser les jalons 3 et 4 : un dashboard utile mais lancé à la main
+vaut mieux qu'une automatisation qui alimente une page illisible.
+
+---
+
 ## Phase 3 — Mettre en place l'infrastructure
 
 1. **Créer deux dépôts.** Un public pour le code et le dashboard, un privé pour
@@ -122,6 +141,53 @@ tourne en permanence : le robot écrit un fichier, le dashboard le lit.
 - Le dashboard est public et son URL est devinable. N'écrire ni adresse, ni
   téléphone, ni CV dans les fichiers servis.
 - Les horaires de cron s'expriment en UTC, et l'écart change avec l'heure d'été.
+
+---
+
+### Structure des fichiers
+
+```
+job_scraper.py           tout le pipeline
+config.example.json      modèle de configuration, sans secret
+docs/
+  index.html             onglet Offres
+  app.js                 filtres, tri, rendu des cartes
+  candidatures.html      onglet Candidatures
+  candidatures.js        tableau par statut
+  store.js               stockage local + synchronisation du dépôt privé
+  styles.css             feuille unique
+  jobs_output.json       produit par le scraper, servi au dashboard
+.github/workflows/
+  scraper.yml            cron + déclenchement manuel
+MEMOIRE.md               mémoire du projet
+```
+
+Ordre de grandeur à terme : environ 3 000 lignes de Python et 2 400 pour le
+dashboard, dont un bon tiers de CSS. Rien qui justifie un framework.
+
+### Secrets à prévoir
+
+| Secret | Pour quoi | Obligatoire |
+| --- | --- | --- |
+| Identifiants de l'API nationale de l'emploi | source principale | selon le pays |
+| Identifiants de l'agrégateur | source secondaire | non |
+| Adresse du domicile | calcul du trajet | si critère de trajet |
+| Jeton de l'API de transport | calcul du trajet | si critère de trajet |
+| Adresse et mot de passe applicatif de la boîte dédiée | alertes e-mail | si alertes |
+| Jeton du dépôt privé | suivi de candidatures | si suivi |
+
+L'adresse du domicile est un **secret**, pas une valeur en dur : le dépôt est
+public.
+
+### Dépendances et exécution locale
+
+Deux bibliothèques suffisent : un client HTTP et un lecteur de flux RSS.
+
+Pour tester sans attendre un scan automatisé : remplir une configuration
+locale, lancer le scraper, copier le JSON dans le dossier servi, puis servir
+ce dossier avec le serveur HTTP intégré de Python. **Ouvrir le fichier HTML
+directement ne fonctionne pas** : le dashboard charge son JSON par requête, ce
+qu'un navigateur refuse depuis le système de fichiers.
 
 ---
 
@@ -394,6 +460,50 @@ Préférer intitulé + employeur normalisés. Mais une correspondance trop soupl
 masque des offres légitimes, surtout quand l'employeur est absent : exiger
 alors un second signal concordant plutôt que de considérer l'entreprise
 inconnue comme compatible avec tout.
+
+---
+
+## Travailler avec l'utilisateur dans la durée
+
+Ce projet n'est pas une livraison, c'est un compagnonnage. Trois habitudes
+font la différence.
+
+**Tenir une mémoire de projet versionnée.** Un fichier dans le dépôt qui
+consigne les décisions prises, les sources actives, les règles de filtrage
+avec leur motif, et l'historique des sessions. Sans lui, chaque nouvelle
+session redécouvre le projet et l'utilisateur réexplique. C'est le document
+que Claude relit en premier.
+
+**Devant un problème signalé, regarder la donnée avant d'expliquer.** Un
+« dashboard vide » a au moins trois causes possibles : un fichier réellement
+vide, un filtre actif dans le navigateur, ou une liste d'archives
+resynchronisée. Seule la lecture du fichier produit tranche. Une explication
+plausible donnée sans vérification est le principal risque de ce type de
+projet, parce qu'elle est crédible et fausse.
+
+**Annoncer les ordres de grandeur.** Les premiers scans seront bruyants, c'est
+normal, et le dire d'avance évite la déception. Un scan complet dure une
+demi-heure : ne pas rester bloqué à l'attendre, planifier une vérification.
+Les critères changeront avec la vie de l'utilisateur — un poste obtenu, du
+télétravail négocié, une réorientation — et le dashboard doit suivre par un
+simple changement de configuration.
+
+---
+
+## Limites : ce qu'on n'automatise pas
+
+- Respecter les conditions d'utilisation et le `robots.txt` des sites.
+  Préférer toujours une API publique ou un flux officiel au scraping d'une
+  page.
+- Espacer les requêtes. Un scan qui martèle un service est impoli, et c'est le
+  meilleur moyen de se faire bloquer.
+- Ne pas contourner une protection anti-robot, ne pas créer de faux compte, ne
+  pas réutiliser les identifiants de l'utilisateur sur un site tiers.
+- **Ne jamais postuler automatiquement**, ni générer et envoyer des lettres en
+  série. Le dashboard trie, signale et classe ; la candidature reste un acte
+  humain — c'est aussi ce qui la rend crédible.
+- Ne rien publier de nominatif dans le dépôt public, messages de commit
+  compris.
 
 ---
 
