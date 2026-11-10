@@ -47,28 +47,5 @@
     ],
     "recommendation": "à_postuler",
     "recommendation_reason": "Profil correspondant, aucun signal à vérifier (100 % télétravail France, score 8/10)"
-  },
-  {
-    "source": "Jobicy",
-    "title": "Senior/Lead Lifecycle Marketing Manager (Full Remote - France)",
-    "link": "https://jobicy.com/jobs/158628-senior-lead-lifecycle-marketing-manager-full-remote-france",
-    "company": "EverAI",
-    "location": "France",
-    "description": "Our Vision &amp; Products  EverAI — Building the Future of AI Companionship One of the Top 15 Largest &amp; Fastest-Growing AI Companies in the World 50 Million Users in 2 years — Help Us Reach 100M first, 500M next At EverAI, we’re shaping what it means to connect with AI. With 50 million users&hellip;",
-    "salary_raw": "",
-    "published": "2026-11-03T08:23:06+00:00",
-    "telework_days": 5,
-    "in_france": true,
-    "salary_extracted": null,
-    "contract_type": null,
-    "flags": [],
-    "info_flags": [],
-    "score": 7,
-    "score_reasons": [
-      "Signaux CRM lifecycle (email / segmentation / campagne)",
-      "Télétravail 5j/sem"
-    ],
-    "recommendation": "à_postuler",
-    "recommendation_reason": "Profil correspondant, aucun signal à vérifier (100 % télétravail France, score 7/10)"
   }
 ]
